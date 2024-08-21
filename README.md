@@ -5,3 +5,4 @@
 - added two extra recipes for tannin
 - added a create mixer recipe for lye
 - made petcoke useable in coke coal recipes
+- changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
