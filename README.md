@@ -7,3 +7,4 @@
 - made petcoke useable in coke coal recipes
 - changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
 - added extra recipes for olive paste, seed paste and tree seed paste
+- tweaked tiny coal and tiny charcoal's burn temperatures and burn durations
