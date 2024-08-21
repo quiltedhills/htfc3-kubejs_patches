@@ -4,3 +4,4 @@
 - added mekanism pigment extraction recipes for tfc sandstone
 - added two extra recipes for tannin
 - added a create mixer recipe for lye
+- made petcoke useable in coke coal recipes

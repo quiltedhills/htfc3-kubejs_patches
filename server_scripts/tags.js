@@ -206,6 +206,8 @@ onEvent('tags.fluids', event => {
 // ========= ITEMS
 onEvent('tags.items', event => {
     // by air!
+    event.add('minecraft:coals', ['immersivepetroleum:petcoke'])
+    event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
     event.remove('minecraft:carpets', ['farmersdelight:half_tatami_mat','farmersdelight:full_tatami_mat'])
     event.add('tfc:shears', ['htm:flint_shears'])
     event.remove('forge:ores/clean_dusts', 'tfc:powder/graphite')
