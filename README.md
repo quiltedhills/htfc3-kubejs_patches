@@ -6,3 +6,4 @@
 - added a create mixer recipe for lye
 - made petcoke useable in coke coal recipes
 - changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
+- added extra recipes for olive paste, seed paste and tree seed paste
