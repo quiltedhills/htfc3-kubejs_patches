@@ -8,4 +8,5 @@
 - changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
 - added extra recipes for olive paste, seed paste and tree seed paste
 - tweaked tiny coal and tiny charcoal's burn temperatures and burn durations
-- removed drying mat recipe, made solar dryers cheaper
+- removed drying mat recipe and made solar dryers cheaper
+- added an automated recipe for fire bricks
