@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "SGS",
-    "LLL"
+    " M "
   ],
   "key": {
     "S": {
@@ -11,17 +11,9 @@
     "G": {
       "item": "minecraft:glass"
     },
-    "L": [
-      {
-        "item": "firmalife:fruit_leaf"
-      },
-      {
-        "item": "tfc:plant/leafy_kelp"
-      },
-      {
-        "item": "tfc:groundcover/seaweed"
-      }
-    ]
+    "M": {
+      "item": "firmalife:drying_mat"
+    }
   },
   "result": {
     "item": "firmalife:solar_drier"
