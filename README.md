@@ -10,3 +10,4 @@
 - tweaked tiny coal and tiny charcoal's burn temperatures and burn durations
 - removed drying mat recipe and made solar dryers cheaper
 - added an automated recipe for fire bricks
+- made PNC crude oil processable in the distillation tower, as opposed to it being completely useless

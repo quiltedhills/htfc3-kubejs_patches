@@ -1688,5 +1688,8 @@ onEvent('tags.items', event => {
     event.add('forge:double_sheets/lead', ['immersiveengineering:plate_lead'])
     event.add('tfc:metal_item/uranium', ['immersiveengineering:plate_uranium'])
     event.add('forge:double_sheets/uranium', ['immersiveengineering:plate_uranium'])
-	//
 })
+onEvent('tags.fluids', event => {
+    event.add('forge:crude_oil_including_pnc', ['pneumaticcraft:oil','immersivepetroleum:crudeoil'])
+})
+    //
