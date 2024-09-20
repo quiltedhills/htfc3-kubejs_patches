@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info('Hello, World! (You will only see this line once in console, during startup)')
+console.info('Registering KJS Fluids...')
 
 onEvent('fluid.registry', event => {
 	event.create("molten_iron_quartz")	.thickTexture(0xdedede)	.bucketColor(0xdedede)	.displayName("Molten Quartz Enriched Iron")	.noBlock() 
