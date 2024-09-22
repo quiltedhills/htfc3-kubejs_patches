@@ -7,13 +7,13 @@
     {
       "fluid": "tfc:olive_oil_water",
       "nbt": {},
-      "amount": 500
+      "amount": 250
     }
   ],
   "results": [
     {
       "fluid": "tfc:olive_oil",
-      "amount": 100
+      "amount": 50
     },
     {
       "item": "tfc:dirty_jute_net"
