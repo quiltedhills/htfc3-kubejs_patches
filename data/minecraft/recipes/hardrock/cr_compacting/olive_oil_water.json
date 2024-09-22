@@ -6,15 +6,20 @@
             "ingredient": {
               "item": "tfc:food/olive"
             }
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 500
     }
   ],
   "results": [
     {
-      "fluid": "createaddition:seed_oil",
-      "amount": 50
+      "fluid": "tfc:olive_oil_water",
+      "amount": 500
     },
     {
-      "item": "kubejs:seed_biomass"
+      "item": "tfc:olive_paste"
     }
   ]
 }
