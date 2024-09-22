@@ -26,13 +26,14 @@ const samples = [
 	'silver',
 	'sphalerite',
 	'sulfur',
+	'sylvite',
 	'tetrahedrite',
 	'vulcanic_sulfur'
 ]
 onEvent('block.modification', event => {
 	samples.forEach((name) => {
 		event.modify('hardrock_samples:' + name, block => {
-			block.destroySpeed = 0
+			block.destroySpeed = 0.5
 		})
 	});
 })
