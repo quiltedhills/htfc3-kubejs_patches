@@ -1162,14 +1162,6 @@ onEvent('tags.items', event => {
 		'tfc:powder/sapphire',
 		'tfc:powder/topaz'
 	]),
-	event.add('tfc:firepit_fuel', [
-		'tinycoal:tinycharcoal',
-		'tinycoal:tinycoal',
-		'tfc:stick_bunch',
-		'#forge:rods/wooden',
-		'#forge:seed_tree',
-		'farmersdelight:tree_bark'
-	]),
 	event.add('forge:sleeping_bags', [
 		'#travelersbackpack:sleeping_bags',
 		'#forge:colored_sleeping_bag',
@@ -1710,6 +1702,16 @@ onEvent('tags.items', event => {
 		'tconstruct:copper_nugget'
 	)
     // by air!
+	event.add('tfc:firepit_fuel', [
+		'tfc:stick_bunch',
+		'#forge:rods/wooden',
+		'#forge:seed_tree',
+		'farmersdelight:tree_bark'
+	])
+	event.add('tfc:forge_fuel', [
+		'tinycoal:tinycoal',
+		'tinycoal:tinycharcoal'
+	])
     event.add('forge:double_sheets', ['immersiveengineering:plate_aluminum','immersiveengineering:plate_constantan','immersiveengineering:plate_electrum','immersiveengineering:plate_lead','immersiveengineering:plate_uranium'])
     event.add('tfc:metal_item/aluminum', ['immersiveengineering:plate_aluminum'])
     event.add('forge:double_sheets/aluminum', ['immersiveengineering:plate_aluminum'])

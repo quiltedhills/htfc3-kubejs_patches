@@ -1,9 +1,9 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "tinycoal:tinycharcoal"
+    "item": "tfc:stick_bunch"
   },
-  "duration": 200,
-  "temperature": 1350,
-  "purity": 0.7
+  "duration": 450,
+  "temperature": 900,
+  "purity": 0.8
 }

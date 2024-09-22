@@ -1,14 +1,9 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "ingredient": [
-    {
-      "item": "tfc:stick_bundle"
-    },
-    {
-      "item": "tfc:stick_bunch"
-    }
-  ],
-  "duration": 600,
+  "ingredient": {
+    "item": "tfc:stick_bundle"
+  },
+  "duration": 1200,
   "temperature": 900,
   "purity": 0.8
 }

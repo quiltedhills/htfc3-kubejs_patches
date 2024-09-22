@@ -5,7 +5,7 @@
 - added extra recipes for tannin, lye, fire bricks, tree seed and olive paste, oil and oil water
 - made petcoke useable in coke coal recipes
 - changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
-- tweaked burn temperatures and durations for tiny coal and tiny charcoal
+- tweaked burn temperatures and durations for tiny coal, tiny charcoal and stick bundles
 - removed drying mat recipe and made solar dryers cheaper, as drying mats are very tps heavy
 - made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
 - custom kubejs item and fluid names are now more consistent
