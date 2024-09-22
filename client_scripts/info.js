@@ -1,5 +1,30 @@
 // priority: 0
 onEvent('item.tooltip', tooltip => {
+	['dust','carbon','sulfur'].forEach(pollution_type => {
+		['low','medium','high'].forEach(filter_tier =>  {
+			tooltip.addAdvanced(`#adpother:filters/${pollution_type}/${filter_tier}`, (item, advanced, text) => {
+				if (!tooltip.shift) {
+				  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+				} else {
+					text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow()])
+					text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
+					text.add(3, Text.gold("using pumps, vents and chimneys"))
+				}
+	})})})
+	tooltip.addAdvanced('minecraft:charcoal', (item, advanced, text) => {
+// the "hold shift" tooltip here is commented out as it's added by pollution filter descriptions
+		//if (!tooltip.shift) {
+		//	text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		//} else {
+		if (tooltip.shift) {
+			text.add(4, Text.of(''))
+			text.add(5, Text.of('Need charcoal?'))
+			text.add(6, [Text.of('Place logs into a hole in a stack with ').gold(), Text.of('Shift + Right Click').yellow()])
+			text.add(7, Text.gold('Use a Fire Starter to burn it and quickly cover with a solid block'))
+			text.add(8, Text.gold('Wait patiently - until there is NO smoke'))
+			text.add(9, Text.gold('Mine with a shovel'))
+		}
+	})
 	tooltip.addAdvanced('create:vertical_gearbox', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -54,17 +79,6 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 		  text.add(1, Text.gold('fodder that will help you tame and breed some of the'))
 		  text.add(2, Text.gold('wild fishes - sunfish, triggerfish, sawfish, arowana '))
-		}
-	})
-	tooltip.addAdvanced('minecraft:charcoal', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-		  text.add(1, Text.of('Need charcoal?'))
-		  text.add(2, [Text.of('Place logs into a hole in a stack with ').gold(), Text.of('Shift + Right Click').yellow()])
-		  text.add(3, Text.gold('Use a Fire Starter to burn it and quickly cover with a solid block'))
-		  text.add(4, Text.gold('Wait patiently - until there is NO smoke'))
-		  text.add(5, Text.gold('Mine with a shovel'))
 		}
 	})
 	tooltip.addAdvanced('kubejs:canoe', (item, advanced, text) => {
@@ -153,46 +167,6 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, Text.gold('You can use as fuel in a lamp' ))
 			text.add(2, Text.gold('It is enough for a long burn time' ))
-		}
-	})
-	tooltip.addAdvanced('#minecraft:wool', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('This item filters sulfur in filter frames' ))
-			text.add(2, Text.gold('Place where sulfur collects or on top of the chimney' ))
-		}
-	})
-	tooltip.addAdvanced('#forge:filters', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('This item filters dusts in filter frames' ))
-			text.add(2, Text.gold('Place where dusts collects or on top of the chimney' ))
-		}
-	})
-	tooltip.addAdvanced('#forge:cloth', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('This item filters dusts in filter frames' ))
-			text.add(2, Text.gold('Place where dusts collects or on top of the chimney' ))
-		}
-	})
-	tooltip.addAdvanced('#minecraft:leaves', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('This item filters carbon in filter frames' ))
-			text.add(2, Text.gold('Place where carbon collects or on top of the chimney' ))
-		}
-	})
-	tooltip.addAdvanced('tfc:thatch', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('This item filters carbon in filter frames' ))
-			text.add(2, Text.gold('Place where carbon collects or on top of the chimney' ))
 		}
 	})
 	tooltip.addAdvanced('myrtrees:latex', (item, advanced, text) => {

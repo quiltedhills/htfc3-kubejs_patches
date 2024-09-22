@@ -2,6 +2,7 @@
 onEvent('recipes', event => {
 	event.remove([
         // by air!
+        {id: 'coralstfc:barrel/coral_powder'},
         {id: 'securitycraft:reinforced_redstone_lamp'},
         {id: 'create:crushing/diorite'},
         {id: 'create:crushing/tuff'},

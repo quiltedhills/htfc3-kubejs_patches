@@ -11,3 +11,9 @@
 - removed drying mat recipe and made solar dryers cheaper
 - added an automated recipe for fire bricks
 - made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
+- custom item and fluid names are more consistent
+- mineral samples are now breakable again (and are also much less tough)
+- added tags and updated tooltips for pollution filter items
+- removed itemfilters from JEI as I'm pretty sure those are only used in making quests and don't have a functional use
+- made burlap cloth cost more when made directly from industrial hemp
+- removed coral powder to mortar recipe because why was it even a thing ;-;

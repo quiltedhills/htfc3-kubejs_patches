@@ -4,7 +4,7 @@
   "ingredient": {
     "item": "immersiveengineering:hemp_fiber"
   },
-  "input_count": 16,
+  "input_count": 32,
   "result": {
     "item": "tfc:burlap_cloth"
   },

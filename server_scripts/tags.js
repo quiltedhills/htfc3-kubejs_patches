@@ -207,6 +207,41 @@ onEvent('tags.fluids', event => {
 // ========= ITEMS
 onEvent('tags.items', event => {
     // by air!
+	event.add('adpother:filters/dust/low', [
+        "htm:plant_fabric"
+	]),
+	event.add('adpother:filters/dust/medium', [
+        "minecraft:paper",
+        "tfc:burlap_cloth"
+	]),
+	event.add('adpother:filters/dust/high', [
+        "tfc:silk_cloth",
+        "tfc:wool_cloth"
+	]),
+	event.add('adpother:filters/carbon/low', [
+		"#minecraft:leaves"
+	]),
+	event.add('adpother:filters/carbon/medium', [
+		"#forge:kelp"
+	]),
+	event.add('adpother:filters/carbon/high', [
+		"coralstfc:coral_powder"
+	]),
+	//event.add('adpother:filters/sulfur/low', [
+	//	"no items here but just in case we want any down the line"
+	//]),
+	event.add('adpother:filters/sulfur/medium', [
+		"minecraft:charcoal"
+	]),
+	event.add('adpother:filters/sulfur/high', [
+		"#minecraft:wool"
+	]),
+	event.add('adpother:filters/dust', ["#adpother:filters/dust/low","#adpother:filters/dust/medium","#adpother:filters/dust/high"]),
+	event.add('adpother:filters/carbon', ["#adpother:filters/carbon/low","#adpother:filters/carbon/medium","#adpother:filters/carbon/high"]),
+	event.add('adpother:filters/sulfur', ["#adpother:filters/sulfur/low","#adpother:filters/sulfur/medium","#adpother:filters/sulfur/high"]),
+	event.add('adpother:filters', ["#adpother:filters/dust","#adpother:filters/carbon","#adpother:filters/sulfur"]),
+    event.add('forge:kelp', ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'])
+	
     event.add('farmersdelight:tools/knives', ['htm:flint_knife'])
     event.add('minecraft:coals', ['immersivepetroleum:petcoke'])
     event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
@@ -1362,10 +1397,6 @@ onEvent('tags.items', event => {
 	event.add('forge:thatch', [
 		'untamedwilds:carpet_straw',
 		'tfc:thatch'
-	]),
-	event.add('forge:filters', [
-		'htm:plant_fabric',
-		'immersiveengineering:hemp_fabric'
 	]),
 	event.add('forge:dirt', [
 		'#tfc:dirt',
