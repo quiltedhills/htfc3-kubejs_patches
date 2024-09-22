@@ -16,3 +16,4 @@
 - itemfilters's filter items are now hidden in JEI
 - made burlap cloth cost more when made directly from industrial hemp
 - removed coral powder to mortar recipe as coral powder now has a better use as a filter
+- removed milk vinegar as it's unused

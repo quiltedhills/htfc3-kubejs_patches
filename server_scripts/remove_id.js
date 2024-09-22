@@ -2,6 +2,7 @@
 onEvent('recipes', event => {
 	event.remove([
         // by air!
+        {id: 'tfc_ie_addon:refinery/milk_vinegar'},
         {id: 'tfc_ie_addon:crusher/olive'},
         {id: 'tfc_ie_addon:squeezer/olive'},
         {id: 'coralstfc:barrel/coral_powder'},
