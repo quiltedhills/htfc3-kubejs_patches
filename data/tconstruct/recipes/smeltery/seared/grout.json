@@ -5,7 +5,8 @@
       "item": "tfc:fire_clay"
     },
     {
-      "tag": "minecraft:sand"
+      "tag": "forge:sand_piles",
+      "count": 2
     },
     {
       "item": "tfc:rock/gravel/basalt"
