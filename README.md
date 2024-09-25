@@ -1,4 +1,19 @@
-# air's kubejs changes! all in one spot!
+# Installation guide
+1. Hit the green 'Code' button in the top right corner of the menu with a bunch of folders
+2. Select 'Download ZIP'
+3. Delete the contents of your instance's/server's kubejs folder and extract the zip file
+4. Yay!
+
+If something goes wrong, please ping me (air) in a help channel and I will assist!
+
+> [!note]
+> **Just to make it clear, this is only for singleplayer or for your private server!**  
+> Some of the changes are clientside, some are serverside and some are both. If you don't have this installed on both the client and the server there is a good chance that you will not be able to join :(
+
+
+
+
+# Rough changelogs / differences from 1.4.9
 - removed hardrock's texture replacements for existing things like diamonds, lapis, emeralds, redstone and wrought iron! this includes GUIs and also includes the smooth font! all of these are moved to a [resource pack](https://github.com/airsh4de/htfc3-kubejs_patches/blob/main/hardrock's%20texture%20overrides.zip)
 - fixed some textures from the tfc ore washing mod having random accidental pixels
 - custom kubejs item and fluid names are now more consistent
