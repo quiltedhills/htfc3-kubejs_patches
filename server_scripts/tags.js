@@ -2,15 +2,12 @@
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
-    // by air!
-    event.add('chiselsandbits:chiselable/blocked', [
-        '#forge:ores',
-        '#minecraft:water',
-        '#minecraft:lava',
-        '#tfc:rock/raw'
-    ])
-    //
-	
+	event.add('chiselsandbits:chiselable/blocked', [
+		'#forge:ores',
+		'#minecraft:water',
+		'#minecraft:lava',
+		'#tfc:rock/raw'
+	])
 	event.add('tfc:can_be_snow_piled', [
 		//'geolosys:lignite_ore_sample',
 	])
@@ -141,23 +138,22 @@ onEvent('tags.blocks', event => {
 })
 // ===== FLUIDS
 onEvent('tags.fluids', event => {
-    // by air!
-    event.add('forge:molten_rose_gold', ['tfc:metal/rose_gold'])
-    event.add('forge:molten_unknown', ['tfc:metal/unknown'])
-    event.add('forge:molten_weak_steel', ['tfc:metal/weak_steel'])
-    event.add('forge:molten_weak_red_steel', ['tfc:metal/weak_red_steel'])
-    event.add('forge:molten_weak_blue_steel', ['tfc:metal/weak_blue_steel'])
-    event.add('forge:molten_cast_iron', ['tfc:metal/cast_iron'])
-    event.add('forge:molten_wrought_iron', ['tfc:metal/wrought_iron'])
-    event.add('forge:molten_iron_any', ['tfc:metal/cast_iron','tconstruct:molten_iron'])
-    event.add('forge:molten_bismuth', ['tfc:metal/bismuth'])
-    event.add('forge:molten_bismuth_bronze', ['tfc:metal/bismuth_bronze'])
-    event.add('forge:molten_black_bronze', ['tfc:metal/black_bronze'])
-    event.add('forge:molten_sterling_silver', ['tfc:metal/sterling_silver'])
-    event.add('forge:molten_black_steel', ['tfc:metal/black_steel'])
-    event.add('forge:molten_red_steel', ['tfc:metal/red_steel'])
-    event.add('forge:molten_blue_steel', ['tfc:metal/blue_steel'])
-    //
+	event.add('forge:crude_oil_including_pnc', ['pneumaticcraft:oil','immersivepetroleum:crudeoil'])
+	event.add('forge:molten_rose_gold', ['tfc:metal/rose_gold'])
+	event.add('forge:molten_unknown', ['tfc:metal/unknown'])
+	event.add('forge:molten_weak_steel', ['tfc:metal/weak_steel'])
+	event.add('forge:molten_weak_red_steel', ['tfc:metal/weak_red_steel'])
+	event.add('forge:molten_weak_blue_steel', ['tfc:metal/weak_blue_steel'])
+	event.add('forge:molten_cast_iron', ['tfc:metal/cast_iron'])
+	event.add('forge:molten_wrought_iron', ['tfc:metal/wrought_iron'])
+	event.add('forge:molten_iron_any', ['tfc:metal/cast_iron','tconstruct:molten_iron'])
+	event.add('forge:molten_bismuth', ['tfc:metal/bismuth'])
+	event.add('forge:molten_bismuth_bronze', ['tfc:metal/bismuth_bronze'])
+	event.add('forge:molten_black_bronze', ['tfc:metal/black_bronze'])
+	event.add('forge:molten_sterling_silver', ['tfc:metal/sterling_silver'])
+	event.add('forge:molten_black_steel', ['tfc:metal/black_steel'])
+	event.add('forge:molten_red_steel', ['tfc:metal/red_steel'])
+	event.add('forge:molten_blue_steel', ['tfc:metal/blue_steel'])
 
 	event.add('forge:molten_iron_quartz', ['kubejs:molten_iron_quartz'])
 	event.add('forge:molten_andesite_alloy', ['kubejs:andesite_alloy'])
@@ -202,21 +198,31 @@ onEvent('tags.fluids', event => {
 	event.remove('forge:lubricant', ['pneumaticcraft:lubricant'])
 	event.remove('forge:ethanol', ['pneumaticcraft:ethanol'])
 	event.remove('forge:plantoil', ['pneumaticcraft:vegetable_oil', 'immersiveengineering:plantoil'])
+	event.remove('forge:crude_oil', ['pneumaticcraft:oil'])
 })
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
-    // by air!
+	event.add('tfc:firepit_fuel', [
+		'tfc:stick_bunch',
+		'#forge:rods/wooden',
+		'#forge:seed_tree',
+		'farmersdelight:tree_bark'
+	])
+	event.add('tfc:forge_fuel', [
+		'tinycoal:tinycoal',
+		'tinycoal:tinycharcoal'
+	])
 	event.add('adpother:filters/dust/low', [
-        "htm:plant_fabric"
+		"htm:plant_fabric"
 	]),
 	event.add('adpother:filters/dust/medium', [
-        "minecraft:paper",
-        "tfc:burlap_cloth"
+		"minecraft:paper",
+		"tfc:burlap_cloth"
 	]),
 	event.add('adpother:filters/dust/high', [
-        "tfc:silk_cloth",
-        "tfc:wool_cloth"
+		"tfc:silk_cloth",
+		"tfc:wool_cloth"
 	]),
 	event.add('adpother:filters/carbon/low', [
 		"#minecraft:leaves"
@@ -240,126 +246,125 @@ onEvent('tags.items', event => {
 	event.add('adpother:filters/carbon', ["#adpother:filters/carbon/low","#adpother:filters/carbon/medium","#adpother:filters/carbon/high"]),
 	event.add('adpother:filters/sulfur', ["#adpother:filters/sulfur/low","#adpother:filters/sulfur/medium","#adpother:filters/sulfur/high"]),
 	event.add('adpother:filters', ["#adpother:filters/dust","#adpother:filters/carbon","#adpother:filters/sulfur"]),
-    event.add('forge:kelp', ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'])
+	event.add('forge:kelp', ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'])
 	
-    event.add('farmersdelight:tools/knives', ['htm:flint_knife'])
-    event.add('minecraft:coals', ['immersivepetroleum:petcoke'])
-    event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
-    event.remove('minecraft:carpets', ['farmersdelight:half_tatami_mat','farmersdelight:full_tatami_mat'])
-    event.add('tfc:shears', ['htm:flint_shears'])
-    event.remove('forge:ores/clean_dusts', 'tfc:powder/graphite')
-    event.add('createoreexcavation:high_tier_drills', ['createoreexcavation:diamond_drill','createoreexcavation:netherite_drill'])
+	event.add('farmersdelight:tools/knives', ['htm:flint_knife'])
+	event.add('minecraft:coals', ['immersivepetroleum:petcoke'])
+	event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
+	event.remove('minecraft:carpets', ['farmersdelight:half_tatami_mat','farmersdelight:full_tatami_mat'])
+	event.add('tfc:shears', ['htm:flint_shears'])
+	event.remove('forge:ores/clean_dusts', 'tfc:powder/graphite')
+	event.add('createoreexcavation:high_tier_drills', ['createoreexcavation:diamond_drill','createoreexcavation:netherite_drill'])
 
-    event.add('forge:sheetmetals_colored',[
-        'immersiveengineering:sheetmetal_colored_white',
-        'immersiveengineering:sheetmetal_colored_orange',
-        'immersiveengineering:sheetmetal_colored_magenta',
-        'immersiveengineering:sheetmetal_colored_light_blue',
-        'immersiveengineering:sheetmetal_colored_yellow',
-        'immersiveengineering:sheetmetal_colored_lime',
-        'immersiveengineering:sheetmetal_colored_pink',
-        'immersiveengineering:sheetmetal_colored_gray',
-        'immersiveengineering:sheetmetal_colored_light_gray',
-        'immersiveengineering:sheetmetal_colored_cyan',
-        'immersiveengineering:sheetmetal_colored_purple',
-        'immersiveengineering:sheetmetal_colored_blue',
-        'immersiveengineering:sheetmetal_colored_brown',
-        'immersiveengineering:sheetmetal_colored_green',
-        'immersiveengineering:sheetmetal_colored_red',
-        'immersiveengineering:sheetmetal_colored_black'])
-    event.add('forge:sheetmetal_slabs_colored',[
-        'immersiveengineering:slab_sheetmetal_colored_white',
-        'immersiveengineering:slab_sheetmetal_colored_orange',
-        'immersiveengineering:slab_sheetmetal_colored_magenta',
-        'immersiveengineering:slab_sheetmetal_colored_light_blue',
-        'immersiveengineering:slab_sheetmetal_colored_yellow',
-        'immersiveengineering:slab_sheetmetal_colored_lime',
-        'immersiveengineering:slab_sheetmetal_colored_pink',
-        'immersiveengineering:slab_sheetmetal_colored_gray',
-        'immersiveengineering:slab_sheetmetal_colored_light_gray',
-        'immersiveengineering:slab_sheetmetal_colored_cyan',
-        'immersiveengineering:slab_sheetmetal_colored_purple',
-        'immersiveengineering:slab_sheetmetal_colored_blue',
-        'immersiveengineering:slab_sheetmetal_colored_brown',
-        'immersiveengineering:slab_sheetmetal_colored_green',
-        'immersiveengineering:slab_sheetmetal_colored_red',
-        'immersiveengineering:slab_sheetmetal_colored_black'])
+	event.add('forge:sheetmetals_colored',[
+		'immersiveengineering:sheetmetal_colored_white',
+		'immersiveengineering:sheetmetal_colored_orange',
+		'immersiveengineering:sheetmetal_colored_magenta',
+		'immersiveengineering:sheetmetal_colored_light_blue',
+		'immersiveengineering:sheetmetal_colored_yellow',
+		'immersiveengineering:sheetmetal_colored_lime',
+		'immersiveengineering:sheetmetal_colored_pink',
+		'immersiveengineering:sheetmetal_colored_gray',
+		'immersiveengineering:sheetmetal_colored_light_gray',
+		'immersiveengineering:sheetmetal_colored_cyan',
+		'immersiveengineering:sheetmetal_colored_purple',
+		'immersiveengineering:sheetmetal_colored_blue',
+		'immersiveengineering:sheetmetal_colored_brown',
+		'immersiveengineering:sheetmetal_colored_green',
+		'immersiveengineering:sheetmetal_colored_red',
+		'immersiveengineering:sheetmetal_colored_black'])
+	event.add('forge:sheetmetal_slabs_colored',[
+		'immersiveengineering:slab_sheetmetal_colored_white',
+		'immersiveengineering:slab_sheetmetal_colored_orange',
+		'immersiveengineering:slab_sheetmetal_colored_magenta',
+		'immersiveengineering:slab_sheetmetal_colored_light_blue',
+		'immersiveengineering:slab_sheetmetal_colored_yellow',
+		'immersiveengineering:slab_sheetmetal_colored_lime',
+		'immersiveengineering:slab_sheetmetal_colored_pink',
+		'immersiveengineering:slab_sheetmetal_colored_gray',
+		'immersiveengineering:slab_sheetmetal_colored_light_gray',
+		'immersiveengineering:slab_sheetmetal_colored_cyan',
+		'immersiveengineering:slab_sheetmetal_colored_purple',
+		'immersiveengineering:slab_sheetmetal_colored_blue',
+		'immersiveengineering:slab_sheetmetal_colored_brown',
+		'immersiveengineering:slab_sheetmetal_colored_green',
+		'immersiveengineering:slab_sheetmetal_colored_red',
+		'immersiveengineering:slab_sheetmetal_colored_black'])
 
-    event.add('immersiveengineering:press_molds',[
-        'immersiveengineering:mold_plate',
-        'immersiveengineering:mold_gear',
-        'immersiveengineering:mold_rod',
-        'immersiveengineering:mold_bullet_casing',
-      //'immersiveengineering:mold_wire',
-        'immersiveengineering:mold_packing_4',
-      //'immersiveengineering:mold_packing_9',
-        'immersiveengineering:mold_unpacking'])
+	event.add('immersiveengineering:press_molds',[
+		'immersiveengineering:mold_plate',
+		'immersiveengineering:mold_gear',
+		'immersiveengineering:mold_rod',
+		'immersiveengineering:mold_bullet_casing',
+		//'immersiveengineering:mold_wire',
+		'immersiveengineering:mold_packing_4',
+		//'immersiveengineering:mold_packing_9',
+		'immersiveengineering:mold_unpacking'])
 
-    event.add('forge:ingots/iron', ['tfc:metal/ingot/wrought_iron'])
-    event.add('forge:ores/dirty_piles',[
-        'tfcorewashing:dirty_pile_bauxite',
-        'tfcorewashing:dirty_pile_bismuthinite',
-        'tfcorewashing:dirty_pile_cassiterite',
-        'tfcorewashing:dirty_pile_chromite',
-        'tfcorewashing:dirty_pile_cinnabar',
-        'tfcorewashing:dirty_pile_copper',
-        'tfcorewashing:dirty_pile_cryolite',
-        'tfcorewashing:dirty_pile_galena',
-        'tfcorewashing:dirty_pile_garnierite',
-        'tfcorewashing:dirty_pile_gold',
-        'tfcorewashing:dirty_pile_graphite',
-        'tfcorewashing:dirty_pile_hematite',
-        'tfcorewashing:dirty_pile_limonite',
-        'tfcorewashing:dirty_pile_magnetite',
-        'tfcorewashing:dirty_pile_malachite',
-        'tfcorewashing:dirty_pile_silver',
-        'tfcorewashing:dirty_pile_sphalerite',
-        'tfcorewashing:dirty_pile_sulfur',
-        'tfcorewashing:dirty_pile_tetrahedrite',
-        'tfcorewashing:dirty_pile_uraninite'])
-    event.add('forge:ores/pellets',[
-        'tfcorewashing:pellet_bauxite',
-        'tfcorewashing:pellet_bismuthinite',
-        'tfcorewashing:pellet_cassiterite',
-        'tfcorewashing:pellet_chromium',
-        'tfcorewashing:pellet_copper',
-        'tfcorewashing:pellet_galena',
-        'tfcorewashing:pellet_garnierite',
-        'tfcorewashing:pellet_gold',
-        'tfcorewashing:pellet_hematite',
-        'tfcorewashing:pellet_limonite',
-        'tfcorewashing:pellet_magnetite',
-        'tfcorewashing:pellet_malachite',
-        'tfcorewashing:pellet_silver',
-        'tfcorewashing:pellet_sphalerite',
-        'tfcorewashing:pellet_tetrahedrite',
-        'tfcorewashing:pellet_uraninite'])
-    event.add('forge:ores/briquettes',[
-        'tfcorewashing:briquet_bauxite',
-        'tfcorewashing:briquet_bismuthinite',
-        'tfcorewashing:briquet_cassiterite',
-        'tfcorewashing:briquet_chromium',
-        'tfcorewashing:briquet_copper',
-        'tfcorewashing:briquet_galena',
-        'tfcorewashing:briquet_garnierite',
-        'tfcorewashing:briquet_gold',
-        'tfcorewashing:briquet_hematite',
-        'tfcorewashing:briquet_limonite',
-        'tfcorewashing:briquet_magnetite',
-        'tfcorewashing:briquet_malachite',
-        'tfcorewashing:briquet_silver',
-        'tfcorewashing:briquet_sphalerite',
-        'tfcorewashing:briquet_tetrahedrite',
-        'tfcorewashing:briquet_uraninite'])
-    event.add('forge:sand_piles',[
-        'tfcorewashing:pile_black_sand',
-        'tfcorewashing:pile_brown_sand',
-        'tfcorewashing:pile_green_sand',
-        'tfcorewashing:pile_pink_sand',
-        'tfcorewashing:pile_red_sand',
-        'tfcorewashing:pile_white_sand',
-        'tfcorewashing:pile_yellow_sand'])
-    //
+	event.add('forge:ingots/iron', ['tfc:metal/ingot/wrought_iron'])
+	event.add('forge:ores/dirty_piles',[
+		'tfcorewashing:dirty_pile_bauxite',
+		'tfcorewashing:dirty_pile_bismuthinite',
+		'tfcorewashing:dirty_pile_cassiterite',
+		'tfcorewashing:dirty_pile_chromite',
+		'tfcorewashing:dirty_pile_cinnabar',
+		'tfcorewashing:dirty_pile_copper',
+		'tfcorewashing:dirty_pile_cryolite',
+		'tfcorewashing:dirty_pile_galena',
+		'tfcorewashing:dirty_pile_garnierite',
+		'tfcorewashing:dirty_pile_gold',
+		'tfcorewashing:dirty_pile_graphite',
+		'tfcorewashing:dirty_pile_hematite',
+		'tfcorewashing:dirty_pile_limonite',
+		'tfcorewashing:dirty_pile_magnetite',
+		'tfcorewashing:dirty_pile_malachite',
+		'tfcorewashing:dirty_pile_silver',
+		'tfcorewashing:dirty_pile_sphalerite',
+		'tfcorewashing:dirty_pile_sulfur',
+		'tfcorewashing:dirty_pile_tetrahedrite',
+		'tfcorewashing:dirty_pile_uraninite'])
+	event.add('forge:ores/pellets',[
+		'tfcorewashing:pellet_bauxite',
+		'tfcorewashing:pellet_bismuthinite',
+		'tfcorewashing:pellet_cassiterite',
+		'tfcorewashing:pellet_chromium',
+		'tfcorewashing:pellet_copper',
+		'tfcorewashing:pellet_galena',
+		'tfcorewashing:pellet_garnierite',
+		'tfcorewashing:pellet_gold',
+		'tfcorewashing:pellet_hematite',
+		'tfcorewashing:pellet_limonite',
+		'tfcorewashing:pellet_magnetite',
+		'tfcorewashing:pellet_malachite',
+		'tfcorewashing:pellet_silver',
+		'tfcorewashing:pellet_sphalerite',
+		'tfcorewashing:pellet_tetrahedrite',
+		'tfcorewashing:pellet_uraninite'])
+	event.add('forge:ores/briquettes',[
+		'tfcorewashing:briquet_bauxite',
+		'tfcorewashing:briquet_bismuthinite',
+		'tfcorewashing:briquet_cassiterite',
+		'tfcorewashing:briquet_chromium',
+		'tfcorewashing:briquet_copper',
+		'tfcorewashing:briquet_galena',
+		'tfcorewashing:briquet_garnierite',
+		'tfcorewashing:briquet_gold',
+		'tfcorewashing:briquet_hematite',
+		'tfcorewashing:briquet_limonite',
+		'tfcorewashing:briquet_magnetite',
+		'tfcorewashing:briquet_malachite',
+		'tfcorewashing:briquet_silver',
+		'tfcorewashing:briquet_sphalerite',
+		'tfcorewashing:briquet_tetrahedrite',
+		'tfcorewashing:briquet_uraninite'])
+	event.add('forge:sand_piles',[
+		'tfcorewashing:pile_black_sand',
+		'tfcorewashing:pile_brown_sand',
+		'tfcorewashing:pile_green_sand',
+		'tfcorewashing:pile_pink_sand',
+		'tfcorewashing:pile_red_sand',
+		'tfcorewashing:pile_white_sand',
+		'tfcorewashing:pile_yellow_sand'])
 
 	//event.remove('forge:tools/saws', '#forge:tools/axes')
 	//event.add('forge:saw_blade', 'immersiveengineering:sawblade')
@@ -433,9 +438,9 @@ onEvent('tags.items', event => {
 		'butchersdelight:deadpig',
 		'butchersdelight:deadsheep',
 		'butchersdelight:deadgoat',
-    	'butchersdelight:deadhoglin',
-    	'butchersdelight:deadllama',
-    	'butchersdelight:deadstrider',
+		'butchersdelight:deadhoglin',
+		'butchersdelight:deadllama',
+		'butchersdelight:deadstrider',
 		'beyond_earth:rocket_t1',
 		'beyond_earth:rocket_t2',
 		'beyond_earth:rocket_t3',
@@ -580,8 +585,8 @@ onEvent('tags.items', event => {
 		'farmersdelight:minced_beef',
 		'farmersdelight:chicken_cuts',
 		'farmersdelight:mutton_chops',
-    	'farmersdelight:ham',
-    	'farmersdelight:bacon',
+		'farmersdelight:ham',
+		'farmersdelight:bacon',
 		'farmersdelight:cod_slice',
 		'farmersdelight:salmon_slice',
 		'minecraft:porkchop',
@@ -1575,6 +1580,8 @@ onEvent('tags.items', event => {
 		'beyond_earth:raw_calorite'
 	])
 	// ==========  REMOVE
+	event.remove('forge:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
+	event.remove('balm:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('forge:storage_blocks/copper', ['minecraft:cut_copper'])
 	event.remove('forge:ingots/cast_iron', ['minecraft:iron_ingot'])
 	event.remove('forge:dusts/coal_coke', ['tfc:powder/graphite'])
@@ -1596,7 +1603,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
-		'pneumaticcraft:oil',
+		'mekanism:sawdust',
 		'pneumaticcraft:diesel',
 		'pneumaticcraft:kerosene',
 		'pneumaticcraft:gasoline',
@@ -1695,36 +1702,20 @@ onEvent('tags.items', event => {
 		'minecraft:glass_pane',
 		'minecraft:gold_ingot',
 		'pneumaticcraft:wheat_flour',
-		'tinycoal:tinycoal',
-		'tinycoal:tinycharcoal',
 		'tconstruct:pig_iron_ingot',
 		'tconstruct:rose_gold_ingot',
 		'tconstruct:copper_nugget'
 	)
-    // by air!
-	event.add('tfc:firepit_fuel', [
-		'tfc:stick_bunch',
-		'#forge:rods/wooden',
-		'#forge:seed_tree',
-		'farmersdelight:tree_bark'
-	])
-	event.add('tfc:forge_fuel', [
-		'tinycoal:tinycoal',
-		'tinycoal:tinycharcoal'
-	])
-    event.add('forge:double_sheets', ['immersiveengineering:plate_aluminum','immersiveengineering:plate_constantan','immersiveengineering:plate_electrum','immersiveengineering:plate_lead','immersiveengineering:plate_uranium'])
-    event.add('tfc:metal_item/aluminum', ['immersiveengineering:plate_aluminum'])
-    event.add('forge:double_sheets/aluminum', ['immersiveengineering:plate_aluminum'])
-    event.add('tfc:metal_item/constantan', ['immersiveengineering:plate_constantan'])
-    event.add('forge:double_sheets/constantan', ['immersiveengineering:plate_constantan'])
-    event.add('tfc:metal_item/electrum', ['immersiveengineering:plate_electrum'])
-    event.add('forge:double_sheets/electrum', ['immersiveengineering:plate_electrum'])
-    event.add('tfc:metal_item/lead', ['immersiveengineering:plate_lead'])
-    event.add('forge:double_sheets/lead', ['immersiveengineering:plate_lead'])
-    event.add('tfc:metal_item/uranium', ['immersiveengineering:plate_uranium'])
-    event.add('forge:double_sheets/uranium', ['immersiveengineering:plate_uranium'])
+	// these will be turned into custom items soon!
+	event.add('forge:double_sheets', ['immersiveengineering:plate_aluminum','immersiveengineering:plate_constantan','immersiveengineering:plate_electrum','immersiveengineering:plate_lead','immersiveengineering:plate_uranium'])
+	event.add('tfc:metal_item/aluminum', ['immersiveengineering:plate_aluminum'])
+	event.add('forge:double_sheets/aluminum', ['immersiveengineering:plate_aluminum'])
+	event.add('tfc:metal_item/constantan', ['immersiveengineering:plate_constantan'])
+	event.add('forge:double_sheets/constantan', ['immersiveengineering:plate_constantan'])
+	event.add('tfc:metal_item/electrum', ['immersiveengineering:plate_electrum'])
+	event.add('forge:double_sheets/electrum', ['immersiveengineering:plate_electrum'])
+	event.add('tfc:metal_item/lead', ['immersiveengineering:plate_lead'])
+	event.add('forge:double_sheets/lead', ['immersiveengineering:plate_lead'])
+	event.add('tfc:metal_item/uranium', ['immersiveengineering:plate_uranium'])
+	event.add('forge:double_sheets/uranium', ['immersiveengineering:plate_uranium'])
 })
-onEvent('tags.fluids', event => {
-    event.add('forge:crude_oil_including_pnc', ['pneumaticcraft:oil','immersivepetroleum:crudeoil'])
-})
-    //

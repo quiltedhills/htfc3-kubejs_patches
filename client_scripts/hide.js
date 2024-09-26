@@ -48,6 +48,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'mekanism:sawdust',
 		'#itemfilters:filters',
 		'chiselsandbits_tfc:chisel_head_stone',
 		'chiselsandbits_tfc:chisel_head_iron',

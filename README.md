@@ -32,6 +32,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 - itemfilters's filter items are now hidden in JEI
 - made burlap cloth more costly when made from industrial hemp directly
 - removed coral powder to mortar recipe as coral powder now has a better use as a filter
-- removed milk vinegar as it's unused
+- removed milk vinegar and mekanism sawdust as they are unused
 - fixed recipe conflict for the two grout recipes
 - added recipe for azalea leaves and their flowering variant
+- added recipes for tuff, calcite and dripstone blocks
