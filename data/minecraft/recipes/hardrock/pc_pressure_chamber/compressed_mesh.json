@@ -13,7 +13,8 @@
   "pressure": 4.5,
   "results": [
     {
-      "item": "kubejs:compressed_mesh"
+      "item": "kubejs:compressed_mesh",
+      "count": 4
     }
   ]
 }
