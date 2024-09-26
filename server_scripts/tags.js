@@ -203,6 +203,24 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('forge:double_sheets', [
+		'kubejs:metal/double_sheet/electrum',
+		'kubejs:metal/double_sheet/constantan',
+		'kubejs:metal/double_sheet/aluminum',
+		'kubejs:metal/double_sheet/lead',
+		'kubejs:metal/double_sheet/uranium'
+	])
+	event.add('tfc:metal_item/aluminum', ['kubejs:metal/double_sheet/aluminum'])
+	event.add('forge:double_sheets/aluminum', ['kubejs:metal/double_sheet/aluminum'])
+	event.add('tfc:metal_item/constantan', ['kubejs:metal/double_sheet/constantan'])
+	event.add('forge:double_sheets/constantan', ['kubejs:metal/double_sheet/constantan'])
+	event.add('tfc:metal_item/electrum', ['kubejs:metal/double_sheet/electrum'])
+	event.add('forge:double_sheets/electrum', ['kubejs:metal/double_sheet/electrum'])
+	event.add('tfc:metal_item/lead', ['kubejs:metal/double_sheet/lead'])
+	event.add('forge:double_sheets/lead', ['kubejs:metal/double_sheet/lead'])
+	event.add('tfc:metal_item/uranium', ['kubejs:metal/double_sheet/uranium'])
+	event.add('forge:double_sheets/uranium', ['kubejs:metal/double_sheet/uranium'])
+	
 	event.add('tfc:firepit_fuel', [
 		'tfc:stick_bunch',
 		'#forge:rods/wooden',
@@ -1706,16 +1724,4 @@ onEvent('tags.items', event => {
 		'tconstruct:rose_gold_ingot',
 		'tconstruct:copper_nugget'
 	)
-	// these will be turned into custom items soon!
-	event.add('forge:double_sheets', ['immersiveengineering:plate_aluminum','immersiveengineering:plate_constantan','immersiveengineering:plate_electrum','immersiveengineering:plate_lead','immersiveengineering:plate_uranium'])
-	event.add('tfc:metal_item/aluminum', ['immersiveengineering:plate_aluminum'])
-	event.add('forge:double_sheets/aluminum', ['immersiveengineering:plate_aluminum'])
-	event.add('tfc:metal_item/constantan', ['immersiveengineering:plate_constantan'])
-	event.add('forge:double_sheets/constantan', ['immersiveengineering:plate_constantan'])
-	event.add('tfc:metal_item/electrum', ['immersiveengineering:plate_electrum'])
-	event.add('forge:double_sheets/electrum', ['immersiveengineering:plate_electrum'])
-	event.add('tfc:metal_item/lead', ['immersiveengineering:plate_lead'])
-	event.add('forge:double_sheets/lead', ['immersiveengineering:plate_lead'])
-	event.add('tfc:metal_item/uranium', ['immersiveengineering:plate_uranium'])
-	event.add('forge:double_sheets/uranium', ['immersiveengineering:plate_uranium'])
 })

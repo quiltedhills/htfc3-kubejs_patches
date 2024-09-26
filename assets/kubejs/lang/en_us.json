@@ -1,4 +1,9 @@
 {
   "metal.tfc.andesite_stone": "Andesite",
-  "metal.tfc.andesite_alloy": "Andesite Alloy"
+  "metal.tfc.andesite_alloy": "Andesite Alloy",
+  "item.kubejs.metal.double_sheet.electrum": "Electrum Double Sheet",
+  "item.kubejs.metal.double_sheet.constantan": "Constantan Double Sheet",
+  "item.kubejs.metal.double_sheet.aluminum": "Aluminum Double Sheet",
+  "item.kubejs.metal.double_sheet.lead": "Lead Double Sheet",
+  "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet"
 }

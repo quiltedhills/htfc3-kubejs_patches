@@ -13,7 +13,7 @@
   "pressure": 4.5,
   "results": [
     {
-      "item": "immersiveengineering:plate_constantan"
+      "item": "kubejs:metal/double_sheet/constantan"
     }
   ]
 }

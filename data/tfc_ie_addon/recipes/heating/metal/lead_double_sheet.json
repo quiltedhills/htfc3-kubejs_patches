@@ -2,7 +2,7 @@
   "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:heating",
   "ingredient": {
-    "item": "immersiveengineering:plate_lead"
+    "item": "kubejs:metal/double_sheet/lead"
   },
   "result_fluid": {
     "fluid": "tfc_ie_addon:metal/lead",

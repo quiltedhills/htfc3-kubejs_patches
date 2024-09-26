@@ -3,6 +3,11 @@
 console.info('Registering KJS Items...')
 
 onEvent('item.registry', event => {
+	event.create('metal/double_sheet/electrum')   // display names are in kubejs/assets/kubejs/en_us.json
+	event.create('metal/double_sheet/constantan')
+	event.create('metal/double_sheet/aluminum')
+	event.create('metal/double_sheet/lead')
+	event.create('metal/double_sheet/uranium')
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
