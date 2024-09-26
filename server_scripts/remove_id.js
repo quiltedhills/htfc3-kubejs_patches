@@ -2,6 +2,12 @@
 onEvent('recipes', event => {
 	event.remove([
         // by air!
+        {id: 'minecraft:ens_andesite'},
+        {id: 'minecraft:ens_diorite'},
+        {id: 'minecraft:ens_granite'},
+        {id: 'minecraft:ens_basalt'},
+        {id: 'minecraft:ens_blackstone'},
+        {id: 'minecraft:ens_cobblestone'},
         {id: 'tfc_ie_addon:refinery/milk_vinegar'},
         {id: 'tfc_ie_addon:crusher/olive'},
         {id: 'tfc_ie_addon:squeezer/olive'},
