@@ -25,6 +25,26 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, Text.gold('Mine with a shovel'))
 		}
 	})
+	tooltip.addAdvanced(['immersiveengineering:blastbrick',
+						 'immersiveengineering:blastbrick_reinforced',
+						 'immersiveengineering:blastfurnace_preheater',
+						 'immersiveengineering:blast_furnace',
+						 'immersiveengineering:advanced_blast_furnace'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.red('Decorative use only!'))
+		  text.add(2, Text.gold('IE blast furnaces are non-functional'))
+		}
+	})
+	tooltip.addAdvanced('immersiveengineering:cokebrick', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.red('Decorative use only!'))
+		  text.add(2, Text.gold('Coke ovens are made from fire bricks'))
+		}
+	})
 	tooltip.addAdvanced('#forge:deepslate', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
