@@ -27,6 +27,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 - removed heat properties from sticks and stick bunches to help avoid torchmaking confusion
 - added mekanism pigment extraction recipes for tfc sandstone
 - changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
+- tweaked the strawberry ice cream recipe to not use chocolate
 - removed drying mat recipe and made solar dryers cheaper, as drying mats are very tps heavy
 - made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
 - itemfilters's filter items are now hidden in JEI
