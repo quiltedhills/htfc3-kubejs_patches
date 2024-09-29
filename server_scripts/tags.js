@@ -1183,7 +1183,8 @@ onEvent('tags.items', event => {
 		'tfc:powder/opal',
 		'tfc:powder/ruby',
 		'tfc:powder/sapphire',
-		'tfc:powder/topaz'
+		'tfc:powder/topaz',
+		'tfc:powder/pyrite'
 	]),
 	event.add('forge:sleeping_bags', [
 		'#travelersbackpack:sleeping_bags',
