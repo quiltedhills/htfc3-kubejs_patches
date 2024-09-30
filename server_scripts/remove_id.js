@@ -1,6 +1,7 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'minecraft:ens_crying_obsidian'},
 		{id: 'create:crafting/materials/brass_ingot_from_compacting'},
 		{id: 'create:crafting/materials/brass_ingot_from_decompacting'},
 		{id: 'minecraft:ens_andesite'},

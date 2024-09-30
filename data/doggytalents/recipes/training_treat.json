@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TUV",
+    "XXX",
+    "YYY"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:string"
+    },
+    "U": {
+      "item": "minecraft:bone"
+    },
+    "V": {
+      "item": "minecraft:gunpowder"
+    },
+    "X": {
+      "item": "minecraft:sugar"
+    },
+    "Y": [
+      {
+        "item": "tfc:food/barley"
+      },
+      {
+        "item": "tfc:food/oat"
+      },
+      {
+        "item": "tfc:food/rye"
+      },
+      {
+        "item": "tfc:food/rice"
+      },
+      {
+        "item": "tfc:food/wheat"
+      }
+    ]
+  },
+  "result": {
+    "item": "doggytalents:training_treat"
+  }
+}

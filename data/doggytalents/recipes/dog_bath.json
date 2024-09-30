@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "minecraft:water",
+        "amount": 1000
+      }
+    }
+  },
+  "result": {
+    "item": "doggytalents:dog_bath"
+  }
+}
