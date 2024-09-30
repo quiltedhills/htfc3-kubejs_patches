@@ -116,12 +116,6 @@
     {
       "item": "create:crushed_raw_gold",
       "chance": 2.0
-    },
-    {
-      "item": "tfc:metal/ingot/gold"
-    },
-    {
-      "item": "minecraft:clock"
     }
   ],
   "loops": 2

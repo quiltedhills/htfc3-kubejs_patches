@@ -9,9 +9,14 @@
       "type": "forge:not"
     }
   ],
-  "ingredient": {
-    "tag": "forge:wires/electrum"
-  },
+  "ingredient": [
+    {
+      "tag": "forge:wires/electrum"
+    },
+    {
+      "item": "createaddition:electrum_wire"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_electrum",
     "amount": 25

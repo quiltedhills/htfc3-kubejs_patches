@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "tag": "forge:ingots/steel"
-  },
+  "ingredient": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "item": "beyond_earth:steel_ingot"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_steel",
     "amount": 100

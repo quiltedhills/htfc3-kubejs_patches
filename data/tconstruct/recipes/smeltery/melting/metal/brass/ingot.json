@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "tag": "forge:ingots/brass"
-  },
+  "ingredient": [
+    {
+      "tag": "forge:ingots/brass"
+    },
+    {
+      "item": "create:brass_ingot"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_brass",
     "amount": 100
