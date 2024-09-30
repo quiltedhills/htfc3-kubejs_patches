@@ -1,0 +1,14 @@
+{
+    "type":"immersiveengineering:sawmill",
+    "energy":1600,
+    "input":[
+        {"item": "tfc:wood/wood/pine"}
+        ],
+    "stripped":{"item":"tfc:wood/stripped_wood/pine"},
+    "result":{"item":"tfc:wood/support/pine","count":6},
+    "secondaries":[
+        {"output":{"tag":"forge:dusts/wood"},"stripping":true},
+        {"output":{"tag":"forge:dusts/wood"},"stripping":false}
+        ]
+}
+

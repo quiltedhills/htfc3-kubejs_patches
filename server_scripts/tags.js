@@ -275,6 +275,7 @@ onEvent('tags.items', event => {
 	event.add('forge:kelp', ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'])
 	
 	event.add('farmersdelight:tools/knives', ['htm:flint_knife'])
+
 	event.add('minecraft:coals', ['immersivepetroleum:petcoke'])
 	event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
 	event.remove('minecraft:carpets', ['farmersdelight:half_tatami_mat','farmersdelight:full_tatami_mat'])

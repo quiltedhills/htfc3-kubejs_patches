@@ -1,0 +1,14 @@
+{
+    "type":"immersiveengineering:sawmill",
+    "energy":1600,
+    "input":[
+        {"item": "tfc:wood/wood/ash"}
+        ],
+    "stripped":{"item":"tfc:wood/stripped_wood/ash"},
+    "result":{"item":"tfc:wood/support/ash","count":6},
+    "secondaries":[
+        {"output":{"tag":"forge:dusts/wood"},"stripping":true},
+        {"output":{"tag":"forge:dusts/wood"},"stripping":false}
+        ]
+}
+

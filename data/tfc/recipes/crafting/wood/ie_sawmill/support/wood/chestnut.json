@@ -1,0 +1,14 @@
+{
+    "type":"immersiveengineering:sawmill",
+    "energy":1600,
+    "input":[
+        {"item": "tfc:wood/wood/chestnut"}
+        ],
+    "stripped":{"item":"tfc:wood/stripped_wood/chestnut"},
+    "result":{"item":"tfc:wood/support/chestnut","count":6},
+    "secondaries":[
+        {"output":{"tag":"forge:dusts/wood"},"stripping":true},
+        {"output":{"tag":"forge:dusts/wood"},"stripping":false}
+        ]
+}
+

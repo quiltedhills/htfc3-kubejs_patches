@@ -1,0 +1,14 @@
+{
+    "type":"immersiveengineering:sawmill",
+    "energy":1600,
+    "input":[
+        {"item": "tfc:wood/log/douglas_fir"}
+        ],
+    "stripped":{"item":"tfc:wood/stripped_log/douglas_fir"},
+    "result":{"item":"tfc:wood/support/douglas_fir","count":6},
+    "secondaries":[
+        {"output":{"tag":"forge:dusts/wood"},"stripping":true},
+        {"output":{"tag":"forge:dusts/wood"},"stripping":false}
+        ]
+}
+
