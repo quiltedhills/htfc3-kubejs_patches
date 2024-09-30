@@ -203,6 +203,14 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('compactmachines:compactmachines', [
+		'compactmachines:machine_tiny',
+		'compactmachines:machine_small',
+		'compactmachines:machine_normal',
+		'compactmachines:machine_large',
+		'compactmachines:machine_giant',
+		'compactmachines:machine_maximum'
+	])
 	event.add('forge:double_sheets', [
 		'kubejs:metal/double_sheet/electrum',
 		'kubejs:metal/double_sheet/constantan',
@@ -436,6 +444,7 @@ onEvent('tags.items', event => {
 	])
 	//----------------
 	event.add('tfc:huge_very_heavy', [
+		'#compactmachines:compactmachines',
 		'simple_hot_air_balloons:red_hot_air_balloon_item',
 		'simple_hot_air_balloons:orange_hot_air_balloon_item',
 		'simple_hot_air_balloons:yellow_hot_air_balloon_item',

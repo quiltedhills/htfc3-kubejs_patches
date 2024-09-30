@@ -1,0 +1,14 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {"tag": "forge:double_sheets/wrought_iron"},
+    "transitionalItem": {"item": "create:iron_sheet"},
+    "sequence": [
+      {"type": "create:deploying","ingredients": [{"item": "create:iron_sheet"}, {"item": "compactmachines:wall"}],"results": [{"item": "create:iron_sheet"}]},
+      {"type": "create:deploying","ingredients": [{"item": "create:iron_sheet"}, {"item": "compactmachines:wall"}],"results": [{"item": "create:iron_sheet"}]},
+      {"type": "create:deploying","ingredients": [{"item": "create:iron_sheet"}, {"tag": "forge:double_sheets/wrought_iron"}],"results": [{"item": "create:iron_sheet"}]},
+      {"type": "create:pressing","ingredients": [{"item":"create:iron_sheet"}],"results": [{"item":"create:iron_sheet"}]},
+      {"type": "create:pressing","ingredients": [{"item":"create:iron_sheet"}],"results": [{"item":"create:iron_sheet"}]}
+    ],
+    "results": [{"item": "compactmachines:machine_small"}],
+    "loops": 2
+  }
