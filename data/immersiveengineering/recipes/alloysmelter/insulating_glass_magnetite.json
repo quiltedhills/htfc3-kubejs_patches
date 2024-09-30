@@ -1,0 +1,17 @@
+{
+    "type": "immersiveengineering:alloy",
+    "time": 200,
+    "input0": {
+        "count": 2,
+        "base_ingredient": {
+            "tag": "forge:glass"
+        }
+    },
+    "input1": {
+        "item": "tfcorewashing:magnetite_powder"
+    },
+    "result": {
+        "item": "immersiveengineering:insulating_glass",
+        "count": 2
+    }
+}
