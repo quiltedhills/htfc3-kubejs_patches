@@ -1,24 +1,19 @@
 {
-  "type": "sewingkit:sewing",
-  "materials": [
-    {
-      "ingredient": {
-        "item": "pneumaticcraft:glycerol"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "htm:plant_fabric"
       },
-      "count": 1
-    },
+      {
+        "item": "immersiveengineering:hemp_fabric"
+      }
+    ],
     {
-      "ingredient": {
-        "item": "kubejs:medical_paste"
-      },
-      "count": 1
+      "item": "kubejs:medical_paste"
     }
   ],
-  "tool": {
-    "tag": "forge:shears"
-  },
   "result": {
-    "item": "pneumaticcraft:bandage",
-    "count": 12
+    "item": "pneumaticcraft:bandage"
   }
 }

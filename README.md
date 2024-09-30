@@ -36,4 +36,6 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 - removed milk vinegar and mekanism sawdust as they are unused
 - fixed recipe conflict for the two grout recipes
 - added recipe for azalea leaves and their flowering variant
-- added recipes for tuff, calcite and dripstone blocks
+- added recipes for tuff, calcite and dripstone blocks; replaced the old deepslate recipe with a new one
+- completely reworked compact machines recipes
+- tweaked existing health plaster recipes and added a new one
