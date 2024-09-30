@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:enriching",
+    "input": {
+        "ingredient": {
+            "tag": "forge:ores/calorite"
+        }
+    },
+    "output": {
+        "item": "beyond_earth:raw_calorite",
+        "count": 4
+    }
+}

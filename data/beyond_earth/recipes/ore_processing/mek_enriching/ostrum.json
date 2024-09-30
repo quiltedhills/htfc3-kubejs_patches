@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:enriching",
+    "input": {
+        "ingredient": {
+            "tag": "forge:ores/ostrum"
+        }
+    },
+    "output": {
+        "item": "beyond_earth:raw_ostrum",
+        "count": 4
+    }
+}

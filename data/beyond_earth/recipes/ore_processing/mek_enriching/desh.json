@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:enriching",
+    "input": {
+        "ingredient": {
+            "tag": "forge:ores/desh"
+        }
+    },
+    "output": {
+        "item": "beyond_earth:raw_desh",
+        "count": 4
+    }
+}

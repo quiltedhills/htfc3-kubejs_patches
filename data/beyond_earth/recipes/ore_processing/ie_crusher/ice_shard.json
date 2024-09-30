@@ -1,0 +1,22 @@
+{
+    "type": "immersiveengineering:crusher",
+    "energy": 4000,
+    "input": {
+        "tag": "forge:ores/ice_shard"
+    },
+    "result": {
+        "count": 6,
+        "base_ingredient": {
+            "item": "beyond_earth:ice_shard"
+        }
+    },
+    "secondaries": [
+        {
+            "chance": 0.5,
+            "output": {
+                "item": "beyond_earth:ice_shard",
+                "count": 4
+            }
+        }
+    ]
+}
