@@ -1,6 +1,28 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_black'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_black'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_black'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_brown'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_brown'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_brown'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_green'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_green'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_green'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_pink'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_pink'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_pink'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_red'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_red'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_red'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_white'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_white'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_white'},
+		{id: 'tfc_ie_addon:crusher/sandstone/cut_yellow'},
+		{id: 'tfc_ie_addon:crusher/sandstone/raw_yellow'},
+		{id: 'tfc_ie_addon:crusher/sandstone/smooth_yellow'},
+
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_limonite'},
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_hematite'},
 		{id: 'minecraft:ens_crying_obsidian'},

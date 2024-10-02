@@ -13,29 +13,36 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 
 
 
-# Rough changelogs / differences from 1.4.9
-- removed hardrock's texture replacements for existing things like diamonds, lapis, emeralds, redstone and wrought iron! this includes GUIs and also includes the smooth font! all of these are moved to a [resource pack](https://github.com/airsh4de/htfc3-kubejs_patches/blob/main/hardrock's%20texture%20overrides.zip)
-- fixed some textures from the tfc ore washing mod having random accidental pixels
-- custom kubejs item and fluid names are now more consistent
-- pollution filter items now have item tags as well as updated descriptions
-- mineral samples are now breakable again (and are also much less tough)
-- molten andesite and molten andesite alloy now have proper names instead of showing ID
+# Changelogs / differences from 1.4.9
+• Removed FirstAid due to player data corruption issues.
+• Added Compressed Creativity, which bridges Create and Pneumaticcraft. Recommended for early transition into Pneumaticcraft.
 
-- added extra recipes for tannin, lye, fire bricks, tree seed and olive paste, oil and oil water
-- made petcoke useable in coke coal recipes (hohlraums still need petcoke)
-- tweaked burn temperatures and durations for tiny coal, tiny charcoal and stick bundles
-- removed heat properties from sticks and stick bunches to help avoid torchmaking confusion
-- added mekanism pigment extraction recipes for tfc sandstone
-- changed the millstone recipe to require placing raw stone on a gearstone and not the other way around
-- tweaked the strawberry ice cream recipe to not use chocolate
-- removed drying mat recipe and made solar dryers cheaper, as drying mats are very tps heavy
-- made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
-- itemfilters's filter items are now hidden in JEI
-- made burlap cloth more costly when made from industrial hemp directly
-- removed coral powder to mortar recipe as coral powder now has a better use as a filter
-- removed milk vinegar and mekanism sawdust as they are unused
-- fixed recipe conflict for the two grout recipes
-- added recipe for azalea leaves and their flowering variant
-- added recipes for tuff, calcite and dripstone blocks; replaced the old deepslate recipe with a new one
-- completely reworked compact machines recipes
-- tweaked existing health plaster recipes and added a new one
+• Moved texture replacements for several items (diamonds, redstone, wrought iron and others), including smooth font and GUI, to a resource pack
+• Completely reworked compact machine recipes, available easier and earlier
+• Bug notice: horses may not breed in overworld; bringing them into a compact cube allows them to breed there
+• Fixed buggy textures in TFC Orewashing, removed random pixel applications
+• Redistributed gemstone drops from ore washing
+• Custom kubejs item and fluid names are now more consistent
+• Pollution filter items now have item tags as well as updated descriptions
+• Mineral samples are now breakable again.
+• Sped up breaking time for mineral samples
+• Molten andesite and molten andesite alloy now have proper names instead of showing ID
+• Added extra recipes for tannin, lye, fire bricks, tree seed and olive paste, oil and oil water
+• Made petcoke useable in coke coal recipes (hohlraums still need petcoke)
+• Tweaked burn temperatures and durations for tiny coal, tiny charcoal and stick bundles
+• Removed heat properties from sticks and stick bunches to help avoid torchmaking confusion
+• Added Mekanism pigment extraction recipes for TFC type sandstone blocks
+• Removed colored sandstone crushing recipes
+• Changed the millstone recipe to require placing raw stone on a gearbox and not the other way around
+• Tweaked the strawberry ice cream recipe to not use chocolate
+• Removed drying mat recipe and made solar dryers cheaper. (Drying mats = lag heavy, solar = not)
+• Made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
+• Itemfilters's filter items are now hidden in JEI
+• Made burlap cloth more costly when made from industrial hemp directly
+• Removed coral powder to mortar recipe as coral powder now has a better use as a filter
+• Removed milk vinegar and Mekanism sawdust as they are unused
+• Fixed recipe conflict for the two grout recipes
+• Added recipe for azalea leaves and their flowering variant
+• Added recipes for tuff, calcite, and dripstone blocks; replaced the old deepslate recipe with a new one
+• Tweaked existing health plaster recipes and added a new one
+• Changed recipe for the slingshot
