@@ -2,7 +2,7 @@
   "__comment__": "This file was automatically created by mcresources",
   "tier": 1,
   "fluid": "tconstruct:molten_glass",
-  "melt_temperature": 900,
+  "melt_temperature": 400,
   "specific_heat_capacity": 0.00857,
   "ingots": {
     "tag": "forge:ingots/glass"

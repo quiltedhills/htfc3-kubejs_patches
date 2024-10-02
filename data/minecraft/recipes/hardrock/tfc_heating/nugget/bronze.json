@@ -1,14 +1,5 @@
 {
   "type": "tfc:heating",
-  "conditions": [
-    {
-      "value": {
-        "tag": "forge:nuggets/tin",
-        "type": "forge:tag_empty"
-      },
-      "type": "forge:not"
-    }
-  ],
   "ingredient": {
     "tag": "forge:nuggets/bronze"
   },
@@ -16,5 +7,5 @@
     "fluid": "tfc:metal/bronze",
     "amount": 10
   },
-  "temperature": 1080
+  "temperature": 950
 }

@@ -21,6 +21,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Completely reworked compact machine recipes, available easier and earlier
 • Bug notice: horses may not breed in overworld; bringing them into a compact cube allows them to breed there
 • Fixed buggy textures in TFC Orewashing, removed random pixel applications
+• Added a few more extra tags for ores, minerals and such
 • Redistributed gemstone drops from ore washing
 • Custom kubejs item and fluid names are now more consistent
 • Pollution filter items now have item tags as well as updated descriptions
@@ -46,3 +47,4 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Added recipes for tuff, calcite, and dripstone blocks; replaced the old deepslate recipe with a new one
 • Tweaked existing health plaster recipes and added a new one
 • Changed recipe for the slingshot
+• Fixed some nuggets as well as glass having odd melting points
