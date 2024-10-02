@@ -3,7 +3,7 @@
   "pattern": [
     "323",
     "101",
-    " 1 "
+    " 4 "
   ],
   "key": {
     "1": {
@@ -17,6 +17,9 @@
     },
     "0": {
       "tag": "forge:glue"
+    },
+    "4": {
+      "tag": "forge:rods/copper"
     }
   },
   "result": {

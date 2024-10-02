@@ -25,6 +25,14 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, Text.gold('Mine with a shovel'))
 		}
 	})
+	tooltip.addAdvanced('supplementaries:slingshot', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.gold('Shoots blocks! Any placeables, in fact.'))
+		  text.add(2, Text.gold('Deals no damage and is completely harmless'))
+		}
+	})
 	tooltip.addAdvanced(['immersiveengineering:blastbrick',
 						 'immersiveengineering:blastbrick_reinforced',
 						 'immersiveengineering:blastfurnace_preheater',
