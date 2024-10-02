@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_limonite'},
+		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_hematite'},
 		{id: 'minecraft:ens_crying_obsidian'},
 		{id: 'create:crafting/materials/brass_ingot_from_compacting'},
 		{id: 'create:crafting/materials/brass_ingot_from_decompacting'},

@@ -4,14 +4,9 @@
     {
       "tag": "forge:dusts/salt"
     },
-    [
-      {
-        "item": "tfcorewashing:copper_powder"
-      },
-      {
-        "item": "tfc:powder/malachite"
-      }
-    ],
+    {
+      "tag": "forge:ores/clean_dusts/copper"
+    },
     [
       {
         "item": "tfcorewashing:chromium_powder"
@@ -20,14 +15,9 @@
         "item": "tfcorewashing:sphalerite_powder"
       }
     ],
-    [
-      {
-        "item": "tfc:powder/hematite"
-      },
-      {
-        "item": "tfc:powder/limonite"
-      }
-    ],
+    {
+      "tag": "forge:ores/clean_dusts/iron"
+    },
     {
       "fluid": "minecraft:water",
       "nbt": {},

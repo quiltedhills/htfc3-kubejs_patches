@@ -8,7 +8,7 @@
         }
     },
     "input1": {
-        "item": "tfcorewashing:magnetite_powder"
+        "tag": "forge:ores/clean_dusts/iron"
     },
     "result": {
         "item": "immersiveengineering:insulating_glass",

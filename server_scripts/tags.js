@@ -203,6 +203,73 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('forge:uncut_gems', [
+		'tfc:ore/amethyst',
+		'tfc:ore/diamond',
+		'tfc:ore/emerald',
+		'tfc:ore/opal',
+		'tfc:ore/pyrite',
+		'tfc:ore/ruby',
+		'tfc:ore/sapphire',
+		'tfc:ore/topaz'
+	])
+	event.add('forge:ores/clean_dusts/iron', [
+		'tfc:powder/hematite',
+		'tfc:powder/limonite',
+		'tfcorewashing:magnetite_powder'
+	])
+	event.add('forge:ores/clean_dusts/copper', [
+		'tfc:powder/malachite',
+		'tfcorewashing:copper_powder',
+		'tfcorewashing:tetrahedrite_powder'
+	])
+	event.add('forge:ores/clean_dusts/aluminum', ['tfcorewashing:bauxite_powder'])
+	event.add('forge:ores/clean_dusts/bismuth', ['tfcorewashing:bismuthinite_powder'])
+	event.add('forge:ores/clean_dusts/tin', ['tfcorewashing:cassiterite_powder'])
+	event.add('forge:ores/clean_dusts/chromium', ['tfcorewashing:chromium_powder'])
+	event.add('forge:ores/clean_dusts/lead', ['tfcorewashing:galena_powder'])
+	event.add('forge:ores/clean_dusts/nickel', ['tfcorewashing:garnierite_powder'])
+	event.add('forge:ores/clean_dusts/gold', ['tfcorewashing:gold_powder'])
+	event.add('forge:ores/clean_dusts/silver', ['tfcorewashing:silver_powder'])
+	event.add('forge:ores/clean_dusts/zinc', ['tfcorewashing:sphalerite_powder'])
+	event.add('forge:ores/clean_dusts/uranium', ['tfcorewashing:uraninite_powder'])
+
+	event.add('tfc:ore_pieces/iron', [
+		'tfc:ore/small_hematite','tfc:ore/poor_hematite','tfc:ore/normal_hematite','tfc:ore/rich_hematite',
+		'tfc:ore/small_limonite','tfc:ore/poor_limonite','tfc:ore/normal_limonite','tfc:ore/rich_limonite',
+		'tfc:ore/small_magnetite','tfc:ore/poor_magnetite','tfc:ore/normal_magnetite','tfc:ore/rich_magnetite'
+	])
+	event.add('tfc:ore_pieces/copper', [
+		'tfc:ore/small_native_copper','tfc:ore/poor_native_copper','tfc:ore/normal_native_copper','tfc:ore/rich_native_copper',
+		'tfc:ore/small_malachite','tfc:ore/poor_malachite','tfc:ore/normal_malachite','tfc:ore/rich_malachite',
+		'tfc:ore/small_tetrahedrite','tfc:ore/poor_tetrahedrite','tfc:ore/normal_tetrahedrite','tfc:ore/rich_tetrahedrite'
+	])
+	event.add('tfc:ore_pieces/aluminum', ['tfc_ie_addon:ore/small_aluminum','tfc_ie_addon:ore/poor_aluminum','tfc_ie_addon:ore/normal_aluminum','tfc_ie_addon:ore/rich_aluminum'])
+	event.add('tfc:ore_pieces/bismuth', ['tfc:ore/small_bismuthinite','tfc:ore/poor_bismuthinite','tfc:ore/normal_bismuthinite','tfc:ore/rich_bismuthinite'])
+	event.add('tfc:ore_pieces/tin', ['tfc:ore/small_cassiterite','tfc:ore/poor_cassiterite','tfc:ore/normal_cassiterite','tfc:ore/rich_cassiterite'])
+	event.add('tfc:ore_pieces/chromium', ['firmalife:ore/small_chromite','firmalife:ore/poor_chromite','firmalife:ore/normal_chromite','firmalife:ore/rich_chromite'])
+	event.add('tfc:ore_pieces/lead', ['tfc_ie_addon:ore/small_lead','tfc_ie_addon:ore/poor_lead','tfc_ie_addon:ore/normal_lead','tfc_ie_addon:ore/rich_lead'])
+	event.add('tfc:ore_pieces/nickel', ['tfc:ore/small_garnierite','tfc:ore/poor_garnierite','tfc:ore/normal_garnierite','tfc:ore/rich_garnierite'])
+	event.add('tfc:ore_pieces/gold', ['tfc:ore/small_native_gold','tfc:ore/poor_native_gold','tfc:ore/normal_native_gold','tfc:ore/rich_native_gold'])
+	event.add('tfc:ore_pieces/silver', ['tfc:ore/small_native_silver','tfc:ore/poor_native_silver','tfc:ore/normal_native_silver','tfc:ore/rich_native_silver'])
+	event.add('tfc:ore_pieces/zinc', ['tfc:ore/small_sphalerite','tfc:ore/poor_sphalerite','tfc:ore/normal_sphalerite','tfc:ore/rich_sphalerite'])
+	event.add('tfc:ore_pieces/uranium', ['tfc_ie_addon:ore/small_uranium','tfc_ie_addon:ore/poor_uranium','tfc_ie_addon:ore/normal_uranium','tfc_ie_addon:ore/rich_uranium'])
+
+	event.add('tfc:minerals', [
+		'tfc:ore/bituminous_coal',
+		'tfc:ore/lignite',
+		'tfc:ore/kaolinite',
+		'tfc:ore/gypsum',
+		'tfc:ore/graphite',
+		'tfc:ore/sulfur',
+		'tfc:ore/cinnabar',
+		'tfc:ore/cryolite',
+		'tfc:ore/saltpeter',
+		'tfc:ore/sylvite',
+		'tfc:ore/borax',
+		'tfc:ore/halite'
+	])
+
 	event.add('compactmachines:compactmachines', [
 		'compactmachines:machine_tiny',
 		'compactmachines:machine_small',
