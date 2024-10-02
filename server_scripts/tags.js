@@ -203,6 +203,15 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('smallships:drakkars', [
+		'smallships:oak_drakkar',
+		'smallships:spruce_drakkar',
+		'smallships:birch_drakkar',
+		'smallships:jungle_drakkar',
+		'smallships:acacia_drakkar',
+		'smallships:dark_oak_drakkar'
+	])
+
 	event.add('forge:uncut_gems', [
 		'tfc:ore/amethyst',
 		'tfc:ore/diamond',
@@ -512,6 +521,8 @@ onEvent('tags.items', event => {
 	])
 	//----------------
 	event.add('tfc:huge_very_heavy', [
+		'smallships:cannon',
+		'smallships:sail',
 		'#compactmachines:compactmachines',
 		'simple_hot_air_balloons:red_hot_air_balloon_item',
 		'simple_hot_air_balloons:orange_hot_air_balloon_item',

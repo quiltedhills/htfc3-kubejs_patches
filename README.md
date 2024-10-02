@@ -48,3 +48,4 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Tweaked existing health plaster recipes and added a new one
 • Changed recipe for the slingshot
 • Fixed some nuggets as well as glass having odd melting points
+• Made drakkars craftable
