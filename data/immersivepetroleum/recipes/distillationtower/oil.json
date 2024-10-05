@@ -25,7 +25,7 @@
     }
   ],
   "input": {
-      "tag": "forge:crude_oil_including_pnc",
+      "tag": "forge:crude_oil",
       "amount": 50
   },
   "time": 1,
