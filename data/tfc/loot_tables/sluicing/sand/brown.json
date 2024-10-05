@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:fishing",
   "pools": [
     {
@@ -11,41 +10,21 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfc:ore/small_native_copper",
+              "name": "tfc:ore/gypsum",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.07
+                  "chance": 0.08
                 }
               ]
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:redstone",
+              "name": "tfc:ore/sylvite",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.07
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:gold_nugget",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.04
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "immersiveengineering:nugget_silver",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.03
+                  "chance": 0.05
                 }
               ]
             },
@@ -61,7 +40,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfc:ore/opal",
+              "name": "tfc:ore/topaz",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
