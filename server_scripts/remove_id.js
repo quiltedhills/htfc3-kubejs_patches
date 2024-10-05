@@ -1,6 +1,11 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli'},
+		{id: 'compressedcreativity:mixing/brass_coated_upgrade_matrix'},
+		{id: 'compressedcreativity:crafting/mechanical_visor_upgrade'}, // these are too long and mess item descriptions in-game.
+		{id: 'compressedcreativity:sequenced_assembly/mesh_splashing'}, // both are relocated to have a shorter pathname!
+
 		{id: 'tfc_ie_addon:crusher/sandstone/cut_black'},
 		{id: 'tfc_ie_addon:crusher/sandstone/raw_black'},
 		{id: 'tfc_ie_addon:crusher/sandstone/smooth_black'},

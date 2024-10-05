@@ -190,7 +190,6 @@ onEvent('tags.fluids', event => {
 	event.add('firmalife:usable_in_vat', ['tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water'])
 	event.add('tfc:brine', ['mekanism:brine'])
 	event.add('forge:brine', ['tfc:brine'])
-	event.remove('forge:crude_oil', ['pneumaticcraft:oil'])
 	event.remove('forge:diesel', ['pneumaticcraft:diesel'])
 	event.remove('forge:biodiesel', ['pneumaticcraft:biodiesel'])
 	event.remove('forge:kerosene', ['pneumaticcraft:kerosene'])
@@ -198,20 +197,18 @@ onEvent('tags.fluids', event => {
 	event.remove('forge:lubricant', ['pneumaticcraft:lubricant'])
 	event.remove('forge:ethanol', ['pneumaticcraft:ethanol'])
 	event.remove('forge:plantoil', ['pneumaticcraft:vegetable_oil', 'immersiveengineering:plantoil'])
-	event.remove('forge:crude_oil', ['pneumaticcraft:oil'])
 })
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
-	event.add('smallships:drakkars', [
-		'smallships:oak_drakkar',
-		'smallships:spruce_drakkar',
-		'smallships:birch_drakkar',
-		'smallships:jungle_drakkar',
-		'smallships:acacia_drakkar',
-		'smallships:dark_oak_drakkar'
+	event.add('compressedcreativity:blower_mesh', [
+		'compressedcreativity:mesh_empty',
+		'compressedcreativity:mesh_woven',
+		'compressedcreativity:mesh_splashing',
+		'compressedcreativity:mesh_splashing_frozen',
+		'compressedcreativity:mesh_dense',
+		'compressedcreativity:mesh_haunted'
 	])
-
 	event.add('forge:uncut_gems', [
 		'tfc:ore/amethyst',
 		'tfc:ore/diamond',
@@ -646,7 +643,18 @@ onEvent('tags.items', event => {
 		'functionalstorage:fluid_2',
 		'functionalstorage:fluid_4',
 	]),
+	event.add('tfc:large_medium', [
+		'compressedcreativity:mesh_empty',
+		'compressedcreativity:mesh_woven',
+		'compressedcreativity:mesh_splashing',
+		'compressedcreativity:mesh_splashing_frozen',
+		'smallships:cannon_ball'
+	]),
 	event.add('tfc:very_large_heavy', [
+		'compressedcreativity:mesh_dense',
+		'compressedcreativity:mesh_haunted',
+		'compressedcreativity:rotational_compressor',
+		'compressedcreativity:industrial_air_blower',
 		'butchersdelight:deadchiken',
 		'butchersdelight:deadrabbitbrown',
 		'beyond_earth:solar_panel',

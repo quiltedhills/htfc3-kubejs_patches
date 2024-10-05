@@ -48,6 +48,9 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'compressedcreativity:brass_gilded_lapis_lazuli',
+		'compressedcreativity:brass_coated_upgrade_matrix',
+		'compressedcreativity:heater',
 		'mekanism:salt',
 		'mekanism:sawdust',
 		'#itemfilters:filters',

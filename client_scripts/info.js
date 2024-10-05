@@ -25,6 +25,77 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, Text.gold('Mine with a shovel'))
 		}
 	})
+	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.gold('Makes the air blower shoot water particles'))
+		  text.add(2, Text.gold('as if there is a block of water in front of it.'))
+		  text.add(3, Text.gold(''))
+		  text.add(4, Text.red('Only usable on Industrial Air Blowers.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:mesh_dense', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.gold('Drastically lowers the minimal temperature for'))
+		  text.add(2, Text.gold('smoking and blasting, but makes heat drain faster.'))
+		  text.add(3, [Text.gold('The exact values are '),Text.yellow('55°C+ for smoking ')])
+		  text.add(4, [Text.gold('and '),Text.yellow('110°C+ for blasting'),Text.gold('.')])
+		  text.add(5, Text.gold(''))
+		  text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:mesh_haunted', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.gold('Turns passing hot air into soul flame,'))
+		  text.add(2, Text.gold('which allows for haunting recipes.'))
+		  text.add(3, Text.yellow('Keep in mind that the fan still has to be hot!'))
+		  text.add(4, [Text.gold('The exact minimal temperature is '),Text.yellow('110°C'),Text.gold('.')])
+		  text.add(5, Text.gold(''))
+		  text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:air_blower', (item, advanced, text) => {
+		if (tooltip.shift) {
+		  text.add(2, Text.aqua('Works like a powerful Encased Fan!'))
+		  text.add(3, Text.aqua('Powered by PNC air pressure instead of SU.'))
+		  text.add(4, Text.aqua('At 4.0+ bar, processing speed reaches double.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:industrial_air_blower', (item, advanced, text) => {
+		if (tooltip.shift) {
+		  text.add(2, Text.aqua('Works like a VERY powerful Encased Fan!'))
+		  text.add(3, Text.aqua('At 9.1+ bar, processing speed reaches quadruple.'))
+		  text.add(4, Text.aqua('Accepts meshes: type $blower_mesh in JEI for more info'))
+		  text.add(5, Text.gold('Can also be heated by any PNC heat source!'))
+		  text.add(6, [Text.gold('Exact minimal temps are '),Text.yellow('110°C+ for smoking ')])
+		  text.add(7, [Text.gold('and '),Text.yellow('330°C+ for blasting'),Text.gold('.')])
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:rotational_compressor', (item, advanced, text) => {
+		if (tooltip.shift) {
+		  text.add(2, Text.aqua('A very primitive air compressor.'))
+		  text.add(3, Text.aqua('Generates up to 20ml/t.'))
+		  text.add(4, Text.aqua('Doesn\'t support safety or speed upgrades.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:compressed_air_engine', (item, advanced, text) => {
+		if (tooltip.shift) {
+		  text.add(2, Text.aqua('A cheap motor based on PNC pressure.'))
+		  text.add(3, Text.aqua('Produces up to 1024su for 40ml/t.'))
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:mechanical_visor_upgrade', (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(1, Text.aqua('Adds the functionality of Engineer\'s Goggles.'))
+			text.add(2, Text.aqua('Alternatively, a similar effect can be accomplished by'))
+			text.add(3, Text.aqua('placing a pair of goggles into the curio head slot.'))
+		}
+	})
 	tooltip.addAdvanced('supplementaries:slingshot', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
