@@ -19,7 +19,8 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 
 • Moved texture replacements for several items (diamonds, redstone, wrought iron and others), including smooth font and GUI, to a resource pack
 • Completely reworked compact machine recipes, available easier and earlier
-• Bug notice: horses may not breed in overworld; bringing them into a compact cube allows them to breed there
+• Reworked bodyhygiene soap, making it much more effective. Supplementaries' soap can also now be used to clean yourself!
+• Added unique loot pool for all colors of sand, similar to red and pink sand. Also added sifting recipes for them
 • Fixed buggy textures in TFC Orewashing, removed random pixel applications
 • Added a few more extra tags for ores, minerals and such
 • Redistributed gemstone drops from ore washing
@@ -37,7 +38,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Changed the millstone recipe to require placing raw stone on a gearbox and not the other way around
 • Tweaked the strawberry ice cream recipe to not use chocolate
 • Removed drying mat recipe and made solar dryers cheaper. (Drying mats = lag heavy, solar = not)
-• Made PNC crude oil processable in the distillation tower, as opposed to it being completely useless
+• Made PNC crude oil usable in all recipes that only accepted IE crude oil
 • Itemfilters's filter items are now hidden in JEI
 • Made burlap cloth more costly when made from industrial hemp directly
 • Removed coral powder to mortar recipe as coral powder now has a better use as a filter
@@ -46,6 +47,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Added recipe for azalea leaves and their flowering variant
 • Added recipes for tuff, calcite, and dripstone blocks; replaced the old deepslate recipe with a new one
 • Tweaked existing health plaster recipes and added a new one
-• Changed recipe for the slingshot
+• Tweaked recipe for the slingshot
 • Fixed some nuggets as well as glass having odd melting points
 • Made drakkars craftable
+• Added IE and Mekanism ore processing for Beyond Earth's ores

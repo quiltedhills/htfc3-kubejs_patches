@@ -25,6 +25,14 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, Text.gold('Mine with a shovel'))
 		}
 	})
+	tooltip.addAdvanced('firmalife:drying_mat', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, Text.gold('No longer craftable due to causing lag.'))
+		  text.add(2, Text.gold('Make solar driers instead!'))
+		}
+	})
 	tooltip.addAdvanced('#forge:soap/weak', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
