@@ -20,7 +20,7 @@ If something goes wrong, please ping me (air) in a help channel and I will assis
 • Moved texture replacements for several items (diamonds, redstone, wrought iron and others), including smooth font and GUI, to a resource pack
 • Completely reworked compact machine recipes, available easier and earlier
 • Reworked bodyhygiene soap, making it much more effective. Supplementaries' soap can also now be used to clean yourself!
-• Added unique loot pool for all colors of sand, similar to red and pink sand. Also added sifting recipes for them
+• Added unique loot pools for all colors of sand, similar to red and pink sand. Also added sifting recipes for them
 • Fixed buggy textures in TFC Orewashing, removed random pixel applications
 • Added a few more extra tags for ores, minerals and such
 • Redistributed gemstone drops from ore washing
