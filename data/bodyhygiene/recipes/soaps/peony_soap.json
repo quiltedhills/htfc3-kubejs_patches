@@ -1,0 +1,40 @@
+{
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "bodyhygiene:soap_mold_brick"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "bodyhygiene:soap_mold_brick"
+      },
+      {
+        "item": "bodyhygiene:caustic_bland_bowl"
+      },
+      {
+        "item": "bodyhygiene:bottle_oil"
+      },
+      [
+        {
+          "item": "tfc:plant/pulsatilla"
+        },
+        {
+          "item": "tfc:plant/athyrium_fern"
+        }
+      ]
+    ],
+    "result": {
+      "item": "bodyhygiene:peony_soap",
+      "nbt": "{soap:4}"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "bodyhygiene:soap_mold_brick"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "bodyhygiene:soap_mold_brick"
+      },
+      {
+        "item": "bodyhygiene:caustic_bland_bowl"
+      },
+      {
+        "item": "bodyhygiene:bottle_oil"
+      },
+      [
+        {
+          "item": "tfc:plant/primrose"
+        },
+        {
+          "item": "tfc:plant/yucca"
+        }
+      ]
+    ],
+    "result": {
+      "item": "bodyhygiene:lily_of_the_valley_soap",
+      "nbt": "{soap:4}"
+    }
+  }
+}

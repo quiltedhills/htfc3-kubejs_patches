@@ -25,6 +25,26 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, Text.gold('Mine with a shovel'))
 		}
 	})
+	tooltip.addAdvanced('#forge:soap/weak', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, [Text.gold('Restores '),Text.yellow('5 points'),Text.gold(' (out of 10) of the dirtiness meter.')])
+		  text.add(2, Text.gold('Two is enough to fully clean yourself.'))
+		  text.add(3, Text.yellow(''))
+		  text.add(4, Text.yellow('Right click to use!'))
+		}
+	})
+	tooltip.addAdvanced('#forge:soap/strong', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+		  text.add(1, [Text.yellow('Completely resets'),Text.gold(' the dirtiness meter.')])
+		  text.add(2, Text.gold('A newly crafted bar has four uses.'))
+		  text.add(3, Text.yellow(''))
+		  text.add(4, Text.yellow('Right click to use!'))
+		}
+	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])

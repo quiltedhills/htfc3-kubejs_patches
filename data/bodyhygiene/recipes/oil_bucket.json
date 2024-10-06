@@ -13,11 +13,11 @@
     }
   ],
   "container": {
-    "item": "minecraft:bucket"
+    "item": "minecraft:glass_bottle"
   },
   "result": {
-    "item": "bodyhygiene:oil_bucket"
+    "item": "bodyhygiene:bottle_oil"
   },
   "experience": 0.25,
-  "cookingtime": 4800
+  "cookingtime": 2400
 }
