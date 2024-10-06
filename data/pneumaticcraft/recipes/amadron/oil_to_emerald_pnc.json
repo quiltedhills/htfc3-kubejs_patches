@@ -1,10 +1,10 @@
 {
   "type": "pneumaticcraft:amadron",
-  "id": "pneumaticcraft:amadron/oil_to_emerald_ie",
+  "id": "pneumaticcraft:amadron/oil_to_emerald_pnc",
   "input": {
     "type": "FLUID",
-    "id": "immersivepetroleum:crudeoil",
-    "amount": 5000
+    "id": "pneumaticcraft:oil",
+    "amount": 6000
   },
   "output": {
     "type": "ITEM",
