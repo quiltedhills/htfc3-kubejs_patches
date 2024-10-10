@@ -10,6 +10,16 @@ onEvent('recipes', event => {
 	event.replaceInput({mod: 'firmalife'}, 'minecraft:glass', '#forge:2panes')
 	event.replaceInput({mod: 'glassential'}, 'minecraft:glass', '#forge:glass')
 	event.replaceInput({mod: 'pneumaticcraft'}, 'minecraft:glowstone', 'mekanismgenerators:solar_generator')
+	/// by ash
+	//event.replaceInput({mod: 'rftoolsbase'}, 'minecraft:redstone', 'mekanism:pellet_antimatter')
+	event.replaceInput({mod: 'rftoolsbase'}, 'minecraft:diamond', 'mekanism:pellet_polonium')
+	event.replaceInput({mod: 'rftoolsbase'}, 'minecraft:paper', 'pneumaticcraft:plastic')
+	//event.replaceInput({mod: 'rftoolsdim'}, 'minecraft:redstone', 'mekanism:pellet_antimatter')
+	event.replaceInput({mod: 'rftoolsdim'}, 'minecraft:diamond', 'mekanism:pellet_polonium')
+	event.replaceInput({mod: 'rftoolsdim'}, 'minecraft:ender_pearl', 'waystones:warp_stone')
+	event.replaceInput({mod: 'rftoolsdim'}, 'minecraft:paper', 'pneumaticcraft:plastic')
+	event.replaceInput({mod: 'rftoolsdim'}, 'minecraft:enchanting_table', 'twilightforest:maze_map_focus')
+	event.replaceInput({mod: 'rftoolsutility'}, 'minecraft:ender_pearl', 'waystones:warp_stone')
 	//general shaped
     event.replaceInput({type: 'minecraft:crafting_shaped'}, 'immersiveengineering:lantern', 'tfc:metal/lamp/copper')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:torch', 'tfc:torch')

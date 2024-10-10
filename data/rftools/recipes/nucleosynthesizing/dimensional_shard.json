@@ -1,0 +1,7 @@
+{
+    "type":"mekanism:nucleosynthesizing",
+    "itemInput":{"ingredient":{"item":"kubejs:magic_crystal"}},
+    "gasInput":{"amount":10,"gas":"mekanism:antimatter"},
+    "output":{"item":"rftoolsbase:dimensionalshard"},
+    "duration":200
+}

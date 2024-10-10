@@ -1,6 +1,12 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		// by ash
+		{id: 'rftoolsbase:machine_frame'},
+		{id: 'rftoolsbase:dimensionalshard'},
+		{id: 'rftoolsbase:infused_diamond'},
+		{id: 'rftoolsbase:infused_enderpearl'},
+	
 		{id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli'},
 		{id: 'compressedcreativity:mixing/brass_coated_upgrade_matrix'},
 		{id: 'compressedcreativity:crafting/mechanical_visor_upgrade'}, // these are too long and mess item descriptions in-game.
