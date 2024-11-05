@@ -1,28 +1,49 @@
 // priority: 0
+const pollution_filter_map = {
+	'dust': {
+		'low': ['htm:plant_fabric'],
+		'medium': ['minecraft:paper','tfc:burlap_cloth'],
+		'high': ['tfc:silk_cloth','tfc:wool_cloth']
+	},
+	'carbon': {
+		'low': ['minecraft:white_wool','minecraft:orange_wool','minecraft:magenta_wool','minecraft:light_blue_wool','minecraft:yellow_wool','minecraft:lime_wool','minecraft:pink_wool','minecraft:gray_wool','minecraft:light_gray_wool','minecraft:cyan_wool','minecraft:purple_wool','minecraft:blue_wool','minecraft:brown_wool','minecraft:green_wool','minecraft:red_wool','minecraft:black_wool'],
+		'medium': ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'],
+		'high': ['coralstfc:coral_powder']
+	},
+	'sulfur': {
+		'medium': ['minecraft:charcoal'],
+		'high': ['minecraft:jungle_leaves','minecraft:oak_leaves','minecraft:spruce_leaves','minecraft:dark_oak_leaves','minecraft:acacia_leaves','minecraft:birch_leaves','minecraft:azalea_leaves','minecraft:flowering_azalea_leaves','tfc:wood/leaves/acacia','tfc:wood/leaves/ash','tfc:wood/leaves/aspen','tfc:wood/leaves/birch','tfc:wood/leaves/blackwood','tfc:wood/leaves/chestnut','tfc:wood/leaves/douglas_fir','tfc:wood/leaves/hickory','tfc:wood/leaves/kapok','tfc:wood/leaves/maple','tfc:wood/leaves/oak','tfc:wood/leaves/palm','tfc:wood/leaves/pine','tfc:wood/leaves/rosewood','tfc:wood/leaves/sequoia','tfc:wood/leaves/spruce','tfc:wood/leaves/sycamore','tfc:wood/leaves/white_cedar','tfc:wood/leaves/willow','twilightforest:rainbow_oak_leaves','twilightforest:twilight_oak_leaves','twilightforest:canopy_leaves','twilightforest:mangrove_leaves','twilightforest:dark_leaves','twilightforest:time_leaves','twilightforest:transformation_leaves','twilightforest:mining_leaves','twilightforest:sorting_leaves','twilightforest:thorn_leaves','twilightforest:beanstalk_leaves','myrtrees:rubberwood_leaves','tconstruct:earth_slime_leaves','tconstruct:sky_slime_leaves','tconstruct:ender_slime_leaves',		'tfc:plant/cherry_leaves','tfc:plant/green_apple_leaves','tfc:plant/lemon_leaves','tfc:plant/olive_leaves','tfc:plant/orange_leaves','tfc:plant/peach_leaves','tfc:plant/plum_leaves','tfc:plant/red_apple_leaves']
+	}
+}
+//#minecraft:wool = ['minecraft:white_wool','minecraft:orange_wool','minecraft:magenta_wool','minecraft:light_blue_wool','minecraft:yellow_wool','minecraft:lime_wool','minecraft:pink_wool','minecraft:gray_wool','minecraft:light_gray_wool','minecraft:cyan_wool','minecraft:purple_wool','minecraft:blue_wool','minecraft:brown_wool','minecraft:green_wool','minecraft:red_wool','minecraft:black_wool']
+//#forge:kelp = ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp']
+//#minecraft:leaves = ['minecraft:jungle_leaves','minecraft:oak_leaves','minecraft:spruce_leaves','minecraft:dark_oak_leaves','minecraft:acacia_leaves','minecraft:birch_leaves','minecraft:azalea_leaves','minecraft:flowering_azalea_leaves','tfc:wood/leaves/acacia','tfc:wood/leaves/ash','tfc:wood/leaves/aspen','tfc:wood/leaves/birch','tfc:wood/leaves/blackwood','tfc:wood/leaves/chestnut','tfc:wood/leaves/douglas_fir','tfc:wood/leaves/hickory','tfc:wood/leaves/kapok','tfc:wood/leaves/maple','tfc:wood/leaves/oak','tfc:wood/leaves/palm','tfc:wood/leaves/pine','tfc:wood/leaves/rosewood','tfc:wood/leaves/sequoia','tfc:wood/leaves/spruce','tfc:wood/leaves/sycamore','tfc:wood/leaves/white_cedar','tfc:wood/leaves/willow','twilightforest:rainbow_oak_leaves','twilightforest:twilight_oak_leaves','twilightforest:canopy_leaves','twilightforest:mangrove_leaves','twilightforest:dark_leaves','twilightforest:time_leaves','twilightforest:transformation_leaves','twilightforest:mining_leaves','twilightforest:sorting_leaves','twilightforest:thorn_leaves','twilightforest:beanstalk_leaves','myrtrees:rubberwood_leaves','tconstruct:earth_slime_leaves','tconstruct:sky_slime_leaves','tconstruct:ender_slime_leaves']
+
 onEvent('item.tooltip', tooltip => {
-	['dust','carbon','sulfur'].forEach(pollution_type => {
-		['low','medium','high'].forEach(filter_tier =>  {
-			tooltip.addAdvanced(`#adpother:filters/${pollution_type}/${filter_tier}`, (item, advanced, text) => {
-				if (!tooltip.shift) {
-				  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-				} else {
-					text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow()])
-					text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
-					text.add(3, Text.gold("using pumps, vents and chimneys"))
-				}
-	})})})
+	Object.keys(pollution_filter_map).forEach(pollution_type => {
+		Object.keys(pollution_filter_map[pollution_type]).forEach(filter_tier =>  {
+			pollution_filter_map[pollution_type][filter_tier].forEach(filter_item => {
+				tooltip.addAdvanced(filter_item, (item, advanced, text) => {
+					if (!tooltip.shift) {
+					  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+					} else {
+					  text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow()])
+					  text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
+					  text.add(3, Text.gold("using pumps, vents and chimneys"))
+					}
+	})})})})
 	tooltip.addAdvanced('minecraft:charcoal', (item, advanced, text) => {
 // the "hold shift" tooltip here is commented out as it's added by pollution filter descriptions
 		//if (!tooltip.shift) {
 		//	text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		//} else {
 		if (tooltip.shift) {
-			text.add(4, Text.of(''))
-			text.add(5, Text.of('Need charcoal?'))
-			text.add(6, [Text.of('Place logs into a hole in a stack with ').gold(), Text.of('Shift + Right Click').yellow()])
-			text.add(7, Text.gold('Use a Fire Starter to burn it and quickly cover with a solid block'))
-			text.add(8, Text.gold('Wait patiently - until there is NO smoke'))
-			text.add(9, Text.gold('Mine with a shovel'))
+			text.add(Text.of(''))
+			text.add(Text.of('Need charcoal?'))
+			text.add([Text.of('Place logs into a hole in a stack with ').gold(), Text.of('Shift + Right Click').yellow()])
+			text.add(Text.gold('Use a Fire Starter to burn it and quickly cover with a solid block'))
+			text.add(Text.gold('Wait patiently - until there is NO smoke'))
+			text.add(Text.gold('Mine with a shovel'))
 		}
 	})
 	tooltip.addAdvanced('firmalife:drying_mat', (item, advanced, text) => {
@@ -33,24 +54,44 @@ onEvent('item.tooltip', tooltip => {
 		  text.add(2, Text.gold('Make solar driers instead!'))
 		}
 	})
-	tooltip.addAdvanced('#forge:soap/weak', (item, advanced, text) => {
+	tooltip.addAdvanced([//#forge:soap/weak
+		'supplementaries:soap'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-		  text.add(1, [Text.gold('Restores '),Text.yellow('5 points'),Text.gold(' (out of 10) of the dirtiness meter.')])
-		  text.add(2, Text.gold('Two is enough to fully clean yourself.'))
-		  text.add(3, Text.yellow(''))
-		  text.add(4, Text.yellow('Right click to use!'))
+		text.add(1, [Text.gold('Restores '),Text.yellow('5 points'),Text.gold(' (out of 10) of the dirtiness meter.')])
+		text.add(2, Text.gold('Two is enough to fully clean yourself.'))
+		text.add(3, Text.yellow(''))
+		text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
-	tooltip.addAdvanced('#forge:soap/strong', (item, advanced, text) => {
+	tooltip.addAdvanced([//#forge:soap/strong
+		'bodyhygiene:dandelion_soap',
+		'bodyhygiene:poppy_soap',
+		'bodyhygiene:blue_orchid_soap',
+		'bodyhygiene:allium_soap',
+		'bodyhygiene:azure_bluet_soap',
+		'bodyhygiene:red_tulip_soap',
+		'bodyhygiene:orange_tulip_soap',
+		'bodyhygiene:white_tulip_soap',
+		'bodyhygiene:pink_tulip_soap',
+		'bodyhygiene:oxeye_daisy_soap',
+		'bodyhygiene:cornflower_soap',
+		'bodyhygiene:lily_of_the_valley_soap',
+		'bodyhygiene:wither_rose_soap',
+		'bodyhygiene:spore_blossom_soap',
+		'bodyhygiene:sunflower_soap',
+		'bodyhygiene:lilac_soap',
+		'bodyhygiene:rose_bush_soap',
+		'bodyhygiene:peony_soap'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-		  text.add(1, [Text.yellow('Completely resets'),Text.gold(' the dirtiness meter.')])
-		  text.add(2, Text.gold('A newly crafted bar has four uses.'))
-		  text.add(3, Text.yellow(''))
-		  text.add(4, Text.yellow('Right click to use!'))
+		text.add(1, [Text.yellow('Completely resets'),Text.gold(' the dirtiness meter.')])
+		text.add(2, Text.gold('A newly crafted bar has four uses.'))
+		text.add(3, Text.yellow(''))
+		text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
@@ -132,11 +173,13 @@ onEvent('item.tooltip', tooltip => {
 		  text.add(2, Text.gold('Deals no damage and is completely harmless'))
 		}
 	})
-	tooltip.addAdvanced(['immersiveengineering:blastbrick',
-						 'immersiveengineering:blastbrick_reinforced',
-						 'immersiveengineering:blastfurnace_preheater',
-						 'immersiveengineering:blast_furnace',
-						 'immersiveengineering:advanced_blast_furnace'], (item, advanced, text) => {
+	tooltip.addAdvanced([
+		'immersiveengineering:blastbrick',
+		'immersiveengineering:blastbrick_reinforced',
+		'immersiveengineering:blastfurnace_preheater',
+		'immersiveengineering:blast_furnace',
+		'immersiveengineering:advanced_blast_furnace'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
@@ -243,16 +286,21 @@ onEvent('item.tooltip', tooltip => {
 			text.add(3, Text.gold('Very useful when diving'))
 		}
 	})
-	tooltip.addAdvanced('#hordes:infection_cures', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold(' when you get infection Zombies' ))
-			text.add(2, Text.gold(' it can save your life this item ' ))
-			text.add(2, Text.gold(' use it to heal from infection '))
-		}
+	tooltip.addAdvanced([//#hordes:infection_cures
+		'minecraft:golden_apple',
+		'kubejs:silver_carrot',
+		'kubejs:silver_apple',
+		'minecraft:golden_carrot',
+		'farmersdelight:squid_ink_pasta',
+		'minecraft:enchanted_golden_apple'
+	], (item, advanced, text) => {
+		text.add(1, Text.gold('Cures Zombie Infection'))
 	})
-	tooltip.addAdvanced('#forge:space_ores', (item, advanced, text) => {
+	tooltip.addAdvanced([//#forge:space_ores
+		'beyond_earth:raw_desh',
+		'beyond_earth:raw_ostrum',
+		'beyond_earth:raw_calorite'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
@@ -260,14 +308,17 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.gold('You will only find them on the '), Text.red('Moon and other planets' )])
 		}
 	})
-	tooltip.addAdvanced('#tfc:small_fishing_bait', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('You can use it as bait while fishing' ))
-		}
-	})
-	tooltip.addAdvanced('#forge:dead_animal', (item, advanced, text) => {
+	tooltip.addAdvanced([//#forge:dead_animal
+		'butchersdelight:dead_cow',
+		'butchersdelight:deadsheep',
+		'butchersdelight:deadpig',
+		'butchersdelight:deadgoat',
+		'butchersdelight:deadhoglin',
+		'butchersdelight:deadchiken',
+		'butchersdelight:deadrabbitbrown',
+		'butchersdelight:deadllama',
+		'butchersdelight:deadstrider'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
@@ -279,7 +330,11 @@ onEvent('item.tooltip', tooltip => {
 			//TODO: update if there is another way to bake the whole animal
 		}
 	})
-	tooltip.addAdvanced('#tfc:drink_items', (item, advanced, text) => {
+	tooltip.addAdvanced([//#tfc:drink_items
+		'tfc:ceramic/jug',
+		'waterflasks:leather_flask',
+		'waterflasks:iron_flask'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
@@ -288,7 +343,11 @@ onEvent('item.tooltip', tooltip => {
 			text.add(3, Text.gold('Drink only boiled, purified or mineral water' ))
 		}
 	})
-	tooltip.addAdvanced('#tfc:lamp_fuel', (item, advanced, text) => {
+	tooltip.addAdvanced([//#tfc:lamp_fuel
+		'tfc:bucket/tallow',
+		'tfc:bucket/olive_oil',
+		'immersiveengineering:creosote_bucket'
+	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
