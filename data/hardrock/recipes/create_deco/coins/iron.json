@@ -1,0 +1,10 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "minecraft:iron_nugget"},
+  "transitionalItem": {"item": "minecraft:iron_nugget"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item": "minecraft:iron_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "minecraft:iron_nugget"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:iron_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:iron_coin"}],"keepHeldItem": true}],
+  "results": [{"item": "createdeco:iron_coin","count":1}],
+  "loops": 1
+}
