@@ -1,0 +1,16 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "type": "tfc:anvil",
+    "input": {
+      "item": "tfc:metal/sheet/copper"
+    },
+    "result": {
+      "item": "createdeco:copper_door"
+    },
+    "tier": 1,
+    "rules": [
+      "hit_last",
+      "draw_not_last",
+      "punch_not_last"
+    ]
+  }
