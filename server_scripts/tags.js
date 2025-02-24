@@ -22,7 +22,8 @@ onEvent('tags.blocks', event => {
 		'#tfc:rock/raw'
 	])
 
-
+	
+	event.add('minecraft:trapdoors', 'firmalife:sealed_trapdoor')
 	event.add('tfc:candles', [
 		'tfc:candle',
 		/tfc:candle\/.*/

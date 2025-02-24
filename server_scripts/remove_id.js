@@ -1,6 +1,9 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'tconstruct:common/materials/rose_gold_ingot_from_nuggets'},
+		{id: 'tconstruct:common/materials/rose_gold_ingot_from_block'},
+
 		{id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli'},
 		{id: 'compressedcreativity:mixing/brass_coated_upgrade_matrix'},
 		{id: 'compressedcreativity:crafting/mechanical_visor_upgrade'}, // these are too long and mess item descriptions in-game.

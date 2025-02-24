@@ -38,3 +38,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed a recipe accepting rotten food <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Improved item naming for some easy-to-confuse items <br/>
+• Tweaked nucleosynthesizer recipes <br/>
+• Fixed sealed trapdoors not letting pollution through <br/>
