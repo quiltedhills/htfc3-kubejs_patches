@@ -1,13 +1,42 @@
 // priority: 10
 
+onEvent('tags.entity_types', event => {
+	event.add('untamedwilds:cage_trap_blacklist', [
+		'tfchomestead:villager'
+	])
+})
+
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('hardrock:non_choppable', [
+		'#minecraft:logs'
+	])
+	event.remove('hardrock:non_choppable', [
+		'myrtrees:rubberwood_log',
+		'myrtrees:filled_rubberwood_log'
+	])
 	event.add('chiselsandbits:chiselable/blocked', [
 		'#forge:ores',
 		'#minecraft:water',
 		'#minecraft:lava',
 		'#tfc:rock/raw'
 	])
+
+
+	event.add('tfc:candles', [
+		'tfc:candle',
+		/tfc:candle\/.*/
+	])
+	event.add('tfc:torches', [
+		'tfc:torch',
+		'tfc:wall_torch'
+	])
+	event.add('tfc:non_permanent_light_source', [
+		'#tfc:candles',
+		'#tfc:lamps',
+		'#tfc:torches'
+	])
+	event.add('functionalstorage:drawers', /^functionalstorage:.*_[124]$/)
 	event.add('tfc:can_be_snow_piled', [
 		//'geolosys:lignite_ore_sample',
 	])

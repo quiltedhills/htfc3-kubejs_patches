@@ -1,3 +1,5 @@
 config
 exported
+probe
+jsconfig.json
 README.txt

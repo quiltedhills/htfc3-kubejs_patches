@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "tag": "forge:eggs"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:molten_iron_quartz",
+    "amount": 10000
+  },
+  "result": "minecraft:wolf_spawn_egg",
+  "cooling_time": 24000
+}
