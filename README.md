@@ -36,5 +36,5 @@ Please feel free to reach out to me on discord for any questions!
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Fixed a recipe accepting rotten food <br/>
-• Fixed tuyere sequence recipe conflict <br/>
-• Improve item naming for some items <br/>
+• Fixed a conflict with the tuyere sequenced recipe <br/>
+• Improved item naming for some easy-to-confuse items <br/>
