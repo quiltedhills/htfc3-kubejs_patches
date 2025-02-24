@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "n",
+      "t",
+      "p"
+    ],
+    "key": {
+      "n": {
+        "item": "mekanismgenerators:solar_panel"
+      },
+      "t": {
+        "item": "minecraft:green_stained_glass"
+      },
+      "p": {
+        "item": "createdeco:netherite_sheet"
+      }
+    },
+    "result": {
+      "item": "createdeco:green_netherite_lamp"
+    }
+  }
