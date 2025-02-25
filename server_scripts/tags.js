@@ -230,6 +230,10 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:apples/no_vanilla', [
+		'tfc:food/green_apple',
+		'tfc:food/red_apple'
+	])
 	event.add('forge:soap', [
 		'#forge:soap/weak',
 		'#forge:soap/strong'
