@@ -1,0 +1,14 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {"item": "kubejs:misc_mats/andesite_alloy/double_ingot"},
+    "transitionalItem": {"item":"kubejs:misc_mats/andesite_alloy/double_ingot"},
+    "sequence": [
+      {"type": "create:filling","ingredients": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "kubejs:misc_mats/andesite_alloy/sheet"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}],"results": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}],"results": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}],"results": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}],"results": [{"item":"kubejs:misc_mats/andesite_alloy/double_ingot"}]}
+      ],
+    "results": [{"item": "kubejs:misc_mats/andesite_alloy/sheet","count":1}],
+    "loops": 4
+  }

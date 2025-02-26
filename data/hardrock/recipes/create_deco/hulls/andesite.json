@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " m ",
+      "m m",
+      " m "
+    ],
+    "key": {
+      "m": {
+        "item": "kubejs:misc_mats/andesite_alloy/sheet"
+      }
+    },
+    "result": {
+      "item": "createdeco:andesite_hull",
+      "count": 2
+    }
+  }

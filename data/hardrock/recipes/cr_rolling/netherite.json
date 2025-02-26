@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/netherite"
+	},
+	"result": {
+		"item": "kubejs:misc_mats/netherite/rod",
+		"count": 2
+	}
+}

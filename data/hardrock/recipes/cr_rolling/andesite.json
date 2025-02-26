@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/andesite_alloy"
+	},
+	"result": {
+		"item": "kubejs:misc_mats/andesite_alloy/rod",
+		"count": 2
+	}
+}

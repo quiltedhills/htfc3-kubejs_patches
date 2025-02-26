@@ -1,0 +1,14 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "type": "tfc:welding",
+    "first_input": {
+      "tag": "forge:ingots/netherite"
+    },
+    "second_input": {
+      "tag": "forge:ingots/netherite"
+    },
+    "tier": 5,
+    "result": {
+      "item": "kubejs:misc_mats/netherite/double_ingot"
+    }
+  }

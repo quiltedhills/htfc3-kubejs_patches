@@ -1,0 +1,14 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {"item": "kubejs:misc_mats/netherite/double_ingot"},
+    "transitionalItem": {"item":"kubejs:misc_mats/netherite/double_ingot"},
+    "sequence": [
+      {"type": "create:filling","ingredients": [{"item":"kubejs:misc_mats/netherite/double_ingot"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "createdeco:netherite_sheet"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/netherite/double_ingot"}],"results": [{"item":"kubejs:misc_mats/netherite/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/netherite/double_ingot"}],"results": [{"item":"kubejs:misc_mats/netherite/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/netherite/double_ingot"}],"results": [{"item":"kubejs:misc_mats/netherite/double_ingot"}]},
+      {"type": "create:pressing","ingredients": [{"item":"kubejs:misc_mats/netherite/double_ingot"}],"results": [{"item":"kubejs:misc_mats/netherite/double_ingot"}]}
+      ],
+    "results": [{"item": "createdeco:netherite_sheet","count":1}],
+    "loops": 4
+  }
