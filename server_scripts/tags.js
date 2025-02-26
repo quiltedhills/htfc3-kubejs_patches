@@ -1614,6 +1614,15 @@ onEvent('tags.items', event => {
 	event.add('forge:double_ingots', [
 		'kubejs:compressed_double_ingot'
 	]),
+	event.add('forge:double_ingots/andesite_alloy', [
+		'kubejs:misc_mats/andesite_alloy/double_ingot'
+	]),
+	event.add('forge:sheets/andesite_alloy', [
+		'kubejs:misc_mats/andesite_alloy/sheet'
+	]),
+	event.add('forge:double_ingots/netherite', [
+		'kubejs:misc_mats/netherite/double_ingot'
+	]),
 	event.add('forge:ingots', [
 		'refinedstorage:quartz_enriched_iron'
 	]),

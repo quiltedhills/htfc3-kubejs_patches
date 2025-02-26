@@ -5,5 +5,10 @@
   "item.kubejs.metal.double_sheet.constantan": "Constantan Double Sheet",
   "item.kubejs.metal.double_sheet.aluminum": "Aluminum Double Sheet",
   "item.kubejs.metal.double_sheet.lead": "Lead Double Sheet",
-  "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet"
+  "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet",
+  "item.kubejs.misc_mats.andesite_alloy.rod": "Andesite Alloy Rod",
+  "item.kubejs.misc_mats.andesite_alloy.sheet": "Andesite Alloy Sheet",
+  "item.kubejs.misc_mats.andesite_alloy.double_ingot": "Andesite Alloy Double Ingot",
+  "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
+  "item.kubejs.misc_mats.netherite.double_ingot": "Netherite Double Ingot"
 }
