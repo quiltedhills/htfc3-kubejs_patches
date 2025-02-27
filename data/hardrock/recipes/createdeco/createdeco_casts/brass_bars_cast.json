@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:casting_table",
+    "fluid": {
+      "tag": "forge:molten_brass",
+      "amount": 25
+    },
+    "result": "createdeco:brass_bars",
+    "cooling_time": 33
+  }

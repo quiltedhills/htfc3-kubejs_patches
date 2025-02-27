@@ -1,0 +1,13 @@
+{
+    "type": "tfc:welding",
+    "first_input": {
+      "item": "createdeco:zinc_bars"
+    },
+    "second_input": {
+      "item": "createdeco:zinc_bars"
+    },
+    "tier": 1,
+    "result": {
+      "item": "createdeco:zinc_support"
+    }
+  }

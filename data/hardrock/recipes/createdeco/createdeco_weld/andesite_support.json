@@ -1,0 +1,13 @@
+{
+    "type": "tfc:welding",
+    "first_input": {
+      "item": "createdeco:andesite_bars"
+    },
+    "second_input": {
+      "item": "createdeco:andesite_bars"
+    },
+    "tier": 1,
+    "result": {
+      "item": "createdeco:andesite_support"
+    }
+  }

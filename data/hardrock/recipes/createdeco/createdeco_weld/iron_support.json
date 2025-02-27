@@ -1,0 +1,13 @@
+{
+    "type": "tfc:welding",
+    "first_input": {
+      "item": "minecraft:iron_bars"
+    },
+    "second_input": {
+      "item": "minecraft:iron_bars"
+    },
+    "tier": 3,
+    "result": {
+      "item": "createdeco:iron_support"
+    }
+  }

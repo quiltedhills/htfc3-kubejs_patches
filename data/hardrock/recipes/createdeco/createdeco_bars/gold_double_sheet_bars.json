@@ -1,0 +1,16 @@
+{
+    "type": "tfc:anvil",
+    "input": {
+      "item": "tfc:metal/double_sheet/gold"
+    },
+    "result": {
+      "item": "tconstruct:gold_bars",
+      "count": 16
+    },
+    "tier": 1,
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  }

@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:casting_table",
+    "fluid": {
+      "tag": "tfc:cast_iron",
+      "amount": 25
+    },
+    "result": "createdeco:cast_iron_bars",
+    "cooling_time": 33
+  }
