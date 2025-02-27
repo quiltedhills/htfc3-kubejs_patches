@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/plate"
+  },
+  "fluid": {
+    "tag": "forge:molten_netherite",
+    "amount": 180
+  },
+  "result": {
+    "item": "createdeco:netherite/sheet"
+  },
+  "cooling_time": 148
+}

@@ -3,7 +3,6 @@
     "cast": {
       "tag": "tconstruct:casts/single_use/rod"
     },
-    "cast_consumed": true,
     "fluid": {
       "tag": "forge:molten_netherite",
       "amount": 50

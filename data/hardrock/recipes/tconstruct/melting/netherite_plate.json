@@ -1,14 +1,5 @@
 {
     "type": "tconstruct:melting",
-    "conditions": [
-      {
-        "value": {
-          "tag": "forge:plates/netherite",
-          "type": "forge:tag_empty"
-        },
-        "type": "forge:not"
-      }
-    ],
     "ingredient": {
       "tag": "forge:plates/netherite"
     },
