@@ -36,6 +36,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
+• Added recipes for TFC ore blocks <br/>
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Fixed a few recipes accepting rotten food <br/>
@@ -43,4 +44,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Improved item naming for some easy-to-confuse items <br/>
 • Tweaked nucleosynthesizer recipes <br/>
+• Tweaked Ex Nihilo's hammers <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
