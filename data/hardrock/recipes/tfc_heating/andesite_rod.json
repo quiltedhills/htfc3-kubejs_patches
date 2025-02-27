@@ -1,0 +1,12 @@
+{
+    "__comment__": "This file was created by tfch",
+    "type": "tfc:heating",
+    "ingredient": {
+      "item": "kubejs:misc_mats/andesite_alloy/rod"
+    },
+    "result_fluid": {
+      "fluid": "kubejs:andesite_alloy",
+      "amount": 45
+    },
+    "temperature": 930
+  }
