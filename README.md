@@ -49,6 +49,7 @@ Please feel free to reach out to me on discord for any questions!
 • Blacklisted villagers from cage traps <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>
+• Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
 
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
