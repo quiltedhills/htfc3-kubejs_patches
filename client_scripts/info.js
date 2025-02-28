@@ -376,26 +376,159 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.gold('Falling onto the ground, degrades it and makes it barren, turning it into gravel' ))
-			text.add(2, Text.gold('Dust can be filtered with vacuum cleaners or in chimney filters with paper, cloths and/or fabric' ))
-		}
-	})
-	tooltip.addAdvanced('adpother:sulfur', (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('Pollutes the air to a large extent, causing acid rain and dying plants' ))
-			text.add(2, Text.gold('Sulfur can be filtered in chimney filters filled with wool ' ))
+			text.add(1, Text.gold('Released by millstones, saws, crushers and similar machines.' ))
+			text.add(2, Text.gold('Degrades the ground when absorbed by it.' ))
+			text.add(3, Text.gold('Explodes when in high concentration with a fire source nearby.' ))
+			text.add(4, [Text.of('Type ').gold(), Text.of('$filters/dust').yellow(), Text.of(' into the search bar for a full list of filters!').gold()])
 		}
 	})
 	tooltip.addAdvanced('adpother:carbon', (item, advanced, text) => {
 		if (!tooltip.shift) {
 		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.gold('Pollutes the air to a large extent, causing excessive grass growth' ))
-			text.add(2, Text.gold('Carbon can be filtered in chimney filters filled with leaves or thatch' ))
+			text.add(1, Text.gold('Released from fire sources and heavy machinery along with sulfur.' ))
+			text.add(2, Text.gold('Large buildups cause severe debuffs to living beings.' ))
+			text.add(3, Text.gold('Explodes when in high concentration with a fire source nearby.' ))
+			text.add(4, [Text.of('Type ').gold(), Text.of('$filters/carbon').yellow(), Text.of(' into the search bar for a full list of filters!').gold()])
 		}
 	})
+	tooltip.addAdvanced('adpother:sulfur', (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Released from fire sources and heavy machinery along with carbon.' ))
+			text.add(2, Text.gold('Large buildups cause severe debuffs to living beings.' ))
+			text.add(3, Text.gold('Explodes when in high concentration with a fire source nearby.' ))
+			text.add(4, [Text.of('Type ').gold(), Text.of('$filters/sulfur').yellow(), Text.of(' into the search bar for a full list of filters!').gold()])
+		}
+	})
+	
+	tooltip.addAdvanced([
+		/^adpother:.+_respirator$/,
+		'beyond_earth:oxygen_mask',
+		'beyond_earth:netherite_oxygen_mask',
+		'create:diving_helmet',
+		'create:netherite_diving_helmet',
+		'mekanism:hazmat_mask',
+		'mekanism:scuba_mask'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
+			text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			text.add(4, [Text.of('Prevents eating and some right-click interactions').yellow(), Text.of(',').gold()])
+			text.add(5, Text.gold('no matter if it has filters installed or not.'))
+		}
+	})
+	tooltip.addAdvanced([
+		'mekanism:mekasuit_helmet',
+		'pneumaticcraft:pneumatic_helmet'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		  } else {
+			  text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			  text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
+			  text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			  text.add(4, Text.gold('Unlike other respirator helmets,'))
+			  text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating!').gold()])
+		  }
+	})
+	tooltip.addAdvanced([
+		/^adpother:.+_vacuum_bag$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Equip this to collect pollution sucked in with a ').gold(), Text.of('Vacuum Tube').yellow(), Text.of('!').gold()])
+			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
+			text.add(3, [Text.of('Applying a filter to a bag requires ').gold(), Text.of('two filter items').yellow(), Text.of(' per use.').gold()])
+			text.add(4, Text.gold('Multiple different filters can be active at once.'))
+		}
+	})
+	tooltip.addAdvanced([
+		/^adpother:.+_vacuum_tube$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Lets you ').gold(), Text.of('collect pollution manually').yellow(), Text.of('!').gold()])
+			text.add(2, [Text.of('You will need a ').gold(), Text.of('vacuum bag').yellow(), Text.of(' to use it.').gold()])
+			text.add(3, Text.gold('If your vacuum bag does not have a matching filter,'))
+			text.add(4, Text.gold('or the filter runs out, or you don\'t have a bag equipped at all,'))
+			text.add(5, Text.gold('it will simply move the pollution to your feet.'))
+		}
+	})
+	tooltip.addAdvanced([
+		/^adpother:.+_filter_frame$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Absorbs pollution routed into it from below').gold()])
+			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('Pump').yellow(), Text.of(' directly.').gold()])
+			text.add(3, Text.gold('Has a storage for filter items. Can only use one type at once.'))
+			text.add(4, Text.gold('Filters degrade much faster than in respirators or vacuum bags.'))
+			text.add(5, Text.gold(''))
+		}
+	})
+	tooltip.addAdvanced([
+		/^adchimneys:.+_chimney$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('vertically').yellow(), Text.of('! Up, to be more specific.').gold()])
+			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('pump').yellow(), Text.of(' or ').gold(), Text.of('vent').yellow(), Text.of('.').gold()])
+			text.add(3, Text.gold('A vent can transfer pollution into a chimney from its side or bottom.'))
+			text.add(4, Text.gold('Has no range limit, since it lets gravity do the work.'))
+		}
+	})
+	tooltip.addAdvanced([
+		/^adchimneys:.+_vent$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('horizontally').yellow(), Text.of('!').gold()])
+			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('chimney').yellow(), Text.of('.').gold()])
+			text.add(3, [Text.of('Captures nearby pollution when powered by a ').gold(), Text.of('Pump').yellow(), Text.of('.').gold()])
+			text.add(4, Text.gold('Can pull pollution from up to three blocks away, and only in a straight line. No diagonals.'))
+			text.add(5, [Text.of('Loses pump power when over ').gold(), Text.of('30 blocks').yellow(), Text.of(' away from a pump.').gold()])
+		}
+	})
+	tooltip.addAdvanced([
+		/^adchimneys:.+_pump$/
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Powers ').gold(), Text.of('vents').yellow(), Text.of(' to let them capture and move pollution!').gold()])
+			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
+			text.add(3, Text.gold('Works by pulling pollution from horizontally adjacent vents.'))
+			text.add(4, [Text.of('Will "power" (pull from) a chain of up to ').gold(), Text.of('30 vents').yellow(), Text.of('.').gold()])
+			text.add(5, Text.gold(''))
+			text.add(6, Text.gold('A simple pollution control setup is a line of vents on the ceiling,'))
+			text.add(7, Text.gold('a pump somewhere in the middle, and a column of chimneys above it,'))
+			text.add(8, Text.gold('capped with a few filter frames.'))
+			text.add(9, Text.gold('The vents will pick up pollution, lead it to the pump,'))
+			text.add(10, Text.gold('and the pump will release it directly upwards into the chimneys.'))
+			text.add(11, Text.gold('The pollution will then be absorbed by the filter frames.'))
+		}
+	})
+	tooltip.addAdvanced(['adpother:aerometer'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.yellow('Shows pollution level when held!'))
+			text.add(2, Text.gold('Gray, black and yellow gauges will appear on the model'))
+			text.add(3, Text.gold('when the pollution level is above 0%.'))
+			text.add(4, Text.gold('Exact percentage will also be shown in item tooltip.'))
+		}
+	})
+
 	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
 
 const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
@@ -413,34 +546,4 @@ const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
 			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Be careful!').gray()])
 		}
 	})
-	
-    tooltip.addAdvanced([
-		/^adpother:.+_respirator$/,
-		'beyond_earth:oxygen_mask',
-		'beyond_earth:netherite_oxygen_mask',
-		'create:diving_helmet',
-		'create:netherite_diving_helmet',
-		'mekanism:hazmat_mask',
-		'mekanism:scuba_mask'
-	], (item, advanced, text) => {
-		if (!tooltip.shift) {
-		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
-			text.add(3, Text.gold('Having this equipped prevents eating and some right-click interactions.'))
-		}
-    })
-    tooltip.addAdvanced([
-		'mekanism:mekasuit_helmet',
-		'pneumaticcraft:pneumatic_helmet'
-	], (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		  } else {
-			  text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			  text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
-			  text.add(3, [Text.of('Unlike other respirator helmets, this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent you from eating!').gold()])
-		  }
-    })
 })

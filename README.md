@@ -33,17 +33,21 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.5.5
+• Added Create Deco with numerous recipe changes
 • Reworked ore-related tags <br/>
+• Added recipes for TFC ore blocks for building purposes <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
-• Added recipes for TFC ore blocks <br/>
-• Blacklisted villagers from cage traps <br/>
-• Reworked recipe for wolf spawn eggs <br/>
-• Fixed a few recipes accepting rotten food <br/>
 • Improvements for bowl-based foods, like soups and salads <br/>
-• Nerfed vanilla apples <br/>
-• Fixed a conflict with the tuyere sequenced recipe <br/>
-• Improved item naming for some easy-to-confuse items <br/>
+• Added some extra info for pollution-related items <br/>
 • Tweaked nucleosynthesizer recipes <br/>
-• Tweaked Ex Nihilo's hammers <br/>
+• Reworked recipe for wolf spawn eggs <br/>
+
+• Blacklisted villagers from cage traps <br/>
+• Fixed a few recipes accepting rotten food <br/>
+• Nerfed vanilla apples <br/>
+
+• Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
+• Improved item naming for some easy-to-confuse items <br/>
+• Tweaked Ex Nihilo's hammers <br/>
