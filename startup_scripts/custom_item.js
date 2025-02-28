@@ -8,11 +8,11 @@ onEvent('item.registry', event => {
 	event.create('metal/double_sheet/aluminum')
 	event.create('metal/double_sheet/lead')
 	event.create('metal/double_sheet/uranium')
+
 	event.create('misc_mats/andesite_alloy/rod')
 	event.create('misc_mats/andesite_alloy/sheet')
-	event.create('misc_mats/andesite_alloy/double_ingot')
 	event.create('misc_mats/netherite/rod')
-	event.create('misc_mats/netherite/double_ingot')
+
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})

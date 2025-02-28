@@ -3,7 +3,7 @@
   "ingredient": {"item": "create:zinc_nugget"},
   "transitionalItem": {"item": "create:zinc_nugget"},
   "sequence": [
-    {"type": "create:filling","ingredients": [{"item": "create:zinc_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:zinc_nugget"}]},
+    {"type": "create:filling","ingredients": [{"item": "create:zinc_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 25}],"results": [{"item": "create:zinc_nugget"}]},
     {"type": "create:deploying","ingredients": [{"item": "create:zinc_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:zinc_coin"}],"keepHeldItem": true}],
   "results": [{"item": "createdeco:zinc_coin","count":1}],
   "loops": 1

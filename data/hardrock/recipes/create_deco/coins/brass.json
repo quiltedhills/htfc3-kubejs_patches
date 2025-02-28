@@ -3,7 +3,7 @@
   "ingredient": {"item": "create:brass_nugget"},
   "transitionalItem": {"item": "create:brass_nugget"},
   "sequence": [
-    {"type": "create:filling","ingredients": [{"item": "create:brass_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:brass_nugget"}]},
+    {"type": "create:filling","ingredients": [{"item": "create:brass_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 25}],"results": [{"item": "create:brass_nugget"}]},
     {"type": "create:deploying","ingredients": [{"item": "create:brass_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:brass_coin"}],"keepHeldItem": true}],
   "results": [{"item": "createdeco:brass_coin","count":1}],
   "loops": 1

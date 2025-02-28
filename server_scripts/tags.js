@@ -329,6 +329,14 @@ onEvent('tags.items', event => {
 		'tfc:ore/halite'
 	])
 
+	// special materials, do not add to 'forge:rods' and 'forge:sheets'
+	event.add('forge:rods/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/rod')
+	event.add('forge:rods/netherite', 'kubejs:misc_mats/netherite/rod')
+	event.add('forge:sheets/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/sheet')
+	event.add('forge:sheets/netherite', 'createdeco:netherite_sheet')
+	event.remove('forge:plates/netherite', 'createdeco:netherite_sheet')
+	//
+
 	event.add('compactmachines:compactmachines', [
 		'compactmachines:machine_tiny',
 		'compactmachines:machine_small',
@@ -1603,33 +1611,6 @@ onEvent('tags.items', event => {
 	event.add('forge:sheets', [
 		'kubejs:compressed_sheet'
 	]),
-	event.add('forge:sheets', [
-		'kubejs:misc_mats/andesite_alloy/sheet'
-	]),
-	event.add('forge:plates', [
-		'kubejs:misc_mats/andesite_alloy/sheet'
-	]),
-	event.add('forge:plates', [
-		'createdeco:zinc_sheet'
-	]),
-	event.add('forge:sheets', [
-		'createdeco:zinc_sheet'
-	]),
-	event.add('forge:plates', [
-		'createdeco:cast_iron_sheet'
-	]),
-	event.add('forge:sheets', [
-		'createdeco:cast_iron_sheet'
-	]),
-	event.add('forge:plates', [
-		'createdeco:netherite_sheet'
-	]),
-	event.add('forge:sheets', [
-		'createdeco:netherite_sheet'
-	]),
-	event.add('forge:sheets/netherite', [
-		'createdeco:netherite_sheet'
-	]),
 	event.add('forge:wires/compressed_iron', [
 		'kubejs:compressed_wire'
 	]),
@@ -1641,24 +1622,6 @@ onEvent('tags.items', event => {
 	]),
 	event.add('forge:double_ingots', [
 		'kubejs:compressed_double_ingot'
-	]),
-	event.add('forge:double_ingots', [
-		'kubejs:misc_mats/andesite_alloy/double_ingot'
-	]),
-	event.add('forge:double_ingots', [
-		'kubejs:misc_mats/netherite/double_ingot'
-	]),
-	event.add('forge:double_ingots/andesite_alloy', [
-		'kubejs:misc_mats/andesite_alloy/double_ingot'
-	]),
-	event.add('forge:sheets/andesite_alloy', [
-		'kubejs:misc_mats/andesite_alloy/sheet'
-	]),
-	event.add('forge:plates/andesite_alloy', [
-		'kubejs:misc_mats/andesite_alloy/sheet'
-	]),
-	event.add('forge:double_ingots/netherite', [
-		'kubejs:misc_mats/netherite/double_ingot'
 	]),
 	event.add('forge:ingots', [
 		'refinedstorage:quartz_enriched_iron'
@@ -1817,6 +1780,8 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
+		'createdeco:cast_iron_sheet',
+		'createdeco:zinc_sheet',
 		'mekanism:sawdust',
 		'pneumaticcraft:diesel',
 		'pneumaticcraft:kerosene',

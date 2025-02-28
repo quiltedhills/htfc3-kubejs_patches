@@ -1,11 +1,12 @@
 {
-  "type": "tfc:heating",
+  "type": "tconstruct:melting",
   "ingredient": {
     "item": "kubejs:misc_mats/andesite_alloy/sheet"
   },
-  "result_fluid": {
+  "result": {
     "fluid": "kubejs:andesite_alloy",
     "amount": 100
   },
-  "temperature": 930
+  "temperature": 900,
+  "time": 90
 }

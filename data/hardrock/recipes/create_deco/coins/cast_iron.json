@@ -3,7 +3,7 @@
   "ingredient": {"item": "createdeco:cast_iron_nugget"},
   "transitionalItem": {"item": "createdeco:cast_iron_nugget"},
   "sequence": [
-    {"type": "create:filling","ingredients": [{"item": "createdeco:cast_iron_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "createdeco:cast_iron_nugget"}]},
+    {"type": "create:filling","ingredients": [{"item": "createdeco:cast_iron_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 25}],"results": [{"item": "createdeco:cast_iron_nugget"}]},
     {"type": "create:deploying","ingredients": [{"item": "createdeco:cast_iron_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:cast_iron_coin"}],"keepHeldItem": true}],
   "results": [{"item": "createdeco:cast_iron_coin","count":1}],
   "loops": 1
