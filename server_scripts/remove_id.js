@@ -528,6 +528,10 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:smelting/cooked_turtle_meat'},
 		{id: 'untamedwilds:smelting/cooked_turtle_meat_campfire'},
 		{id: 'untamedwilds:smelting/cooked_pachyderm_meat'},
-		{id: 'untamedwilds:smelting/cooked_pachyderm_meat_campfire'}
+		{id: 'untamedwilds:smelting/cooked_pachyderm_meat_campfire'},
+		
+		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
+		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
+		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'}
 	])
 })

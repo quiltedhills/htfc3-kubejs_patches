@@ -413,4 +413,34 @@ const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
 			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Be careful!').gray()])
 		}
 	})
+	
+    tooltip.addAdvanced([
+		/^adpother:.+_respirator$/,
+		'beyond_earth:oxygen_mask',
+		'beyond_earth:netherite_oxygen_mask',
+		'create:diving_helmet',
+		'create:netherite_diving_helmet',
+		'mekanism:hazmat_mask',
+		'mekanism:scuba_mask'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
+			text.add(3, Text.gold('Having this equipped prevents eating and some right-click interactions.'))
+		}
+    })
+    tooltip.addAdvanced([
+		'mekanism:mekasuit_helmet',
+		'pneumaticcraft:pneumatic_helmet'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		  } else {
+			  text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			  text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
+			  text.add(3, [Text.of('Unlike other respirator helmets, this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent you from eating!').gold()])
+		  }
+    })
 })
