@@ -1,11 +1,17 @@
 // priority: 10
 onEvent('recipes', event => {
+	event.remove({input: ['#forge:storage_blocks'], type: 'immersiveengineering:arc_furnace'})
+	event.remove({input: ['#forge:raw_materials'], type: 'immersiveengineering:arc_furnace'})
+	event.remove([
+		{id: 'immersiveengineering:arcfurnace/ore_cobalt'},
+		{id: 'immersiveengineering:arcfurnace/ore_osmium'}
+	])
 	//
-    // ================================== remove all recipes for type =========================================================
+	// ================================== remove all recipes for type =========================================================
 	//
 	event.remove({type: 'minecraft:campfire_cooking'})
 	event.remove({type: 'minecraft:smelting'})
-    event.remove({type: 'mekanism:sawing'})
+	event.remove({type: 'mekanism:sawing'})
 	//
 	// ===================================== other mods =========================================================================
 	//
