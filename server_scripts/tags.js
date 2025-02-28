@@ -1955,6 +1955,9 @@ onEvent('tags.items', event => {
 		'#forge:nuggets/zinc',
 		'#forge:nuggets/copper'
 	]),
+	event.add('forge:nuggets', [
+		'createdeco:cast_iron_nugget'
+	])
 	event.add('forge:dead_animal', [
 		'butchersdelight:dead_cow',
 		'butchersdelight:deadsheep',
@@ -2231,8 +2234,10 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
-		'createdeco:cast_iron_sheet',
 		'createdeco:zinc_sheet',
+		'createdeco:cast_iron_ingot',
+		'createdeco:cast_iron_sheet',
+		'createdeco:netherite_nugget',
 		'mekanism:sawdust',
 		'pneumaticcraft:diesel',
 		'pneumaticcraft:kerosene',

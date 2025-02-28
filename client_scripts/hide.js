@@ -51,6 +51,7 @@ onEvent('jei.hide.items', event => {
 	event.hide([
 		'createdeco:zinc_sheet',
 		'createdeco:cast_iron_ingot',
+		'createdeco:cast_iron_sheet',
 		'createdeco:netherite_nugget',
 
 		/^itemfilters:.+/,
