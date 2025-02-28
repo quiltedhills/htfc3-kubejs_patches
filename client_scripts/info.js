@@ -546,4 +546,20 @@ const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
 			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Be careful!').gray()])
 		}
 	})
+	tooltip.addAdvanced('supplementaries:pancake', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		  } else {
+			  text.add(1, Text.gold('Inedible. Will not rot. Can be placed.'))
+			  text.add(2, Text.darkGray('What have you done...'))
+		  }
+	  })
+	  tooltip.addAdvanced(/^kubejs:prop_foods\//, (item, advanced, text) => {
+		  if (!tooltip.shift) {
+			  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+			} else {
+				text.add(1, Text.gold('Inedible. Will not rot.'))
+				text.add(2, Text.darkGray('What have you done...'))
+			}
+		})
 })

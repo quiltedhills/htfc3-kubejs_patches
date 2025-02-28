@@ -230,6 +230,11 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('forge:prop_foods', [
+		'supplementaries:pancake',
+		/^kubejs:prop_foods\//
+	])
+	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
 	event.add('tfc:wooden_bowl_food', [

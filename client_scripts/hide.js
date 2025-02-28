@@ -88,7 +88,6 @@ onEvent('jei.hide.items', event => {
 		'dynamictrees:dark_oak_seed',
 		'dynamictrees:birch_seed',
 		'dynamictrees:acacia_seed',
-		'supplementaries:pancake',
 		'supplementaries:sconce',
 		'supplementaries:sconce_soul',
 		'supplementaries:copper_lantern',
