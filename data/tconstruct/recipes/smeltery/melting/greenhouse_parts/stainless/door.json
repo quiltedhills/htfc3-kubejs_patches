@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {"item": "firmalife:stainless_steel_greenhouse_door"}
+  ],
+  "result": {
+    "fluid": "firmalife:metal/stainless_steel",
+    "amount": 75
+  },
+  "temperature": 950,
+  "time": 98,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_glass",
+      "amount": 300
+    }
+  ]
+}

@@ -43,6 +43,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added some extra info for pollution-related items <br/>
 • Tweaked nucleosynthesizer recipes <br/>
 • Reworked recipe for wolf spawn eggs <br/>
+• Added recipes for smelting down greenhouse blocks <br/>
 
 • Made sandstone collapsible <br/>
 • Blacklisted villagers from cage traps <br/>
