@@ -157,6 +157,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_sand_cast'},
 		{id: 'tconstruct:smeltery/melting/metal/netherite/plates'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/bars'},
+		{id: 'supplementaries:flower_box'},
 		
 		{id: 'minecraft:acacia_planks'},
 		{id: 'choppingblock:acacia_planks'},
