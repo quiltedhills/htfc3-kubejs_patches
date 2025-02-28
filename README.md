@@ -44,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked nucleosynthesizer recipes <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 
+• Made sandstone collapsible <br/>
 • Blacklisted villagers from cage traps <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>

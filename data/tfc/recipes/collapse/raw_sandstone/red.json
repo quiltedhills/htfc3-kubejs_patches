@@ -1,0 +1,7 @@
+{
+  "type": "tfc:collapse",
+  "ingredient": [
+    "tfc:raw_sandstone/red"
+  ],
+  "result": "tfc:sand/red"
+}

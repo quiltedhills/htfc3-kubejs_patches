@@ -42,14 +42,17 @@ onEvent('tags.blocks', event => {
 		//'geolosys:lignite_ore_sample',
 	])
 	event.add('tfc:can_trigger_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_start_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
