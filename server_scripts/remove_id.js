@@ -83,6 +83,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:brass_hull'},
 		{id: 'createdeco:iron_hull'},
 		{id: 'createdeco:gold_hull'},
+		{id: 'createdeco:andesite_hull'},
+		{id: 'createdeco:netherite_hull'},
 		{id: 'createdeco:andesite_door'},
         {id: 'createdeco:zinc_door'},
         {id: 'createdeco:copper_door'},

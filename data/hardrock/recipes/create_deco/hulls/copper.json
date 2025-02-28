@@ -1,17 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      " m ",
-      "m m",
-      " m "
-    ],
-    "key": {
-      "m": {
-        "item": "tfc:metal/sheet/copper"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+    "mcm",
+    " m "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:sheets/copper"
     },
-    "result": {
-      "item": "createdeco:copper_hull",
-      "count": 2
+    "c": {
+      "tag": "forge:storage_blocks/copper"
     }
+  },
+  "result": {
+    "item": "createdeco:copper_hull",
+    "count": 1
   }
+}

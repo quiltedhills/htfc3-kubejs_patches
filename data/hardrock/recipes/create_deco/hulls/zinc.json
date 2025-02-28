@@ -1,17 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      " m ",
-      "m m",
-      " m "
-    ],
-    "key": {
-      "m": {
-        "item": "tfc:metal/sheet/zinc"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+    "mcm",
+    " m "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:sheets/zinc"
     },
-    "result": {
-      "item": "createdeco:zinc_hull",
-      "count": 2
+    "c": {
+      "tag": "forge:storage_blocks/zinc"
     }
+  },
+  "result": {
+    "item": "createdeco:zinc_hull",
+    "count": 1
   }
+}

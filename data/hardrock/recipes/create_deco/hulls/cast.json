@@ -1,17 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      " m ",
-      "m m",
-      " m "
-    ],
-    "key": {
-      "m": {
-        "item": "tfc:metal/sheet/cast_iron"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+    "mcm",
+    " m "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:sheets/cast_iron"
     },
-    "result": {
-      "item": "createdeco:cast_iron_hull",
-      "count": 2
+    "c": {
+      "tag": "forge:storage_blocks/cast_iron"
     }
+  },
+  "result": {
+    "item": "createdeco:cast_iron_hull",
+    "count": 1
   }
+}
