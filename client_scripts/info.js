@@ -6,13 +6,13 @@ const pollution_filter_map = {
 		'high': ['tfc:silk_cloth','tfc:wool_cloth']
 	},
 	'carbon': {
-		'low': ['minecraft:white_wool','minecraft:orange_wool','minecraft:magenta_wool','minecraft:light_blue_wool','minecraft:yellow_wool','minecraft:lime_wool','minecraft:pink_wool','minecraft:gray_wool','minecraft:light_gray_wool','minecraft:cyan_wool','minecraft:purple_wool','minecraft:blue_wool','minecraft:brown_wool','minecraft:green_wool','minecraft:red_wool','minecraft:black_wool'],
+		'low': ['minecraft:jungle_leaves','minecraft:oak_leaves','minecraft:spruce_leaves','minecraft:dark_oak_leaves','minecraft:acacia_leaves','minecraft:birch_leaves','minecraft:azalea_leaves','minecraft:flowering_azalea_leaves','tfc:wood/leaves/acacia','tfc:wood/leaves/ash','tfc:wood/leaves/aspen','tfc:wood/leaves/birch','tfc:wood/leaves/blackwood','tfc:wood/leaves/chestnut','tfc:wood/leaves/douglas_fir','tfc:wood/leaves/hickory','tfc:wood/leaves/kapok','tfc:wood/leaves/maple','tfc:wood/leaves/oak','tfc:wood/leaves/palm','tfc:wood/leaves/pine','tfc:wood/leaves/rosewood','tfc:wood/leaves/sequoia','tfc:wood/leaves/spruce','tfc:wood/leaves/sycamore','tfc:wood/leaves/white_cedar','tfc:wood/leaves/willow','twilightforest:rainbow_oak_leaves','twilightforest:twilight_oak_leaves','twilightforest:canopy_leaves','twilightforest:mangrove_leaves','twilightforest:dark_leaves','twilightforest:time_leaves','twilightforest:transformation_leaves','twilightforest:mining_leaves','twilightforest:sorting_leaves','twilightforest:thorn_leaves','twilightforest:beanstalk_leaves','myrtrees:rubberwood_leaves','tconstruct:earth_slime_leaves','tconstruct:sky_slime_leaves','tconstruct:ender_slime_leaves',		'tfc:plant/cherry_leaves','tfc:plant/green_apple_leaves','tfc:plant/lemon_leaves','tfc:plant/olive_leaves','tfc:plant/orange_leaves','tfc:plant/peach_leaves','tfc:plant/plum_leaves','tfc:plant/red_apple_leaves'],
 		'medium': ['tfc:plant/leafy_kelp','tfc:plant/winged_kelp'],
 		'high': ['coralstfc:coral_powder']
 	},
 	'sulfur': {
 		'medium': ['minecraft:charcoal'],
-		'high': ['minecraft:jungle_leaves','minecraft:oak_leaves','minecraft:spruce_leaves','minecraft:dark_oak_leaves','minecraft:acacia_leaves','minecraft:birch_leaves','minecraft:azalea_leaves','minecraft:flowering_azalea_leaves','tfc:wood/leaves/acacia','tfc:wood/leaves/ash','tfc:wood/leaves/aspen','tfc:wood/leaves/birch','tfc:wood/leaves/blackwood','tfc:wood/leaves/chestnut','tfc:wood/leaves/douglas_fir','tfc:wood/leaves/hickory','tfc:wood/leaves/kapok','tfc:wood/leaves/maple','tfc:wood/leaves/oak','tfc:wood/leaves/palm','tfc:wood/leaves/pine','tfc:wood/leaves/rosewood','tfc:wood/leaves/sequoia','tfc:wood/leaves/spruce','tfc:wood/leaves/sycamore','tfc:wood/leaves/white_cedar','tfc:wood/leaves/willow','twilightforest:rainbow_oak_leaves','twilightforest:twilight_oak_leaves','twilightforest:canopy_leaves','twilightforest:mangrove_leaves','twilightforest:dark_leaves','twilightforest:time_leaves','twilightforest:transformation_leaves','twilightforest:mining_leaves','twilightforest:sorting_leaves','twilightforest:thorn_leaves','twilightforest:beanstalk_leaves','myrtrees:rubberwood_leaves','tconstruct:earth_slime_leaves','tconstruct:sky_slime_leaves','tconstruct:ender_slime_leaves',		'tfc:plant/cherry_leaves','tfc:plant/green_apple_leaves','tfc:plant/lemon_leaves','tfc:plant/olive_leaves','tfc:plant/orange_leaves','tfc:plant/peach_leaves','tfc:plant/plum_leaves','tfc:plant/red_apple_leaves']
+		'high': ['minecraft:white_wool','minecraft:orange_wool','minecraft:magenta_wool','minecraft:light_blue_wool','minecraft:yellow_wool','minecraft:lime_wool','minecraft:pink_wool','minecraft:gray_wool','minecraft:light_gray_wool','minecraft:cyan_wool','minecraft:purple_wool','minecraft:blue_wool','minecraft:brown_wool','minecraft:green_wool','minecraft:red_wool','minecraft:black_wool']
 	}
 }
 //#minecraft:wool = ['minecraft:white_wool','minecraft:orange_wool','minecraft:magenta_wool','minecraft:light_blue_wool','minecraft:yellow_wool','minecraft:lime_wool','minecraft:pink_wool','minecraft:gray_wool','minecraft:light_gray_wool','minecraft:cyan_wool','minecraft:purple_wool','minecraft:blue_wool','minecraft:brown_wool','minecraft:green_wool','minecraft:red_wool','minecraft:black_wool']
@@ -62,35 +62,17 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 		text.add(1, [Text.gold('Restores '),Text.yellow('5 points'),Text.gold(' (out of 10) of the dirtiness meter.')])
 		text.add(2, Text.gold('Two is enough to fully clean yourself.'))
-		text.add(3, Text.yellow(''))
+		text.add(3, Text.gold(''))
 		text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
-	tooltip.addAdvanced([//#forge:soap/strong
-		'bodyhygiene:dandelion_soap',
-		'bodyhygiene:poppy_soap',
-		'bodyhygiene:blue_orchid_soap',
-		'bodyhygiene:allium_soap',
-		'bodyhygiene:azure_bluet_soap',
-		'bodyhygiene:red_tulip_soap',
-		'bodyhygiene:orange_tulip_soap',
-		'bodyhygiene:white_tulip_soap',
-		'bodyhygiene:pink_tulip_soap',
-		'bodyhygiene:oxeye_daisy_soap',
-		'bodyhygiene:cornflower_soap',
-		'bodyhygiene:lily_of_the_valley_soap',
-		'bodyhygiene:wither_rose_soap',
-		'bodyhygiene:spore_blossom_soap',
-		'bodyhygiene:sunflower_soap',
-		'bodyhygiene:lilac_soap',
-		'bodyhygiene:rose_bush_soap',
-		'bodyhygiene:peony_soap'], (item, advanced, text) => {
+	tooltip.addAdvanced(/^bodyhygiene:.+_soap$/, (item, advanced, text) => {
 		if (!tooltip.shift) {
 		text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
 		text.add(1, [Text.yellow('Completely resets'),Text.gold(' the dirtiness meter.')])
 		text.add(2, Text.gold('A newly crafted bar has four uses.'))
-		text.add(3, Text.yellow(''))
+		text.add(3, Text.gold(''))
 		text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
@@ -415,4 +397,50 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
+
+const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
+	nutrients.forEach(nutrient => {
+		['soup','salad'].forEach(foodType => {
+			tooltip.addAdvanced(`tfc:food/${nutrient.toLowerCase()}_${foodType}`, (item, advanced, text) => {
+				if (tooltip.shift) {
+					text.add([Text.of('Made when ').gray(), Text.of(nutrient).white(), Text.of(' is the highest nutrient').gray()])
+				}
+			})
+		})
+	})
+	tooltip.addAdvanced('firmalife:food/stinky_soup', (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Be careful!').gray()])
+		}
+	})
+	
+    tooltip.addAdvanced([
+		/^adpother:.+_respirator$/,
+		'beyond_earth:oxygen_mask',
+		'beyond_earth:netherite_oxygen_mask',
+		'create:diving_helmet',
+		'create:netherite_diving_helmet',
+		'mekanism:hazmat_mask',
+		'mekanism:scuba_mask'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+		  text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
+			text.add(3, Text.gold('Having this equipped prevents eating and some right-click interactions.'))
+		}
+    })
+    tooltip.addAdvanced([
+		'mekanism:mekasuit_helmet',
+		'pneumaticcraft:pneumatic_helmet'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		  } else {
+			  text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
+			  text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('. Multiple can be active at once.').gold()])
+			  text.add(3, [Text.of('Unlike other respirator helmets, this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent you from eating!').gold()])
+		  }
+    })
 })

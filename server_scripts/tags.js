@@ -22,7 +22,8 @@ onEvent('tags.blocks', event => {
 		'#tfc:rock/raw'
 	])
 
-
+	
+	event.add('minecraft:trapdoors', 'firmalife:sealed_trapdoor')
 	event.add('tfc:candles', [
 		'tfc:candle',
 		/tfc:candle\/.*/
@@ -229,6 +230,566 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
+	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
+	event.add('tfc:wooden_bowl_food', [
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:squid_ink_pasta',
+		'minecraft:rabbit_stew',
+		'farmersdelight:chicken_soup',
+		'farmersdelight:dog_food',
+		'minecraft:beetroot_soup',
+		'farmersdelight:fish_stew',
+		'farmersrespite:blazing_chili',
+		'farmersrespite:tea_curry',
+		'farmersdelight:fried_rice',
+		'farmersdelight:pumpkin_soup',
+		'farmersdelight:bone_broth',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:ratatouille',
+		'farmersdelight:cooked_rice',
+		'farmersdelight:noodle_soup',
+		'farmersdelight:vegetable_soup',
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:beef_stew',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:fruit_salad',
+		'farmersdelight:honey_glazed_ham_block',
+		'farmersdelight:grilled_salmon',
+		'farmersdelight:mixed_salad',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:roast_chicken_block',
+		'farmersdelight:shepherds_pie_block',
+		'farmersrespite:black_cod',
+		'untamedwilds:food_hemlock_stew',
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:nether_salad',
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:rice_roll_medley_block'
+	])
+	event.add('tfc:foods/usable_in_soup', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		'farmersdelight:raw_pasta',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg',
+		'firmalife:food/butter',
+		// misc
+		'farmersdelight:dumplings'
+	])
+	event.add('tfc:foods/usable_in_salad', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg'
+	])
+
+
+	// removeAllTagsFrom doesn't seem to work with regex :(
+	global.items_to_remove = [
+		'/^(tfc|firmalife|tfc_ie_addon):ore\/.+\//'
+	]
+	for (let item of global.items_to_remove) {
+		Ingredient.of(item).itemIds.forEach(id => event.removeAllTagsFrom(id))
+	}
+// // // ore blocks
+	event.add('tfc:ores', /^(tfc|firmalife|tfc_ie_addon):ore\/.+\//)
+
+	// minerals
+	event.add('tfc:ores/minerals/coal/bituminous_coal', /^tfc:ore\/bituminous_coal\/.+/)
+	event.add('tfc:ores/minerals/coal/lignite', /^tfc:ore\/lignite\/.+/)
+	event.add('tfc:ores/minerals/kaolinite', /^tfc:ore\/kaolinite\/.+/)
+	event.add('tfc:ores/minerals/gypsum', /^tfc:ore\/gypsum\/.+/)
+	event.add('tfc:ores/minerals/graphite', /^tfc:ore\/graphite\/.+/)
+	event.add('tfc:ores/minerals/sulfur', /^tfc:ore\/sulfur\/.+/)
+	event.add('tfc:ores/minerals/redstone/cinnabar', /^tfc:ore\/cinnabar\/.+/)
+	event.add('tfc:ores/minerals/redstone/cryolite', /^tfc:ore\/cryolite\/.+/)
+	event.add('tfc:ores/minerals/saltpeter', /^tfc:ore\/saltpeter\/.+/)
+	event.add('tfc:ores/minerals/sylvite', /^tfc:ore\/sylvite\/.+/)
+	event.add('tfc:ores/minerals/borax', /^tfc:ore\/borax\/.+/)
+	event.add('tfc:ores/minerals/halite', /^tfc:ore\/halite\/.+/)
+	event.add('tfc:ores/coal', [
+		'#tfc:ores/minerals/coal/bituminous_coal',
+		'#tfc:ores/minerals/coal/lignite'
+	])
+	event.add('tfc:ores/redstone', [
+		'#tfc:ores/minerals/redstone/cinnabar',
+		'#tfc:ores/minerals/redstone/cryolite'
+	])
+	event.add('tfc:ores/minerals', [
+		'#tfc:ores/minerals/coal/bituminous_coal',
+		'#tfc:ores/minerals/coal/lignite',
+		'#tfc:ores/minerals/kaolinite',
+		'#tfc:ores/minerals/gypsum',
+		'#tfc:ores/minerals/graphite',
+		'#tfc:ores/minerals/sulfur',
+		'#tfc:ores/minerals/redstone/cinnabar',
+		'#tfc:ores/minerals/redstone/cryolite',
+		'#tfc:ores/minerals/saltpeter',
+		'#tfc:ores/minerals/sylvite',
+		'#tfc:ores/minerals/borax',
+		'#tfc:ores/minerals/halite'
+	])
+	// gems
+	event.add('tfc:ores/gems/amethyst', /^tfc:ore\/amethyst\/.+/)
+	event.add('tfc:ores/gems/diamond', /^tfc:ore\/diamond\/.+/)
+	event.add('tfc:ores/gems/emerald', /^tfc:ore\/emerald\/.+/)
+	event.add('tfc:ores/gems/lapis', /^tfc:ore\/lapis_lazuli\/.+/)
+	event.add('tfc:ores/gems/opal', /^tfc:ore\/opal\/.+/)
+	event.add('tfc:ores/gems/pyrite', /^tfc:ore\/pyrite\/.+/)
+	event.add('tfc:ores/gems/ruby', /^tfc:ore\/ruby\/.+/)
+	event.add('tfc:ores/gems/sapphire', /^tfc:ore\/sapphire\/.+/)
+	event.add('tfc:ores/gems/topaz', /^tfc:ore\/topaz\/.+/)
+	event.add('tfc:ores/gems', [
+		'#tfc:ores/gems/amethyst',
+		'#tfc:ores/gems/diamond',
+		'#tfc:ores/gems/emerald',
+		'#tfc:ores/gems/lapis',
+		'#tfc:ores/gems/opal',
+		'#tfc:ores/gems/pyrite',
+		'#tfc:ores/gems/ruby',
+		'#tfc:ores/gems/sapphire',
+		'#tfc:ores/gems/topaz'
+	])
+	// metals
+	event.add('tfc:ores/metals/copper/native_copper', /^tfc:ore\/(poor|normal|rich)_native_copper\/.+/)
+	event.add('tfc:ores/metals/native_gold', /^tfc:ore\/(poor|normal|rich)_native_gold\/.+/)
+	event.add('tfc:ores/metals/iron/hematite', /^tfc:ore\/(poor|normal|rich)_hematite\/.+/)
+	event.add('tfc:ores/metals/native_silver', /^tfc:ore\/(poor|normal|rich)_native_silver\/.+/)
+	event.add('tfc:ores/metals/cassiterite', /^tfc:ore\/(poor|normal|rich)_cassiterite\/.+/)
+	event.add('tfc:ores/metals/bismuthinite', /^tfc:ore\/(poor|normal|rich)_bismuthinite\/.+/)
+	event.add('tfc:ores/metals/garnierite', /^tfc:ore\/(poor|normal|rich)_garnierite\/.+/)
+	event.add('tfc:ores/metals/copper/malachite', /^tfc:ore\/(poor|normal|rich)_malachite\/.+/)
+	event.add('tfc:ores/metals/iron/magnetite', /^tfc:ore\/(poor|normal|rich)_magnetite\/.+/)
+	event.add('tfc:ores/metals/iron/limonite', /^tfc:ore\/(poor|normal|rich)_limonite\/.+/)
+	event.add('tfc:ores/metals/sphalerite', /^tfc:ore\/(poor|normal|rich)_sphalerite\/.+/)
+	event.add('tfc:ores/metals/copper/tetrahedrite', /^tfc:ore\/(poor|normal|rich)_tetrahedrite\/.+/)
+	event.add('tfc:ores/metals/chromite', /^firmalife:ore\/(poor|normal|rich)_chromite\/.+/)
+	event.add('tfc:ores/metals/bauxite', /^tfc_ie_addon:ore\/(poor|normal|rich)_aluminum\/.+/)
+	event.add('tfc:ores/metals/galena', /^tfc_ie_addon:ore\/(poor|normal|rich)_lead\/.+/)
+	event.add('tfc:ores/metals/uraninite', /^tfc_ie_addon:ore\/(poor|normal|rich)_uranium\/.+/)
+	event.add('tfc:ores/metals/copper', [
+		'#tfc:ores/metals/copper/native_copper',
+		'#tfc:ores/metals/copper/malachite',
+		'#tfc:ores/metals/copper/tetrahedrite'
+	])
+	event.add('tfc:ores/metals/iron', [
+		'#tfc:ores/metals/iron/hematite',
+		'#tfc:ores/metals/iron/magnetite',
+		'#tfc:ores/metals/iron/limonite'
+	])
+	event.add('tfc:ores/metals/gold',     ['#tfc:ores/metals/native_gold'])
+	event.add('tfc:ores/metals/silver',   ['#tfc:ores/metals/native_silver'])
+	event.add('tfc:ores/metals/tin',      ['#tfc:ores/metals/cassiterite'])
+	event.add('tfc:ores/metals/bismuth',  ['#tfc:ores/metals/bismuthinite'])
+	event.add('tfc:ores/metals/nickel',  ['#tfc:ores/metals/garnierite'])
+	event.add('tfc:ores/metals/zinc',     ['#tfc:ores/metals/sphalerite'])
+	event.add('tfc:ores/metals/chromium', ['#tfc:ores/metals/chromite'])
+	event.add('tfc:ores/metals/aluminum', ['#tfc:ores/metals/bauxite'])
+	event.add('tfc:ores/metals/lead',     ['#tfc:ores/metals/galena'])
+	event.add('tfc:ores/metals/uranium',  ['#tfc:ores/metals/uraninite'])
+	event.add('tfc:ores/metals', [
+		'#tfc:ores/metals/copper/native_copper',
+		'#tfc:ores/metals/native_gold',
+		'#tfc:ores/metals/iron/hematite',
+		'#tfc:ores/metals/native_silver',
+		'#tfc:ores/metals/cassiterite',
+		'#tfc:ores/metals/bismuthinite',
+		'#tfc:ores/metals/garnierite',
+		'#tfc:ores/metals/copper/malachite',
+		'#tfc:ores/metals/iron/magnetite',
+		'#tfc:ores/metals/iron/limonite',
+		'#tfc:ores/metals/sphalerite',
+		'#tfc:ores/metals/copper/tetrahedrite',
+		'#tfc:ores/metals/chromite',
+		'#tfc:ores/metals/bauxite',
+		'#tfc:ores/metals/galena',
+		'#tfc:ores/metals/uraninite'
+	])
+
+//	//	// ore pieces
+	// minerals
+	event.add('tfc:ore_pieces/minerals/coal/bituminous_coal', /^tfc:ore\/bituminous_coal$/)
+	event.add('tfc:ore_pieces/minerals/coal/lignite', /^tfc:ore\/lignite$/)
+	event.add('tfc:ore_pieces/minerals/kaolinite', /^tfc:ore\/kaolinite$/)
+	event.add('tfc:ore_pieces/minerals/gypsum', /^tfc:ore\/gypsum$/)
+	event.add('tfc:ore_pieces/minerals/graphite', /^tfc:ore\/graphite$/)
+	event.add('tfc:ore_pieces/minerals/sulfur', /^tfc:ore\/sulfur$/)
+	event.add('tfc:ore_pieces/minerals/redstone/cinnabar', /^tfc:ore\/cinnabar$/)
+	event.add('tfc:ore_pieces/minerals/redstone/cryolite', /^tfc:ore\/cryolite$/)
+	event.add('tfc:ore_pieces/minerals/saltpeter', /^tfc:ore\/saltpeter$/)
+	event.add('tfc:ore_pieces/minerals/sylvite', /^tfc:ore\/sylvite$/)
+	event.add('tfc:ore_pieces/minerals/borax', /^tfc:ore\/borax$/)
+	event.add('tfc:ore_pieces/minerals/halite', /^tfc:ore\/halite$/)
+	event.add('tfc:ore_pieces/minerals/coal', [
+		'#tfc:ore_pieces/minerals/coal/bituminous_coal',
+		'#tfc:ore_pieces/minerals/coal/lignite'
+	])
+	event.add('tfc:ore_pieces/minerals/redstone', [
+		'#tfc:ore_pieces/minerals/redstone/cinnabar',
+		'#tfc:ore_pieces/minerals/redstone/cryolite'
+	])
+	event.add('tfc:ore_pieces/minerals', [
+		'#tfc:ore_pieces/minerals/coal/bituminous_coal',
+		'#tfc:ore_pieces/minerals/coal/lignite',
+		'#tfc:ore_pieces/minerals/kaolinite',
+		'#tfc:ore_pieces/minerals/gypsum',
+		'#tfc:ore_pieces/minerals/graphite',
+		'#tfc:ore_pieces/minerals/sulfur',
+		'#tfc:ore_pieces/minerals/redstone/cinnabar',
+		'#tfc:ore_pieces/minerals/redstone/cryolite',
+		'#tfc:ore_pieces/minerals/saltpeter',
+		'#tfc:ore_pieces/minerals/sylvite',
+		'#tfc:ore_pieces/minerals/borax',
+		'#tfc:ore_pieces/minerals/halite'
+	])
+	// metals
+	event.add('tfc:ore_pieces/metals/copper/native_copper', /^tfc:ore\/(small|poor|normal|rich)_native_copper$/)
+	event.add('tfc:ore_pieces/metals/native_gold', /^tfc:ore\/(small|poor|normal|rich)_native_gold$/)
+	event.add('tfc:ore_pieces/metals/iron/hematite', /^tfc:ore\/(small|poor|normal|rich)_hematite$/)
+	event.add('tfc:ore_pieces/metals/native_silver', /^tfc:ore\/(small|poor|normal|rich)_native_silver$/)
+	event.add('tfc:ore_pieces/metals/cassiterite', /^tfc:ore\/(small|poor|normal|rich)_cassiterite$/)
+	event.add('tfc:ore_pieces/metals/bismuthinite', /^tfc:ore\/(small|poor|normal|rich)_bismuthinite$/)
+	event.add('tfc:ore_pieces/metals/garnierite', /^tfc:ore\/(small|poor|normal|rich)_garnierite$/)
+	event.add('tfc:ore_pieces/metals/copper/malachite', /^tfc:ore\/(small|poor|normal|rich)_malachite$/)
+	event.add('tfc:ore_pieces/metals/iron/magnetite', /^tfc:ore\/(small|poor|normal|rich)_magnetite$/)
+	event.add('tfc:ore_pieces/metals/iron/limonite', /^tfc:ore\/(small|poor|normal|rich)_limonite$/)
+	event.add('tfc:ore_pieces/metals/sphalerite', /^tfc:ore\/(small|poor|normal|rich)_sphalerite$/)
+	event.add('tfc:ore_pieces/metals/copper/tetrahedrite', /^tfc:ore\/(small|poor|normal|rich)_tetrahedrite$/)
+	event.add('tfc:ore_pieces/metals/chromite', /^firmalife:ore\/(small|poor|normal|rich)_chromite$/)
+	event.add('tfc:ore_pieces/metals/bauxite', /^tfc_ie_addon:ore\/(small|poor|normal|rich)_aluminum$/)
+	event.add('tfc:ore_pieces/metals/galena', /^tfc_ie_addon:ore\/(small|poor|normal|rich)_lead$/)
+	event.add('tfc:ore_pieces/metals/uraninite', /^tfc_ie_addon:ore\/(small|poor|normal|rich)_uranium$/)
+	event.add('tfc:ore_pieces/metals/copper', [
+		'#tfc:ore_pieces/metals/copper/native_copper',
+		'#tfc:ore_pieces/metals/copper/malachite',
+		'#tfc:ore_pieces/metals/copper/tetrahedrite'
+	])
+	event.add('tfc:ore_pieces/metals/iron', [
+		'#tfc:ore_pieces/metals/iron/hematite',
+		'#tfc:ore_pieces/metals/iron/magnetite',
+		'#tfc:ore_pieces/metals/iron/limonite'
+	])
+	event.add('tfc:ore_pieces/metals/gold',     ['#tfc:ore_pieces/metals/native_gold'])
+	event.add('tfc:ore_pieces/metals/silver',   ['#tfc:ore_pieces/metals/native_silver'])
+	event.add('tfc:ore_pieces/metals/tin',      ['#tfc:ore_pieces/metals/cassiterite'])
+	event.add('tfc:ore_pieces/metals/bismuth',  ['#tfc:ore_pieces/metals/bismuthinite'])
+	event.add('tfc:ore_pieces/metals/nickel',  ['#tfc:ore_pieces/metals/garnierite'])
+	event.add('tfc:ore_pieces/metals/zinc',     ['#tfc:ore_pieces/metals/sphalerite'])
+	event.add('tfc:ore_pieces/metals/chromium', ['#tfc:ore_pieces/metals/chromite'])
+	event.add('tfc:ore_pieces/metals/aluminum', ['#tfc:ore_pieces/metals/bauxite'])
+	event.add('tfc:ore_pieces/metals/lead',     ['#tfc:ore_pieces/metals/galena'])
+	event.add('tfc:ore_pieces/metals/uranium',  ['#tfc:ore_pieces/metals/uraninite'])
+	event.add('tfc:ore_pieces/metals', [
+		'#tfc:ore_pieces/metals/copper/native_copper',
+		'#tfc:ore_pieces/metals/native_gold',
+		'#tfc:ore_pieces/metals/iron/hematite',
+		'#tfc:ore_pieces/metals/native_silver',
+		'#tfc:ore_pieces/metals/cassiterite',
+		'#tfc:ore_pieces/metals/bismuthinite',
+		'#tfc:ore_pieces/metals/copper/malachite',
+		'#tfc:ore_pieces/metals/iron/magnetite',
+		'#tfc:ore_pieces/metals/iron/limonite',
+		'#tfc:ore_pieces/metals/sphalerite',
+		'#tfc:ore_pieces/metals/copper/tetrahedrite',
+		'#tfc:ore_pieces/metals/chromite',
+		'#tfc:ore_pieces/metals/bauxite',
+		'#tfc:ore_pieces/metals/galena',
+		'#tfc:ore_pieces/metals/uraninite'
+	])
+	
+//	//	// ore washing
+	// rocky chunks
+	event.add('forge:ores/rocky_chunks/minerals/redstone',[
+		'tfcorewashing:rocky_chunks_cinnabar',
+		'tfcorewashing:rocky_chunks_cryolite'
+	])
+	event.add('forge:ores/rocky_chunks/minerals',[
+		'tfcorewashing:rocky_chunks_cinnabar',
+		'tfcorewashing:rocky_chunks_cryolite',
+		'tfcorewashing:rocky_chunks_graphite',
+		'tfcorewashing:rocky_chunks_sulfur'
+	])
+	event.add('forge:ores/rocky_chunks/metals/copper',[
+		'tfcorewashing:rocky_chunks_copper',
+		'tfcorewashing:rocky_chunks_malachite',
+		'tfcorewashing:rocky_chunks_tetrahedrite'
+	])
+	event.add('forge:ores/rocky_chunks/metals/iron',[
+		'tfcorewashing:rocky_chunks_hematite',
+		'tfcorewashing:rocky_chunks_limonite',
+		'tfcorewashing:rocky_chunks_magnetite'
+	])
+	event.add('forge:ores/rocky_chunks/metals',[
+		'tfcorewashing:rocky_chunks_bauxite',
+		'tfcorewashing:rocky_chunks_bismuthinite',
+		'tfcorewashing:rocky_chunks_cassiterite',
+		'tfcorewashing:rocky_chunks_chromite',
+		'tfcorewashing:rocky_chunks_copper',
+		'tfcorewashing:rocky_chunks_galena',
+		'tfcorewashing:rocky_chunks_garnierite',
+		'tfcorewashing:rocky_chunks_gold',
+		'tfcorewashing:rocky_chunks_hematite',
+		'tfcorewashing:rocky_chunks_limonite',
+		'tfcorewashing:rocky_chunks_magnetite',
+		'tfcorewashing:rocky_chunks_malachite',
+		'tfcorewashing:rocky_chunks_silver',
+		'tfcorewashing:rocky_chunks_sphalerite',
+		'tfcorewashing:rocky_chunks_tetrahedrite',
+		'tfcorewashing:rocky_chunks_uraninite'
+	])
+	event.add('forge:ores/rocky_chunks',[
+		'#forge:ores/rocky_chunks/minerals',
+		'#forge:ores/rocky_chunks/metals'
+	])
+	// chunks
+	event.add('forge:ores/chunks/minerals/redstone',[
+		'tfcorewashing:chunks_cinnabar',
+		'tfcorewashing:chunks_cryolite'
+	])
+	event.add('forge:ores/chunks/minerals',[
+		'tfcorewashing:chunks_cinnabar',
+		'tfcorewashing:chunks_cryolite',
+		'tfcorewashing:chunks_graphite',
+		'tfcorewashing:chunks_sulfur'
+	])
+	event.add('forge:ores/chunks/metals/copper',[
+		'tfcorewashing:chunks_copper',
+		'tfcorewashing:chunks_malachite',
+		'tfcorewashing:chunks_tetrahedrite'
+	])
+	event.add('forge:ores/chunks/metals/iron',[
+		'tfcorewashing:chunks_hematite',
+		'tfcorewashing:chunks_limonite',
+		'tfcorewashing:chunks_magnetite'
+	])
+	event.add('forge:ores/chunks/metals',[
+		'tfcorewashing:chunks_bauxite',
+		'tfcorewashing:chunks_bismuthinite',
+		'tfcorewashing:chunks_cassiterite',
+		'tfcorewashing:chunks_chromite',
+		'tfcorewashing:chunks_copper',
+		'tfcorewashing:chunks_galena',
+		'tfcorewashing:chunks_garnierite',
+		'tfcorewashing:chunks_gold',
+		'tfcorewashing:chunks_hematite',
+		'tfcorewashing:chunks_limonite',
+		'tfcorewashing:chunks_magnetite',
+		'tfcorewashing:chunks_malachite',
+		'tfcorewashing:chunks_silver',
+		'tfcorewashing:chunks_sphalerite',
+		'tfcorewashing:chunks_tetrahedrite',
+		'tfcorewashing:chunks_uraninite'
+	])
+	event.add('forge:ores/chunks',[
+		'#forge:ores/chunks/minerals',
+		'#forge:ores/chunks/metals'
+	])
+	// dirty dusts
+	event.add('forge:ores/dirty_dusts/minerals/redstone',[
+		'tfcorewashing:dirty_dust_cinnabar',
+		'tfcorewashing:dirty_dust_cryolite'
+	])
+	event.add('forge:ores/dirty_dusts/minerals',[
+		'tfcorewashing:dirty_dust_cinnabar',
+		'tfcorewashing:dirty_dust_cryolite',
+		'tfcorewashing:dirty_dust_graphite',
+		'tfcorewashing:dirty_dust_sulfur'
+	])
+	event.add('forge:ores/dirty_dusts/metals/copper',[
+		'tfcorewashing:dirty_dust_copper',
+		'tfcorewashing:dirty_dust_malachite',
+		'tfcorewashing:dirty_dust_tetrahedrite'
+	])
+	event.add('forge:ores/dirty_dusts/metals/iron',[
+		'tfcorewashing:dirty_dust_hematite',
+		'tfcorewashing:dirty_dust_limonite',
+		'tfcorewashing:dirty_dust_magnetite'
+	])
+	event.add('forge:ores/dirty_dusts/metals',[
+		'tfcorewashing:dirty_dust_bauxite',
+		'tfcorewashing:dirty_dust_bismuthinite',
+		'tfcorewashing:dirty_dust_cassiterite',
+		'tfcorewashing:dirty_dust_chromite',
+		'tfcorewashing:dirty_dust_copper',
+		'tfcorewashing:dirty_dust_galena',
+		'tfcorewashing:dirty_dust_garnierite',
+		'tfcorewashing:dirty_dust_gold',
+		'tfcorewashing:dirty_dust_hematite',
+		'tfcorewashing:dirty_dust_limonite',
+		'tfcorewashing:dirty_dust_magnetite',
+		'tfcorewashing:dirty_dust_malachite',
+		'tfcorewashing:dirty_dust_silver',
+		'tfcorewashing:dirty_dust_sphalerite',
+		'tfcorewashing:dirty_dust_tetrahedrite',
+		'tfcorewashing:dirty_dust_uraninite'
+	])
+	event.add('forge:ores/dirty_dusts',[
+		'#forge:ores/dirty_dusts/minerals',
+		'#forge:ores/dirty_dusts/metals'
+	])
+	// dirty piles
+	event.add('forge:ores/dirty_piles/minerals/redstone',[
+		'tfcorewashing:dirty_pile_cinnabar',
+		'tfcorewashing:dirty_pile_cryolite'
+	])
+	event.add('forge:ores/dirty_piles/minerals',[
+		'tfcorewashing:dirty_pile_cinnabar',
+		'tfcorewashing:dirty_pile_cryolite',
+		'tfcorewashing:dirty_pile_graphite',
+		'tfcorewashing:dirty_pile_sulfur'
+	])
+	event.add('forge:ores/dirty_piles/metals/copper',[
+		'tfcorewashing:dirty_pile_copper',
+		'tfcorewashing:dirty_pile_malachite',
+		'tfcorewashing:dirty_pile_tetrahedrite'
+	])
+	event.add('forge:ores/dirty_piles/metals/iron',[
+		'tfcorewashing:dirty_pile_hematite',
+		'tfcorewashing:dirty_pile_limonite',
+		'tfcorewashing:dirty_pile_magnetite'
+	])
+	event.add('forge:ores/dirty_piles/metals',[
+		'tfcorewashing:dirty_pile_bauxite',
+		'tfcorewashing:dirty_pile_bismuthinite',
+		'tfcorewashing:dirty_pile_cassiterite',
+		'tfcorewashing:dirty_pile_chromite',
+		'tfcorewashing:dirty_pile_copper',
+		'tfcorewashing:dirty_pile_galena',
+		'tfcorewashing:dirty_pile_garnierite',
+		'tfcorewashing:dirty_pile_gold',
+		'tfcorewashing:dirty_pile_hematite',
+		'tfcorewashing:dirty_pile_limonite',
+		'tfcorewashing:dirty_pile_magnetite',
+		'tfcorewashing:dirty_pile_malachite',
+		'tfcorewashing:dirty_pile_silver',
+		'tfcorewashing:dirty_pile_sphalerite',
+		'tfcorewashing:dirty_pile_tetrahedrite',
+		'tfcorewashing:dirty_pile_uraninite'
+	])
+	event.add('forge:ores/dirty_piles',[
+		'#forge:ores/dirty_piles/minerals',
+		'#forge:ores/dirty_piles/metals'
+	])
+	// clean dusts
+	event.add('forge:ores/clean_dusts/minerals',[
+		'minecraft:redstone',
+		'tfc:powder/graphite',
+		'tfc:powder/sulfur'
+	])
+	event.add('forge:ores/clean_dusts/metals/copper',[
+		'tfcorewashing:copper_powder',
+		'tfc:powder/malachite',
+		'tfcorewashing:tetrahedrite_powder'
+	])
+	event.add('forge:ores/clean_dusts/metals/iron',[
+		'tfc:powder/hematite',
+		'tfc:powder/limonite',
+		'tfcorewashing:magnetite_powder'
+	])
+	event.add('forge:ores/clean_dusts/metals',[
+		'tfcorewashing:bauxite_powder',
+		'tfcorewashing:bismuthinite_powder',
+		'tfcorewashing:cassiterite_powder',
+		'tfcorewashing:chromium_powder',
+		'tfcorewashing:copper_powder',
+		'tfcorewashing:galena_powder',
+		'tfcorewashing:garnierite_powder',
+		'tfcorewashing:gold_powder',
+		'tfc:powder/hematite',
+		'tfc:powder/limonite',
+		'tfcorewashing:magnetite_powder',
+		'tfc:powder/malachite',
+		'tfcorewashing:silver_powder',
+		'tfcorewashing:sphalerite_powder',
+		'tfcorewashing:tetrahedrite_powder',
+		'tfcorewashing:uraninite_powder'
+	])
+	event.add('forge:ores/clean_dusts',[
+		'#forge:ores/clean_dusts/minerals',
+		'#forge:ores/clean_dusts/metals'
+	])
+	// pellets
+	event.add('forge:ores/pellets/copper',[
+		'tfcorewashing:pellet_copper',
+		'tfcorewashing:pellet_malachite',
+		'tfcorewashing:pellet_tetrahedrite'
+	])
+	event.add('forge:ores/pellets/iron',[
+		'tfcorewashing:pellet_hematite',
+		'tfcorewashing:pellet_limonite',
+		'tfcorewashing:pellet_magnetite'
+	])
+	event.add('forge:ores/pellets',[
+		'tfcorewashing:pellet_bauxite',
+		'tfcorewashing:pellet_bismuthinite',
+		'tfcorewashing:pellet_cassiterite',
+		'tfcorewashing:pellet_chromium',
+		'tfcorewashing:pellet_copper',
+		'tfcorewashing:pellet_galena',
+		'tfcorewashing:pellet_garnierite',
+		'tfcorewashing:pellet_gold',
+		'tfcorewashing:pellet_hematite',
+		'tfcorewashing:pellet_limonite',
+		'tfcorewashing:pellet_magnetite',
+		'tfcorewashing:pellet_malachite',
+		'tfcorewashing:pellet_silver',
+		'tfcorewashing:pellet_sphalerite',
+		'tfcorewashing:pellet_tetrahedrite',
+		'tfcorewashing:pellet_uraninite'
+	])
+
+	// briquettes
+	event.add('forge:ores/briquettes/copper',[
+		'tfcorewashing:briquet_copper',
+		'tfcorewashing:briquet_malachite',
+		'tfcorewashing:briquet_tetrahedrite'
+	])
+	event.add('forge:ores/briquettes/iron',[
+		'tfcorewashing:briquet_hematite',
+		'tfcorewashing:briquet_limonite',
+		'tfcorewashing:briquet_magnetite'
+	])
+	event.add('forge:ores/briquettes',[
+		'tfcorewashing:briquet_bauxite',
+		'tfcorewashing:briquet_bismuthinite',
+		'tfcorewashing:briquet_cassiterite',
+		'tfcorewashing:briquet_chromium',
+		'tfcorewashing:briquet_copper',
+		'tfcorewashing:briquet_galena',
+		'tfcorewashing:briquet_garnierite',
+		'tfcorewashing:briquet_gold',
+		'tfcorewashing:briquet_hematite',
+		'tfcorewashing:briquet_limonite',
+		'tfcorewashing:briquet_magnetite',
+		'tfcorewashing:briquet_malachite',
+		'tfcorewashing:briquet_silver',
+		'tfcorewashing:briquet_sphalerite',
+		'tfcorewashing:briquet_tetrahedrite',
+		'tfcorewashing:briquet_uraninite'
+	])
+	// sand piles
+	event.add('forge:sand_piles', /^tfcorewashing:pile_.+_sand$/)
+//	//	//
+
+
+	event.add('tfc:apples/no_vanilla', [
+		'tfc:food/green_apple',
+		'tfc:food/red_apple'
+	])
 	event.add('forge:soap', [
 		'#forge:soap/weak',
 		'#forge:soap/strong'
@@ -272,48 +833,6 @@ onEvent('tags.items', event => {
 		'tfc:ore/sapphire',
 		'tfc:ore/topaz'
 	])
-	event.add('forge:ores/clean_dusts/iron', [
-		'tfc:powder/hematite',
-		'tfc:powder/limonite',
-		'tfcorewashing:magnetite_powder'
-	])
-	event.add('forge:ores/clean_dusts/copper', [
-		'tfc:powder/malachite',
-		'tfcorewashing:copper_powder',
-		'tfcorewashing:tetrahedrite_powder'
-	])
-	event.add('forge:ores/clean_dusts/aluminum', ['tfcorewashing:bauxite_powder'])
-	event.add('forge:ores/clean_dusts/bismuth', ['tfcorewashing:bismuthinite_powder'])
-	event.add('forge:ores/clean_dusts/tin', ['tfcorewashing:cassiterite_powder'])
-	event.add('forge:ores/clean_dusts/chromium', ['tfcorewashing:chromium_powder'])
-	event.add('forge:ores/clean_dusts/lead', ['tfcorewashing:galena_powder'])
-	event.add('forge:ores/clean_dusts/nickel', ['tfcorewashing:garnierite_powder'])
-	event.add('forge:ores/clean_dusts/gold', ['tfcorewashing:gold_powder'])
-	event.add('forge:ores/clean_dusts/silver', ['tfcorewashing:silver_powder'])
-	event.add('forge:ores/clean_dusts/zinc', ['tfcorewashing:sphalerite_powder'])
-	event.add('forge:ores/clean_dusts/uranium', ['tfcorewashing:uraninite_powder'])
-
-	event.add('tfc:ore_pieces/iron', [
-		'tfc:ore/small_hematite','tfc:ore/poor_hematite','tfc:ore/normal_hematite','tfc:ore/rich_hematite',
-		'tfc:ore/small_limonite','tfc:ore/poor_limonite','tfc:ore/normal_limonite','tfc:ore/rich_limonite',
-		'tfc:ore/small_magnetite','tfc:ore/poor_magnetite','tfc:ore/normal_magnetite','tfc:ore/rich_magnetite'
-	])
-	event.add('tfc:ore_pieces/copper', [
-		'tfc:ore/small_native_copper','tfc:ore/poor_native_copper','tfc:ore/normal_native_copper','tfc:ore/rich_native_copper',
-		'tfc:ore/small_malachite','tfc:ore/poor_malachite','tfc:ore/normal_malachite','tfc:ore/rich_malachite',
-		'tfc:ore/small_tetrahedrite','tfc:ore/poor_tetrahedrite','tfc:ore/normal_tetrahedrite','tfc:ore/rich_tetrahedrite'
-	])
-	event.add('tfc:ore_pieces/aluminum', ['tfc_ie_addon:ore/small_aluminum','tfc_ie_addon:ore/poor_aluminum','tfc_ie_addon:ore/normal_aluminum','tfc_ie_addon:ore/rich_aluminum'])
-	event.add('tfc:ore_pieces/bismuth', ['tfc:ore/small_bismuthinite','tfc:ore/poor_bismuthinite','tfc:ore/normal_bismuthinite','tfc:ore/rich_bismuthinite'])
-	event.add('tfc:ore_pieces/tin', ['tfc:ore/small_cassiterite','tfc:ore/poor_cassiterite','tfc:ore/normal_cassiterite','tfc:ore/rich_cassiterite'])
-	event.add('tfc:ore_pieces/chromium', ['firmalife:ore/small_chromite','firmalife:ore/poor_chromite','firmalife:ore/normal_chromite','firmalife:ore/rich_chromite'])
-	event.add('tfc:ore_pieces/lead', ['tfc_ie_addon:ore/small_lead','tfc_ie_addon:ore/poor_lead','tfc_ie_addon:ore/normal_lead','tfc_ie_addon:ore/rich_lead'])
-	event.add('tfc:ore_pieces/nickel', ['tfc:ore/small_garnierite','tfc:ore/poor_garnierite','tfc:ore/normal_garnierite','tfc:ore/rich_garnierite'])
-	event.add('tfc:ore_pieces/gold', ['tfc:ore/small_native_gold','tfc:ore/poor_native_gold','tfc:ore/normal_native_gold','tfc:ore/rich_native_gold'])
-	event.add('tfc:ore_pieces/silver', ['tfc:ore/small_native_silver','tfc:ore/poor_native_silver','tfc:ore/normal_native_silver','tfc:ore/rich_native_silver'])
-	event.add('tfc:ore_pieces/zinc', ['tfc:ore/small_sphalerite','tfc:ore/poor_sphalerite','tfc:ore/normal_sphalerite','tfc:ore/rich_sphalerite'])
-	event.add('tfc:ore_pieces/uranium', ['tfc_ie_addon:ore/small_uranium','tfc_ie_addon:ore/poor_uranium','tfc_ie_addon:ore/normal_uranium','tfc_ie_addon:ore/rich_uranium'])
-
 	event.add('tfc:minerals', [
 		'tfc:ore/bituminous_coal',
 		'tfc:ore/lignite',
@@ -414,7 +933,6 @@ onEvent('tags.items', event => {
 	event.add('forge:dusts/coal_coke', ['immersivepetroleum:petcoke_dust'])
 	event.remove('minecraft:carpets', ['farmersdelight:half_tatami_mat','farmersdelight:full_tatami_mat'])
 	event.add('tfc:shears', ['htm:flint_shears'])
-	event.remove('forge:ores/clean_dusts', 'tfc:powder/graphite')
 	event.add('createoreexcavation:high_tier_drills', ['createoreexcavation:diamond_drill','createoreexcavation:netherite_drill'])
 
 	event.add('forge:sheetmetals_colored',[
@@ -463,69 +981,6 @@ onEvent('tags.items', event => {
 		'immersiveengineering:mold_unpacking'])
 
 	event.add('forge:ingots/iron', ['tfc:metal/ingot/wrought_iron'])
-	event.add('forge:ores/dirty_piles',[
-		'tfcorewashing:dirty_pile_bauxite',
-		'tfcorewashing:dirty_pile_bismuthinite',
-		'tfcorewashing:dirty_pile_cassiterite',
-		'tfcorewashing:dirty_pile_chromite',
-		'tfcorewashing:dirty_pile_cinnabar',
-		'tfcorewashing:dirty_pile_copper',
-		'tfcorewashing:dirty_pile_cryolite',
-		'tfcorewashing:dirty_pile_galena',
-		'tfcorewashing:dirty_pile_garnierite',
-		'tfcorewashing:dirty_pile_gold',
-		'tfcorewashing:dirty_pile_graphite',
-		'tfcorewashing:dirty_pile_hematite',
-		'tfcorewashing:dirty_pile_limonite',
-		'tfcorewashing:dirty_pile_magnetite',
-		'tfcorewashing:dirty_pile_malachite',
-		'tfcorewashing:dirty_pile_silver',
-		'tfcorewashing:dirty_pile_sphalerite',
-		'tfcorewashing:dirty_pile_sulfur',
-		'tfcorewashing:dirty_pile_tetrahedrite',
-		'tfcorewashing:dirty_pile_uraninite'])
-	event.add('forge:ores/pellets',[
-		'tfcorewashing:pellet_bauxite',
-		'tfcorewashing:pellet_bismuthinite',
-		'tfcorewashing:pellet_cassiterite',
-		'tfcorewashing:pellet_chromium',
-		'tfcorewashing:pellet_copper',
-		'tfcorewashing:pellet_galena',
-		'tfcorewashing:pellet_garnierite',
-		'tfcorewashing:pellet_gold',
-		'tfcorewashing:pellet_hematite',
-		'tfcorewashing:pellet_limonite',
-		'tfcorewashing:pellet_magnetite',
-		'tfcorewashing:pellet_malachite',
-		'tfcorewashing:pellet_silver',
-		'tfcorewashing:pellet_sphalerite',
-		'tfcorewashing:pellet_tetrahedrite',
-		'tfcorewashing:pellet_uraninite'])
-	event.add('forge:ores/briquettes',[
-		'tfcorewashing:briquet_bauxite',
-		'tfcorewashing:briquet_bismuthinite',
-		'tfcorewashing:briquet_cassiterite',
-		'tfcorewashing:briquet_chromium',
-		'tfcorewashing:briquet_copper',
-		'tfcorewashing:briquet_galena',
-		'tfcorewashing:briquet_garnierite',
-		'tfcorewashing:briquet_gold',
-		'tfcorewashing:briquet_hematite',
-		'tfcorewashing:briquet_limonite',
-		'tfcorewashing:briquet_magnetite',
-		'tfcorewashing:briquet_malachite',
-		'tfcorewashing:briquet_silver',
-		'tfcorewashing:briquet_sphalerite',
-		'tfcorewashing:briquet_tetrahedrite',
-		'tfcorewashing:briquet_uraninite'])
-	event.add('forge:sand_piles',[
-		'tfcorewashing:pile_black_sand',
-		'tfcorewashing:pile_brown_sand',
-		'tfcorewashing:pile_green_sand',
-		'tfcorewashing:pile_pink_sand',
-		'tfcorewashing:pile_red_sand',
-		'tfcorewashing:pile_white_sand',
-		'tfcorewashing:pile_yellow_sand'])
 
 	//event.remove('forge:tools/saws', '#forge:tools/axes')
 	//event.add('forge:saw_blade', 'immersiveengineering:sawblade')
@@ -1050,9 +1505,6 @@ onEvent('tags.items', event => {
 		'minecraft:porkchop',
 		'minecraft:beef',
 		'minecraft:chicken'
-	]),
-	event.add('tfc:small_ore_pieces', [
-		//'geolosys:lignite_ore_sample'
 	]),
 	event.add('forge:pollution_blocks', [
 		'tfc:grass/silt',

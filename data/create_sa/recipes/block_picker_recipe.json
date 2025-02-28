@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "itemInput": {
+    "ingredient": {
+      "item": "create_sa:hydraulic_engine"
+    }
+  },
+  "gasInput": {
+    "amount": 12,
+    "gas": "mekanism:antimatter"
+  },
+  "output": {
+    "item": "create_sa:block_picker"
+  },
+  "duration": 2000
+}

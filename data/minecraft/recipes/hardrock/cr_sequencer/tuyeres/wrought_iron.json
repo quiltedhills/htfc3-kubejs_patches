@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:double_sheets/wrought_iron"},
+  "transitionalItem": {"item":"tfc:metal/propick_head/wrought_iron"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item":"tfc:metal/propick_head/wrought_iron"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/wrought_iron"}],"results": [{"item":"tfc:metal/propick_head/wrought_iron"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/wrought_iron"}],"results": [{"item":"tfc:metal/propick_head/wrought_iron"}]},
+    {"type": "create:pressing","ingredients": [{"item":"tfc:metal/propick_head/wrought_iron"}],"results": [{"item":"tfc:metal/propick_head/wrought_iron"}]}
+    ],
+  "results": [{"item": "tfc:metal/tuyere/wrought_iron","count":1}],
+  "loops": 2
+}

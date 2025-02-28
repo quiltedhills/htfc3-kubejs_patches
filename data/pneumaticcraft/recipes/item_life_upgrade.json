@@ -1,22 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " s ",
-    "scs",
-    " s "
+    "LXL",
+    "XCX",
+    "LXL"
   ],
   "key": {
-    "c": {
+    "L": {
+      "tag": "pneumaticcraft:upgrade_components"
+    },
+    "X": {
       "type": "tfc:not_rotten",
       "ingredient": {
         "tag": "tfc:apples/no_vanilla"
       }
     },
-    "s": {
-      "item": "tfcorewashing:silver_powder"
+    "C": {
+      "item": "minecraft:clock"
     }
   },
   "result": {
-    "item": "kubejs:silver_apple"
+    "item": "pneumaticcraft:item_life_upgrade"
   }
 }
