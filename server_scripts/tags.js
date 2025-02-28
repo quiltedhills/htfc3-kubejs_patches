@@ -833,6 +833,29 @@ onEvent('tags.items', event => {
 		'tfc:ore/sapphire',
 		'tfc:ore/topaz'
 	])
+	event.add('tfc:minerals', [
+		'tfc:ore/bituminous_coal',
+		'tfc:ore/lignite',
+		'tfc:ore/kaolinite',
+		'tfc:ore/gypsum',
+		'tfc:ore/graphite',
+		'tfc:ore/sulfur',
+		'tfc:ore/cinnabar',
+		'tfc:ore/cryolite',
+		'tfc:ore/saltpeter',
+		'tfc:ore/sylvite',
+		'tfc:ore/borax',
+		'tfc:ore/halite'
+	])
+
+	// special materials, do not add to 'forge:rods' and 'forge:sheets'
+	event.add('forge:rods/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/rod')
+	event.add('forge:rods/netherite', 'kubejs:misc_mats/netherite/rod')
+	event.add('forge:sheets/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/sheet')
+	event.add('forge:sheets/netherite', 'createdeco:netherite_sheet')
+	event.remove('forge:plates/netherite', 'createdeco:netherite_sheet')
+	//
+
 	event.add('compactmachines:compactmachines', [
 		'compactmachines:machine_tiny',
 		'compactmachines:machine_small',
@@ -2208,6 +2231,8 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
+		'createdeco:cast_iron_sheet',
+		'createdeco:zinc_sheet',
 		'mekanism:sawdust',
 		'pneumaticcraft:diesel',
 		'pneumaticcraft:kerosene',

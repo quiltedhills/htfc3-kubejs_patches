@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/sheet/zinc"
+  },
+  "result": {
+    "item": "createdeco:zinc_door"
+  },
+  "tier": 1,
+  "rules": [
+    "hit_last",
+    "draw_not_last",
+    "punch_not_last"
+  ]
+}

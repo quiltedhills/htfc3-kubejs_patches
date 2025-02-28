@@ -1,0 +1,10 @@
+{
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "firmalife:spice/cinnamon"
+  },
+  "result": {
+    "item": "firmalife:spice/ground_cinnamon",
+    "count": 1
+  }
+}

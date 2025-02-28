@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bmb",
+    "mbm",
+    "bmb"
+  ],
+  "key": {
+    "b": {
+      "item": "createdeco:dean_brick"
+    },
+    "m": {
+      "item": "tfc:mortar"
+    }
+  },
+  "result": {
+    "item": "createdeco:dean_bricks",
+    "count": 2
+  }
+}
