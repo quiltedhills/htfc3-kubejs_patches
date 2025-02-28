@@ -230,6 +230,74 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
+	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
+	event.add('tfc:wooden_bowl_food', [
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:squid_ink_pasta',
+		'minecraft:rabbit_stew',
+		'farmersdelight:chicken_soup',
+		'farmersdelight:dog_food',
+		'minecraft:beetroot_soup',
+		'farmersdelight:fish_stew',
+		'farmersrespite:blazing_chili',
+		'farmersrespite:tea_curry',
+		'farmersdelight:fried_rice',
+		'farmersdelight:pumpkin_soup',
+		'farmersdelight:bone_broth',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:ratatouille',
+		'farmersdelight:cooked_rice',
+		'farmersdelight:noodle_soup',
+		'farmersdelight:vegetable_soup',
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:beef_stew',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:fruit_salad',
+		'farmersdelight:honey_glazed_ham_block',
+		'farmersdelight:grilled_salmon',
+		'farmersdelight:mixed_salad',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:roast_chicken_block',
+		'farmersdelight:shepherds_pie_block',
+		'farmersrespite:black_cod',
+		'untamedwilds:food_hemlock_stew',
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:nether_salad',
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:rice_roll_medley_block'
+	])
+	event.add('tfc:foods/usable_in_soup', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		'farmersdelight:raw_pasta',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg',
+		'firmalife:food/butter',
+		// misc
+		'farmersdelight:dumplings'
+	])
+	event.add('tfc:foods/usable_in_salad', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg'
+	])
+
+
 	// removeAllTagsFrom doesn't seem to work with regex :(
 	global.items_to_remove = [
 		'/^(tfc|firmalife|tfc_ie_addon):ore\/.+\//'

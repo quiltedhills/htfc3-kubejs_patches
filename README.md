@@ -40,6 +40,7 @@ Please feel free to reach out to me on discord for any questions!
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Fixed a few recipes accepting rotten food <br/>
+• Improvements for bowl-based foods, like soups and salads <br/>
 • Nerfed vanilla apples <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Improved item naming for some easy-to-confuse items <br/>
