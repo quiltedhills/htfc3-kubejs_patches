@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:anvil",
   "input": {
     "tag": "forge:rods/copper"
@@ -9,8 +8,8 @@
   },
   "tier": 1,
   "rules": [
-    "draw_not_last",
     "bend_any",
+    "draw_not_last",
     "hit_any"
   ],
   "apply_forging_bonus": true
