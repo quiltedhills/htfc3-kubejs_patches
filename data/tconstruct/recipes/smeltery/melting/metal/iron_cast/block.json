@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/cast_iron"
+  },
+  "result": {
+    "fluid": "tfc:metal/cast_iron",
+    "amount": 900
+  },
+  "temperature": 800,
+  "time": 180
+}

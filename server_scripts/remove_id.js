@@ -83,6 +83,7 @@ onEvent('recipes', event => {
 		{id: /^createdeco:.+_bricks$/},
 		{id: /^createdeco:.+_decal$/},
 		{id: /^createdeco:.+_lamp$/},
+		{id: 'minecraft:compacting/cast_iron_block'},
 		{id: 'minecraft:pressing/cast_iron_sheet'},
 		{id: 'minecraft:pressing/zinc_sheet'},
 		{id: 'tconstruct:smeltery/casting/metal/zinc/plate_gold_cast'},

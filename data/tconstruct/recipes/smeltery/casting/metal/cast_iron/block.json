@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "tfc:cast_iron",
+    "amount": 900
+  },
+  "result": {
+    "tag": "forge:storage_blocks/cast_iron"
+  },
+  "cooling_time": 180
+}
