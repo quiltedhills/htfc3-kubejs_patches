@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shaped",
   "pattern": [
-    " w ",
-    " b ",
-    " c "
+    "w",
+    "b",
+    "c"
   ],
   "key": {
     "w": {
@@ -14,10 +14,10 @@
     },
     "c": {
       "item": "tfc:metal/ingot/cast_iron"
-   }
-    },
-    "result": {
-      "item": "createdeco:green_decal",
-      "count": 1
     }
+  },
+  "result": {
+    "item": "createdeco:green_decal",
+    "count": 1
   }
+}

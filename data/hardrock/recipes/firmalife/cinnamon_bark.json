@@ -1,18 +1,18 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "bs",
-      "sb"
-    ],
-    "key": {
-      "b": {
-        "item": "farmersdelight:tree_bark"
-      },
-      "s": {
-        "item": "tfc:powder/sylvite"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bs",
+    "sb"
+  ],
+  "key": {
+    "b": {
+      "item": "farmersdelight:tree_bark"
     },
-    "result": {
-      "item": "firmalife:cinnamon_bark"
+    "s": {
+      "item": "tfc:powder/sylvite"
     }
+  },
+  "result": {
+    "item": "firmalife:cinnamon_bark"
   }
+}

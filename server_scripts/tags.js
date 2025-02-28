@@ -1161,8 +1161,7 @@ onEvent('tags.items', event => {
 		'tconstruct:amethyst_bronze_ingot',
 		'tconstruct:queens_slime_ingot',
 		'tconstruct:manyullyn_ingot',
-		'tconstruct:hepatizon_ingot',
-		'create:andesite_alloy'
+		'tconstruct:hepatizon_ingot'
 	]),
 	event.add('forge:colored_sleeping_bag', [
 		'comforts:sleeping_bag_orange',

@@ -1,8 +1,8 @@
 {
-    "ingredient": {
-      "item": "kubejs:misc_mats/andesite_alloy/sheet"
-    },
-    "heat_capacity": 3.571,
-    "forging_temperature": 540,
-    "welding_temperature": 720
-  }
+  "ingredient": {
+    "item": "kubejs:misc_mats/andesite_alloy/sheet"
+  },
+  "heat_capacity": 3.571,
+  "forging_temperature": 540,
+  "welding_temperature": 720
+}
