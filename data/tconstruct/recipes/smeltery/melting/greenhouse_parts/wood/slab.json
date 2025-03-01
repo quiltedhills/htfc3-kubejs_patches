@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {"item": "firmalife:treated_wood_greenhouse_roof_top"},
+    {"item": "firmalife:weathered_treated_wood_greenhouse_roof_top"}
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_glass",
+    "amount": 75
+  },
+  "temperature": 400,
+  "time": 26
+}

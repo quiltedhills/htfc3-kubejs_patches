@@ -8,8 +8,8 @@
     "item": "immersiveengineering:fluid_pipe"
   },
   "rules": [
-      "bend_last",
-      "draw_second_last",
-      "draw_third_last"
+    "bend_last",
+    "draw_second_last",
+    "draw_third_last"
   ]
 }

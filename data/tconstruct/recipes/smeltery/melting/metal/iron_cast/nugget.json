@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/cast_iron"
+  },
+  "result": {
+    "fluid": "tfc:metal/cast_iron",
+    "amount": 10
+  },
+  "temperature": 800,
+  "time": 20
+}

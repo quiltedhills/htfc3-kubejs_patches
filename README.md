@@ -35,17 +35,21 @@ Please feel free to reach out to me on discord for any questions!
 # Changelogs / differences from 1.5.5
 • Added Create Deco with numerous recipe changes
 • Reworked ore-related tags <br/>
-• Added recipes for TFC ore blocks for building purposes <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
+• Added recipes for TFC ore blocks for building purposes <br/>
+• Added a few prop foods for decoration purposes <br/>
 • Improvements for bowl-based foods, like soups and salads <br/>
 • Added some extra info for pollution-related items <br/>
 • Tweaked nucleosynthesizer recipes <br/>
 • Reworked recipe for wolf spawn eggs <br/>
+• Added recipes for smelting down greenhouse blocks <br/>
 
+• Made sandstone collapsible <br/>
 • Blacklisted villagers from cage traps <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>
+• Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
 
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>

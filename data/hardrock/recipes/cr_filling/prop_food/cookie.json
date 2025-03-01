@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "fluid": "immersiveengineering:phenolic_resin",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:prop_foods/cookie"
+    }
+  ]
+}

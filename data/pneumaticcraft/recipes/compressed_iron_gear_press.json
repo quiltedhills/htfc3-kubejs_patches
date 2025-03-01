@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_gear",
+  "input": {
+    "tag": "forge:double_ingots/compressed_iron"
+  },
+  "result": {
+    "item": "pneumaticcraft:compressed_iron_gear",
+    "count": 1
+  },
+  "energy": 2400
+}

@@ -96,6 +96,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_sand_cast'},
 		{id: 'tconstruct:smeltery/melting/metal/netherite/plates'},
+		{id: 'createdeco:cast_iron_nugget_from_cast_iron_ingot'},
     
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},

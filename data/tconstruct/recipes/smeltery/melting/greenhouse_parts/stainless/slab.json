@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {"item": "firmalife:stainless_steel_greenhouse_roof_top"}
+  ],
+  "result": {
+    "fluid": "firmalife:metal/stainless_steel",
+    "amount": 15
+  },
+  "temperature": 950,
+  "time": 25,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_glass",
+      "amount": 75
+    }
+  ]
+}

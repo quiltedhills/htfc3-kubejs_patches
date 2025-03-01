@@ -1,9 +1,16 @@
 {
-  "__comment__": "This file created by tfch",
   "type": "tfc:anvil",
-  "input": {
-    "tag": "forge:ingots/copper"
-  },
+  "input": [
+    {
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "tag": "forge:ingots/irons"
+    },
+    {
+      "tag": "forge:ingots/andesite_alloy"
+    }
+  ],
   "result": {
     "item": "myrtrees:tree_tap",
     "count": 1

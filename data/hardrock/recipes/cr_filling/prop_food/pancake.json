@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:pancake"
+    },
+    {
+      "fluid": "immersiveengineering:phenolic_resin",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "supplementaries:pancake"
+    }
+  ]
+}
