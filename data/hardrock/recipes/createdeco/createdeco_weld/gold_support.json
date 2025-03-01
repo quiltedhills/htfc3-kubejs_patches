@@ -1,10 +1,10 @@
 {
     "type": "tfc:welding",
     "first_input": {
-      "item": "createdeco:gold_bars"
+      "item": "tconstruct:gold_bars"
     },
     "second_input": {
-      "item": "createdeco:gold_bars"
+      "item": "tconstruct:gold_bars"
     },
     "tier": 1,
     "result": {
