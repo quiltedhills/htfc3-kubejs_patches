@@ -17,8 +17,8 @@ onEvent('item.registry', event => {
 
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
-	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
-	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
+	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
+	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('raw_pancake')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Mniaam Miaammm!'))})})
 	event.create('pancake')			.food(food => {food.hunger(3).saturation(0.6) })//.eaten(ctx => {ctx.player.tell(Text.gold('Mniaam Miaammm!'))})})
 	event.create('boiled_grass')	.food(food => {food.hunger(1).saturation(0.25) })//.eaten(ctx => {ctx.player.tell(Text.gold('hmmm boiled grass? Not Bad!'))})})
