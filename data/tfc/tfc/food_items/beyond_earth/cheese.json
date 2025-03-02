@@ -1,0 +1,8 @@
+{
+    "ingredient": {
+      "item": "beyond_earth:cheese"
+    },
+    "hunger": 4,
+    "decay_modifier": 0.6,
+    "dairy": 3
+  }
