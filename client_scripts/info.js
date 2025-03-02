@@ -528,8 +528,13 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Exact percentage will also be shown in item tooltip.'))
 		}
 	})
-
 	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
+	tooltip.add('toolbelt:belt', ["Can hold any unstackable item"])
+	tooltip.add('firmalife:oven_chimney', ["MuSst be placed behind main oven parts"])
+	tooltip.add('firmalife:cured_stone_oven_chimney', ["Must be placed behind main oven parts"])
+	tooltip.add('firmalife:cured_tile_oven_chimney', ["Must be placed behind main oven parts"])
+	tooltip.add('firmalife:cured_rustic_oven_chimney', ["Must be placed behind main oven parts"])
+	tooltip.add('firmalife:cured_oven_chimney', ["Must be placed behind main oven parts"])
 
 const nutrients = [ 'Grain','Fruit','Vegetables','Protein','Dairy' ]
 	nutrients.forEach(nutrient => {
