@@ -30,6 +30,12 @@
       "weight":2,
       "size_min":1,
       "size_max":2
-    }
+    },
+	{
+		"type":"untamedwilds:terror_bird",
+		"weight":1,
+		"size_min":1,
+		"size_max":2
+	}
   ]
 }
