@@ -1,0 +1,16 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_instant_fluid",
+	"primary_fluid": {
+		"ingredient": "minecraft:milk",
+		"amount": 3
+	},
+	"added_fluid": {
+		"ingredient": "tfc:vinegar",
+		"amount": 1
+	},
+	"output_fluid": {
+		"fluid": "tfc:curdled_milk",
+		"amount": 3
+	}
+}
