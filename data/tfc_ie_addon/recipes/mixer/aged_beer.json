@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "inputs": [
+    {
+		"tag": "tfc:makes_tannin"
+	}
+  ],
+  "result": {
+    "fluid": "tfchomestead:aged_beer",
+    "amount": 1000
+  },
+  "fluid": {
+    "tag": "tfc:beer",
+    "amount": 1000
+  },
+  "energy": 12800
+}

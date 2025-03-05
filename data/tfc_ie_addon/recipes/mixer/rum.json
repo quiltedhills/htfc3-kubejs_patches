@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "inputs": [
+    {
+		"item": "minecraft:sugar"
+	}
+  ],
+  "result": {
+    "fluid": "tfc:rum",
+    "amount": 500
+  },
+  "fluid": {
+    "tag": "tfc:fresh_water",
+    "amount": 500
+  },
+  "energy": 3200
+}
