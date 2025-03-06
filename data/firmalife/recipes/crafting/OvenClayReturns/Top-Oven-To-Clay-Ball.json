@@ -1,0 +1,13 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+	{
+		"item": "firmalife:oven_top"
+	}
+	],
+	"result": {
+		"item": "minecraft:clay_ball",
+		"count": 5
+	}
+}

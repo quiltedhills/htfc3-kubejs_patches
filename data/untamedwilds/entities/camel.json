@@ -8,9 +8,6 @@
     "hurt":"untamedwilds:entity.camel.hurt",
     "death":"untamedwilds:entity.camel.death"
   },
-  "flags":{
-    "groupCount":2
-  },
   "species":[
     {
       "name":"bactrian",
@@ -24,16 +21,7 @@
       },
       "spawnBiomes":[
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     },
@@ -50,16 +38,7 @@
       },
       "spawnBiomes":[
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     },
@@ -75,16 +54,7 @@
       },
       "spawnBiomes":[
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     }

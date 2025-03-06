@@ -11,9 +11,6 @@
     "death":"untamedwilds:entity.terror_bird.death",
     "threat":"untamedwilds:entity.terror_bird.threat"
   },
-  "flags":{
-    "isGrazer": 0
-  },
   "species":[
     {
       "name":"gastornis",
@@ -27,8 +24,11 @@
       },
       "spawnBiomes":[
         [
-          "category|forest"
-        ]
+          "category|mesa"
+        ],
+		[
+		"category|desert"
+		]
       ]
     },
     {
@@ -38,10 +38,16 @@
       "rarity":2,
       "attack":9,
       "health":35,
+	  "flags":{
+			"isGrazer": 0
+		},
       "spawnBiomes":[
         [
-          "category|forest"
-        ]
+          "category|mesa"
+        ],
+		[
+		"category|desert"
+		]
       ]
     },
     {
@@ -51,10 +57,16 @@
       "rarity":2,
       "attack":5,
       "health":25,
+	  "flags":{
+			"isGrazer": 0
+		},
       "spawnBiomes":[
         [
-          "category|forest"
-        ]
+          "category|mesa"
+        ],
+		[
+		"category|desert"
+		]
       ]
     },
     {
@@ -64,13 +76,16 @@
       "rarity":1,
       "attack":8,
       "health":30,
+	  "flags":{
+			"isGrazer": 0
+		},
       "spawnBiomes":[
         [
-          "category|forest"
+          "category|mesa"
         ],
-        [
-          "category|plains"
-        ]
+		[
+		"category|desert"
+		]
       ]
     },
     {
@@ -82,8 +97,11 @@
       "health":30,
       "spawnBiomes":[
         [
-          "category|forest"
-        ]
+          "category|mesa"
+        ],
+		[
+		"category|desert"
+		]
       ]
     }
   ]
