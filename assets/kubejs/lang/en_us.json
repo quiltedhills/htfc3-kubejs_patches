@@ -12,6 +12,15 @@
   "item.kubejs.misc_mats.andesite_alloy.sheet": "Andesite Alloy Slab",
   "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
 
+  "item.kubejs.magnet.copper": "Copper Magnet",
+  "item.kubejs.magnet.colored_steel": "Colored Steel Magnet",
+  "item.kubejs.magnet.hdpe_offline": "HDPE Magnet (Offline)",
+  "item.kubejs.magnet.hdpe": "HDPE Magnet",
+  "item.kubejs.magnet.polonium": "Polonium-Coated Magnet",
+
+  "item.kubejs.magnet.colored_steel_alt": "Colored Steel Magnet",
+  "item.kubejs.magnet.polonium_alt": "Polonium-Coated Magnet",
+
 
   "item.kubejs.prop_foods.cookie": "Prop Cookie"
 }

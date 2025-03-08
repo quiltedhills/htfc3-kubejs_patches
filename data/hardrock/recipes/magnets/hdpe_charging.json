@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "amount": 1,
+    "ingredient": {
+      "item": "kubejs:magnet/hdpe_offline"
+    }
+  },
+  "output": {
+    "item": "kubejs:magnet/hdpe"
+  }
+}
