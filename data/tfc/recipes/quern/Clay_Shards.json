@@ -1,0 +1,10 @@
+{
+	"type": "tfc:quern",
+	"ingredient": {
+		"tag": "tfc:fired_molds"
+	},
+	"result": {
+		"item": "kubejs:clay_shards",
+		"count": 1
+	}
+}
