@@ -34,6 +34,7 @@ Please feel free to reach out to me on discord for any questions!
 
 # Changelogs / differences from 1.5.5
 • Added Create Deco with numerous recipe changes
+• Added custom magnets to replace the Create SA copper magnet
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
@@ -45,13 +46,15 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked recipe for wolf spawn eggs <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 
-• Made sandstone collapsible <br/>
 • Blacklisted villagers from cage traps <br/>
+• Removed copper magnet recipe <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>
+• Made sandstone collapsible <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
 
+• Fixed incorrect finishing move order for some custom anvil recipes <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Improved item naming for some easy-to-confuse items <br/>
-• Tweaked Ex Nihilo's hammers <br/>
+• Tweaked the durability of Ex Nihilo hammers <br/>
