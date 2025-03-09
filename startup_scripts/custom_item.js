@@ -115,6 +115,14 @@ onEvent('item.registry', event => {
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
 
+onEvent('item.modification', event => {
+	event.modify('minecraft:golden_carrot', item => {
+		item.foodProperties = food => {
+			food.alwaysEdible()
+		}
+	})
+})
+
 //onEvent('item.registry.long_stick', event => {
 //	event.add('long_stick', tier => {
 //	  tier.uses = 250
