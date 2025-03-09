@@ -1,4 +1,17 @@
 // priority: 0
+
+function getKeybind(langKey) {
+	let key = Text.keybind(langKey).string.trim() ? Text.keybind(langKey).aqua() : Text.of('Unbound').aqua()
+	let keyName = [
+		Text.of(` (`).gold(),
+		Text.of(`'`).yellow(),
+		(Text.translate(langKey)).yellow(),
+		Text.of(`'`).yellow(),
+		Text.of(`)`).gold()
+	]
+	return [key, Array.from(keyName)]
+}
+
 const pollution_filter_map = {
 	'dust': {
 		'low': ['htm:plant_fabric'],
@@ -531,9 +544,36 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Exact percentage will also be shown in item tooltip.'))
 		}
 	})
-
 	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
-
+  
+	tooltip.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.yellow('Can hold any unstackable item!'))
+			text.add(2, [Text.of('Access the slot with ').gold(), getKeybind('key.toolbelt.slot')])
+			text.add(3, [Text.of('then hold any unstackable item and hold ').gold(), getKeybind('key.toolbelt.open')])
+			text.add(4, Text.gold('to bring up a radial menu.'))
+			text.add(5, Text.gold(''))
+			text.add(6, Text.gold('Can be upgraded to hold more items.'))
+			text.add(7, [Text.of('You can get up to ').gold(), Text.of('2 slots').yellow(), Text.of(' with a ').gold(), Text.of('bone needle').yellow(), Text.of(',').gold()])
+			text.add(8, [Text.of('up to ').gold(), Text.of('4').yellow(), Text.of(' with an ').gold(), Text.of('iron').yellow(), Text.of(' and up to ').gold(), Text.of('9').yellow(), Text.of(' with a ').gold(), Text.of('netherite').yellow(), Text.of('!').gold()])
+		}
+	})
+	tooltip.addAdvanced([
+		'firmalife:oven_chimney',
+		'firmalife:cured_stone_oven_chimney',
+		'firmalife:cured_tile_oven_chimney',
+		'firmalife:cured_rustic_oven_chimney',
+		'firmalife:cured_oven_chimney'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Three must be placed behind main oven parts.'))
+			text.add(2, Text.gold('See the guidebook entry for more info!'))
+		}
+	})
 	const nutrients = ['Grain', 'Fruit', 'Vegetables', 'Protein', 'Dairy']
 	nutrients.forEach(nutrient => {
 		['soup', 'salad'].forEach(foodType => {

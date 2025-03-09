@@ -233,6 +233,8 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('curios:belt', 'toolbelt:belt')
+	event.add('tfc:axes', 'tconstruct:hand_axe')
 	event.add('forge:prop_foods', [
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
