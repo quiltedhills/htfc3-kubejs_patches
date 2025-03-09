@@ -2,18 +2,15 @@
   "type": "immersiveengineering:mixer",
   "inputs": [
     {
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"tag": "tfc:foods/apples"
-		}
-	}
+      "item": "minecraft:sugar"
+    }
   ],
-  "result": {
-    "fluid": "tfc:cider",
-    "amount": 500
-  },
   "fluid": {
     "tag": "tfc:fresh_water",
+    "amount": 500
+  },
+  "result": {
+    "fluid": "tfc:rum",
     "amount": 500
   },
   "energy": 3200

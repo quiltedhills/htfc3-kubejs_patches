@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:mixer",
+  "inputs": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/barley_flour"
+      }
+    }
+  ],
+  "fluid": {
+    "tag": "tfc:fresh_water",
+    "amount": 500
+  },
+  "result": {
+    "fluid": "tfc:beer",
+    "amount": 500
+  },
+  "energy": 3200
+}

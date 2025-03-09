@@ -2,15 +2,15 @@
   "type": "immersiveengineering:mixer",
   "inputs": [
     {
-		"tag": "tfc:makes_tannin"
-	}
+      "tag": "tfc:makes_tannin"
+    }
   ],
-  "result": {
-    "fluid": "tfchomestead:aged_corn_whiskey",
-    "amount": 1000
-  },
   "fluid": {
     "tag": "tfc:corn_whiskey",
+    "amount": 1000
+  },
+  "result": {
+    "fluid": "tfchomestead:aged_corn_whiskey",
     "amount": 1000
   },
   "energy": 12800
