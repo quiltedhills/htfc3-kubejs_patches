@@ -12,4 +12,6 @@ onEvent('fluid.registry', event => {
 	event.create("mineral_water")		.thinTexture(0x3399ff)	.bucketColor(0x3399ff)	.displayName("Mineral Water")					.noBlock()
 	event.create("active_redstone")		.thinTexture(0xcc0000)	.bucketColor(0xcc0000)	.displayName("Active Molten Redstone")			.noBlock()
 	event.create("seed_oil_water")		.thinTexture(0x936e52)	.bucketColor(0x936e52)	.displayName("Tree Seed Oil Water")				.noBlock() 
+	event.create("goat_milk_vinegar")	.thinTexture(0xcbd4d6) .bucketColor(0xcbd4d6)  .displayName("Goat Milk Vinegar")               .noBlock()
+	event.create("yak_milk_vinegar")    .thinTexture(0xf2efe1) .bucketColor(0xf2efe1)  .displayName("Yak Milk Vinegar")                .noBlock()
 })
