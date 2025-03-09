@@ -1153,8 +1153,7 @@ onEvent('tags.items', event => {
 		'tconstruct:amethyst_bronze_ingot',
 		'tconstruct:queens_slime_ingot',
 		'tconstruct:manyullyn_ingot',
-		'tconstruct:hepatizon_ingot',
-		'create:andesite_alloy'
+		'tconstruct:hepatizon_ingot'
 	]),
 	event.add('forge:colored_sleeping_bag', [
 		'comforts:sleeping_bag_orange',
@@ -1533,6 +1532,9 @@ onEvent('tags.items', event => {
 		'butchersdelight:cow_hide',
 		'butchersdelight:hoglinskin',
 		'#forge:hide'
+	]),
+	event.add('firmalife:jars', [
+		'kubejs:misc_mats/healing_salve'
 	]),
 	event.add('forge:tallow_source', [
 		'untamedwilds:material_blubber'

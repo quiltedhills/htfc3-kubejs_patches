@@ -8,7 +8,7 @@
   "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet",
   "item.kubejs.misc_mats.andesite_alloy.rod": "Andesite Alloy Rod",
   "item.kubejs.misc_mats.andesite_alloy.sheet": "Andesite Alloy Sheet",
-  "item.kubejs.misc_mats.andesite_alloy.double_ingot": "Andesite Alloy Double Ingot",
   "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
-  "item.kubejs.misc_mats.netherite.double_ingot": "Netherite Double Ingot"
+  "item.kubejs.misc_mats.healing_salve": "Healing Salve",
+  "item.kubejs.misc_mats.mineral_mix": "Mineral Mix"
 }

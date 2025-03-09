@@ -1,0 +1,17 @@
+{
+    "type": "firmalife:vat",
+    "input_item": {
+      "ingredient": {
+        "tag": "tfc:herbal_grass"
+      },
+      "count": 4
+    },
+    "input_fluid": {
+      "ingredient": "minecraft:water",
+      "amount": 1000
+    },
+    "output_fluid": {
+      "fluid": "kubejs:herbal_water",
+      "amount": 1000
+    }
+  }
