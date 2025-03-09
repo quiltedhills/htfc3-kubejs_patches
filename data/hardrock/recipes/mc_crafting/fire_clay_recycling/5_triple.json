@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "tfc:ceramic/unfired_fire_brick"
+      }
+    ],
+    [
+      {
+        "item": "tfc:ceramic/unfired_fire_brick"
+      }
+    ],
+    [
+      {
+        "item": "tfc:ceramic/unfired_fire_brick"
+      }
+    ]
+  ],
+  "result": {
+    "item": "tfc:fire_clay",
+    "count": 5
+  }
+}
