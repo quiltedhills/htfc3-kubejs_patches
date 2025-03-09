@@ -1,13 +1,14 @@
 {
   "metal.tfc.andesite_stone": "Andesite",
   "metal.tfc.andesite_alloy": "Andesite Alloy",
+  "metal.tfc.glass": "Glass",
   "item.kubejs.metal.double_sheet.electrum": "Electrum Double Sheet",
   "item.kubejs.metal.double_sheet.constantan": "Constantan Double Sheet",
   "item.kubejs.metal.double_sheet.aluminum": "Aluminum Double Sheet",
   "item.kubejs.metal.double_sheet.lead": "Lead Double Sheet",
   "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet",
+
   "item.kubejs.misc_mats.andesite_alloy.rod": "Andesite Alloy Rod",
-  "item.kubejs.misc_mats.andesite_alloy.sheet": "Andesite Alloy Sheet",
   "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
   "item.kubejs.misc_mats.healing_salve": "Healing Salve",
   "item.kubejs.misc_mats.mineral_mix": "Mineral Mix"

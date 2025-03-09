@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n",
+    "t",
+    "p"
+  ],
+  "key": {
+    "n": {
+      "item": "mekanismgenerators:solar_panel"
+    },
+    "t": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "p": {
+      "item": "kubejs:misc_mats/andesite_alloy/sheet"
+    }
+  },
+  "result": {
+    "item": "createdeco:red_andesite_lamp"
+  }
+}

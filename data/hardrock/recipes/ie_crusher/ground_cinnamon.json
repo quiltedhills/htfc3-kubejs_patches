@@ -1,20 +1,24 @@
 {
-    "type":"immersiveengineering:crusher",
-    "secondaries":[
-        {
-            "chance":0.50,
-            "output":{
-                "count": 1,
-                "base_ingredient":{"item":"firmalife:spice/ground_cinnamon"}
-            }
+  "type": "immersiveengineering:crusher",
+  "input": {
+    "item": "firmalife:spice/cinnamon"
+  },
+  "result": {
+    "count": 2,
+    "base_ingredient": {
+      "item": "firmalife:spice/ground_cinnamon"
+    }
+  },
+  "secondaries": [
+    {
+      "chance": 0.50,
+      "output": {
+        "count": 1,
+        "base_ingredient": {
+          "item": "firmalife:spice/ground_cinnamon"
         }
-    ],
-    "result":{
-        "count": 2,
-        "base_ingredient":{"item":"firmalife:spice/ground_cinnamon"}
-    },
-    "input":{
-        "item":"firmalife:spice/cinnamon"
-    },
-    "energy":5000
+      }
+    }
+  ],
+  "energy": 5000
 }

@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:double_sheets/steel"},
+  "transitionalItem": {"item":"tfc:metal/propick_head/steel"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item":"tfc:metal/propick_head/steel"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/steel"}],"results": [{"item":"tfc:metal/propick_head/steel"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/steel"}],"results": [{"item":"tfc:metal/propick_head/steel"}]},
+    {"type": "create:pressing","ingredients": [{"item":"tfc:metal/propick_head/steel"}],"results": [{"item":"tfc:metal/propick_head/steel"}]}
+    ],
+  "results": [{"item": "tfc:metal/tuyere/steel","count":1}],
+  "loops": 2
+}

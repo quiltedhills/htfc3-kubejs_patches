@@ -1,0 +1,10 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "create:copper_nugget"},
+  "transitionalItem": {"item": "create:copper_nugget"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item": "create:copper_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 25}],"results": [{"item": "create:copper_nugget"}]},
+    {"type": "create:deploying","ingredients": [{"item": "create:copper_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:copper_coin"}],"keepHeldItem": true}],
+  "results": [{"item": "createdeco:copper_coin","count":1}],
+  "loops": 1
+}

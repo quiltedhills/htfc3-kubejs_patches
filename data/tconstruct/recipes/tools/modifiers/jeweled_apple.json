@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:apples/no_vanilla"
+      }
+    },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_diamond",
+    "amount": 400
+  },
+  "result": "tconstruct:jeweled_apple",
+  "cooling_time": 166
+}

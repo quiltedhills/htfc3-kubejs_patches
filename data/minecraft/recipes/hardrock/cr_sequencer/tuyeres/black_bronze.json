@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:double_sheets/black_bronze"},
+  "transitionalItem": {"item":"tfc:metal/propick_head/black_bronze"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item":"tfc:metal/propick_head/black_bronze"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/black_bronze"}],"results": [{"item":"tfc:metal/propick_head/black_bronze"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/black_bronze"}],"results": [{"item":"tfc:metal/propick_head/black_bronze"}]},
+    {"type": "create:pressing","ingredients": [{"item":"tfc:metal/propick_head/black_bronze"}],"results": [{"item":"tfc:metal/propick_head/black_bronze"}]}
+    ],
+  "results": [{"item": "tfc:metal/tuyere/black_bronze","count":1}],
+  "loops": 2
+}

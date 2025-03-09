@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/rod"
+  },
+  "fluid": {
+    "tag": "forge:molten_netherite",
+    "amount": 10
+  },
+  "result": "kubejs:misc_mats/netherite/rod",
+  "cooling_time": 36
+}

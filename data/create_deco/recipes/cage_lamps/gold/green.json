@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n",
+    "t",
+    "p"
+  ],
+  "key": {
+    "n": {
+      "item": "mekanismgenerators:solar_panel"
+    },
+    "t": {
+      "item": "minecraft:green_stained_glass"
+    },
+    "p": {
+      "tag": "forge:plates/gold"
+    }
+  },
+  "result": {
+    "item": "createdeco:green_gold_lamp"
+  }
+}

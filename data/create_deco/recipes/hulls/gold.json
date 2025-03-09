@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+    "mcm",
+    " m "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:sheets/gold"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/gold"
+    }
+  },
+  "result": {
+    "item": "createdeco:gold_hull",
+    "count": 1
+  }
+}
