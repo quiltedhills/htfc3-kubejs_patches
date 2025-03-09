@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "tfcchannelcasting:unfired_channel"
+      }
+    ],
+    [
+      {
+        "item": "tfcchannelcasting:unfired_channel"
+      }
+    ],
+    [
+      {
+        "item": "tfcchannelcasting:unfired_channel"
+      }
+    ],
+    [
+      {
+        "item": "tfcchannelcasting:unfired_channel"
+      }
+    ]
+  ],
+  "result": {
+    "item": "tfc:fire_clay",
+    "count": 5
+  }
+}

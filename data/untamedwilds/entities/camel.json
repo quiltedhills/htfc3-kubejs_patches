@@ -1,90 +1,60 @@
 {
-  "name":"camel",
-  "breeding":"MID_SUMMER",
-  "growing_time":13,
-  "offspring":1,
-  "sounds":{
-    "ambient":"untamedwilds:entity.camel.ambient",
-    "hurt":"untamedwilds:entity.camel.hurt",
-    "death":"untamedwilds:entity.camel.death"
+  "name": "camel",
+  "breeding": "MID_SUMMER",
+  "growing_time": 13,
+  "offspring": 1,
+  "sounds": {
+    "ambient": "untamedwilds:entity.camel.ambient",
+    "hurt": "untamedwilds:entity.camel.hurt",
+    "death": "untamedwilds:entity.camel.death"
   },
-  "flags":{
-    "groupCount":2
-  },
-  "species":[
+  "species": [
     {
-      "name":"bactrian",
-      "variant":0,
-      "scale":1.1,
-      "rarity":6,
-      "activityType":"diurnal",
-      "favourite_food":"tfc:plant/barrel_cactus",
-      "flags":{
-        "groupCount":4
+      "name": "bactrian",
+      "variant": 0,
+      "scale": 1.1,
+      "rarity": 6,
+      "activityType": "diurnal",
+      "favourite_food": "tfc:plant/barrel_cactus",
+      "flags": {
+        "groupCount": 4
       },
-      "spawnBiomes":[
+      "spawnBiomes": [
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     },
     {
-      "name":"dromedary",
-      "variant":1,
-      "scale":1.0,
-      "rarity":6,
-      "activityType":"diurnal",
-      "favourite_food":"tfc:plant/barrel_cactus",
+      "name": "dromedary",
+      "variant": 1,
+      "scale": 1.0,
+      "rarity": 6,
+      "activityType": "diurnal",
+      "favourite_food": "tfc:plant/barrel_cactus",
       "skins": 20,
-      "flags":{
-        "groupCount":4
+      "flags": {
+        "groupCount": 4
       },
-      "spawnBiomes":[
+      "spawnBiomes": [
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     },
     {
-      "name":"wild_bactrian",
-      "variant":2,
-      "scale":1.0,
-      "rarity":1,
-      "activityType":"diurnal",
-      "favourite_food":"tfc:plant/barrel_cactus",
-      "flags":{
-        "groupCount":4
+      "name": "wild_bactrian",
+      "variant": 2,
+      "scale": 1.0,
+      "rarity": 1,
+      "activityType": "diurnal",
+      "favourite_food": "tfc:plant/barrel_cactus",
+      "flags": {
+        "groupCount": 4
       },
-      "spawnBiomes":[
+      "spawnBiomes": [
         [
-          "tfc:badlands"
-        ],
-        [
-          "tfc:badlands_plateau"
-        ],
-        [
-          "tfc:inverted_badlands"
-        ],
-        [
-          "tfc:mesa_plateau"
+          "category|mesa"
         ]
       ]
     }

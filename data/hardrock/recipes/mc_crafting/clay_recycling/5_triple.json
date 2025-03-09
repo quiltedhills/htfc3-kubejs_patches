@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "tfc:ceramic/unfired_brick"
+      }
+    ],
+    [
+      {
+        "item": "tfc:ceramic/unfired_brick"
+      }
+    ],
+    [
+      {
+        "item": "tfc:ceramic/unfired_brick"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:clay_ball",
+    "count": 5
+  }
+}

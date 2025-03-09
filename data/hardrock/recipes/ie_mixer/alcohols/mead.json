@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "inputs": [
+    {
+      "item": "firmalife:raw_honey"
+    }
+  ],
+  "fluid": {
+    "tag": "tfc:fresh_water",
+    "amount": 100
+  },
+  "result": {
+    "fluid": "firmalife:mead",
+    "amount": 100
+  },
+  "energy": 3200
+}
