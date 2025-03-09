@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'create_sa:copper_magnet_recipe'},
+
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_nuggets'},
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_block'},
 

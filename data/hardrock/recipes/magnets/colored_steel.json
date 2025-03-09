@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "B R",
+    "bAr"
+  ],
+  "key": {
+    "C": {
+      "item": "immersiveengineering:coil_hv"
+    },
+    "A": {
+      "item": "immersiveengineering:capacitor_mv"
+    },
+    "B": {
+      "item": "tfc:metal/double_ingot/blue_steel"
+    },
+    "b": {
+      "item": "tfc:metal/ingot/blue_steel"
+    },
+    "R": {
+      "item": "tfc:metal/double_ingot/red_steel"
+    },
+    "r": {
+      "item": "tfc:metal/ingot/red_steel"
+    }
+  },
+  "result": {
+    "item": "kubejs:magnet/colored_steel"
+  }
+}

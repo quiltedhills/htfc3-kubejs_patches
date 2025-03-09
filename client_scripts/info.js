@@ -545,7 +545,7 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
-
+  
 	tooltip.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -574,7 +574,6 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('See the guidebook entry for more info!'))
 		}
 	})
-
 	const nutrients = ['Grain', 'Fruit', 'Vegetables', 'Protein', 'Dairy']
 	nutrients.forEach(nutrient => {
 		['soup', 'salad'].forEach(foodType => {
@@ -604,6 +603,88 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, Text.gold('Inedible. Will not rot.'))
 			text.add(2, Text.darkGray('What have you done...'))
+		}
+	})
+	tooltip.addAdvanced('create_sa:copper_magnet', (item, advanced, text) => {
+		text.add(1, Text.red('Crafting disabled in favor of custom magnets'))
+	})
+	tooltip.addAdvanced('kubejs:magnet/copper', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Can only attract items with the ').gold(), Text.of('$metallic').yellow(), Text.of(' tag!').gold()])
+			text.add(2, [Text.of('Metallic ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are hardly pulled.').gold()])
+			text.add(3, Text.gold(''))
+			text.add(4, Text.gold('Quite a weak pull, but gets the job done.'))
+			text.add(5, Text.gold('Be careful when moving lots of items around!'))
+			text.add(6, Text.gold(''))
+			text.add(7, Text.gold('Look into getting a better magnet when you\'re able to!'))
+		}
+	})
+	tooltip.addAdvanced('kubejs:magnet/colored_steel', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Can attract ').gold(), Text.of('any').yellow(), Text.of(' items, not just metallic ones!').gold()])
+			text.add(2, [Text.of('Still, has a slightly stronger pull for ').gold(), Text.of('$metallic').yellow(), Text.of(' items,').gold()])
+			text.add(3, [Text.of('and ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are pulled very slowly.').gold()])
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('Uses no energy despite using an accumulator.'))
+			text.add(6, Text.gold(''))
+			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
+				else {
+					text.add(7, [Text.of('A ').gold(), Text.of('Smart Chest').yellow(), Text.of(' with ').gold(), Text.of('magnet and range upgrades').yellow()])
+					text.add(8, Text.gold('can suck up items in a huge area, and has incredible storage.'))
+					text.add(9, [Text.of('A ').gold(), Text.of('Vacuum Hopper').yellow(), Text.of(' is similar, but is simpler and cheaper!').gold()])
+					text.add(10, [Text.of('An ').gold(), Text.of('Encased Fan').yellow(), Text.of(' with a ').gold(), Text.of('Nozzle').yellow(), Text.of(' can pull or push items').gold()])
+					text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
+			}
+		}
+	})
+	tooltip.addAdvanced('kubejs:magnet/hdpe_offline', (item, advanced, text) => {
+		text.add(1, Text.gray('Crafting Material'))
+	})
+	tooltip.addAdvanced('kubejs:magnet/hdpe', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, Text.gold('Drastically different compared to weaker magnets:'))
+			text.add(2, [Text.of('attraction is ').gold(), Text.of('direct').yellow(), Text.of(' instead of being momentum-based.').gold()])
+			text.add(3, Text.yellow('This gives much more control of where items go!'))
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('Does not care if an item is metallic or not.'))
+			text.add(6, [Text.of('$huge_very_heavy').yellow(), Text.of(' items are still barely moved.').gold()])
+			text.add(7, Text.gold('Enrichment is enough to power it indefinitely.'))
+			text.add(8, Text.gold(''))
+			if (!tooltip.ctrl) text.add(9, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
+			else {
+				text.add(9, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
+				text.add(10, Text.gold('teleport items from up to 20-ish blocks.'))
+				text.add(11, Text.gold('This costs air pressure, but is super powerful!'))
+				text.add(12, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
+				text.add(13, Text.gold('attract nearby items via teleporting.'))
+				text.add(14, Text.gold('Does not have a large range, but is passive.'))
+			}
+		}
+	})
+	tooltip.addAdvanced('kubejs:magnet/polonium', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Identical to the ').gold(), Text.of('HDPE magnet').yellow(), Text.of(', but with a twist:').gold()])
+			text.add(2, [Text.of('right clicking starts a ').gold(), Text.of('warp').yellow(), Text.of(' that teleports items').gold()])
+			text.add(3, [Text.of('within a ').gold(), Text.of('15-block range').yellow(), Text.of(' directly to your feet.').gold()])
+			text.add(4, Text.gold('This has a 20-second cooldown.'))
+			text.add(5, Text.gold(''))
+			if (!tooltip.ctrl) text.add(6, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
+			else {
+				text.add(7, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
+				text.add(8, Text.gold('teleport items from up to 20-ish blocks.'))
+				text.add(9, Text.gold('This costs air pressure, but is super powerful!'))
+				text.add(10, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
+				text.add(11, Text.gold('attract nearby items via teleporting.'))
+				text.add(12, Text.gold('Does not have a large range, but is passive.'))
+			}
 		}
 	})
 })
