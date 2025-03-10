@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "tag": "forge:molten_zinc",
+    "amount": 25
+  },
+  "result": "createdeco:zinc_bars",
+  "cooling_time": 33
+}
