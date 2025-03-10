@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:andesite_bars"
+  },
+  "result": {
+    "fluid": "kubejs:andesite_alloy",
+    "amount": 25
+  },
+  "temperature": 900,
+  "time": 33
+}

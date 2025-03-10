@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:copper_bars"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 25
+  },
+  "temperature": 500,
+  "time": 33
+}

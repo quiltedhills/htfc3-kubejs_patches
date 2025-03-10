@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/sheet/copper"
+  },
+  "result": {
+    "item": "createdeco:copper_bars",
+    "count": 8
+  },
+  "tier": 1,
+  "rules": [
+    "upset_last",
+    "punch_second_last",
+    "punch_third_last"
+  ]
+}
