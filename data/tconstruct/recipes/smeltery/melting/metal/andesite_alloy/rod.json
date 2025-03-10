@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "kubejs:misc_mats/andesite_alloy/rod"
+  },
+  "result": {
+    "fluid": "kubejs:andesite_alloy",
+    "amount": 50
+  },
+  "temperature": 900,
+  "time": 40
+}

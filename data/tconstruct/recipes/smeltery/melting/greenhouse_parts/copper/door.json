@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {"item": "firmalife:copper_greenhouse_door"},
+    {"item": "firmalife:exposed_copper_greenhouse_door"},
+    {"item": "firmalife:weathered_copper_greenhouse_door"},
+    {"item": "firmalife:oxidized_copper_greenhouse_door"}
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 75
+  },
+  "temperature": 500,
+  "time": 68,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_glass",
+      "amount": 300
+    }
+  ]
+}

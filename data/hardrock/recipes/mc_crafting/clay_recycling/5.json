@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "firmalife:oven_bottom"
+      },
+      {
+        "item": "firmalife:oven_chimney"
+      },
+      {
+        "item": "firmalife:oven_top"
+      },
+      {
+        "item": "tfc:ceramic/unfired_spindle_head"
+      },
+      {
+        "item": "tfc:ceramic/unfired_jug"
+      },
+      {
+        "item": "tfc:ceramic/unfired_pan"
+      },
+      {
+        "item": "tfc:ceramic/unfired_pot"
+      },
+      {
+        "tag": "tfc:unfired_vessels"
+      },
+      {
+        "tag": "tfc:unfired_large_vessels"
+      },
+      {
+        "type": "forge:difference",
+        "base": {
+          "tag": "tfc:unfired_molds"
+        },
+        "subtracted": [
+          {
+            "item": "tfc:ceramic/unfired_ingot_mold"
+          },
+          {
+            "item": "tfc:ceramic/unfired_fire_ingot_mold"
+          }
+        ]
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:clay_ball",
+    "count": 5
+  }
+}

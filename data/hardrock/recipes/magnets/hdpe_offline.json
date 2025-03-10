@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "S S",
+    "PEP"
+  ],
+  "key": {
+    "C": {
+      "item": "mekanismgenerators:electromagnetic_coil"
+    },
+    "E": {
+      "item": "mekanism:basic_energy_cube"
+    },
+    "S": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "P": {
+      "item": "mekanism:hdpe_pellet"
+    }
+  },
+  "result": {
+    "item": "kubejs:magnet/hdpe_offline"
+  }
+}

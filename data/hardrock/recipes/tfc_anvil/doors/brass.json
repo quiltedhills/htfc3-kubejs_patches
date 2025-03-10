@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/sheet/brass"
+  },
+  "result": {
+    "item": "createdeco:brass_door"
+  },
+  "tier": 2,
+  "rules": [
+    "hit_last",
+    "draw_not_last",
+    "punch_not_last"
+  ]
+}

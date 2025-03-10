@@ -42,14 +42,17 @@ onEvent('tags.blocks', event => {
 		//'geolosys:lignite_ore_sample',
 	])
 	event.add('tfc:can_trigger_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_start_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_collapse', [
+		/^tfc:raw_sandstone\/.+/,
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
@@ -230,6 +233,81 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('curios:belt', 'toolbelt:belt')
+	event.add('tfc:axes', 'tconstruct:hand_axe')
+	event.add('forge:prop_foods', [
+		'supplementaries:pancake',
+		/^kubejs:prop_foods\//
+	])
+	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
+	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
+	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
+	event.add('tfc:wooden_bowl_food', [
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:squid_ink_pasta',
+		'minecraft:rabbit_stew',
+		'farmersdelight:chicken_soup',
+		'farmersdelight:dog_food',
+		'minecraft:beetroot_soup',
+		'farmersdelight:fish_stew',
+		'farmersrespite:blazing_chili',
+		'farmersrespite:tea_curry',
+		'farmersdelight:fried_rice',
+		'farmersdelight:pumpkin_soup',
+		'farmersdelight:bone_broth',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:ratatouille',
+		'farmersdelight:cooked_rice',
+		'farmersdelight:noodle_soup',
+		'farmersdelight:vegetable_soup',
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:beef_stew',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:fruit_salad',
+		'farmersdelight:honey_glazed_ham_block',
+		'farmersdelight:grilled_salmon',
+		'farmersdelight:mixed_salad',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:roast_chicken_block',
+		'farmersdelight:shepherds_pie_block',
+		'farmersrespite:black_cod',
+		'untamedwilds:food_hemlock_stew',
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:nether_salad',
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:rice_roll_medley_block'
+	])
+	event.add('tfc:foods/usable_in_soup', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		'farmersdelight:raw_pasta',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg',
+		'firmalife:food/butter',
+		// misc
+		'farmersdelight:dumplings'
+	])
+	event.add('tfc:foods/usable_in_salad', [
+		// grains
+		'#firmalife:foods/flatbreads',
+		'#firmalife:foods/slices',
+		'firmalife:food/toast',
+		'firmalife:food/corn_tortilla',
+		// dairy
+		'#firmalife:foods/cheeses',
+		'firmalife:food/shredded_cheese',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg'
+	])
+
+
 	// removeAllTagsFrom doesn't seem to work with regex :(
 	global.items_to_remove = [
 		'/^(tfc|firmalife|tfc_ie_addon):ore\/.+\//'
@@ -765,6 +843,29 @@ onEvent('tags.items', event => {
 		'tfc:ore/sapphire',
 		'tfc:ore/topaz'
 	])
+	event.add('tfc:minerals', [
+		'tfc:ore/bituminous_coal',
+		'tfc:ore/lignite',
+		'tfc:ore/kaolinite',
+		'tfc:ore/gypsum',
+		'tfc:ore/graphite',
+		'tfc:ore/sulfur',
+		'tfc:ore/cinnabar',
+		'tfc:ore/cryolite',
+		'tfc:ore/saltpeter',
+		'tfc:ore/sylvite',
+		'tfc:ore/borax',
+		'tfc:ore/halite'
+	])
+
+	// special materials, do not add to 'forge:rods' and 'forge:sheets'
+	event.add('forge:rods/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/rod')
+	event.add('forge:rods/netherite', 'kubejs:misc_mats/netherite/rod')
+	event.add('forge:sheets/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/sheet')
+	event.add('forge:sheets/netherite', 'createdeco:netherite_sheet')
+	event.remove('forge:plates/netherite', 'createdeco:netherite_sheet')
+	//
+
 	event.add('compactmachines:compactmachines', [
 		'compactmachines:machine_tiny',
 		'compactmachines:machine_small',
@@ -1864,6 +1965,9 @@ onEvent('tags.items', event => {
 		'#forge:nuggets/zinc',
 		'#forge:nuggets/copper'
 	]),
+	event.add('forge:nuggets', [
+		'createdeco:cast_iron_nugget'
+	])
 	event.add('forge:dead_animal', [
 		'butchersdelight:dead_cow',
 		'butchersdelight:deadsheep',
@@ -2140,6 +2244,10 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
+		'createdeco:zinc_sheet',
+		'createdeco:cast_iron_ingot',
+		'createdeco:cast_iron_sheet',
+		'createdeco:netherite_nugget',
 		'mekanism:sawdust',
 		'pneumaticcraft:diesel',
 		'pneumaticcraft:kerosene',

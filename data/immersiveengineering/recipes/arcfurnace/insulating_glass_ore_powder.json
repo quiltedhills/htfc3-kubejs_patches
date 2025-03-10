@@ -1,22 +1,22 @@
 {
   "type": "immersiveengineering:arc_furnace",
-  "results": [
-    {
-      "item": "immersiveengineering:insulating_glass",
-      "count": 2
-    }
-  ],
-  "additives": [
-    {
-      "tag": "forge:ores/clean_dusts/iron"
-    }
-  ],
   "input": {
     "count": 2,
     "base_ingredient": {
       "tag": "forge:glass"
     }
   },
+  "additives": [
+    {
+      "tag": "forge:ores/clean_dusts/metals/iron"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:insulating_glass",
+      "count": 2
+    }
+  ],
   "time": 100,
   "energy": 51200
 }

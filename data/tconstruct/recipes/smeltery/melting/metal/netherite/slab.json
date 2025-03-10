@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:netherite_sheet"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 30
+  },
+  "temperature": 1250,
+  "time": 42
+}

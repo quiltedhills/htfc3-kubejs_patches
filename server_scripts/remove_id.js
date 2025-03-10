@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'create_sa:copper_magnet_recipe'},
+
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_nuggets'},
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_block'},
 
@@ -79,7 +81,25 @@ onEvent('recipes', event => {
 		{id: 'immersiveengineering:blueprint/mold_packing_9'},
 		{id: 'tfc_ie_addon:blueprint/mold_sheet'},
 		{id: 'tfc_ie_addon:blueprint/mold_block'},
-
+    
+		{id: /^createdeco:.+_hull$/},
+		{id: /^createdeco:.+_door$/},
+		{id: /^createdeco:.+_trapdoor$/},
+		{id: /^createdeco:.+_bricks$/},
+		{id: /^createdeco:.+_decal$/},
+		{id: /^createdeco:.+_lamp$/},
+		{id: 'minecraft:compacting/cast_iron_block'},
+		{id: 'minecraft:pressing/cast_iron_sheet'},
+		{id: 'minecraft:pressing/zinc_sheet'},
+		{id: 'tconstruct:smeltery/casting/metal/zinc/plate_gold_cast'},
+		{id: 'tconstruct:smeltery/casting/metal/zinc/plate_sand_cast'},
+		{id: 'minecraft:pressing/netherite_sheet'},
+		{id: 'minecraft:compacting/cast_iron_ingot'},
+		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_gold_cast'},
+		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_sand_cast'},
+		{id: 'tconstruct:smeltery/melting/metal/netherite/plates'},
+		{id: 'createdeco:cast_iron_nugget_from_cast_iron_ingot'},
+    
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},
 		{id: 'exnihilosequentia:sieve/ens_diamond'},
@@ -149,7 +169,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'tfc:heating/metal/netherite_ingot'},
-		
+    
 		{id: 'minecraft:acacia_planks'},
 		{id: 'choppingblock:acacia_planks'},
 		{id: 'minecraft:birch_planks'},
@@ -558,6 +578,9 @@ onEvent('recipes', event => {
 		{id: 'createdeco:netherite_support'},
 		{id: 'createdeco:brass_support'},
 		{id: 'createdeco:andesite_support'},
-		{id: 'createdeco:cast_iron_support'}
+		{id: 'createdeco:cast_iron_support'},
+		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
+		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
+		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'}
 	])
 })

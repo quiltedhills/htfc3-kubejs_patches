@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:double_ingots/copper"
+  },
+  "second_input": {
+    "tag": "tfc:magnetic_rocks"
+  },
+  "tier": 0,
+  "result": {
+    "item": "kubejs:magnet/copper"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "minecraft:gold_nugget"},
+  "transitionalItem": {"item": "minecraft:gold_nugget"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item": "minecraft:gold_nugget"},{"fluid": "minecraft:lava","nbt": {},"amount": 25}],"results": [{"item": "minecraft:gold_nugget"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:gold_nugget"},{"item": "tconstruct:round_plate_cast"}],"results": [{"item": "createdeco:gold_coin"}],"keepHeldItem": true}],
+  "results": [{"item": "createdeco:gold_coin","count":1}],
+  "loops": 1
+}

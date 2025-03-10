@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "kubejs:magnet/hdpe"
+  },
+  "addition": {
+    "item": "mekanism:pellet_polonium"
+  },
+  "result": {
+    "item": "kubejs:magnet/polonium"
+  }
+}

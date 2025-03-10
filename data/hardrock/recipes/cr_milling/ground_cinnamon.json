@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "firmalife:spice/cinnamon"
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:spice/ground_cinnamon",
+      "count": 1
+    },
+    {
+      "item": "firmalife:spice/ground_cinnamon",
+      "chance": 0.5
+    }
+  ],
+  "processingTime": 100
+}

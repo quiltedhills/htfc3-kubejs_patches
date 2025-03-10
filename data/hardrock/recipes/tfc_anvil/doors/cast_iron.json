@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/sheet/cast_iron"
+  },
+  "result": {
+    "item": "createdeco:cast_iron_door"
+  },
+  "tier": 3,
+  "rules": [
+    "hit_last",
+    "draw_not_last",
+    "punch_not_last"
+  ]
+}
