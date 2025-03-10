@@ -1993,9 +1993,6 @@ onEvent('tags.items', event => {
 		'butchersdelight:hoglinskin',
 		'#forge:hide'
 	]),
-	event.add('firmalife:jars', [
-		'kubejs:misc_mats/healing_salve'
-	]),
 	event.add('forge:tallow_source', [
 		'untamedwilds:material_blubber'
 	])
