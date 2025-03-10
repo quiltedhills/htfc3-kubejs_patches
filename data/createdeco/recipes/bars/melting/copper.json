@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:copper_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:copper_bars"
+    },
+    {
+      "item": "createdeco:copper_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_copper",
     "amount": 25

@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:netherite_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:netherite_bars"
+    },
+    {
+      "item": "createdeco:netherite_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_netherite",
     "amount": 25

@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:cast_iron_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:cast_iron_bars"
+    },
+    {
+      "item": "createdeco:cast_iron_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "tfc:metal/cast_iron",
     "amount": 25

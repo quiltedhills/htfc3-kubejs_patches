@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:zinc_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:zinc_bars"
+    },
+    {
+      "item": "createdeco:zinc_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_zinc",
     "amount": 25

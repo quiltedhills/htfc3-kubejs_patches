@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:andesite_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:andesite_bars"
+    },
+    {
+      "item": "createdeco:andesite_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "kubejs:andesite_alloy",
     "amount": 25

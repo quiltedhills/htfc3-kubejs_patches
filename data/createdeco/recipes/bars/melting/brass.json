@@ -1,8 +1,13 @@
 {
   "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "createdeco:brass_bars"
-  },
+  "ingredient": [
+    {
+      "item": "createdeco:brass_bars"
+    },
+    {
+      "item": "createdeco:brass_bars_overlay"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_brass",
     "amount": 25
