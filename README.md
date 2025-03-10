@@ -33,36 +33,44 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.5.5
-• Added Create Deco with numerous recipe changes <br/>
+### Major things:
+• Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added custom magnets to replace the Create SA copper magnet <br/>
-• Various improvements to quests <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
-• Added recipes for TFC ore blocks for building purposes <br/>
-• Added detailed tooltips for various items <br/>
+
+### Balancing:
+• Made sandstone collapsible <br/>
 • Tweaked many nucleosynthesizer recipes <br/>
+• Blacklisted villagers from cage traps <br/>
+• Reworked recipe for wolf spawn eggs <br/>
+• Tweaked the durability of Ex Nihilo hammers <br/>
+
+### Quality of Life:
+• Various improvements to quests <br/>
+• Added detailed tooltips for various items <br/>
+• Altered item names for some easy-to-confuse items <br/>
+• Ported 1.20's unfired clay recycling recipes <br/>
+• Added recipes for smelting down greenhouse blocks <br/>
+
+### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
 • Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
 • Added more advanced alcohol production recipes <br/>
-• Added a few prop foods for decoration purposes <br/>
-• Ported 1.20's unfired clay recycling recipes <br/>
-• Reworked recipe for wolf spawn eggs <br/>
-• Added recipes for smelting down greenhouse blocks <br/>
 • Minor improvements for animal carcasses <br/>
-
-
-• Blacklisted villagers from cage traps <br/>
-• Removed copper magnet recipe <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>
-• Made sandstone collapsible <br/>
-• Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
 
+### Building-related:
+• Aforementioned addition of Create Deco with many recipe changes <br/>
+• Added recipes for TFC ore blocks for building purposes <br/>
+• Added a few prop foods for decoration purposes <br/>
+
+### Fixes:
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
-• Improved item naming for some easy-to-confuse items <br/>
-• Tweaked the durability of Ex Nihilo hammers <br/>
+• Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
