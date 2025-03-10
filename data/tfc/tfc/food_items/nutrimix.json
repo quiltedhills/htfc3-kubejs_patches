@@ -6,8 +6,8 @@
   "hunger": 2,
   "saturation": 0,
   "decay_modifier": 3,
-  "protein": 1,
+  "grain": 1,
+  "fruit": 1,
   "vegetables": 1,
-  "fruits": 1,
-  "grain": 1
+  "protein": 1
 }
