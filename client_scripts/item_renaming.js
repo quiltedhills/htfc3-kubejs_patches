@@ -19,4 +19,8 @@ onEvent('client.generate_assets', event => {
     rename('exnihilosequentia:stone_hammer', "Stone Mash Hammer")
     rename('exnihilosequentia:iron_hammer', "Wrought Iron Mash Hammer")
     rename('exnihilosequentia:netherite_hammer', "Black Steel Mash Hammer")
+
+    rename('createdeco:netherite_sheet', "Netherite Slab")
+
+    rename('supplementaries:pancake', "Prop Pancake")
   })

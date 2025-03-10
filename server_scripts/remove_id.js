@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'create_sa:copper_magnet_recipe'},
+
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_nuggets'},
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_block'},
 
@@ -96,6 +98,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_sand_cast'},
 		{id: 'tconstruct:smeltery/melting/metal/netherite/plates'},
+		{id: 'createdeco:cast_iron_nugget_from_cast_iron_ingot'},
     
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},
@@ -546,7 +549,36 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:smelting/cooked_turtle_meat_campfire'},
 		{id: 'untamedwilds:smelting/cooked_pachyderm_meat'},
 		{id: 'untamedwilds:smelting/cooked_pachyderm_meat_campfire'},
-		
+		{id: 'createdeco:cast_iron_bars'},
+		{id: 'createdeco:cast_iron_bars_from_cast_iron_ingot_stonecutting'},
+		{id: 'createdeco:gold_bars'},
+		{id: 'createdeco:netherite_bars'},
+		{id: 'createdeco:copper_bars'},
+		{id: 'createdeco:zinc_bars'},
+		{id: 'createdeco:brass_bars'},
+		{id: 'createdeco:andesite_bars'},
+		{id: 'createdeco:gold_bars_from_gold_ingot_stonecutting'},
+		{id: 'createdeco:zinc_bars_from_zinc_ingot_stonecutting'},
+		{id: 'createdeco:copper_bars_from_copper_ingot_stonecutting'},
+		{id: 'createdeco:netherite_bars_from_netherite_ingot_stonecutting'},
+		{id: 'createdeco:brass_bars_from_brass_ingot_stonecutting'},
+		{id: 'createdeco:andesite_bars_from_andesite_alloy_stonecutting'},
+		{id: 'createdeco:gold_catwalk'},
+		{id: 'createdeco:copper_catwalk'},
+		{id: 'createdeco:zinc_catwalk'},
+		{id: 'createdeco:brass_catwalk'},
+		{id: 'createdeco:cast_iron_catwalk'},
+		{id: 'createdeco:iron_catwalk'},
+		{id: 'tconstruct:smeltery/melting/metal/gold/nugget_3'},
+		{id: 'tconstruct:smeltery/casting/metal/iron/bars'},
+		{id: 'createdeco:iron_support'},
+		{id: 'createdeco:gold_support'},
+		{id: 'createdeco:copper_support'},
+		{id: 'createdeco:zinc_support'},
+		{id: 'createdeco:netherite_support'},
+		{id: 'createdeco:brass_support'},
+		{id: 'createdeco:andesite_support'},
+		{id: 'createdeco:cast_iron_support'},
 		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'}

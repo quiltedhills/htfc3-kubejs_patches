@@ -10,6 +10,7 @@ onEvent('recipes', event => {
 	event.replaceInput({mod: 'firmalife'}, 'minecraft:glass', '#forge:2panes')
 	event.replaceInput({mod: 'glassential'}, 'minecraft:glass', '#forge:glass')
 	event.replaceInput({mod: 'pneumaticcraft'}, 'minecraft:glowstone', 'mekanismgenerators:solar_generator')
+	event.replaceInput({mod: 'farmersdelight'}, 'minecraft:beetroot', 'tfc:food/beet')
 	//general shaped
     event.replaceInput({type: 'minecraft:crafting_shaped'}, 'immersiveengineering:lantern', 'tfc:metal/lamp/copper')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:torch', 'tfc:torch')
@@ -41,6 +42,7 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:stone', '#tfc:rock/raw')
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:sand', '#forge:sand')
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:fishing_rod', '#forge:fishing_rods')
+	
 	//replace output
 	event.replaceOutput({}, 'minecraft:gold_ingot', 'tfc:metal/ingot/gold')
 	event.replaceOutput({}, 'minecraft:copper_ingot', 'tfc:metal/ingot/copper')

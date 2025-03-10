@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "tfc:ceramic/unfired_fire_ingot_mold"
+      }
+    ],
+    [
+      {
+        "item": "tfc:ceramic/unfired_fire_ingot_mold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "tfc:fire_clay",
+    "count": 5
+  }
+}

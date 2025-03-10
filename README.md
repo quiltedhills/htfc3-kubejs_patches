@@ -33,17 +33,28 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.5.5
+• Added Create Deco with numerous recipe changes
+• Added custom magnets to replace the Create SA copper magnet
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
-• Added recipes for TFC ore blocks <br/>
-• Blacklisted villagers from cage traps <br/>
-• Reworked recipe for wolf spawn eggs <br/>
-• Fixed a few recipes accepting rotten food <br/>
+• Added recipes for TFC ore blocks for building purposes <br/>
+• Added a few prop foods for decoration purposes <br/>
 • Improvements for bowl-based foods, like soups and salads <br/>
-• Nerfed vanilla apples <br/>
-• Fixed a conflict with the tuyere sequenced recipe <br/>
-• Improved item naming for some easy-to-confuse items <br/>
+• Added some extra info for pollution-related items <br/>
 • Tweaked nucleosynthesizer recipes <br/>
-• Tweaked Ex Nihilo's hammers <br/>
+• Reworked recipe for wolf spawn eggs <br/>
+• Added recipes for smelting down greenhouse blocks <br/>
+
+• Blacklisted villagers from cage traps <br/>
+• Removed copper magnet recipe <br/>
+• Fixed a few recipes accepting rotten food <br/>
+• Nerfed vanilla apples <br/>
+• Made sandstone collapsible <br/>
+• Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
+
+• Fixed incorrect finishing move order for some custom anvil recipes <br/>
+• Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
+• Improved item naming for some easy-to-confuse items <br/>
+• Tweaked the durability of Ex Nihilo hammers <br/>

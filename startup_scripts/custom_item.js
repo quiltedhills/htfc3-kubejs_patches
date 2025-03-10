@@ -16,10 +16,18 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/healing_salve')
 	event.create('misc_mats/mineral_mix')
 	
+	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
+
+	event.create('magnet/copper')			.unstackable() 
+	event.create('magnet/colored_steel')	.unstackable().rarity('uncommon')
+	event.create('magnet/hdpe_offline')		.unstackable().rarity('common')
+	event.create('magnet/hdpe')				.unstackable().rarity('rare')
+	event.create('magnet/polonium')			.unstackable().rarity('epic')
+  
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
-	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
-	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
+	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
+	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('raw_pancake')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Mniaam Miaammm!'))})})
 	event.create('pancake')			.food(food => {food.hunger(3).saturation(0.6) })//.eaten(ctx => {ctx.player.tell(Text.gold('Mniaam Miaammm!'))})})
 	event.create('boiled_grass')	.food(food => {food.hunger(1).saturation(0.25) })//.eaten(ctx => {ctx.player.tell(Text.gold('hmmm boiled grass? Not Bad!'))})})
@@ -114,6 +122,14 @@ onEvent('item.registry', event => {
 	event.create('img_book')					.displayName('img_book')
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
+})
+
+onEvent('item.modification', event => {
+	event.modify('minecraft:golden_carrot', item => {
+		item.foodProperties = food => {
+			food.alwaysEdible()
+		}
+	})
 })
 
 //onEvent('item.registry.long_stick', event => {
