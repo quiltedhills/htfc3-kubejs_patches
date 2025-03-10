@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/salt"
+    },
+    {
+      "tag": "forge:ores/clean_dusts/copper"
+    },
+    [
+      {
+        "item": "tfcorewashing:chromium_powder"
+      },
+      {
+        "item": "tfcorewashing:sphalerite_powder"
+      }
+    ],
+    {
+      "tag": "forge:ores/clean_dusts/iron"
+    }
+  ],
+  "result": {
+    "item": "kubejs:misc_mats/mineral_mix"
+  }
+}
