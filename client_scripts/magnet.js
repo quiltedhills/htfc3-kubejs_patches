@@ -102,7 +102,10 @@ function getNearbyItems(level, position, range) {
     return items
 }
 
-
+let isInProtectedArea = false
+onEvent('player.data_from_server.protectedAreaStatus', event =>
+    isInProtectedArea = event.data.protectedAreaStatus
+)
 
 onEvent('client.tick', event => {
     let player = event.player
@@ -112,7 +115,7 @@ onEvent('client.tick', event => {
     let { range, applyMagnetPull } = activeTier
     let items = getNearbyItems(event.level, [player.x, player.y, player.z], range)
 
-    if (player.persistentData.isInProtectedArea && items.length > 0) return
+    if (isInProtectedArea && items.length > 0) return
 
     items.forEach(item => {
         let dx = player.x - item.x
@@ -123,6 +126,9 @@ onEvent('client.tick', event => {
         if (squaredDistance > range * range) return
 
         let distance = squaredDistance ** 0.5
+
+        if (!('metallic' in item.persistentData)) item.persistentData.metallic = Ingredient.of("#kjs:metallic").test(item.fullNBT.Item.id)
+        if (!('very_heavy' in item.persistentData)) item.persistentData.huge_very_heavy = Ingredient.of("#tfc:huge_very_heavy").test(item.fullNBT.Item.id)
 
         applyMagnetPull(item, distance, range, dx, dy, dz)
     })

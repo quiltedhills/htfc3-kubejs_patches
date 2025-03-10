@@ -195,6 +195,7 @@ function isInProtectedArea(player) {
     // Save data to player-anchored data
     if (!('isInProtectedArea' in player.persistentData) || player.persistentData.isInProtectedArea !== isInProtectedArea) {
         player.persistentData.isInProtectedArea = isInProtectedArea
+        player.sendData('protectedAreaStatus', {protectedAreaStatus: isInProtectedArea})
         return isInProtectedArea
     }
 }
