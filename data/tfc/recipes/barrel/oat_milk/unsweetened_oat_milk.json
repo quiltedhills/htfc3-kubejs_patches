@@ -1,0 +1,18 @@
+{
+	"__comment__": "this file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"item": "firmalife:cheesecloth"
+		}
+	},
+	"input_fluid": {
+		"ingredient": "kubejs:lumpy_oat_milk",
+		"amount": 1000
+	},
+	"output_fluid": {
+		"fluid": "kubejs:unsweetened_oat_milk",
+		"amount": 1000
+	},
+	"duration": 4000
+}

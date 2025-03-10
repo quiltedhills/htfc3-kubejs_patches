@@ -5,7 +5,7 @@
 		"ingredient": {
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/oat_flour"
+				"item": "tfc:food/oat_dough"
 			}
 		}
 	},
@@ -14,7 +14,7 @@
 		"amount": 100
 	},
 	"output_fluid": {
-		"fluid": "kubejs:oat_milk",
+		"fluid": "kubejs:oat_slurry",
 		"amount": 100
 	},
 	"duration": 72000

@@ -1,0 +1,28 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+	{
+		"item": "firmalife:spice/vanilla"
+	},
+	{
+		"item": "minecraft:sugar"
+	},
+	{
+		"item": "minecraft:sugar"
+	},
+	{
+		"item": "minecraft:sugar"
+	},
+	{
+		"item": "minecraft:sugar"
+	}
+	],
+	"fluid_ingredient": {
+		"ingredient": "minecraft:water",
+		"amount": 1000
+	},
+	"output_item": {
+		"item": "kubejs:refined_vanilla"
+	}
+}
