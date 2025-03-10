@@ -33,18 +33,26 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.5.5
-• Added Create Deco with numerous recipe changes
-• Added custom magnets to replace the Create SA copper magnet
+• Added Create Deco with numerous recipe changes <br/>
+• Added custom magnets to replace the Create SA copper magnet <br/>
+• Various improvements to quests <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 • Added recipes for TFC ore blocks for building purposes <br/>
-• Added a few prop foods for decoration purposes <br/>
+• Added detailed tooltips for various items <br/>
+• Tweaked many nucleosynthesizer recipes <br/>
 • Improvements for bowl-based foods, like soups and salads <br/>
-• Added some extra info for pollution-related items <br/>
-• Tweaked nucleosynthesizer recipes <br/>
+• Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
+• Made gold and silver apples and carrots edible even when you're not hungry <br/>
+• Added an alternative way of curdling milk using vinegar <br/>
+• Added more advanced alcohol production recipes <br/>
+• Added a few prop foods for decoration purposes <br/>
+• Ported 1.20's unfired clay recycling recipes <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
+• Minor improvements for animal carcasses <br/>
+
 
 • Blacklisted villagers from cage traps <br/>
 • Removed copper magnet recipe <br/>
