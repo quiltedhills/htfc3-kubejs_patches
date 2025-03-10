@@ -13,6 +13,9 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/andesite_alloy/sheet')
 	event.create('misc_mats/netherite/rod')
 
+	event.create('misc_mats/healing_salve')
+	event.create('misc_mats/mineral_mix')
+	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
 
 	event.create('magnet/copper')			.unstackable() 
@@ -20,7 +23,7 @@ onEvent('item.registry', event => {
 	event.create('magnet/hdpe_offline')		.unstackable().rarity('common')
 	event.create('magnet/hdpe')				.unstackable().rarity('rare')
 	event.create('magnet/polonium')			.unstackable().rarity('epic')
-
+  
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})

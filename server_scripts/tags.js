@@ -1045,6 +1045,10 @@ onEvent('tags.items', event => {
 	])
 	//----------------
 	event.add('tfc:huge_very_heavy', [
+		'#astikorcarts:animal_cart',
+		'#astikorcarts:supply_cart',
+		'#astikorcarts:plow',
+		'#tfc:anvils',
 		'smallships:cannon',
 		'smallships:sail',
 		'#compactmachines:compactmachines',

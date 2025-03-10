@@ -3,9 +3,9 @@
   "type": "tfc:pot",
   "ingredients": [
     {"tag": "forge:dusts/salt"},
-    {"tag": "forge:ores/clean_dusts/copper"},
+    {"tag": "forge:ores/clean_dusts/metals/copper"},
     [{"item": "tfcorewashing:chromium_powder"},{"item": "tfcorewashing:sphalerite_powder"}],
-    {"tag": "forge:ores/clean_dusts/iron"}
+    {"tag": "forge:ores/clean_dusts/metals/iron"}
   ],
   "fluid_ingredient": {
     "ingredient": "minecraft:water",

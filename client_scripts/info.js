@@ -678,12 +678,12 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, Text.gold(''))
 			if (!tooltip.ctrl) text.add(6, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
 			else {
-				text.add(7, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
-				text.add(8, Text.gold('teleport items from up to 20-ish blocks.'))
-				text.add(9, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(10, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
-				text.add(11, Text.gold('attract nearby items via teleporting.'))
-				text.add(12, Text.gold('Does not have a large range, but is passive.'))
+				text.add(6, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
+				text.add(7, Text.gold('teleport items from up to 20-ish blocks.'))
+				text.add(8, Text.gold('This costs air pressure, but is super powerful!'))
+				text.add(9, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
+				text.add(10, Text.gold('attract nearby items via teleporting.'))
+				text.add(11, Text.gold('Does not have a large range, but is passive.'))
 			}
 		}
 	})

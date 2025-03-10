@@ -1,6 +1,7 @@
 // priority: 10
 onEvent('recipes', event => {
 	// mods
+	event.replaceInput({mod: 'createdeco'}, '#forge:plates/netherite', '#forge:sheets/netherite')
 	event.replaceInput({mod: 'securitycraft'}, 'minecraft:iron_ingot', '#forge:plates/iron')
 	event.replaceInput({mod: 'railways'}, 'minecraft:campfire', 'tfc:torch')
 	event.replaceInput({mod: 'dynamictrees'}, 'minecraft:dirt', '#forge:dirt')

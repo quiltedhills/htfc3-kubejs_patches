@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
       "tag": "forge:dusts/salt"
@@ -17,18 +17,9 @@
     ],
     {
       "tag": "forge:ores/clean_dusts/metals/iron"
-    },
-    {
-      "fluid": "minecraft:water",
-      "nbt": {},
-      "amount": 1000
     }
   ],
-  "results": [
-    {
-      "fluid": "kubejs:mineral_water",
-      "amount": 1000
-    }
-  ],
-  "heatRequirement": "heated"
+  "result": {
+    "item": "kubejs:misc_mats/mineral_mix"
+  }
 }
