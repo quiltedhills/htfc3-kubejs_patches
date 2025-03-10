@@ -1,16 +1,18 @@
 {
-    "type": "tfc:pot",
-    "ingredients": [
-      {"item": "kubejs:misc_mats/mineral_mix"}
-    ],
-    "fluid_ingredient": {
-      "ingredient": "minecraft:water",
-      "amount": 1000
-    },
-    "duration": 2000,
-    "temperature": 600,
-    "fluid_output": {
-      "fluid": "kubejs:mineral_water",
-      "amount": 1000
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "kubejs:misc_mats/mineral_mix"
     }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubejs:mineral_water",
+    "amount": 1000
   }
+}

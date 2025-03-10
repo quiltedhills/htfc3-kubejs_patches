@@ -12,6 +12,10 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/andesite_alloy/rod')
 	event.create('misc_mats/andesite_alloy/sheet')
 	event.create('misc_mats/netherite/rod')
+
+	event.create('misc_mats/healing_salve')
+	event.create('misc_mats/mineral_mix')
+	
 	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
@@ -33,8 +37,6 @@ onEvent('item.registry', event => {
 	event.create('raw_platinum')
 	event.create('seed_biomass')
 	event.create('vulcanized_rubber')
-	event.create('misc_mats/healing_salve')
-	event.create('misc_mats/mineral_mix')
 	event.create('pile_carbon_waste')			.displayName('Pile of Carbon Waste')
 	event.create('pile_sulfur_waste')			.displayName('Pile of Sulfur Waste')
 	event.create('sulfur_waste')				.displayName('Dirty Sulfur Waste Dust')
