@@ -14,4 +14,5 @@ onEvent('fluid.registry', event => {
 	event.create("seed_oil_water")		.thinTexture(0x936e52)	.bucketColor(0x936e52)	.displayName("Tree Seed Oil Water")				.noBlock() 
 	event.create("goat_milk_vinegar")	.thinTexture(0xcbd4d6) .bucketColor(0xcbd4d6)  .displayName("Goat Milk Vinegar")               .noBlock()
 	event.create("yak_milk_vinegar")    .thinTexture(0xf2efe1) .bucketColor(0xf2efe1)  .displayName("Yak Milk Vinegar")                .noBlock()
+	event.create("oat_milk")            .thinTexture(0xebe2ca) .bucketColor(0xebe2ca)  .displayName("Oat Milk")                        .noBlock()
 })
