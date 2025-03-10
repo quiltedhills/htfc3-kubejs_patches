@@ -214,6 +214,7 @@ onEvent('recipes', event => {
 		{id: 'create:pressing/brass_ingot'},
 		{id: 'create:pressing/sugar_cane'},
 		{id: 'create:andesite_alloy'},
+		{id: 'create:crafting/tree_fertilizer'},
 		{id: 'create:crushing/diorite'},
 		{id: 'create:crushing/diamond_horse_armor'},
 		{id: 'create:crushing/leather_horse_armor'},
@@ -581,6 +582,7 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_support'},
 		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
-		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'}
+		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'},
+		{id: 'twilightforest:smeltery/melting/metal/fiery/nugget'}
 	])
 })
