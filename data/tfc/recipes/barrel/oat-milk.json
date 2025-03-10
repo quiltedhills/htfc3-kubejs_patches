@@ -1,0 +1,21 @@
+{
+	"__comment__":"This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/oat_flour"
+			}
+		}
+	},
+	"input_fluid": {
+		"ingredient": "minecraft:water",
+		"amount": 100
+	},
+	"output_fluid": {
+		"fluid": "kubejs:oat_milk",
+		"amount": 100
+	},
+	"duration": 72000
+}
