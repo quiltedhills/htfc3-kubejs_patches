@@ -1,0 +1,24 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "itemInput": {
+    "ingredient": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "tfc:ore/bituminous_coal"
+      },
+      {
+        "item": "tfc:ore/lignite"
+      }
+    ]
+  },
+  "gasInput": {
+    "amount": 2,
+    "gas": "mekanism:antimatter"
+  },
+  "output": {
+    "item": "minecraft:diamond"
+  },
+  "duration": 250
+}

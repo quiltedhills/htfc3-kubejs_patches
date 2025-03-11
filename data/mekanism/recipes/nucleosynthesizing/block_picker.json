@@ -2,15 +2,15 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "tag": "mekanism:sulfuric_acid_bucket"
+      "item": "kubejs:magnet/copper"
     }
   },
   "gasInput": {
-    "amount": 1000,
+    "amount": 500,
     "gas": "mekanism:antimatter"
   },
   "output": {
-    "item": "kubejs:fuel_component"
+    "item": "create_sa:block_picker"
   },
-  "duration": 1500
+  "duration": 2000
 }

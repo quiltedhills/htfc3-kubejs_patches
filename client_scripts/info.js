@@ -297,13 +297,14 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced([//#forge:space_ores
 		'beyond_earth:raw_desh',
 		'beyond_earth:raw_ostrum',
-		'beyond_earth:raw_calorite'
+		'beyond_earth:raw_calorite',
+		'beyond_earth:ice_shard'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.gold('Mineral ores from other planets'))
-			text.add(2, [Text.gold('You will only find them on the '), Text.red('Moon and other planets')])
+			text.add(1, Text.gold('Extraterrestrial mineral'))
+			text.add(2, [Text.gold('Can be found exploring the '), Text.red('Solar System')])
 		}
 	})
 	tooltip.addAdvanced([//#forge:dead_animal
@@ -544,8 +545,18 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Exact percentage will also be shown in item tooltip.'))
 		}
 	})
-	tooltip.add('waystones:waystone', ["Hard item to craft, don't lose it", 'will provide you with a way to teleport'])
-  
+	tooltip.addAdvanced('waystones:waystone', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Waystones provide a way of ').gold(), Text.of('teleportation').yellow(), Text.of('.').gold()])
+			text.add(2, Text.gold('Placing multiple lets you travel between them.'))
+			text.add(3, Text.gold('Teleporting over distances of >1000 blocks will cost XP.'))
+			text.add(4, [Text.of('Each player ').gold(), Text.of('only gets one waystone').red(), Text.of(', be careful not to lose yours!').gold()])
+			text.add(5, Text.gold(''))
+			text.add(6, Text.gold('Has no use in singleplayer, as multiple are required to function.'))
+		}
+	})
 	tooltip.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -632,12 +643,12 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, Text.gold('Uses no energy despite using an accumulator.'))
 			text.add(6, Text.gold(''))
 			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
-				else {
-					text.add(7, [Text.of('A ').gold(), Text.of('Smart Chest').yellow(), Text.of(' with ').gold(), Text.of('magnet and range upgrades').yellow()])
-					text.add(8, Text.gold('can suck up items in a huge area, and has incredible storage.'))
-					text.add(9, [Text.of('A ').gold(), Text.of('Vacuum Hopper').yellow(), Text.of(' is similar, but is simpler and cheaper!').gold()])
-					text.add(10, [Text.of('An ').gold(), Text.of('Encased Fan').yellow(), Text.of(' with a ').gold(), Text.of('Nozzle').yellow(), Text.of(' can pull or push items').gold()])
-					text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
+			else {
+				text.add(7, [Text.of('A ').gold(), Text.of('Smart Chest').yellow(), Text.of(' with ').gold(), Text.of('magnet and range upgrades').yellow()])
+				text.add(8, Text.gold('can suck up items in a huge area, and has incredible storage.'))
+				text.add(9, [Text.of('A ').gold(), Text.of('Vacuum Hopper').yellow(), Text.of(' is similar, but is simpler and cheaper!').gold()])
+				text.add(10, [Text.of('An ').gold(), Text.of('Encased Fan').yellow(), Text.of(' with a ').gold(), Text.of('Nozzle').yellow(), Text.of(' can pull or push items').gold()])
+				text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
 			}
 		}
 	})
@@ -686,5 +697,15 @@ onEvent('item.tooltip', tooltip => {
 				text.add(11, Text.gold('Does not have a large range, but is passive.'))
 			}
 		}
+	})
+	tooltip.addAdvanced('kubejs:fuel_component', (item, advanced, text) => {
+		text.add(1, Text.of('Not consumed in recipes').gold())
+	})
+	tooltip.addAdvanced('tconstruct:efln_ball', (item, advanced, text) => {
+		text.add(1, [Text.of('Spawns ').gold(), Text.of('MASSIVE').red(), Text.of(' pollution clouds.').gold()])
+		text.add(2, Text.of('Use responsibly!').gold())
+	})
+	tooltip.addAdvanced('kubejs:magic_crystal', (item, advanced, text) => {
+		text.add(1, Text.gold('Used to create a portal to the Twilight Forest'))
 	})
 })

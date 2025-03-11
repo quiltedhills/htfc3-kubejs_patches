@@ -2,15 +2,15 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "tag": "mekanism:sulfuric_acid_bucket"
+      "item": "minecraft:golden_apple"
     }
   },
   "gasInput": {
-    "amount": 1000,
+    "amount": 50,
     "gas": "mekanism:antimatter"
   },
   "output": {
-    "item": "kubejs:fuel_component"
+    "item": "minecraft:enchanted_golden_apple"
   },
-  "duration": 1500
+  "duration": 750
 }
