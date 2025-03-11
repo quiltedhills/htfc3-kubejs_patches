@@ -122,8 +122,6 @@ onEvent('item.registry', event => {
 	event.create('img_ores')					.displayName('img_ores')
 	event.create('img_wiki')					.displayName('img_wiki')
 	event.create('img_book')					.displayName('img_book')
-<<<<<<< Updated upstream
-=======
 	event.create('clay_shards')                 .displayName('Clay Shards')
 	event.create('refined_vanilla')             .displayName('Refined Vanilla')
 	event.create('dried_soybeans')              .displayName('Dried Soybeans')
@@ -138,7 +136,6 @@ onEvent('item.registry', event => {
 	event.create('firm_tofu_chunk')             .displayName('Firm Tofu Chunk')
 	event.create('silken_tofu')                 .displayName('Silken Tofu Brick')
 	event.create('silken_tofu_chunk')           .displayName('Silken Tofu Chunk')
->>>>>>> Stashed changes
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
