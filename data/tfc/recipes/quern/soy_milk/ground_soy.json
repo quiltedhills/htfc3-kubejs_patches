@@ -1,0 +1,11 @@
+{
+	"__comment__": "this file was created by BeyondTheAbyss",
+	"type": "tfc:quern",
+	"ingredient": {
+		"item": "kubejs:washed_soybeans"
+	},
+	"result": {
+		"item": "kubejs:ground_soy",
+		"count": 1
+	}
+}

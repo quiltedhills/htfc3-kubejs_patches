@@ -1,0 +1,20 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+	"XXX",
+	"YYY",
+	"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "tfc:powder/salt"
+		},
+		"Y": {
+			"item": "kubejs:soy_curds"
+		}
+	},
+	"result": {
+		"item": "kubejs:firm_tofu"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"item": "kubejs:dried_soybeans"
+		}
+	},
+	"input_fluid": {
+		"ingredient": "minecraft:water",
+		"amount": 200
+	},
+	"output_item": {
+		"item": "kubejs:soaked_soybeans"
+	},
+	"duration": 8000
+}

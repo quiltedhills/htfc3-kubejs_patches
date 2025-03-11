@@ -1,0 +1,18 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_instant_fluid",
+	"primary_fluid": {
+		"ingredient": {
+			"fluid": "soy_milk"
+		},
+		"amount": 9
+	},
+	"added_fluid": {
+		"ingredient": "tfc:vinegar",
+		"amount": 1
+	},
+	"output_fluid": {
+		"fluid": "kubejs:soy_milk_vinegar",
+		"amount": 10
+	}
+}

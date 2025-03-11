@@ -1,0 +1,19 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"item": "kubejs:firm_tofu"
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:firm_tofu_chunk",
+		"count": 4,
+		"chance": 1
+	}
+	],
+	"sound": "minecraft:block.beehive.drip"
+}

@@ -1,0 +1,12 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_sealed",
+	"input_fluid": {
+		"ingredient": "kubejs:curdled_soy_milk",
+		"amount": 500
+	},
+	"output_item": {
+		"item": "kubejs:soy_curds"
+	},
+	"duration": 8000
+}

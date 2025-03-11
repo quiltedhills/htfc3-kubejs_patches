@@ -1,0 +1,18 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"item": "kubejs:soy_curds"
+		},
+		"count": 3
+	},
+	"input_fluid": {
+		"ingredient": "tfc:salt_water",
+		"amount": 750
+	},
+	"output_item": {
+		"item": "kubejs:silken_tofu"
+	},
+	"duration": 16000
+}

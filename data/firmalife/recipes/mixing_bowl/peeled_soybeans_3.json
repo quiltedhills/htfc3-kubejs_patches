@@ -1,0 +1,23 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+	{
+		"item": "kubejs:soaked_soybeans"
+	},
+	{
+		"item": "kubejs:soaked_soybeans"
+	},
+	{
+		"item": "kubejs:soaked_soybeans"
+	}
+	],
+	"fluid_ingredient": {
+		"ingredient": "minecraft:water",
+		"amount": 1000
+	},
+	"output_item": {
+		"item": "kubejs:peeled_soybeans",
+		"count": 3
+	}
+}

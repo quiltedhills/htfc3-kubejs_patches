@@ -1,0 +1,18 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"item": "kubejs:silken_tofu"
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:silken_tofu_chunk",
+		"count": 4
+	}
+	],
+	"sound": "minecraft:block.beehive.drip"
+}
