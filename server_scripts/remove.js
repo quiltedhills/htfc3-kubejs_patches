@@ -246,6 +246,7 @@ onEvent('recipes', event => {
 		'exnihilosequentia:crimson_barrel',
 		'exnihilosequentia:warped_barrel',
 		'exnihilosequentia:oak_barrel',
+		'exnihilosequentia:flint_mesh',
 		'immersiveengineering:lantern',
 		'minecraft:shield',
 		'minecraft:candle',
