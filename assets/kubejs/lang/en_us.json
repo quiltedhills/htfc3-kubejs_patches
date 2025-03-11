@@ -9,12 +9,13 @@
   "item.kubejs.metal.double_sheet.uranium": "Uranium Double Sheet",
 
   "item.kubejs.misc_mats.andesite_alloy.rod": "Andesite Alloy Rod",
-  "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
   "item.kubejs.misc_mats.andesite_alloy.sheet": "Andesite Alloy Slab",
   "item.kubejs.misc_mats.netherite.rod": "Netherite Rod",
   
   "item.kubejs.misc_mats.healing_salve": "Healing Salve",
   "item.kubejs.misc_mats.mineral_mix": "Mineral Mix",
+  "item.kubejs.misc_mats.ceramic_shards": "Ceramic Shards",
+  "item.kubejs.misc_mats.refined_vanilla": "Refined Vanilla",
 
   "item.kubejs.magnet.copper": "Copper Magnet",
   "item.kubejs.magnet.colored_steel": "Colored Steel Magnet",

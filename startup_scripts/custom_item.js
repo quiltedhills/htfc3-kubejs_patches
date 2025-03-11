@@ -15,6 +15,8 @@ onEvent('item.registry', event => {
 
 	event.create('misc_mats/healing_salve')
 	event.create('misc_mats/mineral_mix')
+	event.create('misc_mats/ceramic_shards')
+	event.create('misc_mats/refined_vanilla')
 	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
 
@@ -120,8 +122,6 @@ onEvent('item.registry', event => {
 	event.create('img_ores')					.displayName('img_ores')
 	event.create('img_wiki')					.displayName('img_wiki')
 	event.create('img_book')					.displayName('img_book')
-	event.create('clay_shards')                 .displayName('Clay Shards')
-	event.create('refined_vanilla')             .displayName('Refined Vanilla')
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })

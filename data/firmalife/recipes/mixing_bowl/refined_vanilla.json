@@ -23,6 +23,6 @@
 		"amount": 1000
 	},
 	"output_item": {
-		"item": "kubejs:refined_vanilla"
+		"item": "kubejs:misc_mats/refined_vanilla"
 	}
 }

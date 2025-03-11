@@ -3,7 +3,7 @@
 	"type": "tfc:barrel_sealed",
 	"input_item": {
 		"ingredient": {
-			"item": "kubejs:refined_vanilla"
+			"item": "kubejs:misc_mats/refined_vanilla"
 		}
 	},
 	"input_fluid": {

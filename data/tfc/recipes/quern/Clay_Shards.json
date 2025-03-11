@@ -4,7 +4,7 @@
 		"tag": "tfc:fired_molds"
 	},
 	"result": {
-		"item": "kubejs:clay_shards",
+		"item": "kubejs:misc_mats/ceramic_shards",
 		"count": 1
 	}
 }
