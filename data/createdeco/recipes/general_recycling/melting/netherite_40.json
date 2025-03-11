@@ -2,16 +2,13 @@
   "type": "tconstruct:melting",
   "ingredient": [
     {
-      "item": "createdeco:netherite_bars"
-    },
-    {
-      "item": "createdeco:netherite_bars_overlay"
+      "item": "createdeco:netherite_support"
     }
   ],
   "result": {
     "fluid": "tconstruct:molten_netherite",
-    "amount": 20
+    "amount": 10
   },
   "temperature": 1500,
-  "time": 33
+  "time": 96
 }

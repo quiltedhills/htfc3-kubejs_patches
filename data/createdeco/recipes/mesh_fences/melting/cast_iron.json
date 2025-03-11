@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:cast_iron_mesh_fence"
+  },
+  "result": {
+    "fluid": "tfc:metal/cast_iron",
+    "amount": 50
+  },
+  "temperature": 800,
+  "time": 47
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:brass_mesh_fence"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 50
+  },
+  "temperature": 605,
+  "time": 47
+}

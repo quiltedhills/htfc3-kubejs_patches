@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:zinc_mesh_fence"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_zinc",
+    "amount": 50
+  },
+  "temperature": 420,
+  "time": 47
+}

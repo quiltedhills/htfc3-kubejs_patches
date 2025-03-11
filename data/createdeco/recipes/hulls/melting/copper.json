@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:copper_hull"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 1700
+  },
+  "temperature": 500,
+  "time": 560
+}

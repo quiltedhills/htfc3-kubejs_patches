@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:polished_iron_mesh_fence"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 50
+  },
+  "temperature": 900,
+  "time": 47
+}

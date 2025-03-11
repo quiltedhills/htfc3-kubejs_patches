@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "createdeco:copper_support"
+    },
+    {
+      "item": "create:copper_ladder"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 50
+  },
+  "temperature": 500,
+  "time": 47
+}

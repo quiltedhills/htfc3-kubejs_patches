@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:brass_hull"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 1700
+  },
+  "temperature": 605,
+  "time": 560
+}

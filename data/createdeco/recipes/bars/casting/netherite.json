@@ -2,7 +2,7 @@
   "type": "tconstruct:casting_table",
   "fluid": {
     "tag": "forge:molten_netherite",
-    "amount": 25
+    "amount": 20
   },
   "result": "createdeco:netherite_bars",
   "cooling_time": 33

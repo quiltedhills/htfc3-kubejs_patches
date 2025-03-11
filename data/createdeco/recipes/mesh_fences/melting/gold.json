@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:gold_mesh_fence"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_gold",
+    "amount": 50
+  },
+  "temperature": 700,
+  "time": 47
+}

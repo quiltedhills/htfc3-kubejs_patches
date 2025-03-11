@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "createdeco:andesite_support"
+    },
+    {
+      "item": "create:andesite_ladder"
+    }
+  ],
+  "result": {
+    "fluid": "kubejs:andesite_alloy",
+    "amount": 50
+  },
+  "temperature": 900,
+  "time": 47
+}

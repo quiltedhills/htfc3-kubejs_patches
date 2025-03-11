@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "createdeco:iron_hull"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 1700
+  },
+  "temperature": 900,
+  "time": 640
+}
