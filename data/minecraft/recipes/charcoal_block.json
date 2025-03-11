@@ -2,31 +2,31 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "forge:dusts/charcoal"
+      "item": "minecraft:charcoal"
     }
   ],
   "results": [
