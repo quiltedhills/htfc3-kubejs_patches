@@ -211,7 +211,7 @@ onEvent('tags.fluids', event => {
 	event.add('tfc:mixable', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water','immersiveengineering:creosote'])
 	event.add('minecraft:waters', ['minecraft:water', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'tfc:spring_water'])
 	event.add('minecraft:water', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water'])
-	event.add('tfc:drinkables', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'minecraft:milk','firmalife:yak_milk','firmalife:goat_milk'])
+	event.add('tfc:drinkables', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:oat_milk', 'kubejs:soy_milk', 'minecraft:milk','firmalife:yak_milk','firmalife:goat_milk'])
 	event.add('tfc:infinite_water', ['kubejs:purified_water'])
 	event.add('tfc:usable_in_ingot_mold', ['kubejs:andesite_alloy', 'tconstruct:seared_stone', 'kubejs:andesite_stone', 'tconstruct:molten_glass', 'kubejs:molten_iron_quartz'])
 	event.add('tfc:usable_in_barrel', ['firmalife:sugar_water', 'tconstruct:honey', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
@@ -1268,6 +1268,8 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods', [
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
+		'kubejs:okara',
+		'kubejs:soy_curds',
 		'create:sweet_roll',
 		'create:chocolate_glazed_berries',
 		'create:honeyed_apple',

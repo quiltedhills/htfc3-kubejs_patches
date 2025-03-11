@@ -1,12 +1,17 @@
 {
 	"__comment__": "This file was created by BeyondTheAbyss",
 	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"item": "firmalife:cheesecloth"
+		}
+	},
 	"input_fluid": {
 		"ingredient": "kubejs:curdled_soy_milk",
-		"amount": 500
+		"amount": 1000
 	},
 	"output_item": {
 		"item": "kubejs:soy_curds"
 	},
-	"duration": 8000
+	"duration": 1000
 }

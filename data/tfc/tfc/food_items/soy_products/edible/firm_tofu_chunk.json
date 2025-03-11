@@ -1,0 +1,11 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"ingredient": {
+		"item": "kubejs:firm_tofu_chunk"
+	},
+	"hunger": 4,
+	"saturation": 1,
+	"decay_modifier": 0.8,
+	"protein": 1.0,
+	"dairy": 1.0
+}

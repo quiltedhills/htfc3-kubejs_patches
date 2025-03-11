@@ -1,0 +1,9 @@
+{
+	"__comment__": "This file was created by BeyondTheAbyss",
+	"ingredient": {
+		"item": "kubejs:soy_curds"
+	},
+	"hunger": 4,
+	"saturation": 0,
+	"decay_modifier": 3
+}
