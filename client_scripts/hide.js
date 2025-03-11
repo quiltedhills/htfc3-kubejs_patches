@@ -33,7 +33,6 @@ onEvent('jei.remove.categories', event => {
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
-	event.hide('tfc:milk_vinegar'),
 	event.hide('beyond_earth:oil'),
 	event.hide('create:chocolate'),
 	event.hide('create:honey'),
