@@ -1,7 +1,24 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'mekanism:nucleosynthesizing/crossbow'},
+		{id: 'mekanism:nucleosynthesizing/crying_obsidian'},
+		{id: 'mekanism:nucleosynthesizing/end_crystal'},
+		{id: 'mekanism:nucleosynthesizing/ender_chest'},
+		{id: 'mekanism:nucleosynthesizing/glowstone_block'},
+		{id: 'mekanism:nucleosynthesizing/iron'},
+		{id: 'mekanism:nucleosynthesizing/lapis_block'},
+		{id: 'mekanism:nucleosynthesizing/nautilus_shell'},
+		{id: 'mekanism:nucleosynthesizing/quartz_block'},
+		{id: 'mekanism:nucleosynthesizing/redstone_block'},
+		{id: 'mekanism:nucleosynthesizing/respawn_anchor'},
+		{id: 'tconstruct:gadgets/throwball/efln_ball'},
 		{id: 'create_sa:copper_magnet_recipe'},
+		{id: 'create_sa:block_picker_recipe'},
+
+		{id: 'minecraft:ender_chest'},
+		{id: 'tconstruct:smeltery/melting/obsidian/chest'},
+		{id: 'tconstruct:gadgets/throwball/glow_ball'},
 
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_nuggets'},
 		{id: 'tconstruct:common/materials/rose_gold_ingot_from_block'},

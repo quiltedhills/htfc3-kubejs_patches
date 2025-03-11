@@ -2,15 +2,15 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "tag": "mekanism:sulfuric_acid_bucket"
+      "item": "minecraft:skeleton_skull"
     }
   },
   "gasInput": {
-    "amount": 1000,
+    "amount": 5,
     "gas": "mekanism:antimatter"
   },
   "output": {
-    "item": "kubejs:fuel_component"
+    "item": "minecraft:wither_skeleton_skull"
   },
-  "duration": 1500
+  "duration": 1250
 }

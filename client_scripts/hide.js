@@ -1,35 +1,6 @@
 // priority: 20
 
 onEvent('jei.remove.categories', event => {
-	event.remove('minecolonies:baker/crafting')
-	event.remove('minecolonies:alchemist/crafting')
-    event.remove('minecolonies:baker/crafting')
-    event.remove('minecolonies:beekeeper')
-    event.remove('minecolonies:blacksmith/crafting')
-    event.remove('minecolonies:chickenherder')
-    event.remove('minecolonies:composting')
-    event.remove('minecolonies:concretemixer/custom')
-    event.remove('minecolonies:cookassistant/crafting')
-    event.remove('minecolonies:cowboy')
-    event.remove('minecolonies:cowboy/custom')
-    event.remove('minecolonies:crusher/custom')
-    event.remove('minecolonies:dyer/crafting')
-    event.remove('minecolonies:enchanter/custom')
-    event.remove('minecolonies:farmer/crafting')
-    event.remove('minecolonies:fisherman')
-    event.remove('minecolonies:fletcher/crafting')
-    event.remove('minecolonies:glassblower/crafting')
-    event.remove('minecolonies:lumberjack/custom')
-    event.remove('minecolonies:mechanic/crafting')
-    event.remove('minecolonies:netherworker/custom')
-    event.remove('minecolonies:planter/crafting')
-    event.remove('minecolonies:rabbitherder')
-    event.remove('minecolonies:sawmill/crafting')
-    event.remove('minecolonies:shepherd')
-    event.remove('minecolonies:sifter/custom')
-    event.remove('minecolonies:smelter/smelting')
-    event.remove('minecolonies:stonemason/crafting')
-    event.remove('minecolonies:swineherder')
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
@@ -48,6 +19,8 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'tfc:food/cheese',
+
 		'createdeco:zinc_sheet',
 		'createdeco:cast_iron_ingot',
 		'createdeco:cast_iron_sheet',
@@ -163,11 +136,11 @@ onEvent('jei.hide.items', event => {
 		'immersiveengineering:sword_steel',
 		'immersiveengineering:dust_sulfur',
 		'immersiveengineering:dust_saltpeter',
-		//'mekanism:precision_sawmill',
-		//'mekanism:basic_sawing_factory',
-		//'mekanism:advanced_sawing_factory',
-		//'mekanism:elite_sawing_factory',
-		//'mekanism:ultimate_sawing_factory',
+		'mekanism:precision_sawmill',
+		'mekanism:basic_sawing_factory',
+		'mekanism:advanced_sawing_factory',
+		'mekanism:elite_sawing_factory',
+		'mekanism:ultimate_sawing_factory',
 		'mekanism:cardboard_box',
 		'mekanism:dust_sulfur',
 		'mekanism:dust_obsidian',
@@ -184,11 +157,6 @@ onEvent('jei.hide.items', event => {
 		'beyond_earth:iron_plate',
 		'tinyredstone:silicon',
 		'tinyredstone:silicon_compound',
-		//'createindustrialchemistry:nickel',
-		//'createindustrialchemistry:zinc_dusts',
-		//'createindustrialchemistry:copper_dusts',
-		//'createindustrialchemistry:iron_dusts',
-		//'createindustrialchemistry:aluminium',
 		'butchersdelight:roaster',
 		'butchersdelightfoods:cookedbeefribs',
 		'butchersdelightfoods:cooked_leg_cow',
@@ -352,8 +320,6 @@ onEvent('jei.hide.items', event => {
 		'create:brass_sheet',
 		'create:copper_sheet',
 		'create:golden_sheet',
-		//'createindustrialchemistry:diamond_dusts',
-		//'createindustrialchemistry:coal_dusts',
 		'create:iron_sheet',
 		'create:wheat_flour',
 		'create:zinc_ingot',

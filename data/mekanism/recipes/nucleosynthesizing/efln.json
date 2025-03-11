@@ -2,15 +2,15 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "item": "create_sa:hydraulic_engine"
+      "tag": "minecraft:fire_charge"
     }
   },
   "gasInput": {
-    "amount": 12,
+    "amount": 75,
     "gas": "mekanism:antimatter"
   },
   "output": {
-    "item": "create_sa:block_picker"
+    "item": "tconstruct:efln_ball"
   },
-  "duration": 2000
+  "duration": 500
 }

@@ -2,15 +2,15 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "tag": "mekanism:sulfuric_acid_bucket"
+      "tag": "forge:leather"
     }
   },
   "gasInput": {
-    "amount": 1000,
+    "amount": 3,
     "gas": "mekanism:antimatter"
   },
   "output": {
-    "item": "kubejs:fuel_component"
+    "item": "minecraft:phantom_membrane"
   },
-  "duration": 1500
+  "duration": 750
 }

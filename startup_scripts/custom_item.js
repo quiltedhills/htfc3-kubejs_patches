@@ -105,7 +105,7 @@ onEvent('item.registry', event => {
 	event.create('hide_finish_l')				.displayName('Large Leather')
 	event.create('medical_paste')				.displayName('Medicinal Herb Paste')
 	event.create('magic_crystal')				.displayName('Magic Twilight Crystal')
-	event.create('fuel_component')				.displayName('Rocket Fuel Component')
+	event.create('fuel_component')				.displayName('Rocket Fuel Catalyst')
 	event.create('img_arcfurnace')				.displayName('img_arcfurnace')
 	event.create('img_cokker')					.displayName('img_cokker')
 	event.create('img_crusher')					.displayName('img_crusher')

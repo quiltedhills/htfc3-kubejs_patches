@@ -1,0 +1,28 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "itemInput": {
+    "ingredient": [
+      {
+        "type": "forge:nbt",
+        "item": "tfc:metal/javelin/blue_steel",
+        "count": 1,
+        "nbt": "{Damage:0}"
+      },
+      {
+        "type": "forge:nbt",
+        "item": "tfc:metal/javelin/red_steel",
+        "count": 1,
+        "nbt": "{Damage:0}"
+      }
+    ]
+  },
+  "gasInput": {
+    "amount": 10,
+    "gas": "mekanism:antimatter"
+  },
+  "output": {
+    "item": "minecraft:trident",
+    "nbt": "{Damage:0}"
+  },
+  "duration": 1000
+}

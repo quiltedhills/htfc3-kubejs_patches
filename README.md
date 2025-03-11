@@ -42,10 +42,11 @@ Please feel free to reach out to me on discord for any questions!
 
 ### Balancing:
 • Made sandstone collapsible <br/>
-• Tweaked many nucleosynthesizer recipes <br/>
+• Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Tweaked the durability of Ex Nihilo hammers <br/>
+• Made Ender Chests significantly more expensive <br/>
 
 ### Quality of Life:
 • Various improvements to quests <br/>
