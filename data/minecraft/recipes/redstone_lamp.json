@@ -14,6 +14,7 @@
         }
     },
     "result": {
-        "item": "minecraft:redstone_lamp"
+        "item": "minecraft:redstone_lamp",
+        "count": 4
     }
 }
