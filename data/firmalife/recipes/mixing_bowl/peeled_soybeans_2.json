@@ -3,10 +3,16 @@
 	"type": "firmalife:mixing_bowl",
 	"ingredients": [
 	{
-		"item": "kubejs:soaked_soybeans"
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "kubejs:soaked_soybeans"
+		}
 	},
 	{
-		"item": "kubejs:soaked_soybeans"
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "kubejs:soaked_soybeans"
+		}
 	}
 	],
 	"fluid_ingredient": {

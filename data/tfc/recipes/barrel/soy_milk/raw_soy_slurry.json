@@ -3,7 +3,10 @@
 	"type": "tfc:barrel_sealed",
 	"input_item": {
 		"ingredient": {
-			"item": "kubejs:soy_mash"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "kubejs:soy_mash"
+			}
 		}
 	},
 	"input_fluid": {

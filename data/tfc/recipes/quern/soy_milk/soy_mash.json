@@ -2,7 +2,10 @@
 	"__comment__": "This file was created by BeyondTheAbyss",
 	"type": "tfc:quern",
 	"ingredient": {
-		"item": "kubejs:ground_soy"
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "kubejs:ground_soy"
+		}
 	},
 	"result": {
 		"item": "kubejs:soy_mash",

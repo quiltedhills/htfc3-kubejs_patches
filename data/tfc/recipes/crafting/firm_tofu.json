@@ -11,7 +11,12 @@
 			"item": "tfc:powder/salt"
 		},
 		"Y": {
-			"item": "kubejs:soy_curds"
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": {
+					"item": "kubejs:soy_curds"
+				}
+			}
 		}
 	},
 	"result": {
