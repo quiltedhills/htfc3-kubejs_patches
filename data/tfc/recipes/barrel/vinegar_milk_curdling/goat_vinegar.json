@@ -2,7 +2,7 @@
   "type": "tfc:barrel_instant_fluid",
   "primary_fluid": {
     "ingredient": "firmalife:goat_milk",
-    "amount": 9
+    "amount": 4
   },
   "added_fluid": {
     "ingredient": "tfc:vinegar",
