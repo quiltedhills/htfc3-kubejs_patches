@@ -550,7 +550,7 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.yellow('Can hold any unstackable item!'))
+			text.add(1, Text.yellow('Can hold any unstackable item or block!'))
 			text.add(2, [Text.of('Access the slot with ').gold(), getKeybind('key.toolbelt.slot')])
 			text.add(3, [Text.of('then hold any unstackable item and hold ').gold(), getKeybind('key.toolbelt.open')])
 			text.add(4, Text.gold('to bring up a radial menu.'))

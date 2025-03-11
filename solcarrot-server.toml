@@ -1,0 +1,92 @@
+
+[milestones]
+	#Number of hearts you start out with.
+	#Range: 0 ~ 1000
+	baseHearts = 3
+	#Number of hearts you gain for reaching a new milestone.
+	#Range: 0 ~ 1000
+	heartsPerMilestone = 1
+	#A list of numbers of unique foods you need to eat to unlock each milestone, in ascending order. Naturally, adding more milestones lets you earn more hearts.
+	milestones = [5, 15, 30, 60, 90, 120, 150]
+
+[filtering]
+	#Foods in this list won't affect the player's health nor show up in the food book.
+	blacklist = [
+		# Coffee Delight Removals
+		'coffee_delight:cap_usa_coffee',
+		'coffee_delight:mag_black_coffee',
+		'coffee_delight:mag_double_espresso_coffee',
+		'coffee_delight:mag_arabic_coffee',
+		'coffee_delight:mag_turkey_coffee',
+		'coffee_delight:mag_latte_coffee',
+		'coffee_delight:mag_moka_coffee',
+		'coffee_delight:mag_cappuccino',
+		'coffee_delight:mag_usa_coffee',
+		'coffee_delight:mag_macchiato',
+		'coffee_delight:mag_milk_coffee',
+		'coffee_delight:mag_iced_lattee_coffee',
+		'coffee_delight:mag_iced_moka',
+		'coffee_delight:mag_iced_cappuccino',
+		'coffee_delight:mag_iced_usa_coffee',
+		'coffee_delight:mag_iced_macchiato',
+		'coffee_delight:mag_coco',
+		'coffee_delight:mag_iced_coco',
+		'coffee_delight:mag_fail_coffee',
+		'coffee_delight:berries_wafer',
+		'coffee_delight:coffee_beans',
+		'coffee_delight:cap_turkey_coffee',
+		'coffee_delight:coffee_wafer',
+		'coffee_delight:wafer',
+
+		# Farmers Delight Removals
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:mixed_salad',
+		'farmersdelight:cabbage',
+		'farmersdelight:chicken_cuts',
+		'farmersdelight:cooked_chicken_cuts',
+		'farmersdelight::cooked_rice',
+		'farmersdelight:fried_egg',
+		'farmersdelight:nether_salad',
+		'farmersdelight:wild_onions',
+		'farmersdelight:pumpkin_soup',
+		'farmersdelight:tomato',
+		'farmersdelight:tomato_sauce',
+		'farmersdelight:wheat_dough',
+		'farmersdelight:nether_wart_sourdough',
+
+		# Untamed Wilds Removals
+		'untamedwilds:material_fat',
+		'untamedwilds:material_blubber',
+		'untamedwilds:food_pemmican',
+		'untamedwilds:food_bear_raw',
+
+		# Random Mod Removals
+		'create:bar_of_chocolate',
+		'exnihilosequentia:cooked_silkworm',
+		'minecraft:mushroom_stew',
+		'tconstruct:bacon',
+
+		# TFC Removals
+		'tfc:food/cheese',
+		'tfc:food/green_bell_pepper',
+		'tfc:food/red_bell_pepper',
+		'tfc:food/yellow_bell_pepper',
+
+		# Vanilla Removals
+		'minecraft:apple',
+
+		# Soon to be fixed.
+		'firmalife:food/frothy_coconut'
+	]
+	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
+	whitelist = []
+	#The minimum hunger value foods need to provide in order to count for milestones, in half drumsticks.
+	#Range: 0 ~ 1000
+	minimumFoodValue = 1
+
+[miscellaneous]
+	#Whether or not to reset the food list on death, effectively losing all bonus hearts.
+	resetOnDeath = false
+	#If true, eating foods outside of survival mode (e.g. creative/adventure) is not tracked and thus does not contribute towards progression.
+	limitProgressionToSurvival = false
+
