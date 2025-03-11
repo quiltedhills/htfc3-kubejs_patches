@@ -171,6 +171,8 @@ onEvent('tags.blocks', event => {
 })
 // ===== FLUIDS
 onEvent('tags.fluids', event => {
+	event.add('tfc:milks', 'kubejs:oat_milk')
+
 	event.add('forge:molten_rose_gold', ['tfc:metal/rose_gold'])
 	event.add('forge:molten_unknown', ['tfc:metal/unknown'])
 	event.add('forge:molten_weak_steel', ['tfc:metal/weak_steel'])
