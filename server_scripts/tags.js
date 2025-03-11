@@ -239,6 +239,7 @@ onEvent('tags.items', event => {
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
 	])
+	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards'])
 	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')

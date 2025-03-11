@@ -1,0 +1,17 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "kubejs:misc_mats/refined_vanilla"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "kubejs:unsweetened_oat_milk",
+    "amount": 500
+  },
+  "output_fluid": {
+    "fluid": "kubejs:oat_milk",
+    "amount": 500
+  },
+  "duration": 8000
+}

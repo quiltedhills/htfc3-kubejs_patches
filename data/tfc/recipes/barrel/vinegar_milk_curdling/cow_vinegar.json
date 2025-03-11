@@ -2,14 +2,14 @@
   "type": "tfc:barrel_instant_fluid",
   "primary_fluid": {
     "ingredient": "minecraft:milk",
-    "amount": 3
+    "amount": 4
   },
   "added_fluid": {
     "ingredient": "tfc:vinegar",
     "amount": 1
   },
   "output_fluid": {
-    "fluid": "tfc:curdled_milk",
-    "amount": 3
+    "fluid": "tfc:milk_vinegar",
+    "amount": 10
   }
 }

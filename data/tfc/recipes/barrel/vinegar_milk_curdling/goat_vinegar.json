@@ -1,15 +1,15 @@
 {
   "type": "tfc:barrel_instant_fluid",
   "primary_fluid": {
-    "ingredient": "firmalife:yak_milk",
-    "amount": 3
+    "ingredient": "firmalife:goat_milk",
+    "amount": 4
   },
   "added_fluid": {
     "ingredient": "tfc:vinegar",
     "amount": 1
   },
   "output_fluid": {
-    "fluid": "firmalife:curdled_yak_milk",
-    "amount": 3
+    "fluid": "kubejs:goat_milk_vinegar",
+    "amount": 10
   }
 }

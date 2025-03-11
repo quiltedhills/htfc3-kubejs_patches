@@ -1,0 +1,21 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "firmalife:spice/vanilla"
+    },
+    {
+      "tag": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "firmalife:sugar_water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "kubejs:misc_mats/refined_vanilla"
+  }
+}

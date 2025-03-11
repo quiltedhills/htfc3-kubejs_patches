@@ -15,6 +15,8 @@ onEvent('item.registry', event => {
 
 	event.create('misc_mats/healing_salve')
 	event.create('misc_mats/mineral_mix')
+	event.create('misc_mats/ceramic_shards')
+	event.create('misc_mats/refined_vanilla')
 	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
 
