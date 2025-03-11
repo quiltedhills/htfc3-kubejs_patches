@@ -52,13 +52,16 @@ Please feel free to reach out to me on discord for any questions!
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
+• Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
+• Increased redstone lamp recipe yield <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
 • Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
+• Added soy milk, a difficult-to-make plant-based milk <br/>
 • Added more advanced alcohol production recipes <br/>
 • Minor improvements for animal carcasses <br/>
 • Fixed a few recipes accepting rotten food <br/>
@@ -74,3 +77,6 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
+• Made the charcoal block recipe use whole charcoal pieces instead of powder <br/>
+• Fixed grinding pyrite in a quern giving 4 powder instead of 1 <br/>
+• Removed the recipe for unused flint mesh <br/>

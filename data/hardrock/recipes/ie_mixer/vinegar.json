@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:mixer",
+  "inputs": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    }
+  ],
+  "fluid": {
+    "tag": "tfc:alcohols",
+    "amount": 250
+  },
+  "result": {
+    "fluid": "tfc:vinegar",
+    "amount": 250
+  },
+  "energy": 3200
+}
