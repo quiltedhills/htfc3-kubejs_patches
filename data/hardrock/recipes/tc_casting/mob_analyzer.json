@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    "bmb",
+    "csc"
+  ],
+  "key": {
+    "p": {
+      "tag": "forge:gems/pearl"
+    },
+    "m": {
+      "item": "mekanism:energy_tablet"
+    },
+    "b":
+        [
+            {
+              "item": "tfc:metal/sheet/blue_steel"
+            },
+            {
+              "item": "tfc:metal/sheet/red_steel"
+            }
+          ],
+    "c": {
+      "item": "pneumaticcraft:printed_circuit_board"
+    },
+    "s": {
+      "item": "mob_grinding_utils:mob_swab"
+    }
+    
+  },
+  "result": {
+    "item": "untamedwilds:debug_analyzer",
+    "count": 1
+  }
+}
