@@ -1,14 +1,4 @@
 {
-  "conditions": [
-    {
-      "type": "supplementaries:flag",
-      "flag": "planter"
-    },
-    {
-      "modid": "farmersdelight",
-      "type": "forge:mod_loaded"
-    }
-  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "101",

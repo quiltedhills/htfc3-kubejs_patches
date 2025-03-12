@@ -711,4 +711,44 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced('kubejs:nutrimix', (item, advanced, text) => {
 		text.add(1, Text.of('Not edible directly').gold())
 	})
+	tooltip.addAdvanced(['supplementaries:planter','supplementaries:planter_rich'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Not to be confused with '), Text.yellow('Greenhouse planters'), Text.gold('.')])
+			text.add(2, Text.gold('Can be used to grow non-tfc plants,'))
+			text.add(3, Text.gold('like Tea or Industrial Hemp.'))
+		}
+	})
+	tooltip.addAdvanced([
+		/^supplementaries:sconce/,
+		/^supplementaries:candle_holder/,
+		/^supplementaries:.+lantern$/,
+		/^minecraft:.*candle$/,
+		/^minecraft:.*lantern$/,
+		'minecraft:glowstone',
+	], (item, advanced, text) => {
+		text.add(1, Text.of('Permanent light source').gold())
+	})
+	tooltip.addAdvanced('beyond_earth:coal_torch', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Turns into a '), Text.yellow('permanent torch'), Text.gold(' when lit!')])
+		}
+	})
+	tooltip.addAdvanced('beyond_earth:coal_lantern', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Turns into a '), Text.yellow('permanent lantern'), Text.gold(' when lit!')])
+		}
+	})
+	tooltip.addAdvanced(['untamedwilds:material_pearl','untamedwilds:material_giant_pearl'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Can rarely be found on '), Text.yellow('Amadron'), Text.gold('!')])
+		}
+	})
 })

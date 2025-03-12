@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    " b ",
+    "sss"
+  ],
+  "key": {
+    "b": {
+      "tag": "tfc:rock/bricks"
+    },
+    "s": {
+      "tag": "tfc:rock/bricks/slabs"
+    }
+  },
+  "result": {
+    "item": "supplementaries:pedestal",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "supplementaries:gold_door"
+  },
+  "addition": {
+    "tag": "forge:sheets/netherite"
+  },
+  "result": {
+    "item": "supplementaries:netherite_door"
+  }
+}

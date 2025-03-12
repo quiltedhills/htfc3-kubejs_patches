@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rsr"
+  ],
+  "key": {
+    "s": {
+      "item": "supplementaries:sconce"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "supplementaries:sconce_lever",
+    "count": 1
+  }
+}

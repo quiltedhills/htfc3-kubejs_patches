@@ -1,0 +1,16 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "minecraft:candle"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:orange_dye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "minecraft:orange_candle"
+  },
+  "duration": 1000
+}

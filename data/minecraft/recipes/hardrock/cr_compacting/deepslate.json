@@ -1,22 +1,9 @@
 {
   "type": "create:compacting",
   "ingredients": [
-    [
-      {
-        "tag": "forge:dusts/charcoal"
-      },
-      {
-        "tag": "forge:dusts/coal"
-      }
-    ],
-    [
-      {
-        "tag": "forge:dusts/charcoal"
-      },
-      {
-        "tag": "forge:dusts/coal"
-      }
-    ],
+    {
+      "item": "tfc:soot"
+    },
     {
       "item": "minecraft:stone"
     },

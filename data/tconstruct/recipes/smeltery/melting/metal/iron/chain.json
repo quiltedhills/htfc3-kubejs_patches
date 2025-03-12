@@ -4,8 +4,8 @@
     "item": "minecraft:chain"
   },
   "result": {
-    "fluid": "tconstruct:molten_iron",
-    "amount": 120
+    "fluid": "tfc:cast_iron",
+    "amount": 6
   },
   "temperature": 800,
   "time": 70

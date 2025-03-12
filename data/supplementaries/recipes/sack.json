@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " s ",
+    "f f",
+    "fff"
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:string"
+    },
+    "f": {
+      "item": "tfc:burlap_cloth"
+    }
+  },
+  "result": {
+    "item": "supplementaries:sack",
+    "count": 1
+  }
+}

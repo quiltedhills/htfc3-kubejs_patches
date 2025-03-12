@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/sheet/gold"
+  },
+  "result": {
+    "item": "supplementaries:gold_trapdoor"
+  },
+  "tier": 1,
+  "rules": [
+    "punch_last",
+    "punch_not_last",
+    "draw_any"
+  ]
+}

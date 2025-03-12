@@ -1,6 +1,33 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'supplementaries:sconce'},
+		{id: 'supplementaries:sconce_soul'},
+		{id: 'supplementaries:sconce_lever'},
+		{id: /^supplementaries:candle_holders\/candle_holder/},
+		{id: /^supplementaries:flags\/flag_/},
+		{id: /^supplementaries:.+_door/},
+		{id: /^supplementaries:.+_lantern/},
+		{id: /^supplementaries:.+_trapdoor/},
+		{id: 'supplementaries:netherite_trapdoor'},
+		{id: /^minecraft:.+_candle/},
+		{id: 'minecraft:candle'},
+		{id: 'minecraft:chain'},
+		{id: 'minecraft:lantern'},
+		{id: 'minecraft:glowstone'},
+		{id: 'minecraft:sea_lantern'},
+		{id: 'tconstruct:smeltery/casting/metal/iron/lantern'},
+		{id: 'immersivepetroleum:candle'},
+		{id: 'untamedwilds:blocks/candle_from_fat'},
+		{id: 'create:haunting/glow_ink_sac'},
+		{id: 'beyond_earth:smeltery/casting/metal/iron/coal_lantern'},
+		{id: 'beyond_earth:smeltery/melting/metal/iron/coal_lantern'},
+		{id: 'beyond_earth:coal_torch'},
+		{id: 'beyond_earth:coal_lantern'},
+		{id: 'untamedwilds:blocks/torches_from_blubber'},
+		{id: 'twilightforest:berry_torch'},
+		{id: /^securitycraft:reinforced_.+_stained_glass$/},
+
 		{id: 'mekanism:nucleosynthesizing/crossbow'},
 		{id: 'mekanism:nucleosynthesizing/crying_obsidian'},
 		{id: 'mekanism:nucleosynthesizing/end_crystal'},
@@ -98,7 +125,7 @@ onEvent('recipes', event => {
 		{id: 'immersiveengineering:blueprint/mold_packing_9'},
 		{id: 'tfc_ie_addon:blueprint/mold_sheet'},
 		{id: 'tfc_ie_addon:blueprint/mold_block'},
-    
+		
 		{id: /^createdeco:.+_bars$/},
 		{id: /^createdeco:.+_bricks$/},
 		{id: /^createdeco:.+_catwalk$/},
@@ -122,7 +149,9 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/netherite/plate_sand_cast'},
 		{id: 'tconstruct:smeltery/melting/metal/netherite/plates'},
 		{id: 'createdeco:cast_iron_nugget_from_cast_iron_ingot'},
-    
+		{id: 'createdeco:cast_iron_ingot'},
+		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
+		
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},
 		{id: 'exnihilosequentia:sieve/ens_diamond'},
@@ -192,7 +221,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'tfc:heating/metal/netherite_ingot'},
-    
+		
 		{id: 'minecraft:acacia_planks'},
 		{id: 'choppingblock:acacia_planks'},
 		{id: 'minecraft:birch_planks'},

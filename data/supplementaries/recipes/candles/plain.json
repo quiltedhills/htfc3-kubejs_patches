@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    "wsw",
+    " b "
+  ],
+  "key": {
+    "w": {
+      "tag": "forge:wax"
+    },
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "s": {
+      "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:candle",
+    "count": 4
+  }
+}

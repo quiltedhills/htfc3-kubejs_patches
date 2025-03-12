@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "nfn",
+    " s "
+  ],
+  "key": {
+    "c": {
+      "tag": "forge:cloth"
+    },
+    "n": {
+      "tag": "forge:nuggets/cast_iron"
+    },
+    "s": {
+      "tag": "forge:rods/treated_wood"
+    },
+    "i": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "f": {
+      "tag": "forge:coal_coke"
+    }
+  },
+  "result": {
+    "item": "beyond_earth:coal_torch",
+    "count": 1
+  }
+}

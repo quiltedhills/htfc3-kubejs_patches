@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "rbr",
+    " p "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "tag": "forge:wires/aluminum"
+    },
+    "r": {
+      "tag": "forge:rods/silver"
+    },
+    "p": {
+      "tag": "forge:nuggets/silver"
+    }
+  },
+  "result": {
+    "item": "supplementaries:silver_lantern",
+    "count": 1
+  }
+}

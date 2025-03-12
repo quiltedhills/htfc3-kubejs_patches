@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/cast_iron"
+  },
+  "result": {
+    "item": "minecraft:chain",
+    "count": 16
+  },
+  "tier": 3,
+  "rules": [
+    "hit_any",
+    "hit_any",
+    "draw_last"
+  ]
+}

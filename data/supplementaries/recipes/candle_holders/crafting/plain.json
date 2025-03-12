@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bfb",
+    "rcn",
+    " i "
+  ],
+  "key": {
+    "c": {
+      "item": "tfc:candle"
+    },
+    "f": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "tfc:olive_oil",
+        "amount": 1000
+      }
+    },
+    "i": {
+      "tag": "forge:ingots/cast_iron"
+    },
+    "r": {
+      "tag": "forge:rods/cast_iron"
+    },
+    "n": {
+      "tag": "forge:nuggets/cast_iron"
+    },
+    "b": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "supplementaries:candle_holder",
+    "count": 4
+  }
+}

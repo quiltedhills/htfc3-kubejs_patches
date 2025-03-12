@@ -26,7 +26,6 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:furnace', 'minecraft:blast_furnace')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:chest', '#forge:chests')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:wheat', 'tfc:food/wheat')
-	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:chain', 'tfc:metal/chain/wrought_iron')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:dried_kelp', 'tfc:food/dried_kelp')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:iron_ingot', '#forge:ingots/irons')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:gold_ingot', '#forge:ingots/gold')

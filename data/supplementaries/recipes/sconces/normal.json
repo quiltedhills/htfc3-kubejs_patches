@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ifi",
+    "bsb",
+    " n "
+  ],
+  "key": {
+    "f": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "immersiveengineering:creosote",
+        "amount": 1000
+      }
+    },
+    "i": {
+      "item": "createdeco:cast_iron_bars"
+    },
+    "n": {
+      "tag": "forge:nuggets/cast_iron"
+    },
+    "s": {
+      "tag": "forge:rods/treated_wood"
+    },
+    "b": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "supplementaries:sconce",
+    "count": 2
+  }
+}
