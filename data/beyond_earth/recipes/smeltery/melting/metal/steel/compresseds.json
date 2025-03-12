@@ -1,18 +1,5 @@
 {
   "type": "tconstruct:melting",
-  "conditions": [
-    {
-      "value": {
-        "tag": "beyond_earth:compresseds/steel",
-        "type": "forge:tag_empty"
-      },
-      "type": "forge:not"
-    },
-    {
-      "modid": "tconstruct",
-      "type": "forge:mod_loaded"
-    }
-  ],
   "ingredient": {
     "tag": "beyond_earth:compresseds/steel"
   },
@@ -21,5 +8,5 @@
     "amount": 400
   },
   "temperature": 950,
-  "time": 65
+  "time": 95
 }

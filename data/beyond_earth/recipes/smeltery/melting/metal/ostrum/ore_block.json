@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/raw_ostrum"
+  },
+  "result": {
+    "fluid": "beyond_earth:molten_ostrum",
+    "amount": 810
+  },
+  "temperature": 1200,
+  "time": 750
+}

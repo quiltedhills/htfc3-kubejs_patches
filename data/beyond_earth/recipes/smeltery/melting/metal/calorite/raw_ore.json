@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:raw_materials/calorite"
+  },
+  "result": {
+    "fluid": "beyond_earth:molten_calorite",
+    "amount": 90
+  },
+  "temperature": 1500,
+  "time": 175
+}
