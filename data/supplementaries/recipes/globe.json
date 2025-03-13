@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " gr",
+    "bpb",
+    "rc "
+  ],
+  "key": {
+    "p": {
+      "tag": "forge:gems/pearl"
+    },
+    "r": {
+      "tag": "forge:rods/gold"
+    },
+    "c": {
+      "item": "createdeco:gold_catwalk_stair"
+    },
+    "b": {
+      "tag": "forge:dyes/blue"
+    },
+    "g": {
+      "tag": "forge:dyes/green"
+    }
+  },
+  "result": {
+    "item": "supplementaries:globe",
+    "count": 1
+  }
+}

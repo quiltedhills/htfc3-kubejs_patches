@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "gbg",
+    " p "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "tag": "forge:wires/gold"
+    },
+    "g": {
+      "item": "mcwwindows:red_curtain"
+    },
+    "p": {
+      "item": "createdeco:gold_catwalk"
+    }
+  },
+  "result": {
+    "item": "supplementaries:crimson_lantern",
+    "count": 1
+  }
+}

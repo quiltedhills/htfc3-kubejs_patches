@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sb ",
+    "sbq",
+    "sb "
+  ],
+  "key": {
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "b": {
+      "item": "tfc:rock/smooth/basalt"
+    },
+    "q": {
+      "tag": "supplementaries:blackboard_white"
+    }
+  },
+  "result": {
+    "item": "supplementaries:blackboard",
+    "count": 2
+  }
+}

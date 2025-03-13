@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:painting",
+  "itemInput": {
+    "ingredient": {
+      "type": "forge:difference",
+      "base": {
+        "tag": "supplementaries:candle_holders"
+      },
+      "subtracted": {
+        "item": "supplementaries:candle_holder_light_blue"
+      }
+    }
+  },
+  "chemicalInput": {
+    "amount": 8,
+    "pigment": "mekanism:light_blue"
+  },
+  "output": {
+    "item": "supplementaries:candle_holder_light_blue"
+  }
+}

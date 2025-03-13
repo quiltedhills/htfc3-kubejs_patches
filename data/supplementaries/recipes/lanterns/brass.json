@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "gbg",
+    " p "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "item": "tfc:metal/chain/bronze"
+    },
+    "g": {
+      "tag": "forge:glass_panes/colorless"
+    },
+    "p": {
+      "item": "createdeco:brass_catwalk"
+    }
+  },
+  "result": {
+    "item": "supplementaries:brass_lantern",
+    "count": 1
+  }
+}

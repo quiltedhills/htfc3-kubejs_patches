@@ -1,0 +1,16 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "supplementaries:candle_holder"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:white_dye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "supplementaries:candle_holder_white"
+  },
+  "duration": 1000
+}

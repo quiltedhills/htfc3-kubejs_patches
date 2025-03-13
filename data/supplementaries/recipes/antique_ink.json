@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "item": "immersivepetroleum:bitumen"
+    },
+    {
+      "item": "tfc:soot"
+    },
+    {
+      "tag": "forge:dusts/ash"
+    },
+    {
+      "tag": "forge:dusts/ash"
+    }
+  ],
+  "container": {
+    "item": "dynamictrees:dendro_potion",
+    "nbt": "{potion_index: 0}"
+  },
+  "result": {
+    "item": "supplementaries:antique_ink"
+  },
+  "experience": 1.25,
+  "cookingtime": 1800
+}

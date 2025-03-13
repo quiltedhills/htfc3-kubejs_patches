@@ -235,6 +235,8 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
+
 	event.remove('curios:belt', 'toolbelt:belt')
 	event.add('tfc:axes', 'tconstruct:hand_axe')
 	event.add('forge:prop_foods', [

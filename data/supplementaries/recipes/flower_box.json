@@ -9,17 +9,11 @@
       "tag": "minecraft:wooden_slabs"
     },
     "0": {
-      "tag": "forge:dirt"
+      "tag": "tfc:dirt"
     }
   },
   "result": {
     "item": "supplementaries:flower_box",
     "count": 2
-  },
-  "conditions": [
-    {
-      "type": "supplementaries:flag",
-      "flag": "flower_box"
-    }
-  ]
+  }
 }

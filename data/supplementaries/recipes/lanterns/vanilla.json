@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "gbg",
+    " p "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "item": "minecraft:chain"
+    },
+    "g": {
+      "tag": "forge:glass_panes/colorless"
+    },
+    "p": {
+      "item": "createdeco:cast_iron_catwalk"
+    }
+  },
+  "result": {
+    "item": "minecraft:lantern",
+    "count": 1
+  }
+}

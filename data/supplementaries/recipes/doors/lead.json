@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:sheets/lead"
+  },
+  "result": {
+    "item": "supplementaries:lead_door"
+  },
+  "tier": 2,
+  "rules": [
+    "hit_last",
+    "draw_not_last",
+    "punch_not_last"
+  ]
+}

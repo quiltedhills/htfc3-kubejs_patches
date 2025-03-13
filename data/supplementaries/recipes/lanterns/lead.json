@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    "gbg",
+    " g "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "g": {
+      "tag": "forge:glass_panes/purple"
+    },
+    "p": {
+      "item": "supplementaries:lead_trapdoor"
+    }
+  },
+  "result": {
+    "item": "supplementaries:lead_lantern",
+    "count": 1
+  }
+}

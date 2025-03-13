@@ -36,6 +36,7 @@ Please feel free to reach out to me on discord for any questions!
 ### Major things:
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added custom magnets to replace the Create SA copper magnet <br/>
+• Recipe overhauls for permanent light sources <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
@@ -70,6 +71,7 @@ Please feel free to reach out to me on discord for any questions!
 
 ### Building-related:
 • Aforementioned addition of Create Deco with many recipe changes <br/>
+• Lots of tweaks to Supplementaries' deco blocks <br/>
 • Added recipes for TFC ore blocks for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
 

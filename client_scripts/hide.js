@@ -19,6 +19,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		/coral_larvae/,
 		'tfc:food/cheese',
 
 		'createdeco:zinc_sheet',
@@ -60,13 +61,6 @@ onEvent('jei.hide.items', event => {
 		'dynamictrees:dark_oak_seed',
 		'dynamictrees:birch_seed',
 		'dynamictrees:acacia_seed',
-		'supplementaries:sconce',
-		'supplementaries:sconce_soul',
-		'supplementaries:copper_lantern',
-		'supplementaries:brass_lantern',
-		'supplementaries:crimson_lantern',
-		'supplementaries:silver_lantern',
-		'supplementaries:lead_lantern',
 		'supplementaries:timber_frame',
 		'supplementaries:timber_brace',
 		'supplementaries:timber_cross_brace',
@@ -474,8 +468,6 @@ onEvent('jei.hide.items', event => {
 		'minecraft:dried_kelp',
 		'minecraft:gold_ingot',
 		'minecraft:kelp',
-		'minecraft:lantern',
-		'minecraft:soul_lantern',
 		'minecraft:stonecutter',
 		'minecraft:torch',
 		'pneumaticcraft:wheat_flour',
@@ -486,6 +478,7 @@ onEvent('jei.hide.items', event => {
 		'tconstruct:sky_slime_sling',
 		'tconstruct:ender_slime_sling',
 		'tconstruct:ichor_slime_sling',
+		'tconstruct:glow_ball',
 		'twilightforest:uncrafting_table',
 		//'tfc:food/barley_dough',
 		//'tfc:food/maize_dough',

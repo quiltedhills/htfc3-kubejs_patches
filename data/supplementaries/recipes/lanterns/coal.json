@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "gfg",
+    "ipi"
+  ],
+  "key": {
+    "f": {
+      "tag": "forge:coal_coke"
+    },
+    "c": {
+      "item": "minecraft:chain"
+    },
+    "g": {
+      "tag": "forge:glass_panes/colorless"
+    },
+    "p": {
+      "item": "createdeco:cast_iron_catwalk"
+    },
+    "i": {
+      "item": "minecraft:glow_ink_sac"
+    }
+  },
+  "result": {
+    "item": "beyond_earth:coal_lantern",
+    "count": 1
+  }
+}

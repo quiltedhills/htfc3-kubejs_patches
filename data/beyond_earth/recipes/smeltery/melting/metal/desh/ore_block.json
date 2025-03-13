@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/raw_desh"
+  },
+  "result": {
+    "fluid": "beyond_earth:molten_desh",
+    "amount": 810
+  },
+  "temperature": 800,
+  "time": 500
+}

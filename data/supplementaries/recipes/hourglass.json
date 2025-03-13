@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gsg",
+    " c ",
+    "gsg"
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:sheets/gold"
+    },
+    "g": {
+      "item": "tconstruct:clear_glass"
+    },
+    "c": {
+      "item": "adchimneys:glass_chimney"
+    }
+  },
+  "result": {
+    "item": "supplementaries:hourglass",
+    "count": 1
+  }
+}
