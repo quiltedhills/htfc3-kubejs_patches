@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/perm_torch/wall",
+  "textures": {
+    "torch": "minecraft:block/perm_torches/normal",
+    "1": "minecraft:block/perm_torches/normal_1"
+  }
+}

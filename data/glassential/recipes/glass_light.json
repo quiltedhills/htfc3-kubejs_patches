@@ -1,6 +1,17 @@
 {
-    "type":"mekanism:combining",
-    "mainInput":{"ingredient":{"item": "minecraft:glass"}},
-    "extraInput":{"ingredient":{"tag": "forge:circuits/ultimate"}},
-    "output":{"item":"glassential:glass_light"}
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "minecraft:glass"
+    }
+  },
+  "extraInput": {
+    "ingredient": {
+      "item": "minecraft:blaze_powder",
+      "count": 1
+    }
+  },
+  "output": {
+    "item": "glassential:glass_light"
+  }
 }
