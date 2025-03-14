@@ -243,7 +243,19 @@ onEvent('tags.items', event => {
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
 	])
+	event.add.('tfc:compost_browns_high',['kubejs:dried_soybeans'])
 	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards'])
+	event.add('tfc:compost_greens_high', [
+		'kubejs:soaked_soybeans',
+		'kubejs:peeled_soybeans',
+		'kubejs:washed_soybeans',
+		'kubejs:ground_soy',
+		'kubejs:soy_mash',
+		'kubejs:okara',
+		'kubejs:soy_curds',
+		'kubejs:firm_tofu_chunk',
+		'kubejs:silken_tofu_chunk'
+	])
 	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
@@ -1008,9 +1020,9 @@ onEvent('tags.items', event => {
 	//event.remove('forge:tools/saws', '#forge:tools/axes')
 	//event.add('forge:saw_blade', 'immersiveengineering:sawblade')
 	event.add('forge:press_head', 'kubejs:press_head')
-	event.add('tfc:compost_browns_low', ['mekanism:bio_fuel', 'kubejs:dried_soybeans'])
-	event.add('tfc:compost_greens_low', ['kubejs:seed_biomass', 'kubejs:soaked_soybeans', 'kubejs:peeled_soybeans', 'kubejs:washed_soybeans', 'kubejs:ground_soy', 'kubejs:soy_mash'])
-	event.add('tfc:compost_greens', ['createaddition:biomass', 'kubejs:okara', 'kubejs:soy_curds', 'kubejs:firm_tofu', 'kubejs:firm_tofu_chunk', 'kubejs:silken_tofu', 'kubejs:silken_tofu_chunk'])
+	event.add('tfc:compost_browns_low', ['mekanism:bio_fuel',])
+	event.add('tfc:compost_greens_low', ['kubejs:seed_biomass'])
+	event.add('tfc:compost_greens', ['createaddition:biomass'])
 	event.add('forge:barrels', '#tfcbarrels:barrels')
 	event.add('forge:barrels/wooden', '#tfcbarrels:barrels')
 	event.add('twilightforest:portal/activator', 'kubejs:magic_crystal')
