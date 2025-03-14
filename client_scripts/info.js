@@ -40,9 +40,9 @@ onEvent('item.tooltip', tooltip => {
 					if (!tooltip.shift) {
 						text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 					} else {
-						text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow()])
+						text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow(),Text.of(".").gold()])
 						text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
-						text.add(3, Text.gold("using pumps, vents and chimneys"))
+						text.add(3, Text.gold("using pumps, vents and chimneys."))
 					}
 				})
 			})
@@ -724,9 +724,14 @@ onEvent('item.tooltip', tooltip => {
 		/^supplementaries:sconce/,
 		/^supplementaries:candle_holder/,
 		/^supplementaries:.+lantern$/,
+		/^supplementaries:.+_lamp$/,
 		/^minecraft:.*candle$/,
 		/^minecraft:.*lantern$/,
+		/^minecraft:.*torch$/,
 		'minecraft:glowstone',
+		/^createdeco:.+_lamp$/,
+		/^pneumaticcraft:wall_lamp/,
+		'glassential:glass_light',
 	], (item, advanced, text) => {
 		text.add(1, Text.of('Permanent light source').gold())
 	})

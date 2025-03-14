@@ -469,7 +469,6 @@ onEvent('jei.hide.items', event => {
 		'minecraft:gold_ingot',
 		'minecraft:kelp',
 		'minecraft:stonecutter',
-		'minecraft:torch',
 		'pneumaticcraft:wheat_flour',
 		'tconstruct:copper_nugget',
 		'tconstruct:pig_iron_ingot',
