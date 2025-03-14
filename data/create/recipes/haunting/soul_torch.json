@@ -2,7 +2,7 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "item": "tfc:torch"
+      "item": "minecraft:torch"
     }
   ],
   "results": [

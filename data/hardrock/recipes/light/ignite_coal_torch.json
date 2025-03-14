@@ -1,0 +1,21 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "beyond_earth:coal_torch"
+    },
+    [
+      {
+        "item": "minecraft:flint_and_steel"
+      },
+      {
+        "item": "minecraft:fire_charge"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:torch"
+    }
+  ]
+}
