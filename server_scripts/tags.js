@@ -243,7 +243,7 @@ onEvent('tags.items', event => {
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
 	])
-	event.add.('tfc:compost_browns_high',['kubejs:dried_soybeans'])
+	event.add('tfc:compost_browns_high',['kubejs:dried_soybeans'])
 	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards'])
 	event.add('tfc:compost_greens_high', [
 		'kubejs:soaked_soybeans',
