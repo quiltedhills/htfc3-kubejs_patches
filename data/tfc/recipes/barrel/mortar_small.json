@@ -1,0 +1,17 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "forge:sand_piles"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:limewater",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "tfc:mortar",
+    "count": 4
+  },
+  "duration": 8000
+}

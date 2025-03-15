@@ -2,6 +2,7 @@
 onEvent('recipes', event => {
 	event.remove([
 		{id: /^create:haunting\/infested_/},
+		{id: 'create:milling/calcite'},
 
 		{id: 'supplementaries:sconce'},
 		{id: 'supplementaries:sconce_soul'},

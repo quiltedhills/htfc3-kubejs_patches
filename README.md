@@ -42,6 +42,7 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 
 ### Balancing:
+• Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
 • Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
@@ -57,6 +58,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Increased redstone lamp recipe yield <br/>
+• Tweaked some sand-related recipes <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

@@ -11,11 +11,11 @@
   "results": [
     {
       "item": "minecraft:redstone",
-      "chance": 0.08
+      "chance": 0.07
     },
     {
       "item": "tfc_ie_addon:ore/small_aluminum",
-      "chance": 0.05
+      "chance": 0.03
     },
     {
       "item": "minecraft:bone",
