@@ -1,13 +1,13 @@
 {
   "type": "create:sequenced_assembly",
-  "ingredient": {"tag": "forge:double_sheets/bimsuth_bronze"},
-  "transitionalItem": {"item":"tfc:metal/propick_head/bimsuth_bronze"},
+  "ingredient": {"tag": "forge:double_sheets/bismuth_bronze"},
+  "transitionalItem": {"item":"tfc:metal/propick_head/bismuth_bronze"},
   "sequence": [
-    {"type": "create:filling","ingredients": [{"item":"tfc:metal/propick_head/bimsuth_bronze"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
-    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}]},
-    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}]},
-    {"type": "create:pressing","ingredients": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bimsuth_bronze"}]}
+    {"type": "create:filling","ingredients": [{"item":"tfc:metal/propick_head/bismuth_bronze"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/bismuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bismuth_bronze"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item":"tfc:metal/propick_head/bismuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bismuth_bronze"}]},
+    {"type": "create:pressing","ingredients": [{"item":"tfc:metal/propick_head/bismuth_bronze"}],"results": [{"item":"tfc:metal/propick_head/bismuth_bronze"}]}
     ],
-  "results": [{"item": "tfc:metal/tuyere/bimsuth_bronze","count":1}],
+  "results": [{"item": "tfc:metal/tuyere/bismuth_bronze","count":1}],
   "loops": 2
 }
