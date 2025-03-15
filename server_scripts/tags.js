@@ -45,20 +45,22 @@ onEvent('tags.blocks', event => {
 	event.add('tfc:can_be_snow_piled', [
 		//'geolosys:lignite_ore_sample',
 	])
-	event.add('tfc:can_trigger_collapse', [
-		/^tfc:raw_sandstone\/.+/,
+	event.add('tfc:supports_landslide', [
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
+	])
+	event.add('tfc:can_landslide', [
+		'exnihilosequentia:infesting_leaves',
+		'exnihilosequentia:infested_leaves'
+	])
+	event.add('tfc:can_trigger_collapse', [
+		/^tfc:raw_sandstone\/.+/
 	])
 	event.add('tfc:can_start_collapse', [
-		/^tfc:raw_sandstone\/.+/,
-		'exnihilosequentia:infesting_leaves',
-		'exnihilosequentia:infested_leaves'
+		/^tfc:raw_sandstone\/.+/
 	])
 	event.add('tfc:can_collapse', [
-		/^tfc:raw_sandstone\/.+/,
-		'exnihilosequentia:infesting_leaves',
-		'exnihilosequentia:infested_leaves'
+		/^tfc:raw_sandstone\/.+/
 	])
 	//event.remove('minecraft:leaves', [
 	//	'#dynamictrees:leaves',
