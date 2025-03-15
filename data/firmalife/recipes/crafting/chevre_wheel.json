@@ -1,0 +1,25 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "YYY",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "tfc:powder/salt"
+    },
+    "Y": {
+		"ingredient": {
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "firmalife:food/goat_curd"
+			}
+		}
+    }
+  },
+  "result": {
+    "item": "firmalife:chevre_wheel"
+  }
+}
