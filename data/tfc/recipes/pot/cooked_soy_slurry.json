@@ -16,6 +16,6 @@
   "temperature": 600,
   "fluid_output": {
     "fluid": "kubejs:cooked_soy_slurry",
-    "amount": 1000
+    "amount": 500
   }
 }
