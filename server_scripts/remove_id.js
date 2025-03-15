@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: /^tfc_ie_addon:heating\/ore\//},
+
 		{id: 'ag_day_counter:craft_calendar_block_to_calendar_item'},
 		{id: 'create_sa:vault_recipe'},
 		{id: /^create:haunting\/infested_/},
