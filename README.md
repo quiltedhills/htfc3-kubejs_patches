@@ -88,3 +88,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made the charcoal block recipe use whole charcoal pieces instead of powder <br/>
 • Fixed grinding pyrite in a quern giving 4 powder instead of 1 <br/>
 • Removed the recipe for unused flint mesh <br/>
+• Fixed recipe conflicts for straw hats and straw carpets <br/>
