@@ -77,6 +77,7 @@ Please feel free to reach out to me on discord for any questions!
 • Lots of tweaks to Supplementaries' deco blocks <br/>
 • Added recipes for TFC ore blocks for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
+• Re-introduced recipes for vegetable crates from Farmer's Delight <br/>
 
 ### Fixes:
 • Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>

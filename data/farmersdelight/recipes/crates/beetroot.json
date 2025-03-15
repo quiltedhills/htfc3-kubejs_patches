@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "fff",
+    "fcf",
+    "fff"
+  ],
+  "key": {
+    "f": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "forge:vegetables/beetroot"
+      }
+    },
+    "c": {
+      "item": "immersiveengineering:crate"
+    }
+  },
+  "result": {
+    "item": "farmersdelight:beetroot_crate"
+  }
+}
