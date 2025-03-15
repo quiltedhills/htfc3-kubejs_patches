@@ -44,10 +44,11 @@ Please feel free to reach out to me on discord for any questions!
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
+• Made infested leaves landslide instead of collapsing (think dirt or gravel!) <br/>
 • Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
-• Tweaked the durability of Ex Nihilo hammers <br/>
+• Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
 • Made Ender Chests significantly more expensive <br/>
 
 ### Quality of Life:
@@ -78,6 +79,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added a few prop foods for decoration purposes <br/>
 
 ### Fixes:
+• Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
