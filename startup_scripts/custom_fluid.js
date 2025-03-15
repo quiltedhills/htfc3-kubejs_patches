@@ -25,4 +25,5 @@ onEvent('fluid.registry', event => {
 	event.create("soy_milk")            .thinTexture(0xeaf0c9) .bucketColor(0xeaf0c9)  .displayName("Soy Milk")                        .noBlock()
 	event.create("soy_milk_vinegar")    .thinTexture(0xcccfba) .bucketColor(0xcccfba)  .displayName("Soy Milk Vinegar")                .noBlock()
 	event.create("curdled_soy_milk")    .thinTexture(0xc3c9a1) .bucketColor(0xc3c9a1)  .displayName("Curdled Soy Milk")                .noBlock()
+	event.create("builders_tea")        .thinTexture(0xcd7559) .bucketColor(0xcd7559)  .displayName("Builder's Tea")                   .noBlock()
 })
