@@ -768,4 +768,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced(/^supplementaries:candle_holder/, (item, advanced, text) => {
 		text.add(2, Text.of('Placeable on walls and ceilings').darkGray().italic())
 	})
+	tooltip.addAdvanced(['create_sa:vault_component', 'create_sa:fan_component'], (item, advanced, text) => {
+		text.add(1, Text.of('Brass Drone module').gray())
+	})
 })

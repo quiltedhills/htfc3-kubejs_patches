@@ -19,9 +19,9 @@ onEvent('client.generate_assets', event => {
 	rename('minecraft:bowl', "Wooden Bowl")
 	rename('tfc:ceramic/bowl', "Ceramic Bowl")
 
-	rename('exnihilosequentia:stone_hammer', "Stone Mash Hammer")
-	rename('exnihilosequentia:iron_hammer', "Wrought Iron Mash Hammer")
-	rename('exnihilosequentia:netherite_hammer', "Black Steel Mash Hammer")
+	rename('exnihilosequentia:stone_hammer', "Stone Crude Hammer")
+	rename('exnihilosequentia:iron_hammer', "Wrought Iron Crude Hammer")
+	rename('exnihilosequentia:netherite_hammer', "Black Steel Crude Hammer")
 
 	rename('createdeco:netherite_sheet', "Netherite Slab")
 
