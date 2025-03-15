@@ -1,5 +1,5 @@
-config
-exported
-probe
-jsconfig.json
-README.txt
+/config
+/exported
+/probe
+/jsconfig.json
+/README.txt
