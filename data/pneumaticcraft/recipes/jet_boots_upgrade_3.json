@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TNT",
+    "AUA",
+    "TNT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:ghast_tear"
+    },
+    "N": {
+      "item": "immersive_aircraft:nether_engine"
+    },
+    "A": {
+      "item": "compressedcreativity:industrial_air_blower"
+    },
+    "U": {
+      "item": "pneumaticcraft:jet_boots_upgrade_2"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:jet_boots_upgrade_3"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RER",
+    "AUA",
+    "RDR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:end_rod"
+    },
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "A": {
+      "item": "compressedcreativity:industrial_air_blower"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "U": {
+      "item": "pneumaticcraft:jet_boots_upgrade_4"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:jet_boots_upgrade_5"
+  }
+}

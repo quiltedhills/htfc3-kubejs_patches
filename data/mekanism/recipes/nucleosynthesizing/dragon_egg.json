@@ -2,7 +2,7 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "item": "firmalife:food/pickled_egg"
+      "item": "minecraft:dragon_head"
     }
   },
   "gasInput": {
