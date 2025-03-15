@@ -1,8 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'ag_day_counter:craft_calendar_block_to_calendar_item'},
 		{id: 'create_sa:vault_recipe'},
-
 		{id: /^create:haunting\/infested_/},
 		{id: 'create:milling/calcite'},
 

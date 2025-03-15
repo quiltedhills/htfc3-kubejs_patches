@@ -19,6 +19,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'ag_day_counter:calendar_item',
 		/^minecraft:infested_/,
 		/coral_larvae/,
 		'tfc:food/cheese',
