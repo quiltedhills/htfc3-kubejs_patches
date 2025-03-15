@@ -1,25 +1,22 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-	"XXX",
-	"YYY",
-	"XXX"
-	],
-	"key": {
-		"X": {
-			"item": "tfc:powder/salt"
-		},
-		"Y": {
-			"ingredient": {
-				"type": "tfc:not_rotten",
-				"ingredient": {
-					"item": "kubejs:food/soy_curds"
-				}
-			}
-		}
-	},
-	"result": {
-		"item": "kubejs:food/firm_tofu"
-	}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "YYY",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "tfc:powder/salt"
+    },
+    "Y": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubejs:food/soy_curds"
+      }
+    }
+  },
+  "result": {
+    "item": "kubejs:food/firm_tofu"
+  }
 }

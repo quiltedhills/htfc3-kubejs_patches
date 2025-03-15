@@ -6,5 +6,5 @@
   "saturation": 2,
   "protein": 2.0,
   "dairy": 2.0,
-  "decay_modifier": 0
+  "decay_modifier": 0.25
 }

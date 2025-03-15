@@ -5,5 +5,5 @@
   "hunger": 8,
   "saturation": 2,
   "dairy": 4.0,
-  "decay_modifier": 0
+  "decay_modifier": 0.25
 }
