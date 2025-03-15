@@ -1,14 +1,13 @@
 {
-	"__comment__": "this file was created by BeyondTheAbyss",
-	"type": "tfc:quern",
-	"ingredient": {
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "kubejs:food/washed_soybeans"
-		}
-	},
-	"result": {
-		"item": "kubejs:food/ground_soy",
-		"count": 1
-	}
+  "type": "tfc:quern",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "kubejs:food/washed_soybeans"
+    }
+  },
+  "result": {
+    "item": "kubejs:food/ground_soy",
+    "count": 1
+  }
 }

@@ -1,12 +1,11 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:barrel_sealed",
   "input_item": {
     "ingredient": {
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "firmalife:food/goat_curd"
-		}
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/goat_curd"
+      }
     },
     "count": 3
   },

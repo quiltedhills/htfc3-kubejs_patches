@@ -1,7 +1,6 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"ingredient": {
-		"item": "kubejs:food/peeled_soybeans"
-	},
-	"decay_modifier": 0.8
+  "ingredient": {
+    "item": "kubejs:food/peeled_soybeans"
+  },
+  "decay_modifier": 0.8
 }

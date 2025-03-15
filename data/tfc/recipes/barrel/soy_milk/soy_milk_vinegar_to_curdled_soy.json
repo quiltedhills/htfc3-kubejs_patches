@@ -1,13 +1,12 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "tfc:barrel_sealed",
-	"input_fluid": {
-		"ingredient": "kubejs:soy_milk_vinegar",
-		"amount": 1
-	},
-	"output_fluid": {
-		"fluid": "kubejs:curdled_soy_milk",
-		"amount": 1
-	},
-	"duration": 8000
+  "type": "tfc:barrel_sealed",
+  "input_fluid": {
+    "ingredient": "kubejs:soy_milk_vinegar",
+    "amount": 1
+  },
+  "output_fluid": {
+    "fluid": "kubejs:curdled_soy_milk",
+    "amount": 1
+  },
+  "duration": 8000
 }

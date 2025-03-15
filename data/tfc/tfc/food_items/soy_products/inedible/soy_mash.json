@@ -1,7 +1,6 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"ingredient": {
-		"item": "kubejs:food/soy_mash"
-	},
-	"decay_modifier": 1
+  "ingredient": {
+    "item": "kubejs:food/soy_mash"
+  },
+  "decay_modifier": 1
 }

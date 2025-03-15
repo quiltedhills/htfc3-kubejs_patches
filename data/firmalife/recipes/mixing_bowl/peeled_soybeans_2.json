@@ -1,26 +1,25 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "firmalife:mixing_bowl",
-	"ingredients": [
-	{
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "kubejs:food/soaked_soybeans"
-		}
-	},
-	{
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "kubejs:food/soaked_soybeans"
-		}
-	}
-	],
-	"fluid_ingredient": {
-		"ingredient": "minecraft:water",
-		"amount": 1000
-	},
-	"output_item": {
-		"item": "kubejs:food/peeled_soybeans",
-		"count": 2
-	}
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubejs:food/soaked_soybeans"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubejs:food/soaked_soybeans"
+      }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "kubejs:food/peeled_soybeans",
+    "count": 2
+  }
 }

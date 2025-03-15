@@ -1,18 +1,17 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "tfc:barrel_sealed",
-	"input_item": {
-		"ingredient": {
-			"item": "firmalife:rennet"
-		}
-	},
-	"input_fluid": {
-		"ingredient": "kubejs:soy_milk",
-		"amount": 2000
-	},
-	"output_fluid": {
-		"fluid": "kubejs:curdled_soy_milk",
-		"amount": 2000
-	},
-	"duration": 4000
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "firmalife:rennet"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "kubejs:soy_milk",
+    "amount": 2000
+  },
+  "output_fluid": {
+    "fluid": "kubejs:curdled_soy_milk",
+    "amount": 2000
+  },
+  "duration": 4000
 }

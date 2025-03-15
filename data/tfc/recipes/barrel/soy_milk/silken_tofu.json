@@ -1,21 +1,20 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "tfc:barrel_sealed",
-	"input_item": {
-		"ingredient": {
-			"type": "tfc:not_rotten",
-			"ingredient": {
-				"item": "kubejs:food/soy_curds"
-			}
-		},
-		"count": 3
-	},
-	"input_fluid": {
-		"ingredient": "tfc:salt_water",
-		"amount": 750
-	},
-	"output_item": {
-		"item": "kubejs:food/silken_tofu"
-	},
-	"duration": 16000
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubejs:food/soy_curds"
+      }
+    },
+    "count": 3
+  },
+  "input_fluid": {
+    "ingredient": "tfc:salt_water",
+    "amount": 750
+  },
+  "output_item": {
+    "item": "kubejs:food/silken_tofu"
+  },
+  "duration": 16000
 }

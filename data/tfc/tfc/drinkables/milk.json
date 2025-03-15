@@ -4,7 +4,7 @@
     "firmalife:yak_milk",
     "firmalife:goat_milk",
     "kubejs:oat_milk",
-	"kubejs:soy_milk"
+    "kubejs:soy_milk"
   ],
   "thirst": 10,
   "effects": [

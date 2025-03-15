@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "XXX",
@@ -11,12 +10,12 @@
       "item": "tfc:powder/salt"
     },
     "Y": {
-		"ingredient": {
-			"type": "tfc:not_rotten",
-			"ingredient": {
-				"item": "firmalife:food/goat_curd"
-			}
-		}
+      "ingredient": {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "item": "firmalife:food/goat_curd"
+        }
+      }
     }
   },
   "result": {

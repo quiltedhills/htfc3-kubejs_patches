@@ -1,11 +1,10 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"ingredient": {
-		"item": "kubejs:food/okara"
-	},
-	"hunger": 4,
-	"saturation": 0.25,
-	"decay_modifier": 0.8,
-	"vegetables": 2.0,
-	"protein": 1.0
+  "ingredient": {
+    "item": "kubejs:food/okara"
+  },
+  "hunger": 4,
+  "saturation": 0.25,
+  "decay_modifier": 0.8,
+  "vegetables": 2.0,
+  "protein": 1.0
 }

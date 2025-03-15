@@ -1,14 +1,13 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "tfc:quern",
-	"ingredient": {
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "kubejs:food/ground_soy"
-		}
-	},
-	"result": {
-		"item": "kubejs:food/soy_mash",
-		"count": 1
-	}
+  "type": "tfc:quern",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "kubejs:food/ground_soy"
+    }
+  },
+  "result": {
+    "item": "kubejs:food/soy_mash",
+    "count": 1
+  }
 }

@@ -1,11 +1,10 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"ingredient": {
-		"item": "kubejs:food/firm_tofu"
-	},
-	"hunger": 8,
-	"saturation": 2,
-	"protein": 2.0,
-	"dairy": 2.0,
-	"decay_modifier": 0
+  "ingredient": {
+    "item": "kubejs:food/firm_tofu"
+  },
+  "hunger": 8,
+  "saturation": 2,
+  "protein": 2.0,
+  "dairy": 2.0,
+  "decay_modifier": 0
 }

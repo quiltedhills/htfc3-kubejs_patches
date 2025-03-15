@@ -1,13 +1,12 @@
 {
-	"__comment__": "This file was created by BeyondTheAbyss",
-	"type": "firmalife:drying",
-	"ingredient": {
-		"type": "tfc:not_rotten",
-		"ingredient": {
-			"item": "tfc:food/soybean"
-		}
-	},
-	"result": {
-		"item": "kubejs:food/dried_soybeans"
-	}
+  "type": "firmalife:drying",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "tfc:food/soybean"
+    }
+  },
+  "result": {
+    "item": "kubejs:food/dried_soybeans"
+  }
 }
