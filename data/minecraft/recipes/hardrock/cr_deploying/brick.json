@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "tconstruct:ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:ceramic/unfired_brick"
+    }
+  ],
+  "keepHeldItem": true
+}
