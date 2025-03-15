@@ -17,8 +17,8 @@
     "amount": 100
   },
   "secondary_input": {
-    "tag": "tfc:any_water",
-    "amount": 1000
+    "tag": "minecraft:waters",
+    "amount": 10
   },
   "secondary_result": {
     "item": "immersivepetroleum:bitumen",
