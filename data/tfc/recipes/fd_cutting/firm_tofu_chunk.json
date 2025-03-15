@@ -2,7 +2,7 @@
 	"type": "farmersdelight:cutting",
 	"ingredients": [
 	{
-		"item": "kubejs:firm_tofu"
+		"item": "kubejs:food/firm_tofu"
 	}
 	],
 	"tool": {
@@ -10,7 +10,7 @@
 	},
 	"result": [
 	{
-		"item": "kubejs:firm_tofu_chunk",
+		"item": "kubejs:food/firm_tofu_chunk",
 		"count": 4,
 		"chance": 1
 	}

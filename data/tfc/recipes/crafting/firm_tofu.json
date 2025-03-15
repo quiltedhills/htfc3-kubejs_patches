@@ -14,12 +14,12 @@
 			"ingredient": {
 				"type": "tfc:not_rotten",
 				"ingredient": {
-					"item": "kubejs:soy_curds"
+					"item": "kubejs:food/soy_curds"
 				}
 			}
 		}
 	},
 	"result": {
-		"item": "kubejs:firm_tofu"
+		"item": "kubejs:food/firm_tofu"
 	}
 }

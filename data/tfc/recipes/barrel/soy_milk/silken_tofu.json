@@ -5,7 +5,7 @@
 		"ingredient": {
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "kubejs:soy_curds"
+				"item": "kubejs:food/soy_curds"
 			}
 		},
 		"count": 3
@@ -15,7 +15,7 @@
 		"amount": 750
 	},
 	"output_item": {
-		"item": "kubejs:silken_tofu"
+		"item": "kubejs:food/silken_tofu"
 	},
 	"duration": 16000
 }

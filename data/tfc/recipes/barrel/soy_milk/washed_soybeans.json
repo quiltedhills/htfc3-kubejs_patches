@@ -5,7 +5,7 @@
 		"ingredient": {
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "kubejs:peeled_soybeans"
+				"item": "kubejs:food/peeled_soybeans"
 			}
 		}
 	},
@@ -14,7 +14,7 @@
 		"amount": 100
 	},
 	"output_item": {
-		"item": "kubejs:washed_soybeans"
+		"item": "kubejs:food/washed_soybeans"
 	},
 	"duration": 1000
 }

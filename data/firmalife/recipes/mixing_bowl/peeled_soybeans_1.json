@@ -3,7 +3,7 @@
 	"type": "firmalife:mixing_bowl",
 	"ingredients": [
 	{
-		"item": "kubejs:soaked_soybeans"
+		"item": "kubejs:food/soaked_soybeans"
 	}
 	],
 	"fluid_ingredient": {
@@ -11,6 +11,6 @@
 		"amount": 1000
 	},
 	"output_item": {
-		"item": "kubejs:peeled_soybeans"
+		"item": "kubejs:food/peeled_soybeans"
 	}
 }

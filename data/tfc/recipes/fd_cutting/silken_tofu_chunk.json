@@ -2,7 +2,7 @@
 	"type": "farmersdelight:cutting",
 	"ingredients": [
 	{
-		"item": "kubejs:silken_tofu"
+		"item": "kubejs:food/silken_tofu"
 	}
 	],
 	"tool": {
@@ -10,7 +10,7 @@
 	},
 	"result": [
 	{
-		"item": "kubejs:silken_tofu_chunk",
+		"item": "kubejs:food/silken_tofu_chunk",
 		"count": 4
 	}
 	],

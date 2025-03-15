@@ -1,7 +1,7 @@
 {
 	"__comment__": "This file was created by BeyondTheAbyss",
 	"ingredient": {
-		"item": "kubejs:silken_tofu"
+		"item": "kubejs:food/silken_tofu"
 	},
 	"hunger": 8,
 	"saturation": 2,

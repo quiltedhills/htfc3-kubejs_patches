@@ -5,31 +5,31 @@
 	{
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:soaked_soybeans"
+			"item": "kubejs:food/soaked_soybeans"
 		}
 	},
 	{
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:soaked_soybeans"
+			"item": "kubejs:food/soaked_soybeans"
 		}
 	},
 	{
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:soaked_soybeans"
+			"item": "kubejs:food/soaked_soybeans"
 		}
 	},
 	{
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:soaked_soybeans"
+			"item": "kubejs:food/soaked_soybeans"
 		}
 	},
 	{
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:soaked_soybeans"
+			"item": "kubejs:food/soaked_soybeans"
 		}
 	}
 	],
@@ -38,7 +38,7 @@
 		"amount": 1000
 	},
 	"output_item": {
-		"item": "kubejs:peeled_soybeans",
+		"item": "kubejs:food/peeled_soybeans",
 		"count": 5
 	}
 }

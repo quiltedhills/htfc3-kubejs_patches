@@ -1,7 +1,7 @@
 {
 	"__comment__": "This file was created by BeyondTheAbyss",
 	"ingredient": {
-		"item": "kubejs:ground_soy"
+		"item": "kubejs:food/ground_soy"
 	},
 	"decay_modifier": 1
 }

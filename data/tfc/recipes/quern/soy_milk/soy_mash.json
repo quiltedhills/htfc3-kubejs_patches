@@ -4,11 +4,11 @@
 	"ingredient": {
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "kubejs:ground_soy"
+			"item": "kubejs:food/ground_soy"
 		}
 	},
 	"result": {
-		"item": "kubejs:soy_mash",
+		"item": "kubejs:food/soy_mash",
 		"count": 1
 	}
 }

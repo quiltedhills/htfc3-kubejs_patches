@@ -1,7 +1,7 @@
 {
 	"__comment__": "This file was created by BeyondTheAbyss",
 	"ingredient": {
-		"item": "kubejs:dried_soybeans"
+		"item": "kubejs:food/dried_soybeans"
 	},
 	"decay_modifier": 0.06
 }

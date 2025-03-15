@@ -5,7 +5,7 @@
 		"ingredient": {
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "kubejs:dried_soybeans"
+				"item": "kubejs:food/dried_soybeans"
 			}
 		}
 	},
@@ -14,7 +14,7 @@
 		"amount": 200
 	},
 	"output_item": {
-		"item": "kubejs:soaked_soybeans"
+		"item": "kubejs:food/soaked_soybeans"
 	},
 	"duration": 8000
 }

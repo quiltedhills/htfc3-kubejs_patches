@@ -11,7 +11,7 @@
 		"amount": 1000
 	},
 	"output_item": {
-		"item": "kubejs:soy_curds"
+		"item": "kubejs:food/soy_curds"
 	},
 	"duration": 1000
 }
