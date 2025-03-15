@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'create_sa:vault_recipe'},
+
 		{id: /^create:haunting\/infested_/},
 		{id: 'create:milling/calcite'},
 
