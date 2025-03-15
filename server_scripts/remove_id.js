@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: /^create:haunting\/infested_/},
+
 		{id: 'supplementaries:sconce'},
 		{id: 'supplementaries:sconce_soul'},
 		{id: 'supplementaries:sconce_lever'},
