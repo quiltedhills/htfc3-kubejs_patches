@@ -55,6 +55,7 @@ Please feel free to reach out to me on discord for any questions!
 • Various improvements to quests <br/>
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
+• Hostile mobs dying and players eating no longer produces pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
@@ -88,3 +89,5 @@ Please feel free to reach out to me on discord for any questions!
 • Made the charcoal block recipe use whole charcoal pieces instead of powder <br/>
 • Fixed grinding pyrite in a quern giving 4 powder instead of 1 <br/>
 • Removed the recipe for unused flint mesh <br/>
+• Fixed recipe conflicts for straw hats and straw carpets <br/>
+• Removed misleading melting tooltips for IE ore <br/>

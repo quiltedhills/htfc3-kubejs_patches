@@ -1,24 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " S ",
-    "TCT",
+    " P ",
+    "TFT",
     " G "
   ],
   "key": {
-    "S": {
-      "item": "create:shaft"
+    "P": {
+      "item": "create:mechanical_press"
     },
-    "C": {
-      "item": "create:fluid_tank"
+    "F": {
+      "item": "pneumaticcraft:small_tank"
     },
-    "T": {
-      "tag": "tfc:tuyeres"
-    },
-    "G": [
-      {"item": "kubejs:primitive_glass_pane"},
-      {"item": "tconstruct:clear_glass_pane"}
-    ]
+    "T": [
+      {
+        "item": "tfc:metal/tuyere/blue_steel"
+      },
+      {
+        "item": "tfc:metal/tuyere/red_steel"
+      }
+    ],
+    "G": {
+      "tag": "forge:2panes"
+    }
   },
   "result": {
     "item": "create_mechanical_extruder:mechanical_extruder",
