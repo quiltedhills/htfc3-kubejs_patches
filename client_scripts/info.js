@@ -756,4 +756,16 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Can rarely be found on '), Text.yellow('Amadron'), Text.gold('!')])
 		}
 	})
+	tooltip.addAdvanced([
+		'minecraft:lantern',
+		/^supplementaries:.+_lantern$/
+	], (item, advanced, text) => {
+		text.add(1, Text.of('Gives off light when equipped!').white())
+	})
+	tooltip.addAdvanced('minecraft:soul_lantern', (item, advanced, text) => {
+		text.add(1, Text.of('Gives off subtle light when equipped!').white())
+	})
+	tooltip.addAdvanced(/^supplementaries:candle_holder/, (item, advanced, text) => {
+		text.add(2, Text.of('Placeable on walls and ceilings').darkGray().italic())
+	})
 })
