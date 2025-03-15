@@ -135,6 +135,7 @@ onEvent('item.registry', event => {
 	event.create('food/firm_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
 	event.create('food/silken_tofu')			.food(food=>{food.hunger(8).saturation(1)})
 	event.create('food/silken_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
+	event.create('food/butter_pat')             .food(food=>{food.hunger(1).saturation(0)})
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })

@@ -1044,6 +1044,7 @@ onEvent('tags.items', event => {
 	event.add('forge:sugar', 'minecraft:sugar')
 	event.add('forge:food/dried_kelp', 'tfc:food/dried_kelp')
 	event.add('forge:food/diary/curd', ['firmalife:food/yak_curd', 'firmalife:food/goat_curd', 'firmalife:food/milk_curd', 'kubejs:food/soy_curds'])
+	//above says diary, I assume it means dairy?
 	event.add('forge:flour/wheat', '#tfc:foods/flour')
 	event.add('forge:treated_wood', 'firmalife:treated_wood')
 	event.add('forge:cogwheel_small', ['steampowered:steel_cogwheel','steampowered:cast_iron_cogwheel','steampowered:bronze_cogwheel'])
@@ -1280,6 +1281,7 @@ onEvent('tags.items', event => {
 	]),
 	event.add('firmalife:usable_in_stovetop_soup', [
 		'kubejs:shark_meat',
+		'kubejs:food/butter_pat',
 		//'twilightdelight:raw_insect',
 		//'twilightdelight:raw_venison_rib',
 		//'twilightdelight:raw_meef_slice',
@@ -1300,6 +1302,7 @@ onEvent('tags.items', event => {
 		'kubejs:food/firm_tofu_chunk',
 		'kubejs:food/silken_tofu',
 		'kubejs:food/silken_tofu_chunk',
+		'kubejs:food/butter_pat',
 		'create:sweet_roll',
 		'create:chocolate_glazed_berries',
 		'create:honeyed_apple',
@@ -1456,6 +1459,7 @@ onEvent('tags.items', event => {
 	]),
 	event.add('tfc:foods/usable_in_soup', [
 		'kubejs:shark_meat',
+		'kubejs:food/butter_pat',
 		'untamedwilds:food_bear_raw',
 		'untamedwilds:food_turtle_raw',
 		'untamedwilds:food_pachyderm_raw',
@@ -1514,6 +1518,7 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods/can_be_salted', [
 		'kubejs:shark_meat',
 		'kubejs:food/okara',
+		'kubejs:food/butter_pat',
 		'butchersdelightfoods:beefribs',
 		'butchersdelightfoods:legcow',
 		'butchersdelightfoods:beeftenderloin',

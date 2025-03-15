@@ -1,0 +1,20 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "firmalife:food/butter"
+		}
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:food/butter_pat",
+		"count": 4
+	}
+	]
+}
