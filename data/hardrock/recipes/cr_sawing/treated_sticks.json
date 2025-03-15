@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "tfc_ie_addon:treated_wood_lumber"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:stick_treated",
+    "count": 4
+    }
+  ],
+  "processingTime": 50
+}
