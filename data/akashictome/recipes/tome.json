@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "tfc:rock_knapping"
+    },
+    {
+      "tag": "forge:rods/wooden"
+    }
+  ],
+  "result": {
+    "item": "akashictome:tome",
+    "nbt": "{\"akashictome:is_morphing\": 1b, \"akashictome:data\": {tconstruct: {id: \"tconstruct:encyclopedia\", Count: 1b}, securitycraft: {id: \"securitycraft:sc_manual\", Count: 1b}, tfc: {id: \"patchouli:guide_book\", tag: {\"patchouli:book\": \"tfc:field_guide\", \"akashictome:is_morphing\": 1b, display: {Name: '{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"tfc.field_guide.book_name\"}]}'}, \"akashictome:displayName\": {text: '{\"translate\":\"tfc.field_guide.book_name\"}'}}, Count: 1b}, immersiveengineering: {id: \"immersiveengineering:manual\", tag: {\"akashictome:is_morphing\": 1b, display: {Name: '{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.immersiveengineering.manual\"}]}'}, \"akashictome:displayName\": {text: '{\"translate\":\"item.immersiveengineering.manual\"}'}}, Count: 1b}, pneumaticcraft: {id: \"patchouli:guide_book\", tag: {\"patchouli:book\": \"pneumaticcraft:book\"}, Count: 1b}, twilightforest: {id: \"patchouli:guide_book\", tag: {\"patchouli:book\": \"twilightforest:guide\"}, Count: 1b}, untamedwilds: {id: \"patchouli:guide_book\", tag: {\"patchouli:book\": \"untamedwilds:encyclopedia_of_life\"}, Count: 1b}, solcarrot: {id: \"solcarrot:food_book\", Count: 1b}}}"
+  }
+}
