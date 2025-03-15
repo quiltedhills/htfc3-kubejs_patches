@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "tfc:calcite"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:calcite",
+      "count": 1
+    }
+  ],
+  "processingTime": 100
+}
