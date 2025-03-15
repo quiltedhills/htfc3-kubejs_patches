@@ -176,7 +176,7 @@ onEvent('tags.blocks', event => {
 // ===== FLUIDS
 onEvent('tags.fluids', event => {
 	event.add('tfc:milks', 'kubejs:oat_milk')
-
+	event.add('tfc:milks', 'kubejs:soy_milk')
 	event.add('forge:molten_rose_gold', ['tfc:metal/rose_gold'])
 	event.add('forge:molten_unknown', ['tfc:metal/unknown'])
 	event.add('forge:molten_weak_steel', ['tfc:metal/weak_steel'])
@@ -215,7 +215,7 @@ onEvent('tags.fluids', event => {
 	event.add('tfc:mixable', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water','immersiveengineering:creosote'])
 	event.add('minecraft:waters', ['minecraft:water', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'tfc:spring_water'])
 	event.add('minecraft:water', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water'])
-	event.add('tfc:drinkables', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'minecraft:milk','firmalife:yak_milk','firmalife:goat_milk'])
+	event.add('tfc:drinkables', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:oat_milk', 'kubejs:soy_milk', 'minecraft:milk','firmalife:yak_milk','firmalife:goat_milk'])
 	event.add('tfc:infinite_water', ['kubejs:purified_water'])
 	event.add('tfc:usable_in_ingot_mold', ['kubejs:andesite_alloy', 'tconstruct:seared_stone', 'kubejs:andesite_stone', 'tconstruct:molten_glass', 'kubejs:molten_iron_quartz'])
 	event.add('tfc:usable_in_barrel', ['firmalife:sugar_water', 'tconstruct:honey', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
@@ -247,7 +247,19 @@ onEvent('tags.items', event => {
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
 	])
+	event.add('tfc:compost_browns_high',['kubejs:food/dried_soybeans'])
 	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards'])
+	event.add('tfc:compost_greens_high', [
+		'kubejs:food/soaked_soybeans',
+		'kubejs:food/peeled_soybeans',
+		'kubejs:food/washed_soybeans',
+		'kubejs:food/ground_soy',
+		'kubejs:food/soy_mash',
+		'kubejs:food/okara',
+		'kubejs:food/soy_curds',
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/silken_tofu_chunk'
+	])
 	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
@@ -294,12 +306,20 @@ onEvent('tags.items', event => {
 		'firmalife:food/toast',
 		'firmalife:food/corn_tortilla',
 		'farmersdelight:raw_pasta',
+		// vegetables
+		'kubejs:food/okara',
+		// protein
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/firm_tofu',
 		// dairy
 		'#firmalife:foods/cheeses',
 		'firmalife:food/shredded_cheese',
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg',
 		'firmalife:food/butter',
+		'kubejs:food/silken_tofu_chunk',
+		'kubejs:food/silken_tofu',
+		'kubejs:food/soy_curds',
 		// misc
 		'farmersdelight:dumplings'
 	])
@@ -1023,7 +1043,7 @@ onEvent('tags.items', event => {
 	event.add('tfc:sandwich_bread', 'pneumaticcraft:sourdough_bread')
 	event.add('forge:sugar', 'minecraft:sugar')
 	event.add('forge:food/dried_kelp', 'tfc:food/dried_kelp')
-	event.add('forge:food/diary/curd', ['firmalife:food/yak_curd', 'firmalife:food/goat_curd', 'firmalife:food/milk_curd'])
+	event.add('forge:food/diary/curd', ['firmalife:food/yak_curd', 'firmalife:food/goat_curd', 'firmalife:food/milk_curd', 'kubejs:food/soy_curds'])
 	event.add('forge:flour/wheat', '#tfc:foods/flour')
 	event.add('forge:treated_wood', 'firmalife:treated_wood')
 	event.add('forge:cogwheel_small', ['steampowered:steel_cogwheel','steampowered:cast_iron_cogwheel','steampowered:bronze_cogwheel'])
@@ -1274,6 +1294,12 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods', [
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/okara',
+		'kubejs:food/soy_curds',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/silken_tofu',
+		'kubejs:food/silken_tofu_chunk',
 		'create:sweet_roll',
 		'create:chocolate_glazed_berries',
 		'create:honeyed_apple',
@@ -1350,6 +1376,8 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods/meats', [
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
 		'butchersdelightfoods:beefribs',
 		'butchersdelightfoods:legcow',
 		'butchersdelightfoods:beeftenderloin',
@@ -1417,6 +1445,8 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods/cooked_meats', [
 		'tfc:food/cooked_turtle',
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
 		'twilightforest:cooked_venison',
 		'twilightforest:cooked_meef',
 		//'twilightdelight:cooked_meef_slice',
@@ -1439,6 +1469,12 @@ onEvent('tags.items', event => {
 	]),
 	event.add('tfc:foods/usable_in_sandwich', [
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/silken_tofu_chunk',
+		'kubejs:food/silken_tofu',
+		'kubejs:food/okara',
+		'kubejs:food/soy_curds',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',
@@ -1448,6 +1484,10 @@ onEvent('tags.items', event => {
 	]),
 	event.add('tfc:foods/usable_in_salad', [
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/silken_tofu',
+		'kubejs:food/silken_tofu_chunk',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',
@@ -1458,6 +1498,12 @@ onEvent('tags.items', event => {
 	]),
 	event.add('firmalife:foods/pizza_ingredients', [
 		'kubejs:shark_cooked_meat',
+		'kubejs:food/firm_tofu',
+		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/silken_tofu',
+		'kubejs:food/silken_tofu_chunk',
+		'kubejs:food/okara',
+		'kubejs:food/soy_curds',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',
@@ -1467,6 +1513,7 @@ onEvent('tags.items', event => {
 	]),
 	event.add('tfc:foods/can_be_salted', [
 		'kubejs:shark_meat',
+		'kubejs:food/okara',
 		'butchersdelightfoods:beefribs',
 		'butchersdelightfoods:legcow',
 		'butchersdelightfoods:beeftenderloin',
