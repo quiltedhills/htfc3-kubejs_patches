@@ -22,7 +22,6 @@ onEvent('recipes', event => {
 		{id: 'immersivepetroleum:candle'},
 		{id: 'untamedwilds:blocks/candle_from_fat'},
 		{id: 'create:haunting/glow_ink_sac'},
-		{id: 'create:crafting/kinetics/placard'},
 		{id: 'beyond_earth:smeltery/casting/metal/iron/coal_lantern'},
 		{id: 'beyond_earth:smeltery/melting/metal/iron/coal_lantern'},
 		{id: 'beyond_earth:coal_torch'},
