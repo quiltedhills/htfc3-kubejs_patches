@@ -8,6 +8,10 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('minecraft:mineable/shovel', [
+		'weather2:sand_layer',
+		/^weathertfc:sand\/sand_layer/
+	])
 	event.add('hardrock:non_choppable', [
 		'#minecraft:logs'
 	])

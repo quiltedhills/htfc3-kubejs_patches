@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "tfcorewashing:pile_green_sand"
+    }
+  },
+  "result": {
+    "item": "weathertfc:sand/sand_layer/green"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MNM",
+    "AUA",
+    "P P"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "A": {
+      "item": "compressedcreativity:industrial_air_blower"
+    },
+    "P": {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "count": 1,
+      "nbt": "{Potion:\"minecraft:long_slow_falling\"}"
+    },
+    "U": {
+      "item": "pneumaticcraft:jet_boots_upgrade_3"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:jet_boots_upgrade_4"
+  }
+}

@@ -19,6 +19,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		/^minecraft:infested_/,
 		/coral_larvae/,
 		'tfc:food/cheese',
 

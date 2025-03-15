@@ -10,7 +10,6 @@ onEvent('recipes', event => {
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:stone_bricks', 'tfc:rock/bricks/granite')
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:stone_bricks_slab', 'tfc:rock/bricks/granite_slab')
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:smooth_stone_slab', 'tfc:rock/smooth/granite_slab')
-	event.replaceInput({mod: 'supplementaries'}, 'minecraft:deepslate', 'tfc:rock/raw/basalt')
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:oak_sign', 'tfc:wood/sign/oak')
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:birch_sign', 'tfc:wood/sign/birch')
 	event.replaceInput({mod: 'supplementaries'}, 'minecraft:acacia_sign', 'tfc:wood/sign/acacia')

@@ -11,11 +11,11 @@
   "results": [
     {
       "item": "tfc:ore/small_magnetite",
-      "chance": 0.08
+      "chance": 0.06
     },
     {
       "item": "tfc_ie_addon:ore/small_lead",
-      "chance": 0.05
+      "chance": 0.03
     },
     {
       "item": "tfc:powder/charcoal",
@@ -27,7 +27,7 @@
     },
     {
       "item": "tfc:ore/sulfur",
-      "chance": 0.011
+      "chance": 0.005
     },
     {
       "item": "tfc:ore/sapphire",

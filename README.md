@@ -36,12 +36,13 @@ Please feel free to reach out to me on discord for any questions!
 ### Major things:
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added custom magnets to replace the Create SA copper magnet <br/>
-• Recipe overhauls for permanent light sources <br/>
+• Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 
 ### Balancing:
+• Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
 • Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
@@ -57,6 +58,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Increased redstone lamp recipe yield <br/>
+• Tweaked some sand-related recipes <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
