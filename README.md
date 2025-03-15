@@ -55,7 +55,7 @@ Please feel free to reach out to me on discord for any questions!
 • Various improvements to quests <br/>
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
-• Hostile mobs dying and players eating no longer produces pollution <br/>
+• Hostile mob deaths no longer produce pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
