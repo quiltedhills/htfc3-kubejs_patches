@@ -145,7 +145,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('compressedcreativity:rotational_compressor', (item, advanced, text) => {
 		if (tooltip.shift) {
-			text.add(2, Text.aqua('A very primitive air compressor.'))
+			text.add(2, Text.aqua('A primitive air compressor.'))
 			text.add(3, Text.aqua('Generates up to 20ml/t.'))
 			text.add(4, Text.aqua('Doesn\'t support safety or speed upgrades.'))
 		}
