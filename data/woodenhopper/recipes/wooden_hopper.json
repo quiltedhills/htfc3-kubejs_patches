@@ -13,7 +13,10 @@
       "tag": "forge:chests/wooden"
     },
     "G": [
-      {"tag": "forge:cogwheel_small"}, {"item": "create_hc:gear_small"}]
+      {
+        "item": "create_hc:gear_small"
+      }
+    ]
   },
   "result": {
     "item": "woodenhopper:wooden_hopper"

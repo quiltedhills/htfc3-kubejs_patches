@@ -241,6 +241,7 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('tfc:gem_powders', 'tfc:powder/lapis_lazuli')
 	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 
