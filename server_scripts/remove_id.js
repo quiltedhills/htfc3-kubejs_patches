@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'createoreexcavation:cutting/diamond_cutting'},
+		{id: 'createoreexcavation:cutting/emerald_cutting'},
 		{id: 'minecraft:tripwire_hook'},
 		{id: 'farmersdelight:cutting_board_from_beam'},
 		{id: 'choppingblock:chopping_block'},
