@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'minecraft:tripwire_hook'},
+		{id: 'farmersdelight:cutting_board_from_beam'},
 		{id: 'choppingblock:chopping_block'},
 		{id: /^tfc_ie_addon:heating\/ore\//},
 		{id: 'ag_day_counter:craft_calendar_block_to_calendar_item'},
