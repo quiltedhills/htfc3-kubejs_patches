@@ -241,6 +241,7 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 
 	event.remove('curios:belt', 'toolbelt:belt')
