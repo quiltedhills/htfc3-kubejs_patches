@@ -1,0 +1,46 @@
+onEvent('entity.loot_tables', event => {
+	// modify: add additional pools without replacing existing loot tables
+	event.modifyEntity('untamedwilds:sunfish', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_sunfish', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:trevally', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_trevally', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:arowana', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_arowana', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:football_fish', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_football_fish', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:triggerfish', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_triggerfish', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:catfish', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_catfish', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	event.modifyEntity('untamedwilds:spadefish', table => {
+		table.addPool(pool => {
+			pool.addItem('untamedwilds:egg_spadefish', 1, [1, 4]).randomChance(0.125)
+		})
+	})
+	// add: make a new or override an existing loot table
+	/* 
+	event.addEntity('minecraft:zombie', table => {
+		table.addPool(pool => {
+			pool.addItem('minecraft:carrot', 1, [1,5])
+		})
+	}),
+	*/
+})

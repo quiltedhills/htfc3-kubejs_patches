@@ -1,0 +1,15 @@
+{
+	"type": "tfc:heating",
+	"ingredient": {
+		"tag": "kubejs:foods/raw_roe"
+	},
+	"result_item": {
+		"stack": {
+			"item": "kubejs:food/cooked_roe"
+		},
+		"modifiers": [
+			"tfc:copy_food"
+		]
+	},
+	"temperature": 200
+}

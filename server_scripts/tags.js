@@ -262,6 +262,15 @@ onEvent('tags.items', event => {
 		'kubejs:food/firm_tofu_chunk',
 		'kubejs:food/silken_tofu_chunk'
 	])
+	event.add('kubejs:foods/raw_roe', [
+		'untamedwilds:egg_sunfish',
+		'untamedwilds:egg_trevally',
+		'untamedwilds:egg_arowana',
+		'untamedwilds:egg_football_fish',
+		'untamedwilds:egg_triggerfish',
+		'untamedwilds:egg_catfish',
+		'untamedwilds:egg_spadefish'
+	])
 	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
@@ -312,7 +321,8 @@ onEvent('tags.items', event => {
 		'kubejs:food/okara',
 		// protein
 		'kubejs:food/firm_tofu_chunk',
-		'kubejs:food/firm_tofu',
+		'#kubejs:foods/raw_roe',
+		'kubejs:food/cooked_roe',
 		// dairy
 		'#firmalife:foods/cheeses',
 		'firmalife:food/shredded_cheese',
@@ -331,6 +341,8 @@ onEvent('tags.items', event => {
 		'#firmalife:foods/slices',
 		'firmalife:food/toast',
 		'firmalife:food/corn_tortilla',
+		// protein
+		'kubejs:food/cooked_roe',
 		// dairy
 		'#firmalife:foods/cheeses',
 		'firmalife:food/shredded_cheese',
@@ -1046,7 +1058,7 @@ onEvent('tags.items', event => {
 	event.add('forge:sugar', 'minecraft:sugar')
 	event.add('forge:food/dried_kelp', 'tfc:food/dried_kelp')
 	event.add('forge:food/diary/curd', ['firmalife:food/yak_curd', 'firmalife:food/goat_curd', 'firmalife:food/milk_curd', 'kubejs:food/soy_curds'])
-	//above says diary, I assume it means dairy?
+	// line above says diary, I assume it means dairy?
 	event.add('forge:flour/wheat', '#tfc:foods/flour')
 	event.add('forge:treated_wood', 'firmalife:treated_wood')
 	event.add('forge:cogwheel_small', ['steampowered:steel_cogwheel','steampowered:cast_iron_cogwheel','steampowered:bronze_cogwheel'])
@@ -1258,6 +1270,7 @@ onEvent('tags.items', event => {
 	]),
 	event.add('firmalife:foods/heatable', [
 		'kubejs:shark_meat',
+		'#kubejs:foods/raw_roe',
 		'farmersdelight:minced_beef',
 		'farmersdelight:chicken_cuts',
 		'farmersdelight:mutton_chops',
@@ -1284,6 +1297,8 @@ onEvent('tags.items', event => {
 	event.add('firmalife:usable_in_stovetop_soup', [
 		'kubejs:shark_meat',
 		'kubejs:food/butter_pat',
+		'#kubejs:foods/raw_roe',
+		'kubejs:food/cooked_roe',
 		//'twilightdelight:raw_insect',
 		//'twilightdelight:raw_venison_rib',
 		//'twilightdelight:raw_meef_slice',
@@ -1305,6 +1320,8 @@ onEvent('tags.items', event => {
 		'kubejs:food/silken_tofu',
 		'kubejs:food/silken_tofu_chunk',
 		'kubejs:food/butter_pat',
+		'kubejs:food/cooked_roe',
+		'#kubejs:foods/raw_roe',
 		'create:sweet_roll',
 		'create:chocolate_glazed_berries',
 		'create:honeyed_apple',
@@ -1383,6 +1400,8 @@ onEvent('tags.items', event => {
 		'kubejs:shark_cooked_meat',
 		'kubejs:food/firm_tofu',
 		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/cooked_roe',
+		'#kubejs:foods/raw_roe',
 		'butchersdelightfoods:beefribs',
 		'butchersdelightfoods:legcow',
 		'butchersdelightfoods:beeftenderloin',
@@ -1420,6 +1439,7 @@ onEvent('tags.items', event => {
 	]),
 	event.add('tfc:foods/raw_meats', [
 		'kubejs:shark_meat',
+		'#kubejs:foods/raw_roe',
 		'butchersdelightfoods:beefribs',
 		'butchersdelightfoods:legcow',
 		'butchersdelightfoods:beeftenderloin',
@@ -1452,6 +1472,7 @@ onEvent('tags.items', event => {
 		'kubejs:shark_cooked_meat',
 		'kubejs:food/firm_tofu',
 		'kubejs:food/firm_tofu_chunk',
+		'kubejs:food/cooked_roe',
 		'twilightforest:cooked_venison',
 		'twilightforest:cooked_meef',
 		//'twilightdelight:cooked_meef_slice',
@@ -1462,6 +1483,8 @@ onEvent('tags.items', event => {
 	event.add('tfc:foods/usable_in_soup', [
 		'kubejs:shark_meat',
 		'kubejs:food/butter_pat',
+		'#kubejs:foods/raw_roe',
+		'kubejs:food/cooked_roe',
 		'untamedwilds:food_bear_raw',
 		'untamedwilds:food_turtle_raw',
 		'untamedwilds:food_pachyderm_raw',
@@ -1481,6 +1504,7 @@ onEvent('tags.items', event => {
 		'kubejs:food/silken_tofu',
 		'kubejs:food/okara',
 		'kubejs:food/soy_curds',
+		'kubejs:food/cooked_roe',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',
@@ -1494,6 +1518,7 @@ onEvent('tags.items', event => {
 		'kubejs:food/firm_tofu_chunk',
 		'kubejs:food/silken_tofu',
 		'kubejs:food/silken_tofu_chunk',
+		'kubejs:food/cooked_roe',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',
@@ -1510,6 +1535,7 @@ onEvent('tags.items', event => {
 		'kubejs:food/silken_tofu_chunk',
 		'kubejs:food/okara',
 		'kubejs:food/soy_curds',
+		'kubejs:food/cooked_roe',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_pachyderm_cooked',

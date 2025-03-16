@@ -136,14 +136,54 @@ onEvent('item.registry', event => {
 	event.create('food/silken_tofu')			.food(food=>{food.hunger(8).saturation(1)})
 	event.create('food/silken_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
 	event.create('food/butter_pat')             .food(food=>{food.hunger(1).saturation(0)})
+	event.create('food/cooked_roe')             .food(food=>{food.hunger(2).saturation(5)})
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
+
+//modifying existing items!
 
 onEvent('item.modification', event => {
 	event.modify('minecraft:golden_carrot', item => {
 		item.foodProperties = food => {
 			food.alwaysEdible()
+		}
+	})
+	// roe:
+	// kept separate in case different kinds of roe should have different risks, ie catfish roe being riskier than piranha roe
+	event.modify('untamedwilds:egg_sunfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_trevally', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_arowana', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_football_fish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_triggerfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_catfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_spadefish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
 		}
 	})
 })
