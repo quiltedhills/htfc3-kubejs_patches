@@ -149,6 +149,11 @@ onEvent('item.modification', event => {
 			food.alwaysEdible()
 		}
 	})
+	event.modify('create:builders_tea', item => {
+		item.foodProperties = food => {
+			food.effect("minecraft:haste", 3600, 2, 1.0)
+		}
+	})
 	// roe:
 	// kept separate in case different kinds of roe should have different risks, ie catfish roe being riskier than piranha roe
 	event.modify('untamedwilds:egg_sunfish', item => {
