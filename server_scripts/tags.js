@@ -241,6 +241,32 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('farmersdelight:nourishing/1', [
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:ratatouille',
+		'farmersrespite:blazing_chili'
+	])
+	event.add('farmersdelight:nourishing/2', [
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:grilled_salmon',
+		'farmersrespite:black_cod',
+		'farmersrespite:tea_curry'
+	])
+	event.add('farmersdelight:nourishing/3', [
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:squid_ink_pasta',
+		'farmersdelight:roast_chicken',
+		'farmersdelight:stuffed_pumpkin',
+		'farmersdelight:honey_glazed_ham',
+		'farmersdelight:shepherds_pie'
+	])
+	event.add('farmersdelight:nourishing', ['#farmersdelight:nourishing/1', '#farmersdelight:nourishing/2', '#farmersdelight:nourishing/3'])
+
+	event.remove('tfc:gem_powders', 'tfc:powder/lapis_lazuli')
 	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 

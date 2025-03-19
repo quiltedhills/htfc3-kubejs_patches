@@ -1,0 +1,38 @@
+{
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "htm:raw_poultry_wing",
+      "count": 2
+    },
+    {
+      "item": "htm:raw_poultry_breast",
+      "count": 2
+    },
+    {
+      "item": "minecraft:bone_meal",
+      "count": 2
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "tag": "forge:raw_poultry"
+          }
+        },
+        {
+          "tag": "forge:tools/knives"
+        }
+      ],
+      "result": {
+        "item": "htm:raw_poultry_leg",
+        "count": 2
+      }
+    }
+  }
+}

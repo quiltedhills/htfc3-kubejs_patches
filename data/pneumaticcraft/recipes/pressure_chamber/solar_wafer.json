@@ -1,0 +1,17 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "item": "pneumaticcraft:upgrade_matrix"
+    },
+    {
+      "tag": "tfc:gem_powders"
+    }
+  ],
+  "pressure": 2.5,
+  "results": [
+    {
+      "item": "pneumaticcraft:solar_wafer"
+    }
+  ]
+}
