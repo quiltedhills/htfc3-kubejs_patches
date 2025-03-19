@@ -137,6 +137,20 @@ onEvent('item.registry', event => {
 	event.create('food/silken_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
 	event.create('food/butter_pat')             .food(food=>{food.hunger(1).saturation(0)})
 	event.create('food/cooked_roe')             .food(food=>{food.hunger(2).saturation(5)})
+	event.create('builders_tea_bottle', "basic")
+		.useAnimation("drink")
+		.useDuration((itemstack) => 40)
+		.use((level, player, hand) => true)
+		.finishUsing((itemstack, level, entity) => {
+			let effects = entity.potionEffects;
+			effects.add("haste", 180 * 20, 2)
+			itemstack.itemStack.shrink(1)
+			if(entity.player) {
+				entity.minecraftPlayer.addItem(Item.of("minecraft:glass_bottle").itemStack)
+			}
+			return itemstack;
+		})
+	
 	// long stick
 	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
@@ -147,11 +161,6 @@ onEvent('item.modification', event => {
 	event.modify('minecraft:golden_carrot', item => {
 		item.foodProperties = food => {
 			food.alwaysEdible()
-		}
-	})
-	event.modify('create:builders_tea', item => {
-		item.foodProperties = food => {
-			food.effect("minecraft:haste", 3600, 2, 1.0)
 		}
 	})
 	// roe:
