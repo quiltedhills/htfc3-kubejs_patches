@@ -9,7 +9,7 @@
     }
   ],
   "result": {
-    "item": "create:builders_tea"
+    "item": "kubejs:food/builders_tea"
   },
   "container": {
     "item": "minecraft:glass_bottle"
