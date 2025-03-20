@@ -1,3 +1,4 @@
+//	ENTITY LOOT TABLES
 onEvent('entity.loot_tables', event => {
 	// modify: add additional pools without replacing existing loot tables
 	event.modifyEntity('untamedwilds:sunfish', table => {
@@ -37,10 +38,30 @@ onEvent('entity.loot_tables', event => {
 	})
 	// add: make a new or override an existing loot table
 	/* 
+	//will make zombies drop between 1 and 5 carrots and nothing else
 	event.addEntity('minecraft:zombie', table => {
 		table.addPool(pool => {
 			pool.addItem('minecraft:carrot', 1, [1,5])
 		})
 	}),
 	*/
+})
+//	BLOCK LOOT TABLES
+onEvent('block.loot_tables', event => {
+	// modify: add additional pools to existing drops without replacing any
+	/*
+	// from kubejs legacy page: makes all dirt blocks have a 50% chance of dropping an enchanted diamond sword named "Test"
+	event.modifyBlock(/^minecraft:.*dirt/, table => {
+		table.addPool(pool => {
+			pool.addItem('minecraft:diamond_sword').randomChance(0.5).enchantWithLevels(1, true).name(Text.of('Test').blue())
+		})
+	})
+	*/
+	// add: manually creates loot pool, overwrites any existing pools
+	event.addBlock('tfc:fire_clay_block', table => {
+		table.addPool(pool => {
+			pool.survivesExplosion()
+			pool.addItem('tfc:fire_clay', 1, 4)
+		})
+	})
 })
