@@ -27,5 +27,18 @@
   "item.kubejs.magnet.polonium_alt": "Polonium-Coated Magnet",
 
 
-  "item.kubejs.prop_foods.cookie": "Prop Cookie"
+  "item.kubejs.prop_foods.cookie": "Prop Cookie",
+
+  "item.kubejs.food.dried_soybeans": "Dried Soybeans",
+  "item.kubejs.food.soaked_soybeans": "Soaked Soybeans",
+  "item.kubejs.food.peeled_soybeans": "Peeled Soybeans",
+  "item.kubejs.food.washed_soybeans": "Washed Soybeans",
+  "item.kubejs.food.ground_soy": "Ground Soy",
+  "item.kubejs.food.soy_mash": "Soy Mash",
+  "item.kubejs.food.okara": "Okara",
+  "item.kubejs.food.soy_curds": "Soy Curds",
+  "item.kubejs.food.firm_tofu": "Firm Tofu Brick",
+  "item.kubejs.food.firm_tofu_chunk": "Firm Tofu Chunk",
+  "item.kubejs.food.silken_tofu": "Silken Tofu Brick",
+  "item.kubejs.food.silken_tofu_chunk": "Silken Tofu Chunk"
 }
