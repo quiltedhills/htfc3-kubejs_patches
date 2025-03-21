@@ -14,7 +14,7 @@ onEvent('item.modification', event => {
 	], item => {
 		item.foodProperties = food => {
 			food.removeEffect('farmersdelight:nourishment')
-			food.effect('farmersdelight:nourishment', 100, 0, 1)
+			food.effect('farmersdelight:nourishment', 150, 0, 1)
 		}
 	})
 	event.modify([
@@ -28,7 +28,7 @@ onEvent('item.modification', event => {
 	], item => {
 		item.foodProperties = food => {
 			food.removeEffect('farmersdelight:nourishment')
-			food.effect('farmersdelight:nourishment', 200, 0, 1)
+			food.effect('farmersdelight:nourishment', 300, 0, 1)
 		}
 	})
 	event.modify([
@@ -42,7 +42,7 @@ onEvent('item.modification', event => {
 	], item => {
 		item.foodProperties = food => {
 			food.removeEffect('farmersdelight:nourishment')
-			food.effect('farmersdelight:nourishment', 300, 0, 1)
+			food.effect('farmersdelight:nourishment', 450, 0, 1)
 		}
 	})
 })
