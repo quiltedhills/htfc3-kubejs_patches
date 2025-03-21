@@ -25,7 +25,6 @@ onEvent('tags.blocks', event => {
 		'#minecraft:lava',
 		'#tfc:rock/raw'
 	])
-
 	
 	event.add('minecraft:trapdoors', 'firmalife:sealed_trapdoor')
 	event.add('tfc:candles', [
@@ -245,6 +244,11 @@ onEvent('tags.items', event => {
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
 		'farmersrespite:blazing_chili'
+	])
+		event.add('kubejs:pollution_gasses', [
+		'adpother:carbon',
+		'adpother:dust',
+		'adpother:sulfur'
 	])
 	event.add('farmersdelight:nourishing/2', [
 		'farmersdelight:pasta_with_meatballs',
