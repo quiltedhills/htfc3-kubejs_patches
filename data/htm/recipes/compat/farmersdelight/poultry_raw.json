@@ -1,10 +1,4 @@
 {
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "farmersdelight"
-    }
-  ],
   "type": "farmersdelight:cutting",
     "ingredients": [
       {
@@ -20,24 +14,15 @@
     "result": [
       {
         "item": "htm:raw_poultry_leg",
-        "count": 2,
-        "modifiers": [
-          "tfc:copy_food"
-        ]
+        "count": 2
       },
       {
         "item": "htm:raw_poultry_wing",
-        "count": 2,
-        "modifiers": [
-          "tfc:copy_food"
-        ]
+        "count": 2
       },
       {
         "item": "htm:raw_poultry_breast",
-        "count": 2,
-        "modifiers": [
-          "tfc:copy_food"
-        ]
+        "count": 2
       },
       {
         "item": "minecraft:bone_meal",
