@@ -63,6 +63,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for smelting down greenhouse blocks <br/>
 • Increased redstone lamp recipe yield <br/>
 • Tweaked some sand-related recipes <br/>
+• Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

@@ -4,6 +4,8 @@ onEvent('jei.remove.categories', event => {
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
+	event.hide('immersiveengineering:potion'),
+	event.hide('tconstruct:potion'),
 	event.hide('beyond_earth:oil'),
 	event.hide('create:chocolate'),
 	event.hide('create:honey'),
@@ -19,6 +21,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'tconstruct:potion_bucket',
 		'supplementaries:ash',
 		'ag_day_counter:calendar_item',
 		/^minecraft:infested_/,
