@@ -37,6 +37,8 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added custom magnets to replace the Create SA copper magnet <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
+• Fixed the nourishment effect preventing your character from getting hungry <br/>
+&nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
@@ -61,6 +63,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for smelting down greenhouse blocks <br/>
 • Increased redstone lamp recipe yield <br/>
 • Tweaked some sand-related recipes <br/>
+• Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
