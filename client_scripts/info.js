@@ -771,4 +771,28 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced(['create_sa:vault_component', 'create_sa:fan_component'], (item, advanced, text) => {
 		text.add(1, Text.of('Brass Drone module').gray())
 	})
+	tooltip.addAdvanced('create_sa:copper_jetpack_chestplate', (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(5, [Text.of('Low horizontal and vertical speed,').gold()])
+			text.add(6, [Text.of('medium vertical range.').gold()])
+			text.add(7, [Text.of('Can be filled with a ').gold(),Text.of('filling tank').yellow(),Text.of('.').gold()])
+			text.add(8, '')
+		}
+	})
+	tooltip.addAdvanced('create_sa:andesite_jetpack_chestplate', (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(5, [Text.of('High horizontal and vertical speed,').gold()])
+			text.add(6, [Text.of('medium vertical range.').gold()])
+			text.add(7, [Text.of('Can be filled with a ').gold(),Text.of('fueling tank').yellow(),Text.of('.').gold()])
+			text.add(8, '')
+		}
+	})
+	tooltip.addAdvanced('create_sa:brass_jetpack_chestplate', (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(6, [Text.of('Medium horizontal and vertical speed,').gold()])
+			text.add(7, [Text.of('very high vertical range.').gold()])
+			text.add(8, [Text.of('Can be filled with a ').gold(),Text.of('filling').yellow(),Text.of(' and a ').gold(),Text.of('fueling tank').yellow(),Text.of('.').gold()])
+			text.add(9, '')
+		}
+	})
 })
