@@ -34,4 +34,9 @@ onEvent('client.generate_assets', event => {
 		rename(`minecraft:${color.toLowerCase().replace(' ','_')}_candle`, `Permanent ${color} Candle`)
 	})
 
+	rename('create_jetpack:jetpack', "Pressurized Jetpack")
+	rename('create_jetpack:netherite_jetpack', "Netherite Pressurized Jetpack")
+	rename('mekanism:jetpack', "Hydrogen Jetpack")
+	rename('mekanism:jetpack_armored', "Armored Hydrogen Jetpack")
+
 })
