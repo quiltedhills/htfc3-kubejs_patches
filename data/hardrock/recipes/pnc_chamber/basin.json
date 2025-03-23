@@ -2,8 +2,11 @@
   "type": "pneumaticcraft:pressure_chamber",
   "inputs": [
     {
+      "item": "exnihilosequentia:stone_barrel"
+    },
+    {
       "type": "pneumaticcraft:stacked_item",
-      "tag": "forge:double_sheets/wrought_iron",
+      "tag": "forge:sheets",
       "count": 2
     },
     {
@@ -13,7 +16,7 @@
   "pressure": 2.0,
   "results": [
     {
-      "item": "immersiveengineering:metal_barrel"
+      "item": "create:basin"
     }
   ]
 }

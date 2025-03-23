@@ -57,12 +57,14 @@ Please feel free to reach out to me on discord for any questions!
 • Various improvements to quests <br/>
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
-• Renamed some confusing keybinds <br/>
+• Tweaked names for some confusing keybinds <br/>
 • Hostile mob deaths no longer produce pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Increased redstone lamp recipe yield <br/>
+• Added a pressure chamber recipe for Create basins <br/>
+• Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
 
@@ -72,7 +74,7 @@ Please feel free to reach out to me on discord for any questions!
 • *Drastically* reduced how long cooking pot and kettle recipes take <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
-• Added soy milk, a difficult-to-make plant-based milk <br/>
+• Added soy and oat milk, which are difficult-to-make plant-based milk variants <br/>
 • Added more advanced alcohol production recipes <br/>
 • Minor improvements for animal carcasses <br/>
 • Fixed a few recipes accepting rotten food <br/>
