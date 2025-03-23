@@ -95,3 +95,4 @@ Please feel free to reach out to me on discord for any questions!
 • Removed the recipe for unused flint mesh <br/>
 • Fixed recipe conflicts for straw hats and straw carpets <br/>
 • Removed misleading melting tooltips for IE ore <br/>
+• Fixed missing shaft texture in andesite and brass chunk loader item models <br/>
