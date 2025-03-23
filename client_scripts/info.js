@@ -795,4 +795,23 @@ onEvent('item.tooltip', tooltip => {
 			text.add(9, '')
 		}
 	})
+	tooltip.addAdvanced([
+		'butchersdelightfoods:beefribs',
+		'butchersdelightfoods:legcow',
+		'butchersdelightfoods:beeftenderloin',
+		'butchersdelightfoods:sheepshank',
+		'butchersdelightfoods:sheeprack',
+		'butchersdelightfoods:sheeploin',
+		'butchersdelightfoods:ham',
+		'butchersdelightfoods:porkloin',
+		'butchersdelightfoods:porkribs',
+		'butchersdelightfoods:goat_shank',
+		'butchersdelightfoods:goatrack',
+		'butchersdelightfoods:goat_loin',
+		'butchersdelightfoods:llama_leg',
+		'butchersdelightfoods:llamma_ribs',
+		'butchersdelightfoods:llama_loin',
+	], (item, advanced, text) => {
+		text.add(1, Text.of('Cannot be cooked, must be chopped first!').gold())
+	})
 })
