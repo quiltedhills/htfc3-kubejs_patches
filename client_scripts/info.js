@@ -826,4 +826,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('will fill you for much longer than usual.').gold()])
 		}
 	})
+	tooltip.addAdvanced(['tfchomestead:jar','tfchomestead:full_jar'], (item, advanced, text) => {
+		text.add(1, Text.of('May cause world rendering issues when placed').gold())
+	})
 })
