@@ -2,14 +2,14 @@
   "type": "farmersrespite:brewing",
   "ingredients": [
     {
-      "item": "tfc:plant/dandelion"
+      "item": "farmersrespite:rose_hips"
     },
     {
-      "tag": "farmersrespite:tea_leaves"
+      "item": "farmersrespite:rose_hips"
     }
   ],
   "result": {
-    "item": "farmersrespite:dandelion_tea"
+    "item": "farmersrespite:rose_hip_tea"
   },
   "experience": 0.35,
   "brewingtime": 480,

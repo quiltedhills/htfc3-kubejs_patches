@@ -2,14 +2,14 @@
   "type": "farmersrespite:brewing",
   "ingredients": [
     {
-      "item": "tfc:plant/dandelion"
+      "item": "farmersrespite:yellow_tea_leaves"
     },
     {
-      "tag": "farmersrespite:tea_leaves"
+      "item": "farmersrespite:yellow_tea_leaves"
     }
   ],
   "result": {
-    "item": "farmersrespite:dandelion_tea"
+    "item": "farmersrespite:yellow_tea"
   },
   "experience": 0.35,
   "brewingtime": 480,

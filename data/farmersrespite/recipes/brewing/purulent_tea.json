@@ -2,14 +2,14 @@
   "type": "farmersrespite:brewing",
   "ingredients": [
     {
-      "item": "tfc:plant/dandelion"
+      "item": "minecraft:nether_wart"
     },
     {
-      "tag": "farmersrespite:tea_leaves"
+      "item": "minecraft:fermented_spider_eye"
     }
   ],
   "result": {
-    "item": "farmersrespite:dandelion_tea"
+    "item": "farmersrespite:purulent_tea"
   },
   "experience": 0.35,
   "brewingtime": 480,

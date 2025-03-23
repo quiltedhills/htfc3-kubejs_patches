@@ -5,39 +5,39 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "forge:dough"
+        "tag": "forge:vegetables/carrot"
       }
     },
     {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "tag": "forge:grain/rice"
-      }
-    },{
       "tag": "forge:dusts/salt"
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "farmersdelight:beef_patty"
+        "item": "minecraft:brown_mushroom"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "farmersdelight:cabbage_leaf"
+        "tag": "forge:pasta"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "forge:vegetables/onion"
+        "tag": "forge:vegetables/cabbage"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "forge:vegetables/potato"
       }
     }
   ],
   "result": {
-    "item": "farmersdelight:dumplings",
-    "count": 4,
+    "item": "farmersdelight:vegetable_noodles",
     "modifiers": [
       "tfc:copy_food"
     ]

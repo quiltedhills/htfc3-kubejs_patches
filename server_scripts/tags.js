@@ -281,6 +281,7 @@ onEvent('tags.items', event => {
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
 	event.add('tfc:wooden_bowl_food', [
+		'untamedwilds:food_turtle_soup',
 		'farmersdelight:baked_cod_stew',
 		'farmersdelight:squid_ink_pasta',
 		'minecraft:rabbit_stew',
@@ -1301,6 +1302,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw'
 	]),
 	event.add('tfc:foods', [
+		'#tfc:wooden_bowl_food',
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
 		'create:sweet_roll',

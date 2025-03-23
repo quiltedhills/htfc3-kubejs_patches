@@ -68,6 +68,7 @@ Please feel free to reach out to me on discord for any questions!
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
 • Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
+• *Drastically* reduced how long cooking pot and kettle recipes take <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
 • Added soy milk, a difficult-to-make plant-based milk <br/>

@@ -5,7 +5,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "forge:dough"
+        "item": "minecraft:brown_mushroom"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "minecraft:red_mushroom"
       }
     },
     {
@@ -13,31 +19,16 @@
       "ingredient": {
         "tag": "forge:grain/rice"
       }
-    },{
-      "tag": "forge:dusts/salt"
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "farmersdelight:beef_patty"
-      }
-    },
-    {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "item": "farmersdelight:cabbage_leaf"
-      }
-    },
-    {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "tag": "forge:vegetables/onion"
+        "tag": "forge:vegetables"
       }
     }
   ],
   "result": {
-    "item": "farmersdelight:dumplings",
-    "count": 4,
+    "item": "farmersdelight:mushroom_rice",
     "modifiers": [
       "tfc:copy_food"
     ]

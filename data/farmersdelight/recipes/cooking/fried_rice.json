@@ -5,27 +5,19 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "forge:dough"
+        "tag": "forge:grain/rice"
       }
     },
     {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "tag": "forge:grain/rice"
-      }
-    },{
       "tag": "forge:dusts/salt"
     },
     {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "item": "farmersdelight:beef_patty"
-      }
+      "tag": "forge:eggs"
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "farmersdelight:cabbage_leaf"
+        "tag": "forge:vegetables/carrot"
       }
     },
     {
@@ -36,8 +28,7 @@
     }
   ],
   "result": {
-    "item": "farmersdelight:dumplings",
-    "count": 4,
+    "item": "farmersdelight:fried_rice",
     "modifiers": [
       "tfc:copy_food"
     ]

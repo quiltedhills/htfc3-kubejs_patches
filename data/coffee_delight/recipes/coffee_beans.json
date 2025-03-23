@@ -1,0 +1,20 @@
+{
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "supplementaries:sack"
+    }
+  ],
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "coffee_delight:coffee_block_item"
+      }
+    ],
+    "result": {
+      "item": "farmersrespite:coffee_beans",
+      "count": 8
+    }
+  }
+}

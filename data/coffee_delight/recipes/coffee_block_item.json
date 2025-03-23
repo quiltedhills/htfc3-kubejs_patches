@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "cbc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "farmersrespite:coffee_beans"
+    },
+    "b": {
+      "item": "supplementaries:sack"
+    }
+  },
+  "result": {
+    "item": "coffee_delight:coffee_block_item",
+    "count": 1
+  }
+}
