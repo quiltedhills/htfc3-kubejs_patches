@@ -1,31 +1,33 @@
 {
-  "__comment__": "This file was automatically created by tfch",
-  "type": "tfc:extra_products_shapeless_crafting",
-  "extra_products": [
-    {
-      "item": "minecraft:bone",
-      "count": 3
-    }
-  ],
-  "recipe": {
-    "type": "tfc:damage_inputs_shapeless_crafting",
-    "recipe": {
-      "type": "minecraft:crafting_shapeless",
-      "ingredients": [
-        {
-          "type": "tfc:not_rotten",
-          "ingredient": {
-            "item": "butchersdelightfoods:beefribs"
-          }
-        },
-        {
-          "tag": "forge:tools/knives"
-        }
-      ],
-      "result": {
-        "item": "tfc:food/beef",
-        "count": 6
-      }
-    }
-  }
+	"type": "tfc:extra_products_shapeless_crafting",
+	"extra_products": [{
+		"item": "minecraft:bone",
+		"count": 3
+	}],
+	"recipe": {
+		"type": "tfc:damage_inputs_shapeless_crafting",
+		"recipe": {
+			"type": "tfc:advanced_shapeless_crafting",
+			"ingredients": [
+			{
+				"item": "butchersdelightfoods:beefribs"
+			},
+			{	
+				"tag": "forge:tools/knives"
+			}
+			],
+			"primary_ingredient": {
+				"item": "butchersdelightfoods:beefribs"
+			},
+			"result": {
+				"stack": {
+					"item": "tfc:food/beef",
+					"count": 6
+				},
+				"modifiers": [
+					"tfc:copy_food"
+				]
+			}
+		}
+	}
 }
