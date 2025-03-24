@@ -90,6 +90,7 @@ Please feel free to reach out to me on discord for any questions!
 ### Fixes:
 • Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
+&nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
