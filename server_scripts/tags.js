@@ -241,6 +241,14 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:buckets/metal/colored_steel', [
+		'tfc:metal/bucket/red_steel',
+		'tfc:metal/bucket/blue_steel'
+	])
+	event.add('tfc:buckets/metal', [
+		'#tfc:buckets/metal/colored_steel',
+		'minecraft:bucket'
+	])
 	event.add('farmersdelight:nourishing/1', [
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
