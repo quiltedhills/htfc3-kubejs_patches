@@ -58,6 +58,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Tweaked names for some confusing keybinds <br/>
+• Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths no longer produce pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
