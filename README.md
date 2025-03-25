@@ -63,6 +63,7 @@ Please feel free to reach out to me on discord for any questions!
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
+• Added extra recipes for drying mud bricks <br/>
 • Increased redstone lamp recipe yield <br/>
 • Added a pressure chamber recipe for Create basins <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>

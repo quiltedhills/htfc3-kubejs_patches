@@ -1,0 +1,9 @@
+{
+  "type": "firmalife:drying",
+  "ingredient": {
+    "item": "tfc:drying_bricks/silt"
+  },
+  "result": {
+    "item": "tfc:mud_brick/silt"
+  }
+}
