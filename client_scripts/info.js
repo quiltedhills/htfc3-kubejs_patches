@@ -829,4 +829,12 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced(['tfchomestead:jar','tfchomestead:full_jar'], (item, advanced, text) => {
 		text.add(1, Text.of('May cause world rendering issues when placed').gold())
 	})
+	tooltip.addAdvanced('tfc:torch', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Made from heating up '), Text.yellow('Unlit Torches'), Text.gold('.')])
+			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
+		}
+	})
 })
