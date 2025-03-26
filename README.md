@@ -53,6 +53,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
 • Made Ender Chests significantly more expensive <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
+• Changed etching acid recipe <br/>
 
 ### Quality of Life:
 • Various improvements to quests <br/>
