@@ -193,6 +193,7 @@ onEvent('tags.fluids', event => {
 	event.add('forge:molten_black_steel', ['tfc:metal/black_steel'])
 	event.add('forge:molten_red_steel', ['tfc:metal/red_steel'])
 	event.add('forge:molten_blue_steel', ['tfc:metal/blue_steel'])
+	event.add('forge:molten_colored_steel', ['#forge:molten_red_steel', '#forge:molten_blue_steel'])
 
 	event.add('forge:molten_iron_quartz', ['kubejs:molten_iron_quartz'])
 	event.add('forge:molten_andesite_alloy', ['kubejs:andesite_alloy'])
@@ -240,6 +241,14 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:buckets/metal/colored_steel', [
+		'tfc:metal/bucket/red_steel',
+		'tfc:metal/bucket/blue_steel'
+	])
+	event.add('tfc:buckets/metal', [
+		'#tfc:buckets/metal/colored_steel',
+		'minecraft:bucket'
+	])
 	event.add('farmersdelight:nourishing/1', [
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
@@ -272,6 +281,7 @@ onEvent('tags.items', event => {
 
 	event.remove('tfc:gem_powders', 'tfc:powder/lapis_lazuli')
 	event.removeAll('tfc:can_be_lit_on_torch')
+	event.add('tfc:can_be_lit_on_torch', 'tfc:dead_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 
 	event.remove('curios:belt', 'toolbelt:belt')
@@ -306,6 +316,7 @@ onEvent('tags.items', event => {
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
 	event.add('tfc:wooden_bowl_food', [
+		'untamedwilds:food_turtle_soup',
 		'farmersdelight:baked_cod_stew',
 		'farmersdelight:squid_ink_pasta',
 		'minecraft:rabbit_stew',
@@ -1342,6 +1353,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw'
 	]),
 	event.add('tfc:foods', [
+		'#tfc:wooden_bowl_food',
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
 		'kubejs:food/okara',

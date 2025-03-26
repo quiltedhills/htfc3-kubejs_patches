@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/double_sheet/red_steel"
+  },
+  "result": {
+    "item": "tfc_ie_addon:drillhead_red_steel"
+  },
+  "tier": 6,
+  "rules": [
+    "hit_last",
+    "draw_any",
+    "bend_third_last"
+  ]
+}

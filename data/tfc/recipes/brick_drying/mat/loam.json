@@ -1,0 +1,9 @@
+{
+  "type": "firmalife:drying",
+  "ingredient": {
+    "item": "tfc:drying_bricks/loam"
+  },
+  "result": {
+    "item": "tfc:mud_brick/loam"
+  }
+}

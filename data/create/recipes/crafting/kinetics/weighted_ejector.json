@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:depot"
+    },
+    {
+      "item": "minecraft:piston"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:weighted_ejector"
+    }
+  ]
+}
