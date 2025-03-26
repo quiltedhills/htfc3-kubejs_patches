@@ -78,7 +78,7 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, [Text.gold('Restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
 			text.add(2, Text.gold('Two is enough to fully clean yourself.'))
-			text.add(3, Text.gold(''))
+			text.add(3, '')
 			text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
@@ -88,7 +88,7 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, [Text.yellow('Completely resets'), Text.gold(' the dirtiness meter.')])
 			text.add(2, Text.gold('A newly crafted bar has four uses.'))
-			text.add(3, Text.gold(''))
+			text.add(3, '')
 			text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
@@ -98,7 +98,7 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, Text.gold('Makes the air blower shoot water particles'))
 			text.add(2, Text.gold('as if there is a block of water in front of it.'))
-			text.add(3, Text.gold(''))
+			text.add(3, '')
 			text.add(4, Text.red('Only usable on Industrial Air Blowers.'))
 		}
 	})
@@ -110,7 +110,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('smoking and blasting, but makes heat drain faster.'))
 			text.add(3, [Text.gold('The exact values are '), Text.yellow('55°C+ for smoking ')])
 			text.add(4, [Text.gold('and '), Text.yellow('110°C+ for blasting'), Text.gold('.')])
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
 		}
 	})
@@ -122,7 +122,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('which allows for haunting recipes.'))
 			text.add(3, Text.yellow('Keep in mind that the fan still has to be hot!'))
 			text.add(4, [Text.gold('The exact minimal temperature is '), Text.yellow('110°C'), Text.gold('.')])
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
 		}
 	})
@@ -361,14 +361,14 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Obtained from tapping into '), Text.yellow('Rubberwood Trees'), Text.gold('.')])
 			text.add(2, Text.gold('A rubberwood sapling can be obtained from sieving dirt.'))
 			text.add(3, Text.yellow('They can only be planted on dirt that has no grass!'))
-			text.add(4, Text.gold(''))
+			text.add(4, '')
 			text.add(5, [Text.gold('Place a '), Text.yellow('"Tree Tap"'), Text.gold(' on a rubberwood tree,')])
 			text.add(6, [Text.gold('as well as a '), Text.yellow('"Bucket for Latex"'), Text.gold(' right below.')])
 			text.add(7, Text.gold('Latex liquid should then start collecting.'))
 			text.add(8, Text.gold('Right click the bucket to see how much is stored.'))
 			text.add(9, [Text.yellow('1000mb'), Text.gold(' is equal to '), Text.yellow('one latex.')])
 			text.add(10, [Text.gold('Each tree can produce up to '), Text.yellow('10 latex'), Text.gold(' in total.')])
-			text.add(11, Text.gold(''))
+			text.add(11, '')
 		}
 	})
 	tooltip.addAdvanced('farmersrespite:coffee_berries', (item, advanced, text) => {
@@ -488,7 +488,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('Pump').yellow(), Text.of(' directly.').gold()])
 			text.add(3, Text.gold('Has a storage for filter items. Can only use one type at once.'))
 			text.add(4, Text.gold('Filters degrade much faster than in respirators or vacuum bags.'))
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 		}
 	})
 	tooltip.addAdvanced([
@@ -526,7 +526,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
 			text.add(3, Text.gold('Works by pulling pollution from horizontally adjacent vents.'))
 			text.add(4, [Text.of('Will "power" (pull from) a chain of up to ').gold(), Text.of('30 vents').yellow(), Text.of('.').gold()])
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			text.add(6, Text.gold('A simple pollution control setup is a line of vents on the ceiling,'))
 			text.add(7, Text.gold('a pump somewhere in the middle, and a column of chimneys above it,'))
 			text.add(8, Text.gold('capped with a few filter frames.'))
@@ -553,7 +553,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('Placing multiple lets you travel between them.'))
 			text.add(3, Text.gold('Teleporting over distances of >1000 blocks will cost XP.'))
 			text.add(4, [Text.of('Each player ').gold(), Text.of('only gets one waystone').red(), Text.of(', be careful not to lose yours!').gold()])
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			text.add(6, Text.gold('Has no use in singleplayer, as multiple are required to function.'))
 		}
 	})
@@ -565,7 +565,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('Access the slot with ').gold(), getKeybind('key.toolbelt.slot')])
 			text.add(3, [Text.of('then hold any unstackable item and hold ').gold(), getKeybind('key.toolbelt.open')])
 			text.add(4, Text.gold('to bring up a radial menu.'))
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			text.add(6, Text.gold('Can be upgraded to hold more items.'))
 			text.add(7, [Text.of('You can get up to ').gold(), Text.of('2 slots').yellow(), Text.of(' with a ').gold(), Text.of('bone needle').yellow(), Text.of(',').gold()])
 			text.add(8, [Text.of('up to ').gold(), Text.of('4').yellow(), Text.of(' with an ').gold(), Text.of('iron').yellow(), Text.of(' and up to ').gold(), Text.of('9').yellow(), Text.of(' with a ').gold(), Text.of('netherite').yellow(), Text.of('!').gold()])
@@ -625,10 +625,10 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, [Text.of('Can only attract items with the ').gold(), Text.of('$metallic').yellow(), Text.of(' tag!').gold()])
 			text.add(2, [Text.of('Metallic ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are hardly pulled.').gold()])
-			text.add(3, Text.gold(''))
+			text.add(3, '')
 			text.add(4, Text.gold('Quite a weak pull, but gets the job done.'))
 			text.add(5, Text.gold('Be careful when moving lots of items around!'))
-			text.add(6, Text.gold(''))
+			text.add(6, '')
 			text.add(7, Text.gold('Look into getting a better magnet when you\'re able to!'))
 		}
 	})
@@ -639,9 +639,9 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.of('Can attract ').gold(), Text.of('any').yellow(), Text.of(' items, not just metallic ones!').gold()])
 			text.add(2, [Text.of('Still, has a slightly stronger pull for ').gold(), Text.of('$metallic').yellow(), Text.of(' items,').gold()])
 			text.add(3, [Text.of('and ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are pulled very slowly.').gold()])
-			text.add(4, Text.gold(''))
+			text.add(4, '')
 			text.add(5, Text.gold('Uses no energy despite using an accumulator.'))
-			text.add(6, Text.gold(''))
+			text.add(6, '')
 			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
 			else {
 				text.add(7, [Text.of('A ').gold(), Text.of('Smart Chest').yellow(), Text.of(' with ').gold(), Text.of('magnet and range upgrades').yellow()])
@@ -662,11 +662,11 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, Text.gold('Drastically different compared to weaker magnets:'))
 			text.add(2, [Text.of('attraction is ').gold(), Text.of('direct').yellow(), Text.of(' instead of being momentum-based.').gold()])
 			text.add(3, Text.yellow('This gives much more control of where items go!'))
-			text.add(4, Text.gold(''))
+			text.add(4, '')
 			text.add(5, Text.gold('Does not care if an item is metallic or not.'))
 			text.add(6, [Text.of('$huge_very_heavy').yellow(), Text.of(' items are still barely moved.').gold()])
 			text.add(7, Text.gold('Enrichment is enough to power it indefinitely.'))
-			text.add(8, Text.gold(''))
+			text.add(8, '')
 			if (!tooltip.ctrl) text.add(9, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
 			else {
 				text.add(9, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
@@ -686,7 +686,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('right clicking starts a ').gold(), Text.of('warp').yellow(), Text.of(' that teleports items').gold()])
 			text.add(3, [Text.of('within a ').gold(), Text.of('15-block range').yellow(), Text.of(' directly to your feet.').gold()])
 			text.add(4, Text.gold('This has a 20-second cooldown.'))
-			text.add(5, Text.gold(''))
+			text.add(5, '')
 			if (!tooltip.ctrl) text.add(6, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
 			else {
 				text.add(6, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
@@ -813,5 +813,47 @@ onEvent('item.tooltip', tooltip => {
 		'butchersdelightfoods:llama_loin',
 	], (item, advanced, text) => {
 		text.add(1, Text.of('Cannot be cooked, must be chopped first!').gold())
+	})
+	tooltip.addAdvanced([
+		'pneumaticcraft:cod_n_chips',
+		'pneumaticcraft:salmon_tempura',
+		'firmalife:food/banana_split',
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:ratatouille',
+		'farmersrespite:blazing_chili',
+		
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:grilled_salmon',
+		'farmersrespite:black_cod',
+		'farmersrespite:tea_curry',
+
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:squid_ink_pasta',
+		'farmersdelight:roast_chicken',
+		'farmersdelight:stuffed_pumpkin',
+		'farmersdelight:honey_glazed_ham',
+		'farmersdelight:shepherds_pie'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.of('Foods with the ').gold(),Text.of('Nourishment').yellow(),Text.of(' effect').gold()])
+			text.add(2, [Text.of('will fill you for much longer than usual.').gold()])
+		}
+	})
+	tooltip.addAdvanced(['tfchomestead:jar','tfchomestead:full_jar'], (item, advanced, text) => {
+		text.add(1, Text.of('May cause world rendering issues when placed').gold())
+	})
+	tooltip.addAdvanced('tfc:torch', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(1, [Text.gold('Made from heating up '), Text.yellow('Unlit Torches'), Text.gold('.')])
+			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
+		}
 	})
 })

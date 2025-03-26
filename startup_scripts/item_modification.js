@@ -8,6 +8,10 @@ onEvent('item.modification', event => {
 
 	// experimental nourishment fix
 	event.modify([
+		'pneumaticcraft:cod_n_chips',
+		'pneumaticcraft:salmon_tempura',
+		'firmalife:food/banana_split',
+
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
 		'farmersrespite:blazing_chili'
@@ -18,6 +22,7 @@ onEvent('item.modification', event => {
 		}
 	})
 	event.modify([
+
 		'farmersdelight:pasta_with_meatballs',
 		'farmersdelight:pasta_with_mutton_chop',
 		'farmersdelight:mushroom_rice',

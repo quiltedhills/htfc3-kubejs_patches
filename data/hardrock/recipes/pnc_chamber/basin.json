@@ -1,0 +1,22 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "item": "exnihilosequentia:stone_barrel"
+    },
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "tag": "forge:sheets",
+      "count": 2
+    },
+    {
+      "item": "tfc:powder/flux"
+    }
+  ],
+  "pressure": 2.0,
+  "results": [
+    {
+      "item": "create:basin"
+    }
+  ]
+}

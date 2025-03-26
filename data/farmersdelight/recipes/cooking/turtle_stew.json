@@ -1,29 +1,35 @@
 {
   "type": "farmersdelight:cooking",
-  "recipe_book_tab": "drinks",
+  "recipe_book_tab": "meals",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:apples/no_vanilla"
+        "item": "tfc:food/turtle"
+      }
+    },
+    {
+      "tag": "forge:dusts/salt"
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/carrot"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:apples/no_vanilla"
+        "item": "tfc:food/potato"
       }
-    },
-    {
-      "item": "minecraft:sugar"
     }
   ],
   "result": {
-    "item": "farmersdelight:apple_cider",
+    "item": "untamedwilds:food_turtle_stew",
     "modifiers": [
       "tfc:copy_food"
     ]
   },
   "experience": 1.0,
-  "cookingtime": 200
+  "cookingtime": 320
 }

@@ -4,6 +4,7 @@ onEvent('jei.remove.categories', event => {
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
+	event.hide('tconstruct:beetroot_soup'),
 	event.hide('immersiveengineering:potion'),
 	event.hide('tconstruct:potion'),
 	event.hide('beyond_earth:oil'),
@@ -21,6 +22,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'ftbdripper:water_bowl',
 		'tconstruct:potion_bucket',
 		'supplementaries:ash',
 		'ag_day_counter:calendar_item',

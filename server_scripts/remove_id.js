@@ -1,6 +1,21 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		// cooking pot recipes are removed in favor of kettle recipes
+		{id: 'farmersdelight:cooking/apple_cider'},
+		{id: 'farmersdelight:cooking/hot_cocoa'},
+		{id: 'farmersdelight:melon_juice'},
+		// these are unwanted due to being similar to TFC foods
+		{id: 'farmersdelight:nether_salad'},
+		{id: 'farmersdelight:mixed_salad'},
+		{id: 'farmersdelight:cooking/cooked_rice'},
+
+		{id: /^coffee_delight:cooking\/mag\//},
+		{id: /^farmersrespite:brewing\/(strong|long)/},
+		{id: 'coffee_delight:cutting/coffee_beans'},
+		{id: 'tconstruct:smeltery/melting/slime/beetroot_soup'},
+		{id: 'tconstruct:smeltery/casting/soup/beetroot'},
+
 		{id: 'createoreexcavation:cutting/diamond_cutting'},
 		{id: 'createoreexcavation:cutting/emerald_cutting'},
 		{id: 'minecraft:tripwire_hook'},

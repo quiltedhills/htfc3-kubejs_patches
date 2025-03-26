@@ -23,8 +23,14 @@
     }
   ],
   "result": {
-    "item": "untamedwilds:food_turtle_soup"
+    "item": "untamedwilds:food_turtle_soup",
+    "modifiers": [
+      "tfc:copy_food"
+    ]
+  },
+  "container": {
+    "item": "minecraft:bowl"
   },
   "experience": 1.0,
-  "cookingtime": 2400
+  "cookingtime": 480
 }

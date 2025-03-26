@@ -52,25 +52,32 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked recipe for wolf spawn eggs <br/>
 • Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
 • Made Ender Chests significantly more expensive <br/>
+• Tweaked structural glass and reactor glass recipes <br/>
 
 ### Quality of Life:
 • Various improvements to quests <br/>
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
+• Tweaked names for some confusing keybinds <br/>
+• Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths no longer produce pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
+• Added extra recipes for drying mud bricks <br/>
 • Increased redstone lamp recipe yield <br/>
+• Added a pressure chamber recipe for Create basins <br/>
+• Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
 • Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
+• *Drastically* reduced how long cooking pot and kettle recipes take <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
-• Added soy milk, a difficult-to-make plant-based milk <br/>
+• Added soy and oat milk, which are difficult-to-make plant-based milk variants <br/>
 • Added more advanced alcohol production recipes <br/>
 • Minor improvements for animal carcasses <br/>
 • Fixed a few recipes accepting rotten food <br/>
@@ -86,6 +93,7 @@ Please feel free to reach out to me on discord for any questions!
 ### Fixes:
 • Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
+&nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>
@@ -94,3 +102,4 @@ Please feel free to reach out to me on discord for any questions!
 • Removed the recipe for unused flint mesh <br/>
 • Fixed recipe conflicts for straw hats and straw carpets <br/>
 • Removed misleading melting tooltips for IE ore <br/>
+• Fixed missing shaft texture in andesite and brass chunk loader item models <br/>

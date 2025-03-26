@@ -9,5 +9,9 @@ onEvent('jei.information', event => {
 		'However, if you use a cutting board to chop, you get double the meat but lose the preservation entirely.',
 		'The key to this is that a cutting board removes preservation AND decay!',
 		'This means if you have a near-rotten large meat, you can chop it on a cutting board and receive fresh meat!'
+	])
+    event.add([/^tfc:drying_bricks\//, /^tfc:mud_brick\//], [
+        'Mud bricks can be dried by placing them on the ground and waiting for a full day.',
+        'See the TFC Guidebook for more info!'
     ])
 })
