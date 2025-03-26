@@ -194,6 +194,7 @@ onEvent('tags.fluids', event => {
 	event.add('forge:molten_black_steel', ['tfc:metal/black_steel'])
 	event.add('forge:molten_red_steel', ['tfc:metal/red_steel'])
 	event.add('forge:molten_blue_steel', ['tfc:metal/blue_steel'])
+	event.add('forge:molten_colored_steel', ['#forge:molten_red_steel', '#forge:molten_blue_steel'])
 
 	event.add('forge:molten_iron_quartz', ['kubejs:molten_iron_quartz'])
 	event.add('forge:molten_andesite_alloy', ['kubejs:andesite_alloy'])

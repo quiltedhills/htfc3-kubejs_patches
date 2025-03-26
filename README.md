@@ -52,6 +52,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked recipe for wolf spawn eggs <br/>
 • Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
 • Made Ender Chests significantly more expensive <br/>
+• Tweaked structural glass and reactor glass recipes <br/>
 
 ### Quality of Life:
 • Various improvements to quests <br/>
