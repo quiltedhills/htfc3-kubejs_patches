@@ -39,6 +39,7 @@ Please feel free to reach out to me on discord for any questions!
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
+• Made IE Blast Furnaces functional <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
@@ -53,6 +54,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
 • Made Ender Chests significantly more expensive <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
+• Changed etching acid recipe <br/>
 
 ### Quality of Life:
 • Various improvements to quests <br/>

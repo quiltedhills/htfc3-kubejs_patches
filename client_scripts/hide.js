@@ -474,6 +474,7 @@ onEvent('jei.hide.items', event => {
 		'minecraft:copper_ingot',
 		'minecraft:cocoa_beans',
 		'minecraft:dried_kelp',
+		'minecraft:iron_ingot',
 		'minecraft:gold_ingot',
 		'minecraft:kelp',
 		'minecraft:stonecutter',

@@ -1,0 +1,40 @@
+{
+  "type": "immersiveengineering:mixer",
+  "fluid": {
+    "tag": "tfc:vinegar",
+    "amount": 500
+  },
+  "inputs": [
+    {
+      "base_ingredient": {
+        "item": "tfc:powder/pyrite"
+      },
+      "count": 2
+    },
+    [
+      {
+        "item": "tfc:ore/cryolite"
+      },
+      {
+        "item": "mekanism:fluorite_gem"
+      }
+    ],
+    {
+      "base_ingredient": {
+        "item": "tfc:powder/saltpeter"
+      },
+      "count": 4
+    },
+    {
+      "base_ingredient": {
+        "tag": "forge:ores/clean_dusts/metals/copper"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "fluid": "pneumaticcraft:etching_acid",
+    "amount": 500
+  },
+  "energy": 32000
+}
