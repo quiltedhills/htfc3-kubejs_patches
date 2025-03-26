@@ -1,0 +1,13 @@
+{
+  "type": "immersiveengineering:blast_furnace",
+  "input": {
+    "tag": "forge:ingots/cast_iron"
+  },
+  "slag": {
+    "tag": "forge:slag"
+  },
+  "result": {
+    "item": "tfc:raw_iron_bloom"
+  },
+  "time": 1200
+}

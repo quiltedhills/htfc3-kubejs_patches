@@ -171,34 +171,20 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('Deals no damage and is completely harmless'))
 		}
 	})
-	tooltip.addAdvanced([
-		'immersiveengineering:blastbrick',
-		'immersiveengineering:blastbrick_reinforced',
-		'immersiveengineering:blastfurnace_preheater',
-		'immersiveengineering:blast_furnace',
-		'immersiveengineering:advanced_blast_furnace'
-	], (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.red('Decorative use only!'))
-			text.add(2, Text.gold('IE blast furnaces are non-functional'))
-		}
-	})
 	tooltip.addAdvanced('immersiveengineering:cokebrick', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.red('Decorative use only!'))
-			text.add(2, Text.gold('Coke ovens are made from fire bricks'))
+			text.add(1, Text.red('Decorative and crafting use only!'))
+			text.add(2, Text.gold('Coke ovens are made from fire bricks.'))
 		}
 	})
 	tooltip.addAdvanced('create:vertical_gearbox', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.gold('Use brass wrench on a normal gearbox'))
-			text.add(2, [Text.gold('Rotate it with '), Text.of('Right click ').yellow(), Text.gold('on a side')])
+			text.add(1, Text.gold('Made by rotating a normal gearbox with a wrench.'))
+			text.add(2, [Text.gold('Hold a wrench and '), Text.of('Right click').yellow(), Text.gold(' its side!')])
 		}
 	})
 	tooltip.addAdvanced('kubejs:feed_vege', (item, advanced, text) => {
