@@ -1,0 +1,22 @@
+{
+	"type": "createsifter:sifting",
+	"ingredients": [
+	{
+		"item": "createsifter:string_mesh"
+	},
+	{
+		"tag": "minecraft:leaves"
+	}
+	],
+	"results": [
+	{
+		"item": "tfc:plant/olive_sapling",
+		"chance": 0.02
+	},
+	{
+		"item": "waterstrainer:worm",
+		"chance": 0.1
+	}
+	],
+	"processingTime": 500
+}

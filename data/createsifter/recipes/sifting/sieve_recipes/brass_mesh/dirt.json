@@ -1,0 +1,78 @@
+{
+	"type": "createsifter:sifting",
+	"ingredients": [
+	{
+		"item": "createsifter:brass_mesh"
+	},
+	{
+		"tag": "forge:dirt"
+	}
+	],
+	"results": [
+	{
+		"item": "immersiveengineering:seed",
+		"chance": 0.01
+	},
+	{
+		"item": "exnihilosequentia:bamboo_seeds",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:seeds/wheat",
+		"chance": 0.06
+	},
+	{
+		"item": "tfc:seeds/sugarcane",
+		"chance": 0.02
+	},
+	{
+		"item": "tfc:seeds/pumpkin",
+		"chance": 0.03
+	},
+	{
+		"item": "tfc:seeds/melon",
+		"chance": 0.02
+	},
+	{
+		"item": "tfc:seeds/jute",
+		"chance": 0.05
+	},
+	{
+		"item": "waterstrainer:worm",
+		"chance": 0.1
+	},
+	{
+		"item": "myrtrees:rubberwood_sapling",
+		"chance": 0.035
+	},
+	{
+		"item": "exnihilosequentia:silkworm",
+		"chance": 0.1
+	},
+	{
+		"item": "tfc:seeds/carrot",
+		"chance": 0.02
+	},
+	{
+		"item": "farmersrespite:tea_seeds",
+		"chance": 0.025
+	},
+	{
+		"item": "tfc:seeds/beet",
+		"chance": 0.02
+	},
+	{
+		"item": "tfc:seeds/potato",
+		"chance": 0.03
+	},
+	{
+		"item": "minecraft:bone",
+		"chance": 0.2
+	},
+	{
+		"item": "minecraft:pointed_dripstone",
+		"chance": 0.04
+	}
+	],
+	"processingTime": 500
+}
