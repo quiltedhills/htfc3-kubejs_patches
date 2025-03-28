@@ -895,7 +895,10 @@ onEvent('tags.items', event => {
 		'#forge:soap/weak',
 		'#forge:soap/strong'
 	])
-	event.add('forge:soap/weak', ['supplementaries:soap'])
+	event.add('forge:soap/weak', [
+		'supplementaries:soap',
+		'kubejs:misc_mats/hand_sanitizer'
+	])
 	event.add('forge:soap/strong', [
 		'bodyhygiene:dandelion_soap',
 		'bodyhygiene:poppy_soap',
