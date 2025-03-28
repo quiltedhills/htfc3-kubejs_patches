@@ -822,4 +822,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
 		}
 	})
+	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
+		text.add(1, Text.of('Decorative use only').gold())
+	})
 })
