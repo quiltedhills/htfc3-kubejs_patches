@@ -410,7 +410,6 @@ onEvent('item.tooltip', tooltip => {
 		/^adpother:.+_respirator$/,
 		'beyond_earth:oxygen_mask',
 		'beyond_earth:netherite_oxygen_mask',
-		'create:diving_helmet',
 		'create:netherite_diving_helmet',
 		'mekanism:hazmat_mask',
 		'mekanism:scuba_mask'
@@ -419,8 +418,8 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
-			text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			text.add(2, Text.gold('Multiple different filters can be active at once.'))
+			text.add(3, '')
 			text.add(4, [Text.of('Prevents eating and some right-click interactions').yellow(), Text.of(',').gold()])
 			text.add(5, Text.gold('no matter if it has filters installed or not.'))
 		}
@@ -433,10 +432,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
-			text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			text.add(2, Text.gold('Multiple different filters can be active at once.'))
+			text.add(3, '')
 			text.add(4, Text.gold('Unlike other respirator helmets,'))
-			text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating!').gold()])
+			text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating or limit interactions!').gold()])
 		}
 	})
 	tooltip.addAdvanced([
@@ -841,5 +840,8 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Made from heating up '), Text.yellow('Unlit Torches'), Text.gold('.')])
 			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
 		}
+	})
+	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
+		text.add(1, Text.of('Decorative use only').gold())
 	})
 })

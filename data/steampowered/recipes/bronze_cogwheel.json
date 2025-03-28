@@ -1,7 +1,7 @@
 {
   "type": "tfc:anvil",
   "input": {
-    "item": "tfc:metal/sheet/bronze"
+    "tag": "forge:sheets/bronze_any"
   },
   "result": {
     "item": "steampowered:bronze_cogwheel"

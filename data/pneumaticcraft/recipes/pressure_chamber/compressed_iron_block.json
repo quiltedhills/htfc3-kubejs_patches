@@ -10,7 +10,7 @@
       "tag": "forge:dusts/graphite"
     }
   ],
-  "pressure": 2.0,
+  "pressure": 3.0,
   "results": [
     {
       "item": "pneumaticcraft:compressed_iron_block"

@@ -16,7 +16,7 @@ If something goes wrong, please feel free to reach out to me (air) and ask for h
 1. Make a github account and fork this repository with the Fork button to create your personal copy that you can freely mess with
 2. Download something that will let you handle the git-related things, [Github Desktop](https://desktop.github.com/download/) is pretty beginner-friendly! I also like VS Code's built-in source control feature. You can use whatever you're comfortable with though!
 3. Delete everything inside of the kubejs folder of your hardrock v3 instance
-4. Download and add the [Create Deco mod](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163) to your instance's mods folder
+4. Download and add the [Create Deco mod](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163) (and optionally [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611) and [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)) to your instance's mods folder
 5. (will be using github desktop for this guide)
 - Open Github Desktop and log into your github account
 - Go to File > Clone Repository. Select your forked repository and **make sure to set the local path to be the kubejs folder of your instance!**
@@ -35,6 +35,7 @@ Please feel free to reach out to me on discord for any questions!
 # Changelogs / differences from 1.5.5
 ### Major things:
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
+• Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
 • Added custom magnets to replace the Create SA copper magnet <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
@@ -43,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
+• Added item repair recipes for things like jetpacks and clothing
 
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
@@ -72,6 +74,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
+• Improved heat frame and depot interaction <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -94,6 +97,7 @@ Please feel free to reach out to me on discord for any questions!
 
 ### Fixes:
 • Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>
+• Fixed some blocks not dropping their contents when broken (mold tables and sewing tables with drawers) <br/>
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
 &nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>

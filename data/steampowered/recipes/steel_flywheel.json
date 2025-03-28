@@ -4,22 +4,22 @@
     "item": "create:large_cogwheel"
   },
   "transitionalItem": {
-    "item": "create:brass_sheet"
+    "item": "immersiveengineering:plate_steel"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/steel"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         }
       ]
     },
@@ -27,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/steel"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         }
       ]
     },
@@ -43,15 +43,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/steel"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         }
       ]
     },
@@ -59,22 +59,22 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/steel"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "immersiveengineering:plate_steel"
         }
       ]
     }
   ],
   "results": [
     {
-      "item": "create:flywheel"
+      "item": "steampowered:steel_flywheel"
     }
   ],
   "loops": 1

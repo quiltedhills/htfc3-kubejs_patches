@@ -1,0 +1,15 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "create:display_board"},
+  "transitionalItem": {"item": "kubejs:un_casing"},
+  "sequence": [
+    {"type": "create:deploying","ingredients": [{"item": "create:display_board"},{"item": "tfc:brass_mechanisms"}],"results": [{"item": "kubejs:un_casing"}]},
+    {"type": "create:deploying","ingredients": [{"item": "kubejs:un_casing"},{"item": "create:electron_tube"}],"results": [{"item": "kubejs:un_casing"}]},
+    {"type": "create:deploying","ingredients": [{"item": "kubejs:un_casing"},{"item": "create:sturdy_sheet"}],"results": [{"item": "kubejs:un_casing"}]},
+    {"type": "create:deploying","ingredients": [{"item": "kubejs:un_casing"},{"item": "create:andesite_alloy"}],"results": [{"item": "kubejs:un_casing"}]},
+    {"type": "create:deploying","ingredients": [{"item": "kubejs:un_casing"},{"item": "create:andesite_alloy"}],"results": [{"item": "kubejs:un_casing"}]},
+    {"type": "create:pressing","ingredients": [{"item": "kubejs:un_casing"}],"results": [{"item": "kubejs:un_casing"}]}
+    ],
+  "results": [{"item": "createrailwaysnavigator:advanced_display","count":1}],
+  "loops": 1
+}

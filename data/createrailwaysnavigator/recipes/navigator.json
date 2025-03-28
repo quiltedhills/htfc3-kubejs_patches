@@ -1,0 +1,30 @@
+{
+    "type": "create:mechanical_crafting",
+    "acceptMirrored": true,
+    "key": {
+      "A": {
+        "item": "create:andesite_alloy"
+      },
+      "I": {
+        "tag": "forge:sheets/aluminum"
+      },
+      "G": {
+        "item": "create:display_board"
+      },
+      "P": {
+        "item": "create:display_link"
+      },
+      "C": {
+        "tag": "forge:sheets/constantan"
+      }
+    },
+    "pattern": [
+      "AIA",
+      "IGI",
+      "IPI",
+      "ACA"
+    ],
+    "result": {
+      "item": "createrailwaysnavigator:navigator"
+    }
+  }

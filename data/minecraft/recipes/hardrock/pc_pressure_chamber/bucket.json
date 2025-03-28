@@ -5,13 +5,13 @@
       "tag": "forge:sheets/steel"
     },
     {
-      "item": "tfc:metal/bucket/blue_steel"
+      "tag": "tfc:buckets/metal/colored_steel"
     },
     {
       "item": "tfc:powder/flux"
     }
   ],
-  "pressure": 2.0,
+  "pressure": 3.0,
   "results": [
     {
       "item": "minecraft:bucket"

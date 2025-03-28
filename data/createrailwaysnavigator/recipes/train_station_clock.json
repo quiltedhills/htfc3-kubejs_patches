@@ -1,0 +1,21 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    [
+     {
+      "item": "create:cuckoo_clock"
+     },
+     {
+      "item": "supplementaries:clock_block"
+     }
+    ],
+    {
+      "tag": "forge:sheets/aluminum"
+    }
+  ],
+  "results": [
+    {
+      "item": "createrailwaysnavigator:train_station_clock"
+    }
+  ]
+}

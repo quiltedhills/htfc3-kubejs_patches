@@ -14,7 +14,7 @@
       "tag": "forge:dyes/green"
     }
   ],
-  "pressure": 2.0,
+  "pressure": 1.0,
   "results": [
     {
       "item": "mekanism:basic_control_circuit"

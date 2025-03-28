@@ -14,7 +14,7 @@
       "tag": "forge:dyes/light_blue"
     }
   ],
-  "pressure": 1.0,
+  "pressure": 3.0,
   "results": [
     {
       "item": "mekanism:elite_control_circuit"

@@ -4,22 +4,22 @@
     "item": "create:large_cogwheel"
   },
   "transitionalItem": {
-    "item": "create:brass_sheet"
+    "item": "createdeco:cast_iron_sheet"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/cast_iron"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         }
       ]
     },
@@ -27,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/cast_iron"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         }
       ]
     },
@@ -43,15 +43,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/cast_iron"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         }
       ]
     },
@@ -59,22 +59,22 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:plates/cast_iron"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "createdeco:cast_iron_sheet"
         }
       ]
     }
   ],
   "results": [
     {
-      "item": "create:flywheel"
+      "item": "steampowered:cast_iron_flywheel"
     }
   ],
   "loops": 1
