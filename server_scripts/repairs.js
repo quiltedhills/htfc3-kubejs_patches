@@ -27,6 +27,22 @@ const repairables = {
     'tfcambiental:insulated_leather_boots': [1500, ['sewingkit:leather_sheet', 'sewingkit:leather_strip', 'htm:plant_fabric', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
     'tfcambiental:leather_apron': [600, ['2x sewingkit:leather_sheet', 'sewingkit:leather_strip', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
 }
+// A list of items to add crafting grid filter application recipes to.
+// These recipes server as alternatives to using an anvil.
+// Data must be first defined in 'config/adpother/Respirators/'.
+const respirators = [
+    // These three use hardcoded interactions and unfortunately do not work.
+    //'adpother:iron_respirator',
+    //'adpother:gold_respirator',
+    //'adpother:diamond_respirator',
+    'beyond_earth:oxygen_mask',
+    'beyond_earth:netherite_oxygen_mask',
+    'create:netherite_diving_helmet',
+    'mekanism:hazmat_mask',
+    'mekanism:scuba_mask',
+    'mekanism:mekasuit_helmet',
+    'pneumaticcraft:pneumatic_helmet'
+]
 
 onEvent('recipes', event => {
     Object.entries(repairables).forEach(([repairableItem, [repairAmount, repairMaterials, repairTools]]) => {
@@ -48,21 +64,11 @@ onEvent('recipes', event => {
     })
 
 
-    const respirators = [
-        'beyond_earth:oxygen_mask',
-        'beyond_earth:netherite_oxygen_mask',
-        'create:netherite_diving_helmet',
-        'mekanism:hazmat_mask',
-        'mekanism:scuba_mask',
-        'mekanism:mekasuit_helmet',
-        'pneumaticcraft:pneumatic_helmet'
-    ]
-
     respirators.forEach(respirator => {
         ['dust','carbon','sulfur'].forEach(pollutant => {
             event.shapeless(
                 Item.of(respirator, `{Fullness: {${pollutant}: 0}}`),
-                [Item.of(respirator).ignoreNBT(), `#adpother:filters/${pollutant}`]
+                [Item.of(respirator).ignoreNBT(), `#adpother:filters/${pollutant}`, '#forge:string', '#sewingkit:needles']
             ).id(`kubejs:add_filter/${respirator.replace(':', '/')}/${pollutant}`)
                 .modifyResult((grid, result) => {
                     let item = grid.find(Item.of(respirator).ignoreNBT())
@@ -71,6 +77,7 @@ onEvent('recipes', event => {
                     item.nbt.merge(`{Fullness: {${pollutant}: 0}}`)
                     return item
                 })
+                .damageIngredient('#sewingkit:needles')
         })
     })
 })
