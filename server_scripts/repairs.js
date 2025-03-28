@@ -4,10 +4,10 @@
 // `materialsUsed` and `toolsUsed` must be arrays, even if they are empty.
 const repairables = {
     'create_sa:copper_jetpack_chestplate': [80, ['#forge:sheets/copper', 'create:cogwheel'], ['#forge:tools/hammers']],
-    'create_sa:andesite_jetpack_chestplate': [120, ['3x create:andesite_alloy', '#forge:rods/zinc', 'create:encased_fan'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
-    'create_sa:brass_jetpack_chestplate': [160, ['#forge:sheets/brass', 'create:andesite_alloy', 'create:propeller'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
-    'create_jetpack:jetpack': [60, ['#forge:double_sheets/brass', 'create:precision_mechanism', 'create:chute'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
-    'create_jetpack:netherite_jetpack': [420, ['create_sa:brass_cube', '2x create:precision_mechanism', '2x create:smart_chute'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
+    'create_sa:andesite_jetpack_chestplate': [120, ['3x create:andesite_alloy', '#forge:rods/zinc', 'create:encased_fan'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
+    'create_sa:brass_jetpack_chestplate': [160, ['#forge:sheets/brass', 'create:andesite_alloy', 'create:propeller'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
+    'create_jetpack:jetpack': [60, ['#forge:double_sheets/brass', 'create:precision_mechanism', 'create:chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
+    'create_jetpack:netherite_jetpack': [420, ['create_sa:brass_cube', '2x create:precision_mechanism', '2x create:smart_chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
 
     'tfcambiental:wool_hat': [1750, ['tfc:wool_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
     'tfcambiental:wool_sweater': [1000, ['tfc:wool_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
@@ -44,6 +44,33 @@ onEvent('recipes', event => {
         // Make tools lose durability instead of getting consumed
         repairTools.forEach(tool => {
             recipe.damageIngredient(tool)
+        })
+    })
+
+
+    const respirators = [
+        'beyond_earth:oxygen_mask',
+        'beyond_earth:netherite_oxygen_mask',
+        'create:netherite_diving_helmet',
+        'mekanism:hazmat_mask',
+        'mekanism:scuba_mask',
+        'mekanism:mekasuit_helmet',
+        'pneumaticcraft:pneumatic_helmet'
+    ]
+
+    respirators.forEach(respirator => {
+        ['dust','carbon','sulfur'].forEach(pollutant => {
+            event.shapeless(
+                Item.of(respirator, `{Fullness: {${pollutant}: 0}}`),
+                [Item.of(respirator).ignoreNBT(), `#adpother:filters/${pollutant}`]
+            ).id(`kubejs:add_filter/${respirator.replace(':', '/')}/${pollutant}`)
+                .modifyResult((grid, result) => {
+                    let item = grid.find(Item.of(respirator).ignoreNBT())
+                    console.log(`${item?.nbt?.Fullness[pollutant]} => ${item?.nbt?.Fullness[pollutant] == 0}`)
+                    if (!item || item?.nbt?.Fullness[pollutant] == 0) return
+                    item.nbt.merge(`{Fullness: {${pollutant}: 0}}`)
+                    return item
+                })
         })
     })
 })
