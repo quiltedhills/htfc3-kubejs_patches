@@ -1,0 +1,49 @@
+// List of all repairable items.
+// Formatting is as follows:
+// { 'repairable_item': [durabilityToRestore, [materialsUsed], [toolsUsed]] }
+// `materialsUsed` and `toolsUsed` must be arrays, even if they are empty.
+const repairables = {
+    'create_sa:copper_jetpack_chestplate': [80, ['#forge:sheets/copper', 'create:cogwheel'], ['#forge:tools/hammers']],
+    'create_sa:andesite_jetpack_chestplate': [120, ['3x create:andesite_alloy', '#forge:rods/zinc', 'create:encased_fan'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
+    'create_sa:brass_jetpack_chestplate': [160, ['#forge:sheets/brass', 'create:andesite_alloy', 'create:propeller'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
+    'create_jetpack:jetpack': [60, ['#forge:double_sheets/brass', 'create:precision_mechanism', 'create:chute'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
+    'create_jetpack:netherite_jetpack': [420, ['create_sa:brass_cube', '2x create:precision_mechanism', '2x create:smart_chute'], ['#forge:tools/hammers','#forge:tools/screwdrivers']],
+
+    'tfcambiental:wool_hat': [1750, ['tfc:wool_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:wool_sweater': [1000, ['tfc:wool_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:wool_pants': [1250, ['tfc:wool_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:wool_boots': [1750, ['tfc:wool_cloth', 'sewingkit:leather_strip', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:silk_cowl': [1000, ['tfc:silk_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:silk_shirt': [1250, ['2x tfc:silk_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:silk_pants': [1500, ['2x tfc:silk_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:silk_shoes': [1000, ['tfc:silk_cloth', 'sewingkit:leather_strip', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:burlap_cowl': [1000, ['tfc:burlap_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:burlap_shirt': [1250, ['2x tfc:burlap_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:burlap_pants': [1500, ['2x tfc:burlap_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:burlap_shoes': [1000, ['tfc:burlap_cloth', 'sewingkit:leather_strip', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:insulated_leather_hat': [1500, ['sewingkit:leather_sheet', 'htm:plant_fabric', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:insulated_leather_tunic': [1000, ['2x sewingkit:leather_sheet', 'sewingkit:leather_strip', 'htm:plant_fabric', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:insulated_leather_pants': [1250, ['2x sewingkit:leather_sheet', 'sewingkit:leather_strip', 'htm:plant_fabric', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:insulated_leather_boots': [1500, ['sewingkit:leather_sheet', 'sewingkit:leather_strip', 'htm:plant_fabric', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
+    'tfcambiental:leather_apron': [600, ['2x sewingkit:leather_sheet', 'sewingkit:leather_strip', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
+}
+
+onEvent('recipes', event => {
+    Object.entries(repairables).forEach(([repairableItem, [repairAmount, repairMaterials, repairTools]]) => {
+        const recipe = event.shapeless(
+            Item.of(repairableItem, `{Damage:${repairAmount},display:{Lore:['{"text":"Restores ${repairAmount} durability","color":"green","italic":false}']}}`),
+            [Item.of(repairableItem).ignoreNBT()].concat(repairMaterials, repairTools)
+        ).id(`kubejs:repairing/${repairableItem.replace(':', '/').replace('#', 'tag/')}`)
+            .modifyResult((grid, result) => {
+                let item = grid.find(Item.of(repairableItem).ignoreNBT())
+                if (!item || !item.nbt || !item.nbt.Damage) return
+                item.nbt.Damage = Math.max(0, item.nbt.Damage - repairAmount)
+                return item
+            })
+
+        // Make tools lose durability instead of getting consumed
+        repairTools.forEach(tool => {
+            recipe.damageIngredient(tool)
+        })
+    })
+})

@@ -242,6 +242,12 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('forge:tools/screwdrivers', '#immersiveengineering:tools/screwdrivers')
+	event.add('sewingkit:needles', [
+		'sewingkit:bone_sewing_needle',
+		'sewingkit:iron_sewing_needle',
+		'sewingkit:netherite_sewing_needle'
+	])
 	event.add('tfc:buckets/metal/colored_steel', [
 		'tfc:metal/bucket/red_steel',
 		'tfc:metal/bucket/blue_steel'

@@ -44,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
+• Added item repair recipes for things like jetpacks and clothing
 
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
