@@ -421,8 +421,9 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
 			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
 			text.add(3, Text.gold('Multiple different filters can be active at once.'))
-			text.add(4, [Text.of('Prevents eating and some right-click interactions').yellow(), Text.of(',').gold()])
-			text.add(5, Text.gold('no matter if it has filters installed or not.'))
+			text.add(4, '')
+			text.add(5, [Text.of('Prevents eating and some right-click interactions').yellow(), Text.of(',').gold()])
+			text.add(6, Text.gold('no matter if it has filters installed or not.'))
 		}
 	})
 	tooltip.addAdvanced([

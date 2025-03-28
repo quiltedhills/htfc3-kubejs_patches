@@ -1,7 +1,7 @@
 {
   "type": "tfc:anvil",
   "input": {
-    "tag": "forge:double_sheets/bronze"
+    "tag": "forge:double_sheets/bronze_any"
   },
   "result": {
     "item": "steampowered:bronze_large_cogwheel"

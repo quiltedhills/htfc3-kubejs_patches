@@ -4,22 +4,22 @@
     "item": "create:large_cogwheel"
   },
   "transitionalItem": {
-    "item": "create:brass_sheet"
+    "item": "steampowered:bronze_sheet"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:sheets/bronze_any"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         }
       ]
     },
@@ -27,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:sheets/bronze_any"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         }
       ]
     },
@@ -43,15 +43,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:sheets/bronze_any"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         }
       ]
     },
@@ -59,22 +59,22 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         },
         {
-          "tag": "forge:plates/brass"
+          "tag": "forge:sheets/bronze_any"
         }
       ],
       "results": [
         {
-          "item": "create:brass_sheet"
+          "item": "steampowered:bronze_sheet"
         }
       ]
     }
   ],
   "results": [
     {
-      "item": "create:flywheel"
+      "item": "steampowered:bronze_flywheel"
     }
   ],
   "loops": 1

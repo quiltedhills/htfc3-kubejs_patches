@@ -2148,11 +2148,26 @@ onEvent('tags.items', event => {
 		'minecraft:iron_ingot',
 		'tfc:metal/ingot/wrought_iron'
 	]),
-	event.add('forge:ingots/allbronze', [
-		'tfc:metal/ingot/bronze',
-		'tfc:metal/ingot/bismuth_bronze',
-		'tfc:metal/ingot/black_bronze'
-	]),
+	event.add('forge:ingots/bronze_any', [
+		'#forge:ingots/bronze',
+		'#forge:ingots/black_bronze',
+		'#forge:ingots/bismuth_bronze'
+	])
+	event.add('forge:rods/bronze_any', [
+		'#forge:rods/bronze',
+		'#forge:rods/black_bronze',
+		'#forge:rods/bismuth_bronze'
+	])
+	event.add('forge:sheets/bronze_any', [
+		'#forge:sheets/bronze',
+		'#forge:sheets/black_bronze',
+		'#forge:sheets/bismuth_bronze'
+	])
+	event.add('forge:double_sheets/bronze_any', [
+		'#forge:double_sheets/bronze',
+		'#forge:double_sheets/black_bronze',
+		'#forge:double_sheets/bismuth_bronze'
+	])
 	event.add('forge:ingots/glass', [
 		'kubejs:primitive_glass_pane'
 	]),
@@ -2298,6 +2313,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
+		'htm:hammer',
 		'createdeco:zinc_sheet',
 		'createdeco:cast_iron_ingot',
 		'createdeco:cast_iron_sheet',

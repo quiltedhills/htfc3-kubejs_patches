@@ -2,7 +2,7 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "tag": "tfc_ie_addon:treated_wood_lumber"
+      "item": "tfc_ie_addon:treated_wood_lumber"
     }
   ],
   "results": [
