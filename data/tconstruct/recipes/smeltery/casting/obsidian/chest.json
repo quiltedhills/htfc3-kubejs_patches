@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "fluid": {
     "tag": "tconstruct:molten_ender",
-    "amount": 2000
+    "amount": 1000
   },
   "result": "minecraft:ender_chest",
   "cooling_time": 625

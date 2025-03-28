@@ -36,15 +36,15 @@ Please feel free to reach out to me on discord for any questions!
 ### Major things:
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
-• Added custom magnets to replace the Create SA copper magnet <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>
+• Added item repair recipes for things like jetpacks and clothing
+• Added custom magnets to replace the Create SA copper magnet <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
-• Added item repair recipes for things like jetpacks and clothing
 
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
@@ -54,31 +54,31 @@ Please feel free to reach out to me on discord for any questions!
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
 • Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
-• Made Ender Chests significantly more expensive <br/>
+• Made Ender Chests more expensive <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
 • Changed etching acid recipe <br/>
 
 ### Quality of Life:
-• Various improvements to quests <br/>
+• Various improvements to quests (wip) <br/>
 • Added detailed tooltips for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will no longer despawn <br/>
-• Hostile mob deaths no longer produce pollution <br/>
+• Hostile mob deaths should no longer produce pollution <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Added extra recipes for drying mud bricks <br/>
 • Increased redstone lamp recipe yield <br/>
 • Added a pressure chamber recipe for Create basins <br/>
-• Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>
+• Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
 • Tweaked some sand-related recipes <br/>
-• Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
+• Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Improved heat frame and depot interaction <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
-• Various food-related tweaks, including removing unobtainable foods from the food book! <br/>
+• Various food-related tweaks, including removing unobtainable foods from the food book! (wip) <br/>
 • *Drastically* reduced how long cooking pot and kettle recipes take <br/>
 • Made gold and silver apples and carrots edible even when you're not hungry <br/>
 • Added an alternative way of curdling milk using vinegar <br/>
