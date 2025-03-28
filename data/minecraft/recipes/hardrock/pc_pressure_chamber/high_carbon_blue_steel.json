@@ -13,7 +13,7 @@
         "tag": "forge:ingots/weak_blue_steel"
       }
     ],
-    "pressure": 2.0,
+    "pressure": 3.0,
     "results": [
       {
         "item": "tfc:metal/ingot/high_carbon_blue_steel"

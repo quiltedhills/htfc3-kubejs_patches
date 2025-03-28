@@ -13,7 +13,7 @@
         "tag": "forge:ingots/weak_steel"
       }
     ],
-    "pressure": 4.5,
+    "pressure": 3.0,
     "results": [
       {
         "item": "tfc:metal/ingot/high_carbon_black_steel"
