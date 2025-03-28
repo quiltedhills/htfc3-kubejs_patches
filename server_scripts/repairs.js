@@ -8,6 +8,9 @@ const repairables = {
     'create_sa:brass_jetpack_chestplate': [160, ['#forge:sheets/brass', 'create:andesite_alloy', 'create:propeller'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
     'create_jetpack:jetpack': [60, ['#forge:double_sheets/brass', 'create:precision_mechanism', 'create:chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
     'create_jetpack:netherite_jetpack': [420, ['create_sa:brass_cube', '2x create:precision_mechanism', '2x create:smart_chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
+    'create_sa:copper_exoskeleton_chestplate': [160, ['#forge:storage_blocks/copper', 'create:fluid_tank', '#forge:ingots/andesite_alloy'], ['#forge:tools/hammers']],
+    'create_sa:andesite_exoskeleton_chestplate': [240, ['#forge:storage_blocks/andesite_alloy', '#forge:ingots/zinc', '2x #tfc:rock/raw'], ['#forge:tools/hammers']],
+    'create_sa:brass_exoskeleton_chestplate': [320, ['#forge:storage_blocks/brass', '#forge:double_sheets/brass', '2x #forge:ingots/andesite_alloy'], ['#forge:tools/hammers']],
 
     'tfcambiental:wool_hat': [1750, ['tfc:wool_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
     'tfcambiental:wool_sweater': [1000, ['tfc:wool_cloth', '2x #forge:string'], ['#sewingkit:needles', '#forge:shears']],
@@ -45,6 +48,7 @@ const respirators = [
 ]
 
 onEvent('recipes', event => {
+    // Generate item repair recipes
     Object.entries(repairables).forEach(([repairableItem, [repairAmount, repairMaterials, repairTools]]) => {
         const recipe = event.shapeless(
             Item.of(repairableItem, `{Damage:${repairAmount},display:{Lore:['{"text":"Restores ${repairAmount} durability","color":"green","italic":false}']}}`),
@@ -52,7 +56,7 @@ onEvent('recipes', event => {
         ).id(`kubejs:repairing/${repairableItem.replace(':', '/').replace('#', 'tag/')}`)
             .modifyResult((grid, result) => {
                 let item = grid.find(Item.of(repairableItem).ignoreNBT())
-                if (!item || !item.nbt || !item.nbt.Damage) return
+                if (!item?.nbt?.Damage) return
                 item.nbt.Damage = Math.max(0, item.nbt.Damage - repairAmount)
                 return item
             })
@@ -63,17 +67,21 @@ onEvent('recipes', event => {
         })
     })
 
-
+    // Generate respirator filter application recipes
     respirators.forEach(respirator => {
-        ['dust','carbon','sulfur'].forEach(pollutant => {
+        ['dust', 'carbon', 'sulfur'].forEach(pollutant => {
             event.shapeless(
                 Item.of(respirator, `{Fullness: {${pollutant}: 0}}`),
-                [Item.of(respirator).ignoreNBT(), `#adpother:filters/${pollutant}`, '#forge:string', '#sewingkit:needles']
+                [
+                    Item.of(respirator).ignoreNBT(),
+                    `#adpother:filters/${pollutant}`,
+                    '#forge:string',
+                    '#sewingkit:needles'
+                ]
             ).id(`kubejs:add_filter/${respirator.replace(':', '/')}/${pollutant}`)
                 .modifyResult((grid, result) => {
                     let item = grid.find(Item.of(respirator).ignoreNBT())
-                    console.log(`${item?.nbt?.Fullness[pollutant]} => ${item?.nbt?.Fullness[pollutant] == 0}`)
-                    if (!item || item?.nbt?.Fullness[pollutant] == 0) return
+                    if (item?.nbt?.Fullness[pollutant] == 0) return
                     item.nbt.merge(`{Fullness: {${pollutant}: 0}}`)
                     return item
                 })
