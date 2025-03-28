@@ -74,6 +74,7 @@ Please feel free to reach out to me on discord for any questions!
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 2.0 <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI recipes <br/>
+• Improved heat frame and depot interaction <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

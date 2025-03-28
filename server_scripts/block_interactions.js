@@ -16,6 +16,11 @@ onEvent('block.right_click', event => {
         event.player.sound
         event.cancel()
     }
+    // heat frame + depot qol
+    if (event.item.id == 'pneumaticcraft:heat_frame' && event.block.id == 'create:depot' && !event.player.crouching) {
+        event.player.server.runCommandSilent(`title ${event.player} actionbar [["Drop item onto depot, or "], {"keybind":"key.sneak"}, [" + "], {"keybind":"key.use"}, [" to attach it"]]`)
+        event.cancel()
+    }
 })
 
 // These blocks will by default void all of their contents when broken, likely due to a coding oversight.
