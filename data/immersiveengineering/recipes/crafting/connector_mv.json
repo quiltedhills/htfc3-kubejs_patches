@@ -1,14 +1,22 @@
 {
-    "type":"minecraft:crafting_shaped",
-    "pattern":[
-        "i",
-        "w",
-        "c"
-        ],
-    "key":{
-        "i":{"tag":"forge:ingots/rose_gold"},
-        "w":{"tag":"forge:wires/electrum"},
-        "c":{"tag":"immersiveengineering:connector_insulator"}
-        },
-    "result":{"item":"immersiveengineering:connector_mv"}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "w",
+    "c"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "w": {
+      "tag": "forge:wires/electrum"
+    },
+    "c": {
+      "tag": "immersiveengineering:connector_insulator"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:connector_mv"
+  }
 }

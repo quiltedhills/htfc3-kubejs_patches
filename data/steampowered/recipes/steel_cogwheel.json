@@ -6,7 +6,7 @@
   "result": {
     "item": "steampowered:steel_cogwheel"
   },
-  "tier": 3,
+  "tier": 4,
   "rules": [
     "hit_last",
     "draw_second_last"

@@ -40,7 +40,7 @@ Please feel free to reach out to me on discord for any questions!
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
-• Made IE Blast Furnaces functional <br/>
+• Made IE Blast Furnaces functional for making blooms and pig iron <br/>
 • Reworked ore-related tags <br/>
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
@@ -100,6 +100,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed some blocks not dropping their contents when broken (mold tables and sewing tables with drawers) <br/>
 • Fixed incorrect finishing move order for some custom anvil recipes <br/>
 &nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
+• Fixed many anvil recipes having incorrect anvil tier requirements <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore <br/>

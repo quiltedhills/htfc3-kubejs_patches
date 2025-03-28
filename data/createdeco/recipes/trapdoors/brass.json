@@ -6,7 +6,7 @@
   "result": {
     "item": "createdeco:brass_trapdoor"
   },
-  "tier": 2,
+  "tier": 1,
   "rules": [
     "punch_last",
     "punch_not_last",

@@ -6,7 +6,7 @@
   "result": {
     "item": "create:brass_hand"
   },
-  "tier": 2,
+  "tier": 1,
   "rules": [
     "bend_last",
     "bend_second_last",
