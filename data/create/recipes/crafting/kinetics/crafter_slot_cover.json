@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was created by tfch",
   "type": "tfc:welding",
   "first_input": {
     "tag": "forge:nuggets/brass"

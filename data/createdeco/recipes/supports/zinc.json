@@ -6,7 +6,7 @@
   "second_input": {
     "item": "createdeco:zinc_bars"
   },
-  "tier": 1,
+  "tier": 0,
   "result": {
     "item": "createdeco:zinc_support"
   }

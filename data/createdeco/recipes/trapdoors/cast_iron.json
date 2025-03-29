@@ -6,7 +6,7 @@
   "result": {
     "item": "createdeco:cast_iron_trapdoor"
   },
-  "tier": 3,
+  "tier": 1,
   "rules": [
     "punch_last",
     "punch_not_last",

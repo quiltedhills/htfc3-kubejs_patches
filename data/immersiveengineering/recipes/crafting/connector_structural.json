@@ -6,7 +6,7 @@
   "result": {
     "item": "immersiveengineering:connector_structural"
   },
-  "tier": 3,
+  "tier": 4,
   "rules": [
     "bend_last",
     "draw_second_last",

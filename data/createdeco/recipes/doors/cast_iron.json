@@ -6,7 +6,7 @@
   "result": {
     "item": "createdeco:cast_iron_door"
   },
-  "tier": 3,
+  "tier": 1,
   "rules": [
     "hit_last",
     "draw_not_last",

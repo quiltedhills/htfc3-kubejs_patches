@@ -6,7 +6,7 @@
   "second_input": {
     "item": "minecraft:iron_bars"
   },
-  "tier": 3,
+  "tier": 2,
   "result": {
     "item": "createdeco:iron_support"
   }
