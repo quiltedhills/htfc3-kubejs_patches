@@ -75,6 +75,7 @@ Please feel free to reach out to me on discord for any questions!
 • Increased redstone lamp recipe yield <br/>
 • Added a pressure chamber recipe for Create basins <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
+• Added Mekanism recipes for synthesizing TFC dirt blocks <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Improved heat frame and depot interaction <br/>

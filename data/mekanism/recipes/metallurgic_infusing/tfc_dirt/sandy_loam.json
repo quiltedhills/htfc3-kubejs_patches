@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "tfc:dirt/loam"
+    }
+  },
+  "extraInput": {
+    "ingredient": {
+      "tag": "forge:sand_piles",
+      "count": 1
+    }
+  },
+  "output": {
+    "item": "tfc:dirt/sandy_loam"
+  }
+}
