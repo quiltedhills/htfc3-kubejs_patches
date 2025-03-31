@@ -8,6 +8,11 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('minecraft:mineable/pickaxe', [
+		'weather2:weather_deflector',
+		'weather2:weather_forecast',
+		'weather2:tornado_siren'
+	])
 	event.add('minecraft:mineable/shovel', [
 		'weather2:sand_layer',
 		/^weathertfc:sand\/sand_layer/

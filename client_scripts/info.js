@@ -828,4 +828,15 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
 		text.add(1, Text.of('Decorative use only').gold())
 	})
+	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+		} else {
+			text.add(1, [Text.gold('Protects an area around 150 blocks in diameter,')])
+			text.add(2, [Text.gold('centered on the deflector.')])
+			text.add(3, [Text.gold('')])
+			text.add(4, [Text.gold('Does not require anything to operate.')])
+			text.add(5, [Text.gold('Simply place it down and you\'re good to go!')])
+		}
+	})
 })

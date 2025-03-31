@@ -80,6 +80,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Improved heat frame and depot interaction <br/>
+• Made weather deflectors breakable <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
