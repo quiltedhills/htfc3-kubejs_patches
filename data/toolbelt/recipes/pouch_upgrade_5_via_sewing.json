@@ -4,7 +4,7 @@
     {
       "ingredient": {
         "type": "toolbelt:belt_upgrade_level",
-        "upgrade_level": 6
+        "upgrade_level": 4
       },
       "count": 1
     },
@@ -29,7 +29,7 @@
   "result": {
     "item": "toolbelt:belt",
     "nbt": {
-      "Size": 9
+      "Size": 7
     }
   }
 }

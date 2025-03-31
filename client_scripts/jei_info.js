@@ -30,4 +30,12 @@ onEvent('jei.information', event => {
         'Multiple different filters can be active at once.',
         'Type \'$filter\' into JEI for a list of filter items!'
     ])
+    event.add([
+        'toolbelt:belt',
+        'toolbelt:pouch'
+    ], [
+        'A toolbelt starts with just two slots, but you can increase that to up to 9!',
+        ['The more slots you add, however, ', Text.of('the stronger the needle must be').underlined(), '.'],
+        ['The first upgrade only needs a bone needle, the second (bringing the total up to 4 slots) requires an ', Text.of('iron needle').underlined(), ', and the last five (up to 9 total slots) require a ', Text.of('netherite needle').underlined(), '.']
+    ])
 })

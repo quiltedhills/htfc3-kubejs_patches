@@ -4,7 +4,7 @@
     {
       "ingredient": {
         "type": "toolbelt:belt_upgrade_level",
-        "upgrade_level": 6
+        "upgrade_level": 1
       },
       "count": 1
     },
@@ -24,12 +24,12 @@
   "tool": {
     "type": "sewingkit:tool_ingredient",
     "tool_type": "sewingkit_sew",
-    "tool_level": "minecraft:diamond"
+    "tool_level": "minecraft:stone"
   },
   "result": {
     "item": "toolbelt:belt",
     "nbt": {
-      "Size": 9
+      "Size": 4
     }
   }
 }
