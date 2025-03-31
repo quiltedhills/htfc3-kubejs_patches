@@ -2,7 +2,7 @@ onEvent('item.right_click', event => {
     function clean(setCleanlinessTo, cooldown, sound, effectDuration) {
         // Default function parameters are unfortunately not supported by kubejs. '??' operator has some issues as well.
         sound = (sound == null) ? true : sound
-        effectDuration = (effectDuration == null) ? cooldown * 2 : effectDuration
+        effectDuration = (effectDuration == null) ? cooldown * 4 : effectDuration
 
         let cleanlinessLevel = event.player.fullNBT.ForgeCaps['bodyhygiene:bodyhygiene_properties'].bodyhygiene
         event.player.server.runCommandSilent(`bodyhygiene set ${setCleanlinessTo} ${event.player}`)
@@ -62,8 +62,8 @@ onEvent('item.right_click', event => {
         let amountToRestore = Math.min(Math.floor(fluidAmount / mbPerUse), 10 - cleanlinessLevel)
         clean(cleanlinessLevel + amountToRestore, 7, false, 0)
         // Summon particles manually as we don't apply the soapy effect
-        event.player.server.runCommandSilent(`particle minecraft:snowflake ${event.player.x} ${event.player.y + event.player.getEyeHeight() / 2} ${event.player.z} 0.25 ${event.player.getEyeHeight() / 2} 0.25 0 ${Math.floor(6 * (amountToRestore ** 0.5) * event.player.getEyeHeight())}`)
-        event.player.server.runCommandSilent(`playsound pneumaticcraft:short_hiss player @a ${event.player.x} ${event.player.y} ${event.player.z} 0.75 ${1.5 + (Math.random() / 2)}`)
+        event.player.server.runCommandSilent(`particle minecraft:snowflake ${event.player.x} ${event.player.y + event.player.getEyeHeight() / 1.5} ${event.player.z} 0.25 ${event.player.getEyeHeight() / 3.5} 0.25 0 ${Math.floor(6 * (amountToRestore ** 0.5) * event.player.getEyeHeight())}`)
+        event.player.server.runCommandSilent(`playsound pneumaticcraft:short_hiss player @a ${event.player.x} ${event.player.y} ${event.player.z} ${0.5 + amountToRestore / 20} ${1.5 + (Math.random() / 2)}`)
         event.player.server.runCommandSilent(`title ${event.player} actionbar {"text":"Restored ${amountToRestore} points! (${event.item.nbt.CustomModelData - mbPerUse * amountToRestore}mb left)"}`)
         event.item.nbt.CustomModelData -= mbPerUse * amountToRestore
     }

@@ -5,8 +5,8 @@
   },
   "overrides": [
       { "predicate": { "custom_model_data": 50 }, "model": "kubejs:item/sanitizer_1" },
-      { "predicate": { "custom_model_data": 200 }, "model": "kubejs:item/sanitizer_2" },
-      { "predicate": { "custom_model_data": 500 }, "model": "kubejs:item/sanitizer_3" },
+      { "predicate": { "custom_model_data": 250 }, "model": "kubejs:item/sanitizer_2" },
+      { "predicate": { "custom_model_data": 625 }, "model": "kubejs:item/sanitizer_3" },
       { "predicate": { "custom_model_data": 850 }, "model": "kubejs:item/sanitizer_5" }
   ]
 }
