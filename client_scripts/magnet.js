@@ -1,4 +1,4 @@
-// Based on 'kubejs/server_scripts/magnet.js', largely the same but smaller and with some tweaks.
+// Helper script based on 'kubejs/server_scripts/magnet.js', largely the same but smaller and with some tweaks.
 // This script is needed to make items properly sync on the client in multiplayer.
 // The sync is not perfect, but it's good as I could make it.
 

@@ -70,16 +70,12 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('Make solar driers instead!'))
 		}
 	})
-	tooltip.addAdvanced([//#forge:soap/weak
-		'supplementaries:soap'
-	], (item, advanced, text) => {
+	tooltip.addAdvanced(['supplementaries:soap'], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, [Text.gold('Restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
+			text.add(1, [Text.gold('Instantly restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
 			text.add(2, Text.gold('Two is enough to fully clean yourself.'))
-			text.add(3, '')
-			text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
 	tooltip.addAdvanced(/^bodyhygiene:.+_soap$/, (item, advanced, text) => {
@@ -88,8 +84,15 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, [Text.yellow('Completely resets'), Text.gold(' the dirtiness meter.')])
 			text.add(2, Text.gold('A newly crafted bar has four uses.'))
-			text.add(3, '')
-			text.add(4, Text.yellow('Right click to use!'))
+		}
+	})
+	tooltip.addAdvanced('kubejs:sanitizer_bottle', (item, advanced, text) => {
+		text.add(1, `${item?.nbt?.CustomModelData || 0}mb / 1000mb Sanitizer Fluid`)
+		if (!tooltip.shift) {
+			text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(2, [Text.yellow('Instantly resets'), Text.gold(' the dirtiness meter.')])
+			text.add(3, [Text.gold('Costs '), Text.yellow('10mb per point'), Text.gold(', up to 100mb per full meter.')])
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
