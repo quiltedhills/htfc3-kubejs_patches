@@ -50,6 +50,8 @@ Please feel free to reach out to me on discord for any questions!
 • Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
 • Made infested leaves landslide instead of collapsing (think dirt or gravel!) <br/>
+• Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
+&nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
 • Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
@@ -85,6 +87,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added an alternative way of curdling milk using vinegar <br/>
 • Added soy and oat milk, which are difficult-to-make plant-based milk variants <br/>
 • Added more advanced alcohol production recipes <br/>
+• Frothy coconuts and cinnamon bark are now obtainable <br/>
 • Minor improvements for animal carcasses <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>
