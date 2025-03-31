@@ -63,7 +63,7 @@ onEvent('item.registry', event => {
 	event.create('medical_white_powder')		.displayName('Medicinal White Powder')
 	event.create('medical_red_powder')			.displayName('Medicinal Red Powder')
 	event.create('medical_green_powder')		.displayName('Medicinal Green Powder')
-	event.create('chisel_stone_head')			.displayName('Stone Bit Chisel Head')
+	//event.create('chisel_stone_head')			.displayName('Stone Bit Chisel Head')
 	event.create('chisel_iron_head')			.displayName('Wrought Iron Bit Chisel Head')
 	event.create('chisel_rose_gold_head')		.displayName('Rose Gold Bit Chisel Head')
 	event.create('chisel_blue_steel_head')		.displayName('Blue Steel Bit Chisel Head')

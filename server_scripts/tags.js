@@ -2303,6 +2303,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_tiger'
 	])
 	event.removeAllTagsFrom(
+		'chiselsandbits:chisel_stone',
 		'htm:hammer',
 		'createdeco:zinc_sheet',
 		'createdeco:cast_iron_ingot',

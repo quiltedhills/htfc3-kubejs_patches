@@ -49,6 +49,7 @@ onEvent('jei.hide.items', event => {
 		'mekanism:salt',
 		'mekanism:sawdust',
 		'#itemfilters:filters',
+		'chiselsandbits:chisel_stone',
 		'chiselsandbits_tfc:chisel_head_stone',
 		'chiselsandbits_tfc:chisel_head_iron',
 		'chiselsandbits_tfc:chisel_head_gold',
