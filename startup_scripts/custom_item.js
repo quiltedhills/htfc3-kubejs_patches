@@ -25,8 +25,11 @@ onEvent('item.registry', event => {
 	event.create('magnet/hdpe_offline')		.unstackable().rarity('common')
 	event.create('magnet/hdpe')				.unstackable().rarity('rare')
 	event.create('magnet/polonium')			.unstackable().rarity('epic')
-  
-	//event.create('soup_base').displayName('Soup Base').food(food => {food.hunger(1).saturation(0).eaten(ctx => {ctx.player.tell(Text.gold('Hhmmm!'))})})
+	
+	event.create('sanitizer_bottle').unstackable().rarity('uncommon')
+		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13))) // full bar is 13
+		.barColor(itemstack => Color.AQUA)
+		.use((level, player, hand) => true)
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})

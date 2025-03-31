@@ -855,31 +855,15 @@ onEvent('tags.items', event => {
 		'tfc:food/green_apple',
 		'tfc:food/red_apple'
 	])
-	event.add('forge:soap', [
-		'#forge:soap/weak',
-		'#forge:soap/strong'
+	event.add('bodyhygiene:soap', [
+		'#bodyhygiene:soap/weak',
+		'#bodyhygiene:soap/strong',
+		'#bodyhygiene:soap/reusable'
 	])
-	event.add('forge:soap/weak', ['supplementaries:soap'])
-	event.add('forge:soap/strong', [
-		'bodyhygiene:dandelion_soap',
-		'bodyhygiene:poppy_soap',
-		'bodyhygiene:blue_orchid_soap',
-		'bodyhygiene:allium_soap',
-		'bodyhygiene:azure_bluet_soap',
-		'bodyhygiene:red_tulip_soap',
-		'bodyhygiene:orange_tulip_soap',
-		'bodyhygiene:white_tulip_soap',
-		'bodyhygiene:pink_tulip_soap',
-		'bodyhygiene:oxeye_daisy_soap',
-		'bodyhygiene:cornflower_soap',
-		'bodyhygiene:lily_of_the_valley_soap',
-		'bodyhygiene:wither_rose_soap',
-		'bodyhygiene:spore_blossom_soap',
-		'bodyhygiene:sunflower_soap',
-		'bodyhygiene:lilac_soap',
-		'bodyhygiene:rose_bush_soap',
-		'bodyhygiene:peony_soap'
-	])
+	event.add('bodyhygiene:soap/weak', ['supplementaries:soap'])
+	event.add('bodyhygiene:soap/strong', [/^bodyhygiene:.+_soap$/])
+	event.add('bodyhygiene:soap/reusable', ['kubejs:sanitizer_bottle'])
+	
 	event.add('compressedcreativity:blower_mesh', [
 		'compressedcreativity:mesh_empty',
 		'compressedcreativity:mesh_woven',
