@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": [
+    {
+      "item": "tfc:plant/leafy_kelp"
+    },
+    {
+      "item": "tfc:plant/winged_kelp"
+    }
+  ],
+  "result": "tfc:food/dried_kelp",
+  "experience": 0,
+  "cookingtime": 100
+}

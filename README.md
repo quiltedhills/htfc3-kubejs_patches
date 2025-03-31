@@ -50,6 +50,8 @@ Please feel free to reach out to me on discord for any questions!
 • Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
 • Made infested leaves landslide instead of collapsing (think dirt or gravel!) <br/>
+• Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
+&nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
 • Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
 • Reworked recipe for wolf spawn eggs <br/>
@@ -65,16 +67,20 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths should no longer produce pollution <br/>
+• Made it possible to obtain silkworms directly from trees without having to collect the leaves with shears first <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
-• Added extra recipes for drying mud bricks <br/>
+• Added extra recipes for power-drying some items <br/>
+• Added a way to break up geode quartz blocks prior to getting an IE crusher <br/>
 • Increased redstone lamp recipe yield <br/>
 • Added a pressure chamber recipe for Create basins <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
+• Added Mekanism recipes for synthesizing TFC dirt blocks <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Improved heat frame and depot interaction <br/>
+• Made weather deflectors breakable <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -84,6 +90,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added an alternative way of curdling milk using vinegar <br/>
 • Added soy and oat milk, which are difficult-to-make plant-based milk variants <br/>
 • Added more advanced alcohol production recipes <br/>
+• Frothy coconuts and cinnamon bark are now obtainable <br/>
 • Minor improvements for animal carcasses <br/>
 • Fixed a few recipes accepting rotten food <br/>
 • Nerfed vanilla apples <br/>

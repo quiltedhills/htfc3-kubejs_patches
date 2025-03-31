@@ -1,0 +1,28 @@
+{
+  "type": "exnihilosequentia:hammer",
+  "input": {
+    "item": "tfc_ie_addon:mineral/quartz_block"
+  },
+  "results": [
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "count": 1,
+      "chance": 1.0
+    },
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "count": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "count": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "count": 1,
+      "chance": 0.25
+    }
+  ]
+}

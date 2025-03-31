@@ -37,4 +37,17 @@ onEvent('jei.information', event => {
         'Multiple different filters can be active at once.',
         'Type \'$filter\' into JEI for a list of filter items!'
     ])
+    event.add([
+        'toolbelt:belt',
+        'toolbelt:pouch'
+    ], [
+        'A toolbelt starts with just two slots, but you can increase that to up to 9!',
+        ['The more slots you add, however, ', Text.of('the stronger the needle must be').underlined(), '.'],
+        ['The first upgrade only needs a bone needle, the second (bringing the total up to 4 slots) requires an ', Text.of('iron needle').underlined(), ', and the last five (up to 9 total slots) require a ', Text.of('netherite needle').underlined(), '.']
+    ])
+    event.add('create:belt_connector', [
+        'Mechanical belts are unfortunately not very well optimized, which becomes a significant issue on very large servers, such as our official public servers!',
+        ['Please avoid using them unless you ', Text.of('absolutely').italic(), ' have to.'],
+        'Belts are fine in singleplayer or on smaller servers.'
+   ])
 })

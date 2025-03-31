@@ -1,6 +1,9 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'chiselsandbits:chisel_stone'},
+		{id: 'htm:compat/tfc/crafting/dried_kelp_block'},
+
 		// cooking pot recipes are removed in favor of kettle recipes
 		{id: 'farmersdelight:cooking/apple_cider'},
 		{id: 'farmersdelight:cooking/hot_cocoa'},
