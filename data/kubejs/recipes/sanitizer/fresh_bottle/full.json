@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " t ",
+    "pep",
+    " p "
+  ],
+  "key": {
+    "p": {
+      "item": "pneumaticcraft:plastic"
+    },
+    "t": {
+      "item": "pneumaticcraft:safety_tube_module"
+    },
+    "e": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "immersiveengineering:ethanol",
+        "amount": 1000
+      }
+    }
+  },
+  "result": {
+    "item": "kubejs:sanitizer_bottle",
+    "nbt": "{CustomModelData:1000}"
+  }
+}
