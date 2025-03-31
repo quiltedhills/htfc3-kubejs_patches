@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " t ",
+    "p p",
+    " p "
+  ],
+  "key": {
+    "p": {
+      "item": "pneumaticcraft:plastic"
+    },
+    "t": {
+      "item": "pneumaticcraft:safety_tube_module"
+    }
+  },
+  "result": {
+    "item": "kubejs:sanitizer_bottle",
+    "nbt": "{CustomModelData:0}"
+  }
+}

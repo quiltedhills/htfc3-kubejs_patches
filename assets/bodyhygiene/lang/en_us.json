@@ -36,7 +36,7 @@
   "effect.bodyhygiene.soapy": "Soapy",
   "effect.bodyhygiene.dirty": "Dirty",
 
-  "soap.bodyhygiene.body": "You're already drenched in soap!",
+  "soap.bodyhygiene.body": "",
 
   "villager.bodyhygiene.not": "§cUnfortunately, I am unable to trade with you at this time"
 }

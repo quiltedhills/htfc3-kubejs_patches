@@ -891,6 +891,7 @@ onEvent('tags.items', event => {
 		'tfc:food/green_apple',
 		'tfc:food/red_apple'
 	])
+
 	event.add('forge:soap', [
 		'#forge:soap/weak',
 		'#forge:soap/strong'
@@ -919,6 +920,15 @@ onEvent('tags.items', event => {
 		'bodyhygiene:rose_bush_soap',
 		'bodyhygiene:peony_soap'
 	])
+	event.add('bodyhygiene:soap', [
+		'#bodyhygiene:soap/weak',
+		'#bodyhygiene:soap/strong',
+		'#bodyhygiene:soap/reusable'
+	])
+	event.add('bodyhygiene:soap/weak', ['supplementaries:soap'])
+	event.add('bodyhygiene:soap/strong', [/^bodyhygiene:.+_soap$/])
+	event.add('bodyhygiene:soap/reusable', ['kubejs:sanitizer_bottle'])
+	
 	event.add('compressedcreativity:blower_mesh', [
 		'compressedcreativity:mesh_empty',
 		'compressedcreativity:mesh_woven',
