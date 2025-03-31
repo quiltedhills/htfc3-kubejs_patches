@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc_ie_addon:mineral/quartz_block"
+    }
+  },
+  "output": {
+    "item": "tfc_ie_addon:mineral/quartz_shard",
+    "count": 4
+  }
+}
