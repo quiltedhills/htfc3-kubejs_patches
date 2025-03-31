@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "tfc:thatch"
+    },
+  "result": "tfc:groundcover/dead_grass",
+  "experience": 0,
+  "cookingtime": 100
+}

@@ -38,6 +38,7 @@ onEvent('item.right_click', event => {
             // Bodyhygiene soap is hardcoded to not be usable when you are soapy.
             // Adding my own interaction turned out to be buggy,
             // as the soap bar would disappear when it would go from 2 remaining uses to 1.
+            // As this interaction is very rare, I think it is fine to just say no instead of adding proper support.
             event.player.server.runCommandSilent(`title ${event.player} actionbar {"text":"You are too soapy!"}`)
             event.cancel()
             return
@@ -81,7 +82,7 @@ onEvent('block.right_click', event => {
         return
     }
     if (event.player.potionEffects.isActive('bodyhygiene:soapy')) {
-        // Figuring out how to read and modify a blockstate seems not worth the time,
+        // Figuring out how to read and modify a blockstate seems to not be worth the time,
         // so we will just skip this as well lol
         event.player.server.runCommandSilent(`title ${event.player} actionbar {"text":"You are too soapy!"}`)
         event.cancel()
