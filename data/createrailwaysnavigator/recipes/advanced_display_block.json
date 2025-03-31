@@ -1,0 +1,8 @@
+  {
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+      "tag": "createrailwaysnavigator:advanced_displays"
+    },
+    "result": "createrailwaysnavigator:advanced_display_block",
+    "count": 1
+  }

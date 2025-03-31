@@ -6,7 +6,7 @@
   "result": {
     "item": "immersiveengineering:slab_alu_scaffolding_standard"
   },
-  "tier": 3,
+  "tier": 1,
   "rules": [
     "bend_last",
     "draw_second_last",

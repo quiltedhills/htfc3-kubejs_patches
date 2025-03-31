@@ -35,5 +35,5 @@ onEvent('block.modification', event => {
 		event.modify('hardrock_samples:' + name, block => {
 			block.destroySpeed = 0.5
 		})
-	});
+	})
 })

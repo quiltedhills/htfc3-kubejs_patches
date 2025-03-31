@@ -1,0 +1,19 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:sanitizer_bottle"
+    },
+    {
+      "fluid": "immersiveengineering:ethanol",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:sanitizer_bottle",
+      "nbt": "{CustomModelData:1000}"
+    }
+  ]
+}

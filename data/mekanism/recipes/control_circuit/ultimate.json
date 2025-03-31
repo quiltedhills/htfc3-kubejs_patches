@@ -14,7 +14,7 @@
       "tag": "forge:dyes/magenta"
     }
   ],
-  "pressure": 1.0,
+  "pressure": 4.0,
   "results": [
     {
       "item": "mekanism:ultimate_control_circuit"

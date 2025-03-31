@@ -4,9 +4,7 @@
     {"tag": "forge:rods/copper"},
     {"tag": "forge:rods/bismuth"},
     {"tag": "forge:rods/tin"},
-    {"tag": "forge:rods/zinc"},
-    {"tag": "forge:rods/iron"},
-    {"tag": "forge:rods/bronze"}
+    {"tag": "forge:rods/zinc"}
   ],
   "result": {
     "item": "butchersdelight:hook"

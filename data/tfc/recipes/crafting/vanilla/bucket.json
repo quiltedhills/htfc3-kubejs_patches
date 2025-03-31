@@ -1,13 +1,12 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:welding",
   "first_input": {
-    "item": "tfc:metal/bucket/red_steel"
+    "tag": "tfc:buckets/metal/colored_steel"
   },
   "second_input": {
     "tag": "forge:plates/steel"
   },
-  "tier": 0,
+  "tier": 5,
   "result": {
     "item": "minecraft:bucket"
   }

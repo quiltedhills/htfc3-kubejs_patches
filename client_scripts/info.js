@@ -70,16 +70,12 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('Make solar driers instead!'))
 		}
 	})
-	tooltip.addAdvanced([//#forge:soap/weak
-		'supplementaries:soap'
-	], (item, advanced, text) => {
+	tooltip.addAdvanced(['supplementaries:soap'], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, [Text.gold('Restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
+			text.add(1, [Text.gold('Instantly restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
 			text.add(2, Text.gold('Two is enough to fully clean yourself.'))
-			text.add(3, '')
-			text.add(4, Text.yellow('Right click to use!'))
 		}
 	})
 	tooltip.addAdvanced(/^bodyhygiene:.+_soap$/, (item, advanced, text) => {
@@ -88,8 +84,15 @@ onEvent('item.tooltip', tooltip => {
 		} else {
 			text.add(1, [Text.yellow('Completely resets'), Text.gold(' the dirtiness meter.')])
 			text.add(2, Text.gold('A newly crafted bar has four uses.'))
-			text.add(3, '')
-			text.add(4, Text.yellow('Right click to use!'))
+		}
+	})
+	tooltip.addAdvanced('kubejs:sanitizer_bottle', (item, advanced, text) => {
+		text.add(1, `${item?.nbt?.CustomModelData || 0}mb / 1000mb Sanitizer Fluid`)
+		if (!tooltip.shift) {
+			text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+		} else {
+			text.add(2, [Text.yellow('Instantly resets'), Text.gold(' the dirtiness meter.')])
+			text.add(3, [Text.gold('Costs '), Text.yellow('10mb per point'), Text.gold(', up to 100mb per full meter.')])
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
@@ -171,34 +174,20 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('Deals no damage and is completely harmless'))
 		}
 	})
-	tooltip.addAdvanced([
-		'immersiveengineering:blastbrick',
-		'immersiveengineering:blastbrick_reinforced',
-		'immersiveengineering:blastfurnace_preheater',
-		'immersiveengineering:blast_furnace',
-		'immersiveengineering:advanced_blast_furnace'
-	], (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-		} else {
-			text.add(1, Text.red('Decorative use only!'))
-			text.add(2, Text.gold('IE blast furnaces are non-functional'))
-		}
-	})
 	tooltip.addAdvanced('immersiveengineering:cokebrick', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.red('Decorative use only!'))
-			text.add(2, Text.gold('Coke ovens are made from fire bricks'))
+			text.add(1, Text.red('Decorative and crafting use only!'))
+			text.add(2, Text.gold('Coke ovens are made from fire bricks.'))
 		}
 	})
 	tooltip.addAdvanced('create:vertical_gearbox', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
-			text.add(1, Text.gold('Use brass wrench on a normal gearbox'))
-			text.add(2, [Text.gold('Rotate it with '), Text.of('Right click ').yellow(), Text.gold('on a side')])
+			text.add(1, Text.gold('Made by rotating a normal gearbox with a wrench.'))
+			text.add(2, [Text.gold('Hold a wrench and '), Text.of('Right click').yellow(), Text.gold(' its side!')])
 		}
 	})
 	tooltip.addAdvanced('kubejs:feed_vege', (item, advanced, text) => {
@@ -424,7 +413,6 @@ onEvent('item.tooltip', tooltip => {
 		/^adpother:.+_respirator$/,
 		'beyond_earth:oxygen_mask',
 		'beyond_earth:netherite_oxygen_mask',
-		'create:diving_helmet',
 		'create:netherite_diving_helmet',
 		'mekanism:hazmat_mask',
 		'mekanism:scuba_mask'
@@ -433,8 +421,8 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
-			text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			text.add(2, Text.gold('Multiple different filters can be active at once.'))
+			text.add(3, '')
 			text.add(4, [Text.of('Prevents eating and some right-click interactions').yellow(), Text.of(',').gold()])
 			text.add(5, Text.gold('no matter if it has filters installed or not.'))
 		}
@@ -447,10 +435,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
-			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
-			text.add(3, Text.gold('Multiple different filters can be active at once.'))
+			text.add(2, Text.gold('Multiple different filters can be active at once.'))
+			text.add(3, '')
 			text.add(4, Text.gold('Unlike other respirator helmets,'))
-			text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating!').gold()])
+			text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating or limit interactions!').gold()])
 		}
 	})
 	tooltip.addAdvanced([
@@ -855,5 +843,8 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Made from heating up '), Text.yellow('Unlit Torches'), Text.gold('.')])
 			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
 		}
+	})
+	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
+		text.add(1, Text.of('Decorative use only').gold())
 	})
 })

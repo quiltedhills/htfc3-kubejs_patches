@@ -7,7 +7,7 @@
     "item": "create:whisk",
     "count": 1
   },
-  "tier": 1,
+  "tier": 3,
   "rules": [
     "bend_last",
     "draw_second_last",

@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:large_cogwheel"
+  },
+  "transitionalItem": {
+    "item": "immersiveengineering:plate_steel"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        },
+        {
+          "tag": "forge:plates/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        },
+        {
+          "tag": "forge:plates/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        },
+        {
+          "tag": "forge:plates/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        },
+        {
+          "tag": "forge:plates/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "immersiveengineering:plate_steel"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "steampowered:steel_flywheel"
+    }
+  ],
+  "loops": 1
+}

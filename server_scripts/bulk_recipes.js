@@ -34,12 +34,10 @@ let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 			Item.of(`tfc:rock/raw/${rock_type}`),
 			Item.of('tfc:mortar'), Item.of('tfc:mortar'), Item.of('tfc:mortar'), Item.of('tfc:mortar')
 		]
-	).superheated().id(`kubejs:create/artificial_ores/${recipe_id}`)
+	).superheated().id(`kubejs:artificial_ores/basin/${recipe_id}`)
 	event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/raw/${rock_type}`)
-	.id(`kubejs:mekanism/artificial_ores/${recipe_id}`)
+	.id(`kubejs:artificial_ores/combiner/${recipe_id}`)
 }
-
-const mortar = Array(4).fill(Item.of('tfc:mortar'))
 
 onEvent('recipes', event => {
 	rock_types.forEach(rock => {

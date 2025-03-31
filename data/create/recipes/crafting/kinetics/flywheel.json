@@ -4,14 +4,14 @@
     "item": "create:large_cogwheel"
   },
   "transitionalItem": {
-    "item": "create:brass_scaffolding"
+    "item": "create:brass_sheet"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         },
         {
           "tag": "forge:plates/brass"
@@ -19,7 +19,7 @@
       ],
       "results": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         },
         {
           "tag": "forge:plates/brass"
@@ -35,7 +35,7 @@
       ],
       "results": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         },
         {
           "tag": "forge:plates/brass"
@@ -51,7 +51,7 @@
       ],
       "results": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         },
         {
           "tag": "forge:plates/brass"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "create:brass_scaffolding"
+          "item": "create:brass_sheet"
         }
       ]
     }

@@ -6,7 +6,7 @@
   ],
   "key": {
     "S": {
-      "tag": "forge:double_sheets/bronze"
+      "tag": "forge:double_sheets/bronze_any"
     },
     "B": {
       "item": "immersiveengineering:metal_barrel"

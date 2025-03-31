@@ -3,10 +3,10 @@
   "input": {
     "tag": "forge:double_ingots/wrought_iron"
   },
-  "tier": 3,
   "result": {
     "item": "immersiveengineering:sawblade"
   },
+  "tier": 3,
   "rules": [
     "bend_last",
     "draw_second_last",

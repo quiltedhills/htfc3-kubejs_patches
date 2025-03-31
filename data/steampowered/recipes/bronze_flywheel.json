@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:large_cogwheel"
+  },
+  "transitionalItem": {
+    "item": "steampowered:bronze_sheet"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "steampowered:bronze_sheet"
+        },
+        {
+          "tag": "forge:sheets/bronze_any"
+        }
+      ],
+      "results": [
+        {
+          "item": "steampowered:bronze_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "steampowered:bronze_sheet"
+        },
+        {
+          "tag": "forge:sheets/bronze_any"
+        }
+      ],
+      "results": [
+        {
+          "item": "steampowered:bronze_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "steampowered:bronze_sheet"
+        },
+        {
+          "tag": "forge:sheets/bronze_any"
+        }
+      ],
+      "results": [
+        {
+          "item": "steampowered:bronze_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "steampowered:bronze_sheet"
+        },
+        {
+          "tag": "forge:sheets/bronze_any"
+        }
+      ],
+      "results": [
+        {
+          "item": "steampowered:bronze_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "steampowered:bronze_flywheel"
+    }
+  ],
+  "loops": 1
+}

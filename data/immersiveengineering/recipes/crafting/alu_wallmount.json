@@ -6,7 +6,7 @@
   "result": {
     "item": "immersiveengineering:alu_wallmount"
   },
-  "tier": 3,
+  "tier": 1,
   "rules": [
     "bend_last",
     "draw_second_last",

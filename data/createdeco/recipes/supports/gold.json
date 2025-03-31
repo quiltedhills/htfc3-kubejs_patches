@@ -16,7 +16,7 @@
       "item": "tconstruct:gold_bars"
     }
   ],
-  "tier": 1,
+  "tier": 0,
   "result": {
     "item": "createdeco:gold_support"
   }

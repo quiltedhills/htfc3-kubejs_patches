@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:welding",
   "first_input": {
     "item": "immersive_aircraft:propeller"
@@ -7,7 +6,7 @@
   "second_input": {
     "item": "immersive_aircraft:propeller"
   },
-  "tier": 0,
+  "tier": 2,
   "result": {
     "item": "beyond_earth:engine_fan"
   }

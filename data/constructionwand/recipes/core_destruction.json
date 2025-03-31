@@ -7,7 +7,7 @@
   ],
   "key": {
     "O": {
-      "tag": "mekanism:meka_tool"
+      "item": "mekanism:meka_tool"
     },
     "X": {
       "item": "minecraft:diamond_pickaxe"

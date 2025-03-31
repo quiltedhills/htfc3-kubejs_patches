@@ -7,7 +7,7 @@
     "item": "createaddition:iron_wire",
     "count": 2
   },
-  "tier": 1,
+  "tier": 3,
   "rules": [
     "bend_last",
     "draw_second_last",
