@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "firmalife:vat",
   "input_item": {
     "ingredient": {
@@ -11,7 +10,7 @@
     "amount": 200
   },
   "output_fluid": {
-    "fluid": "create:tea",
+    "fluid": "kubejs:builders_tea",
     "amount": 200
   }
 }

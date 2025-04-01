@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+	{
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "firmalife:food/toast"
+		}
+	},
+	{
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "kubejs:food/butter_pat"
+		}
+	}
+	],
+	"result": {
+		"item": "firmalife:food/toast_with_butter"
+	}
+}

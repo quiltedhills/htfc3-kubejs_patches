@@ -1,0 +1,9 @@
+{
+	"ingredient": {
+		"item": "kubejs:food/butter_pat"
+	},
+	"category": "other",
+	"hunger": 1,
+	"saturation": 0,
+	"decay_modifier": 3
+}
