@@ -1,0 +1,18 @@
+{
+	"type": "create:mixing",
+	"ingredients": [
+	{
+		"item": "pneumaticcraft:glycerol"
+	},
+	{
+		"fluid": "immersiveengineering:ethanol",
+		"nbt": {},
+		"amount": 250
+	}
+	],
+	"results": [
+	{
+		"item": "kubejs:misc_mats/hand_sanitizer"
+	}
+	]
+}

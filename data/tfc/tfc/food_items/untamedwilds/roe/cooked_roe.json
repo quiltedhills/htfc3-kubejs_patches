@@ -1,0 +1,9 @@
+{
+	"ingredient": {
+		"item": "kubejs:food/cooked_roe"
+	},
+	"hunger": 4,
+	"saturation": 10,
+	"decay_modifier": 1.5,
+	"protein": 1.5
+}
