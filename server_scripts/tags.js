@@ -8,6 +8,7 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('create:non_movable', 'tfc:sheet_pile')
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_deflector',
 		'weather2:weather_forecast',
