@@ -1,0 +1,20 @@
+{
+	"type": "tfc:barrel_sealed",
+	"input_item": {
+		"ingredient": {
+			"type": "tfc:has_trait",
+			"trait": "firmalife:dried",
+			"ingredient": {
+				"item": "firmalife:food/frothy_coconut"
+			}
+		}
+	},
+	"input_fluid": {
+		"ingredient": "minecraft:water",
+		"amount": 200
+	},
+	"output_item": {
+		"item": "kubejs:misc_mats/soaked_coconut"
+	},
+	"duration": 8000
+}

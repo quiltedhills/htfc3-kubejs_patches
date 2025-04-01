@@ -1,0 +1,19 @@
+{
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+	{
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "kubejs:misc_mats/soaked_coconut"
+		}
+	}
+	],
+	"fluid_ingredient": {
+		"ingredient": "minecraft:water",
+		"amount": 1000
+	},
+	"output_item": {
+		"item": "kubejs:misc_mats/washed_coconut"
+	}
+}
+	
