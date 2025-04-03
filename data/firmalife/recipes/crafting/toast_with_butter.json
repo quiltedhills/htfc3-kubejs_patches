@@ -1,0 +1,47 @@
+{
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/toast"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/toast"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/toast"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/toast"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/butter"
+      }
+    }
+  ],
+  "primary_ingredient": {
+    "item": "firmalife:food/toast"
+  },
+  "result": {
+    "stack": {
+      "item": "firmalife:food/toast_with_butter",
+      "count": 4
+    },
+    "modifiers": [
+      "tfc:copy_food"
+    ]
+  }
+}
