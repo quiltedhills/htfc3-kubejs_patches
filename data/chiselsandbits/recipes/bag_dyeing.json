@@ -1,0 +1,16 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "chiselsandbits:bit_bag"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:white_dye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "chiselsandbits:bit_bag_dyed"
+  },
+  "duration": 1000
+}

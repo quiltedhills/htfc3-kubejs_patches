@@ -11,9 +11,13 @@
 
 
 // For adding extra functions to this:
+//
 // Each function has a public variant with no code that stores input parameters and JSDocs,
 // and a private variant that has no jsdocs and does the code.
-// Each function has to be explicitly defined in this typedef block right below this.
+//
+// Each function has to be explicitly defined in this typedef block right below this,
+// as well as added to the global createPonderHelpers() function.
+//
 // Nested functions (like pressureChamber) need their own typedef,
 // one such can be found below where the related functions are defined.
 

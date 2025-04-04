@@ -837,6 +837,8 @@ onEvent('item.tooltip', tooltip => {
 			text.add(3, [Text.gold('')])
 			text.add(4, [Text.gold('Does not require anything to operate.')])
 			text.add(5, [Text.gold('Simply place it down and you\'re good to go!')])
+			text.add(6, [Text.gold('')])
+			text.add(7, [Text.gold('Can be destroyed, but '), Text.red('will not drop itself when broken'), Text.gold('.')])
 		}
 	})
 	tooltip.addAdvanced('supplementaries:bellows', (item, advanced, text) => {
@@ -851,5 +853,8 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(['create:belt_connector'], (item, advanced, text) => {
 		text.add(1, Text.of('Please minimize usage on large servers!').gold())
+	})
+	tooltip.addAdvanced(['create:cart_assembler'], (item, advanced, text) => {
+		text.add(1, Text.of('Picking up contraption minecarts with a wrench is disabled').red())
 	})
 })

@@ -4,7 +4,7 @@
     "item": "minecraft:chain"
   },
   "result": {
-    "fluid": "tfc:cast_iron",
+    "fluid": "tfc:metal/cast_iron",
     "amount": 6
   },
   "temperature": 800,
