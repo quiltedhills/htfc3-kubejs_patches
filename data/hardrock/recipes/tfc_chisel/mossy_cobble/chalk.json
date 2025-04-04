@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:rock/mossy_cobble/chalk",
+  "result": "tfc:rock/cobble/chalk",
+  "mode": "smooth"
+}

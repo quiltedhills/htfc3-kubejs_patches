@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:wood/log/spruce",
+  "result": "minecraft:spruce_log",
+  "mode": "smooth"
+}
