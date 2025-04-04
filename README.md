@@ -72,6 +72,7 @@ Please feel free to reach out to me on discord for any questions!
 • Hostile mob deaths should no longer produce pollution <br/>
 • Made it possible to obtain silkworms directly from trees without having to collect the leaves with shears first <br/>
 • Made infested leaves landslide instead of collapsing (think dirt or gravel) <br/>
+• Added TFC grass blocks to the '#minecraft:dirt' tag, which allows things like planting rubberwood trees on TFC grass blocks <br/>
 • Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
@@ -85,6 +86,8 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Made heat frame and depot interaction more pleasant <br/>
+• Made ice shavings less intrusive <br/>
+• Tweaked recipes and information for vanilla gemstones <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

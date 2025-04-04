@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/emerald"
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:dust_emerald"
+    }
+  ],
+  "processingTime": 300
+}

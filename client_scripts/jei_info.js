@@ -46,4 +46,14 @@ onEvent('jei.information', event => {
     event.add(['minecraft:ice', 'tfc:ice_pile', 'minecraft:packed_ice', 'minecraft:blue_ice'], [
         'Ice blocks can be obtained as an item by breaking them with a saw'
     ])
+    event.add(['minecraft:diamond', 'minecraft:emerald'], [
+        'There are two main ways of obtaining diamonds and emeralds:',
+        'First, you have the option of crushing and then washing their uncut variants, and then melting the grit in a TConstruct smeltery. For diamonds, this requires blazing blood.',
+        'A simpler option, albeit one that relies on some luck, is to find a villager willing to trade away cut diamonds or emeralds, which you can then polish and use.',
+        'Amethyst can be similarly obtained from trading or from ore, but it can also be sourced from quartz ores with a foundry.'
+    ])
+    event.add('minecraft:amethyst_shard', [
+        'Amethyst can be obtained from villager trading or from processing ore, similar to how diamonds and emeralds are obtained.',
+        'But, unlike those, it can also be sourced from nether quartz ore using a foundry.'
+    ])
 })

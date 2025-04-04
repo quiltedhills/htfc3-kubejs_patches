@@ -212,6 +212,9 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.remove('forge:gems/diamond', 'tfc:gem/diamond')
+	event.remove('forge:gems/emerald', 'tfc:gem/emerald')
+	event.remove('forge:gems/lapis', 'tfc:gem/lapis_lazuli')
 	event.add('forge:tools/screwdrivers', '#immersiveengineering:tools/screwdrivers')
 	event.add('sewingkit:needles', [
 		'sewingkit:bone_sewing_needle',
