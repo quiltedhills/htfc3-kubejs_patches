@@ -8,6 +8,13 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('minecraft:dirt', [
+		'tfc:grass/silt',
+		'tfc:grass/loam',
+		'tfc:grass/sandy_loam',
+		'tfc:grass/silty_loam'
+	]),
+	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
 	event.add('create:non_movable', 'tfc:sheet_pile')
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_forecast',
@@ -47,9 +54,6 @@ onEvent('tags.blocks', event => {
 		'#tfc:torches'
 	])
 	event.add('functionalstorage:drawers', /^functionalstorage:.*_[124]$/)
-	event.add('tfc:can_be_snow_piled', [
-		//'geolosys:lignite_ore_sample',
-	])
 	event.add('tfc:supports_landslide', [
 		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
@@ -67,45 +71,6 @@ onEvent('tags.blocks', event => {
 	event.add('tfc:can_collapse', [
 		/^tfc:raw_sandstone\/.+/
 	])
-	//event.remove('minecraft:leaves', [
-	//	'#dynamictrees:leaves',
-	//	'tfc:wood/leaves/acacia',
-	//	'tfc:wood/leaves/ash',
-	//	'tfc:wood/leaves/aspen',
-	//	'tfc:wood/leaves/birch',
-	//	'tfc:wood/leaves/blackwood',
-	//	'tfc:wood/leaves/chestnut',
-	//	'tfc:wood/leaves/douglas_fir',
-	//	'tfc:wood/leaves/hickory',
-	//	'tfc:wood/leaves/kapok',
-	//	'tfc:wood/leaves/maple',
-	//	'tfc:wood/leaves/palm',
-	//	'tfc:wood/leaves/pine',
-	//	'tfc:wood/leaves/rosewood',
-	//	'tfc:wood/leaves/sequoia',
-	//	'tfc:wood/leaves/spruce',
-	//	'tfc:wood/leaves/sycamore',
-	//	'tfc:wood/leaves/white_cedar'
-	//])
-	//event.add('forge:noinfused', [
-	//	'dttfc:acacia_leaves',
-	//	'dttfc:ash_leaves',
-	//	'dttfc:aspen_leaves',
-	//	'dttfc:birch_leaves',
-	//	'dttfc:blackwood_leaves',
-	//	'dttfc:chestnut_leaves',
-	//	'dttfc:douglas_fir_leaves',
-	//	'dttfc:hickory_leaves',
-	//	'dttfc:kapok_leaves',
-	//	'dttfc:maple_leaves',
-	//	'dttfc:palm_leaves',
-	//	'dttfc:pine_leaves',
-	//	'dttfc:rosewood_leaves',
-	//	'dttfc:sequoia_leaves',
-	//	'dttfc:spruce_leaves',
-	//	'dttfc:sycamore_leaves',
-	//	'dttfc:white_cedar_leaves'
-	//])
 	event.add('minecraft:mineable/axe', [
 		'sewingkit:sewing_station',
 		'sewingkit:storing_sewing_station'

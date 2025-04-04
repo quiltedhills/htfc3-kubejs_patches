@@ -42,5 +42,8 @@ onEvent('jei.information', event => {
         'Mechanical belts are unfortunately not very well optimized, which becomes a significant issue on very large servers, such as our official public servers!',
         ['Please avoid using them unless you ', Text.of('absolutely').italic(), ' have to.'],
         'Belts are fine in singleplayer or on smaller servers.'
-   ])
+    ])
+    event.add(['minecraft:ice', 'tfc:ice_pile', 'minecraft:packed_ice', 'minecraft:blue_ice'], [
+        'Ice blocks can be obtained as an item by breaking them with a saw'
+    ])
 })

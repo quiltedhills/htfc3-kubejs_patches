@@ -33,7 +33,7 @@ onEvent('block.break', event => {
 
         storage.forEach(stack => {
             if (!stack.ForgeCaps) event.block.popItem(Item.of(stack.id, stack.Count, stack.Tag))
-            else {
+            else {   // Manual pop that lets us assign ForgeCaps data
                 let itemEntity = event.level.createEntity('item')
                 itemEntity.fullNBT = `{Item:${stack}}`
                 itemEntity.x = event.block.x + 0.5
@@ -45,5 +45,27 @@ onEvent('block.break', event => {
                 itemEntity.spawn()
             }
         })
+    }
+
+    // Prevent ice from spawning water when broken with a saw
+    if (event.block.id == 'minecraft:ice' && !event.player.isCreativeMode()) {
+        if (event.player.mainHandItem.hasTag('forge:tools/saws')) {
+            event.block.set('minecraft:air')        // Usual loot table drops seem to stop working
+            event.block.popItem('minecraft:ice')    // when replacing the block with air
+        }
+    }
+    // TFC's Ice Piles seem to not drop any items even if their loot table is modified
+    if (event.block.id == 'tfc:ice_pile' && !event.player.isCreativeMode()) {
+        if (event.player.mainHandItem.hasTag('forge:tools/saws')) {
+            event.block.set('minecraft:air')
+            event.block.popItem('minecraft:ice')
+            return
+        } else if (
+            event.player.mainHandItem.hasTag('forge:tools/hammers')
+            || event.player.mainHandItem.hasTag('exnihilosequentia:hammer')
+        ) {
+            event.block.popItem('firmalife:ice_shavings')
+            if (Math.random() > 0.5) event.block.popItem('firmalife:ice_shavings')
+        }
     }
 })
