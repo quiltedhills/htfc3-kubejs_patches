@@ -720,6 +720,7 @@ onEvent('item.tooltip', tooltip => {
 		/^createdeco:.+_lamp$/,
 		/^pneumaticcraft:wall_lamp/,
 		'glassential:glass_light',
+		'create:experience_block',
 	], (item, advanced, text) => {
 		text.add(1, Text.of('Permanent light source').gold())
 	})

@@ -41,7 +41,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
 • Introduced a few custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
-• Recipe overhauls for permanent light sources (type 'permanent' into JEI to see those) <br/>
+• Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>

@@ -120,7 +120,9 @@ onEvent('ponder.registry', event => {
         scene.rotateCameraY(90)
         scene.idle(15)
         helpers.hide([0, 2, 2], 5, Facing.down)
-        // mention IE crates as storage
+        
+    // Keyframe 5 - Mention IE crates as storage
+        scene.addLazyKeyframe()
         helpers.hide([2, 5, 2], 0, Facing.up)
         helpers.hide([4, 2, 2], 20, Facing.east)
         scene.idle(20)
