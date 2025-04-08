@@ -7,7 +7,7 @@
         "tag": "minecraft:candles"
       },
       "subtracted": {
-        "item": "minecraft:candle"
+        "item": "minecraft:cyan_candle"
       }
     }
   },
@@ -16,6 +16,6 @@
     "pigment": "mekanism:cyan"
   },
   "output": {
-    "item": "minecraft:cyancandle"
+    "item": "minecraft:cyan_candle"
   }
 }

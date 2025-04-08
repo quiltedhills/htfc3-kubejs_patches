@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:rock/mossy_cobble/dolomite",
+  "result": "tfc:rock/cobble/dolomite",
+  "mode": "smooth"
+}

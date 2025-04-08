@@ -7,7 +7,7 @@
         "tag": "minecraft:candles"
       },
       "subtracted": {
-        "item": "minecraft:candle"
+        "item": "minecraft:white_candle"
       }
     }
   },
@@ -16,6 +16,6 @@
     "pigment": "mekanism:white"
   },
   "output": {
-    "item": "minecraft:whitecandle"
+    "item": "minecraft:white_candle"
   }
 }

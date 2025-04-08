@@ -1,9 +1,17 @@
 {
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:prismarine"
-  },
-  "result": "minecraft:prismarine_bricks",
-  "experience": 0.0,
-  "cookingtime": 200
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:prismarine"
+      },
+      {
+        "tag": "tfc:chisels"
+      }
+    ],
+    "result": {
+      "item": "minecraft:prismarine_bricks"
+    }
+  }
 }

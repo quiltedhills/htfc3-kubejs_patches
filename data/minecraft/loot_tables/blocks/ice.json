@@ -2,14 +2,14 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:ice",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -17,8 +17,29 @@
                     "tag": "forge:tools/saws"
                   }
                 }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "firmalife:ice_shavings",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "tag": "forge:tools/hammers"
+                  }
+                }
               ],
-              "name": "minecraft:ice"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
             }
           ]
         }

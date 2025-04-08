@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:wood/log/ash",
+  "result": "minecraft:jungle_log",
+  "mode": "smooth"
+}

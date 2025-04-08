@@ -6,6 +6,6 @@
     "lootr:special_loot_inventory",
     "lootr:special_loot_shulker",
     "lootr:special_trapped_loot_chest",
-    "functionalstorage:drawers"
+    "#functionalstorage:drawers"
   ]
 }

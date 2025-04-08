@@ -1,0 +1,6 @@
+{
+    "type": "tfc:chisel",
+    "ingredient": "minecraft:prismarine",
+    "result": "minecraft:prismarine_bricks",
+    "mode": "smooth"
+}

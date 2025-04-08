@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:wood/log/oak",
+  "result": "minecraft:oak_log",
+  "mode": "smooth"
+}

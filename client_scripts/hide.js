@@ -4,24 +4,27 @@ onEvent('jei.remove.categories', event => {
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
-	event.hide('tconstruct:beetroot_soup'),
-	event.hide('immersiveengineering:potion'),
-	event.hide('tconstruct:potion'),
-	event.hide('beyond_earth:oil'),
-	event.hide('create:chocolate'),
-	event.hide('create:honey'),
-	event.hide('pneumaticcraft:oil'),
-	event.hide('pneumaticcraft:vegetable_oil'),
-	event.hide('pneumaticcraft:diesel'),
-	event.hide('pneumaticcraft:biodiesel'),
-	event.hide('pneumaticcraft:kerosene'),
-	event.hide('pneumaticcraft:gasoline'),
-	event.hide('pneumaticcraft:lubricant'),
-	event.hide('pneumaticcraft:ethanol'),
-	event.hide('immersiveengineering:plantoil')
+	event.hide([
+		'tconstruct:beetroot_soup',
+		'immersiveengineering:potion',
+		'tconstruct:potion',
+		'beyond_earth:oil',
+		'create:chocolate',
+		'create:honey',
+		'pneumaticcraft:oil',
+		'pneumaticcraft:vegetable_oil',
+		'pneumaticcraft:diesel',
+		'pneumaticcraft:biodiesel',
+		'pneumaticcraft:kerosene',
+		'pneumaticcraft:gasoline',
+		'pneumaticcraft:lubricant',
+		'pneumaticcraft:ethanol',
+		'immersiveengineering:plantoil'
+	])
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'kubejs:raw_platinum',
 		'ftbdripper:water_bowl',
 		'tconstruct:potion_bucket',
 		'supplementaries:ash',

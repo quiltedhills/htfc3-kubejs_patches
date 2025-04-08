@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:damage_inputs_shaped_crafting",
   "recipe": {
     "type": "tfc:advanced_shaped_crafting",
@@ -33,6 +32,8 @@
       "modifiers": [
         "tfc:sandwich"
       ]
-    }
+    },
+    "input_row": 0,
+    "input_column": 0
   }
 }

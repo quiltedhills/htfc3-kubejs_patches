@@ -7,7 +7,7 @@
         "tag": "minecraft:candles"
       },
       "subtracted": {
-        "item": "minecraft:candle"
+        "item": "minecraft:pink_candle"
       }
     }
   },
@@ -16,6 +16,6 @@
     "pigment": "mekanism:pink"
   },
   "output": {
-    "item": "minecraft:pinkcandle"
+    "item": "minecraft:pink_candle"
   }
 }

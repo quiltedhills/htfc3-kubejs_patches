@@ -3,7 +3,11 @@
 2. Select 'Download ZIP'
 3. Delete the contents of your instance's/server's kubejs folder
 4. Extract the zip file you just downloaded into the now empty kubejs folder
-5. Get the mod [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163). This is required on both the server and the clients!
+5. Get the following mods:
+- [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163)
+- [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611)
+- [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)
+- [PonderJS](https://www.curseforge.com/minecraft/mc-mods/ponder/files/3881555) (not needed on server)
 6. Yay!
 
 If something goes wrong, please feel free to reach out to me (air) and ask for help!
@@ -16,7 +20,7 @@ If something goes wrong, please feel free to reach out to me (air) and ask for h
 1. Make a github account and fork this repository with the Fork button to create your personal copy that you can freely mess with
 2. Download something that will let you handle the git-related things, [Github Desktop](https://desktop.github.com/download/) is pretty beginner-friendly! I also like VS Code's built-in source control feature. You can use whatever you're comfortable with though!
 3. Delete everything inside of the kubejs folder of your hardrock v3 instance
-4. Download and add the [Create Deco mod](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163) (and optionally [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611) and [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)) to your instance's mods folder
+4. Download and add the the mods from the installation guide section above to your instance's mods folder
 5. (will be using github desktop for this guide)
 - Open Github Desktop and log into your github account
 - Go to File > Clone Repository. Select your forked repository and **make sure to set the local path to be the kubejs folder of your instance!**
@@ -36,7 +40,8 @@ Please feel free to reach out to me on discord for any questions!
 ### Major things:
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
-• Recipe overhauls for permanent light sources (type 'permanent' into JEI!) <br/>
+• Introduced a few custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
+• Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>
@@ -49,38 +54,40 @@ Please feel free to reach out to me on discord for any questions!
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
-• Made infested leaves landslide instead of collapsing (think dirt or gravel!) <br/>
 • Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
 &nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
-• Reworked nucleosynthesizer recipes <br/>
 • Blacklisted villagers from cage traps <br/>
-• Reworked recipe for wolf spawn eggs <br/>
-• Tweaked the durability of Ex Nihilo hammers (now called crude hammers!) <br/>
-• Made Ender Chests more expensive <br/>
+• Tweaked the durability of crude hammers (previously known as just Ex Nihilo hammers) <br/>
+• Made Ender Chests, Wolf Spawn Eggs and Rotational Compressors more expensive <br/>
+• Tweaked nucleosynthesizer recipes, as most of them were unchanged from base mekanism <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
 • Changed etching acid recipe <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>
-• Added detailed tooltips for various items <br/>
+• Added detailed tooltips and info tabs for various items <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths should no longer produce pollution <br/>
 • Made it possible to obtain silkworms directly from trees without having to collect the leaves with shears first <br/>
+• Made infested leaves landslide instead of collapsing (think dirt or gravel) <br/>
+• Added TFC grass blocks to the '#minecraft:dirt' tag, which allows things like planting rubberwood trees on TFC grass blocks <br/>
+• Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Added extra recipes for power-drying some items <br/>
 • Added a way to break up geode quartz blocks prior to getting an IE crusher <br/>
-• Increased redstone lamp recipe yield <br/>
+• Increased how many redstone lamps you get per recipe <br/>
 • Added a pressure chamber recipe for Create basins <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
 • Added Mekanism recipes for synthesizing TFC dirt blocks <br/>
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
-• Improved heat frame and depot interaction <br/>
-• Made weather deflectors breakable <br/>
+• Made heat frame and depot interaction more pleasant <br/>
+• Made ice shavings less intrusive <br/>
+• Tweaked recipes and information for vanilla gemstones <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -101,6 +108,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for TFC ore blocks for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
 • Re-introduced recipes for vegetable crates from Farmer's Delight <br/>
+• Added recipes for some previously unobtainable blocks <br/>
 
 ### Fixes:
 • Added a KubeJS-based recipe for akashic tomes (this fixes the recipe not working on servers) <br/>

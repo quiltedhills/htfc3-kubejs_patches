@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "glassential:glass_light"
+    }
+  },
+  "extraInput": {
+    "ingredient": {
+      "item": "create_sa:heap_of_experience"
+    },
+    "amount": 12
+  },
+  "output": {
+    "item": "create:experience_block"
+  }
+}

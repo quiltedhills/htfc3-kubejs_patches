@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "tfc:rock/mossy_cobble/quartzite",
+  "result": "tfc:rock/cobble/quartzite",
+  "mode": "smooth"
+}

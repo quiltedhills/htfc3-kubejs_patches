@@ -7,7 +7,7 @@
         "tag": "minecraft:candles"
       },
       "subtracted": {
-        "item": "minecraft:candle"
+        "item": "minecraft:lime_candle"
       }
     }
   },
@@ -16,6 +16,6 @@
     "pigment": "mekanism:lime"
   },
   "output": {
-    "item": "minecraft:limecandle"
+    "item": "minecraft:lime_candle"
   }
 }

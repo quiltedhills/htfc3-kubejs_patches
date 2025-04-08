@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "tfc:advanced_shapeless_crafting",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -11,7 +11,15 @@
       "tag": "firmalife:foods/preserves"
     }
   ],
+  "primary_ingredient": {
+    "item": "firmalife:food/toast"
+  },
   "result": {
-    "item": "firmalife:food/toast_with_jam"
+    "stack": {
+      "item": "firmalife:food/toast_with_jam"
+    },
+    "modifiers": [
+      "tfc:copy_food"
+    ]
   }
 }

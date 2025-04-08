@@ -1,0 +1,18 @@
+{
+  "type": "exnihilosequentia:hammer",
+  "input": {
+    "item": "minecraft:ice"
+  },
+  "results": [
+    {
+      "item": "firmalife:ice_shavings",
+      "count": 1,
+      "chance": 1.0
+    },
+    {
+      "item": "firmalife:ice_shavings",
+      "count": 1,
+      "chance": 0.5
+    }
+  ]
+}
