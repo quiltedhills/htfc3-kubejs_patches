@@ -19,7 +19,8 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/refined_vanilla')
 	event.create('misc_mats/hand_sanitizer')  .displayName('Hand Sanitizer')
 	
-	//Oil Items:
+	//Oil Items: no longer needed
+	/*
 	event.create('misc_mats/soaked_coconut')
 	event.create('misc_mats/washed_coconut')
 	event.create('misc_mats/ground_coconut')
@@ -29,6 +30,7 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/coconut_paste')
 	event.create('misc_mats/soy_paste')
 	event.create('misc_mats/corn_paste')
+	*/
 	//End oil items.
 	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')

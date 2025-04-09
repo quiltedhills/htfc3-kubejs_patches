@@ -28,7 +28,9 @@ onEvent('fluid.registry', event => {
 	event.create("curdled_soy_milk")	.thinTexture(0xc3c9a1)	.bucketColor(0xc3c9a1)	.displayName("Curdled Soy Milk")				.noBlock()
 	// End Milk Fluids
 	event.create("builders_tea")		.thinTexture(0xcd7559)	.bucketColor(0xcd7559)	.displayName("Builder's Tea")					.noBlock()
-	// Oil Fluids
+	
+	// Old Oil Fluids, keeping for entertainment purposes
+	/*
 	event.create("coconut_oil_water")   .thinTexture(0xb0a56d)  .bucketColor(0xb0a56d)  .displayName("Coconut Oil Water")               .noBlock()
 	event.create("coconut_tincture")    .thinTexture(0xad9f58)  .bucketColor(0xad9f58)  .displayName("Coconut Tincture")                .noBlock()
 	event.create("distilled_coconut")   .thinTexture(0xab9a44)  .bucketColor(0xab9a44)  .displayName("Distilled Coconut Oil")           .noBlock()
@@ -53,5 +55,15 @@ onEvent('fluid.registry', event => {
 	event.create("corn_oil")            .thinTexture(0xfafa42)  .bucketColor(0xfafa42)  .displayName("Corn Oil")                        .noBlock()
 	event.create("seed_water")          .thinTexture(0xb8a97f)  .bucketColor(0xb8a97f)  .displayName("Seed Oil Water")                  .noBlock()
 	event.create("seed_tincture")       .thinTexture(0xb8a46e)  .bucketColor(0xb8a46e)  .displayName("Seed Tincture")                   .noBlock()
-	// End Oil Fluids
+	*/
+	// End Old Oil Fluids
+	
+	// Oil Fluids Attempt 2
+	//-------Tallow Oil (Lard)----------
+	event.create("tallow_tincture").thinTexture(0xe0e0e0).bucketColor(0xe0e0e0).displayName("Tallow Tincture").noBlock()
+	event.create("lard").thinTexture(0xe8e8e8).bucketColor(0xe8e8e8).displayName("Lard").noBlock()
+	//-------Seed Oil Additions---------
+	event.create("seed_water").thinTexture(0xb8a97f).bucketColor(0xb8a97f).displayName("Seed Oil Water").noBlock()
+	event.create("seed_tincture").thinTexture(0xb8a46e).bucketColor(0xb8a46e).displayName("Seed Tincture").noBlock()
+	//End Oil Attempt 2
 })
