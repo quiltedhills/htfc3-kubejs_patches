@@ -1,0 +1,9 @@
+{
+	"ingredient": {
+		"item": "untamedwilds:egg_football_fish"
+	},
+	"hunger": 2,
+	"saturation": 0,
+	"decay_modifier": 3,
+	"protein": 0.5
+}
