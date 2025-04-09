@@ -141,7 +141,7 @@ onEvent('item.registry', event => {
 	event.create('img_wiki')					.displayName('img_wiki')
 	event.create('img_book')					.displayName('img_book')
 
-	event.create('food/dried_soybeans')			
+	//event.create('food/dried_soybeans')			
 	event.create('food/soaked_soybeans')		
 	event.create('food/peeled_soybeans')		
 	event.create('food/washed_soybeans')		

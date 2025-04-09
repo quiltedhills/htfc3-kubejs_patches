@@ -2249,7 +2249,6 @@ onEvent('tags.items', event => {
 		'tfc:seeds/oat',
 		'tfc:seeds/soybean',
 		'tfc:seeds/barley',
-		'immersiveengineering:seed'
 	]),
 	event.add('forge:double_sheets/compressed_iron', [
 		'kubejs:compressed_double_sheet'

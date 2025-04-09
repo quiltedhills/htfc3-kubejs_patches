@@ -4,7 +4,11 @@
     "ingredient": {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "kubejs:food/dried_soybeans"
+        "type": "tfc:has_trait",
+		"trait": "firmalife:dried",
+		"ingredient": {
+			"item": "tfc:food/soybean"
+		}
       }
     }
   },

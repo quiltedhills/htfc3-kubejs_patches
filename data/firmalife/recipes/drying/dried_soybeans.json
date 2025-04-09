@@ -3,10 +3,20 @@
   "ingredient": {
     "type": "tfc:not_rotten",
     "ingredient": {
-      "item": "tfc:food/soybean"
+      "type": "tfc:lacks_trait",
+	  "trait": "firmalife:dried",
+	  "ingredient": {
+		  "item": "tfc:food/soybean"
+	  }
     }
   },
   "result": {
-    "item": "kubejs:food/dried_soybeans"
+    "modifiers": [
+	"tfc:copy_input",
+	{
+		"type": "tfc:add_trait",
+		"trait": "firmalife:dried"
+	}
+	]
   }
 }
