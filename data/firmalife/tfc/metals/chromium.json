@@ -1,0 +1,12 @@
+{
+  "tier": 2,
+  "fluid": "firmalife:metal/chromium",
+  "melt_temperature": 1250,
+  "specific_heat_capacity": 0.00857,
+  "ingots": {
+    "tag": "forge:ingots/chromium"
+  },
+  "sheets": {
+    "tag": "forge:sheets/chromium"
+  }
+}

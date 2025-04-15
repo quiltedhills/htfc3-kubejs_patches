@@ -15,7 +15,6 @@ onEvent('tags.blocks', event => {
 		'tfc:grass/silty_loam'
 	]),
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
-	event.add('create:non_movable', 'tfc:sheet_pile')
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_forecast',
 		'weather2:tornado_siren'
@@ -212,6 +211,10 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')
+	event.add('tfc:metal_item/cast_iron', '#tfc:metal_item/cast_iron_tools')
+	event.add('tfc:shovels', 'kubejs:gravedigger')
+
 	event.remove('forge:gems/diamond', 'tfc:gem/diamond')
 	event.remove('forge:gems/emerald', 'tfc:gem/emerald')
 	event.remove('forge:gems/lapis', 'tfc:gem/lapis_lazuli')
@@ -1698,6 +1701,7 @@ onEvent('tags.items', event => {
 		'dttfc:willow_seed'
 	]),
 	event.add('tfc:usable_on_tool_rack', [
+		'kubejs:gravedigger',
 		'sewingkit:bone_sewing_needle',
 		'sewingkit:iron_sewing_needle',
 		'sewingkit:netherite_sewing_needle',

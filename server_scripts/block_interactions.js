@@ -16,7 +16,6 @@ onEvent('block.right_click', event => {
         event.player.server.runCommandSilent(`title ${event.player} actionbar [["Drop item onto depot, or "], {"keybind":"key.sneak"}, [" + "], {"keybind":"key.use"}, [" to attach it"]]`)
         event.cancel()
     }
-    if (['tfc_ie_addon:metal/sheet/uranium', 'firmalife:metal/sheet/chromium'].includes(event.item.id) && event.block.id == 'tfc:fire_bricks') event.cancel()
 })
 
 // These blocks will by default void all of their contents when broken, likely due to a coding oversight.
