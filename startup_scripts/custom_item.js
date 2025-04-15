@@ -255,7 +255,6 @@ onEvent('item.modification', event => {
 //	})
 //  })
 
-})
 
 onEvent('item.registry.tool_tiers', event => {
 	// BRONZE =         (2, 1300, 7.3, 4.0, 13)
