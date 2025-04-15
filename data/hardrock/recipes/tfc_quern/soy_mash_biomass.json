@@ -1,0 +1,10 @@
+{
+	"type": "tfc:quern",
+	"ingredient": {
+		"item": "kubejs:food/soy_mash"
+	},
+	"result": {
+		"item": "kubejs:seed_biomass",
+		"count": 12
+	}
+}

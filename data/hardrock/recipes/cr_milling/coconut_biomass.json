@@ -1,0 +1,20 @@
+{
+	"type": "create:milling",
+	"ingredients": [
+	{
+		"item": "firmalife:food/frothy_coconut"
+	}
+	],
+	"results": [
+	{
+		"item": "kubejs:seed_biomass",
+		"count": 20
+	},
+	{
+		"item": "kubejs:seed_biomass",
+		"count": 4
+		"chance": 0.5
+	}
+	],
+	"processingTime": 100
+}

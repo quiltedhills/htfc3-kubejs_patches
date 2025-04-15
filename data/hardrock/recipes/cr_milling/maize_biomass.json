@@ -1,0 +1,19 @@
+{
+	"type": "create:milling",
+	"ingredients": [
+	{
+		"item": "tfc:food/maize_grain"
+	}
+	],
+	"results": [
+	{
+		"item": "kubejs:seed_biomass",
+		"count": 3
+	},
+	{
+		"item": "kubejs:seed_biomass",
+		"chance": 0.5
+	}
+	],
+	"processingTime": 100
+}

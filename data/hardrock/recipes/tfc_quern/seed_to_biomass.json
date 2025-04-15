@@ -1,0 +1,10 @@
+{
+	"type": "tfc:quern",
+	"ingredient": {
+		"tag": "forge:oil_seeds"
+	},
+	"result": {
+		"item": "kubejs:seed_biomass",
+		"count": 3
+	}
+}
