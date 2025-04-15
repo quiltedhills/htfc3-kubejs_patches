@@ -1,13 +1,13 @@
 // priority: 0
 
 function getKeybind(langKey) {
-	let key = Text.keybind(langKey).string.trim() ? Text.keybind(langKey).aqua() : Text.of('Unbound').aqua()
+	let key = Text.keybind(langKey).string.trim() ? Text.keybind(langKey).aqua() : Text.aqua('Unbound')
 	let keyName = [
-		Text.of(` (`).gold(),
-		Text.of(`'`).yellow(),
+		Text.gold(` (`),
+		Text.yellow(`'`),
 		(Text.translate(langKey)).yellow(),
-		Text.of(`'`).yellow(),
-		Text.of(`)`).gold()
+		Text.yellow(`'`),
+		Text.gold(`)`)
 	]
 	return [key, Array.from(keyName)]
 }
@@ -40,7 +40,7 @@ onEvent('item.tooltip', tooltip => {
 					if (!tooltip.shift) {
 						text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
 					} else {
-						text.add(1, [Text.of("This item is a ").gold(), Text.of(`${filter_tier}-tier ${pollution_type} filter`).yellow(),Text.of(".").gold()])
+						text.add(1, [Text.gold("This item is a "), Text.yellow(`${filter_tier}-tier ${pollution_type} filter`),Text.gold(".")])
 						text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
 						text.add(3, Text.gold("using pumps, vents and chimneys."))
 					}
@@ -175,12 +175,10 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.addAdvanced('immersiveengineering:cokebrick', (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
-		} else {
-			text.add(1, Text.red('Decorative and crafting use only!'))
-			text.add(2, Text.gold('Coke ovens are made from fire bricks.'))
-		}
+		text.add(1, Text.gold('Coke ovens are made from fire bricks, not coke bricks!'))
+	})
+	tooltip.addAdvanced(['immersiveengineering:blastbrick', 'immersiveengineering:blastbrick_reinforced'], (item, advanced, text) => {
+		text.add(1, Text.gold('Used for making advanced blast furnaces'))
 	})
 	tooltip.addAdvanced('create:vertical_gearbox', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -811,12 +809,12 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
 		} else {
-			text.add(1, [Text.of('Foods with the ').gold(),Text.of('Nourishment').yellow(),Text.of(' effect').gold()])
-			text.add(2, [Text.of('will fill you for much longer than usual.').gold()])
+			text.add(1, [Text.gold('Foods with the '),Text.yellow('Nourishment'),Text.gold(' effect')])
+			text.add(2, [Text.gold('will fill you for much longer than usual.')])
 		}
 	})
 	tooltip.addAdvanced(['tfchomestead:jar','tfchomestead:full_jar'], (item, advanced, text) => {
-		text.add(1, Text.of('May cause world rendering issues when placed').gold())
+		text.add(1, Text.gold('May cause world rendering issues when placed'))
 	})
 	tooltip.addAdvanced('tfc:torch', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -827,7 +825,7 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
-		text.add(1, Text.of('Decorative use only').gold())
+		text.add(1, Text.gold('Decorative use only'))
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -853,9 +851,40 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.addAdvanced(['create:belt_connector'], (item, advanced, text) => {
-		text.add(1, Text.of('Please minimize usage on large servers!').gold())
+		text.add(1, Text.gold('Please minimize usage on large servers!'))
 	})
 	tooltip.addAdvanced(['create:cart_assembler'], (item, advanced, text) => {
-		text.add(1, Text.of('Picking up contraption minecarts with a wrench is disabled').red())
+		text.add(1, Text.red('Picking up contraption minecarts with a wrench is disabled'))
+	})
+
+const ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+const tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+const teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+function convert_thousands(num) {
+	if (num >= 1000) return convert_hundreds(Math.floor(num / 1000), true) + (convert_hundreds(Math.floor(num / 1000)) == '' ? '' : ' ') + "thousand " + ((num % 1000 > 0) && (num % 1000 < 100) ? "and " : "") + convert_hundreds(num % 1000)
+	else return convert_hundreds(num)
+}
+function convert_hundreds(num, noAnd) {
+	if (num > 99) return ones[Math.floor(num / 100)] + " hundred " + ((!noAnd && num % 100 > 0) ? "and " : "") + convert_tens(num % 100, true)
+	else return convert_tens(num)
+}
+function convert_tens(num, addDashes) {
+	if (num < 10) return ones[num]
+	else if (num >= 10 && num < 20) return teens[num - 10]
+	else if (ones[num % 10] !== '') return tens[Math.floor(num / 10)] + (addDashes ? '-' : ' ') + ones[num % 10]
+	else return tens[Math.floor(num / 10)]
+}
+function convertNumber(num) {
+	if (num == 0) return "zero"
+	else if (num >= 1000000) return num
+	else return convert_thousands(num)
+}
+	tooltip.addAdvanced('kubejs:gravedigger', (item, advanced, text) => {
+		text.add(1, Text.gold('Lets you get rid of player corpses'))
+		if (item?.nbt?.CustomModelData && item.nbt.CustomModelData != 0) {
+			if (item.nbt.CustomModelData >= 100) text.add(2, Text.darkRed(`${convertNumber(item.nbt.CustomModelData)}`))
+			else text.add(2, Text.darkGray(`${convertNumber(item.nbt.CustomModelData)}`))
+			//text.add(3, Text.darkGray(`${item.nbt.CustomModelData}`))
+		}
 	})
 })

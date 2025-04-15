@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  i",
+    " s ",
+    "t  "
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:sheets/cast_iron"
+    },
+    "s": {
+      "item": "immersiveengineering:stick_treated"
+    },
+    "t": {
+      "tag": "forge:nuggets/cast_iron"
+    }
+  },
+  "result": {
+    "item": "kubejs:gravedigger",
+    "nbt": "{CustomModelData:0}"
+  }
+}

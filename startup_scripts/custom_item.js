@@ -26,6 +26,8 @@ onEvent('item.registry', event => {
 	event.create('magnet/hdpe')				.unstackable().rarity('rare')
 	event.create('magnet/polonium')			.unstackable().rarity('epic')
 	
+	event.create('gravedigger', 'shovel').displayName('Gravedigger Shovel').rarity('uncommon')
+		.tier('castIron').attackDamageBaseline(0.5 - 1).speedBaseline(0.9 - 4)
 	event.create('sanitizer_bottle').unstackable().rarity('uncommon')
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13))) // full bar is 13
 		.barColor(itemstack => Color.AQUA)
@@ -125,17 +127,20 @@ onEvent('item.registry', event => {
 	event.create('img_ores')					.displayName('img_ores')
 	event.create('img_wiki')					.displayName('img_wiki')
 	event.create('img_book')					.displayName('img_book')
-	// long stick
-	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
 
-//onEvent('item.registry.long_stick', event => {
-//	event.add('long_stick', tier => {
-//	  tier.uses = 250
-//	  tier.speed = 6.0
-//	  tier.attackDamageBonus = 2.0
-//	  tier.level = 2
-//	  tier.enchantmentValue = 14
-//	  tier.repairIngredient = '#forge:ingots/iron'
-//	})
-//  })
+onEvent('item.registry.tool_tiers', event => {
+	// BRONZE =         (2, 1300, 7.3, 4.0, 13)
+	// BISMUTH_BRONZE = (2, 1200, 6.65, 4.0, 10)
+	// BLACK_BRONZE =   (2, 1460, 6.0, 4.25, 10)
+	// WROUGHT_IRON =   (3, 2200, 8.0, 4.75, 12)
+	event.add('castIron', tier => {
+		tier.level = 2
+		tier.uses = 800
+		tier.speed = 4.5
+		tier.attackDamageBonus = 4.5
+		tier.enchantmentValue = 8
+		tier.repairIngredient = '#forge:ingots/cast_iron'
+	})
+})
+

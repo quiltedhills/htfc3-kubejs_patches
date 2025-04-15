@@ -56,4 +56,8 @@ onEvent('jei.information', event => {
         'Amethyst can be obtained from villager trading or from processing ore, similar to how diamonds and emeralds are obtained.',
         'But, unlike those, it can also be sourced from nether quartz ore using a foundry.'
     ])
+    event.add('kubejs:gravedigger', [
+        'Takes 25 durability for each body.',
+        'Can be repaired with cast iron ingots using a vanilla anvil.'
+    ])
 })
