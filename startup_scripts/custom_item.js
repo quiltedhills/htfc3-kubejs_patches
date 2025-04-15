@@ -17,6 +17,21 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/mineral_mix')
 	event.create('misc_mats/ceramic_shards')
 	event.create('misc_mats/refined_vanilla')
+	event.create('misc_mats/hand_sanitizer')  .displayName('Hand Sanitizer')
+	
+	//Oil Items: no longer needed
+	/*
+	event.create('misc_mats/soaked_coconut')
+	event.create('misc_mats/washed_coconut')
+	event.create('misc_mats/ground_coconut')
+	event.create('misc_mats/coconut_mash')
+	event.create('misc_mats/washed_maize')
+	
+	event.create('misc_mats/coconut_paste')
+	event.create('misc_mats/soy_paste')
+	event.create('misc_mats/corn_paste')
+	*/
+	//End oil items.
 	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
 
@@ -127,7 +142,119 @@ onEvent('item.registry', event => {
 	event.create('img_ores')					.displayName('img_ores')
 	event.create('img_wiki')					.displayName('img_wiki')
 	event.create('img_book')					.displayName('img_book')
+
+	//event.create('food/dried_soybeans')			
+	event.create('food/soaked_soybeans')		
+	event.create('food/peeled_soybeans')		
+	event.create('food/washed_soybeans')		
+	event.create('food/ground_soy')				
+	event.create('food/soy_mash')				
+	event.create('food/okara')					.food(food=>{food.hunger(4).saturation(1)})
+	event.create('food/soy_curds')				.food(food=>{food.hunger(4).saturation(0)})
+	event.create('food/firm_tofu')				.food(food=>{food.hunger(8).saturation(2)})
+	event.create('food/firm_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
+	event.create('food/silken_tofu')			.food(food=>{food.hunger(8).saturation(1)})
+	event.create('food/silken_tofu_chunk')		.food(food=>{food.hunger(4).saturation(1)})
+	event.create('food/butter_pat')             .food(food=>{food.hunger(1).saturation(0)})
+	event.create('food/cooked_roe')             .food(food=>{food.hunger(2).saturation(5)})
+	event.create('food/builders_tea')
+		.displayName("Builder's Tea")
+		.useAnimation("drink")
+		.useDuration((itemstack) => 40)
+		.use((level, player, hand) => true)
+		.finishUsing((itemstack, level, entity) => {
+			let effects = entity.potionEffects;
+			effects.add("haste", 180 * 20, 2)
+			itemstack.itemStack.shrink(1)
+			if(entity.player) {
+				entity.minecraftPlayer.addItem(Item.of("minecraft:glass_bottle").itemStack)
+			}
+			return itemstack;
+		})
+	
+	// long stick
+	//event.create('long_stick').displayName('Long Stick').tool('sword').tier('stone').attackDamageBaseline(6.0)
 })
+
+//modifying existing items!
+
+onEvent('item.modification', event => {
+	event.modify('minecraft:golden_carrot', item => {
+		item.foodProperties = food => {
+			food.alwaysEdible()
+		}
+	})
+	/*	
+	event.modify('create:builders_tea', item => {
+		item.foodProperties = food => {
+			food.removeEffect("haste")
+			food.effect("haste",180*20,2,1)
+		}
+	})	
+	*/
+	/*
+	event.modify('create:builders_tea')
+		.finishUsing((itemstack, level, entity) => {
+			let effects = entity.potionEffects;
+			effects.remove("haste")
+			effects.add("haste", 180*20, 2)
+			itemstack.itemStack.shrink(1)
+			if(entity.player) {
+				entity.minecraftPlayer.addItem(Item.of("minecraft:glass_bottle").itemStack)
+			}
+			return itemstack;
+		})
+	*/
+	// roe:
+	// kept separate in case different kinds of roe should have different risks, ie catfish roe being riskier than piranha roe
+	event.modify('untamedwilds:egg_sunfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_trevally', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_arowana', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_football_fish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_triggerfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_catfish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+	event.modify('untamedwilds:egg_spadefish', item => {
+		item.foodProperties = food => {
+			food.hunger(2).saturation(5).effect("hunger", 1200, 1, 0.1).effect("nausea", 600, 4, 0.3).effect("poison", 200, 1, 0.05).effect("weakness", 1200, 1, 0.1)
+		}
+	})
+})
+
+//onEvent('item.registry.long_stick', event => {
+//	event.add('long_stick', tier => {
+//	  tier.uses = 250
+//	  tier.speed = 6.0
+//	  tier.attackDamageBonus = 2.0
+//	  tier.level = 2
+//	  tier.enchantmentValue = 14
+//	  tier.repairIngredient = '#forge:ingots/iron'
+//	})
+//  })
+
 
 onEvent('item.registry.tool_tiers', event => {
 	// BRONZE =         (2, 1300, 7.3, 4.0, 13)
@@ -143,4 +270,5 @@ onEvent('item.registry.tool_tiers', event => {
 		tier.repairIngredient = '#forge:ingots/cast_iron'
 	})
 })
+
 

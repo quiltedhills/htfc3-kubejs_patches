@@ -1,0 +1,54 @@
+{
+	"type": "createsifter:sifting",
+	"ingredients": [
+	{
+		"item": "createsifter:brass_mesh"
+	},
+	{
+		"tag": "minecraft:leaves"
+	}
+	],
+	"results": [
+	{
+		"item": "tfc:plant/cherry_sapling",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:plant/plum_sapling",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:plant/red_apple_sapling",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:plant/olive_sapling",
+		"chance": 0.07
+	},
+	{
+		"item": "tfc:wood/sapling/hickory",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:wood/sapling/sequoia",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:wood/sapling/pine",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:wood/sapling/spruce",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:wood/sapling/birch",
+		"chance": 0.01
+	},
+	{
+		"item": "tfc:wood/sapling/oak",
+		"chance": 0.01
+	}
+	],
+	"processingTime": 500
+}

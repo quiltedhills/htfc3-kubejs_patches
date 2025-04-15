@@ -1,0 +1,15 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "kubejs:food/soaked_soybeans"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "kubejs:food/peeled_soybeans"
+  }
+}

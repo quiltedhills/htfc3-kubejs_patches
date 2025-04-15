@@ -1,0 +1,17 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"item": "tfc:food/maize_grain"
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:seed_biomass",
+		"count": 2
+	}
+	]
+}

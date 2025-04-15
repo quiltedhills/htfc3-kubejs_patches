@@ -1,0 +1,20 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/milk_curd"
+      }
+    },
+    "count": 3
+  },
+  "input_fluid": {
+    "ingredient": "tfc:salt_water",
+    "amount": 750
+  },
+  "output_item": {
+    "item": "firmalife:gouda_wheel"
+  },
+  "duration": 16000
+}

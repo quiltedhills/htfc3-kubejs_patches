@@ -1,0 +1,10 @@
+{
+	"type": "tfc:quern",
+	"ingredient": {
+		"item": "firmalife:food/frothy_coconut"
+	},
+	"result": {
+		"item": "kubejs:seed_biomass",
+		"count": 20
+	}
+}
