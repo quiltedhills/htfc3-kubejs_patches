@@ -41,6 +41,8 @@ onEvent('item.registry', event => {
 	event.create('magnet/hdpe')				.unstackable().rarity('rare')
 	event.create('magnet/polonium')			.unstackable().rarity('epic')
 	
+	event.create('gravedigger', 'shovel').displayName('Gravedigger Shovel').rarity('uncommon')
+		.tier('castIron').attackDamageBaseline(0.5 - 1).speedBaseline(0.9 - 4)
 	event.create('sanitizer_bottle').unstackable().rarity('uncommon')
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13))) // full bar is 13
 		.barColor(itemstack => Color.AQUA)
@@ -252,3 +254,22 @@ onEvent('item.modification', event => {
 //	  tier.repairIngredient = '#forge:ingots/iron'
 //	})
 //  })
+
+})
+
+onEvent('item.registry.tool_tiers', event => {
+	// BRONZE =         (2, 1300, 7.3, 4.0, 13)
+	// BISMUTH_BRONZE = (2, 1200, 6.65, 4.0, 10)
+	// BLACK_BRONZE =   (2, 1460, 6.0, 4.25, 10)
+	// WROUGHT_IRON =   (3, 2200, 8.0, 4.75, 12)
+	event.add('castIron', tier => {
+		tier.level = 2
+		tier.uses = 800
+		tier.speed = 4.5
+		tier.attackDamageBonus = 4.5
+		tier.enchantmentValue = 8
+		tier.repairIngredient = '#forge:ingots/cast_iron'
+	})
+})
+
+

@@ -6,5 +6,4 @@ onEvent('block.right_click', event => {
     if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) {
         event.cancel()
     }
-    if (['tfc_ie_addon:metal/sheet/uranium', 'firmalife:metal/sheet/chromium'].includes(event.item.id) && event.block.id == 'tfc:fire_bricks') event.cancel()
 })

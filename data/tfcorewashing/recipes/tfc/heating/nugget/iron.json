@@ -1,0 +1,16 @@
+{
+  "type": "tfc:heating",
+  "ingredient": [
+    {
+      "tag": "forge:nuggets/iron"
+    },
+    {
+      "tag": "forge:nuggets/cast_iron"
+    }
+  ],
+  "result_fluid": {
+    "fluid": "tfc:metal/cast_iron",
+    "amount": 10
+  },
+  "temperature": 1535
+}
