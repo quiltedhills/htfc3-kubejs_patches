@@ -110,6 +110,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for TFC ore blocks for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
 • Re-introduced recipes for vegetable crates from Farmer's Delight <br/>
+• Made all statues from Paraglider craftable (they now also serve no functional purpose and are purely decorative) <br/>
 • Added recipes for some previously unobtainable blocks <br/>
 
 ### Fixes:

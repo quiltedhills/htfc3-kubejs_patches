@@ -824,7 +824,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
 		}
 	})
-	tooltip.addAdvanced(['butchersdelight:rack'], (item, advanced, text) => {
+	tooltip.addAdvanced([
+		'butchersdelight:rack',
+		/^paraglider:.+statue$/
+	], (item, advanced, text) => {
 		text.add(1, Text.gold('Decorative use only'))
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
@@ -882,7 +885,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('kubejs:gravedigger', (item, advanced, text) => {
 		text.add(1, Text.gold('Lets you get rid of player corpses'))
 		if (item?.nbt?.CustomModelData && item.nbt.CustomModelData != 0) {
-			if (item.nbt.CustomModelData >= 100) text.add(2, Text.darkRed(`${convertNumber(item.nbt.CustomModelData)}`))
+			if (item.nbt.CustomModelData >= 50) text.add(2, Text.darkRed(`${convertNumber(item.nbt.CustomModelData)}`))
 			else text.add(2, Text.darkGray(`${convertNumber(item.nbt.CustomModelData)}`))
 			//text.add(3, Text.darkGray(`${item.nbt.CustomModelData}`))
 		}

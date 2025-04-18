@@ -1,0 +1,25 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      [
+        {
+          "item": "paraglider:goron_goddess_statue"
+        },
+        {
+          "item": "paraglider:kakariko_goddess_statue"
+        },
+        {
+          "item": "paraglider:rito_goddess_statue"
+        }
+      ],
+      {
+        "tag": "tfc:chisels"
+      }
+    ],
+    "result": {
+      "item": "paraglider:goddess_statue"
+    }
+  }
+}

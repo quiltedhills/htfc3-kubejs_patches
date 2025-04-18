@@ -1196,6 +1196,7 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		'#paraglider:statues',
 		'compressedcreativity:mesh_dense',
 		'compressedcreativity:mesh_haunted',
 		'compressedcreativity:rotational_compressor',

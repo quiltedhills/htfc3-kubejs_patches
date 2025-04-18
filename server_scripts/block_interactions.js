@@ -16,6 +16,24 @@ onEvent('block.right_click', event => {
         event.player.server.runCommandSilent(`title ${event.player} actionbar ["Drop the heat frame onto the depot for use in recipes"]`)
         event.cancel()
     }
+    // make paraglider statues deco-only
+    if (event.block.hasTag('paraglider:statues')) {
+        if (event.item.id == 'minecraft:air' || event.block.id == 'paraglider:cursed_statue') event.cancel()
+        else if (!(
+            (event.block.id == 'paraglider:goddess_statue' && (
+                event.item.id == 'sewingkit:leather_sheet'
+                || event.item.hasTag('forge:ingots/gold')
+                || event.item.hasTag('minecraft:flowers')
+            ))
+            || (event.player.mainHandItem.hasTag('tfc:chisels') && event.player.offHandItem.hasTag('tfc:hammers') && event.player.crouching)
+        )) event.cancel()
+    }
+})
+onEvent('player.inventory.opened', event => {
+    // Last resort in case the paraglider statue GUI opens up despite failsafes
+    if (/StatueBargainContainer/.test(event.inventoryContainer.toString())) {
+        event.player.closeInventory()
+    }
 })
 
 onEvent('block.place', event => {

@@ -1,0 +1,6 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": "paraglider:kakariko_goddess_statue",
+  "result": "paraglider:goddess_statue",
+  "mode": "smooth"
+}
