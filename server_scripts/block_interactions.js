@@ -13,10 +13,33 @@ onEvent('block.right_click', event => {
     if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
     // heat frame + depot qol
     if (event.item.id == 'pneumaticcraft:heat_frame' && event.block.id == 'create:depot' && !event.player.crouching) {
-        event.player.server.runCommandSilent(`title ${event.player} actionbar [["Drop item onto depot, or "], {"keybind":"key.sneak"}, [" + "], {"keybind":"key.use"}, [" to attach it"]]`)
+        event.player.server.runCommandSilent(`title ${event.player} actionbar ["Drop the heat frame onto the depot for use in recipes"]`)
         event.cancel()
     }
 })
+
+onEvent('block.place', event => {
+    const isSequenceItem = (item) => item && item.nbt && item.nbt.SequencedAssembly
+    let mainHand = event.entity.mainHandItem
+    let offHand = event.entity.offHandItem
+
+    if (isSequenceItem(mainHand) || isSequenceItem(offHand)) {
+        // There is no way to get the hand the the block was placed with this event.
+        // We try to infer the hand by comparing the block's ID to the item IDs of items held in both hands.
+        if ((mainHand.getId() == event.block.id) && (offHand.getId() == event.block.id)) {
+            // If both hands could be valid, we can't know for sure if the item being placed has sequence data,
+            // so we send feedback to the player in case they are confused why they can't place a block they expect to.
+            event.entity.server.runCommandSilent(`execute as ${event.entity} at @s run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 0`)
+            event.entity.server.runCommandSilent(`title ${event.entity} actionbar ["An item in one of your hands contains Sequenced Recipe data"]`)
+            event.cancel()
+        } else if (
+            // Normal behavior is silent
+            (mainHand.getId() == event.block.id) && (isSequenceItem(mainHand))
+            || (offHand.getId() == event.block.id) && (isSequenceItem(offHand))
+        ) event.cancel()
+    }
+})
+
 
 // These blocks will by default void all of their contents when broken, likely due to a coding oversight.
 // This is obviously not supposed to happen :p
