@@ -1,6 +1,6 @@
 onEvent('jei.information', event => {
     event.add('choppingblock:chopping_block', [
-        ['Made by right clicking a stripped log with an ', Text.of('axe in your main hand').underlined(), ' and a ', Text.of('hammer in your offhand').underlined(), '!'],
+        ['Can be made without using a hide by right clicking a stripped log with an ', Text.of('axe in your main hand').underlined(), ' and a ', Text.of('hammer in your offhand').underlined(), '!'],
         'Stone tools can be used for this.'
     ])
     event.add([/^tfc:drying_bricks\//, /^tfc:mud_brick\//], [
