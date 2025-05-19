@@ -193,6 +193,7 @@ onEvent('item.modification', event => {
 	})	
 	*/
 	/*
+	// Seems builder's tea behavior is hardcoded, will have to make alternate item and modify that way
 	event.modify('create:builders_tea')
 		.finishUsing((itemstack, level, entity) => {
 			let effects = entity.potionEffects;

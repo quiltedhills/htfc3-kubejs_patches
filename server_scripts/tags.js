@@ -353,7 +353,7 @@ onEvent('tags.items', event => {
 		'tfc:food/boiled_egg',
 		'firmalife:food/butter',
 		'kubejs:food/silken_tofu_chunk',
-		'kubejs:food/silken_tofu',
+		//'kubejs:food/silken_tofu',
 		'kubejs:food/soy_curds',
 		// misc
 		'farmersdelight:dumplings'
