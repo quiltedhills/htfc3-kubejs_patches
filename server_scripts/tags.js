@@ -2256,6 +2256,8 @@ onEvent('tags.items', event => {
 		'beyond_earth:raw_ostrum',
 		'beyond_earth:raw_calorite'
 	])
+  event.removeAll('tfc:cat_food')
+  event.add('tfc:cat_food', '#minecraft:fishes')
 	// ==========  REMOVE
 	event.remove('forge:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('balm:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
@@ -2279,7 +2281,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_puma',
 		'untamedwilds:hide_bigcat_tiger'
 	])
-  event.remove('tfc:cat_food', [
+/*  event.remove('tfc:cat_food', [  // didn't work for whatever reason
     'tfc:food/barley_grain',
     'tfc:food/maize_grain',
     'tfc:food/oat_grain',
@@ -2331,7 +2333,7 @@ onEvent('tags.items', event => {
     'htm:cooked_poultry_wing',
     'htm:cooked_poultry_leg',
     'htm:cooked_poultry_breast'
-  ])
+  ]) */
 	event.removeAllTagsFrom(
 		'chiselsandbits:chisel_stone',
 		'htm:hammer',
