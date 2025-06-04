@@ -887,4 +887,28 @@ function convertNumber(num) {
 			//text.add(3, Text.darkGray(`${item.nbt.CustomModelData}`))
 		}
 	})
+  tooltip.addAdvanced('tfc:bucket/beer', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged beer gives Absorption II for 20:00'))
+  })
+  tooltip.addAdvanced('tfc:bucket/cider', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Cider gives Speed I for 5:20'))
+  })
+  tooltip.addAdvanced('tfc:bucket/corn_whiskey', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Corn Whiskey gives Haste I for 5:20'))
+  })
+  tooltip.addAdvanced('tfc:bucket/rum', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Rum gives Speed II for 2:40'))
+  })
+  tooltip.addAdvanced('tfc:bucket/rye_whiskey', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Rye Whiskey gives Haste I for 5:20'))
+  })
+  tooltip.addAdvanced('tfc:bucket/sake', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Sake gives Resistance I for 5:20'))
+  })
+  tooltip.addAdvanced('tfc:bucket/vodka', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Vodka gives Resistance II for 2:40'))
+  })
+  tooltip.addAdvanced('tfc:bucket/whiskey', (item, advanced, text) => {
+    text.add(1, Text.gold('Aged Whiskey gives Haste II for 2:40'))
+  })
 })
