@@ -37,7 +37,7 @@ onEvent('block.loot_tables', event => {
   event.addBlock('tfc:fire_clay_block', table => {
     table.addPool(pool => {
       pool.survivesExplosion()
-      pool.addItem('tfc:fire_clay", 1, 4)
+      pool.addItem('tfc:fire_clay', 1, 4)
     })
   })
 })
