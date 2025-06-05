@@ -382,6 +382,7 @@ onEvent('recipes', event => {
 		{id: 'immersiveengineering:smelting/ingot_nickel_from_blasting2'},
 		{id: 'immersiveengineering:smelting/ingot_nickel_from_blasting3'},
 		{id: 'immersiveengineering:fermenter/beetroot'},
+    {id: 'immersiveengineering:fermenter/honey'},
 		{id: 'immersiveengineering:fermenter/glow_berries'},
 		{id: 'immersiveengineering:fermenter/sweet_berries'},
 		{id: 'immersiveengineering:fermenter/potato'},
