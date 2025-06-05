@@ -337,7 +337,11 @@ onEvent('tags.items', event => {
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg'
 	])
-
+  event.add('kubejs:pollution_gasses', [
+    'adpother:carbon',
+    'adpother:dust',
+    'adpother:sulfur'
+  ])
 
 	// removeAllTagsFrom doesn't seem to work with regex :(
 	global.items_to_remove = [
