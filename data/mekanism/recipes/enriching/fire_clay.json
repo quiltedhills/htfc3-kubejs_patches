@@ -1,0 +1,12 @@
+{
+	"type": "mekanism:enriching",
+	"input": {
+		"ingredient": {
+			"item": "tfc:fire_clay_block"
+		}
+	},
+	"output": {
+		"item": "tfc:fire_clay",
+		"count": 4
+	}
+}
