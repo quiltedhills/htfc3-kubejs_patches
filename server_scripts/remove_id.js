@@ -398,6 +398,7 @@ onEvent('recipes', event => {
 		{id: 'immersiveposts:has_uranium_rod'},
 		{id: 'firmalife:pot/beet_sugar'},
 		{id: 'firmalife:crafting/empty_jar'},
+    {id: 'firmalife:crafting/solar_drier_from_mat'},
 		{id: 'mekanism:infusion_conversion/carbon/from_enriched'},
 		{id: 'mekanism:infusion_conversion/carbon/from_charcoal_block'},
 		{id: 'mekanism:infusion_conversion/carbon/from_charcoal'},
