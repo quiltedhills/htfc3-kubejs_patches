@@ -298,6 +298,7 @@ onEvent('recipes', event => {
 		{id: 'create:pressing/sugar_cane'},
 		{id: 'create:andesite_alloy'},
 		{id: 'create:crafting/tree_fertilizer'},
+    {id: 'create:crafting/kinetics/vertical_gearbox'},
 		{id: 'create:crushing/diorite'},
 		{id: 'create:crushing/diamond_horse_armor'},
 		{id: 'create:crushing/leather_horse_armor'},
