@@ -911,4 +911,12 @@ function convertNumber(num) {
   tooltip.addAdvanced('tfc:bucket/whiskey', (item, advanced, text) => {
     text.add(1, Text.gold('Aged Whiskey gives Haste II for 2:40'))
   })
+  tooltip.addAdvanced('farmersdelight:brown_mushroom_colony', (item, advanced, text) => {
+    text.add(1, Text.gold('Grown from a brown mushroom placed on rich soil'))
+    text.add(2, Text.yellow('Harvested with shears once fully grown'))
+  })
+  tooltip.addAdvanced('farmersdelight:red_mushroom_colony', (item, advanced, text) => {
+    text.add(1, Text.gold('Grown from a red mushroom placed on rich soil'))
+    text.add(2, Text.yellow('Harvested with shears once fully grown'))
+  })
 })
