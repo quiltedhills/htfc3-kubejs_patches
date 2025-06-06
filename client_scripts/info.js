@@ -919,4 +919,39 @@ function convertNumber(num) {
     text.add(1, Text.gold('Grown from a red mushroom placed on rich soil'))
     text.add(2, Text.yellow('Harvested with shears once fully grown'))
   })
+  // Unfortunately traveller's backpacks don't have a consistent name I can use, and tags are loaded after client_scripts
+  tooltip.addAdvanced([
+  'travelersbackpack:netherite',
+  'travelersbackpack:diamond',
+  'travelersbackpack:gold',
+  'travelersbackpack:emerald',
+  'travelersbackpack:iron',
+  'travelersbackpack:lapis',
+  'travelersbackpack:redstone',
+  'travelersbackpack:bookshelf',
+  'travelersbackpack:sponge',
+  'travelersbackpack:cake',
+  'travelersbackpack:cactus',
+  'travelersbackpack:melon',
+  'travelersbackpack:pumpkin',
+  'travelersbackpack:creeper',
+  'travelersbackpack:dragon',
+  'travelersbackpack:enderman',
+  'travelersbackpack:blaze',
+  'travelersbackpack:ghast',
+  'travelersbackpack:magma_cube',
+  'travelersbackpack:spider',
+  'travelersbackpack:wither',
+  'travelersbackpack:bee',
+  'travelersbackpack:ocelot',
+  'travelersbackpack:cow',
+  'travelersbackpack:chicken',
+  'travelersbackpack:squid'
+  ],
+  (item, advanced, text) => {
+    text.add(2, Text.red('Abilities are turned off by default!'))
+  })
+  tooltip.addAdvanced('travelersbackpack:bat', (item, advanced, text) => {
+    text.add(3, Text.red('Abilities are turned off by default!'))
+  })
 })
