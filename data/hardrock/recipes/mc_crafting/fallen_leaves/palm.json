@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "tfc:wood/leaves/palm"
+  },
+  {
+    "item": "tfc:wood/leaves/palm"
+  }
+  ],
+  "result": {
+    "item": "tfc:wood/fallen_leaves/palm",
+    "count": 3
+  }
+}

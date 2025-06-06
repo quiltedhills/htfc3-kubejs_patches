@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "tfc:wood/leaves/willow"
+  },
+  {
+    "item": "tfc:wood/leaves/willow"
+  }
+  ],
+  "result": {
+    "item": "tfc:wood/fallen_leaves/willow",
+    "count": 3
+  }
+}

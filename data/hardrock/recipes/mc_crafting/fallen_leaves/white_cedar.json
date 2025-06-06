@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "tfc:wood/leaves/white_cedar"
+  },
+  {
+    "item": "tfc:wood/leaves/white_cedar"
+  }
+  ],
+  "result": {
+    "item": "tfc:wood/fallen_leaves/white_cedar",
+    "count": 3
+  }
+}

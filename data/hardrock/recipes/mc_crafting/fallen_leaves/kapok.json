@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "tfc:wood/leaves/kapok"
+  },
+  {
+    "item": "tfc:wood/leaves/kapok"
+  }
+  ],
+  "result": {
+    "item": "tfc:wood/fallen_leaves/kapok",
+    "count": 3
+  }
+}
