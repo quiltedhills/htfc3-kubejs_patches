@@ -954,4 +954,124 @@ function convertNumber(num) {
   tooltip.addAdvanced('travelersbackpack:bat', (item, advanced, text) => {
     text.add(3, Text.red('Abilities are turned off by default!'))
   })
+  tooltip.addAdvanced('firmalife:large_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Barley, Green Beans, Jute, Maize, Oat, Papyrus, Rye, Sugarcane, Tomato, and Wheat'))
+    }
+  })
+  tooltip.addAdvanced('firmalife:quad_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Beet, Cabbage, Carrot, Garlic, Onion, Potato, and Soybean'))
+    }
+  })
+  tooltip.addAdvanced('firmalife:hydroponic_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Cranberry and Rice'))
+    }
+  })
+  tooltip.addAdvanced('firmalife:bonsai_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Apple, Cherry, Cocoa, Fig, Lemon, Orange, Peach, and Plum'))
+    }
+  })
+  tooltip.addAdvanced('firmalife:hanging_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Banana, Melon, Pumpkin, and Squash'))
+    }
+  })
+  tooltip.addAdvanced('firmalife:trellis_planter', (item, advanced, text) => {
+    if (!tooltip.shift) {
+      text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+    }
+    else {
+      text.add(1, Text.gold('Grows Blackberry, Blueberry, Bunchberry, Cloudberry, Elderberry, Gooseberry, Nightshade, Pineapple, Raspberry, Snowberry, Strawberry, and Wintergreen'))
+    }
+  })
+  tooltip.addAdvanced([
+  'tfc:seeds/beet',
+  'tfc:seeds/cabbage',
+  'tfc:seeds/carrot',
+  'tfc:seeds/garlic',
+  'tfc:seeds/green_bean',
+  'tfc:seeds/jute',
+  'tfc:seeds/onion',
+  'tfc:seeds/papyrus',
+  'tfc:seeds/potato',
+  'tfc:seeds/soybean',
+  'tfc:seeds/squash',
+  'tfc:seeds/sugarcane',
+  'tfc:seeds/tomato'
+  ], (item, advanced, text) => {
+    if (!tooltip.alt) {
+      text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for more info')])
+    }
+    else {
+      text.add(1, [Text.white('Requires '), Text.yellow('Wooden '), Text.white('Greenhouse or better')])
+    }
+  })
+  tooltip.addAdvanced([
+  'tfc:seeds/barley',
+  'tfc:seeds/maize',
+  'tfc:seeds/oat',
+  'tfc:seeds/rice',
+  'tfc:seeds/rye',
+  'tfc:seeds/wheat'
+  ], (item, advanced, text) => {
+    if (!tooltip.alt) {
+      text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for more info')])
+    }
+    else {
+      text.add(1, [Text.white('Requires '), Text.gold('Copper '), Text.white('Greenhouse or better')])
+    }
+  })
+  tooltip.addAdvanced([
+  'tfc:plant/banana_sapling',
+  'tfc:plant/blackberry_bush',
+  'tfc:plant/blueberry_bush',
+  'tfc:plant/bunchberry_bush',
+  'tfc:plant/cherry_sapling',
+  'tfc:plant/cloudberry_bush',
+  'firmalife:plant/cocoa_sapling',
+  'tfc:plant/cranberry_bush',
+  'tfc:plant/elderberry_bush',
+  'firmalife:plant/fig_sapling',
+  'tfc:plant/gooseberry_bush',
+  'tfc:plant/green_apple_sapling',
+  'tfc:plant/lemon_sapling',
+  'tfc:seeds/melon',
+  'firmalife:plant/nightshade_bush',
+  'tfc:plant/olive_sapling',
+  'tfc:plant/orange_sapling',
+  'tfc:plant/peach_sapling',
+  'firmalife:plant/pineapple_bush',
+  'tfc:plant/plum_sapling',
+  'tfc:seeds/pumpkin',
+  'tfc:plant/raspberry_bush',
+  'tfc:plant/red_apple_sapling',
+  'tfc:plant/snowberry_bush',
+  'tfc:plant/strawberry_bush',
+  'tfc:plant/wintergreen_bush'
+  ], (item, advanced, text) => {
+    if (!tooltip.alt) {
+      text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for more info')])
+    }
+    else {
+      text.add(1, [Text.white('Requires '), Text.gray('Iron '), Text.white('Greenhouse or better')])
+    }
+  })
 })
