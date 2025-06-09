@@ -1506,7 +1506,8 @@ onEvent('tags.items', event => {
 		'minecraft:mutton',
 		'minecraft:porkchop',
 		'minecraft:beef',
-		'minecraft:chicken'
+		'minecraft:chicken',
+    'minecraft:rabbit'
 	]),
 	event.add('tfc:foods/can_be_hung', [
 		'kubejs:shark_meat',
@@ -1538,7 +1539,8 @@ onEvent('tags.items', event => {
 		'minecraft:mutton',
 		'minecraft:porkchop',
 		'minecraft:beef',
-		'minecraft:chicken'
+		'minecraft:chicken',
+    'minecraft:rabbit'
 	]),
 	event.add('forge:pollution_blocks', [
 		'tfc:grass/silt',
