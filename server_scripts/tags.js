@@ -1901,6 +1901,9 @@ onEvent('tags.items', event => {
 		'tfc:stone/shovel/metamorphic',
 		'tfc:stone/shovel/sedimentary'
 	]),
+  event.add('forge:spindles', [
+    'tfc:spindle'
+  ]),
 	event.add('tfc:tanned_hides', [
 		'kubejs:hide_tanned_s',
 		'kubejs:hide_tanned_m',
