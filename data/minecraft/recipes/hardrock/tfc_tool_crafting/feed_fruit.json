@@ -8,6 +8,9 @@
         "tag": "tfc:foods/fruits"
       },
       {
+        "item": "tfc:straw"
+      },
+      {
         "tag": "forge:tools/knives"
       }
     ],

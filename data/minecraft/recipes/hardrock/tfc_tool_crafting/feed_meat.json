@@ -8,6 +8,9 @@
         "tag": "tfc:foods/meats"
       },
       {
+        "item": "minecraft:bone"
+      },
+      {
         "tag": "forge:tools/knives"
       }
     ],

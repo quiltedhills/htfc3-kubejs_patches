@@ -2,21 +2,21 @@
   "__comment__": "This file was automatically created by tfch",
   "type": "tfc:damage_inputs_shapeless_crafting",
   "recipe": {
-    "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shapeless",
     "ingredients": [
       {
-        "tag": "forge:vegetables"
+        "tag": "forge:seeds"
       },
       {
-        "item": "tfc:straw"
+        "tag": "forge:seeds"
       },
       {
         "tag": "forge:tools/knives"
       }
     ],
     "result": {
-      "item": "kubejs:feed_vege",
-    "count": 4
+      "item": "animaltrap:small_animals_bait",
+      "count": 2
     }
   }
 }
