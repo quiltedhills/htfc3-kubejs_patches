@@ -1,0 +1,16 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "tfc:wool_yarn"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:lye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "minecraft:string"
+  },
+  "duration": 8000
+}
