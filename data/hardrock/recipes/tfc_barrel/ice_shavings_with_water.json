@@ -5,6 +5,10 @@
       "item": "firmalife:ice_shavings"
     }
   },
+  "input_fluid": {
+    "ingredient": "minecraft:water",
+    "amount": 1
+  },
   "output_fluid": {
     "fluid": "minecraft:water",
     "amount": 250
