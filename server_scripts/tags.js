@@ -1832,6 +1832,9 @@ onEvent('tags.items', event => {
 		'tfc:powder/topaz',
 		'tfc:powder/pyrite'
 	]),
+  event.add('kubejs:gears/brass', [
+    'tfc:brass_mechanisms'
+  ]),
 	event.add('forge:sleeping_bags', [
 		'#travelersbackpack:sleeping_bags',
 		'#forge:colored_sleeping_bag',
