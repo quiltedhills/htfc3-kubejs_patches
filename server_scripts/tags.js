@@ -337,6 +337,7 @@ onEvent('tags.items', event => {
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg'
 	])
+  event.add('tfc:foods/fruits', 'farmersdelight:pumpkin_slice')
   event.add('kubejs:pollution_gasses', [
     'adpother:carbon',
     'adpother:dust',
