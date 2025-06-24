@@ -24,6 +24,7 @@ const non_tfc_metals = [
 	['uranium',     'tfc_ie_addon']
 ]
 const ore_grades = ['poor','normal','rich']
+const gravel_ores = ['native_copper', 'native_gold', 'native_silver', 'cassiterite']
 
 let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 	event.recipes.create.compacting(output,
@@ -39,6 +40,23 @@ let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 	.id(`kubejs:artificial_ores/combiner/${recipe_id}`)
 }
 
+let gravel_deposit = (event, rock_type, ore_item, output, recipe_id) => {
+  event.recipes.create.compacting(output,
+    [
+      Item.of(ore_item),
+      Item.of(ore_item),
+      Item.of(`tfc:rock/gravel/${rock_type}`),
+      Item.of(`tfc:rock/gravel/${rock_type}`),
+      Item.of('tfc:mortar'),
+      Item.of('tfc:mortar'),
+      Item.of('tfc:mortar'),
+      Item.of('tfc:mortar')
+    ]
+  ).superheated().id(`kubejs:gravel_deposit/basin/${recipe_id}`)
+  event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/gravel/${rock_type}`)
+  .id(`kubejs:gravel_deposit/combiner/${recipe_id}`)
+}
+
 onEvent('recipes', event => {
 	rock_types.forEach(rock => {
 		minerals.forEach(mineral => {
@@ -48,6 +66,13 @@ onEvent('recipes', event => {
 				`${mineral}/${rock}`
 			)
 		})
+    gravel_ores.forEach(metal => {
+      gravel_deposit(event, rock,
+        `tfc:ore/small_${metal}`,
+        `tfc:deposit/${metal}/${rock}`,
+        `${metal}/${rock}`
+      )
+    })
 		ore_grades.forEach(grade => {
 			metals.forEach(metal => {
 				artificial_ore(event, rock,
