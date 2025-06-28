@@ -1074,4 +1074,11 @@ function convertNumber(num) {
       text.add(1, [Text.white('Requires '), Text.gray('Iron '), Text.white('Greenhouse or better')])
     }
   })
+  tooltip.addAdvanced([
+  'immersiveengineering:steel_post',
+  'immersiveengineering:alu_post',
+  'immersiveengineering:treated_post'
+  ], (item, advanced, text) => {
+    text.add(1, [Text.gold('Right click '), Text.yellow('top block with an '), Text.gold('Engineers Hammer '), Text.yellow('to create a horizontal section')])
+  })
 })
