@@ -1,7 +1,7 @@
 {
   "type": "tfc:anvil",
   "input": {
-    "tag": "forge:sheets/wrought_iron"
+    "tag": "forge:double_sheets/wrought_iron"
   },
   "result": {
     "item": "adchimneys:metal_chimney",
