@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:sheets/wrought_iron"
+  },
+  "transitionalItem": {
+    "item": "tfc:metal/sheet/wrought_iron"
+  },
+  "sequence": [
+    {
+      "type": "createaddition:rolling",
+      "ingredients": [{
+        "tag": "forge:sheets/wrought_iron"
+      }],
+      "results": [{
+        "item": "tfc:metal/sheet/wrought_iron"
+      }]
+    },
+    {
+      "type": "createaddition:rolling",
+      "ingredients": [{
+        "tag": "forge:sheets/wrought_iron"
+      }],
+      "results": [{
+        "item": "tfc:metal/sheet/wrought_iron"
+      }]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [{
+        "tag": "forge:sheets/wrought_iron"
+      }],
+      "results": [{
+        "item": "tfc:metal/sheet/wrought_iron"
+      }]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [{
+        "tag": "forge:sheets/wrought_iron"
+      }],
+      "results": [{
+        "item": "tfc:metal/sheet/wrought_iron"
+      }]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [{
+        "tag": "forge:sheets/wrought_iron"
+      }],
+      "results": [{
+        "item": "tfc:metal/sheet/wrought_iron"
+      }]
+    }
+  ],
+  "results": [{
+    "item": "adchimneys:metal_chimney",
+    "count":8
+  }],
+  "loops": 1
+}
