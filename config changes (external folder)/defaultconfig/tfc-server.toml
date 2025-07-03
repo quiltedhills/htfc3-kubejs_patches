@@ -57,7 +57,7 @@ farmlandMakesTheBestRaceTracks = false
 		snowAccumulateChance = 20
 		#The chance that snow will melt during a storm. Lower values = faster snow melting, but also more block updates (aka lag).
 		#Range: > 1
-		snowMeltChance = 108
+		snowMeltChance = 36
 
 	[blocks.plants]
 		#Chance for a plant to grow each random tick, does not include crops. Lower = slower growth. Set to 0 to disable random plant growth.
