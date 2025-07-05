@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "010",
-    "020",
-    "343"
+    "323",
+    "545"
   ],
   "key": {
     "0": {
@@ -20,6 +20,9 @@
     },
     "4": {
       "item": "create:andesite_alloy"
+    },
+    "5": {
+      "item": "compressedcreativity:rotational_compressor"
     }
   },
   "result": {

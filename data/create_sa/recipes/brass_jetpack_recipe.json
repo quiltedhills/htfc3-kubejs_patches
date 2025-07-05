@@ -13,7 +13,7 @@
       "tag": "forge:ingots/brass"
     },
     "3": {
-      "item": "create:encased_fan"
+      "item": "compressedcreativity:rotational_compressor"
     },
     "4": {
       "item": "create_sa:steam_engine"

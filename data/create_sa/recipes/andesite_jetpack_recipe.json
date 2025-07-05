@@ -2,7 +2,7 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "02120",
-    "32423",
+    "72427",
     "35653"
   ],
   "key": {
@@ -26,6 +26,9 @@
     },
     "6": {
       "item": "create:andesite_alloy"
+    },
+    "7": {
+      "item": "compressedcreativity:rotational_compressor"
     }
   },
   "result": {
