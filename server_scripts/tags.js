@@ -1192,6 +1192,7 @@ onEvent('tags.items', event => {
 		'functionalstorage:fluid_1',
 		'functionalstorage:fluid_2',
 		'functionalstorage:fluid_4',
+    'supplementaries:sack'
 	]),
 	event.add('tfc:large_medium', [
 		'compressedcreativity:mesh_empty',
