@@ -386,7 +386,7 @@ farmlandMakesTheBestRaceTracks = false
 	[items.smallVessel]
 		#Tank capacity of a small vessel (in mB).
 		#Range: 0 ~ 2147483645
-		smallVesselCapacity = 3000
+		smallVesselCapacity = 1200
 		#The largest (inclusive) size of an item that is allowed in a small vessel.
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
 		smallVesselMaximumItemSize = "SMALL"
