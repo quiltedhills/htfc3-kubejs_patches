@@ -180,14 +180,6 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced(['immersiveengineering:blastbrick', 'immersiveengineering:blastbrick_reinforced'], (item, advanced, text) => {
 		text.add(1, Text.gold('Used for making advanced blast furnaces'))
 	})
-	tooltip.addAdvanced('create:vertical_gearbox', (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
-		} else {
-			text.add(1, Text.gold('Made by rotating a normal gearbox with a wrench.'))
-			text.add(2, [Text.gold('Hold a wrench and '), Text.of('Right click').yellow(), Text.gold(' its side!')])
-		}
-	})
 	tooltip.addAdvanced('kubejs:feed_vege', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])

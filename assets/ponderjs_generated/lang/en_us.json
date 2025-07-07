@@ -3,7 +3,7 @@
   "kubejs.ponder.tag.hardrock.description": "Hardrock\u0027s Ponder entries",
   "kubejs.ponder.pressure_chamber.header": "Making your first chamber",
   "kubejs.ponder.pressure_chamber.text_1": "Pressure chambers are formed by making a cube that is at least 3x3x3, with at least one pressure chamber valve",
-  "kubejs.ponder.pressure_chamber.text_10": "Regular chests can\u0027t fit larger itemso it is best to use higher tier storage blocklike crates or reinforced chests",
+  "kubejs.ponder.pressure_chamber.text_10": "Regular chests can\u0027t fit larger items, so it is best to use higher tier storage blocks like crates or reinforced chests",
   "kubejs.ponder.pressure_chamber.text_2": "Chamber glass can optionally be used instead of chamber walls",
   "kubejs.ponder.pressure_chamber.text_3": "Finally, at least two interfaces are required to transfer items in and out",
   "kubejs.ponder.pressure_chamber.text_4": "Orientation of the interface determines whether it\u0027s an import (blue) or an export (orange)",
