@@ -1,0 +1,17 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"tag": "forge:oil_seeds"
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:seed_biomass",
+		"count": 2
+	}
+	]
+}

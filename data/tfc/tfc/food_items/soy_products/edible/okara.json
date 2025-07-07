@@ -1,0 +1,10 @@
+{
+  "ingredient": {
+    "item": "kubejs:food/okara"
+  },
+  "hunger": 4,
+  "saturation": 3,
+  "decay_modifier": 0.8,
+  "vegetables": 1.5,
+  "protein": 1.5
+}

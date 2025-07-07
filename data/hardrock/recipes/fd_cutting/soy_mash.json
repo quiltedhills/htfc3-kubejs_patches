@@ -1,0 +1,17 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+	{
+		"item": "kubejs:food/soy_mash"
+	}
+	],
+	"tool": {
+		"tag": "forge:tools/knives"
+	},
+	"result": [
+	{
+		"item": "kubejs:seed_biomass"
+		"count": 8
+	}
+	]
+}
