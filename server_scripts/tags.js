@@ -2240,8 +2240,7 @@ onEvent('tags.items', event => {
 	])
 	event.add('forge:sugar_source', [
 		//'tfc:food/beet',
-		'tfc:food/sugarcane',
-		'minecraft:sugar_cane'
+		'tfc:food/sugarcane'
 	])
 	event.add('forge:ethanol_source', [
 		'tfc:food/beet',

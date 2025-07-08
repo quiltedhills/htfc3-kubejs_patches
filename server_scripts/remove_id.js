@@ -182,8 +182,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_ingot'},
 		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
 		
-		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast '},
-		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast '},
+		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
+		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},
 		{id: 'exnihilosequentia:sieve/ens_diamond'},

@@ -1,5 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
+	event.remove({input: 'minecraft:sugar_cane'})
 	event.remove({input: ['#forge:storage_blocks'], type: 'immersiveengineering:arc_furnace'})
 	event.remove({input: ['#forge:raw_materials'], type: 'immersiveengineering:arc_furnace'})
 	event.remove([
