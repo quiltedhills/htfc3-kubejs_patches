@@ -7,6 +7,7 @@
 - [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163)
 - [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611)
 - [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)
+- [LootJS](https://www.curseforge.com/minecraft/mc-mods/lootjs/files/4105690)
 - [PonderJS](https://www.curseforge.com/minecraft/mc-mods/ponder/files/3881555) (not needed on server)
 6. Yay!
 
@@ -45,7 +46,7 @@ Please feel free to reach out to me on discord for any questions!
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
-• Hopefully fixed the infamous pollution crash <br/>
+• Hopefully fixed the infamous snowstorm crash <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>
 • Added item repair recipes for things like jetpacks and clothing
 • Added custom magnets to replace the Create SA copper magnet <br/>

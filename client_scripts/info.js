@@ -38,7 +38,7 @@ onEvent('item.tooltip', tooltip => {
 			pollution_filter_map[pollution_type][filter_tier].forEach(filter_item => {
 				tooltip.addAdvanced(filter_item, (item, advanced, text) => {
 					if (!tooltip.shift) {
-						text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+						text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 					} else {
 						text.add(1, [Text.gold("This item is a "), Text.yellow(`${filter_tier}-tier ${pollution_type} filter`),Text.gold(".")])
 						text.add(2, Text.gold("Place inside of a filter frame and route pollution"))
@@ -51,7 +51,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced('minecraft:charcoal', (item, advanced, text) => {
 		// the "hold shift" tooltip here is commented out as it's added by pollution filter descriptions
 		//if (!tooltip.shift) {
-		//	text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+		//	text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		//} else {
 		if (tooltip.shift) {
 			text.add(Text.of(''))
@@ -64,7 +64,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('firmalife:drying_mat', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('No longer craftable due to causing lag.'))
 			text.add(2, Text.gold('Make solar driers instead!'))
@@ -72,7 +72,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(['supplementaries:soap'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Instantly restores '), Text.yellow('5 points'), Text.gold(' (out of 10) of the dirtiness meter.')])
 			text.add(2, Text.gold('Two is enough to fully clean yourself.'))
@@ -80,7 +80,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(/^bodyhygiene:.+_soap$/, (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.yellow('Completely resets'), Text.gold(' the dirtiness meter.')])
 			text.add(2, Text.gold('A newly crafted bar has four uses.'))
@@ -89,7 +89,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced('kubejs:sanitizer_bottle', (item, advanced, text) => {
 		text.add(1, `${item?.nbt?.CustomModelData || 0}mb / 1000mb Sanitizer Fluid`)
 		if (!tooltip.shift) {
-			text.add(2, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(2, [Text.yellow('Instantly resets'), Text.gold(' the dirtiness meter.')])
 			text.add(3, [Text.gold('Costs '), Text.yellow('10mb per point'), Text.gold(', up to 100mb per full meter.')])
@@ -97,7 +97,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Makes the air blower shoot water particles'))
 			text.add(2, Text.gold('as if there is a block of water in front of it.'))
@@ -107,7 +107,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_dense', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Drastically lowers the minimal temperature for'))
 			text.add(2, Text.gold('smoking and blasting, but makes heat drain faster.'))
@@ -119,7 +119,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_haunted', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Turns passing hot air into soul flame,'))
 			text.add(2, Text.gold('which allows for haunting recipes.'))
@@ -168,7 +168,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('supplementaries:slingshot', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Shoots blocks! Any placeables, in fact.'))
 			text.add(2, Text.gold('Deals no damage and is completely harmless'))
@@ -182,7 +182,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:feed_vege', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will allow you to tame and'))
 			text.add(2, Text.gold('breed some of the wild Boar and Tortoise'))
@@ -190,7 +190,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:feed_seed', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will allow you to tame and breed'))
 			text.add(2, Text.gold('some of the wild animals - Aardvark, Terror Bird'))
@@ -198,7 +198,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:feed_hay', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will allow you to tame and'))
 			text.add(2, Text.gold('breed some of the cattle - Big Bisons'))
@@ -206,7 +206,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:feed_fruit', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will help you tame and breed some'))
 			text.add(2, Text.gold('of the lizards - Newts, Giant Salamanders, Monitor'))
@@ -214,7 +214,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:feed_meat', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will help you tame and breed'))
 			text.add(2, Text.gold('some of the wilds animals - Opossum'))
@@ -222,7 +222,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('untamedwilds:chum', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('fodder that will help you tame and breed some of the'))
 			text.add(2, Text.gold('wild fishes - sunfish, triggerfish, sawfish, arowana '))
@@ -230,7 +230,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:canoe', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('First boat had to be chiselled and burned from the wood'))
 			text.add(2, Text.red('IMPORTANT - only a few types of wood can be chiseled'))
@@ -246,7 +246,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('minecraft:campfire', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Creating a firepit'))
 			text.add(2, Text.gold('- Put 1 log and 3 sticks together on top of a block'))
@@ -256,7 +256,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('minecraft:glass_bottle', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('It is not only bottle'))
 			text.add(2, Text.gold('Has a small amount of air inside'))
@@ -280,7 +280,7 @@ onEvent('item.tooltip', tooltip => {
 		'beyond_earth:ice_shard'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Extraterrestrial mineral'))
 			text.add(2, [Text.gold('Can be found exploring the '), Text.red('Solar System')])
@@ -298,7 +298,7 @@ onEvent('item.tooltip', tooltip => {
 		'butchersdelight:deadstrider'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Hang a dead animal on a hook from '), Text.red('ButchersDelight')])
 			text.add(2, Text.gold('Small animals (chicken, rabbit) place on ground'))
@@ -314,7 +314,7 @@ onEvent('item.tooltip', tooltip => {
 		'waterflasks:iron_flask'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Use this item to store drinking water'))
 			text.add(2, Text.gold('But be careful, fresh water can sometimes give you poisoning'))
@@ -327,7 +327,7 @@ onEvent('item.tooltip', tooltip => {
 		'immersiveengineering:creosote_bucket'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('You can use as fuel in a lamp'))
 			text.add(2, Text.gold('It is enough for a long burn time'))
@@ -335,7 +335,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('myrtrees:latex', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Obtained from tapping into '), Text.yellow('Rubberwood Trees'), Text.gold('.')])
 			text.add(2, Text.gold('A rubberwood sapling can be obtained from sieving dirt.'))
@@ -352,7 +352,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('farmersrespite:coffee_berries', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Coffee fruits can be found exclusively on coffee bushes'))
 			text.add(2, Text.gold('They grow in the Nether in basalt biomes'))
@@ -361,7 +361,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('tfc:food/cattail_root', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Cattails you can find near water'))
 			text.add(2, Text.gold('Look for lakes and reservoirs of water'))
@@ -370,7 +370,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('adpother:dust', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Released by millstones, saws, crushers and similar machines.'))
 			text.add(2, Text.gold('Degrades the ground when absorbed by it.'))
@@ -380,7 +380,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('adpother:carbon', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Released from fire sources and heavy machinery along with sulfur.'))
 			text.add(2, Text.gold('Large buildups cause severe debuffs to living beings.'))
@@ -390,7 +390,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('adpother:sulfur', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Released from fire sources and heavy machinery along with carbon.'))
 			text.add(2, Text.gold('Large buildups cause severe debuffs to living beings.'))
@@ -408,7 +408,7 @@ onEvent('item.tooltip', tooltip => {
 		'mekanism:scuba_mask'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
 			text.add(2, Text.gold('Multiple different filters can be active at once.'))
@@ -422,7 +422,7 @@ onEvent('item.tooltip', tooltip => {
 		'pneumaticcraft:pneumatic_helmet'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Protects from harmful pollution-borne debuffs!'))
 			text.add(2, Text.gold('Multiple different filters can be active at once.'))
@@ -435,7 +435,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adpother:.+_vacuum_bag$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Equip this to collect pollution sucked in with a ').gold(), Text.of('Vacuum Tube').yellow(), Text.of('!').gold()])
 			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
@@ -447,7 +447,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adpother:.+_vacuum_tube$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Lets you ').gold(), Text.of('collect pollution manually').yellow(), Text.of('!').gold()])
 			text.add(2, [Text.of('You will need a ').gold(), Text.of('vacuum bag').yellow(), Text.of(' to use it.').gold()])
@@ -460,7 +460,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adpother:.+_filter_frame$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Absorbs pollution routed into it from below').gold()])
 			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('Pump').yellow(), Text.of(' directly.').gold()])
@@ -473,7 +473,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adchimneys:.+_chimney$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('vertically').yellow(), Text.of('! Up, to be more specific.').gold()])
 			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('pump').yellow(), Text.of(' or ').gold(), Text.of('vent').yellow(), Text.of('.').gold()])
@@ -485,7 +485,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adchimneys:.+_vent$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('horizontally').yellow(), Text.of('!').gold()])
 			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('chimney').yellow(), Text.of('.').gold()])
@@ -498,7 +498,7 @@ onEvent('item.tooltip', tooltip => {
 		/^adchimneys:.+_pump$/
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Powers ').gold(), Text.of('vents').yellow(), Text.of(' to let them capture and move pollution!').gold()])
 			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
@@ -515,7 +515,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(['adpother:aerometer'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.yellow('Shows pollution level when held!'))
 			text.add(2, Text.gold('Gray, black and yellow gauges will appear on the model'))
@@ -525,7 +525,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('waystones:waystone', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Waystones provide a way of ').gold(), Text.of('teleportation').yellow(), Text.of('.').gold()])
 			text.add(2, Text.gold('Placing multiple lets you travel between them.'))
@@ -537,7 +537,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.yellow('Can hold any unstackable item or block!'))
 			text.add(2, [Text.of('Access the slot with ').gold(), getKeybind('key.toolbelt.slot')])
@@ -557,7 +557,7 @@ onEvent('item.tooltip', tooltip => {
 		'firmalife:cured_oven_chimney'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Three must be placed behind main oven parts.'))
 			text.add(2, Text.gold('See the guidebook entry for more info!'))
@@ -580,7 +580,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('supplementaries:pancake', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Inedible. Will not rot. Can be placed.'))
 			text.add(2, Text.darkGray('What have you done...'))
@@ -588,7 +588,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(/^kubejs:prop_foods\//, (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Inedible. Will not rot.'))
 			text.add(2, Text.darkGray('What have you done...'))
@@ -599,33 +599,32 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:magnet/copper', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Can only attract items with the ').gold(), Text.of('$metallic').yellow(), Text.of(' tag!').gold()])
-			text.add(2, [Text.of('Metallic ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are hardly pulled.').gold()])
-			text.add(3, '')
-			text.add(4, Text.gold('Quite a weak pull, but gets the job done.'))
-			text.add(5, Text.gold('Be careful when moving lots of items around!'))
-			text.add(6, '')
-			text.add(7, Text.gold('Look into getting a better magnet when you\'re able to!'))
+			text.add(2, '')
+			text.add(3, Text.gold('Quite a weak pull, but gets the job done.'))
+			text.add(4, Text.gold('Take care when moving lots of items around!'))
+			text.add(5, '')
+			text.add(6, Text.gold('Look into getting a better magnet when you\'re able to!'))
 		}
 	})
 	tooltip.addAdvanced('kubejs:magnet/colored_steel', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Can attract ').gold(), Text.of('any').yellow(), Text.of(' items, not just metallic ones!').gold()])
-			text.add(2, [Text.of('Still, has a slightly stronger pull for ').gold(), Text.of('$metallic').yellow(), Text.of(' items,').gold()])
-			text.add(3, [Text.of('and ').gold(), Text.of('$huge_very_heavy').yellow(), Text.of(' items are pulled very slowly.').gold()])
+			text.add(2, [Text.of('Still, is slightly more effective with ').gold(), Text.of('$metallic').yellow(), Text.of(' items.').gold()])
+			text.add(3, [Text.of('$huge_very_heavy').yellow(), Text.of(' items are pulled very slowly.').gold()])
 			text.add(4, '')
-			text.add(5, Text.gold('Uses no energy despite using an accumulator.'))
+			text.add(5, Text.gold('Uses no energy despite being made from an accumulator.'))
 			text.add(6, '')
 			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
 			else {
-				text.add(7, [Text.of('A ').gold(), Text.of('Smart Chest').yellow(), Text.of(' with ').gold(), Text.of('magnet and range upgrades').yellow()])
-				text.add(8, Text.gold('can suck up items in a huge area, and has incredible storage.'))
-				text.add(9, [Text.of('A ').gold(), Text.of('Vacuum Hopper').yellow(), Text.of(' is similar, but is simpler and cheaper!').gold()])
-				text.add(10, [Text.of('An ').gold(), Text.of('Encased Fan').yellow(), Text.of(' with a ').gold(), Text.of('Nozzle').yellow(), Text.of(' can pull or push items').gold()])
+				text.add(7, [Text.gold('A '), Text.yellow('Smart Chest'), Text.gold(' with '), Text.of('magnet and range upgrades').yellow(), Text.gold(' can suck up')])
+				text.add(8, Text.gold('items in a huge area, and has incredible storage.'))
+				text.add(9, [Text.gold('A '), Text.yellow('Vacuum Hopper'), Text.gold(' is similar, but is simpler and cheaper!')])
+				text.add(10, [Text.gold('An '), Text.yellow('Encased Fan'), Text.gold(' with a '), Text.yellow('Nozzle'), Text.gold(' can pull or push items')])
 				text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
 			}
 		}
@@ -635,42 +634,41 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('kubejs:magnet/hdpe', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Drastically different compared to weaker magnets:'))
-			text.add(2, [Text.of('attraction is ').gold(), Text.of('direct').yellow(), Text.of(' instead of being momentum-based.').gold()])
+			text.add(2, Text.gold('attraction is direct instead of being momentum-based.'))
 			text.add(3, Text.yellow('This gives much more control of where items go!'))
 			text.add(4, '')
-			text.add(5, Text.gold('Does not care if an item is metallic or not.'))
-			text.add(6, [Text.of('$huge_very_heavy').yellow(), Text.of(' items are still barely moved.').gold()])
-			text.add(7, Text.gold('Enrichment is enough to power it indefinitely.'))
-			text.add(8, '')
-			if (!tooltip.ctrl) text.add(9, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
+			text.add(5, Text.gold('Does not care whether an item is metallic or not.'))
+			text.add(6, [Text.yellow('$huge_very_heavy'), Text.gold(' items are still barely moved.')])
+			text.add(7, '')
+			if (!tooltip.ctrl) text.add(8, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(9, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
-				text.add(10, Text.gold('teleport items from up to 20-ish blocks.'))
-				text.add(11, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(12, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
-				text.add(13, Text.gold('attract nearby items via teleporting.'))
-				text.add(14, Text.gold('Does not have a large range, but is passive.'))
+				text.add(8, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
+				text.add(9, Text.gold('teleport items from up to 20-ish blocks.'))
+				text.add(10, Text.gold('This costs air pressure, but is super powerful!'))
+				text.add(11, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
+				text.add(12, Text.gold('attract nearby items via teleporting.'))
+				text.add(13, Text.gold('Does not have a large range, but is passive.'))
 			}
 		}
 	})
 	tooltip.addAdvanced('kubejs:magnet/polonium', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, [Text.of('Identical to the ').gold(), Text.of('HDPE magnet').yellow(), Text.of(', but with a twist:').gold()])
-			text.add(2, [Text.of('right clicking starts a ').gold(), Text.of('warp').yellow(), Text.of(' that teleports items').gold()])
-			text.add(3, [Text.of('within a ').gold(), Text.of('15-block range').yellow(), Text.of(' directly to your feet.').gold()])
-			text.add(4, Text.gold('This has a 20-second cooldown.'))
+			text.add(1, [Text.gold('Similar to the '), Text.yellow('HDPE magnet'), Text.gold(', but has an active ability:')])
+			text.add(2, [Text.gold('right clicking starts a '), Text.yellow('warp'), Text.gold(' that teleports items')])
+			text.add(3, [Text.gold('within a '), Text.yellow('15-block range'), Text.gold(' directly to your feet.')])
+			text.add(4, Text.gold('This has a 20 second cooldown.'))
 			text.add(5, '')
-			if (!tooltip.ctrl) text.add(6, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for better alternatives than this magnet!').gold()])
+			if (!tooltip.ctrl) text.add(6, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(6, [Text.of('PNC\'s ').gold(), Text.of('Magnet Upgrades').yellow(), Text.of(' let a pneumatic chestplate').gold()])
+				text.add(6, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
 				text.add(7, Text.gold('teleport items from up to 20-ish blocks.'))
 				text.add(8, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(9, [Text.of('Mekanism\'s ').gold(), Text.of('Magnetic Attraction Unit').yellow(), Text.of(' lets mekasuit boots').gold()])
+				text.add(9, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
 				text.add(10, Text.gold('attract nearby items via teleporting.'))
 				text.add(11, Text.gold('Does not have a large range, but is passive.'))
 			}
@@ -691,7 +689,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced(['supplementaries:planter','supplementaries:planter_rich'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Not to be confused with '), Text.yellow('Greenhouse planters'), Text.gold('.')])
 			text.add(2, Text.gold('Can be used to grow non-tfc plants,'))
@@ -716,21 +714,21 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('beyond_earth:coal_torch', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Turns into a '), Text.yellow('permanent torch'), Text.gold(' when lit!')])
 		}
 	})
 	tooltip.addAdvanced('beyond_earth:coal_lantern', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Turns into a '), Text.yellow('permanent lantern'), Text.gold(' when lit!')])
 		}
 	})
 	tooltip.addAdvanced(['untamedwilds:material_pearl','untamedwilds:material_giant_pearl'], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Can rarely be found on '), Text.yellow('Amadron'), Text.gold('!')])
 		}
@@ -799,7 +797,7 @@ onEvent('item.tooltip', tooltip => {
 		'farmersdelight:shepherds_pie'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Foods with the '),Text.yellow('Nourishment'),Text.gold(' effect')])
 			text.add(2, [Text.gold('will fill you for much longer than usual.')])
@@ -810,7 +808,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('tfc:torch', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Made from heating up '), Text.yellow('Unlit Torches'), Text.gold('.')])
 			text.add(2, [Text.gold('Will produce tiny amounts of pollution when placed.')])
@@ -824,7 +822,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Protects an area around 150 blocks in diameter,')])
 			text.add(2, [Text.gold('centered on the deflector.')])
@@ -837,7 +835,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('supplementaries:bellows', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('to see more info')])
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Pushes entities around when given a redstone signal.')])
 			text.add(2, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
@@ -945,8 +943,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:large_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Barley'), Text.gold(', '),
@@ -967,8 +964,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:quad_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Beet'), Text.gold(', '),
@@ -986,8 +982,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:hydroponic_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Cranberry'), Text.gold(' and '),
@@ -998,8 +993,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:bonsai_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Apple'), Text.gold(', '),
@@ -1018,8 +1012,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:hanging_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Banana'), Text.gold(', '),
@@ -1032,8 +1025,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:trellis_planter', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		}
-		else {
+		} else {
 			text.add(1, [
 				Text.gold('Grows '),
 				Text.yellow('Blackberry'), Text.gold(', '),
@@ -1072,8 +1064,7 @@ function convertNumber(num) {
 	], (item, advanced, text) => {
 		if (!tooltip.alt) {
 			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
-		}
-		else {
+		} else {
 			text.add(1, [Text.white('Requires '), Text.gold('Wooden'), Text.white(' greenhouse or better')])
 		}
 	})
@@ -1087,8 +1078,7 @@ function convertNumber(num) {
 	], (item, advanced, text) => {
 		if (!tooltip.alt) {
 			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
-		}
-		else {
+		} else {
 			text.add(1, [Text.white('Requires '), Text.of('Copper').color('#ee7354'), Text.white(' greenhouse or better')])
 		}
 	})
@@ -1122,8 +1112,7 @@ function convertNumber(num) {
 	], (item, advanced, text) => {
 		if (!tooltip.alt) {
 			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
-		}
-		else {
+		} else {
 			text.add(1, [Text.white('Requires '), Text.gray('Iron'), Text.white(' greenhouse or better')])
 		}
 	})
@@ -1137,6 +1126,14 @@ function convertNumber(num) {
 		} else {
 			text.add(1, [Text.yellow('Right click'), Text.gold(' top block with an '), Text.yellow('Engineer\'s Hammer')])
 			text.add(2, Text.gold('to create a horizontal section'))
+		}
+	})
+	tooltip.addAdvanced('firmalife:squirting_moisture_transducer', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, Text.gold('Legacy item with limited support and documentation.'))
+			text.add(2, [Text.gold('Use '), Text.yellow('Sprinklers'), Text.gold(' or '), Text.yellow('Dribblers') ,Text.gold(' instead!')])
 		}
 	})
 })
