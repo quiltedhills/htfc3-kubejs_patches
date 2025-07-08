@@ -1,0 +1,25 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/acacia"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/acacia"
+    }
+  ]
+}{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/acacia"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/acacia"
+    }
+  ]
+}

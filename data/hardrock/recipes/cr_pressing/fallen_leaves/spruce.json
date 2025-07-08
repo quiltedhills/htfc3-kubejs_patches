@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/spruce"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/spruce"
+    }
+  ]
+}

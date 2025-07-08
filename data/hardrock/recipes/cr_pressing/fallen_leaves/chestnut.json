@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/chestnut"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/chestnut"
+    }
+  ]
+}
