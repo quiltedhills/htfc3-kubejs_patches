@@ -138,3 +138,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed recipe conflicts for straw hats and straw carpets <br/>
 • Removed misleading melting tooltips for IE ore <br/>
 • Fixed missing shaft texture in andesite and brass chunk loader item models <br/>
+• Changed the mixing bowl "no recipe" message to be less ambiguous <br/>
