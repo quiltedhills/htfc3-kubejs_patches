@@ -1,7 +1,14 @@
-// separated from hide.js due to bulky arrays
-// this feel so wrong
-
 onEvent('jei.remove.recipes', event => {
+	// I saved a recipe type dump to 'hide_jei_recipes_types.txt'.
+	// You can refer to that file to get category names for this script!
+
+	event.remove('tfc:sealed_barrel', [
+		'hardrock:tfc_barrel/ice_shavings_with_water'
+	])
+
+
+
+	// this feels so wrong
 	event.remove('immersiveengineering:bottlingmachine', [
 		'immersiveengineering:jei_bucket_acetaldehyde',
 		'immersiveengineering:jei_bucket_active_redstone',
@@ -20,7 +27,7 @@ onEvent('jei.remove.recipes', event => {
 		'immersiveengineering:jei_bucket_boiled_water',
 		'immersiveengineering:jei_bucket_brine',   // no effect
 		'immersiveengineering:jei_bucket_brown_dye',
-		'immersiveengineering:jei_bucket_builders_tea',
+		//'immersiveengineering:jei_bucket_builders_tea',
 		'immersiveengineering:jei_bucket_chlorine',
 		'immersiveengineering:jei_bucket_chocolate',   // no effect
 		'immersiveengineering:jei_bucket_cider',
@@ -119,7 +126,7 @@ onEvent('jei.remove.recipes', event => {
 		'immersiveengineering:jei_bucket_seed_oil_water',
 		'immersiveengineering:jei_bucket_sky_slime',
 		'immersiveengineering:jei_bucket_sodium',
-		'immersiveengineering:jei_bucket_soy_milk',
+		//'immersiveengineering:jei_bucket_soy_milk',
 		'immersiveengineering:jei_bucket_spring_water',
 		'immersiveengineering:jei_bucket_steam',
 		'immersiveengineering:jei_bucket_sugar_water',
