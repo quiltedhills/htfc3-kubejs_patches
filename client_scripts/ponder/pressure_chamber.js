@@ -128,7 +128,7 @@ onEvent('ponder.registry', event => {
         scene.idle(20)
         helpers.setId([2, 5, 2], 'immersiveengineering:crate', Facing.down, 4)
         helpers.setId([4, 2, 2], 'immersiveengineering:crate', Facing.west, 14)
-        scene.text(80, "Regular chests can't fit larger itemso it is best to use higher tier storage blocklike crates or reinforced chests",
+        scene.text(80, "Regular chests can't fit larger items, so it is best to use higher tier storage blocks like crates or reinforced chests",
             [4, 2.5, 2.5]).placeNearTarget()
         scene.idle(40)
     })

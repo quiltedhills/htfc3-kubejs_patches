@@ -4,7 +4,7 @@ onEvent('item.modification', event => {
 	event.modify('exnihilosequentia:iron_hammer', item => { item.maxDamage = 2048 })
 	event.modify('immersiveengineering:screwdriver', item => { item.maxDamage = 16 })
 
-	// food tweaks
+	// various food tweaks
 	event.modify('minecraft:golden_carrot', item => {
 		item.foodProperties = food => {
 			food.alwaysEdible()
@@ -13,7 +13,8 @@ onEvent('item.modification', event => {
 	event.modify('untamedwilds:food_turtle_soup', item => { item.maxStackSize = 32 })
 
 
-	// experimental nourishment fix
+
+	// nourishment fix
 	event.modify([
 		'pneumaticcraft:cod_n_chips',
 		'pneumaticcraft:salmon_tempura',

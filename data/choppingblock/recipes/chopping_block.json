@@ -1,16 +1,14 @@
 {
-  "type": "create:item_application",
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:stripped_logs"
+      "tag": "minecraft:logs"
     },
     {
-      "tag": "forge:axes"
+      "tag": "tfc:raw_hides"
     }
   ],
-  "results": [
-    {
+  "result": {
       "item": "choppingblock:chopping_block"
-    }
-  ]
+  }
 }

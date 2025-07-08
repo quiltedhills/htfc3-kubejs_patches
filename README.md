@@ -71,11 +71,13 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths should no longer produce pollution <br/>
+• Added a safeguard to prevent accidentally placing block items that have sequenced recipe data <br/>
 • Made it possible to obtain silkworms directly from trees without having to collect the leaves with shears first <br/>
 • Made infested leaves landslide instead of collapsing (think dirt or gravel) <br/>
 • DON'T FORGET TO REVERT Added TFC grass blocks to the '#minecraft:dirt' tag, which allows things like planting rubberwood trees on TFC grass blocks <br/>
 • Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
 • Changed recipes for Feeds and Baits to reduce recipe conflicts <br/>
+• Added an item that lets you remove player corpses <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
@@ -117,6 +119,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for TFC ore blocks and gravel deposits for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
 • Re-introduced recipes for vegetable crates from Farmer's Delight <br/>
+• Made all statues from Paraglider craftable (they now also serve no functional purpose and are purely decorative) <br/>
 • Added recipes for some previously unobtainable blocks <br/>
 
 ### Fixes:
