@@ -7,6 +7,6 @@
   "result": {
     "item": "tfc:burlap_cloth"
   },
-  "steps_required": 24,
+  "steps_required": 32,
   "in_progress_texture": "tfc:block/burlap"
 }

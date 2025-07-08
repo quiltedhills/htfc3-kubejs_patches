@@ -1,0 +1,34 @@
+{
+  "type": "createsifter:sifting",
+  "ingredients": [
+    {
+      "item": "createsifter:brass_mesh"
+    },
+    {
+      "item": "tfc:rock/gravel/granite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:ore/small_cassiterite",
+      "chance": 0.04
+    },
+    {
+      "item": "tfc:ore/small_limonite",
+      "chance": 0.10
+    },
+    {
+      "item": "tfc:ore/sylvite",
+      "chance": 0.02
+    },
+    {
+      "item": "minecraft:flint",
+      "chance": 0.1
+    },
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "chance": 0.15
+    }
+  ],
+  "processingTime": 500
+}

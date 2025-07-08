@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "firmalife:ice_shavings"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:boiled_water",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

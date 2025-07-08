@@ -1,6 +1,6 @@
 {
   "type": "create:sequenced_assembly",
-  "ingredient": {"tag": "forge:rods/cast_iron"},
+  "ingredient": {"item": "tfc:metal/rod/cast_iron"},
   "transitionalItem": {"item": "tfc:metal/rod/cast_iron"},
   "sequence": [
     {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]},
@@ -14,4 +14,3 @@
   ],
   "loops": 1
 }
-

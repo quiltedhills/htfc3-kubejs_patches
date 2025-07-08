@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/white_cedar"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/white_cedar"
+    }
+  ]
+}

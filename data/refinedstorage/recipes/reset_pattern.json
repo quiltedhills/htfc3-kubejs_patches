@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "refinedstorage:pattern"
+  }
+  ],
+  "result": {
+    "item": "refinedstorage:pattern"
+  }
+}

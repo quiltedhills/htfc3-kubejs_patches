@@ -1,0 +1,13 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "firmalife:ice_shavings"
+    }
+  },
+  "output_fluid": {
+    "fluid": "minecraft:water",
+    "amount": 250
+  },
+  "duration": 2000
+}

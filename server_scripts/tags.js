@@ -192,7 +192,7 @@ onEvent('tags.fluids', event => {
 	event.add('tfc:usable_in_ingot_mold', ['kubejs:andesite_alloy', 'tconstruct:seared_stone', 'kubejs:andesite_stone', 'tconstruct:molten_glass', 'kubejs:molten_iron_quartz'])
 	event.add('tfc:usable_in_barrel', ['firmalife:sugar_water', 'tconstruct:honey', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_blue_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
-	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water',  'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
+	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_wooden_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_pot', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea'])
 	event.add('tfc:usable_in_jug', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'tfc:tallow', 'create:tea'])
@@ -337,7 +337,12 @@ onEvent('tags.items', event => {
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg'
 	])
-
+	event.add('tfc:foods/fruits', 'farmersdelight:pumpkin_slice')
+	event.add('kubejs:pollution_gasses', [
+		'adpother:carbon',
+		'adpother:dust',
+		'adpother:sulfur'
+	])
 
 	// removeAllTagsFrom doesn't seem to work with regex :(
 	global.items_to_remove = [
@@ -1187,6 +1192,7 @@ onEvent('tags.items', event => {
 		'functionalstorage:fluid_1',
 		'functionalstorage:fluid_2',
 		'functionalstorage:fluid_4',
+		'supplementaries:sack'
 	]),
 	event.add('tfc:large_medium', [
 		'compressedcreativity:mesh_empty',
@@ -1503,7 +1509,8 @@ onEvent('tags.items', event => {
 		'minecraft:mutton',
 		'minecraft:porkchop',
 		'minecraft:beef',
-		'minecraft:chicken'
+		'minecraft:chicken',
+		'minecraft:rabbit'
 	]),
 	event.add('tfc:foods/can_be_hung', [
 		'kubejs:shark_meat',
@@ -1535,7 +1542,8 @@ onEvent('tags.items', event => {
 		'minecraft:mutton',
 		'minecraft:porkchop',
 		'minecraft:beef',
-		'minecraft:chicken'
+		'minecraft:chicken',
+		'minecraft:rabbit'
 	]),
 	event.add('forge:pollution_blocks', [
 		'tfc:grass/silt',
@@ -1895,6 +1903,9 @@ onEvent('tags.items', event => {
 		'tfc:stone/shovel/igneous_intrusive',
 		'tfc:stone/shovel/metamorphic',
 		'tfc:stone/shovel/sedimentary'
+	]),
+	event.add('forge:spindles', [
+		'tfc:spindle'
 	]),
 	event.add('tfc:tanned_hides', [
 		'kubejs:hide_tanned_s',
@@ -2257,6 +2268,8 @@ onEvent('tags.items', event => {
 		'beyond_earth:raw_ostrum',
 		'beyond_earth:raw_calorite'
 	])
+	event.removeAll('tfc:cat_food')
+	event.add('tfc:cat_food', '#minecraft:fishes')
 	// ==========  REMOVE
 	event.remove('forge:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('balm:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
@@ -2280,6 +2293,59 @@ onEvent('tags.items', event => {
 		'untamedwilds:hide_bigcat_puma',
 		'untamedwilds:hide_bigcat_tiger'
 	])
+/*  event.remove('tfc:cat_food', [  // didn't work for whatever reason
+    'tfc:food/barley_grain',
+    'tfc:food/maize_grain',
+    'tfc:food/oat_grain',
+    'tfc:food/rye_grain',
+    'tfc:food/rice_grain',
+    'tfc:food/wheat_grain',
+    'tfc:food/cooked_beef',
+    'tfc:food/cooked_pork',
+    'tfc:food/cooked_chicken',
+    'tfc:food/cooked_quail',
+    'tfc:food/cooked_mutton',
+    'tfc:food/cooked_bear',
+    'tfc:food/cooked_horse_meat',
+    'tfc:food/cooked_pheasant',
+    'tfc:food/cooked_turkey',
+    'tfc:food/cooked_grouse',
+    'tfc:food/cooked_venison',
+    'tfc:food/cooked_wolf',
+    'tfc:food/cooked_rabbit',
+    'tfc:food/cooked_hyena',
+    'tfc:food/cooked_duck',
+    'tfc:food/cooked_chevon',
+    'tfc:food/cooked_camelidae',
+    'tfc:food/cooked_gran_feline',
+    'tfc:food/cooked_turtle',
+    'twilightforest:cooked_venison',
+    'twilightforest:cooked_meef',
+    'untamedwilds:food_bear_cooked',
+    'untamedwilds:food_turtle_cooked',
+    'untamedwilds:food_pachyderm_cooked',
+    'farmersdelight:beef_patty',
+    'farmersdelight:cooked_bacon',
+    'farmersdelight:cooked_mutton_chops',
+    'farmersdelight:smoked_ham',
+    'firmalife:food/yak_curd',
+    'firmalife:food/goat_curd',
+    'firmalife:food/milk_curd',
+    'firmalife:food/cooked_bacon',
+    'firmalife:food/cheddar',
+    'firmalife:food/chevre',
+    'firmalife:food/rajya_metok',
+    'firmalife:food/gouda',
+    'firmalife:food/feta',
+    'firmalife:food/shosha',
+    'firmalife:food/shredded_cheese',
+    'firmalife:food/white_chocolate_blend',
+    'firmalife:food/dark_chocolate_blend',
+    'firmalife:food/milk_chocolate_blend',
+    'htm:cooked_poultry_wing',
+    'htm:cooked_poultry_leg',
+    'htm:cooked_poultry_breast'
+  ]) */
 	event.removeAllTagsFrom(
 		'chiselsandbits:chisel_stone',
 		'htm:hammer',

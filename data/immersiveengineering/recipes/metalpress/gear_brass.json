@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_gear",
+  "input": {
+    "tag": "forge:rods/brass"
+  },
+  "result": {
+    "item": "tfc:brass_mechanisms"
+  },
+  "energy": 1200
+}

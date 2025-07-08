@@ -4,6 +4,6 @@
 		"fluid": "tconstruct:blazing_blood",
 		"amount": 1000
 	},
-	"burnTime": 24000,
+	"burnTime": 72000,
 	"superheated": true
 }

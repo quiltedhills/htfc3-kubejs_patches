@@ -882,4 +882,261 @@ function convertNumber(num) {
 			//text.add(3, Text.darkGray(`${item.nbt.CustomModelData}`))
 		}
 	})
+
+	const agedAlcoholEffects = [
+		['Beer', 'Absorption II', '20:00'],
+		['Cider', 'Speed I', '5:20'],
+		['Rum', 'Speed II', '2:40'],
+		['Corn Whiskey', 'Haste I', '5:20'],
+		['Rye Whiskey', 'Haste I', '5:20'],
+		['Whiskey', 'Haste II', '2:40'],
+		['Sake', 'Resistance I', '5:20'],
+		['Vodka', 'Resistance II', '2:40']
+	]
+	agedAlcoholEffects.forEach(([drinkName, effectName, effectDuration]) => {
+		tooltip.addAdvanced(`tfc:bucket/${drinkName.replace(/ /g, '_').toLowerCase()}`, (item, advanced, text) => {
+			text.add(1, [Text.gold(`Aged ${drinkName} gives `), Text.yellow(effectName), Text.gold(' for '), Text.yellow(effectDuration)])
+		})
+	})
+
+	// Unfortunately traveller's backpacks don't have a consistent name I can use, and tags are loaded after client_scripts
+	tooltip.addAdvanced([
+	'travelersbackpack:netherite',
+	'travelersbackpack:diamond',
+	'travelersbackpack:gold',
+	'travelersbackpack:emerald',
+	'travelersbackpack:iron',
+	'travelersbackpack:lapis',
+	'travelersbackpack:redstone',
+	'travelersbackpack:bookshelf',
+	'travelersbackpack:sponge',
+	'travelersbackpack:cake',
+	'travelersbackpack:cactus',
+	'travelersbackpack:melon',
+	'travelersbackpack:pumpkin',
+	'travelersbackpack:creeper',
+	'travelersbackpack:dragon',
+	'travelersbackpack:enderman',
+	'travelersbackpack:blaze',
+	'travelersbackpack:ghast',
+	'travelersbackpack:magma_cube',
+	'travelersbackpack:spider',
+	'travelersbackpack:wither',
+	'travelersbackpack:bee',
+	'travelersbackpack:ocelot',
+	'travelersbackpack:cow',
+	'travelersbackpack:chicken',
+	'travelersbackpack:squid',
+	'travelersbackpack:bat'
+	],
+	(item, advanced, text) => {
+		text.add(item.nbt.Ability ? Text.green('Ability is active')
+		: [Text.red('Ability is inactive'), Text.gold(' (hold '),  Text.yellow('Shift'),  Text.gold(' for info)')])
+		if (tooltip.shift) {
+			text.add(Text.gold(''))
+			text.add(Text.yellow('Abilities are turned off by default!').underlined())
+			text.add([Text.gold('When first making the backpack, make sure to '), Text.yellow('equip it'), Text.gold(',')])
+			text.add([Text.gold('then open it with '), getKeybind('key.travelersbackpack.inventory'), Text.gold(',')])
+			text.add([Text.gold('and '), Text.yellow('enable its abilities'), Text.gold(' with the switch on the left.')])
+		}
+	})
+
+	
+	tooltip.addAdvanced('firmalife:large_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Barley'), Text.gold(', '),
+				Text.yellow('Green Beans'), Text.gold(', '),
+				Text.yellow('Jute'), Text.gold(', '),
+				Text.yellow('Maize'), Text.gold(', '),
+				Text.yellow('Oat'), Text.gold(', ')
+			])
+			text.add(2, [
+				Text.yellow('Papyrus'), Text.gold(', '),
+				Text.yellow('Rye'), Text.gold(', '),
+				Text.yellow('Sugarcane'), Text.gold(', '),
+				Text.yellow('Tomato'), Text.gold(' and '),
+				Text.yellow('Wheat')
+			])
+		}
+	})
+	tooltip.addAdvanced('firmalife:quad_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Beet'), Text.gold(', '),
+				Text.yellow('Cabbage'), Text.gold(', '),
+				Text.yellow('Carrot'), Text.gold(', '),
+				Text.yellow('Garlic'), Text.gold(', ')
+			])
+			text.add(2, [
+				Text.yellow('Onion'), Text.gold(', '),
+				Text.yellow('Potato'), Text.gold(' and '),
+				Text.yellow('Soybean')
+			])
+		}
+	})
+	tooltip.addAdvanced('firmalife:hydroponic_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Cranberry'), Text.gold(' and '),
+				Text.yellow('Rice')
+			])
+		}
+	})
+	tooltip.addAdvanced('firmalife:bonsai_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Apple'), Text.gold(', '),
+				Text.yellow('Cherry'), Text.gold(', '),
+				Text.yellow('Cocoa'), Text.gold(', '),
+				Text.yellow('Fig'), Text.gold(', ')
+			])
+			text.add(2, [
+				Text.yellow('Lemon'), Text.gold(', '),
+				Text.yellow('Orange'), Text.gold(', '),
+				Text.yellow('Peach'), Text.gold(' and '),
+				Text.yellow('Plum')
+			])
+		}
+	})
+	tooltip.addAdvanced('firmalife:hanging_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Banana'), Text.gold(', '),
+				Text.yellow('Melon'), Text.gold(', '),
+				Text.yellow('Pumpkin'), Text.gold(' and '),
+				Text.yellow('Squash')
+			])
+		}
+	})
+	tooltip.addAdvanced('firmalife:trellis_planter', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		}
+		else {
+			text.add(1, [
+				Text.gold('Grows '),
+				Text.yellow('Blackberry'), Text.gold(', '),
+				Text.yellow('Blueberry'), Text.gold(', '),
+				Text.yellow('Bunchberry'), Text.gold(', '),
+				Text.yellow('Cloudberry'), Text.gold(', ')
+			])
+			text.add(2, [
+				Text.yellow('Elderberry'), Text.gold(', '),
+				Text.yellow('Gooseberry'), Text.gold(', '),
+				Text.yellow('Nightshade'), Text.gold(', '),
+				Text.yellow('Pineapple'), Text.gold(', ')
+			])
+			text.add(3, [
+				Text.yellow('Raspberry'), Text.gold(', '),
+				Text.yellow('Snowberry'), Text.gold(', '),
+				Text.yellow('Strawberry'), Text.gold(' and '),
+				Text.yellow('Wintergreen')
+			])
+		}
+	})
+	tooltip.addAdvanced([
+	'tfc:seeds/beet',
+	'tfc:seeds/cabbage',
+	'tfc:seeds/carrot',
+	'tfc:seeds/garlic',
+	'tfc:seeds/green_bean',
+	'tfc:seeds/jute',
+	'tfc:seeds/onion',
+	'tfc:seeds/papyrus',
+	'tfc:seeds/potato',
+	'tfc:seeds/soybean',
+	'tfc:seeds/squash',
+	'tfc:seeds/sugarcane',
+	'tfc:seeds/tomato'
+	], (item, advanced, text) => {
+		if (!tooltip.alt) {
+			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
+		}
+		else {
+			text.add(1, [Text.white('Requires '), Text.gold('Wooden'), Text.white(' greenhouse or better')])
+		}
+	})
+	tooltip.addAdvanced([
+	'tfc:seeds/barley',
+	'tfc:seeds/maize',
+	'tfc:seeds/oat',
+	'tfc:seeds/rice',
+	'tfc:seeds/rye',
+	'tfc:seeds/wheat'
+	], (item, advanced, text) => {
+		if (!tooltip.alt) {
+			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
+		}
+		else {
+			text.add(1, [Text.white('Requires '), Text.of('Copper').color('#ee7354'), Text.white(' greenhouse or better')])
+		}
+	})
+	tooltip.addAdvanced([
+	'tfc:plant/banana_sapling',
+	'tfc:plant/blackberry_bush',
+	'tfc:plant/blueberry_bush',
+	'tfc:plant/bunchberry_bush',
+	'tfc:plant/cherry_sapling',
+	'tfc:plant/cloudberry_bush',
+	'firmalife:plant/cocoa_sapling',
+	'tfc:plant/cranberry_bush',
+	'tfc:plant/elderberry_bush',
+	'firmalife:plant/fig_sapling',
+	'tfc:plant/gooseberry_bush',
+	'tfc:plant/green_apple_sapling',
+	'tfc:plant/lemon_sapling',
+	'tfc:seeds/melon',
+	'firmalife:plant/nightshade_bush',
+	'tfc:plant/olive_sapling',
+	'tfc:plant/orange_sapling',
+	'tfc:plant/peach_sapling',
+	'firmalife:plant/pineapple_bush',
+	'tfc:plant/plum_sapling',
+	'tfc:seeds/pumpkin',
+	'tfc:plant/raspberry_bush',
+	'tfc:plant/red_apple_sapling',
+	'tfc:plant/snowberry_bush',
+	'tfc:plant/strawberry_bush',
+	'tfc:plant/wintergreen_bush'
+	], (item, advanced, text) => {
+		if (!tooltip.alt) {
+			text.add(1, [Text.darkGray('Hold '), Text.gray('Alt '), Text.darkGray('for greenhouse tier')])
+		}
+		else {
+			text.add(1, [Text.white('Requires '), Text.gray('Iron'), Text.white(' greenhouse or better')])
+		}
+	})
+	tooltip.addAdvanced([
+	'immersiveengineering:steel_post',
+	'immersiveengineering:alu_post',
+	'immersiveengineering:treated_post'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.yellow('Right click'), Text.gold(' top block with an '), Text.yellow('Engineer\'s Hammer')])
+			text.add(2, Text.gold('to create a horizontal section'))
+		}
+	})
 })

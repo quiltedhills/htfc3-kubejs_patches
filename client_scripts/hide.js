@@ -164,6 +164,8 @@ onEvent('jei.hide.items', event => {
 		'tinyredstone:silicon',
 		'tinyredstone:silicon_compound',
 		'butchersdelight:roaster',
+		'butchersdelight:deadchiken',
+		'butchersdelight:deadllama',
 		'butchersdelightfoods:cookedbeefribs',
 		'butchersdelightfoods:cooked_leg_cow',
 		'butchersdelightfoods:coockedbeeftenderloin',

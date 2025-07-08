@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "XWX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:brick"
+    },
+    "Y": {
+      "item": "minecraft:glass"
+    },
+    "W": {
+      "item": "firmalife:seed_ball"
+    },
+    "Z": {
+      "tag": "forge:sheets/stainless_steel"
+    }
+  },
+  "result": {
+    "item": "firmalife:nutritive_basin"
+  }
+}
