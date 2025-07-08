@@ -8,6 +8,14 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('ftbchunks:interact_whitelist', [
+		'#lootr:containers',
+		/^applecrates/
+	])
+	event.remove('ftbchunks:interact_whitelist', [
+		'minecraft:crafting_table'
+	])
+
 	event.add('minecraft:dirt', [
 		'tfc:grass/silt',
 		'tfc:grass/loam',

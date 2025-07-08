@@ -87,6 +87,8 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 • Added a way to break up geode quartz blocks prior to getting an IE crusher <br/>
+• Made Lootr and Apple Crates containers interactable in claimed areas <br/>
+• Made vanilla crafting tables no longer interactable in claimed areas <br/>
 • Added a third Brass Mechanisms recipe variant <br/>
 • Increased how many redstone lamps you get per recipe <br/>
 • Added a pressure chamber recipe for Create basins <br/>
