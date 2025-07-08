@@ -1,18 +1,11 @@
 {
   "type": "immersiveengineering:metal_press",
   "mold": "immersiveengineering:mold_gear",
-  "result": {
-    "tag": "kubejs:gears/brass"
-  },
-  "conditions": [{
-    "value": {
-      "tag": "kubejs:gears/brass",
-      "type": "forge:tag_empty"
-    },
-    "type": "forge:not"
-  }],
   "input": {
     "tag": "forge:rods/brass"
   },
-  "energy": 2400
+  "result": {
+    "item": "tfc:brass_mechanisms"
+  },
+  "energy": 1200
 }

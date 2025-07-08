@@ -192,7 +192,7 @@ onEvent('tags.fluids', event => {
 	event.add('tfc:usable_in_ingot_mold', ['kubejs:andesite_alloy', 'tconstruct:seared_stone', 'kubejs:andesite_stone', 'tconstruct:molten_glass', 'kubejs:molten_iron_quartz'])
 	event.add('tfc:usable_in_barrel', ['firmalife:sugar_water', 'tconstruct:honey', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_blue_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
-	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water',  'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
+	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_wooden_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_pot', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea'])
 	event.add('tfc:usable_in_jug', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'tfc:tallow', 'create:tea'])
@@ -337,12 +337,12 @@ onEvent('tags.items', event => {
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg'
 	])
-  event.add('tfc:foods/fruits', 'farmersdelight:pumpkin_slice')
-  event.add('kubejs:pollution_gasses', [
-    'adpother:carbon',
-    'adpother:dust',
-    'adpother:sulfur'
-  ])
+	event.add('tfc:foods/fruits', 'farmersdelight:pumpkin_slice')
+	event.add('kubejs:pollution_gasses', [
+		'adpother:carbon',
+		'adpother:dust',
+		'adpother:sulfur'
+	])
 
 	// removeAllTagsFrom doesn't seem to work with regex :(
 	global.items_to_remove = [
@@ -1192,7 +1192,7 @@ onEvent('tags.items', event => {
 		'functionalstorage:fluid_1',
 		'functionalstorage:fluid_2',
 		'functionalstorage:fluid_4',
-    'supplementaries:sack'
+		'supplementaries:sack'
 	]),
 	event.add('tfc:large_medium', [
 		'compressedcreativity:mesh_empty',
@@ -1509,7 +1509,7 @@ onEvent('tags.items', event => {
 		'minecraft:porkchop',
 		'minecraft:beef',
 		'minecraft:chicken',
-    'minecraft:rabbit'
+		'minecraft:rabbit'
 	]),
 	event.add('tfc:foods/can_be_hung', [
 		'kubejs:shark_meat',
@@ -1542,7 +1542,7 @@ onEvent('tags.items', event => {
 		'minecraft:porkchop',
 		'minecraft:beef',
 		'minecraft:chicken',
-    'minecraft:rabbit'
+		'minecraft:rabbit'
 	]),
 	event.add('forge:pollution_blocks', [
 		'tfc:grass/silt',
@@ -1834,9 +1834,6 @@ onEvent('tags.items', event => {
 		'tfc:powder/topaz',
 		'tfc:powder/pyrite'
 	]),
-  event.add('kubejs:gears/brass', [
-    'tfc:brass_mechanisms'
-  ]),
 	event.add('forge:sleeping_bags', [
 		'#travelersbackpack:sleeping_bags',
 		'#forge:colored_sleeping_bag',
@@ -1906,9 +1903,9 @@ onEvent('tags.items', event => {
 		'tfc:stone/shovel/metamorphic',
 		'tfc:stone/shovel/sedimentary'
 	]),
-  event.add('forge:spindles', [
-    'tfc:spindle'
-  ]),
+	event.add('forge:spindles', [
+		'tfc:spindle'
+	]),
 	event.add('tfc:tanned_hides', [
 		'kubejs:hide_tanned_s',
 		'kubejs:hide_tanned_m',
@@ -2270,8 +2267,8 @@ onEvent('tags.items', event => {
 		'beyond_earth:raw_ostrum',
 		'beyond_earth:raw_calorite'
 	])
-  event.removeAll('tfc:cat_food')
-  event.add('tfc:cat_food', '#minecraft:fishes')
+	event.removeAll('tfc:cat_food')
+	event.add('tfc:cat_food', '#minecraft:fishes')
 	// ==========  REMOVE
 	event.remove('forge:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('balm:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
