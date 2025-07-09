@@ -1136,4 +1136,16 @@ function convertNumber(num) {
 			text.add(2, [Text.gold('Use '), Text.yellow('Sprinklers'), Text.gold(' or '), Text.yellow('Dribblers') ,Text.gold(' instead!')])
 		}
 	})
+	tooltip.addAdvanced('bodyhygiene:shower', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Gimmicky. You may want to use '), Text.yellow('$soap'), Text.gold(' instead.')])
+			text.add(2, Text.gold(''))
+			text.add(3, Text.gold('Requires a water source precisely two blocks below,'))
+			text.add(4, Text.gold('after which the handle can be pulled.'))
+			text.add(5, Text.gold('This should make water particles appear!'))
+			text.add(6, Text.gold('Stand right below the shower head to slowly get cleaned.'))
+		}
+	})
 })

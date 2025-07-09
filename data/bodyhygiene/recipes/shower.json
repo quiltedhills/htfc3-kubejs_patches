@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "am ",
+    "nab",
+    " a "
+  ],
+  "key": {
+    "n": {
+      "item": "create:nozzle"
+    },
+    "m": {
+      "item": "tfc:mortar"
+    },
+    "a": {
+      "tag": "tfc:rock/aqueducts"
+    },
+    "b": {
+      "tag": "tfc:rock/button"
+    }
+  },
+  "result": {
+    "item": "bodyhygiene:shower",
+    "count": 1
+  }
+}

@@ -24,6 +24,7 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'firmalife:ice_fishing_station',
 		'kubejs:raw_platinum',
 		'ftbdripper:water_bowl',
 		'tconstruct:potion_bucket',

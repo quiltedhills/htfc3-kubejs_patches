@@ -219,6 +219,7 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:rock/button', /^tfc:rock\/button\//)
 	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')
 	event.add('tfc:metal_item/cast_iron', '#tfc:metal_item/cast_iron_tools')
 	event.add('tfc:shovels', 'kubejs:gravedigger')
