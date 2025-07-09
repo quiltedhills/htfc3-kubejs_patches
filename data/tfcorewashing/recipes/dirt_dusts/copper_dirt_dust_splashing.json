@@ -6,26 +6,25 @@
     }
   ],
   "type": "create:splashing",
-    "ingredients": [
-      {
-        "item": "tfcorewashing:dirty_dust_copper"
-      }
-    ],
-    "results": [
-      {
-        "item": "tfcorewashing:copper_powder"
-      },
-      {
-        "item": "tfcorewashing:pile_red_sand"
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_copper",
-        "chance": 0.25
-      },
-      {
-        "item": "tfc:ore/topaz",
-        "chance": 0.001
-      }
-    ],
-    "processingTime": 1200
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_copper"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:copper_powder"
+    },
+    {
+      "item": "tfcorewashing:pile_red_sand"
+    },
+    {
+      "item": "tfcorewashing:dirty_pile_copper",
+      "chance": 0.25
+    },
+    {
+      "item": "tfc:ore/topaz",
+      "chance": 0.001
+    }
+  ]
 }

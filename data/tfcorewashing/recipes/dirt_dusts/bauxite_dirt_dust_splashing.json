@@ -6,26 +6,25 @@
     }
   ],
   "type": "create:splashing",
-    "ingredients": [
-      {
-        "item": "tfcorewashing:dirty_dust_bauxite"
-      }
-    ],
-    "results": [
-      {
-        "item": "tfcorewashing:bauxite_powder"
-      },
-      {
-        "item": "tfcorewashing:pile_pink_sand"
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_bauxite",
-        "chance": 0.25
-      },
-      {
-        "item": "tfc:ore/ruby",
-        "chance": 0.001
-      }
-    ],
-    "processingTime": 1200
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_bauxite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:bauxite_powder"
+    },
+    {
+      "item": "tfcorewashing:pile_pink_sand"
+    },
+    {
+      "item": "tfcorewashing:dirty_pile_bauxite",
+      "chance": 0.25
+    },
+    {
+      "item": "tfc:ore/ruby",
+      "chance": 0.001
+    }
+  ]
 }
