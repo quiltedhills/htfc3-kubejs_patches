@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mbm",
+    "mbm"
+  ],
+  "key": {
+    "b": {
+      "item": "copycats:copycat_block"
+    },
+    "m": {
+      "item": "copycats:copycat_beam"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_wall",
+    "count": 12
+  }
+}

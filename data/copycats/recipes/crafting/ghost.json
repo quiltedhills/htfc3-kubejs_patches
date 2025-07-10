@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "gcg",
+    " g "
+  ],
+  "key": {
+    "c": {
+      "item": "copycats:copycat_block"
+    },
+    "g": {
+      "item": "glassential:glass_ghostly"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_ghost_block"
+  }
+}

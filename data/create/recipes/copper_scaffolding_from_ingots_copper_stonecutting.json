@@ -9,11 +9,11 @@
       "tag": "forge:wires"
     },
     "r": {
-      "tag": "forge:rods/andesite_alloy"
+      "tag": "forge:rods/copper"
     }
   },
   "result": {
-    "item": "create:andesite_scaffolding",
+    "item": "create:copper_scaffolding",
     "count": 4
   }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_byte"
+    },
+    {
+      "tag": "tfc:rock_knapping"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_stone_button"
+  }
+}

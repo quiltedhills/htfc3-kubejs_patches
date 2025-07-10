@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "forge:sheets/copper"
+  },
+  "result": "create:copper_bars",
+  "count": 8
+}

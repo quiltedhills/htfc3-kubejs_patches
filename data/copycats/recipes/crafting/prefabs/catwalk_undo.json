@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_catwalk"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_board",
+    "count": 3
+  }
+}

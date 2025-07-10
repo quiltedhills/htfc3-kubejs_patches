@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_layer"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_board"
+    }
+  ]
+}

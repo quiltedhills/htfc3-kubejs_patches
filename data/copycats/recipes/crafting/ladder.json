@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r r",
+    "r r",
+    "r r"
+  ],
+  "key": {
+    "r": {
+      "tag": "forge:rods/zinc"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_ladder",
+    "count": 16
+  }
+}

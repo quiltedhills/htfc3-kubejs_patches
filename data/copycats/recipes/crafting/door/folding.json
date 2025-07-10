@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "create:andesite_door"
+      },
+      {
+        "item": "create:copper_door"
+      }
+    ],
+    {
+      "item": "copycats:copycat_block"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_folding_door"
+  }
+}

@@ -2,12 +2,12 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "tfc_ie_addon:treated_wood_lumber"
+      "item": "copycats:copycat_vertical_step"
     }
   ],
   "results": [
     {
-      "item": "immersiveengineering:stick_treated",
+      "item": "copycats:copycat_vertical_slice",
       "count": 4
     }
   ],

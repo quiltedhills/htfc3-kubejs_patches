@@ -2,13 +2,13 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "tfc_ie_addon:treated_wood_lumber"
+      "item": "copycats:copycat_half_panel"
     }
   ],
   "results": [
     {
-      "item": "immersiveengineering:stick_treated",
-      "count": 4
+      "item": "copycats:copycat_byte_panel",
+      "count": 2
     }
   ],
   "processingTime": 50

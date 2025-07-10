@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_iron_trapdoor"
+    },
+    {
+      "tag": "tfc:lumber"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_trapdoor"
+  }
+}

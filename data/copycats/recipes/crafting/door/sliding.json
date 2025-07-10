@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "create:brass_door"
+      },
+      {
+        "item": "create:train_door"
+      }
+    ],
+    {
+      "item": "copycats:copycat_block"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_sliding_door"
+  }
+}

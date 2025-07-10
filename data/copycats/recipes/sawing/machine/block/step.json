@@ -2,13 +2,13 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "tfc_ie_addon:treated_wood_lumber"
+      "item": "copycats:copycat_slab"
     }
   ],
   "results": [
     {
-      "item": "immersiveengineering:stick_treated",
-      "count": 4
+      "item": "create:copycat_step",
+      "count": 2
     }
   ],
   "processingTime": 50

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r",
+    "r"
+  ],
+  "key": {
+    "r": {
+      "tag": "forge:rods/zinc"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_shaft",
+    "count": 8
+  }
+}

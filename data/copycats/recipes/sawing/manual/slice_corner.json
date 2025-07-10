@@ -1,0 +1,23 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      [
+        {
+          "item": "copycats:copycat_slice"
+        },
+        {
+          "item": "copycats:copycat_vertical_slice"
+        }
+      ],
+      {
+        "tag": "tfc:saws"
+      }
+    ],
+    "result": {
+      "item": "copycats:copycat_corner_slice",
+      "count": 2
+    }
+  }
+}

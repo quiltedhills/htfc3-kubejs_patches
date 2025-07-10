@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "forge:double_ingots/copper"
+  },
+  "result": "create:copper_shingles",
+  "count": 4
+}

@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "copycats:copycat_corner_slice"
+  },
+  "second_input": {
+    "item": "copycats:copycat_corner_slice"
+  },
+  "tier": 1,
+  "result": {
+    "item": "copycats:copycat_slice"
+  }
+}

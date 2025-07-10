@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "s",
+    "s"
+  ],
+  "key": {
+    "s": {
+      "item": "create:copycat_step"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_beam",
+    "count": 2
+  }
+}

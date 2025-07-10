@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:copycat_step"
+    },
+    {
+      "item": "create:copycat_step"
+    },
+    {
+      "item": "create:copycat_step"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_stairs"
+  }
+}

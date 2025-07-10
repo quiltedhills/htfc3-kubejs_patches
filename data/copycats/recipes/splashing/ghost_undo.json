@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_ghost_block"
+    }
+  ],
+  "results": [
+    {
+    "item": "copycats:copycat_block"
+    }
+  ]
+}

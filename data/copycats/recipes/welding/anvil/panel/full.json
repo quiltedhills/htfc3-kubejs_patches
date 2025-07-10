@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "copycats:copycat_half_panel"
+  },
+  "second_input": {
+    "item": "copycats:copycat_half_panel"
+  },
+  "tier": 1,
+  "result": {
+    "item": "create:copycat_panel"
+  }
+}

@@ -9,11 +9,11 @@
       "tag": "forge:wires"
     },
     "r": {
-      "tag": "forge:rods/andesite_alloy"
+      "tag": "forge:rods/brass"
     }
   },
   "result": {
-    "item": "create:andesite_scaffolding",
+    "item": "create:brass_scaffolding",
     "count": 4
   }
 }
