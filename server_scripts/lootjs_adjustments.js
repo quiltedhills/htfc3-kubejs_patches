@@ -6,4 +6,30 @@ onEvent("lootjs", (event) => {
   .replaceLoot("minecraft:beetroot_seeds", "tfc:seeds/beet", true)
   .replaceLoot("minecraft:melon_seeds", "tfc:seeds/melon", true)
   .replaceLoot("minecraft:pumpkin_seeds", "tfc:seeds/pumpkin", true)
+  event.addLootTableModifier("minecraft:gameplay/cat_morning_gift")
+  .removeLoot(ItemFilter.ALWAYS_TRUE)
+  .pool((pool) => {
+    pool.rolls(1)
+    pool.addWeightedLoot([
+      Item.of("butchersdelight:deadrabbitbrown").withChance(1),
+      Item.of("minecraft:string").withChance(5),
+      Item.of("minecraft:stick").withChance(5),
+      Item.of("tfc:small_raw_hide").withChance(5),
+      Item.of("minecraft:feather").withChance(5),
+      Item.of("exnihilosequentia:silkworm").withChance(3),
+      Item.of("tfc:food/cod").withChance(5),
+      Item.of("tfc:wool").withName("Hairball").withChance(10)
+    ]);
+  })
+  /*.addWeightedLoot([
+    Item.of("butchersdelight:deadrabbitbrown").withChance(2),
+    Item.of("minecraft:string").withChance(10),
+    Item.of("minecraft:stick").withChance(10),
+    Item.of("tfc:small_raw_hide").withChance(10),
+    Item.of("minecraft:feather").withChance(10),
+    Item.of("exnihilosequentia:silkworm").withChance(10),
+    Item.of("tfc:food/cod").withChance(10),
+    Item.of("tfc:wool").withChance(20),
+    Item.of("untamedwilds:spawn_snake").withChance(10).addNBT({})
+  ])*/
 });
