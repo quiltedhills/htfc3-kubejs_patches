@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:copycat_panel"
+    },
+    {
+      "tag": "forge:ingots/wrought_iron"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_iron_trapdoor"
+  }
+}

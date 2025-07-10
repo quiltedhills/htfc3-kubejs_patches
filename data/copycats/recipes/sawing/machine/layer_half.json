@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_layer"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_half_layer",
+      "count": 2
+    }
+  ],
+  "processingTime": 50
+}

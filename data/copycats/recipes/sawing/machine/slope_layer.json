@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_slope"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_slope_layer",
+      "count": 4
+    }
+  ],
+  "processingTime": 50
+}

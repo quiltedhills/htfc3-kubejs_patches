@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "copycats:copycat_byte"
+  },
+  "second_input": {
+    "item": "copycats:copycat_byte"
+  },
+  "tier": 1,
+  "result": {
+    "item": "create:copycat_step"
+  }
+}

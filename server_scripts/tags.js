@@ -8,6 +8,14 @@ onEvent('tags.entity_types', event => {
 
 // ======= BLOCKS
 onEvent('tags.blocks', event => {
+	event.add('ftbchunks:interact_whitelist', [
+		'#lootr:containers',
+		/^applecrates/
+	])
+	event.remove('ftbchunks:interact_whitelist', [
+		'minecraft:crafting_table'
+	])
+
 	event.add('minecraft:dirt', [
 		'tfc:grass/silt',
 		'tfc:grass/loam',
@@ -211,6 +219,7 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	event.add('tfc:rock/button', /^tfc:rock\/button\//)
 	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')
 	event.add('tfc:metal_item/cast_iron', '#tfc:metal_item/cast_iron_tools')
 	event.add('tfc:shovels', 'kubejs:gravedigger')
@@ -2240,8 +2249,7 @@ onEvent('tags.items', event => {
 	])
 	event.add('forge:sugar_source', [
 		//'tfc:food/beet',
-		'tfc:food/sugarcane',
-		'minecraft:sugar_cane'
+		'tfc:food/sugarcane'
 	])
 	event.add('forge:ethanol_source', [
 		'tfc:food/beet',

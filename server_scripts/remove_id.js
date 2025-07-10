@@ -3,6 +3,12 @@ onEvent('recipes', event => {
 	event.remove([
 		{id: 'chiselsandbits:chisel_stone'},
 		{id: 'htm:compat/tfc/crafting/dried_kelp_block'},
+		{id: 'tfc:crafting/vanilla/redstone/heavy_weighted_pressure_plate'},
+
+		// remove all copycat recipes to replace with our own
+		{id: /^copycats:crafting\/copycat_/},
+		{id: 'create:copycat_panel_from_ingots_zinc_stonecutting'},
+		{id: 'create:copycat_step_from_ingots_zinc_stonecutting'},
 
 		// cooking pot recipes are removed in favor of kettle recipes
 		{id: 'farmersdelight:cooking/apple_cider'},
@@ -182,8 +188,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_ingot'},
 		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
 		
-		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast '},
-		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast '},
+		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
+		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'create:mixing/brass_ingot'},
 		{id: 'exnihilosequentia:heat/ens_wall_torch'},
 		{id: 'exnihilosequentia:sieve/ens_diamond'},

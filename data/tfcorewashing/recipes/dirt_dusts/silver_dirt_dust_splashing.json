@@ -6,26 +6,25 @@
     }
   ],
   "type": "create:splashing",
-    "ingredients": [
-      {
-        "item": "tfcorewashing:dirty_dust_silver"
-      }
-    ],
-    "results": [
-      {
-        "item": "tfcorewashing:silver_powder"
-      },
-      {
-        "item": "tfcorewashing:pile_white_sand"
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_silver",
-        "chance": 0.25
-      },
-      {
-        "item": "tfc:ore/diamond",
-        "chance": 0.001
-      }
-    ],
-    "processingTime": 1200
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:silver_powder"
+    },
+    {
+      "item": "tfcorewashing:pile_white_sand"
+    },
+    {
+      "item": "tfcorewashing:dirty_pile_silver",
+      "chance": 0.25
+    },
+    {
+      "item": "tfc:ore/diamond",
+      "chance": 0.001
+    }
+  ]
 }

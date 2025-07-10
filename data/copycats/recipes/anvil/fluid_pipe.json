@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:sheets/zinc"
+  },
+  "result": {
+    "item": "copycats:copycat_fluid_pipe"
+  },
+  "tier": 1,
+  "rules": [
+    "bend_last",
+    "draw_second_last",
+    "draw_third_last"
+  ]
+}

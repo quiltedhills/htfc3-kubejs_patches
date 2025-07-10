@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_wall"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_beam"
+  }
+}

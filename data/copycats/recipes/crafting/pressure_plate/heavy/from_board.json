@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_board"
+    },
+    {
+      "tag": "forge:ingots/wrought_iron"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_heavy_weighted_pressure_plate"
+  }
+}

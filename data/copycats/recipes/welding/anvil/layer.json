@@ -1,0 +1,29 @@
+{
+  "type": "tfc:welding",
+  "first_input": [
+    {
+      "item": "copycats:copycat_half_layer"
+    },
+    {
+      "item": "copycats:copycat_stacked_half_layer"
+    },
+    {
+      "item": "copycats:copycat_vertical_half_layer"
+    }
+  ],
+  "second_input": [
+    {
+      "item": "copycats:copycat_half_layer"
+    },
+    {
+      "item": "copycats:copycat_stacked_half_layer"
+    },
+    {
+      "item": "copycats:copycat_vertical_half_layer"
+    }
+  ],
+  "tier": 1,
+  "result": {
+    "item": "copycats:copycat_layer"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rsr",
+    "r r"
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:wires"
+    },
+    "r": {
+      "tag": "forge:rods/copper"
+    }
+  },
+  "result": {
+    "item": "create:copper_scaffolding",
+    "count": 4
+  }
+}

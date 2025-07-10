@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:copycat_step"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_vertical_step"
+  }
+}

@@ -625,7 +625,7 @@
   "greenhouse.firmalife.stainless_steel": "Stainless Steel",
   "firmalife.bowl.spoon": "The bowl is missing a spoon.",
   "firmalife.bowl.mixing": "The bowl is currently mixing",
-  "firmalife.bowl.no_recipe": "The bowl has no recipe.",
+  "firmalife.bowl.no_recipe": "These ingredients can't be mixed into anything.",
   "firmalife.bowl.matching_recipe": "The bowl's contents do not match the recipe",
   "firmalife.enum.plantertype.hanging": "Hanging Planter",
   "firmalife.enum.plantertype.trellis": "Trellis Planter",

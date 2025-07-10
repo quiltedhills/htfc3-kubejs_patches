@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "create:copycat_step"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_slice",
+      "count": 4
+    }
+  ],
+  "processingTime": 50
+}

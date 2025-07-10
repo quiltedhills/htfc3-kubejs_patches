@@ -26,6 +26,5 @@
         "item": "tfc:ore/pyrite",
         "chance": 0.001
       }
-    ],
-    "processingTime": 1200
+    ]
 }

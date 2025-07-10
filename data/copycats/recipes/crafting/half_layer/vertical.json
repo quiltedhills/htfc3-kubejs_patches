@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_stacked_half_layer"
+    }
+  ],
+  "result": {
+    "item": "copycats:copycat_vertical_half_layer"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_stairs"
+    }
+  ],
+  "result": {
+    "item": "create:copycat_step",
+    "count": 3
+  }
+}

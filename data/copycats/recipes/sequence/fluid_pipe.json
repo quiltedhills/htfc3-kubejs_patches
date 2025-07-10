@@ -1,0 +1,14 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:sheets/zinc"},
+  "transitionalItem": {"item": "kubejs:sq_fluidpipeie"},
+  "sequence": [
+    {"type": "createaddition:rolling","ingredients": [{"tag": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "createaddition:rolling","ingredients": [{"tag": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "create:pressing","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "create:pressing","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "create:pressing","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]}
+  ],
+  "results": [{"item": "copycats:copycat_fluid_pipe","count":3}],
+  "loops": 1
+}

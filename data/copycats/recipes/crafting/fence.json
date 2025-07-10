@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "srs",
+    "srs"
+  ],
+  "key": {
+    "r": {
+      "tag": "forge:rods/zinc"
+    },
+    "s": {
+      "item": "copycats:copycat_shaft"
+    }
+  },
+  "result": {
+    "item": "copycats:copycat_fence",
+    "count": 8
+  }
+}

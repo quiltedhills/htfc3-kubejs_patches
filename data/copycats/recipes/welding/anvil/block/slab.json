@@ -1,0 +1,23 @@
+{
+  "type": "tfc:welding",
+  "first_input": [
+    {
+      "item": "create:copycat_step"
+    },
+    {
+      "item": "copycats:copycat_vertical_step"
+    }
+  ],
+  "second_input": [
+    {
+      "item": "create:copycat_step"
+    },
+    {
+      "item": "copycats:copycat_vertical_step"
+    }
+  ],
+  "tier": 1,
+  "result": {
+    "item": "copycats:copycat_slab"
+  }
+}

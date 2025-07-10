@@ -1,8 +1,19 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "tag": "forge:sheets/andesite_alloy"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rsr",
+    "r r"
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:wires"
+    },
+    "r": {
+      "tag": "forge:rods/andesite_alloy"
+    }
   },
-  "result": "create:andesite_scaffolding",
-  "count": 2
+  "result": {
+    "item": "create:andesite_scaffolding",
+    "count": 4
+  }
 }

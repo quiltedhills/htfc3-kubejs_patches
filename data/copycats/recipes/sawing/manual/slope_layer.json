@@ -1,0 +1,18 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "copycats:copycat_slope"
+      },
+      {
+        "tag": "tfc:saws"
+      }
+    ],
+    "result": {
+      "item": "copycats:copycat_slope_layer",
+      "count": 4
+    }
+  }
+}

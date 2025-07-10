@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "forge:sheets/zinc"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:copycat_panel",
+      "count": 8
+    }
+  ],
+  "processingTime": 100
+}

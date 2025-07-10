@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_stairs"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_slope"
+    }
+  ]
+}

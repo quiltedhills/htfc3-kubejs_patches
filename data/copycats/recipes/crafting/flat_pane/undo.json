@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_flat_pane"
+    }
+  ],
+  "result": {
+    "item": "create:copycat_panel"
+  }
+}

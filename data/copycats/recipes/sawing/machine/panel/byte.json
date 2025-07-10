@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "copycats:copycat_half_panel"
+    }
+  ],
+  "results": [
+    {
+      "item": "copycats:copycat_byte_panel",
+      "count": 2
+    }
+  ],
+  "processingTime": 50
+}

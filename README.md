@@ -7,6 +7,7 @@
 - [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/4554163)
 - [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611)
 - [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)
+- [LootJS](https://www.curseforge.com/minecraft/mc-mods/lootjs/files/4105690)
 - [PonderJS](https://www.curseforge.com/minecraft/mc-mods/ponder/files/3881555) (not needed on server)
 6. Yay!
 
@@ -45,7 +46,7 @@ Please feel free to reach out to me on discord for any questions!
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
-• Hopefully fixed the infamous pollution crash <br/>
+• Hopefully fixed the infamous snowstorm crash <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>
 • Added item repair recipes for things like jetpacks and clothing
 • Added custom magnets to replace the Create SA copper magnet <br/>
@@ -86,6 +87,8 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
 &nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 • Added a way to break up geode quartz blocks prior to getting an IE crusher <br/>
+• Made Lootr and Apple Crates containers interactable in claimed areas <br/>
+• Made vanilla crafting tables no longer interactable in claimed areas <br/>
 • Added a third Brass Mechanisms recipe variant <br/>
 • Increased how many redstone lamps you get per recipe <br/>
 • Added a pressure chamber recipe for Create basins <br/>
@@ -137,3 +140,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed recipe conflicts for straw hats and straw carpets <br/>
 • Removed misleading melting tooltips for IE ore <br/>
 • Fixed missing shaft texture in andesite and brass chunk loader item models <br/>
+• Changed the mixing bowl "no recipe" message to be less ambiguous <br/>
