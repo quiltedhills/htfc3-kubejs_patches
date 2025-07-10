@@ -2,11 +2,11 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "02120",
-    "72427",
+    "32423",
     "35653"
   ],
   "key": {
-  	"0": {
+    "0": {
       "item": "steampowered:cast_iron_cogwheel"
     },
     "1": {
@@ -26,9 +26,6 @@
     },
     "6": {
       "item": "create:andesite_alloy"
-    },
-    "7": {
-      "item": "compressedcreativity:rotational_compressor"
     }
   },
   "result": {

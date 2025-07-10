@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:wood/leaves/willow"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:wood/fallen_leaves/willow"
+    }
+  ]
+}

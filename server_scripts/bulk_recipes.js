@@ -1,7 +1,7 @@
 const rock_types = [
-	'granite','diorite','gabbro','shale','claystone','limestone','conglomerate',
-	'dolomite','chert','chalk','rhyolite','basalt','andesite','dacite',
-	'quartzite','slate','phyllite','schist','gneiss','marble'
+	'granite', 'diorite', 'gabbro', 'shale', 'claystone', 'limestone', 'conglomerate',
+	'dolomite', 'chert', 'chalk', 'rhyolite', 'basalt', 'andesite', 'dacite',
+	'quartzite', 'slate', 'phyllite', 'schist', 'gneiss', 'marble'
 ]
 
 const minerals = [
@@ -23,7 +23,7 @@ const non_tfc_metals = [
 	['lead',        'tfc_ie_addon'],
 	['uranium',     'tfc_ie_addon']
 ]
-const ore_grades = ['poor','normal','rich']
+const ore_grades = ['poor', 'normal', 'rich']
 const gravel_ores = ['native_copper', 'native_gold', 'native_silver', 'cassiterite']
 
 let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
@@ -37,24 +37,22 @@ let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 		]
 	).superheated().id(`kubejs:artificial_ores/basin/${recipe_id}`)
 	event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/raw/${rock_type}`)
-	.id(`kubejs:artificial_ores/combiner/${recipe_id}`)
+		.id(`kubejs:artificial_ores/combiner/${recipe_id}`)
 }
 
 let gravel_deposit = (event, rock_type, ore_item, output, recipe_id) => {
-  event.recipes.create.compacting(output,
-    [
-      Item.of(ore_item),
-      Item.of(ore_item),
-      Item.of(`tfc:rock/gravel/${rock_type}`),
-      Item.of(`tfc:rock/gravel/${rock_type}`),
-      Item.of('tfc:mortar'),
-      Item.of('tfc:mortar'),
-      Item.of('tfc:mortar'),
-      Item.of('tfc:mortar')
-    ]
-  ).superheated().id(`kubejs:gravel_deposit/basin/${recipe_id}`)
-  event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/gravel/${rock_type}`)
-  .id(`kubejs:gravel_deposit/combiner/${recipe_id}`)
+	event.recipes.create.mixing(output,
+		[
+			Item.of(ore_item),
+			Item.of(ore_item),
+			Item.of(`tfc:rock/gravel/${rock_type}`),
+			Item.of(`tfc:rock/gravel/${rock_type}`),
+			Item.of('tfc:mortar'),
+			Item.of('tfc:mortar')
+		]
+	).id(`kubejs:gravel_deposit/basin/${recipe_id}`)
+	event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/gravel/${rock_type}`)
+		.id(`kubejs:gravel_deposit/combiner/${recipe_id}`)
 }
 
 onEvent('recipes', event => {
@@ -66,13 +64,13 @@ onEvent('recipes', event => {
 				`${mineral}/${rock}`
 			)
 		})
-    gravel_ores.forEach(metal => {
-      gravel_deposit(event, rock,
-        `tfc:ore/small_${metal}`,
-        `tfc:deposit/${metal}/${rock}`,
-        `${metal}/${rock}`
-      )
-    })
+		gravel_ores.forEach(metal => {
+			gravel_deposit(event, rock,
+				`tfc:ore/small_${metal}`,
+				`tfc:deposit/${metal}/${rock}`,
+				`${metal}/${rock}`
+			)
+		})
 		ore_grades.forEach(grade => {
 			metals.forEach(metal => {
 				artificial_ore(event, rock,

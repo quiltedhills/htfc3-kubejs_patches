@@ -1,0 +1,10 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "tfc:rock/hardened/schist"},
+  "transitionalItem": {"item": "tfc:brick/schist"},
+  "sequence": [
+    {"type": "create:deploying","ingredients": [{"item": "tfc:brick/schist"}, {"tag": "tfc:chisels"}],"results": [{"item": "tfc:brick/schist"}]}
+  ],
+  "results": [{"item": "paraglider:goddess_statue"}],
+  "loops": 20
+}

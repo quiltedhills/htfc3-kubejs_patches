@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "paraglider:goddess_statue"
+    },
+    {
+      "tag": "forge:ingots/gold"
+    }
+  ],
+  "results": [
+    {
+      "item": "paraglider:goron_goddess_statue"
+    }
+  ]
+}

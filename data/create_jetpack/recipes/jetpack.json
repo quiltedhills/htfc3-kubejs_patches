@@ -1,0 +1,35 @@
+{
+  "type": "create_jetpack:copy_nbt_mechanical_crafting",
+  "pattern": [
+    " BSB ",
+    "BYXYB",
+    "BAEAB",
+    " C C "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "C": {
+      "item": "create:chute"
+    },
+    "X": {
+      "item": "create:copper_backtank"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "Y": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "tag": "forge:sheets/brass"
+    },
+    "A": {
+      "item": "compressedcreativity:rotational_compressor"
+    }
+  },
+  "result": {
+    "item": "create_jetpack:jetpack"
+  }
+}

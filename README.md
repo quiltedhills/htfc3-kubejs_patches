@@ -38,18 +38,17 @@ Please feel free to reach out to me on discord for any questions!
 
 # Changelogs / differences from 1.5.5
 ### Major things:
+• Added Inventorio Fixes, a mod that fixes a bunch of bugs and adds a few QoL features. Please report bugs if you run into any! <br/>
 • Added Create Deco, a mod that brings extra create-adjacent building and decoration elements <br/>
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
 • Introduced a few custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
+• Hopefully fixed the infamous pollution crash <br/>
 • Made IE Blast Furnaces functional for making blooms and pig iron <br/>
 • Added item repair recipes for things like jetpacks and clothing
 • Added custom magnets to replace the Create SA copper magnet <br/>
-• Reworked ore-related tags <br/>
-&nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
-&nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 
 ### Balancing:
 • Decreased outputs from sifting sand <br/>
@@ -58,27 +57,36 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
 • Blacklisted villagers from cage traps <br/>
 • Tweaked the durability of crude hammers (previously known as just Ex Nihilo hammers) <br/>
-• Made Ender Chests, Wolf Spawn Eggs and Rotational Compressors more expensive <br/>
+• Made Ender Chests, Wolf Spawn Eggs, Slime Boots and Rotational Compressors more expensive <br/>
 • Tweaked nucleosynthesizer recipes, as most of them were unchanged from base mekanism <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
 • Changed etching acid recipe <br/>
+• Made Cassiterite obtainable from gravel sifting <br/>
+• Buffed Blazing Blood when used as a Blaze Burner fluid (using it is still probably not worthwhile haha) <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>
-• Added detailed tooltips and info tabs for various items <br/>
+• Added detailed tooltips and info tabs for many items <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will no longer despawn <br/>
 • Hostile mob deaths should no longer produce pollution <br/>
+• Added a safeguard to prevent accidentally placing block items that have sequenced recipe data <br/>
 • Made it possible to obtain silkworms directly from trees without having to collect the leaves with shears first <br/>
 • Made infested leaves landslide instead of collapsing (think dirt or gravel) <br/>
-• Added TFC grass blocks to the '#minecraft:dirt' tag, which allows things like planting rubberwood trees on TFC grass blocks <br/>
+• DON'T FORGET TO REVERT Added TFC grass blocks to the '#minecraft:dirt' tag, which allows things like planting rubberwood trees on TFC grass blocks <br/>
 • Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
+• Changed recipes for Feeds and Baits to reduce recipe conflicts <br/>
+• Added an item that lets you remove player corpses <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
 • Added extra recipes for power-drying some items <br/>
+• Reworked ore-related tags <br/>
+&nbsp; &nbsp; ◦ If you had ore processing contraptions that relied on specific item tags (not attributes like 'can be washed'), <br/>
+&nbsp; &nbsp; &nbsp; you might want to double check that they still work! <br/>
 • Added a way to break up geode quartz blocks prior to getting an IE crusher <br/>
+• Added a third Brass Mechanisms recipe variant <br/>
 • Increased how many redstone lamps you get per recipe <br/>
 • Added a pressure chamber recipe for Create basins <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
@@ -88,6 +96,9 @@ Please feel free to reach out to me on discord for any questions!
 • Made heat frame and depot interaction more pleasant <br/>
 • Made ice shavings less intrusive <br/>
 • Tweaked recipes and information for vanilla gemstones <br/>
+• Made the Shore biome valid for waterwheels <br/>
+• Added sealed barrel recipes for making clay from mud <br/>
+• Added recipes for turning wool yarn into string <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -105,9 +116,10 @@ Please feel free to reach out to me on discord for any questions!
 ### Building-related:
 • Aforementioned addition of Create Deco with many recipe changes <br/>
 • Lots of tweaks to Supplementaries' deco blocks <br/>
-• Added recipes for TFC ore blocks for building purposes <br/>
+• Added recipes for TFC ore blocks and gravel deposits for building purposes <br/>
 • Added a few prop foods for decoration purposes <br/>
 • Re-introduced recipes for vegetable crates from Farmer's Delight <br/>
+• Made all statues from Paraglider craftable (they now also serve no functional purpose and are purely decorative) <br/>
 • Added recipes for some previously unobtainable blocks <br/>
 
 ### Fixes:

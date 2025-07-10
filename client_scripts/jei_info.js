@@ -1,6 +1,6 @@
 onEvent('jei.information', event => {
     event.add('choppingblock:chopping_block', [
-        ['Made by right clicking a stripped log with an ', Text.of('axe in your main hand').underlined(), ' and a ', Text.of('hammer in your offhand').underlined(), '!'],
+        ['Can be made without using a hide by right clicking a stripped log with an ', Text.of('axe in your main hand').underlined(), ' and a ', Text.of('hammer in your offhand').underlined(), '!'],
         'Stone tools can be used for this.'
     ])
     event.add([/^tfc:drying_bricks\//, /^tfc:mud_brick\//], [
@@ -59,5 +59,9 @@ onEvent('jei.information', event => {
     event.add('kubejs:gravedigger', [
         'Takes 25 durability for each body.',
         'Can be repaired with cast iron ingots using a vanilla anvil.'
+    ])
+    event.add(['farmersdelight:brown_mushroom_colony', 'farmersdelight:red_mushroom_colony'], [
+        'Grown by planting a mushroom on Rich Soil.',
+        'Shears can optionally be used to collect the entire colony, instead of individual mushrooms!'
     ])
 })

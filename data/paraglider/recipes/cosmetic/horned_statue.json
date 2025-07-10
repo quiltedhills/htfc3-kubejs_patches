@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "paraglider:goddess_statue"
+    }
+  ],
+  "results": [
+    {
+      "item": "paraglider:horned_statue"
+    }
+  ]
+}
