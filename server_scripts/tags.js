@@ -219,6 +219,10 @@ onEvent('tags.fluids', event => {
 // ========== ENTITY TYPE
 // ========= ITEMS
 onEvent('tags.items', event => {
+	//event.add('ftbchunks:right_click_blacklist', [
+	//	'pneumaticcraft:micromissiles'
+	//])
+
 	event.add('tfc:rock/button', /^tfc:rock\/button\//)
 	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')
 	event.add('tfc:metal_item/cast_iron', '#tfc:metal_item/cast_iron_tools')
@@ -1046,8 +1050,8 @@ onEvent('tags.items', event => {
 	event.add('forge:food/diary/curd', ['firmalife:food/yak_curd', 'firmalife:food/goat_curd', 'firmalife:food/milk_curd'])
 	event.add('forge:flour/wheat', '#tfc:foods/flour')
 	event.add('forge:treated_wood', 'firmalife:treated_wood')
-	event.add('forge:cogwheel_small', ['steampowered:steel_cogwheel','steampowered:cast_iron_cogwheel','steampowered:bronze_cogwheel'])
-	event.add('forge:cogwheel_large', ['steampowered:steel_large_cogwheel','steampowered:cast_iron_large_cogwheel','steampowered:bronze_large_cogwheel'])
+	event.add('forge:cogwheel_small', ['steampowered:steel_cogwheel','steampowered:cast_iron_cogwheel','steampowered:bronze_cogwheel', 'copycats:copycat_cogwheel'])
+	event.add('forge:cogwheel_large', ['steampowered:steel_large_cogwheel','steampowered:cast_iron_large_cogwheel','steampowered:bronze_large_cogwheel', 'copycats:copycat_large_cogwheel'])
 	event.add('forge:dusts/salt', 'tfc:powder/salt')
 	event.add('forge:dusts/saltpeter', 'tfc:powder/saltpeter')
 	event.add('forge:dusts/graphite', 'tfc:powder/graphite')
