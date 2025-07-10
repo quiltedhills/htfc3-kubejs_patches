@@ -1,0 +1,9 @@
+{
+  "ingredient": [
+    "create:metal_girder",
+    "create:metal_girder_encased_shaft"
+  ],
+  "support_up": 4,
+  "support_down": 4,
+  "support_horizontal": 8
+}

@@ -8,6 +8,7 @@
 - [Create Railways Navigator](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator/files/5999611)
 - [Create Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats/files/6284810)
 - [LootJS](https://www.curseforge.com/minecraft/mc-mods/lootjs/files/4105690)
+- [Inventorio Fixes](https://www.curseforge.com/minecraft/mc-mods/inventorio-fixes/files/6737026)
 - [PonderJS](https://www.curseforge.com/minecraft/mc-mods/ponder/files/3881555) (not needed on server)
 6. Yay!
 
@@ -44,6 +45,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
 • Introduced a few custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
+• Made Aluminium Posts and Metal Girders act as strong supports <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Hopefully fixed the infamous snowstorm crash <br/>

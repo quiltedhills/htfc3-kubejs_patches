@@ -1116,18 +1116,6 @@ function convertNumber(num) {
 			text.add(1, [Text.white('Requires '), Text.gray('Iron'), Text.white(' greenhouse or better')])
 		}
 	})
-	tooltip.addAdvanced([
-	'immersiveengineering:steel_post',
-	'immersiveengineering:alu_post',
-	'immersiveengineering:treated_post'
-	], (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		} else {
-			text.add(1, [Text.yellow('Right click'), Text.gold(' top block with an '), Text.yellow('Engineer\'s Hammer')])
-			text.add(2, Text.gold('to create a horizontal section'))
-		}
-	})
 	tooltip.addAdvanced('firmalife:squirting_moisture_transducer', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
@@ -1146,6 +1134,31 @@ function convertNumber(num) {
 			text.add(4, Text.gold('after which the handle can be pulled.'))
 			text.add(5, Text.gold('This should make water particles appear!'))
 			text.add(6, Text.gold('Stand right below the shower head to slowly get cleaned.'))
+		}
+	})
+	tooltip.addAdvanced('immersiveengineering:alu_post', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Works as a '), Text.yellow('stronger support'), Text.gold('.')])
+			text.add(2, [Text.gold('Has '), Text.yellow('1.5x the range'), Text.gold(' (13x8x13) of wooden supports,')])
+			text.add(3, [Text.gold('thus covering '), Text.yellow('three times'), Text.gold(' as much area in volume.')])
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('A single post needs 4 blocks of vertical space.'))
+			text.add(6, Text.gold('Like wooden supports, will break if a block falls on it.'))
+		}
+	})
+	tooltip.addAdvanced('create:metal_girder', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Works as a '), Text.yellow('super-support'), Text.gold('.')])
+			text.add(2, [Text.gold('Has '), Text.yellow('double the range'), Text.gold(' (17x9x17) of wooden supports,')])
+			text.add(3, [Text.gold('thus covering '), Text.yellow('eight times'), Text.gold(' as much area in volume.')])
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('Does not need a supporting structure to function:'))
+			text.add(6, Text.gold('placing a single girder down is enough for it to work.'))
+			text.add(7, Text.gold('Like wooden supports, will break if a block falls on it.'))
 		}
 	})
 })
