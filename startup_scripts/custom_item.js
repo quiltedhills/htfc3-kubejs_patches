@@ -13,14 +13,14 @@ onEvent('item.registry', event => {
 	event.create('misc_mats/andesite_alloy/sheet')
 	event.create('misc_mats/netherite/rod')
 
-	event.create('misc_mats/healing_salve')
+	event.create('misc_mats/healing_salve').rarity('uncommon')
 	event.create('misc_mats/mineral_mix')
 	event.create('misc_mats/ceramic_shards')
 	event.create('misc_mats/refined_vanilla')
 	
 	event.create('prop_foods/cookie').texture('minecraft:item/cookie')
 
-	event.create('magnet/copper')			.unstackable() 
+	event.create('magnet/copper')			.unstackable()
 	event.create('magnet/colored_steel')	.unstackable().rarity('uncommon')
 	event.create('magnet/hdpe_offline')		.unstackable().rarity('common')
 	event.create('magnet/hdpe')				.unstackable().rarity('rare')
@@ -32,6 +32,7 @@ onEvent('item.registry', event => {
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13))) // full bar is 13
 		.barColor(itemstack => Color.AQUA)
 		.use((level, player, hand) => true)
+
 	event.create('raw_cookie')		.food(food => {food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('silver_apple')	.food(food => {food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})

@@ -4,9 +4,12 @@ const colors = ['White','Orange','Magenta','Light Blue','Yellow','Lime','Pink','
 onEvent('client.generate_assets', event => {
 	const rename = (item, newName) => event.addLang(Item.of(item).item.getDescriptionId(), newName)
 
+	rename('immersiveengineering:alu_post', "Aluminium Post (Aluminum Support)")
+	rename('create:metal_girder', "Metal Girder (Steel Support)")
+
+	// These two below don't seem to work, using "kubejs/assets/firmalife/lang/en_us.json" instead
 	//rename('firmalife:treated_lumber', "Wax-Treated Lumber")
 	//rename('firmalife:treated_wood', "Wax-Treated Wood")
-	// these two don't seem to work, using "kubejs/assets/firmalife/lang/en_us.json" instead
 
 	Ingredient.of(/^immersiveengineering:treated_wood_(horizontal|vertical|packaged)/).stacks.forEach(item => rename(item, "Creosote-Treated Wood Planks"))
 	Ingredient.of(/^immersiveengineering:stairs_treated_wood_(horizontal|vertical|packaged)/).stacks.forEach(item => rename(item, "Creosote-Treated Wood Stairs"))
@@ -30,9 +33,7 @@ onEvent('client.generate_assets', event => {
 	rename('minecraft:torch', "Permanent Torch")
 	rename('minecraft:lantern', "Permanent Lantern")
 	rename('minecraft:candle', "Permanent Candle")
-	colors.forEach(color => {
-		rename(`minecraft:${color.toLowerCase().replace(' ','_')}_candle`, `Permanent ${color} Candle`)
-	})
+	colors.forEach(color => rename(`minecraft:${color.toLowerCase().replace(' ','_')}_candle`, `Permanent ${color} Candle`))
 
 	rename('create_jetpack:jetpack', "Pressurized Jetpack")
 	rename('create_jetpack:netherite_jetpack', "Netherite Pressurized Jetpack")

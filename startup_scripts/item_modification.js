@@ -4,12 +4,12 @@ onEvent('item.modification', event => {
 	event.modify('exnihilosequentia:iron_hammer', item => { item.maxDamage = 2048 })
 	event.modify('immersiveengineering:screwdriver', item => { item.maxDamage = 16 })
 
+	// rarity changes
+	event.modify('immersiveengineering:alu_post', item => { item.rarity = 'uncommon' })
+	event.modify('create:metal_girder', item => { item.rarity = 'uncommon' })
+
 	// various food tweaks
-	event.modify('minecraft:golden_carrot', item => {
-		item.foodProperties = food => {
-			food.alwaysEdible()
-		}
-	})
+	event.modify('minecraft:golden_carrot', item => { item.foodProperties = food => { food.alwaysEdible() } })
 	event.modify('untamedwilds:food_turtle_soup', item => { item.maxStackSize = 32 })
 
 
@@ -30,7 +30,6 @@ onEvent('item.modification', event => {
 		}
 	})
 	event.modify([
-
 		'farmersdelight:pasta_with_meatballs',
 		'farmersdelight:pasta_with_mutton_chop',
 		'farmersdelight:mushroom_rice',
