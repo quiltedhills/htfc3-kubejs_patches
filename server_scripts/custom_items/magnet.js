@@ -3,21 +3,21 @@
 //
 // If you're making changes, please keep in mind that 'kubejs/client_scripts/magnet.js'
 // contains a client-side version that will also need to be tweaked!
-// 
+//
 // Air <3
 
 // Magnet tier declaration
 const magnetTiers = {
     tier1: {
         items: ['kubejs:magnet/copper'],
-        range: 3.5,
+        range: 4.5,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             if (!item.persistentData.metallic) return // Only attract metallic items!
 
             let directionX = dx / distance;   let directionY = dy / distance;   let directionZ = dz / distance
 
             if (item.persistentData.huge_very_heavy) range /= 2   // Very heavy items recieve a large range penalty
-            let speed = 0.06 * Math.min(1 - (distance / range), 0.5)
+            let speed = 0.125 * Math.min(1 - (distance / range), 0.5)
             if (item.persistentData.huge_very_heavy) speed /= 5   // and an extremely large speed penalty
 
 
@@ -33,23 +33,23 @@ const magnetTiers = {
             } else {   // Normal logic
                 lockOn(item, false)
                 item.setMotion(
-                    item.motionX * 0.98 + directionX * speed,
-                    item.motionY * 0.98 + directionY * speed * 2,
-                    item.motionZ * 0.98 + directionZ * speed
+                    item.motionX * 0.97 + directionX * speed,
+                    item.motionY * 0.97 + directionY * speed * 2,
+                    item.motionZ * 0.97 + directionZ * speed
                 )
             }
         }
     },
     tier2: {
         items: ['kubejs:magnet/colored_steel', 'kubejs:magnet/colored_steel_alt'],
-        range: 4,
+        range: 5,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             let directionX = dx / distance;   let directionY = dy / distance;   let directionZ = dz / distance
 
             if (item.persistentData.huge_very_heavy) range /= 2
             if (!item.persistentData.metallic) range /= 1.125   // Range cannot be increased because of how entities get scanned,
                                                                 // so it is instead decreased with an inverted condition.
-            let speed = 0.08 * Math.min(1 - (distance / range), 0.5)
+            let speed = 0.125 * Math.min(1 - (distance / range), 0.5)
             if (item.persistentData.huge_very_heavy) speed /= 5
             if (item.persistentData.metallic) speed *= 1.125    // Metallic items get a small buff in speed and range.
 
@@ -75,7 +75,7 @@ const magnetTiers = {
     },
     tier3: {
         items: ['kubejs:magnet/hdpe'],
-        range: 5,
+        range: 6,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             // This tier uses a slightly different handling pattern,
             // as it uses a drastically different approach to attracting items.
@@ -109,7 +109,7 @@ const magnetTiers = {
     },
     tier4: {
         items: ['kubejs:magnet/polonium', 'kubejs:magnet/polonium_alt'],
-        range: 5,
+        get range() { return magnetTiers.tier3.range},
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             // Tier 4 is identical to tier 3, but has a special right click interaction
             return magnetTiers.tier3.applyMagnetPull(item, distance, range, dx, dy, dz)

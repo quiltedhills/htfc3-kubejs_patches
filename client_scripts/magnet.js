@@ -1,18 +1,18 @@
-// Helper script based on 'kubejs/server_scripts/magnet.js', largely the same but smaller and with some tweaks.
+// Helper script based on 'kubejs/server_scripts/custom_items/magnet.js', largely the same but smaller and with some tweaks.
 // This script is needed to make items properly sync on the client in multiplayer.
 // The sync is not perfect, but it's good as I could make it.
 
 let magnetTiers = {
     tier1: {
         items: ['kubejs:magnet/copper'],
-        range: 3.5,
+        range: 4.5,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             if (!item.persistentData.metallic) return
 
             let directionX = dx / distance;   let directionY = dy / distance;   let directionZ = dz / distance
 
             if (item.persistentData.huge_very_heavy) range /= 2
-            let speed = 0.06 * Math.min(1 - (distance / range), 0.5)
+            let speed = 0.125 * Math.min(1 - (distance / range), 0.5)
             if (item.persistentData.huge_very_heavy) speed /= 5
 
             if (distance > range) return
@@ -24,22 +24,22 @@ let magnetTiers = {
                 )
             } else {
                 item.setMotion(
-                    item.motionX * 0.98 + directionX * speed,
-                    item.motionY * 0.98 + directionY * speed * 2,
-                    item.motionZ * 0.98 + directionZ * speed
+                    item.motionX * 0.97 + directionX * speed,
+                    item.motionY * 0.97 + directionY * speed * 2,
+                    item.motionZ * 0.97 + directionZ * speed
                 )
             }
         }
     },
     tier2: {
         items: ['kubejs:magnet/colored_steel'],
-        range: 4,
+        range: 5,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             let directionX = dx / distance;   let directionY = dy / distance;   let directionZ = dz / distance
 
             if (item.persistentData.huge_very_heavy) range /= 2
             if (!item.persistentData.metallic) range /= 1.125
-            let speed = 0.08 * Math.min(1 - (distance / range), 0.5)
+            let speed = 0.125 * Math.min(1 - (distance / range), 0.5)
             if (item.persistentData.huge_very_heavy) speed /= 5
             if (item.persistentData.metallic) speed *= 1.125
 
@@ -61,7 +61,7 @@ let magnetTiers = {
     },
     tier3: {
         items: ['kubejs:magnet/hdpe'],
-        range: 5,
+        range: 6,
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             if (item.persistentData.huge_very_heavy) range /= 2
             if (distance > range) return
@@ -85,7 +85,7 @@ let magnetTiers = {
     },
     tier4: {
         items: ['kubejs:magnet/polonium'],
-        range: 5,
+        get range() { return magnetTiers.tier3.range},
         applyMagnetPull: (item, distance, range, dx, dy, dz) => {
             return magnetTiers.tier3.applyMagnetPull(item, distance, range, dx, dy, dz)
         }
