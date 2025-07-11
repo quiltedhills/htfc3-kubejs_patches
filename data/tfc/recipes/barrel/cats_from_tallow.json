@@ -1,0 +1,16 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "forge:eggs"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:tallow",
+    "amount": 10000
+  },
+  "output_item": {
+    "item": "minecraft:cat_spawn_egg"
+  },
+  "duration": 24000
+}
