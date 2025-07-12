@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LBL",
+    "XCX",
+    "LRL"
+  ],
+  "key": {
+    "L": {
+      "tag": "pneumaticcraft:upgrade_components"
+    },
+    "X": {
+      "tag": "forge:ingots/compressed_iron"
+    },
+    "C": {
+      "tag": "pneumaticcraft:plastic_sheets"
+    },
+    "B": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "R": {
+      "tag": "forge:ingots/red_steel"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:magnet_upgrade"
+  }
+}

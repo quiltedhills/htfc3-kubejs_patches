@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "tconstruct:gold_bars"
+    }
+  ],
+  "results": [
+    {
+      "item": "createdeco:gold_bars"
+    }
+  ]
+}

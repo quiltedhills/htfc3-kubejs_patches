@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:module_magnetic_attraction_unit"
+  },
+  "pattern": [
+    "ACA",
+    "BPR",
+    "HHH"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:alloys/elite"
+    },
+    "P": {
+      "item": "mekanism:module_base"
+    },
+    "C": {
+      "tag": "forge:circuits/elite"
+    },
+    "H": {
+      "item": "mekanism:pellet_polonium"
+    },
+    "B": {
+      "item": "tfc:blue_steel_bars"
+    },
+    "R": {
+      "item": "tfc:red_steel_bars"
+    }
+  }
+}

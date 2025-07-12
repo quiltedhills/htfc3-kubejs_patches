@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/rod/red_steel"
+  },
+  "result": {
+    "item": "tfc:red_steel_bars",
+    "count": 2
+  },
+  "tier": 5,
+  "rules": [
+    "punch_last",
+    "punch_not_last",
+    "draw_any"
+  ]
+}

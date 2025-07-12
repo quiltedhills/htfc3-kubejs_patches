@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/rod/black_steel"
+  },
+  "result": {
+    "item": "tfc:black_steel_bars",
+    "count": 2
+  },
+  "tier": 4,
+  "rules": [
+    "punch_last",
+    "punch_not_last",
+    "draw_any"
+  ]
+}

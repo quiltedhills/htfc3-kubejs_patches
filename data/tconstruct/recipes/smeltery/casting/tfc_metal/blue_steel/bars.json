@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "tag": "forge:molten_blue_steel",
+    "amount": 25
+  },
+  "result": {
+    "item": "tfc:blue_steel_bars"
+  },
+  "cooling_time": 34
+}
