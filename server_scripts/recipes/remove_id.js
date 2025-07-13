@@ -1,9 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
-		{id: 'chiselsandbits:chisel_stone'},
-		{id: 'htm:compat/tfc/crafting/dried_kelp_block'},
-		{id: 'tfc:crafting/vanilla/redstone/heavy_weighted_pressure_plate'},
 
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},
@@ -14,7 +11,7 @@ onEvent('recipes', event => {
 		{id: 'farmersdelight:cooking/apple_cider'},
 		{id: 'farmersdelight:cooking/hot_cocoa'},
 		{id: 'farmersdelight:melon_juice'},
-		// these are unwanted due to being similar to TFC foods
+		// these items are unwanted due to being similar to TFC foods
 		{id: 'farmersdelight:nether_salad'},
 		{id: 'farmersdelight:mixed_salad'},
 		{id: 'farmersdelight:cooking/cooked_rice'},
@@ -34,6 +31,13 @@ onEvent('recipes', event => {
 		{id: 'create_sa:vault_recipe'},
 		{id: /^create:haunting\/infested_/},
 		{id: 'create:milling/calcite'},
+		{id: 'chiselsandbits:chisel_stone'},
+		{id: 'htm:compat/tfc/crafting/dried_kelp_block'},
+		{id: 'tfc:crafting/vanilla/redstone/heavy_weighted_pressure_plate'},
+		{id: 'twilightforest:waterlily_to_magenta'},
+		{id: 'twilightforest:thorn_rose_to_red'},
+		{id: 'untamedwilds:items/canola_to_dye'},
+		{id: 'untamedwilds:items/water_hyacinth_to_dye'},
 
 		{id: 'supplementaries:sconce'},
 		{id: 'supplementaries:sconce_soul'},
@@ -63,6 +67,7 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:blocks/torches_from_blubber'},
 		{id: 'twilightforest:berry_torch'},
 		{id: /^securitycraft:reinforced_.+_stained_glass$/},
+		{id: /^exnihilosequentia:fluid_item\/ens_.+_coral/},
 
 		{id: 'mekanism:nucleosynthesizing/crossbow'},
 		{id: 'mekanism:nucleosynthesizing/crying_obsidian'},
@@ -187,6 +192,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_nugget_from_cast_iron_ingot'},
 		{id: 'createdeco:cast_iron_ingot'},
 		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
+		{id: 'createdeco:polished_iron_bars_from_iron_ingot_stonecutting'},
+		{id: 'minecraft:sandpaper_polishing/iron_bars_from_polishing'},
 		
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
@@ -621,7 +628,6 @@ onEvent('recipes', event => {
 		{id: 'createdeco:brass_bars_from_brass_ingot_stonecutting'},
 		{id: 'createdeco:andesite_bars_from_andesite_alloy_stonecutting'},
 		{id: 'tconstruct:smeltery/melting/metal/gold/nugget_3'},
-		{id: 'tconstruct:smeltery/casting/metal/iron/bars'},
 		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'},

@@ -1,0 +1,15 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "tfc:food/cattail_root"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:brown_dye",
+      "count": 2
+    }
+  ],
+  "processingTime": 100
+}

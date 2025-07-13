@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "tfc:powder/limonite"
+    },
+  "result": "minecraft:yellow_dye",
+  "experience": 0,
+  "cookingtime": 100
+}

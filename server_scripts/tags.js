@@ -16,12 +16,6 @@ onEvent('tags.blocks', event => {
 		'minecraft:crafting_table'
 	])
 
-	event.add('minecraft:dirt', [
-		'tfc:grass/silt',
-		'tfc:grass/loam',
-		'tfc:grass/sandy_loam',
-		'tfc:grass/silty_loam'
-	]),
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_forecast',
@@ -70,7 +64,11 @@ onEvent('tags.blocks', event => {
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_trigger_collapse', [
-		/^tfc:raw_sandstone\/.+/
+		/^tfc:raw_sandstone\/.+/,
+		/^tfc_ie_addon:ore\/.+_aluminum/,
+		/^tfc_ie_addon:ore\/.+_lead/,
+		/^tfc_ie_addon:ore\/.+_uranium/,
+		/^firmalife:ore\/.+_chromite/
 	])
 	event.add('tfc:can_start_collapse', [
 		/^tfc:raw_sandstone\/.+/
@@ -1178,11 +1176,8 @@ onEvent('tags.items', event => {
 		'immersiveengineering:blastfurnace_preheater',
 		'immersiveengineering:sample_drill',
 		'immersiveengineering:cloche',
-		'immersiveengineering:steel_post',
-		'immersiveengineering:alu_post',
 		'immersiveengineering:transformer',
 		'immersiveengineering:transformer_hv',
-		'immersiveengineering:treated_post',
 		'immersiveengineering:crate',
 		'immersiveengineering:reinforced_crate',
 		'immersiveengineering:wooden_barrel',
@@ -1215,6 +1210,10 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		'immersiveengineering:treated_post',
+		'immersiveengineering:alu_post',
+		'immersiveengineering:steel_post',
+		'create:metal_girder',
 		'#paraglider:statues',
 		'compressedcreativity:mesh_dense',
 		'compressedcreativity:mesh_haunted',

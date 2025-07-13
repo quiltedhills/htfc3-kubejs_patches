@@ -38,6 +38,8 @@ onEvent('recipes', event => {
 	//
 	// ====================================== remove for type ===================================================================
 	//
+	event.remove({output: '#forge:dyes', type: 'minecraft:crafting_shapeless', mod: 'tfc'})
+	event.remove({output: '#forge:dyes', type: 'minecraft:crafting_shapeless', mod: 'minecraft'})
 	event.remove({output: [
 		'#forge:ingots',
 		'#forge:storage_blocks',
@@ -45,7 +47,6 @@ onEvent('recipes', event => {
 		'#forge:dusts',
 		'#forge:plates',
 		'#forge:wires',
-		'#forge:dyes',
 		'#minecraft:coals',
 		'minecraft:bone_meal',
 		'minecraft:white_carpet',

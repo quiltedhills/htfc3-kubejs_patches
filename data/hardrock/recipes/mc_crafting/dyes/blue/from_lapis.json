@@ -1,0 +1,11 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:dusts/lapis"},
+  "transitionalItem": {"item": "exnihilosequentia:lead_pieces"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item": "exnihilosequentia:lead_pieces"},{"fluid": "minecraft:water","nbt": {},"amount": 25}],"results": [{"item": "exnihilosequentia:lead_pieces"}]},
+    {"type": "create:pressing","ingredients": [{"item": "exnihilosequentia:lead_pieces"}],"results": [{"item": "exnihilosequentia:lead_pieces"}]}
+    ],
+  "results": [{"item": "minecraft:blue_dye","count":1}],
+  "loops": 1
+}
