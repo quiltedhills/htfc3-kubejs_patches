@@ -112,6 +112,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made the Shore biome valid for waterwheels <br/>
 • Added sealed barrel recipes for making clay from mud <br/>
 • Added recipes for turning wool yarn into string <br/>
+• Things made from vanilla crafting tables now also accept TFC workbenches <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

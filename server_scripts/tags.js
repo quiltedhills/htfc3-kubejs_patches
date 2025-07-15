@@ -224,7 +224,8 @@ onEvent('tags.items', event => {
 	event.add('hardrock:explosion_immune', [
 		'#forge:ingots/compressed_iron'
 	])
-
+	
+	event.add('forge:workbenches', '#tfc:workbenches')
 	event.add('tfc:rock/button', /^tfc:rock\/button\//)
 	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')
 	event.add('tfc:metal_item/cast_iron', '#tfc:metal_item/cast_iron_tools')
