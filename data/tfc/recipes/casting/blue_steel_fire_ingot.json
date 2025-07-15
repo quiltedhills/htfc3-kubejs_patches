@@ -4,11 +4,11 @@
     "item": "tfc:ceramic/fire_ingot_mold"
   },
   "fluid": {
-    "ingredient": "kubejs:andesite_alloy",
+    "ingredient": "tfc:metal/blue_steel",
     "amount": 100
   },
   "result": {
-    "item": "create:andesite_alloy"
+    "item": "tfc:metal/ingot/blue_steel"
   },
   "break_chance": 0
 }

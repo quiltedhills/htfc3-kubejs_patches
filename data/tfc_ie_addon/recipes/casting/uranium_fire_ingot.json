@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:casting",
   "mold": {
     "item": "tfc:ceramic/fire_ingot_mold"
@@ -11,5 +10,5 @@
   "result": {
     "item": "immersiveengineering:ingot_uranium"
   },
-  "break_chance": 0.01
+  "break_chance": 0
 }

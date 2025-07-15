@@ -4,11 +4,11 @@
     "item": "tfc:ceramic/fire_ingot_mold"
   },
   "fluid": {
-    "ingredient": "kubejs:andesite_alloy",
+    "ingredient": "firmalife:metal/chromium",
     "amount": 100
   },
   "result": {
-    "item": "create:andesite_alloy"
+    "item": "firmalife:metal/ingot/chromium"
   },
   "break_chance": 0
 }

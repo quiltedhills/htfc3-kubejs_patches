@@ -63,4 +63,10 @@ onEvent('jei.information', event => {
 	event.add(['immersiveengineering:treated_post', 'immersiveengineering:alu_post', 'immersiveengineering:steel_post'], [
 		'The top block can be right clicked with an Engineer\'s Hammer to create a horizontal section.'
 	])
+	event.add('tfc:ceramic/ingot_mold', [
+		'Has a 10% chance to break when extracting an ingot'
+	])
+	event.add('tfc:ceramic/fire_ingot_mold', [
+		'Unlike regular Ingot Molds, these ones never break!'
+	])
 })
