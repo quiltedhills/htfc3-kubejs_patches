@@ -57,6 +57,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added lots of tooltips and info tabs for many items <br/>
 
 ### Balancing:
+• Greatly reduced the fluid capacity of Small Vessels (3000mb -> 1200mb) <br/>
 • Decreased outputs from sifting sand <br/>
 • Made sandstone collapsible <br/>
 • Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
@@ -69,8 +70,10 @@ Please feel free to reach out to me on discord for any questions!
 • Changed etching acid recipe <br/>
 • Made Cassiterite obtainable from gravel sifting <br/>
 • Buffed Blazing Blood when used as a Blaze Burner fluid (using it is still probably not worthwhile haha) <br/>
+• Made Fire Ingot Molds unbreakable (used to have a 1% chance to break) <br/>
 • Tweaked the recipes for HV and MV capacitors <br/>
 • Made Uncrafting Tables non-functional <br/>
+• Made Creosote Oil usable in PNC Liquid Compressors <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>
