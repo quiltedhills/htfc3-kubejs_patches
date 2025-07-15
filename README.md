@@ -84,6 +84,7 @@ Please feel free to reach out to me on discord for any questions!
 • Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
 • Changed recipes for Feeds and Baits to reduce recipe conflicts <br/>
 • Tweaked the dye recipes <br/>
+• Made Compressed Iron Ingots immune to explosions <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
 • Added ceramic shards that can be used for compost <br/>
 • Added recipes for smelting down greenhouse blocks <br/>
@@ -102,7 +103,8 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked some sand-related recipes <br/>
 • Cleaned up IE Mixer and IE Bottling Machine JEI entries <br/>
 • Made heat frame and depot interaction more pleasant <br/>
-• Made ice shavings less intrusive <br/>
+• Changed the tool needed to harvest ice shavings <br/>
+• Made it possible to melt ice shavings and snow into water <br/>
 • Tweaked recipes and information for vanilla gemstones <br/>
 • Made the Shore biome valid for waterwheels <br/>
 • Added sealed barrel recipes for making clay from mud <br/>
