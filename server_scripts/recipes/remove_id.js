@@ -1,7 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
-
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},
 		{id: 'create:copycat_panel_from_ingots_zinc_stonecutting'},
@@ -96,27 +95,11 @@ onEvent('recipes', event => {
 		{id: 'compressedcreativity:crafting/mechanical_visor_upgrade'}, // these are too long and mess item descriptions in-game.
 		{id: 'compressedcreativity:sequenced_assembly/mesh_splashing'}, // both are relocated to have a shorter pathname!
 
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_black'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_black'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_black'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_brown'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_brown'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_brown'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_green'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_green'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_green'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_pink'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_pink'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_pink'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_red'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_red'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_red'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_white'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_white'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_white'},
-		{id: 'tfc_ie_addon:crusher/sandstone/cut_yellow'},
-		{id: 'tfc_ie_addon:crusher/sandstone/raw_yellow'},
-		{id: 'tfc_ie_addon:crusher/sandstone/smooth_yellow'},
+		// Remove to make it more difficult to artificially dye sand
+		{id: /^tfc_ie_addon:crusher\/sandstone\//},
+		// Remove in favor of cogwheel recipes
+		{id: /^tfc_ie_addon:sawmill\/.+\/planks/},
+		{id: /^tfc_ie_addon:sawmill\/.+\/slab/},
 
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_limonite'},
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_hematite'},
