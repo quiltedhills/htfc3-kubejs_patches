@@ -1,4 +1,13 @@
 // priority: 10
+
+// Sneaky entity removal
+onEvent('entity.spawned', event => {
+	if (event.entity.type == 'minecraft:chicken') {
+		event.cancel()
+	}
+})
+
+// Standard recipe stuff
 onEvent('recipes', event => {
 	event.remove({input: 'minecraft:sugar_cane'})
 	event.remove({input: ['#forge:storage_blocks'], type: 'immersiveengineering:arc_furnace'})

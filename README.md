@@ -53,6 +53,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added item repair recipes for things like jetpacks and clothing
 • Added custom magnets to replace the Create SA copper magnet <br/>
 • Added an item that lets you remove player corpses <br/>
+• Made vanilla cat summons craftable ! <br/>
 • Set ground for creating custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
 • Added lots of tooltips and info tabs for many items <br/>
 
@@ -74,6 +75,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked the recipes for HV and MV capacitors <br/>
 • Made Uncrafting Tables non-functional <br/>
 • Made Creosote Oil usable in PNC Liquid Compressors <br/>
+• Made it impossible to summon vanilla chickens <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>
