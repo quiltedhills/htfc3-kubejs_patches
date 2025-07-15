@@ -101,6 +101,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added an additional Brass Mechanisms recipe <br/>
 • Increased how many redstone lamps you get per recipe <br/>
 • Added a pressure chamber recipe for Create basins <br/>
+• Added a sequenced recipe for Iron Hoes <br/>
 • Reduced the required pressure for some conflicting pressure chamber recipes from 4.0 to 3.0 <br/>
 • Added Mekanism recipes for synthesizing TFC dirt blocks <br/>
 • Tweaked some sand-related recipes <br/>
@@ -142,6 +143,7 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
 • Fixed many anvil recipes having incorrect anvil tier requirements <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
+• Fixed making Zinc Sheets with a mechanical press immediately going into the conveyor belt recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore to reduce JEI clutter <br/>
 • Made the charcoal block recipe use whole charcoal pieces instead of powder <br/>
