@@ -38,6 +38,7 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:items/canola_to_dye'},
 		{id: 'untamedwilds:items/water_hyacinth_to_dye'},
 
+		{id: 'supplementaries:faucet'},
 		{id: 'supplementaries:sconce'},
 		{id: 'supplementaries:sconce_soul'},
 		{id: 'supplementaries:sconce_lever'},
