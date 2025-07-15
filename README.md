@@ -114,6 +114,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added sealed barrel recipes for making clay from mud <br/>
 • Added recipes for turning wool yarn into string <br/>
 • Things made from vanilla crafting tables now also accept TFC workbenches <br/>
+• Made vats, stovetop pots and stovetop grills count as oven-insulating blocks <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>

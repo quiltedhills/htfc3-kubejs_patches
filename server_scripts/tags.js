@@ -16,6 +16,11 @@ onEvent('tags.blocks', event => {
 		'minecraft:crafting_table'
 	])
 
+	event.add('firmalife:oven_blocks', [
+		'firmalife:vat',
+		'firmalife:stovetop_grill',
+		'firmalife:stovetop_pot'
+	])
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_forecast',
