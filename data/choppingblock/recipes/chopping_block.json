@@ -1,14 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:item_application",
   "ingredients": [
     {
       "tag": "minecraft:logs"
     },
     {
-      "tag": "tfc:raw_hides"
+      "tag": "forge:tools/hammers"
     }
   ],
-  "result": {
+  "results": [
+    {
       "item": "choppingblock:chopping_block"
-  }
+    }
+  ]
 }
