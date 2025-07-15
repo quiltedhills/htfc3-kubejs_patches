@@ -1,4 +1,6 @@
 onEvent('block.right_click', event => {
+	// disable entirely
+	if (event.block.id == 'twilightforest:uncrafting_table') event.cancel()
 	// mechanical belt dupe involving this specific wrench
 	if (event.item.id == 'refinedstorage:wrench' && event.block.id == 'create:belt') event.cancel()
 	// tanner exploit that lets you turn raw hide directly into leather

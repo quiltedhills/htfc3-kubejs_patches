@@ -816,7 +816,8 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced([
 		'butchersdelight:rack',
-		/^paraglider:.+statue$/
+		/^paraglider:.+statue$/,
+		'twilightforest:uncrafting_table'
 	], (item, advanced, text) => {
 		text.add(1, Text.gold('Decorative use only'))
 	})

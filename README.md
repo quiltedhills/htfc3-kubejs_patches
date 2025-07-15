@@ -70,6 +70,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made Cassiterite obtainable from gravel sifting <br/>
 • Buffed Blazing Blood when used as a Blaze Burner fluid (using it is still probably not worthwhile haha) <br/>
 • Tweaked the recipes for HV and MV capacitors <br/>
+• Made Uncrafting Tables non-functional <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>
