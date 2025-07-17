@@ -76,6 +76,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made Uncrafting Tables non-functional <br/>
 • Made Creosote Oil usable in PNC Liquid Compressors <br/>
 • Made it impossible to summon vanilla chickens <br/>
+• Removed turning sticks into torches by right clicking a torch. Sorry ;-; <br/>
 
 ### Quality of Life:
 • Various improvements to quests (wip) <br/>

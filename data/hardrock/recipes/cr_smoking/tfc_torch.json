@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "tfc:dead_torch"
+    },
+  "result": "tfc:torch",
+  "experience": 0,
+  "cookingtime": 100
+}
