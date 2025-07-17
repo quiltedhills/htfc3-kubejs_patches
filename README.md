@@ -117,6 +117,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for turning wool yarn into string <br/>
 • Things made from vanilla crafting tables now also accept TFC workbenches <br/>
 • Made vats, stovetop pots and stovetop grills count as oven-insulating blocks <br/>
+• Increased the output of the wool block crushing recipe <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
