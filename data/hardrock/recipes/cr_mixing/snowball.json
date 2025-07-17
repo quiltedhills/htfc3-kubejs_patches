@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:boiled_water",
+      "amount": 125
+    }
+  ],
+  "heatRequirement": "heated"
+}

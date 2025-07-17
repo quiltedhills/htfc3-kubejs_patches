@@ -3,7 +3,8 @@ onEvent('jei.remove.recipes', event => {
 	// You can refer to that file to get category names for this script!
 
 	event.remove('tfc:sealed_barrel', [
-		'hardrock:tfc_barrel/ice_shavings_with_water'
+		'hardrock:tfc_barrel/ice_shavings_with_water',
+		'hardrock:tfc_barrel/snowball_with_water'
 	])
 
 
