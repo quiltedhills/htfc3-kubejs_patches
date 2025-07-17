@@ -709,6 +709,9 @@ onEvent('item.tooltip', tooltip => {
 		/^pneumaticcraft:wall_lamp/,
 		'glassential:glass_light',
 		'create:experience_block',
+		'minecraft:blaze_rod',
+		'tconstruct:seared_lantern',
+		'tconstruct:scorched_lantern'
 	], (item, advanced, text) => {
 		text.add(1, Text.of('Permanent light source').gold())
 	})

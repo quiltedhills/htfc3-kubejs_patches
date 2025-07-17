@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "P P",
+    " B "
+  ],
+  "key": {
+    "C": {
+      "item": "tfc:metal/chain/black_steel"
+    },
+    "B": {
+      "item": "tconstruct:scorched_brick"
+    },
+    "P": {
+      "item": "tconstruct:scorched_glass_pane"
+    }
+  },
+  "result": {
+    "item": "tconstruct:scorched_lantern"
+  }
+}
