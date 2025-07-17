@@ -821,6 +821,11 @@ onEvent('item.tooltip', tooltip => {
 	], (item, advanced, text) => {
 		text.add(1, Text.gold('Decorative use only'))
 	})
+	tooltip.addAdvanced([
+		'minecraft:end_portal_frame'
+	], (item, advanced, text) => {
+		text.add(1, Text.gold('Unbreakable. Be careful!'))
+	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])

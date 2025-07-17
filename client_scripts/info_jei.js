@@ -69,4 +69,7 @@ onEvent('jei.information', event => {
 	event.add('tfc:ceramic/fire_ingot_mold', [
 		'Unlike regular Ingot Molds, these ones never break!'
 	])
+	event.add('minecraft:end_portal_frame', [
+		'When placed, this block can be rotated with a Wrench from either PneumaticCraft or Refined Storage.'
+	])
 })
