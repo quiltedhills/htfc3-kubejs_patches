@@ -77,6 +77,9 @@ Please feel free to reach out to me on discord for any questions!
 • Made Creosote Oil usable in PNC Liquid Compressors <br/>
 • Made it impossible to summon vanilla chickens <br/>
 • Made some items require rubber or plastic for their recipe instead of just using dye <br/>
+• Made the Carbon Infusion recipes accept regular coke coal, and not just petcoke <br/>
+• Reduced coke coal cost for the arc furnace wrought iron and silicon recipes <br/>
+• Added an extra pig iron recipe using mekanism carbon infusion <br/>
 • Added additional Mekanism recipes for latex and pig iron <br/>
 • Made enderslime leaves no longer drop saplings <br/>
 • Removed turning sticks into torches by right clicking a torch. Sorry ;-; <br/>

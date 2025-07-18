@@ -2,7 +2,7 @@
   "type": "immersiveengineering:arc_furnace",
   "input": {
     "base_ingredient": {
-      "tag": "forge:dusts/quartz"
+      "tag": "forge:ingots/cast_iron"
     },
     "count": 4
   },
@@ -13,13 +13,13 @@
   ],
   "results": [
     {
-      "item": "refinedstorage:silicon",
+      "item": "tfc:metal/ingot/wrought_iron",
       "count": 4
     }
   ],
-  "time": 800,
-  "energy": 409600,
   "slag": {
     "tag": "forge:slag"
-  }
+  },
+  "time": 1600,
+  "energy": 819200
 }

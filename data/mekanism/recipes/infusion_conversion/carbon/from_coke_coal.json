@@ -1,0 +1,14 @@
+{
+  "type": "mekanism:infusion_conversion",
+  "input": {
+    "ingredient": [
+      {
+        "tag": "forge:coal_coke"
+      }
+    ]
+  },
+  "output": {
+    "infuse_type": "mekanism:carbon",
+    "amount": 20
+  }
+}
