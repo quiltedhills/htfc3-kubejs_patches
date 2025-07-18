@@ -46,6 +46,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Railways Navigator, a mod that adds a few informational devices for use with train networks <br/>
 • Recipe overhauls for permanent light sources (type 'permanent' into JEI to find them!) <br/>
 • Made Aluminium Posts and Metal Girders act as strong supports <br/>
+• Buffed IE Diesel Generator power production from 4k FE/t to 32k FE/t <br/>
 • Fixed the nourishment effect preventing your character from getting hungry <br/>
 &nbsp; &nbsp; ◦ Nourishment will still make you not get hungry for some time, but not to an extreme it did before <br/>
 • Hopefully fixed the infamous snowstorm crash <br/>
@@ -61,6 +62,7 @@ Please feel free to reach out to me on discord for any questions!
 • Greatly reduced the fluid capacity of Small Vessels (3000mb -> 1200mb) <br/>
 • Drastically decreased sand pile output from processing ores. Increased loot from sifting sand blocks to compensate <br/>
 • Made sandstone collapsible <br/>
+• Made IE wiring much stronger and Create C&A wiring slightly weaker <br/>
 • Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
 &nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
 • Blacklisted villagers from cage traps <br/>
@@ -85,7 +87,7 @@ Please feel free to reach out to me on discord for any questions!
 • Removed turning sticks into torches by right clicking a torch. Sorry ;-; <br/>
 
 ### Quality of Life:
-• Various improvements to quests (wip) <br/>
+• Various improvements to quests (still hoping we can get a full revamp someday) <br/>
 • Altered item names for some easy-to-confuse items <br/>
 • Tweaked names for some confusing keybinds <br/>
 • Items directly on top of a sluice will try their best to not despawn <br/>

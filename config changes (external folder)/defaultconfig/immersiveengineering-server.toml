@@ -16,13 +16,13 @@
 		maxLength = 16
 		#The transfer rate of copper wire in IF/t
 		#Range: > 0
-		transferRate = 2048
+		transferRate = 8192
 		#The percentage of power lost every 16 blocks of distance in copper wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.05
 		#In- and output rates of copper wire connectors. This is independant of the transferrate of the wires.
 		#Range: > 0
-		wireConnectorInput = 256
+		wireConnectorInput = 1024
 
 	[wires.electrum]
 		#The maximum length of electrum wires
@@ -30,13 +30,13 @@
 		maxLength = 16
 		#The transfer rate of electrum wire in IF/t
 		#Range: > 0
-		transferRate = 8192
+		transferRate = 32768
 		#The percentage of power lost every 16 blocks of distance in electrum wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.025
 		#In- and output rates of electrum wire connectors. This is independant of the transferrate of the wires.
 		#Range: > 0
-		wireConnectorInput = 1024
+		wireConnectorInput = 4096
 
 	[wires.hv]
 		#The maximum length of hv wires
@@ -44,13 +44,13 @@
 		maxLength = 32
 		#The transfer rate of hv wire in IF/t
 		#Range: > 0
-		transferRate = 32768
+		transferRate = 131072
 		#The percentage of power lost every 16 blocks of distance in hv wire
 		#Range: 0.0 ~ 1.0
-		loss = 0.025
+		loss = 0.0125
 		#In- and output rates of hv wire connectors. This is independant of the transferrate of the wires.
 		#Range: > 0
-		wireConnectorInput = 4096
+		wireConnectorInput = 16384
 
 	[wires.rope]
 		#The maximum length of rope wires
@@ -89,10 +89,10 @@
 	lightning_output = 16000000
 	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
 	#Range: > 0
-	dieselGen_output = 4096
+	dieselGen_output = 32768
 	#The Flux per tick the Blast Furnace Preheater will consume to speed up the Blast Furnace
 	#Range: > 1
-	preheater_consumption = 32
+	preheater_consumption = 128
 	#The Flux per tick the Charging Station can insert into an item
 	#Range: > 1
 	charger_consumption = 256
@@ -109,19 +109,7 @@
 		[machines.capacitors.lv]
 			#Maximum energy stored (Flux)
 			#Range: > 1
-			storage = 100000
-			#Maximum energy input (Flux/tick)
-			#Range: > 1
-			input = 256
-			#Maximum energy output (Flux/tick)
-			#Range: > 1
-			output = 256
-
-		#Configuration for the medium voltage capacitor
-		[machines.capacitors.mv]
-			#Maximum energy stored (Flux)
-			#Range: > 1
-			storage = 1000000
+			storage = 128000
 			#Maximum energy input (Flux/tick)
 			#Range: > 1
 			input = 1024
@@ -129,11 +117,11 @@
 			#Range: > 1
 			output = 1024
 
-		#Configuration for the high voltage capacitor
-		[machines.capacitors.hv]
+		#Configuration for the medium voltage capacitor
+		[machines.capacitors.mv]
 			#Maximum energy stored (Flux)
 			#Range: > 1
-			storage = 4000000
+			storage = 1024000
 			#Maximum energy input (Flux/tick)
 			#Range: > 1
 			input = 4096
@@ -141,13 +129,25 @@
 			#Range: > 1
 			output = 4096
 
+		#Configuration for the high voltage capacitor
+		[machines.capacitors.hv]
+			#Maximum energy stored (Flux)
+			#Range: > 1
+			storage = 4096000
+			#Maximum energy input (Flux/tick)
+			#Range: > 1
+			input = 16384
+			#Maximum energy output (Flux/tick)
+			#Range: > 1
+			output = 16384
+
 	[machines.external_heater]
 		#The Flux per tick consumed to add one heat to a furnace. Creates up to 4 heat in the startup time and then 1 heat per tick to keep it running
 		#Range: > 1
-		consumption = 8
+		consumption = 32
 		#The Flux per tick consumed to double the speed of the furnace. Only happens if furnace is at maximum heat.
 		#Range: > 1
-		speedupConsumption = 24
+		speedupConsumption = 96
 
 	[machines.coredrill]
 		#The length in ticks it takes for the Core Sample Drill to figure out which mineral is found in a chunk
