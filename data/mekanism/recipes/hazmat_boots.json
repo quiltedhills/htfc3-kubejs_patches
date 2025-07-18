@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:hazmat_boots"
+  },
+  "pattern": [
+    "R R",
+    "LDL"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:rubber"
+    },
+    "L": {
+      "tag": "forge:ingots/lead"
+    },
+    "D": {
+      "tag": "forge:dyes/black"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " pd",
+    "pcp",
+    "ip "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:dyes/yellow"
+    },
+    "p": {
+      "item": "pneumaticcraft:plastic"
+    },
+    "c": {
+      "item": "immersiveengineering:wirecoil_steel"
+    },
+    "i": {
+      "tag": "forge:rods/wrought_iron"
+    }
+  },
+  "result": {
+    "item": "chiselsandbits:measuring_tape"
+  }
+}

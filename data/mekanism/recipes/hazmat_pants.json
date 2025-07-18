@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:hazmat_pants"
+  },
+  "pattern": [
+    "RRR",
+    "LDL",
+    "L L"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:rubber"
+    },
+    "L": {
+      "tag": "forge:ingots/lead"
+    },
+    "D": {
+      "tag": "forge:dyes/orange"
+    }
+  }
+}

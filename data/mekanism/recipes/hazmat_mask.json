@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:hazmat_mask"
+  },
+  "pattern": [
+    "RLR",
+    "LGL",
+    " D "
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:rubber"
+    },
+    "L": {
+      "tag": "forge:ingots/lead"
+    },
+    "D": {
+      "tag": "forge:dyes/orange"
+    },
+    "G": {
+      "item": "tconstruct:clear_tinted_glass"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HRD",
+    " RR",
+    "  R"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:rubber"
+    },
+    "D": {
+      "tag": "forge:dyes/green"
+    },
+    "H": {
+      "item": "travelersbackpack:hose_nozzle"
+    }
+  },
+  "result": {
+    "item": "travelersbackpack:hose",
+    "count": 1
+  }
+}
