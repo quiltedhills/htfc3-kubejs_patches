@@ -1,0 +1,45 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "pattern": [
+    "dpspd",
+    "rcacr",
+    " gng ",
+    "rcacr",
+    "dpspd"
+  ],
+  "key": {
+    "n": {
+      "item": "create_electric_stonks:generator"
+    },
+    "c": [
+      {
+        "item": "tfc:metal/double_sheet/red_steel"
+      },
+      {
+        "item": "tfc:metal/double_sheet/blue_steel"
+      }
+    ],
+    "p": {
+      "item": "pneumaticcraft:plastic"
+    },
+    "g": {
+      "item": "immersiveengineering:generator"
+    },
+    "a": {
+      "item": "createaddition:alternator"
+    },
+    "r": {
+      "item": "create:shaft"
+    },
+    "s": {
+      "tag": "forge:sheets/gold"
+    },
+    "d": {
+      "tag": "forge:dusts/diamond"
+    }
+  },
+  "result": {
+    "item": "create_electric_stonks:reinforced_generator"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "aga",
+    "iri"
+  ],
+  "key": {
+    "c": {
+      "item": "create_electric_stonks:advanced_redstone_resonance_coil"
+    },
+    "i": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "a": {
+      "tag": "forge:storage_blocks/andesite_alloy"
+    },
+    "r": {
+      "item": "minecraft:copper_block"
+    },
+    "g": {
+      "item": "createaddition:alternator"
+    }
+  },
+  "result": {
+    "item": "create_electric_stonks:generator"
+  }
+}

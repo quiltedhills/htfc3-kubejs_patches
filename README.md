@@ -65,7 +65,7 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
 • Blacklisted villagers from cage traps <br/>
 • Tweaked the durability of crude hammers (previously known as just Ex Nihilo hammers) <br/>
-• Made some items more expensive (notably Ender Chests, Wolf Spawn Eggs, Slime Boots and Rotational Compressors) <br/>
+• Made some items more expensive (notably Resonance Generator components, Ender Chests, Wolf Spawn Eggs, Slime Boots and Rotational Compressors) <br/>
 • Tweaked nucleosynthesizer recipes, as most of them were unchanged from base mekanism <br/>
 • Tweaked structural glass and reactor glass recipes <br/>
 • Changed etching acid recipe <br/>
