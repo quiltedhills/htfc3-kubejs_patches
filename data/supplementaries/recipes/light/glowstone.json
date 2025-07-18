@@ -20,18 +20,12 @@
       "item": "minecraft:glowstone_dust"
     },
     {
-      "item": "minecraft:glowstone_dust"
-    },
-    {
-      "item": "minecraft:glowstone_dust"
-    },
-    {
       "item": "securitycraft:reinforced_glass"
     },
     {
       "fluid": "tconstruct:blazing_blood",
       "nbt": {},
-      "amount": 50
+      "amount": 25
     }
   ],
   "results": [

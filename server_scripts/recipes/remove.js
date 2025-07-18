@@ -337,4 +337,9 @@ onEvent('recipes', event => {
 		'minecraft:beef',
 		'minecraft:chicken'
 	], type: 'minecraft:crafting_shaped'})
+
+
+	// Go around wildcard removals
+	event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire'])
+	.id('kubejs:electrum_wire_conversion')
 })

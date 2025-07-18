@@ -6,7 +6,7 @@
       "item": "glassential:glass_ghostly"
     },
     "A": {
-      "item": "create_power_loader:empty_andesite_chunk_loader"
+      "item": "create_power_loader:andesite_chunk_loader"
     },
     "C": {
       "item": "create:railway_casing"
@@ -32,6 +32,6 @@
     "CCNCC"
   ],
   "result": {
-    "item": "create_power_loader:empty_brass_chunk_loader"
+    "item": "create_power_loader:brass_chunk_loader"
   }
 }

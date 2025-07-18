@@ -126,6 +126,7 @@ Please feel free to reach out to me on discord for any questions!
 • Things made from vanilla crafting tables now also accept TFC workbenches <br/>
 • Made vats, stovetop pots and stovetop grills count as oven-insulating blocks <br/>
 • Increased the output of the wool block crushing recipe <br/>
+• Made the Brass Chunk Loader recipe retain the ghast if the andesite loader used for the recipe had one prior <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -170,3 +171,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed Chromite, Aluminum, Lead and Uranium ores not being able to collapse consistently <br/>
 • Fixed a recipe conflict for crushing quartz <br/>
 • Made all Envelope Glider kinds obtainable <br/>
+• Made IE posts accept TFC stone bricks for the recipe <br/>

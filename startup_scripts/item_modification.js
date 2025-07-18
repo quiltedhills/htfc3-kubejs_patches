@@ -8,6 +8,9 @@ onEvent('item.modification', event => {
 	event.modify('immersiveengineering:alu_post', item => { item.rarity = 'uncommon' })
 	event.modify('create:metal_girder', item => { item.rarity = 'uncommon' })
 
+	// furnace fuel changes
+	event.modify('minecraft:lava_bucket', item => { item.burnTime = 0 })
+
 	// various food tweaks
 	event.modify('minecraft:golden_carrot', item => { item.foodProperties = food => { food.alwaysEdible() } })
 	event.modify('untamedwilds:food_turtle_soup', item => { item.maxStackSize = 32 })

@@ -21,11 +21,12 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/melting/slime/beetroot_soup'},
 		{id: 'tconstruct:smeltery/casting/soup/beetroot'},
 
+		{id: 'create_sa:quartz_gem_crushing'},
 		{id: 'createoreexcavation:cutting/diamond_cutting'},
 		{id: 'createoreexcavation:cutting/emerald_cutting'},
 		{id: 'minecraft:tripwire_hook'},
 		{id: 'farmersdelight:cutting_board_from_beam'},
-		{id: /^tfc_ie_addon:heating\/ore\//},
+		{id: /^tfc_ie_addon:heating\/ore\/(poor|normal|rich)/},
 		{id: 'ag_day_counter:craft_calendar_block_to_calendar_item'},
 		{id: 'create_sa:vault_recipe'},
 		{id: /^create:haunting\/infested_/},

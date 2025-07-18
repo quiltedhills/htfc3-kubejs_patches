@@ -230,6 +230,7 @@ onEvent('tags.items', event => {
 		'#forge:ingots/compressed_iron'
 	])
 	
+	event.add('forge:rubber', 'kubejs:vulcanized_rubber')
 	event.add('forge:workbenches', '#tfc:workbenches')
 	event.add('tfc:rock/button', /^tfc:rock\/button\//)
 	event.add('tfc:metal_item/cast_iron_tools', 'kubejs:gravedigger')

@@ -13,7 +13,7 @@
       "item": "immersiveengineering:steel_fence"
     },
     "s": {
-      "item": "minecraft:stone_bricks"
+      "tag": "forge:stone_bricks"
     }
   },
   "result": {

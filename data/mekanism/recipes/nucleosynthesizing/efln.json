@@ -2,7 +2,7 @@
   "type": "mekanism:nucleosynthesizing",
   "itemInput": {
     "ingredient": {
-      "tag": "minecraft:fire_charge"
+      "item": "minecraft:fire_charge"
     }
   },
   "gasInput": {
