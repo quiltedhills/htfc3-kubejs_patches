@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aea",
+    " t "
+  ],
+  "key": {
+    "e": {
+      "item": "simple_hot_air_balloons:pink_hot_air_balloon_envelope"
+    },
+    "a": {
+      "tag": "forge:rods/aluminum"
+    },
+    "t": {
+      "tag": "forge:rods/treated_wood"
+    }
+  },
+  "result": {
+    "item": "simple_hot_air_balloons:pink_envelope_glider_helmet"
+  }
+}

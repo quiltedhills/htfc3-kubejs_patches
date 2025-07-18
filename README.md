@@ -163,3 +163,4 @@ Please feel free to reach out to me on discord for any questions!
 • Changed the mixing bowl "no recipe" message to be less ambiguous <br/>
 • Fixed Chromite, Aluminum, Lead and Uranium ores not being able to collapse consistently <br/>
 • Fixed a recipe conflict for crushing quartz <br/>
+• Made all Envelope Glider kinds obtainable <br/>
