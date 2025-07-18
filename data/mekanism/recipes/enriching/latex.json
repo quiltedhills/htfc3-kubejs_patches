@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "myrtrees:rubberwood_log"
+    },
+    "amount": 4
+  },
+  "output": {
+    "item": "myrtrees:latex"
+  }
+}

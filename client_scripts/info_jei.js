@@ -72,4 +72,12 @@ onEvent('jei.information', event => {
 	event.add('minecraft:end_portal_frame', [
 		'When placed, this block can be rotated with a Wrench from either PneumaticCraft or Refined Storage.'
 	])
+	event.add('myrtrees:latex', [
+		'Obtained from tapping into Rubberwood Trees.',
+		['A rubberwood sapling can be obtained from sieving dirt. ', Text.of('They can only be planted on dirt that has no grass!').italic()],
+		' ',
+		['Place a ', Text.of('Tree Tap').underlined(), ' on a rubberwood tree, as well as a ', Text.of('Bucket for Latex').underlined(), ' right below. Latex liquid should then start collecting. You can right click the bucket to see how much is currently stored inside.'],
+		' ',
+		'Each 1000mb of fluid equals one latex item. Each tree can produce up to 10 latex (which is 10,000mb of fluid) before it runs dry.',
+	])
 })

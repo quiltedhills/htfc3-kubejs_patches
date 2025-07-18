@@ -333,23 +333,6 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, Text.gold('It is enough for a long burn time'))
 		}
 	})
-	tooltip.addAdvanced('myrtrees:latex', (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
-		} else {
-			text.add(1, [Text.gold('Obtained from tapping into '), Text.yellow('Rubberwood Trees'), Text.gold('.')])
-			text.add(2, Text.gold('A rubberwood sapling can be obtained from sieving dirt.'))
-			text.add(3, Text.yellow('They can only be planted on dirt that has no grass!'))
-			text.add(4, '')
-			text.add(5, [Text.gold('Place a '), Text.yellow('"Tree Tap"'), Text.gold(' on a rubberwood tree,')])
-			text.add(6, [Text.gold('as well as a '), Text.yellow('"Bucket for Latex"'), Text.gold(' right below.')])
-			text.add(7, Text.gold('Latex liquid should then start collecting.'))
-			text.add(8, Text.gold('Right click the bucket to see how much is stored.'))
-			text.add(9, [Text.yellow('1000mb'), Text.gold(' is equal to '), Text.yellow('one latex.')])
-			text.add(10, [Text.gold('Each tree can produce up to '), Text.yellow('10 latex'), Text.gold(' in total.')])
-			text.add(11, '')
-		}
-	})
 	tooltip.addAdvanced('farmersrespite:coffee_berries', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
