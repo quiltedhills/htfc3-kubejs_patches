@@ -91,6 +91,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made infested leaves landslide instead of collapsing (think dirt or gravel) <br/>
 • Improved soap-related interactions and added a higher tier Hand Sanitizer item <br/>
 • Changed recipes for Feeds and Baits to reduce recipe conflicts <br/>
+• Made crouch-right-clicking a jug or a flask no longer empty it to prevent accidental spills <br/>
 • Tweaked the dye recipes <br/>
 • Made Compressed Iron Ingots immune to explosions <br/>
 • Ported 1.20's unfired clay recycling recipes <br/>
