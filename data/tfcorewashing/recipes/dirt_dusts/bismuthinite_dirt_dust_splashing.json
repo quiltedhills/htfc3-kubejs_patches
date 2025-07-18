@@ -16,10 +16,11 @@
       "item": "tfcorewashing:bismuthinite_powder"
     },
     {
-      "item": "tfcorewashing:pile_green_sand"
+      "item": "tfcorewashing:dirty_pile_bismuthinite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_bismuthinite",
+      "item": "tfcorewashing:pile_green_sand",
       "chance": 0.25
     },
     {

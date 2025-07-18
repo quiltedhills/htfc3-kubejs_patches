@@ -16,10 +16,11 @@
       "item": "tfcorewashing:copper_powder"
     },
     {
-      "item": "tfcorewashing:pile_red_sand"
+      "item": "tfcorewashing:dirty_pile_copper",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_copper",
+      "item": "tfcorewashing:pile_red_sand",
       "chance": 0.25
     },
     {

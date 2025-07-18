@@ -16,10 +16,11 @@
       "item": "tfcorewashing:magnetite_powder"
     },
     {
-      "item": "tfcorewashing:pile_black_sand"
+      "item": "tfcorewashing:dirty_pile_magnetite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_magnetite",
+      "item": "tfcorewashing:pile_black_sand",
       "chance": 0.25
     },
     {

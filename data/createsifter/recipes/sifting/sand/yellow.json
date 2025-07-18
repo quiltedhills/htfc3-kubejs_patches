@@ -11,19 +11,19 @@
   "results": [
     {
       "item": "tfc:ore/small_limonite",
-      "chance": 0.06
+      "chance": 0.35
     },
     {
       "item": "tfc:ore/small_native_gold",
-      "chance": 0.03
+      "chance": 0.20
     },
     {
       "item": "minecraft:bone",
-      "chance": 0.05
+      "chance": 0.1
     },
     {
       "item": "tfc:ore/pyrite",
-      "chance": 0.001
+      "chance": 0.002
     }
   ],
   "processingTime": 500

@@ -16,10 +16,11 @@
       "item": "tfc:powder/limonite"
     },
     {
-      "item": "tfcorewashing:pile_yellow_sand"
+      "item": "tfcorewashing:dirty_pile_limonite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_limonite",
+      "item": "tfcorewashing:pile_yellow_sand",
       "chance": 0.25
     },
     {

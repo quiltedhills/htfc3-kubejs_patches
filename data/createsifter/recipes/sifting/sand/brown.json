@@ -11,23 +11,23 @@
   "results": [
     {
       "item": "kubejs:misc_mats/ceramic_shards",
-      "chance": 0.05
+      "chance": 0.35
     },
     {
       "item": "tfc:ore/gypsum",
-      "chance": 0.04
+      "chance": 0.12
     },
     {
       "item": "tfc:ore/sylvite",
-      "chance": 0.02
+      "chance": 0.08
     },
     {
       "item": "minecraft:bone",
-      "chance": 0.05
+      "chance": 0.1
     },
     {
       "item": "tfc:ore/topaz",
-      "chance": 0.001
+      "chance": 0.002
     }
   ],
   "processingTime": 500

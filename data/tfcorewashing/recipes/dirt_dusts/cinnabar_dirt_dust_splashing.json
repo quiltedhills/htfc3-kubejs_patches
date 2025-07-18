@@ -16,10 +16,11 @@
       "item": "minecraft:redstone"
     },
     {
-      "item": "tfcorewashing:pile_red_sand"
+      "item": "tfcorewashing:dirty_pile_cinnabar",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_cinnabar",
+      "item": "tfcorewashing:pile_red_sand",
       "chance": 0.25
     },
     {

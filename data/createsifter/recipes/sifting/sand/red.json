@@ -11,19 +11,19 @@
   "results": [
     {
       "item": "minecraft:redstone",
-      "chance": 0.07
+      "chance": 0.12
     },
     {
       "item": "tfc:ore/small_hematite",
-      "chance": 0.03
+      "chance": 0.25
     },
     {
       "item": "minecraft:bone",
-      "chance": 0.05
+      "chance": 0.1
     },
     {
       "item": "tfc:ore/ruby",
-      "chance": 0.001
+      "chance": 0.002
     }
   ],
   "processingTime": 500

@@ -11,23 +11,23 @@
   "results": [
     {
       "item": "tfc:ore/small_malachite",
-      "chance": 0.07
+      "chance": 0.45
     },
     {
       "item": "tfc:ore/small_bismuthinite",
-      "chance": 0.03
+      "chance": 0.20
     },
     {
       "item": "tfc:ore/small_garnierite",
-      "chance": 0.011
+      "chance": 0.08
     },
     {
       "item": "minecraft:bone",
-      "chance": 0.05
+      "chance": 0.1
     },
     {
       "item": "tfc:ore/emerald",
-      "chance": 0.001
+      "chance": 0.002
     }
   ],
   "processingTime": 500

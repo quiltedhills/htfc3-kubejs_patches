@@ -16,10 +16,11 @@
       "item": "tfcorewashing:uraninite_powder"
     },
     {
-      "item": "tfcorewashing:pile_green_sand"
+      "item": "tfcorewashing:dirty_pile_uraninite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_uraninite",
+      "item": "tfcorewashing:pile_green_sand",
       "chance": 0.25
     },
     {

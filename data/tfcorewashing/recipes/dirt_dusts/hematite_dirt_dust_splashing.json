@@ -16,10 +16,11 @@
       "item": "tfc:powder/hematite"
     },
     {
-      "item": "tfcorewashing:pile_pink_sand"
+      "item": "tfcorewashing:dirty_pile_hematite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_hematite",
+      "item": "tfcorewashing:pile_pink_sand",
       "chance": 0.25
     },
     {

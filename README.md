@@ -59,7 +59,7 @@ Please feel free to reach out to me on discord for any questions!
 
 ### Balancing:
 • Greatly reduced the fluid capacity of Small Vessels (3000mb -> 1200mb) <br/>
-• Decreased outputs from sifting sand <br/>
+• Drastically decreased sand pile output from processing ores. Increased loot from sifting sand blocks to compensate <br/>
 • Made sandstone collapsible <br/>
 • Substantially increased drops from palm trees (and added coconuts as a possible drop!) <br/>
 &nbsp; &nbsp; ◦ Please let us know if the loot tables still feel off! <br/>
@@ -76,6 +76,8 @@ Please feel free to reach out to me on discord for any questions!
 • Made Uncrafting Tables non-functional <br/>
 • Made Creosote Oil usable in PNC Liquid Compressors <br/>
 • Made it impossible to summon vanilla chickens <br/>
+• Made some items require rubber or plastic for their recipe instead of just using dye <br/>
+• Added additional Mekanism recipes for latex and pig iron <br/>
 • Removed turning sticks into torches by right clicking a torch. Sorry ;-; <br/>
 
 ### Quality of Life:
@@ -160,3 +162,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed missing shaft texture in andesite and brass chunk loader item models <br/>
 • Changed the mixing bowl "no recipe" message to be less ambiguous <br/>
 • Fixed Chromite, Aluminum, Lead and Uranium ores not being able to collapse consistently <br/>
+• Fixed a recipe conflict for crushing quartz <br/>

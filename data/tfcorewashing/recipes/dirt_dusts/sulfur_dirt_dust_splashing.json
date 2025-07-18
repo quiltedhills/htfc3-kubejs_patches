@@ -6,25 +6,26 @@
     }
   ],
   "type": "create:splashing",
-    "ingredients": [
-      {
-        "item": "tfcorewashing:dirty_dust_sulfur"
-      }
-    ],
-    "results": [
-      {
-        "item": "tfc:powder/sulfur"
-      },
-      {
-        "item": "tfcorewashing:pile_yellow_sand"
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_sulfur",
-        "chance": 0.25
-      },
-      {
-        "item": "tfc:ore/pyrite",
-        "chance": 0.001
-      }
-    ]
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_sulfur"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:powder/sulfur"
+    },
+    {
+      "item": "tfcorewashing:dirty_pile_sulfur",
+      "chance": 0.25
+    },
+    {
+      "item": "tfcorewashing:pile_yellow_sand",
+      "chance": 0.25
+    },
+    {
+      "item": "tfc:ore/pyrite",
+      "chance": 0.001
+    }
+  ]
 }

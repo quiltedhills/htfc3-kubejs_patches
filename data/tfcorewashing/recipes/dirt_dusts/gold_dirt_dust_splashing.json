@@ -16,10 +16,11 @@
       "item": "tfcorewashing:gold_powder"
     },
     {
-      "item": "tfcorewashing:pile_yellow_sand"
+      "item": "tfcorewashing:dirty_pile_gold",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_gold",
+      "item": "tfcorewashing:pile_yellow_sand",
       "chance": 0.25
     },
     {

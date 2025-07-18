@@ -16,10 +16,11 @@
       "item": "tfcorewashing:bauxite_powder"
     },
     {
-      "item": "tfcorewashing:pile_pink_sand"
+      "item": "tfcorewashing:dirty_pile_bauxite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_bauxite",
+      "item": "tfcorewashing:pile_pink_sand",
       "chance": 0.25
     },
     {

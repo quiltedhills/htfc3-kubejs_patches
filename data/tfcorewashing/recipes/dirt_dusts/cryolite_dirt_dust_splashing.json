@@ -16,10 +16,11 @@
       "item": "minecraft:redstone"
     },
     {
-      "item": "tfcorewashing:pile_white_sand"
+      "item": "tfcorewashing:dirty_pile_cryolite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_cryolite",
+      "item": "tfcorewashing:pile_white_sand",
       "chance": 0.25
     },
     {

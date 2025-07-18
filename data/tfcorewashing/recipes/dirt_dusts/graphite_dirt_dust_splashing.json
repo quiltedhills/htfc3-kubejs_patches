@@ -16,10 +16,11 @@
       "item": "tfc:powder/graphite"
     },
     {
-      "item": "tfcorewashing:pile_black_sand"
+      "item": "tfcorewashing:dirty_pile_graphite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_graphite",
+      "item": "tfcorewashing:pile_black_sand",
       "chance": 0.25
     },
     {

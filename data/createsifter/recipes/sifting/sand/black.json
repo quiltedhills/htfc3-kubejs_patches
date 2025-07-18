@@ -11,27 +11,27 @@
   "results": [
     {
       "item": "tfc:ore/small_magnetite",
-      "chance": 0.06
+      "chance": 0.40
     },
     {
       "item": "tfc_ie_addon:ore/small_lead",
-      "chance": 0.03
+      "chance": 0.25
     },
     {
       "item": "tfc:powder/charcoal",
-      "chance": 0.05
+      "chance": 0.15
     },
     {
       "item": "minecraft:bone",
-      "chance": 0.05
+      "chance": 0.1
     },
     {
       "item": "tfc:ore/sulfur",
-      "chance": 0.005
+      "chance": 0.02
     },
     {
       "item": "tfc:ore/sapphire",
-      "chance": 0.001
+      "chance": 0.002
     }
   ],
   "processingTime": 500

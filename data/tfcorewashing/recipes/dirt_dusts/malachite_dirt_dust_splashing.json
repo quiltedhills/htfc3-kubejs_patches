@@ -16,10 +16,11 @@
       "item": "tfc:powder/malachite"
     },
     {
-      "item": "tfcorewashing:pile_green_sand"
+      "item": "tfcorewashing:dirty_pile_malachite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_malachite",
+      "item": "tfcorewashing:pile_green_sand",
       "chance": 0.25
     },
     {

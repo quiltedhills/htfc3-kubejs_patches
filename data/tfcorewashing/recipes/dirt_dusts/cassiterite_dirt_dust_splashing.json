@@ -16,10 +16,11 @@
       "item": "tfcorewashing:cassiterite_powder"
     },
     {
-      "item": "tfcorewashing:pile_brown_sand"
+      "item": "tfcorewashing:dirty_pile_cassiterite",
+      "chance": 0.25
     },
     {
-      "item": "tfcorewashing:dirty_pile_cassiterite",
+      "item": "tfcorewashing:pile_brown_sand",
       "chance": 0.25
     },
     {
