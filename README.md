@@ -78,6 +78,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made it impossible to summon vanilla chickens <br/>
 • Made some items require rubber or plastic for their recipe instead of just using dye <br/>
 • Added additional Mekanism recipes for latex and pig iron <br/>
+• Made enderslime leaves no longer drop saplings <br/>
 • Removed turning sticks into torches by right clicking a torch. Sorry ;-; <br/>
 
 ### Quality of Life:
@@ -151,6 +152,7 @@ Please feel free to reach out to me on discord for any questions!
 &nbsp; &nbsp; ◦ Please report any recipes that still have an incorrect move order! <br/>
 • Fixed many anvil recipes having incorrect anvil tier requirements <br/>
 • Fixed a conflict with the tuyere sequenced recipe <br/>
+• Changed the transitional item for wooden gears <br/>
 • Fixed making Zinc Sheets with a mechanical press immediately going into the conveyor belt recipe <br/>
 • Fixed sealed trapdoors not letting pollution through <br/>
 • Removed arc furnace recipes for (mostly unobtainable) raw ore to reduce JEI clutter <br/>
