@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dyes/orange"
+    },
+    {
+      "item": "create:copper_valve_handle"
+    }
+  ],
+  "result": {
+    "item": "create:orange_valve_handle"
+  }
+}

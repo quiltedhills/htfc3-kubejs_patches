@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dyes/red"
+    },
+    {
+      "item": "create:copper_valve_handle"
+    }
+  ],
+  "result": {
+    "item": "create:red_valve_handle"
+  }
+}
