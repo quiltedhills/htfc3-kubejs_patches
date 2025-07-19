@@ -36,4 +36,9 @@ onEvent('block.modification', event => {
 			block.destroySpeed = 0.5
 		})
 	})
+
+	// Make end portal frames destructible
+	event.modify('minecraft:end_portal_frame', block => {
+		block.destroySpeed = 40
+	})
 })

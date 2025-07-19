@@ -57,6 +57,10 @@ Please feel free to reach out to me on discord for any questions!
 • Made vanilla cat summons craftable ! <br/>
 • Set ground for creating custom ponder scenes (see the hardrock category in Create's ponder index!) <br/>
 • Added lots of tooltips and info tabs for many items <br/>
+• Changed snow melting speed to be like five times faster (please let us know if this should be adjusted) <br/>
+• Made automatic backups also save FTB Chunks map and waypoint data <br/>
+• Terror birds can now spawn in badlands <br/>
+
 
 ### Balancing:
 • Greatly reduced the fluid capacity of Small Vessels (3000mb -> 1200mb) <br/>
@@ -129,6 +133,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made vats, stovetop pots and stovetop grills count as oven-insulating blocks <br/>
 • Increased the output of the wool block crushing recipe <br/>
 • Made the Brass Chunk Loader recipe retain the ghast if the andesite loader used for the recipe had one prior <br/>
+• Made end portal frames breakable <br/>
 
 ### Food-related:
 • Improvements for bowl-based foods, like soups and salads <br/>
@@ -174,3 +179,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed a recipe conflict for crushing quartz <br/>
 • Made all Envelope Glider kinds obtainable <br/>
 • Made IE posts accept TFC stone bricks for the recipe <br/>
+• Added a fleshing machine recipe for processing papyrus into paper <br/>
+• Changed the amount of steps that looming burlap takes to more closely match item count <br/>
+• Made pollution capable of polluting saltwater and riverwater <br/>
+• Fixed the Pattern Grid GUI being broken with the orange inventory resource pack <br/>

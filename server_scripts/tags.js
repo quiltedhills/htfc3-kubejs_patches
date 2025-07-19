@@ -22,9 +22,13 @@ onEvent('tags.blocks', event => {
 		'firmalife:stovetop_pot'
 	])
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
+	event.add('tfc:needs_colored_steel_tool', [
+		'minecraft:end_portal_frame'
+	])
 	event.add('minecraft:mineable/pickaxe', [
 		'weather2:weather_forecast',
-		'weather2:tornado_siren'
+		'weather2:tornado_siren',
+		'minecraft:end_portal_frame'
 	])
 	event.add('minecraft:mineable/shovel', [
 		'weather2:sand_layer',
@@ -361,9 +365,10 @@ onEvent('tags.items', event => {
 	])
 	event.add('tfc:foods/fruits', 'farmersdelight:pumpkin_slice')
 	event.add('kubejs:pollution_gasses', [
-		'adpother:carbon',
-		'adpother:dust',
-		'adpother:sulfur'
+		// regex instead of string to prevent errors if adpother is not installed
+		/^adpother:carbon$/,
+		/^adpother:dust$/,
+		/^adpother:sulfur$/
 	])
 
 	// removeAllTagsFrom doesn't seem to work with regex :(

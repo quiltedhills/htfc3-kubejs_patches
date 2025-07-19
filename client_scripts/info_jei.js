@@ -69,9 +69,6 @@ onEvent('jei.information', event => {
 	event.add('tfc:ceramic/fire_ingot_mold', [
 		'Unlike regular Ingot Molds, these ones never break!'
 	])
-	event.add('minecraft:end_portal_frame', [
-		'When placed, this block can be rotated with a Wrench from either PneumaticCraft or Refined Storage.'
-	])
 	event.add('myrtrees:latex', [
 		'Obtained from tapping into Rubberwood Trees.',
 		['A rubberwood sapling can be obtained from sieving dirt. ', Text.of('They can only be planted on dirt that has no grass!').italic()],

@@ -102,4 +102,39 @@ onEvent('block.break', event => {
 			if (Math.random() > 0.5) event.block.popItem('firmalife:ice_shavings')
 		}
 	}
+
+	// Destroy end portal blocks around broken frames
+	if (event.block.id == 'minecraft:end_portal_frame') {
+		if (!event.player.creativeMode) { // Couldn't get a proper loot table to work :p
+			event.block.popItem('minecraft:end_portal_frame')
+			if (event.block.properties.eye == 'true') event.block.popItem('minecraft:ender_eye')
+		}
+
+		let { x, y, z } = event.block.pos
+		for (let direction in portalOffsets) { // Iterate over all four adjacent blocks for safety, as opposed to only the one the frame is facing
+			let offsets = portalOffsets[direction]
+			if (event.level.getBlock(x + offsets.check[0], y, z + offsets.check[1]).id == 'minecraft:end_portal') {
+				removePortals(
+					x + offsets.bounds[0][0], z + offsets.bounds[0][1],
+					x + offsets.bounds[1][0], z + offsets.bounds[1][1]
+				)
+			}
+		}
+	}
+	function removePortals(x1, z1, x2, z2) {
+		const xMin = Math.min(x1, x2), xMax = Math.max(x1, x2)
+		const zMin = Math.min(z1, z2), zMax = Math.max(z1, z2)
+		for (let x = xMin; x <= xMax; x++) {
+			for (let z = zMin; z <= zMax; z++) {
+				let block = event.level.getBlock(x, event.block.pos.y, z)
+				if (block.id == 'minecraft:end_portal') block.set(Block.id('minecraft:air'))
+			}
+		}
+	}
 })
+const portalOffsets = {
+	east: { check: [1, 0], bounds: [[1, -2], [3, 2]] },
+	west: { check: [-1, 0], bounds: [[-3, -2], [-1, 2]] },
+	south: { check: [0, 1], bounds: [[-2, 1], [2, 3]] },
+	north: { check: [0, -1], bounds: [[-2, -3], [2, -1]] },
+}

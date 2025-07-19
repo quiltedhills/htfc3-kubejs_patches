@@ -810,7 +810,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced([
 		'minecraft:end_portal_frame'
 	], (item, advanced, text) => {
-		text.add(1, Text.gold('Unbreakable. Be careful!'))
+		text.add(1, Text.gray('Breakable'))
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
