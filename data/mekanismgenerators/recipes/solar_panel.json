@@ -7,7 +7,7 @@
   ],
   "key": {
     "S": {
-      "item": "pneumaticcraft:solar_cell"
+      "item": "pneumaticcraft:solar_wafer"
     },
     "O": {
       "tag": "forge:ingots/osmium"

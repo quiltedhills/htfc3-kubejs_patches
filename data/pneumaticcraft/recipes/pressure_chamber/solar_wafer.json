@@ -6,6 +6,9 @@
     },
     {
       "tag": "tfc:gem_powders/slot"
+    },
+    {
+      "tag": "forge:silicon"
     }
   ],
   "pressure": 2.5,
