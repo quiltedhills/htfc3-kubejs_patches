@@ -1,0 +1,30 @@
+{
+  "type": "immersiveengineering:blueprint",
+  "category": "components",
+  "inputs": [
+    {
+      "base_ingredient": {
+        "tag": "forge:glass/bottle"
+      },
+      "count": 2
+    },
+    {
+      "base_ingredient": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:bamboo"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "tag": "forge:ingots/copper"
+    }
+  ],
+  "result": {
+    "item": "immersiveengineering:light_bulb",
+    "count": 2
+  }
+}

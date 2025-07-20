@@ -11,7 +11,7 @@
   "results": [
     {
       "item": "tfc:ore/small_sphalerite",
-      "chance": 0.40
+      "chance": 0.30
     },
     {
       "item": "tfc:ore/small_native_silver",

@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "tfc:fired_molds"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:misc_mats/ceramic_shards",
+      "count": 3
+    },
+    {
+      "item": "kubejs:misc_mats/ceramic_shards",
+      "chance": 0.5
+    }
+  ],
+  "processingTime": 100
+}

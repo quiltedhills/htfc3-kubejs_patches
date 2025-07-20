@@ -3,12 +3,6 @@
   "ingredient": [
     {
       "tag": "tfc:fired_molds"
-    },
-    {
-      "tag": "tfc:fired_vessels"
-    },
-    {
-      "tag": "tfc:fired_large_vessels"
     }
   ],
   "result": {
