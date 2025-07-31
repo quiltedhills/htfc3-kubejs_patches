@@ -288,7 +288,7 @@ onEvent('tags.items', event => {
 	event.add('tfc:can_be_lit_on_torch', 'tfc:dead_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 
-	event.remove('curios:belt', 'toolbelt:belt')
+	//event.remove('curios:belt', 'toolbelt:belt')
 	event.add('tfc:axes', 'tconstruct:hand_axe')
 	event.add('forge:prop_foods', [
 		'supplementaries:pancake',
@@ -1091,6 +1091,7 @@ onEvent('tags.items', event => {
 	])
 	//----------------
 	event.add('tfc:huge_very_heavy', [
+		'createoreexcavation:drilling_machine',
 		'#astikorcarts:animal_cart',
 		'#astikorcarts:supply_cart',
 		'#astikorcarts:plow',

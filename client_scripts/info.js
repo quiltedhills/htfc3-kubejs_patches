@@ -522,14 +522,15 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.yellow('Can hold any unstackable item or block!'))
-			text.add(2, [Text.of('Access the slot with ').gold(), getKeybind('key.toolbelt.slot')])
-			text.add(3, [Text.of('then hold any unstackable item and hold ').gold(), getKeybind('key.toolbelt.open')])
-			text.add(4, Text.gold('to bring up a radial menu.'))
-			text.add(5, '')
-			text.add(6, Text.gold('Can be upgraded to hold more items.'))
-			text.add(7, [Text.of('You can get up to ').gold(), Text.of('2 slots').yellow(), Text.of(' with a ').gold(), Text.of('bone needle').yellow(), Text.of(',').gold()])
-			text.add(8, [Text.of('up to ').gold(), Text.of('4').yellow(), Text.of(' with an ').gold(), Text.of('iron').yellow(), Text.of(' and up to ').gold(), Text.of('9').yellow(), Text.of(' with a ').gold(), Text.of('netherite').yellow(), Text.of('!').gold()])
+			text.add(1, Text.yellow(''))
+			text.add(2, Text.yellow('Can hold any unstackable item or block!'))
+			text.add(3, [Text.of('Press ').gold(), getKeybind('key.toolbelt.slot'), Text.of(' and equip the belt.').gold()])
+			text.add(4, [Text.of('Hold any unstackable item and hold ').gold(), getKeybind('key.toolbelt.open')])
+			text.add(5, Text.gold('to bring up a radial menu.'))
+			text.add(6, '')
+			text.add(7, [Text.gold('Starts with 2 slots. Can be upgraded to hold more items.')])
+			text.add(8, [Text.of('You can upgrade to ').gold(), Text.of('3 total slots').yellow(), Text.of(' with a ').gold(), Text.of('bone needle').yellow(), Text.of(',').gold()])
+			text.add(9, [Text.of('up to ').gold(), Text.of('4').yellow(), Text.of(' with an ').gold(), Text.of('iron').yellow(), Text.of(' and up to ').gold(), Text.of('9').yellow(), Text.of(' with a ').gold(), Text.of('netherite').yellow(), Text.of('!').gold()])
 		}
 	})
 	tooltip.addAdvanced([

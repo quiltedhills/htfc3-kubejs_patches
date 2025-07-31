@@ -30,6 +30,15 @@ onEvent('player.inventory.opened', event => {
 	}
 })
 
+onEvent('item.right_click', event => {
+	// prevent shift-right-clicking a flask emptying it
+	if ([
+		'tfc:ceramic/jug',
+		'waterflasks:leather_flask',
+		'waterflasks:iron_flask'
+	].includes(event.item.id) && event.player.crouching) event.cancel()
+})
+
 onEvent('block.place', event => {
 	const isSequenceItem = (item) => item && item.nbt && item.nbt.SequencedAssembly
 	let mainHand = event.entity.mainHandItem

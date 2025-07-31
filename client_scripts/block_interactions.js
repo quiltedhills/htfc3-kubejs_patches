@@ -15,9 +15,10 @@ onEvent('block.right_click', event => {
 			&& ((isPlaceableSequenceItem(mainHand)) || isPlaceableSequenceItem(offHand))
 		)
 	) event.cancel()
+})
 
-
-	// prevent shift-right-clicking a flask emptying it (no serverside counterpart!)
+onEvent('item.right_click', event => {
+	// prevent shift-right-clicking a flask emptying it
 	if ([
 		'tfc:ceramic/jug',
 		'waterflasks:leather_flask',

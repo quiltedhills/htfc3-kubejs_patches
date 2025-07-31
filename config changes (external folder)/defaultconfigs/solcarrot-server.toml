@@ -73,10 +73,7 @@
 		'tfc:food/yellow_bell_pepper',
 
 		# Vanilla Removals
-		'minecraft:apple',
-
-		# Soon to be fixed.
-		'firmalife:food/frothy_coconut'
+		'minecraft:apple'
 	]
 	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
 	whitelist = []

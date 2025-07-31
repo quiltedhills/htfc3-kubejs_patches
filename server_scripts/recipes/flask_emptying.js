@@ -6,10 +6,14 @@ const flasks = [
 
 onEvent('recipes', event => {
     flasks.forEach(flaskItem => {
-        const recipe = event.shapeless(
+        event.shapeless(
             Item.of(flaskItem, `{display:{Lore:['{"text":"Clears fluid contents","color":"white","italic":false}']}}`),
             [Item.of(flaskItem).ignoreNBT()]
         ).id(`kubejs:flask_emptying/${flaskItem.replace(':', '/').replace('#', 'tag/')}`)
+            .replaceIngredient(
+                Item.of(flaskItem).ignoreNBT(),
+                Item.of('minecraft:air')
+            )
             .modifyResult((grid, result) => {
                 let item = grid.find(Item.of(flaskItem).ignoreNBT())
                 if (!item?.nbt?.fluid && !item?.nbt?.Fluid) return
