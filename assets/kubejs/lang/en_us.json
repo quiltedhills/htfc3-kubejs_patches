@@ -32,6 +32,10 @@
 
 
 
+  "tfc.recipe.barrel.tfc.barrel.small_leather": "Small Tanned Hide",
+  "tfc.recipe.barrel.tfc.barrel.medium_leather": "Medium Tanned Hide",
+  "tfc.recipe.barrel.tfc.barrel.large_leather": "Large Tanned Hide",
+
   "tfc.recipe.barrel.chiselsandbits.bag_dyeing": "Dyeing Bit Bag White",
   "tfc.recipe.barrel.comforts.hammock_black_from_white": "Dyeing Hammock Black",
   "tfc.recipe.barrel.comforts.hammock_blue_from_white": "Dyeing Hammock Blue",
