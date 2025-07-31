@@ -833,7 +833,6 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Pushes entities around when given a redstone signal.')])
 			text.add(2, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
 			text.add(3, [Text.gold('essentially is just a little toy.')])
-			if (client.isSingleplayer()) text.add(4, [Text.green('Running in Singleplayer')])
 		}
 	})
 	tooltip.addAdvanced(['create:belt_connector'], (item, advanced, text) => {

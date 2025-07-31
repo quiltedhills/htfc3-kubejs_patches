@@ -34,3 +34,4 @@ Please feel free to reach out to me on discord for any questions!
 # Changelogs / differences from 1.6.1a
 • Fixed language keys for the Tanned Hide barrel recipes <br/>
 • Added tooltip info for silkworms and infested leaves <br/>
+• Fixed tooltip error for Supplementaries bellows <br/>
