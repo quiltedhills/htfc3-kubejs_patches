@@ -4,18 +4,18 @@
   "energy": 61440,
   "result": {
     "fluid": "pneumaticcraft:plastic",
-    "amount": 1000
+    "amount": 2000
   },
   "input": {
-    "tag": "forge:ethylene",
+    "tag": "forge:propylene",
     "amount": 100
   },
   "secondary_input": {
     "tag": "tfc:any_water",
-    "amount": 10
+    "amount": 1
   },
   "secondary_result": {
     "item": "immersivepetroleum:bitumen",
-    "chance": "0.05"
+    "chance": "0.1"
   }
 }

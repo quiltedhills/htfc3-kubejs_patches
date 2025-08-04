@@ -51,3 +51,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Added a recipe for turning stick bundles back into stick bunches <br/>
 • Fixed rotten flour being valid for many recipes <br/>
+• Tweaked some High-Pressure Refinery Unit recipes <br/>
