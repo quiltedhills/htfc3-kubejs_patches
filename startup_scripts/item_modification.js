@@ -1,5 +1,7 @@
 onEvent('item.modification', event => {
 	// durability changes
+	event.modify('exnihilosequentia:wooden_crook', item => { item.maxDamage = 64 })
+	event.modify('exnihilosequentia:iron_crook', item => { item.maxDamage = 1024 })
 	event.modify('exnihilosequentia:stone_hammer', item => { item.maxDamage = 128 })
 	event.modify('exnihilosequentia:iron_hammer', item => { item.maxDamage = 2048 })
 	event.modify('immersiveengineering:screwdriver', item => { item.maxDamage = 16 })
