@@ -32,6 +32,8 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.1a
-• Fixed language keys for the Tanned Hide barrel recipes <br/>
-• Added tooltip info for silkworms and infested leaves <br/>
+• Fixed the main menu server buttons not working as expected <br/>
+• Fixed the jug/flask emptying recipe not working correctly <br/>
+• Changed recipe for sand casts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
+• Fixed language keys for the Tanned Hide barrel recipes <br/>

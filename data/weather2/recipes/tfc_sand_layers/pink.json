@@ -5,10 +5,11 @@
   ],
   "key": {
     "S": {
-      "item": "tfcorewashing:pile_pink_sand"
+      "item": "tfc:sand/pink"
     }
   },
   "result": {
-    "item": "weathertfc:sand/sand_layer/pink"
+    "item": "weathertfc:sand/sand_layer/pink",
+    "count": 4
   }
 }

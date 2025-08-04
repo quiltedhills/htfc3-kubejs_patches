@@ -1153,12 +1153,4 @@ function convertNumber(num) {
 			text.add(7, Text.gold('Like wooden supports, will break if a block falls on it.'))
 		}
 	})
-	tooltip.addAdvanced(['exnihilosequentia:silkworm', 'exnihilosequentia:infesting_leaves', 'exnihilosequentia:infested_leaves'], (item, advanced, text) => {
-		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
-		} else {
-			text.add(1, Text.gold('Infested leaves will not spread to adjacent blocks.'))
-			text.add(2, Text.gold('You will need a silkworm for each block individual block.'))
-		}
-	})
 })

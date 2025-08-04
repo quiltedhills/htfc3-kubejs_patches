@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:sand_piles"
+    },
+    {
+      "tag": "forge:sand_piles"
+    }
+  ],
+  "result": {
+    "item": "tconstruct:blank_sand_cast",
+    "count": 2
+  }
+}
