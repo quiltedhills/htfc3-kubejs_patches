@@ -1,11 +1,10 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
     "item": "farmersdelight:melon_popsicle"
   },
-  "hunger": 2,
-  "saturation": 1,
+  "hunger": 6,
+  "saturation": 5,
   "decay_modifier": 2.0,
-  "water": 5,
-  "fruit": 1.0
+  "water": 15,
+  "fruit": 2.5
 }

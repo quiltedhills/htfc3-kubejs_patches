@@ -2,10 +2,16 @@
   "type": "firmalife:mixing_bowl",
   "ingredients": [
     {
-      "item": "tfc:food/barley_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/barley_flour"
+      }
     },
     {
-      "item": "tfc:food/barley_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/barley_flour"
+      }
     }
   ],
   "fluid_ingredient": {

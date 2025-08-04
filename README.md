@@ -50,3 +50,4 @@ Please feel free to reach out to me on discord for any questions!
 • Tweak Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Added a recipe for turning stick bundles back into stick bunches <br/>
+• Fixed rotten flour being valid for many recipes <br/>

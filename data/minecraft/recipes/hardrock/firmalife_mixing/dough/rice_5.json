@@ -2,19 +2,34 @@
   "type": "firmalife:mixing_bowl",
   "ingredients": [
     {
-      "item": "tfc:food/rice_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/rice_flour"
+      }
     },
     {
-      "item": "tfc:food/rice_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/rice_flour"
+      }
     },
     {
-      "item": "tfc:food/rice_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/rice_flour"
+      }
     },
     {
-      "item": "tfc:food/rice_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/rice_flour"
+      }
     },
     {
-      "item": "tfc:food/rice_flour"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:food/rice_flour"
+      }
     }
   ],
   "fluid_ingredient": {
