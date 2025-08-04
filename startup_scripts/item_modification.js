@@ -21,9 +21,10 @@ onEvent('item.modification', event => {
 
 	// nourishment fix
 	event.modify([
-		'pneumaticcraft:cod_n_chips',
-		'pneumaticcraft:salmon_tempura',
-		'firmalife:food/banana_split',
+		// Non-FD things don't seem to work ;-;
+		//'pneumaticcraft:cod_n_chips',
+		//'pneumaticcraft:salmon_tempura',
+		//'firmalife:food/banana_split',
 
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',

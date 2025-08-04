@@ -44,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Decreased durability of Ex Nihilo crooks <br/>
 • Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
+• Tweaked the way sluices prevent items from despawning <br/>
 
 • Fixed rotten flour being valid for many recipes <br/>
 • Fixed drawers being able to fit into IE crates <br/>

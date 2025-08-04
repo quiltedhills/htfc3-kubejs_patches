@@ -7,13 +7,8 @@ global.filterOutExplosionImmuneItems = event => {
 		let entity = entityList[i]
 
 		if (entity.getType().toString() === 'entity.minecraft.item') {
-			try {
-				if (Ingredient.of('#hardrock:explosion_immune').test(entity.getItem().getItem().getId())) {
-					entityList.remove(i)
-				}
-			} catch (e) {
-				console.log(`Something went wrong with an explosion: ${entity} (${e})`)
-				console.log('Please report this at the Hardrock discord!')
+			if (Ingredient.of('#hardrock:explosion_immune').test(entity.getItem().getItem().getId())) {
+				entityList.remove(i)
 			}
 		}
 	}

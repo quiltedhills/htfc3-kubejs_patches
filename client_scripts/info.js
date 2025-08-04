@@ -760,9 +760,9 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.addAdvanced([
-		'pneumaticcraft:cod_n_chips',
-		'pneumaticcraft:salmon_tempura',
-		'firmalife:food/banana_split',
+		//'pneumaticcraft:cod_n_chips',
+		//'pneumaticcraft:salmon_tempura',
+		//'firmalife:food/banana_split',
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
 		'farmersrespite:blazing_chili',
@@ -1233,6 +1233,16 @@ function convertNumber(num) {
 			text.add(4, Text.gold(''))
 			text.add(5, Text.gold('All wires are considered insulated.'))
 			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('16 blocks'), Text.gold(' long.')])
+		}
+	})
+	tooltip.addAdvanced(/^tfc:wood\/sluice/, (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, Text.gold('Sluiceable items have a special'))
+			text.add(2, [Text.gold('"'), Text.of('Can be processed in a sluice').color('#bbbbbb'), Text.gold('" tooltip.')])
+			text.add(3, Text.gold('These items will not despawn when'))
+			text.add(4, Text.gold('on top of a sluice!'))
 		}
 	})
 })
