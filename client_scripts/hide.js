@@ -24,6 +24,8 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		/^coffee_delight:.+iced/,
+
 		'supplementaries:faucet',
 		'firmalife:ice_fishing_station',
 		'kubejs:raw_platinum',

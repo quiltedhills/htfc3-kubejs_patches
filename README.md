@@ -37,3 +37,5 @@ Please feel free to reach out to me on discord for any questions!
 • Changed recipe for sand casts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
 • Fixed language keys for the Tanned Hide barrel recipes <br/>
+• Fix renaming for some coffee items not applying correctly <br/>
+• Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
