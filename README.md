@@ -37,6 +37,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed the jug/flask emptying recipe not working correctly <br/>
 • Blacklisted a bunch of unobtainable and low-quality foods from the unique foods list <br/>
 • Fix backups not saving FTB map data <br/>
+• Infested leaves with partial progress can no longer landslide <br/>
 
 • Added informational tooltips for various wires and connectors <br/>
 • Reworked recipes for First Aid healing items <br/>

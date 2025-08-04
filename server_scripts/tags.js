@@ -65,11 +65,9 @@ onEvent('tags.blocks', event => {
 	])
 	event.add('functionalstorage:drawers', /^functionalstorage:.*_[124]$/)
 	event.add('tfc:supports_landslide', [
-		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_landslide', [
-		'exnihilosequentia:infesting_leaves',
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:can_trigger_collapse', [
