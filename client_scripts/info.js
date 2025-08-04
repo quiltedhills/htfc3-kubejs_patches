@@ -1153,4 +1153,86 @@ function convertNumber(num) {
 			text.add(7, Text.gold('Like wooden supports, will break if a block falls on it.'))
 		}
 	})
+	tooltip.addAdvanced([
+		'immersiveengineering:connector_lv',
+		'immersiveengineering:connector_lv_relay',
+		'immersiveengineering:wirecoil_copper',
+		'immersiveengineering:wirecoil_copper_ins'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			if (!item.id.includes('relay')) {
+				text.add(1, [Text.gold('Input/output rate: '), Text.yellow('1024 FE/t')])
+			} else {
+				text.add(1, [Text.gold('Max capacity before overload: '), Text.yellow('8192 FE/t')])
+			}
+			text.add(2, Text.gold('No power is lost over distance.'))
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Uses '), Text.yellow('LV Wire Coils'), Text.gold(' made from copper.')])
+			text.add(5, Text.gold('Wires have an insulated variant.'))
+			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('16 blocks'), Text.gold(' long.')])
+		}
+	})
+	tooltip.addAdvanced([
+		'immersiveengineering:connector_mv',
+		'immersiveengineering:connector_mv_relay',
+		'immersiveengineering:wirecoil_electrum',
+		'immersiveengineering:wirecoil_electrum_ins'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			if (!item.id.includes('relay')) {
+				text.add(1, [Text.gold('Input/output rate: '), Text.yellow('4096 FE/t')])
+			} else {
+				text.add(1, [Text.gold('Max capacity before overload: '), Text.yellow('32768 FE/t')])
+			}
+			text.add(2, Text.gold('No power is lost over distance.'))
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Uses '), Text.yellow('MV Wire Coils'), Text.gold(' made from electrum.')])
+			text.add(5, Text.gold('Wires have an insulated variant.'))
+			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('16 blocks'), Text.gold(' long.')])
+		}
+	})
+	tooltip.addAdvanced([
+		'immersiveengineering:connector_hv',
+		'immersiveengineering:connector_hv_relay',
+		'immersiveengineering:wirecoil_steel'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			if (!item.id.includes('relay')) {
+				text.add(1, [Text.gold('Input/output rate: '), Text.yellow('16384 FE/t')])
+			} else {
+				text.add(1, [Text.gold('Max capacity before overload: '), Text.yellow('131072 FE/t')])
+			}
+			text.add(2, [Text.yellow('1.25%'), Text.gold(' of power is lost for every '), Text.yellow('16 blocks'), Text.gold(' of distance.')])
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Uses '), Text.yellow('HV Wire Coils'), Text.gold(' made from steel and aluminum.')])
+			text.add(5, [Text.gold('Wires do '), Text.yellow('not').underlined(), Text.gold(' have an insulated variant. Careful!')])
+			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('32 blocks'), Text.gold(' long.')])
+		}
+	})
+	tooltip.addAdvanced(['createaddition:connector'], (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(1, Text.gold(''))
+			text.add(2, [Text.gold('Input/output rate: '), Text.yellow('1024 FE/t')])
+			text.add(3, Text.gold('No power is lost over distance.'))
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('All wires are considered insulated.'))
+			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('16 blocks'), Text.gold(' long.')])
+		}
+	})
+	tooltip.addAdvanced(['createaddition:large_connector'], (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(1, Text.gold(''))
+			text.add(2, [Text.gold('Input/output rate: '), Text.yellow('4096 FE/t')])
+			text.add(3, Text.gold('No power is lost over distance.'))
+			text.add(4, Text.gold(''))
+			text.add(5, Text.gold('All wires are considered insulated.'))
+			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('16 blocks'), Text.gold(' long.')])
+		}
+	})
 })

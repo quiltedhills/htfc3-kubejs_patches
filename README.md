@@ -36,6 +36,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed the jug/flask emptying recipe not working correctly <br/>
 • Blacklisted a bunch of unobtainable and low-quality foods from the unique food lists <br/>
 
+• Added informational tooltips for various wires and connectors <br/>
 • Changed recipe for sand casts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
 • Fixed inaccurate tooltips for the Tanned Hide barrel recipes <br/>
@@ -46,3 +47,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made drawers not fit into IE crates <br/>
 • Changed FTB map entity color for mooses <br/>
 • Tweak Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
+• Fix backups not saving FTB map data <br/>
