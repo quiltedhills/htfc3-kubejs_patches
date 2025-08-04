@@ -39,5 +39,6 @@ Please feel free to reach out to me on discord for any questions!
 • Changed recipe for sand casts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
 • Fixed inaccurate tooltips for the Tanned Hide barrel recipes <br/>
-• Fix renaming for some coffee items not applying correctly <br/>
+• Fixed renaming for some coffee items not applying correctly <br/>
 • Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
+• Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>

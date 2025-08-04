@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc:metal/ingot/wrought_iron"
+  },
+  "result": {
+    "item": "tfc_ie_addon:tool_head/ie_hammer"
+  },
+  "tier": 3,
+  "rules": [
+    "upset_any",
+    "draw_second_last",
+    "hit_not_last"
+  ]
+}
