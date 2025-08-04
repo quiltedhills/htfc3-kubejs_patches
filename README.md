@@ -46,7 +46,6 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed some coffee items not having correct names <br/>
 • Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
 • Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>
-• Changed FTB map entity color for mooses <br/>
 • Tweak Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Added a recipe for turning stick bundles back into stick bunches <br/>
