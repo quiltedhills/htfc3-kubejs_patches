@@ -7,13 +7,13 @@
   ],
   "key": {
     "w": {
-      "item": "tfc:wool_cloth"
+      "tag": "tfc:high_quality_cloth"
     },
     "b": {
       "item": "minecraft:light_blue_dye"
     },
     "c": {
-      "item": "tfc:metal/ingot/cast_iron"
+      "tag": "forge:ingots/cast_iron"
     }
   },
   "result": {
