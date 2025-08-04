@@ -32,24 +32,27 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.1a
-• Fixed the main menu server buttons not working as expected <br/>
+• Fixed the Inventorio temporary tool slot pop up not being as responsive (caused by 1.6.0) <br/>
+• Fixed the main menu server buttons having incorrect IP addresses <br/>
 • Fixed the jug/flask emptying recipe not working correctly <br/>
-• Blacklisted a bunch of unobtainable and low-quality foods from the unique food lists <br/>
+• Blacklisted a bunch of unobtainable and low-quality foods from the unique foods list <br/>
 • Fix backups not saving FTB map data <br/>
 
 • Added informational tooltips for various wires and connectors <br/>
 • Reworked recipes for First Aid healing items <br/>
+• Made the Grapplin' Whisk recipe more expensive <br/>
 • Decreased durability of Ex Nihilo crooks <br/>
-• Made drawers not fit into IE crates <br/>
-• Changed recipe for sand casts <br/>
+• Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
+• Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
+
+• Fixed rotten flour being valid for many recipes <br/>
+• Fixed drawers being able to fit into IE crates <br/>
+• Tweaked Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
+• Tweaked recipe for TC sand casts to help avoid recipe conflicts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
 • Fixed inaccurate tooltips for the Tanned Hide barrel recipes <br/>
 • Fixed some coffee items not having correct names <br/>
-• Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
 • Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>
-• Tweak Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
-• Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Added a recipe for turning stick bundles back into stick bunches <br/>
-• Fixed rotten flour being valid for many recipes <br/>
 • Tweaked some High-Pressure Refinery Unit recipes <br/>
 • Made the Create Deco decal recipes allow silk cloth <br/>

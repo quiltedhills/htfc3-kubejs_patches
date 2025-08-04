@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " z ",
+    "geg",
+    "csc",
+    "cbc",
+    " w "
+  ],
+  "key": {
+    "z": {
+      "tag": "forge:ingots/zinc"
+    },
+    "s": {
+      "item": "immersiveengineering:skyhook"
+    },
+    "g": {
+      "tag": "forge:gears/compressed_iron"
+    },
+    "e": {
+      "item": "create_sa:heat_engine"
+    },
+    "c": {
+      "item": "tfc:metal/chain/black_steel"
+    },
+    "b": {
+      "item": "pneumaticcraft:cannon_barrel"
+    },
+    "w": {
+      "item": "create:whisk"
+    }
+  },
+  "result": {
+    "item": "create_sa:grapplin_whisk"
+  },
+  "acceptMirrored": false
+}
