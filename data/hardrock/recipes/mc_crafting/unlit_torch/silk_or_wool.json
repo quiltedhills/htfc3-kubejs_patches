@@ -1,14 +1,11 @@
 {
-  "type": "immersiveengineering:shaped_fluid",
+  "type": "minecraft:crafting_shaped",
   "pattern": [
-    " c ",
-    "www",
-    "sss"
+    "c",
+    "w",
+    "s"
   ],
   "key": {
-    "w": {
-      "tag": "forge:cloth"
-    },
     "c": {
       "type": "tfc:fluid_item",
       "fluid_ingredient": {
@@ -16,12 +13,15 @@
         "amount": 1000
       }
     },
+    "w": {
+      "tag": "tfc:high_quality_cloth"
+    },
     "s": {
-      "item": "tfc:stick_bunch"
+      "item": "tfc:stick_bundle"
     }
   },
   "result": {
     "item": "tfc:dead_torch",
-    "count": 27
+    "count": 18
   }
 }

@@ -24,6 +24,7 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
 
+		{id: 'immersiveengineering:crafting/torch'},
 		{id: 'create_sa:quartz_gem_crushing'},
 		{id: 'createoreexcavation:cutting/diamond_cutting'},
 		{id: 'createoreexcavation:cutting/emerald_cutting'},
