@@ -44,3 +44,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>
 • Decreased durability of Ex Nihilo crooks <br/>
 • Made drawers not fit into IE crates <br/>
+• Changed FTB map entity color for mooses <br/>
