@@ -38,6 +38,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fix backups not saving FTB map data <br/>
 
 • Added informational tooltips for various wires and connectors <br/>
+• Reworked recipes for First Aid healing items <br/>
 • Decreased durability of Ex Nihilo crooks <br/>
 • Made drawers not fit into IE crates <br/>
 • Changed recipe for sand casts <br/>

@@ -24,6 +24,9 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
 
+		{id: 'pneumaticcraft:bandage'},
+		{id: /^firstaid:bandage$/}, // regex here in case First Aid is disabled, to prevent errors
+		{id: /^firstaid:plaster$/},
 		{id: 'immersiveengineering:crafting/torch'},
 		{id: 'create_sa:quartz_gem_crushing'},
 		{id: 'createoreexcavation:cutting/diamond_cutting'},

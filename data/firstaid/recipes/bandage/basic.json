@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
     "ingredients": [
       {
-        "tag": "forge:fabric/fibers"
+        "tag": "forge:canvas"
       },
       {
-        "tag": "forge:fabric/fibers"
+        "tag": "forge:canvas"
       },
       {
         "item": "kubejs:medical_paste"
       },
       {
-        "tag": "forge:fabric/fibers"
+        "tag": "forge:canvas"
       }
     ],
     "result": {

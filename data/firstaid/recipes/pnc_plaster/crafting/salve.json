@@ -10,10 +10,11 @@
       }
     ],
     {
-      "item": "kubejs:medical_paste"
+      "item": "kubejs:misc_mats/healing_salve"
     }
   ],
   "result": {
-    "item": "pneumaticcraft:bandage"
+    "item": "pneumaticcraft:bandage",
+    "count": 4
   }
 }

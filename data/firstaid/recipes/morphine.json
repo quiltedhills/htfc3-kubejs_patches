@@ -1,15 +1,14 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:glass_bottle"
-    }, {
-      "item": "minecraft:fermented_spider_eye"
-    }, {
-      "item": "minecraft:fermented_spider_eye"
-    }
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "tconstruct:copper_can"},
+  "transitionalItem": {"item": "minecraft:orange_dye"},
+  "sequence": [
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:orange_dye"}, {"item": "kubejs:medical_red_powder"}],"results": [{"item": "minecraft:orange_dye"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:orange_dye"}, {"item": "kubejs:misc_mats/healing_salve"}],"results": [{"item": "minecraft:orange_dye"}]},
+    {"type": "create:filling","ingredients": [{"item": "minecraft:orange_dye"}, {"fluid": "immersiveengineering:ethanol","nbt": {},"amount": 125}],"results": [{"item": "minecraft:orange_dye"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:orange_dye"}, {"tag": "forge:dusts/salt"}],"results": [{"item": "minecraft:orange_dye"}]},
+    {"type": "create:pressing","ingredients": [{"item": "minecraft:orange_dye"}],"results": [{"item": "minecraft:orange_dye"}]}
   ],
-  "result": {
-    "item": "firstaid:morphine"
-  }
+  "results": [{"item": "firstaid:morphine"}],
+  "loops": 1
 }

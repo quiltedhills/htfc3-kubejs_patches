@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:barrel_sealed",
   "input_item": {
     "ingredient": [
@@ -17,7 +16,7 @@
   },
   "output_item": {
     "item": "pneumaticcraft:bandage",
-    "count": 4
+    "count": 2
   },
   "duration": 4000
 }

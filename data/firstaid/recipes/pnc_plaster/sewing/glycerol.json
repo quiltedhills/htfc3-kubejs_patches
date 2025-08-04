@@ -7,11 +7,17 @@
           "item": "immersiveengineering:hemp_fabric"
         }
       ],
-      "count": 1
+      "count": 2
     },
     {
       "ingredient": {
         "item": "pneumaticcraft:glycerol"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "item": "kubejs:misc_mats/healing_salve"
       },
       "count": 1
     }
@@ -21,6 +27,6 @@
   },
   "result": {
     "item": "pneumaticcraft:bandage",
-    "count": 8
+    "count": 12
   }
 }

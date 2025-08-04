@@ -5,20 +5,20 @@
       "ingredient": {
         "tag": "forge:cloth"
       },
-      "count": 3
+      "count": 1
     },
     {
       "ingredient": {
-        "item": "kubejs:medical_paste"
+        "item": "kubejs:misc_mats/healing_salve"
       },
-      "count": 2
+      "count": 1
     }
   ],
   "tool": {
     "tag": "forge:shears"
   },
   "result": {
-    "item": "firstaid:bandage",
-    "count": 8
+    "item": "firstaid:plaster",
+    "count": 12
   }
 }
