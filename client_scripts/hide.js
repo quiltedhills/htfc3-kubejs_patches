@@ -25,6 +25,8 @@ onEvent('jei.hide.fluids', event => {
 onEvent('jei.hide.items', event => {
 	event.hide([
 		/^coffee_delight:.+iced/,
+		'untamedwilds:food_bear_raw',
+		/^butchersdelightfoods:.+llama/,
 
 		'supplementaries:faucet',
 		'firmalife:ice_fishing_station',

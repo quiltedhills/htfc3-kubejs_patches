@@ -20,6 +20,9 @@ onEvent('recipes', event => {
 		{id: 'coffee_delight:cutting/coffee_beans'},
 		{id: 'tconstruct:smeltery/melting/slime/beetroot_soup'},
 		{id: 'tconstruct:smeltery/casting/soup/beetroot'},
+		{id: 'minecraft:cooked_chicken_from_smoking'},
+		{id: 'minecraft:cooked_mutton_from_smoking'},
+		{id: /^firmalife:crafting\/masa/},
 
 		{id: 'create_sa:quartz_gem_crushing'},
 		{id: 'createoreexcavation:cutting/diamond_cutting'},

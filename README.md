@@ -34,8 +34,10 @@ Please feel free to reach out to me on discord for any questions!
 # Changelogs / differences from 1.6.1a
 • Fixed the main menu server buttons not working as expected <br/>
 • Fixed the jug/flask emptying recipe not working correctly <br/>
+• Blacklisted a bunch of unobtainable and low-quality foods from the unique food lists <br/>
+
 • Changed recipe for sand casts <br/>
 • Fixed tooltip error for Supplementaries bellows <br/>
-• Fixed language keys for the Tanned Hide barrel recipes <br/>
+• Fixed inaccurate tooltips for the Tanned Hide barrel recipes <br/>
 • Fix renaming for some coffee items not applying correctly <br/>
 • Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
