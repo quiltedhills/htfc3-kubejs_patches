@@ -58,3 +58,4 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked some High-Pressure Refinery Unit recipes <br/>
 • Made the Create Deco decal recipes allow silk cloth <br/>
 • Made riverbed deposits drop uncut gems instead of the near-useless cut variants <br/>
+• Fixed blaze burners not consuming straws <br/>

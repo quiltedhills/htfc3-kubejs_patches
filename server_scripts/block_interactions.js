@@ -22,6 +22,17 @@ onEvent('block.right_click', event => {
 			|| (event.player.mainHandItem.hasTag('tfc:chisels') && event.player.offHandItem.hasTag('tfc:hammers') && event.player.crouching)
 		)) event.cancel()
 	}
+	// blaze burner straw fix
+	if (event.item.id == 'createaddition:straw' && event.block.id == 'create:blaze_burner') {
+		if (event.player.creativeMode) {
+			event.item.count++
+		} else {
+			event.item.count--
+			if (event.item.count == 0) { // There is some. really weird stuff happening.
+				event.block.set(Block.id('createaddition:liquid_blaze_burner'))
+			}
+		}
+	}
 })
 onEvent('player.inventory.opened', event => {
 	// Last resort in case the paraglider statue GUI opens up despite failsafes
