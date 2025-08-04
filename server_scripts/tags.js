@@ -234,6 +234,9 @@ onEvent('tags.items', event => {
 		'#forge:ingots/compressed_iron'
 	])
 	
+	event.add('immersiveengineering:forbidden_in_crates', [
+		'#functionalstorage:drawer'
+	])
 	event.add('forge:rubber', 'kubejs:vulcanized_rubber')
 	event.add('forge:workbenches', '#tfc:workbenches')
 	event.add('tfc:rock/button', /^tfc:rock\/button\//)

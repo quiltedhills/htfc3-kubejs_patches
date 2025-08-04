@@ -43,3 +43,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
 • Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>
 • Decreased durability of Ex Nihilo crooks <br/>
+• Made drawers not fit into IE crates <br/>
