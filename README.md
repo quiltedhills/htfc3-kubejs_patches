@@ -45,3 +45,4 @@ Please feel free to reach out to me on discord for any questions!
 • Decreased durability of Ex Nihilo crooks <br/>
 • Made drawers not fit into IE crates <br/>
 • Changed FTB map entity color for mooses <br/>
+• Tweak Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
