@@ -1,0 +1,22 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "firmalife:food/masa_flour"
+    },
+    {
+      "item": "firmalife:food/masa_flour"
+    },
+    {
+      "item": "firmalife:food/masa_flour"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "firmalife:food/masa",
+    "count": 3
+  }
+}
