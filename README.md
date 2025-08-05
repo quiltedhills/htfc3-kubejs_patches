@@ -67,3 +67,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed custom milk vinegar variants and oat milk not working with TFC barrels correctly <br/>
 • Decreased output of the Wool Yarn to String barrel recipe <br/>
 • Added tooltip for slot pockets (and also renamed them to Inventory Slot Pockets) <br/>
+• Fixed loot tables for some Mekanism and IE ores found in the Twilight Forest <br/>
