@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "tag": "forge:storage_blocks/coal_petcoke"
+    }
+  },
+  "output": {
+    "item": "immersivepetroleum:petcoke_dust",
+    "count": 9
+  }
+}
