@@ -1,0 +1,14 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "mekanism:pellet_plutonium"},
+  "transitionalItem": {"item": "minecraft:light_blue_dye"},
+  "sequence": [
+    {"type": "create:filling","ingredients": [{"item": "minecraft:light_blue_dye"},{"fluidTag": "forge:molten_colored_steel","nbt": {},"amount": 400}],"results": [{"item": "minecraft:light_blue_dye"}]},
+    {"type": "create:filling","ingredients": [{"item": "minecraft:light_blue_dye"},{"fluid": "tconstruct:molten_diamond","nbt": {},"amount": 200}],"results": [{"item": "minecraft:light_blue_dye"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:light_blue_dye"},{"item": "mekanism:alloy_atomic"}],"results": [{"item": "minecraft:light_blue_dye"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:light_blue_dye"},{"item": "refinedstorage:wireless_transmitter"}],"results": [{"item": "minecraft:light_blue_dye"}]},
+    {"type": "create:pressing","ingredients": [{"item": "minecraft:light_blue_dye"}],"results": [{"item": "minecraft:light_blue_dye"}]}
+  ],
+  "results": [{"item": "mekanism:teleportation_core", "count":1}],
+  "loops": 2
+}

@@ -1,0 +1,36 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "FMMMF",
+    "FCRCF",
+    "LDTDL",
+    "FMMMF"
+  ],
+  "key": {
+    "R": {
+      "item": "mekanism:robit"
+    },
+    "D": {
+      "item": "createoreexcavation:drilling_machine"
+    },
+    "L": {
+      "item": "mekanism:logistical_sorter"
+    },
+    "C": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "T": {
+      "item": "pneumaticcraft:smart_chest"
+    },
+    "M": {
+      "item": "mekanism:steel_casing"
+    },
+    "F": {
+      "tag": "forge:fences/steel"
+    }
+  },
+  "acceptMirrored": false,
+  "result": {
+    "item": "mekanism:digital_miner"
+  }
+}

@@ -4,7 +4,7 @@
     "item": "kubejs:magnet/hdpe"
   },
   "addition": {
-    "item": "mekanism:pellet_polonium"
+    "item": "mekanism:teleportation_core"
   },
   "result": {
     "item": "kubejs:magnet/polonium"
