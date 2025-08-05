@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "minecraft:magenta_stained_glass_pane"
+    }
+  ],
+  "results": [
+    {
+      "item": "mcwwindows:magenta_mosaic_glass_pane"
+    }
+  ]
+}

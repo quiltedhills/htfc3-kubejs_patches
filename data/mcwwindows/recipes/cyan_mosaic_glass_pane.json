@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_stained_glass_pane"
+    }
+  ],
+  "results": [
+    {
+      "item": "mcwwindows:cyan_mosaic_glass_pane"
+    }
+  ]
+}

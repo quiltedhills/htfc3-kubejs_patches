@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_stained_glass"
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:blue_clear_stained_glass"
+    }
+  ]
+}

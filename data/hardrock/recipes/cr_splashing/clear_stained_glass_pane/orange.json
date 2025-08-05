@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "minecraft:orange_stained_glass_pane"
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:orange_clear_stained_glass_pane"
+    }
+  ]
+}

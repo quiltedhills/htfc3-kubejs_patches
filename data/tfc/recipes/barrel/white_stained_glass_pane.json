@@ -1,10 +1,12 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:barrel_sealed",
   "input_item": {
     "ingredient": [
       {
         "item": "minecraft:glass_pane"
+      },
+      {
+        "item": "tconstruct:clear_glass_pane"
       },
       {
         "item": "kubejs:primitive_glass_pane"

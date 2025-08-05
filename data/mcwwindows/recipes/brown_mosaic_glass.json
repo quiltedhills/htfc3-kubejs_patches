@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_stained_glass"
+    }
+  ],
+  "results": [
+    {
+      "item": "mcwwindows:brown_mosaic_glass"
+    }
+  ]
+}

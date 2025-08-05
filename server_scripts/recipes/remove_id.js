@@ -24,6 +24,9 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
 
+		{id: 'create:splashing/stained_glass'},
+		{id: 'create:splashing/stained_glass_pane'},
+		{id: /^tconstruct:common\/glass\/.+_clear_stained_glass_pane/},
 		{id: 'pneumaticcraft:bandage'},
 		{id: /^firstaid:bandage$/}, // regex here in case First Aid is disabled, to prevent errors
 		{id: /^firstaid:plaster$/},

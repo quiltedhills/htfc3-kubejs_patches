@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "minecraft:lime_stained_glass"
+    }
+  ],
+  "results": [
+    {
+      "item": "mcwwindows:lime_mosaic_glass"
+    }
+  ]
+}
