@@ -62,7 +62,7 @@ onEvent('item.registry', event => {
 	event.create('feed_seed')					.displayName('Seed Feed')
 	event.create('feed_vege')					.displayName('Vegetable Feed')
 	event.create('feed_fruit')					.displayName('Fruit Feed')
-	event.create('slot_pocket')					.displayName('Additional Slot Pocket')
+	event.create('slot_pocket')					.displayName('Inventory Slot Pocket')
 	event.create('medical_white_powder')		.displayName('Medicinal White Powder')
 	event.create('medical_red_powder')			.displayName('Medicinal Red Powder')
 	event.create('medical_green_powder')		.displayName('Medicinal Green Powder')

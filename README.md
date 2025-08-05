@@ -66,3 +66,4 @@ Please feel free to reach out to me on discord for any questions!
 • Small carcasses can no longer be placed down as blocks <br/>
 • Fixed custom milk vinegar variants and oat milk not working with TFC barrels correctly <br/>
 • Decreased output of the Wool Yarn to String barrel recipe <br/>
+• Added tooltip for slot pockets (and also renamed them to Inventory Slot Pockets) <br/>

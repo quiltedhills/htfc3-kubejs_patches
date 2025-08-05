@@ -1245,4 +1245,16 @@ function convertNumber(num) {
 			text.add(4, Text.gold('on top of a sluice!'))
 		}
 	})
+	tooltip.addAdvanced('kubejs:slot_pocket', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, Text.yellow('Permanently unlocks an inventory slot!'))
+			text.add(2, Text.gold('Consumed by right clicking.'))
+			text.add(3, Text.gold(''))
+			text.add(4, Text.gold('Slots can be unlocked one at a time.'))
+			text.add(5, Text.gold('In total, 27 slot pockets are needed'))
+			text.add(6, Text.gold('to unlock the full inventory.'))
+		}
+	})
 })
