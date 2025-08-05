@@ -160,6 +160,7 @@ onEvent('tags.blocks', event => {
 // ===== FLUIDS
 onEvent('tags.fluids', event => {
 	event.add('tfc:milks', 'kubejs:oat_milk')
+	event.add('tfc:milk_vinegar', ['kubejs:goat_milk_vinegar', 'kubejs:yak_milk_vinegar'])
 
 	event.add('forge:molten_rose_gold', ['tfc:metal/rose_gold'])
 	event.add('forge:molten_unknown', ['tfc:metal/unknown'])
@@ -203,7 +204,23 @@ onEvent('tags.fluids', event => {
 	event.add('tfc:drinkables', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'minecraft:milk','firmalife:yak_milk','firmalife:goat_milk'])
 	event.add('tfc:infinite_water', ['kubejs:purified_water'])
 	event.add('tfc:usable_in_ingot_mold', ['kubejs:andesite_alloy', 'tconstruct:seared_stone', 'kubejs:andesite_stone', 'tconstruct:molten_glass', 'kubejs:molten_iron_quartz'])
-	event.add('tfc:usable_in_barrel', ['firmalife:sugar_water', 'tconstruct:honey', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
+	event.add('tfc:usable_in_barrel', [
+		'firmalife:sugar_water',
+		'tconstruct:honey',
+		'kubejs:herbal_water',
+		'kubejs:purified_water',
+		'kubejs:boiled_water',
+		'kubejs:mineral_water',
+		'kubejs:seed_oil_water',
+		'create:tea',
+		'tfc:spring_water',
+		'createaddition:seed_oil',
+		"kubejs:goat_milk_vinegar",
+		"kubejs:yak_milk_vinegar",
+		"kubejs:oat_slurry",
+		"kubejs:lumpy_oat_milk",
+		"kubejs:unsweetened_oat_milk",
+	])
 	event.add('tfc:usable_in_blue_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
 	event.add('tfc:usable_in_wooden_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])

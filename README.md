@@ -64,3 +64,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed straws not getting consumed when used on a blaze burner <br/>
 • Fixed millstones not being able to process bone blocks <br/>
 • Small carcasses can no longer be placed down as blocks <br/>
+• Fixed custom milk vinegar variants and oat milk not working with TFC barrels correctly <br/>
