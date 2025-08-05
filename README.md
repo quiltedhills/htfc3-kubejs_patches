@@ -61,3 +61,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made the Create Deco decal recipes allow silk cloth <br/>
 • Made riverbed deposits drop uncut gems instead of their near-useless cut variants <br/>
 • Fixed straws not getting consumed when used on a blaze burner <br/>
+• Fixed millstones not being able to process bone blocks <br/>
