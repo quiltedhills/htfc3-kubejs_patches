@@ -110,6 +110,12 @@ onEvent('recipes', event => {
 		{id: /^tfc_ie_addon:sawmill\/.+\/planks/},
 		{id: /^tfc_ie_addon:sawmill\/.+\/slab/},
 
+		{id: 'immersiveengineering:crafting/steel_scaffolding_grate_top_from_standard'},
+		{id: 'immersiveengineering:crafting/steel_scaffolding_wooden_top_from_grate_top'},
+		{id: 'immersiveengineering:crafting/steel_scaffolding_standard_from_wooden_top'},
+		{id: 'immersiveengineering:crafting/alu_scaffolding_grate_top_from_standard'},
+		{id: 'immersiveengineering:crafting/alu_scaffolding_wooden_top_from_grate_top'},
+		{id: 'immersiveengineering:crafting/alu_scaffolding_standard_from_wooden_top'},
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_limonite'},
 		{id: 'tfc_ie_addon:arc_furnace/insulating_glass_hematite'},
 		{id: 'minecraft:ens_crying_obsidian'},

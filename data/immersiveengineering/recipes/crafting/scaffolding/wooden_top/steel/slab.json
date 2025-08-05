@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:slab_steel_scaffolding_standard"
+    },
+    {
+      "item": "tfc_ie_addon:treated_wood_lumber"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:slab_steel_scaffolding_wooden_top"
+    }
+  ]
+}

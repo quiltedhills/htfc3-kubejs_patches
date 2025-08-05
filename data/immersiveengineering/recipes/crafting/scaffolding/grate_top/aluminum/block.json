@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:alu_scaffolding_standard"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:alu_scaffolding_grate_top"
+    }
+  ]
+}

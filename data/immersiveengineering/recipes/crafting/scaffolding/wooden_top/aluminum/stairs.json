@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:stairs_alu_scaffolding_standard"
+    },
+    {
+      "item": "tfc_ie_addon:treated_wood_lumber"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:stairs_alu_scaffolding_wooden_top"
+    }
+  ]
+}
