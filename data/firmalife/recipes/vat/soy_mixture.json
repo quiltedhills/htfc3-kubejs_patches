@@ -1,0 +1,15 @@
+{
+  "type": "firmalife:vat",
+  "input_item": {
+    "ingredient": {
+      "item": "tfc:food/soybean"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:salt_water",
+    "amount": 250
+  },
+  "output_item": {
+    "item": "firmalife:food/soy_mixture"
+  }
+}
