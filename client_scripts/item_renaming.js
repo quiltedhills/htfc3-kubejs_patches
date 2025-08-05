@@ -53,6 +53,7 @@ onEvent('client.generate_assets', event => {
 	rename('mekanism:jetpack_armored', "Armored Hydrogen Jetpack")
 
 	rename('beyond_earth:cheese', "Moon Cheese")
+	rename('rsgauges:industrial_red_blinking_led', "Red Blinking LED Redstone Indicator")
 
 	rename('coffee_delight:coffee_beans_cooked', "Dried Coffee Beans")
 	rename('coffee_delight:coffee_flour', "Ground Coffee")

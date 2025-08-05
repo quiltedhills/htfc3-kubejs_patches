@@ -49,7 +49,8 @@ Please feel free to reach out to me on discord for any questions!
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Tweaked the way sluices prevent items from despawning <br/>
 • Added Mekanism crusher recipes for coke dust <br/>
-• Tweeaked recipes and item names for IE scaffolding <br/>
+• Tweaked recipes and item names for IE scaffolding <br/>
+• Made the Arborist advancement check for tree seeds instead of saplings <br/>
 
 • Fixed rotten flour being valid for many recipes <br/>
 • Made Pumpking Pies a static food instead of a dynamic one <br/>

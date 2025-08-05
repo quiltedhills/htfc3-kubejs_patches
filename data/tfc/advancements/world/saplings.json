@@ -1,0 +1,308 @@
+{
+  "parent": "tfc:world/root",
+  "criteria": {
+    "acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:acacia_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "ash": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:ash_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "aspen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:aspen_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:birch_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "blackwood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:blackwood_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "chestnut": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:chestnut_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "douglas_fir": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:douglas_fir_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "hickory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:hickory_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "kapok": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:kapok_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "maple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:maple_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:oak_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "palm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:palm_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "pine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:pine_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "rosewood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:rosewood_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "sequoia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:sequoia_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "spruce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:spruce_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "sycamore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:sycamore_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "white_cedar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:white_cedar_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "willow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dttfc:willow_seed"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "dttfc:pine_seed"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.saplings.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.saplings.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/silt.png"
+  },
+  "requirements": [
+    [
+      "acacia"
+    ],
+    [
+      "ash"
+    ],
+    [
+      "aspen"
+    ],
+    [
+      "birch"
+    ],
+    [
+      "blackwood"
+    ],
+    [
+      "chestnut"
+    ],
+    [
+      "douglas_fir"
+    ],
+    [
+      "hickory"
+    ],
+    [
+      "kapok"
+    ],
+    [
+      "maple"
+    ],
+    [
+      "oak"
+    ],
+    [
+      "palm"
+    ],
+    [
+      "pine"
+    ],
+    [
+      "rosewood"
+    ],
+    [
+      "sequoia"
+    ],
+    [
+      "spruce"
+    ],
+    [
+      "sycamore"
+    ],
+    [
+      "white_cedar"
+    ],
+    [
+      "willow"
+    ]
+  ]
+}
