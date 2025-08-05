@@ -32,6 +32,7 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.1a
+• Fixed tool speed boost from forging qualities not applying correctly <br/>
 • Fixed the Inventorio temporary tool slot pop up not being as responsive (caused by 1.6.0) <br/>
 • Fixed the main menu server buttons having incorrect IP addresses <br/>
 • Fixed the jug/flask emptying recipe not working correctly <br/>
