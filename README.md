@@ -49,6 +49,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
 • Tweaked the way sluices prevent items from despawning <br/>
 • Added Mekanism crusher recipes for coke dust <br/>
+• Added sequenced recipe for propellers <br/>
 • Tweaked recipes and item names for IE scaffolding <br/>
 • Made the Arborist advancement check for tree seeds instead of saplings <br/>
 
