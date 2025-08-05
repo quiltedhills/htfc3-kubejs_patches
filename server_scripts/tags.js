@@ -1228,6 +1228,7 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		/^animaltrap:.+_carcass$/,
 		'immersiveengineering:treated_post',
 		'immersiveengineering:alu_post',
 		'immersiveengineering:steel_post',

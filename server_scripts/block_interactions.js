@@ -1,16 +1,16 @@
 onEvent('block.right_click', event => {
-	// disable entirely
+	// Disable uncrafting tables completely
 	if (event.block.id == 'twilightforest:uncrafting_table') event.cancel()
-	// mechanical belt dupe involving this specific wrench
+	// Prevent mechanical belt dupe involving this specific wrench
 	if (event.item.id == 'refinedstorage:wrench' && event.block.id == 'create:belt') event.cancel()
-	// tanner exploit that lets you turn raw hide directly into leather
+	// Prevent tanner exploit that lets you turn raw hide directly into leather
 	if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
-	// heat frame + depot qol
+	// Heat frame + Depot QOL
 	if (event.item.id == 'pneumaticcraft:heat_frame' && event.block.id == 'create:depot' && !event.player.crouching) {
 		event.player.server.runCommandSilent(`title ${event.player} actionbar ["Drop the heat frame onto the depot for use in recipes"]`)
 		event.cancel()
 	}
-	// make paraglider statues deco-only
+	// Remove functionality from paraglider statues
 	if (event.block.hasTag('paraglider:statues')) {
 		if (event.item.id == 'minecraft:air' || event.block.id == 'paraglider:cursed_statue') event.cancel()
 		else if (!(
@@ -22,7 +22,7 @@ onEvent('block.right_click', event => {
 			|| (event.player.mainHandItem.hasTag('tfc:chisels') && event.player.offHandItem.hasTag('tfc:hammers') && event.player.crouching)
 		)) event.cancel()
 	}
-	// blaze burner straw fix
+	// Fix straw interaction with blaze burners
 	if (event.item.id == 'createaddition:straw' && event.block.id == 'create:blaze_burner') {
 		if (event.player.creativeMode) {
 			event.item.count++
@@ -35,14 +35,14 @@ onEvent('block.right_click', event => {
 	}
 })
 onEvent('player.inventory.opened', event => {
-	// Last resort in case the paraglider statue GUI opens up despite failsafes
+	// Paraglider statues: Last resort in case the paraglider statue GUI opens up despite failsafes
 	if (/StatueBargainContainer/.test(event.inventoryContainer.toString())) {
 		event.player.closeInventory()
 	}
 })
 
 onEvent('item.right_click', event => {
-	// prevent shift-right-clicking a flask emptying it
+	// Prevent shift-right-clicking a flask from emptying it in favor of custom crafting grid recipes
 	if ([
 		'tfc:ceramic/jug',
 		'waterflasks:leather_flask',
@@ -50,7 +50,18 @@ onEvent('item.right_click', event => {
 	].includes(event.item.id) && event.player.crouching) event.cancel()
 })
 
+const carcassesToNotPlace = [
+	'animaltrap:chicken_carcass',
+	'animaltrap:rabbit_carcass',
+	'animaltrap:duck_carcass',
+	'animaltrap:grouse_carcass',
+	'animaltrap:pheasant_carcass',
+	'animaltrap:quail_carcass',
+	'animaltrap:turkey_carcass',
+	'animaltrap:turtle_carcass'
+]
 onEvent('block.place', event => {
+	// Prevent items with sequenced recipe data from being placeable
 	const isSequenceItem = (item) => item && item.nbt && item.nbt.SequencedAssembly
 	let mainHand = event.entity.mainHandItem
 	let offHand = event.entity.offHandItem
@@ -70,6 +81,9 @@ onEvent('block.place', event => {
 			|| (offHand.getId() == event.block.id) && (isSequenceItem(offHand))
 		) event.cancel()
 	}
+	
+	// Make it impossible to place small carcasses
+	if (carcassesToNotPlace.includes(event.block.id)) event.cancel()
 })
 
 

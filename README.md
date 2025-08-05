@@ -36,8 +36,8 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed the Inventorio temporary tool slot pop up not being as responsive (caused by 1.6.0) <br/>
 • Fixed the main menu server buttons having incorrect IP addresses <br/>
 • Fixed the jug/flask emptying recipe not working correctly <br/>
-• Fix backups not saving FTB map data <br/>
-• Infested leaves with partial progress can no longer landslide <br/>
+• Fix backups not saving FTB map data (and also made backups happen every hour instead of every 30 minutes) <br/>
+• Infested leaves with partial progress can no longer landslide (likely to change this in later versions, feedback is very welcome!) <br/>
 
 • Blacklisted a bunch of unobtainable and low-quality foods from the unique foods list <br/>
 • Added informational tooltips for various wires and connectors <br/>
@@ -49,6 +49,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked the way sluices prevent items from despawning <br/>
 
 • Fixed rotten flour being valid for many recipes <br/>
+• Made Pumpking Pies a static food instead of a dynamic one <br/>
 • Fixed drawers being able to fit into IE crates <br/>
 • Tweaked Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
 • Tweaked recipe for TC sand casts to help avoid recipe conflicts <br/>
@@ -62,3 +63,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made riverbed deposits drop uncut gems instead of their near-useless cut variants <br/>
 • Fixed straws not getting consumed when used on a blaze burner <br/>
 • Fixed millstones not being able to process bone blocks <br/>
+• Small carcasses can no longer be placed down as blocks <br/>
