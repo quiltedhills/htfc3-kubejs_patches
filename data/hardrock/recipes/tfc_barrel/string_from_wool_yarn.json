@@ -3,7 +3,8 @@
   "input_item": {
     "ingredient": {
       "item": "tfc:wool_yarn"
-    }
+    },
+    "count": 2
   },
   "input_fluid": {
     "ingredient": "tfc:lye",
