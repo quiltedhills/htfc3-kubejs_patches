@@ -760,6 +760,34 @@ onEvent('item.tooltip', tooltip => {
 		}
 	})
 	tooltip.addAdvanced([
+		'create_sa:copper_exoskeleton_chestplate',
+		'create_sa:block_picker'
+	], (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(4, [Text.of('Can be filled with a ').gold(),Text.of('filling tank').yellow(),Text.of('.').gold()])
+			text.add(5, '')
+		}
+	})
+	tooltip.addAdvanced([
+		'create_sa:andesite_exoskeleton_chestplate',
+		'create_sa:flamethrower',
+		'create_sa:grapplin_whisk'
+	], (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(4, [Text.of('Can be filled with a ').gold(),Text.of('fueling tank').yellow(),Text.of('.').gold()])
+			text.add(5, '')
+		}
+	})
+	tooltip.addAdvanced([
+		'create_sa:brass_exoskeleton_chestplate',
+		'create_sa:portable_drill'
+	], (item, advanced, text) => {
+		if (tooltip.shift) {
+			text.add(5, [Text.of('Can be filled with a ').gold(),Text.of('filling').yellow(),Text.of(' and a ').gold(),Text.of('fueling tank').yellow(),Text.of('.').gold()])
+			text.add(6, '')
+		}
+	})
+	tooltip.addAdvanced([
 		//'pneumaticcraft:cod_n_chips',
 		//'pneumaticcraft:salmon_tempura',
 		//'firmalife:food/banana_split',
