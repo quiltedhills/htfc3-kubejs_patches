@@ -1268,8 +1268,8 @@ function convertNumber(num) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
 		} else {
 			text.add(1, Text.gold('Sluiceable items have a special'))
-			text.add(2, [Text.gold('"'), Text.of('Can be processed in a sluice').color('#bbbbbb'), Text.gold('" tooltip.')])
-			text.add(3, Text.gold('These items will not despawn when'))
+			text.add(2, [Text.gold('"'), Text.of('Can be processed in a sluice').gray(), Text.gold('" tooltip.')])
+			text.add(3, [Text.gold('These items '), Text.yellow('will not despawn'), Text.gold(' when')])
 			text.add(4, Text.gold('on top of a sluice!'))
 		}
 	})
