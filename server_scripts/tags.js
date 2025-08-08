@@ -2394,6 +2394,9 @@ onEvent('tags.items', event => {
     'htm:cooked_poultry_breast'
   ]) */
 	event.removeAllTagsFrom(
+		'createoreexcavation:raw_diamond',
+		'createoreexcavation:raw_emerald',
+		'createoreexcavation:raw_redstone',
 		'chiselsandbits:chisel_stone',
 		'htm:hammer',
 		'createdeco:zinc_sheet',

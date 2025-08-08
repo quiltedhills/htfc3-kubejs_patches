@@ -1285,4 +1285,64 @@ function convertNumber(num) {
 			text.add(6, Text.gold('to unlock the full inventory.'))
 		}
 	})
+	tooltip.addAdvanced(['immersivepetroleum:seismic_survey', 'immersivepetroleum:survey_result'], (item, advanced, text) => {
+		text.add(1, Text.gold('Warning: Viewing survey results'))
+		text.add(2, Text.gold('sometimes causes the game to crash.'))
+	})
+	tooltip.addAdvanced('immersiveengineering:survey_tools', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Used to locate virtual veins for the '), Text.yellow('IE Excavator')])
+		}
+	})
+	tooltip.addAdvanced('immersivepetroleum:seismic_survey', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Used to locate virtual '), Text.yellow('Crude Oil'), Text.gold(' veins that')])
+			text.add(5, [Text.gold('can be extracted with a '), Text.yellow('Derrick'), Text.gold(' and '), Text.yellow('Pumpjack')])
+		}
+	})
+	tooltip.addAdvanced('createoreexcavation:vein_finder', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Used to locate virtual veins for the '), Text.yellow('Drilling Machine')])
+			text.add(2, [Text.gold('and '), Text.yellow('Fluid Well Extractor'), Text.gold(' from Create Ore Excavation.')])
+			text.add(3, Text.gold(''))
+			text.add(4, [Text.gold('Does '), Text.yellow('not').underlined(), Text.gold(' serve as an alternative to TFC prospecting tools!')])
+		}
+	})
+	tooltip.addAdvanced('createoreexcavation:diamond_drill', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, Text.gold('Required to extract some of the higher-tier veins!'))
+			text.add(2, Text.gold('No bonus in speed or efficiency, just unlocks more stuff.'))
+			text.add(3, Text.gold(''))
+			if (!tooltip.ctrl) {
+				text.add(4, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for an exact list of additional vein types')])
+			} else {
+				text.add(4, [Text.darkGray('['), Text.white('Drilling Machine'), Text.gray(']')])
+				text.add(5, [Text.gold('- '), Text.yellow('Cinnabar'), Text.gold(' vein')])
+				text.add(6, [Text.gold('- '), Text.yellow('Magnetite'), Text.gold(' vein')])
+				text.add(7, [Text.gold('- '), Text.yellow('Rare Gems'), Text.gold(' vein')])
+				text.add(8, [Text.gold('- '), Text.yellow('Uraninite'), Text.gold(' vein')])
+				text.add(9, [Text.gold('- '), Text.yellow('Osmium'), Text.gold(' vein')])
+				text.add(10, [Text.darkGray('['), Text.white('Fluid Well Extractor'), Text.gray(']')])
+				text.add(11, [Text.gold('- '), Text.yellow('Lava'), Text.gold(' vein')])
+			}
+		}
+	})
+	tooltip.addAdvanced('createoreexcavation:netherite_drill', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Required to extract '), Text.yellow('Crude Oil'), Text.gold(' veins!')])
+			text.add(2, Text.gold('No bonus in speed or efficiency, just unlocks more stuff.'))
+		}
+	})
 })

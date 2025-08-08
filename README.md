@@ -41,7 +41,7 @@ Please feel free to reach out to me on discord for any questions!
 • Infested leaves with partial progress can no longer landslide (might change this in later versions, feedback would be very  <br/>appreciated!) <br/>
 
 • Blacklisted a bunch of unobtainable and low-quality foods from the unique foods list <br/>
-• Added informational tooltips for various wires and connectors <br/>
+• Added informational tooltips for various wires and connectors, as well as various tools used to find virtual ore veins <br/>
 • Changed recipes for Digital Miners, Teleportation Cores, Grapplin' Whisks and Polonium-Coated Magnets <br/>
 • Changed recipes for First Aid healing items <br/>
 • Decreased durability of Ex Nihilo crooks <br/>

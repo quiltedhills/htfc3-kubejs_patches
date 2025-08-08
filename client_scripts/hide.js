@@ -24,6 +24,11 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+		'createoreexcavation:raw_diamond',
+		'createoreexcavation:raw_emerald',
+		'createoreexcavation:raw_redstone',
+		'pneumaticcraft:seismic_sensor',
+
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',
 		/^butchersdelightfoods:.+llama/,
