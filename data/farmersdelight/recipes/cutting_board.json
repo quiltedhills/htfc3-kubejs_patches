@@ -1,0 +1,21 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "k ",
+      "ll"
+    ],
+    "key": {
+      "l": {
+        "tag": "tfc:lumber"
+      },
+      "k": {
+        "tag": "forge:tools/knives"
+      }
+    },
+    "result": {
+      "item": "farmersdelight:cutting_board"
+    }
+  }
+}

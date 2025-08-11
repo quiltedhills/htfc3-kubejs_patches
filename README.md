@@ -31,49 +31,7 @@ Please feel free to reach out to me on discord for any questions!
 
 
 
-# Changelogs / differences from 1.6.1a
-• Fixed tool speed boost from forging qualities not applying correctly <br/>
-• High nutrition now increases mining speed <br/>
-• Fixed the Inventorio temporary tool slot pop up not being as responsive (caused by 1.6.0) <br/>
-• Fixed the main menu server buttons having incorrect IP addresses <br/>
-• Fixed the jug/flask emptying recipe not working correctly <br/>
-• Fix backups not saving FTB map data (and also made backups happen every hour instead of every 30 minutes) <br/>
-• Infested leaves with partial progress can no longer landslide (might change this in later versions, feedback would be very  <br/>appreciated!) <br/>
+# Changelogs / differences from 1.6.2
+• Changed default recipe type order in JEI <br/>
 
-• Blacklisted a bunch of unobtainable and low-quality foods from the unique foods list <br/>
-• Added informational tooltips for various wires and connectors, as well as various tools used to find virtual ore veins <br/>
-• Changed recipes for Digital Miners, Teleportation Cores, Grapplin' Whisks and Polonium-Coated Magnets <br/>
-• Changed recipes for First Aid healing items <br/>
-• Decreased durability of Ex Nihilo crooks <br/>
-• Made Masa recipes use the mixing bowl instead of a crafting grid <br/>
-• Made the creosote oil recipe for Unlit Torches a little cheaper <br/>
-• Tweaked the way sluices prevent items from despawning <br/>
-• Added Mekanism crusher recipes for coke dust <br/>
-• Added sequenced recipe for propellers <br/>
-• Tweaked recipes and item names for IE scaffolding <br/>
-• Made the Arborist advancement check for tree seeds instead of saplings <br/>
-• Made the vat recipe for Soy Mixture use less saltwater <br/>
-• Tweaked some recipes for fancy glass <br/>
-• Made Pumpking Pies a static food instead of a dynamic one <br/>
-• Decreased output of the Wool Yarn to String barrel recipe <br/>
-• Small carcasses can no longer be placed down as blocks <br/>
-• Added tooltip for slot pockets (and also renamed them to Inventory Slot Pockets) <br/>
-• Added info to all fuelable and fillable Create SA items mentioning the use of a fueling/filling tank <br/>
-
-• Fixed rotten flour being valid for many recipes <br/>
-• Fixed drawers being able to fit into IE crates <br/>
-• Tweaked Arc Furnace recipe for Bismuth Bronze to help prevent conflicts with the brass recipe <br/>
-• Tweaked recipe for TC sand casts to help avoid recipe conflicts <br/>
-• Fixed tooltip error for Supplementaries bellows <br/>
-• Fixed inaccurate flavor text for the Tanned Hide barrel recipes <br/>
-• Fixed some coffee items not having correct names <br/>
-• Fixed incorrect anvil move order for the Engineer's Hammer Head and the Wirecutter Head <br/>
-• Added a recipe for turning stick bundles back into stick bunches <br/>
-• Tweaked some High-Pressure Refinery Unit recipes <br/>
-• Made the Create Deco decal recipes allow silk cloth <br/>
-• Made riverbed deposits drop uncut gems instead of their near-useless cut variants <br/>
-• Fixed straws not getting consumed when used on a blaze burner <br/>
-• Fixed millstones not being able to process bone blocks <br/>
-• Fixed custom milk vinegar variants and oat milk not working with TFC barrels correctly <br/>
-• Fixed loot tables for some Mekanism and IE ores found in the Twilight Forest <br/>
-• Made the Food Book recipe use TFC carrots instead of vanilla ones (food book is still available from the Akashic Tome though!)
+• Changed the Cutting Board recipe to prevent conflicts with pressure plates <br/>
