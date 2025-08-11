@@ -35,3 +35,4 @@ Please feel free to reach out to me on discord for any questions!
 • Changed default recipe type order in JEI <br/>
 
 • Changed the Cutting Board recipe to prevent conflicts with pressure plates <br/>
+• Fix Sweet Rolls not any giving Dairy <br/>
