@@ -4,25 +4,25 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "firmalife:food/masa_flour"
+        "item": "firmalife:food/masa_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "firmalife:food/masa_flour"
+        "item": "firmalife:food/masa_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "firmalife:food/masa_flour"
+        "item": "firmalife:food/masa_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "firmalife:food/masa_flour"
+        "item": "firmalife:food/masa_flour"
       }
     }
   ],

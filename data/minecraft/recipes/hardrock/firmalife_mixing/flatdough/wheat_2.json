@@ -4,13 +4,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/wheat_flour"
+        "item": "tfc:food/wheat_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/wheat_flour"
+        "item": "tfc:food/wheat_flour"
       }
     }
   ],
