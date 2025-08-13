@@ -34,6 +34,7 @@ Please feel free to reach out to me on discord for any questions!
 # Changelogs / differences from 1.6.2
 • Changed default recipe type order in JEI <br/>
 
+• Added recipes for cutting up cheese wheels on a cutting board <br/>
 • Changed the Cutting Board recipe to prevent conflicts with pressure plates <br/>
 • Fixed Sweet Rolls not any giving Dairy <br/>
 • Tweaked the recipe for Grapplin' Whisks <br/>
