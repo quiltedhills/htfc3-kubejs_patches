@@ -4,25 +4,25 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/oat_flour"
+        "item": "tfc:food/oat_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/oat_flour"
+        "item": "tfc:food/oat_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/oat_flour"
+        "item": "tfc:food/oat_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/oat_flour"
+        "item": "tfc:food/oat_flour"
       }
     }
   ],

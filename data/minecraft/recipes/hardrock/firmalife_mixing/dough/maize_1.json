@@ -4,7 +4,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/maize_flour"
+        "item": "tfc:food/maize_flour"
       }
     }
   ],

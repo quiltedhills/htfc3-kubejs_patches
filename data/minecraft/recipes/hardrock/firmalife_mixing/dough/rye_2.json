@@ -4,13 +4,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/rye_flour"
+        "item": "tfc:food/rye_flour"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:food/rye_flour"
+        "item": "tfc:food/rye_flour"
       }
     }
   ],
