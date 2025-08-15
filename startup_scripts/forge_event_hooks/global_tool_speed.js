@@ -10,7 +10,7 @@ global.applyGlobalToolSpeedMultiplier = event => {
 
 	// Apply nutrition boost
 	const foodData = player.getFoodData()
-	if (foodData && foodData.getNutrition()) {
+	if (foodData && typeof foodData.getNutrition === 'function') {
 		const averageNutrition = foodData.getNutrition().getAverageNutrition()
 		if (averageNutrition >= 0.4) {
 			// Linearly remap [0.4, 0.9] to [1.0, 1.25]
