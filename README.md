@@ -37,4 +37,4 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for cutting up cheese wheels on a cutting board <br/>
 • Changed the Cutting Board recipe to prevent conflicts with pressure plates <br/>
 • Fixed Sweet Rolls not any giving Dairy <br/>
-• Tweaked the recipe for Grapplin' Whisks <br/>
+• Tweaked the recipe for Grapplin' Whisks and Packing Tape <br/>
