@@ -307,7 +307,7 @@ onEvent('tags.items', event => {
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
 
 	//event.remove('curios:belt', 'toolbelt:belt')
-	event.add('tfc:axes', 'tconstruct:hand_axe')
+	event.add('tfc:axes', ['tconstruct:hand_axe', 'tconstruct:broad_axe'])
 	event.add('forge:prop_foods', [
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
