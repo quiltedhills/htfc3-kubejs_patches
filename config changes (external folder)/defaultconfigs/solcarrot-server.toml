@@ -12,8 +12,14 @@
 [filtering]
 	#Foods in this list won't affect the player's health nor show up in the food book.
 	blacklist = [
-		# Coffee Delight Removals
-		'coffee_delight:cap_usa_coffee',
+		# Coffee Delight
+		'coffee_delight:cap_fail_coffee',
+		'coffee_delight:cap_iced_cappuccino',
+		'coffee_delight:cap_iced_coco',
+		'coffee_delight:cap_iced_lattee_coffee',
+		'coffee_delight:cap_iced_macchiato',
+		'coffee_delight:cap_iced_moka',
+		'coffee_delight:cap_iced_usa_coffee',
 		'coffee_delight:mag_black_coffee',
 		'coffee_delight:mag_double_espresso_coffee',
 		'coffee_delight:mag_arabic_coffee',
@@ -34,12 +40,10 @@
 		'coffee_delight:mag_fail_coffee',
 		'coffee_delight:berries_wafer',
 		'coffee_delight:coffee_beans',
-		'coffee_delight:cap_turkey_coffee',
 		'coffee_delight:coffee_wafer',
 		'coffee_delight:wafer',
 
-		# Farmers Delight Removals
-		'farmersdelight:baked_cod_stew',
+		# Farmers Delight
 		'farmersdelight:mixed_salad',
 		'farmersdelight:cabbage',
 		'farmersdelight:chicken_cuts',
@@ -48,32 +52,128 @@
 		'farmersdelight:fried_egg',
 		'farmersdelight:nether_salad',
 		'farmersdelight:wild_onions',
-		'farmersdelight:pumpkin_soup',
 		'farmersdelight:tomato',
 		'farmersdelight:tomato_sauce',
 		'farmersdelight:wheat_dough',
 		'farmersdelight:nether_wart_sourdough',
+		'farmersdelight:pie_crust',
 
-		# Untamed Wilds Removals
+		# Butcher's Delight (these item name inconsistensies hurt ;-;)
+		'butchersdelightfoods:llama_leg',
+		'butchersdelightfoods:llama_ribs',
+		'butchersdelightfoods:llama_loin',
+		'butchersdelightfoods:cookedbeefribs',
+		'butchersdelightfoods:coockedbeeftenderloin',
+		'butchersdelightfoods:cooked_leg_cow',
+		'butchersdelightfoods:cooked_goat_loin',
+		'butchersdelightfoods:cooked_goat_rack',
+		'butchersdelightfoods:cooked_goat_shank',
+		'butchersdelightfoods:cooked_llama_leg',
+		'butchersdelightfoods:cooked_llama_ribs',
+		'butchersdelightfoods:cooked_llama_loin',
+		'butchersdelightfoods:cooked_ham',
+		'butchersdelightfoods:cookedporkloin',
+		'butchersdelightfoods:cookedporkribs',
+		'butchersdelightfoods:cooked_sheeploin',
+		'butchersdelightfoods:cookedsheeprack',
+		'butchersdelightfoods:cookedsheepshank',
+
+		# Untamed Wilds
 		'untamedwilds:material_fat',
 		'untamedwilds:material_blubber',
 		'untamedwilds:food_pemmican',
 		'untamedwilds:food_bear_raw',
+		'untamedwilds:food_bear_cooked',
+		'untamedwilds:food_turtle_raw',
+		'untamedwilds:food_turtle_cooked',
 
-		# Random Mod Removals
+		# Misc Mods
 		'create:bar_of_chocolate',
 		'exnihilosequentia:cooked_silkworm',
 		'minecraft:mushroom_stew',
 		'tconstruct:bacon',
+		'tconstruct:blood_bottle',
+		'dynamictreesplus:saguaro_cactus_seed',
+		'kubejs:raw_pancake',
+		'kubejs:raw_cookie',
 
-		# TFC Removals
+		# Vanilla
+		'minecraft:apple',
+		'minecraft:carrot',
+		'minecraft:potato',
+		'minecraft:sweet_berries',
+		'minecraft:beef',
+		'minecraft:chicken',
+		'minecraft:cod',
+		'minecraft:mutton',
+		'minecraft:porkchop',
+		'minecraft:rabbit',
+		'minecraft:salmon',
+		'minecraft:tropical_fish',
+		'minecraft:cooked_beef',
+		'minecraft:cooked_chicken',
+		'minecraft:cooked_cod',
+		'minecraft:cooked_mutton',
+		'minecraft:cooked_porkchop',
+		'minecraft:cooked_rabbit',
+		'minecraft:cooked_salmon',
+
+
+
+		# TFC and Firmalife
+			# Milk
+		'firmalife:food/milk_curd',
+		'firmalife:food/goat_curd',
+		'firmalife:food/yak_curd',
+
+			# Chocolate
+		'firmalife:food/cocoa_butter',
+		'firmalife:food/cocoa_powder',
+		'firmalife:food/white_chocolate_blend',
+		'firmalife:food/dark_chocolate_blend',
+		'firmalife:food/milk_chocolate_blend',
+
+			# Bread and Dough
+		'tfc:food/wheat_flour',
+		'tfc:food/wheat_dough',
+		'firmalife:food/wheat_dough',
+
+		'tfc:food/barley_flour',
+		'tfc:food/barley_dough',
+		'firmalife:food/barley_dough',
+
+		'tfc:food/rice_flour',
+		'tfc:food/rice_dough',
+		'firmalife:food/rice_dough',
+
+		'tfc:food/rye_flour',
+		'tfc:food/rye_dough',
+		'firmalife:food/rye_dough',
+
+		'tfc:food/oat_flour',
+		'tfc:food/oat_dough',
+		'firmalife:food/oat_dough',
+
+		'tfc:food/maize_flour',
+		'tfc:food/maize_dough',
+		'firmalife:food/maize_dough',
+		'firmalife:food/cured_maize',
+		'firmalife:food/nixtamal',
+		'firmalife:food/masa_flour',
+		'firmalife:food/masa',
+
+		'firmalife:food/pie_dough',
+		'firmalife:food/pumpkin_pie_dough',
+		'firmalife:food/raw_pumpkin_pie',
+		'firmalife:food/pizza_dough',
+		
+			# Unobtainables
 		'tfc:food/cheese',
 		'tfc:food/green_bell_pepper',
 		'tfc:food/red_bell_pepper',
 		'tfc:food/yellow_bell_pepper',
-
-		# Vanilla Removals
-		'minecraft:apple'
+		'tfc:food/gran_feline',
+		'tfc:food/cooked_gran_feline'
 	]
 	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
 	whitelist = []
