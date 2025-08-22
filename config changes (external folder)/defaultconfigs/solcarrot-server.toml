@@ -57,6 +57,7 @@
 		'farmersdelight:wheat_dough',
 		'farmersdelight:nether_wart_sourdough',
 		'farmersdelight:pie_crust',
+		'farmersdelight:cabbage_leaf',
 
 		# Butcher's Delight (these item name inconsistensies hurt ;-;)
 		'butchersdelightfoods:llama_leg',
@@ -137,26 +138,32 @@
 		'tfc:food/wheat_flour',
 		'tfc:food/wheat_dough',
 		'firmalife:food/wheat_dough',
+		'firmalife:food/wheat_slice',
 
 		'tfc:food/barley_flour',
 		'tfc:food/barley_dough',
 		'firmalife:food/barley_dough',
+		'firmalife:food/barley_slice',
 
 		'tfc:food/rice_flour',
 		'tfc:food/rice_dough',
 		'firmalife:food/rice_dough',
+		'firmalife:food/rice_slice',
 
 		'tfc:food/rye_flour',
 		'tfc:food/rye_dough',
 		'firmalife:food/rye_dough',
+		'firmalife:food/rye_slice',
 
 		'tfc:food/oat_flour',
 		'tfc:food/oat_dough',
 		'firmalife:food/oat_dough',
+		'firmalife:food/oat_slice',
 
 		'tfc:food/maize_flour',
 		'tfc:food/maize_dough',
 		'firmalife:food/maize_dough',
+		'firmalife:food/maize_slice',
 		'firmalife:food/cured_maize',
 		'firmalife:food/nixtamal',
 		'firmalife:food/masa_flour',
