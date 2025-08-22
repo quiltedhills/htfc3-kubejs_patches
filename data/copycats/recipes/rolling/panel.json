@@ -1,0 +1,9 @@
+{
+  "type": "createaddition:rolling",
+  "input": {
+    "item": "create:copycat_panel"
+  },
+  "result": {
+    "item": "copycats:copycat_layer"
+  }
+}

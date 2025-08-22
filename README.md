@@ -32,4 +32,4 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-• None so far! <br/>
+• Fixed recipe conflict for Copycat Layers <br/>
