@@ -16,12 +16,14 @@ onEvent('entity.spawned', event => {
 
 	function despawnTimerLoop() {
 		if (!entity || !entity.isAlive()) return
+		let stack = entity.getItem()
+		if (!stack || stack.isEmpty()) return
 
 		// Test if item has the no-despawn item tag
-		if (Ingredient.of('#hardrock:dont_despawn').test(entity.getItem())) resetTimer()
+		if (Ingredient.of('#hardrock:dont_despawn').test(stack)) resetTimer()
 
 		// Test if the item is sluiceable and is currently on top of a sluice
-		if (Sluiceable.get(entity.getItem()) != null) {
+		if (Sluiceable.get(stack) != null) {
 			let x = Math.floor(entity.getX())
 			let y = Math.floor(entity.getY())
 			let z = Math.floor(entity.getZ())
