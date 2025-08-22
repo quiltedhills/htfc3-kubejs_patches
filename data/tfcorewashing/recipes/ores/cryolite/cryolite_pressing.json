@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/cryolite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_cryolite",
+      "count": 7
+    }
+  ]
+}

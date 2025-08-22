@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/normal_sphalerite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_sphalerite",
+      "count": 5
+    }
+  ]
+}

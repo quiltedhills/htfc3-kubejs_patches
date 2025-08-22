@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/normal_native_copper"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_copper",
+      "count": 5
+    }
+  ]
+}

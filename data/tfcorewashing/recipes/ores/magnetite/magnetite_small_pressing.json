@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/small_magnetite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_magnetite",
+      "count": 2
+    }
+  ]
+}

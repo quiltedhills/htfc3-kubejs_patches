@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/graphite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_graphite",
+      "count": 7
+    }
+  ]
+}

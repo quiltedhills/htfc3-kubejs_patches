@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "firmalife:ore/small_chromite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_chromite",
+      "count": 2
+    }
+  ]
+}

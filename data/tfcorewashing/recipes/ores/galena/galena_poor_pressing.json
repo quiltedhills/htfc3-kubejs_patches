@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc_ie_addon:ore/poor_lead"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_galena",
+      "count": 3
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc:ore/rich_native_silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_silver",
+      "count": 7
+    }
+  ]
+}

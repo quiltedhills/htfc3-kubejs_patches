@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc_ie_addon:ore/poor_aluminum"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_bauxite",
+      "count": 3
+    }
+  ]
+}

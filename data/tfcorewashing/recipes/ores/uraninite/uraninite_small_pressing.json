@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tfc_ie_addon:ore/small_uranium"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfcorewashing:rocky_chunks_uraninite",
+      "count": 2
+    }
+  ]
+}
