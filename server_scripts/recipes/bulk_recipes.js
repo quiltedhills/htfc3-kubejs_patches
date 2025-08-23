@@ -38,6 +38,11 @@ let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 	).superheated().id(`kubejs:artificial_ores/basin/${recipe_id}`)
 	event.recipes.mekanismCombining(`2x ${output}`, `3x ${ore_item}`, `2x tfc:rock/raw/${rock_type}`)
 		.id(`kubejs:artificial_ores/combiner/${recipe_id}`)
+	
+	// Crushing ore blocks back into ore
+	event.recipes.immersiveengineeringCrusher(ore_item, output, [Item.of(`tfc:rock/loose/${rock_type}`), Item.of(`tfc:rock/loose/${rock_type}`).withChance(0.5)])
+		.id(`kubejs:ore_block_crushing/ie/${recipe_id}`)
+	event.recipes.mekanismCrushing(ore_item, output).id(`kubejs:ore_block_crushing/mekanism/${recipe_id}`)
 }
 
 let gravel_deposit = (event, rock_type, ore_item, output, recipe_id) => {
