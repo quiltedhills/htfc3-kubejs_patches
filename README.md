@@ -32,6 +32,7 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
+• Increased processing speed of IE crushers by four times (standard hoppers may not be fast enough for input now!) <br/>
 • Fixed recipe conflict for Copycat Layers <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
 • Made it possible to crush ore blocks (those are normally unobtainable aside from a specific IE excavator vein) <br/>
