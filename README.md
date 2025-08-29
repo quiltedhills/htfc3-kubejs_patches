@@ -38,3 +38,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made it possible to crush ore blocks (those are normally unobtainable aside from a specific IE excavator vein) <br/>
 • Added #tfc:axes tag to TC Mattocks <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
+• Fixed the message that appears when attempting to knap rotten pumpkins being broken <br/>
