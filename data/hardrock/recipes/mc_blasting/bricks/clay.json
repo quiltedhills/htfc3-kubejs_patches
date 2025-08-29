@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "tfc:ceramic/unfired_brick"
+  },
+  "result": "minecraft:brick",
+  "experience": 0,
+  "cookingtime": 100
+}

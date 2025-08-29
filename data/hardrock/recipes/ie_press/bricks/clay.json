@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_plate",
+  "input": {
+    "item": "minecraft:clay_ball"
+  },
+  "result": {
+    "item": "tfc:ceramic/unfired_brick"
+  },
+  "energy": 600
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "output": {
+    "item": "tfc:ceramic/unfired_brick"
+  }
+}

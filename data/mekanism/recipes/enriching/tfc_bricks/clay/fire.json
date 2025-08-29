@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:fire_clay"
+    }
+  },
+  "output": {
+    "item": "tfc:ceramic/unfired_fire_brick"
+  }
+}

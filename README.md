@@ -33,9 +33,14 @@ Please feel free to reach out to me on discord for any questions!
 
 # Changelogs / differences from 1.6.2
 • Increased processing speed of IE crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
-• Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
+• Dropped the output rate for the unfired brick deployer recipes from 100% to 70% (hand knapping has a 60% conversion rate, for comparison), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
+• Added a Mekanism recipe for turning loose rocks into bricks <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
+• Made the more advanced stone brick recipes also include gypsum/alabaster <br/>
+
+• Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
+• Hidden the instant barrel cooling recipes to reduce clutter <br/>
 
 • Fixed recipe conflict for Copycat Layers <br/>
 • Fixed IE crushers having two overlapping recipes for crushing sulfur ore <br/>

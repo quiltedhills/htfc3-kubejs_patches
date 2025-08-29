@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "minecraft:clay_ball"
+      "item": "tfc:fire_clay"
     },
     {
       "item": "tconstruct:ingot_cast"
@@ -10,7 +10,8 @@
   ],
   "results": [
     {
-      "item": "tfc:ceramic/unfired_brick"
+      "item": "tfc:ceramic/unfired_fire_brick",
+      "chance": 0.7
     }
   ],
   "keepHeldItem": true
