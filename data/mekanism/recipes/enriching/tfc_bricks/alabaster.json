@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:ore/gypsum"
+    }
+  },
+  "output": {
+    "item": "tfc:alabaster_brick",
+    "count": 4
+  }
+}

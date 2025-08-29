@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:rock/loose/marble"
+    }
+  },
+  "output": {
+    "item": "tfc:brick/marble"
+  }
+}

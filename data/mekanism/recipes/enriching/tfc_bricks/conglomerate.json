@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:rock/loose/conglomerate"
+    }
+  },
+  "output": {
+    "item": "tfc:brick/conglomerate"
+  }
+}

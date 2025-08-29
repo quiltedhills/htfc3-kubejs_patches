@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:rock/loose/basalt"
+    }
+  },
+  "output": {
+    "item": "tfc:brick/basalt"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:rock/loose/granite"
+    }
+  },
+  "output": {
+    "item": "tfc:brick/granite"
+  }
+}

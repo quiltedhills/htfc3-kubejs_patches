@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "tfc:rock/loose/phyllite"
+    }
+  },
+  "output": {
+    "item": "tfc:brick/phyllite"
+  }
+}
