@@ -36,6 +36,7 @@ Please feel free to reach out to me on discord for any questions!
 • Dropped the output rate for the unfired brick deployer recipes from 100% to 70% (hand knapping has a 60% conversion rate, for comparison), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
 • Added a Mekanism recipe for turning loose rocks into bricks <br/>
+• Added a Mekanism recipe for making andesite alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the more advanced stone brick recipes also include gypsum/alabaster <br/>
 

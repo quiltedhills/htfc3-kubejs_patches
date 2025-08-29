@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "tfc:brick/andesite"
+    }
+  },
+  "extraInput": {
+    "ingredient": [
+      {
+        "tag": "forge:nuggets/zinc"
+      },
+      {
+        "tag": "forge:nuggets/tin"
+      },
+      {
+        "tag": "forge:nuggets/iron"
+      },
+      {
+        "tag": "forge:nuggets/cast_iron"
+      }
+    ]
+  },
+  "output": {
+    "item": "create:andesite_alloy"
+  }
+}
