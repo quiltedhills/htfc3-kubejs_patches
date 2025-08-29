@@ -6,7 +6,11 @@ onEvent('jei.remove.recipes', event => {
 		'hardrock:tfc_barrel/ice_shavings_with_water',
 		'hardrock:tfc_barrel/snowball_with_water'
 	])
-
+	event.remove('tfc:instant_barrel', [
+		'tfc:barrel/cooling_freshwater',
+		'tfc:barrel/cooling_saltwater',
+		'tfc:barrel/cooling_olive_oil'
+	])
 
 
 	// this feels so wrong
