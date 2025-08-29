@@ -559,7 +559,7 @@ onEvent('item.tooltip', tooltip => {
 	})
 	tooltip.addAdvanced('firmalife:food/stinky_soup', (item, advanced, text) => {
 		if (tooltip.shift) {
-			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Be careful!').gray()])
+			text.add([Text.of('Made by adding ').gray(), Text.of('Nightshade').white(), Text.of('. Eat at your own risk!').gray()])
 		}
 	})
 	tooltip.addAdvanced('supplementaries:pancake', (item, advanced, text) => {
@@ -1344,5 +1344,8 @@ function convertNumber(num) {
 			text.add(1, [Text.gold('Required to extract '), Text.yellow('Crude Oil'), Text.gold(' veins!')])
 			text.add(2, Text.gold('No bonus in speed or efficiency, just unlocks more stuff.'))
 		}
+	})
+	tooltip.addAdvanced(['firmalife:food/nightshade_berry', 'firmalife:food/stinky_soup'], (item, advanced, text) => {
+		text.add(1, [Text.gray('Poisonous. '), Text.gray('Be careful!')])
 	})
 })
