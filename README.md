@@ -33,9 +33,11 @@ Please feel free to reach out to me on discord for any questions!
 
 # Changelogs / differences from 1.6.2
 • Increased processing speed of IE crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
-• Fixed recipe conflict for Copycat Layers <br/>
-• Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
-• Made it possible to crush ore blocks (those are normally unobtainable aside from a specific IE excavator vein) <br/>
-• Added #tfc:axes tag to TC Mattocks <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
-• Fixed the message that appears when attempting to knap rotten pumpkins being broken <br/>
+• Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
+• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
+
+• Fixed recipe conflict for Copycat Layers <br/>
+• Fixed IE crushers having two overlapping recipes for crushing sulfur ore <br/>
+• Fixed TC mattocks not having #tfc:axes tag <br/>
+• Fixed broken message when attempting to knap rotten pumpkins <br/>

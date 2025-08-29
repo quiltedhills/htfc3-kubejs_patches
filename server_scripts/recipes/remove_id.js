@@ -496,6 +496,7 @@ onEvent('recipes', event => {
 		{id: 'tfc:leather_knapping/leggings'},
 		{id: 'tfc:leather_knapping/saddle'},
 		{id: 'tfc_ie_addon:crusher/salt'},
+		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'tfc_ie_addon:sawmill/acacia_log'},
 		{id: 'tfc_ie_addon:sawmill/acacia_stripped_log'},
 		{id: 'tfc_ie_addon:sawmill/acacia_wood'},
