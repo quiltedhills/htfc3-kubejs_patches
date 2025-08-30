@@ -1,0 +1,13 @@
+{
+  "type": "exnihilosequentia:sieve",
+  "rolls": [
+    { "chance": 0.02, "mesh": "string" },
+    { "chance": 0.04, "mesh": "iron" }
+  ],
+  "input": {
+    "tag": "forge:sand"
+  },
+  "result": {
+    "item": "dttfc:palm_seed"
+  }
+}

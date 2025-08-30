@@ -1,0 +1,13 @@
+{
+  "type": "exnihilosequentia:sieve",
+  "rolls": [
+    { "chance": 0.01, "mesh": "iron" },
+    { "chance": 0.04, "mesh": "diamond" }
+  ],
+  "input": {
+    "tag": "minecraft:leaves"
+  },
+  "result": {
+    "item": "tfc:plant/cherry_sapling"
+  }
+}

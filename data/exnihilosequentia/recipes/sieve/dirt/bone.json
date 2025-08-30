@@ -1,0 +1,12 @@
+{
+  "type": "exnihilosequentia:sieve",
+  "rolls": [
+    { "chance": 0.2, "mesh": "string" }
+  ],
+  "input": {
+    "tag": "forge:dirt"
+  },
+  "result": {
+    "item": "minecraft:bone"
+  }
+}

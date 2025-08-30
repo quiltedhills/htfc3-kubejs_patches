@@ -1,0 +1,12 @@
+{
+  "type": "exnihilosequentia:sieve",
+  "rolls": [
+    { "chance": 0.01, "mesh": "string" }
+  ],
+  "input": {
+    "tag": "forge:dirt"
+  },
+  "result": {
+    "item": "immersiveengineering:seed"
+  }
+}
