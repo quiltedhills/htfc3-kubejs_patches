@@ -79,4 +79,10 @@ onEvent('jei.information', event => {
 		' ',
 		'Rubberwood Trees follow the vanilla tree growth logic. This means that they grow really quickly!'
 	])
+	event.add(['exnihilosequentia:silkworm', 'exnihilosequentia:infesting_leaves','exnihilosequentia:infested_leaves'], [
+		['Once a block of leaves is fully white, silkworms will very, ', Text.of('very').italic(), ' slowly spread to nearby blocks.'],
+		'Since breaking infested leaves with a crook always yields at least one silkworm, it can be better to spread the worms manually instead of letting them do it on their own.',
+		' ',
+		'Still, if you would prefer that over the manual approach, you can set up wooden or metal supports to prevent the leaves from falling down to the ground. This will help keep everything going!'
+	])
 })

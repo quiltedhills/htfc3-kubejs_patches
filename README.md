@@ -47,6 +47,7 @@ Please feel free to reach out to me on discord for any questions!
 • Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
+• Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
