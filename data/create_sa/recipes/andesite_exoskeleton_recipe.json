@@ -1,28 +1,28 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "01210",
-    "00300",
-    "54045"
+    "ASCSA",
+    "AAEAA",
+    "BZAZB"
   ],
   "key": {
-    "0": {
+    "A": {
       "item": "create:andesite_alloy"
     },
-    "1": {
+    "S": {
       "item": "create:shaft"
     },
-    "2": {
+    "C": {
       "item": "create:belt_connector"
     },
-    "3": {
+    "E": {
       "item": "create_sa:heat_engine"
     },
-    "4": {
+    "Z": {
       "tag": "forge:ingots/zinc"
     },
-    "5": {
-      "tag": "tfc:rock/raw"
+    "B": {
+      "tag": "forge:storage_blocks/andesite_alloy"
     }
   },
   "result": {

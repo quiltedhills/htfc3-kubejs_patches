@@ -9,7 +9,7 @@ const repairables = {
     'create_jetpack:jetpack': [60, ['#forge:double_sheets/brass', 'create:precision_mechanism', 'create:chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
     'create_jetpack:netherite_jetpack': [420, ['create_sa:brass_cube', '2x create:precision_mechanism', '2x create:smart_chute'], ['#forge:tools/hammers', '#forge:tools/screwdrivers']],
     'create_sa:copper_exoskeleton_chestplate': [160, ['#forge:storage_blocks/copper', 'create:fluid_tank', '#forge:ingots/andesite_alloy'], ['#forge:tools/hammers']],
-    'create_sa:andesite_exoskeleton_chestplate': [240, ['#forge:storage_blocks/andesite_alloy', '#forge:ingots/zinc', '2x #tfc:rock/raw'], ['#forge:tools/hammers']],
+    'create_sa:andesite_exoskeleton_chestplate': [240, ['#forge:storage_blocks/andesite_alloy', 'create:belt_connector', '#forge:ingots/zinc', '#forge:ingots/zinc'], ['#forge:tools/hammers']],
     'create_sa:brass_exoskeleton_chestplate': [320, ['#forge:storage_blocks/brass', '#forge:double_sheets/brass', '2x #forge:ingots/andesite_alloy'], ['#forge:tools/hammers']],
 
     'tfcambiental:wool_hat': [1750, ['tfc:wool_cloth', '#forge:string'], ['#sewingkit:needles', '#forge:shears']],
