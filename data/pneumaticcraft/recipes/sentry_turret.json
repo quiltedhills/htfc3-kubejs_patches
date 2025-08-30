@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "PDP",
+    "W W"
+  ],
+  "key": {
+    "M": {
+      "item": "pneumaticcraft:minigun"
+    },
+    "P": {
+      "tag": "pneumaticcraft:plastic_sheets"
+    },
+    "D": {
+      "item": "pneumaticcraft:display_shelf"
+    },
+    "W": {
+      "item": "beyond_earth:wheel"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:sentry_turret"
+  }
+}

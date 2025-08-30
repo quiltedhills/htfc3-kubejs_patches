@@ -39,6 +39,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added a Mekanism recipe for making andesite alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the more advanced stone brick recipes also include gypsum/alabaster <br/>
+• Tweaked recipe for Sentry Turrets for fun <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
