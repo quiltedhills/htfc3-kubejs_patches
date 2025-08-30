@@ -44,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 
 • Fixed recipe conflict for Copycat Layers <br/>
+• Fixed the bloom processing sequenced recipe going straight into the iron hoe recipe <br/>
 • Fixed IE crushers having two overlapping recipes for crushing sulfur ore <br/>
 • Fixed TC mattocks not having #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten pumpkins <br/>
