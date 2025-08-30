@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    },
+    {
+      "fluid": "kubejs:mineral_water",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:plant/barrel_cactus"
+    }
+  ]
+}

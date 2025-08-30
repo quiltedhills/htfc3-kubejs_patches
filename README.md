@@ -44,6 +44,7 @@ Please feel free to reach out to me on discord for any questions!
 • Removed odd latex bucket recipe involving supports <br/>
 • Reduced the amount of rubberwood planks you get from each log <br/>
 • Made rubberwood logs have a chance to not drop when broken <br/>
+• Added a recipe for barrel cacti <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
