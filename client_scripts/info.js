@@ -1351,4 +1351,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced(['firmalife:food/nightshade_berry', 'firmalife:food/stinky_soup'], (item, advanced, text) => {
 		text.add(1, [Text.gray('Poisonous. '), Text.gray('Be careful!')])
 	})
+	tooltip.addAdvanced('myrtrees:rubberwood_log', (item, advanced, text) => {
+		text.add(1, [Text.gold('Has a chance to not drop when broken')])
+	})
 })

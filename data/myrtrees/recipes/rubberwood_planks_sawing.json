@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "myrtrees:rubberwood_log"
+    }
+  ],
+  "results": [
+    {
+      "item": "myrtrees:rubberwood_planks",
+      "count": 2
+    }
+  ],
+  "processingTime": 50
+}

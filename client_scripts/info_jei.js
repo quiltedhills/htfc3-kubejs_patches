@@ -69,12 +69,14 @@ onEvent('jei.information', event => {
 	event.add('tfc:ceramic/fire_ingot_mold', [
 		'Unlike regular Ingot Molds, these ones never break!'
 	])
-	event.add('myrtrees:latex', [
-		'Obtained from tapping into Rubberwood Trees.',
+	event.add(['myrtrees:latex', 'myrtrees:wooden_bucket', 'myrtrees:tree_tap', 'myrtrees:rubberwood_sapling'], [
+		'Latex is obtained by tapping into Rubberwood Trees.',
 		['A rubberwood sapling can be obtained from sieving dirt. ', Text.of('They can only be planted on dirt that has no grass!').italic()],
 		' ',
 		['Place a ', Text.of('Tree Tap').underlined(), ' on a rubberwood tree, as well as a ', Text.of('Bucket for Latex').underlined(), ' right below. Latex liquid should then start collecting. You can right click the bucket to see how much is currently stored inside.'],
 		' ',
-		'Each 1000mb of fluid equals one latex item. Each tree can produce up to 10 latex (which is 10,000mb of fluid) before it runs dry.',
+		'Each 1000mb of fluid equals to one latex item. Each tree can produce up to 10 latex (which is 10,000mb of fluid) before it runs dry.',
+		' ',
+		'Rubberwood Trees follow the vanilla tree growth logic. This means that they grow really quickly!'
 	])
 })
