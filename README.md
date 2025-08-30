@@ -54,3 +54,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed IE crushers having two overlapping recipes for crushing sulfur ore <br/>
 • Fixed TC mattocks not having #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten pumpkins <br/>
+• Fixed anvil move order for wrought iron and cast iron grills <br/>

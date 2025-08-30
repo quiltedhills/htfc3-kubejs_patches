@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:double_sheets/wrought_iron"
+  },
+  "result": {
+    "item": "tfc:wrought_iron_grill"
+  },
+  "tier": 3,
+  "rules": [
+    "punch_last",
+    "draw_any",
+    "punch_not_last"
+  ]
+}
