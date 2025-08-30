@@ -1,22 +1,22 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " wx",
-        " -w",
-        "-  "
-    ],
-    "key": {
-        "x": {
-            "tag": "forge:stone"
-        },
-        "-": {
-            "tag": "forge:rods/wooden"
-        },
-        "w": {
-            "tag": "forge:wires/copper"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WR",
+    " SW",
+    "S  "
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:stone"
     },
-    "result": {
-        "item": "exnihilosequentia:stone_hammer"
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "W": {
+      "tag": "forge:wires/copper"
     }
+  },
+  "result": {
+    "item": "exnihilosequentia:stone_hammer"
+  }
 }

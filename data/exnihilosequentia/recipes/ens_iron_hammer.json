@@ -1,1 +1,22 @@
-{"type":"minecraft:crafting_shaped","pattern":["  x"," - ","-  "],"key":{"x":{"item":"tfc:metal/hammer_head/wrought_iron"},"-":{"item":"minecraft:stick"}},"result":{"item":"exnihilosequentia:iron_hammer"}}
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WD",
+    " SW",
+    "S  "
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:double_ingots/wrought_iron"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "W": {
+      "tag": "forge:wires/lead"
+    }
+  },
+  "result": {
+    "item": "exnihilosequentia:iron_hammer"
+  }
+}

@@ -32,28 +32,27 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-• Increased processing speed of IE crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
-• Dropped the output rate for the unfired brick deployer recipes from 100% to 70% (hand knapping has a 60% conversion rate, for comparison), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
+• Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
+• Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
-• Added a Mekanism recipe for turning loose rocks into bricks <br/>
-• Added a Mekanism recipe for making andesite alloy <br/>
+• Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
+• Added a Mekanism recipe for making Andesite Alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
-• Made the more advanced stone brick recipes also include gypsum/alabaster <br/>
-• Tweaked recipe for Sentry Turrets for fun <br/>
-• Made the Andesite Exoskeleton a little more expensive <br/>
-• Removed odd latex bucket recipe involving supports <br/>
-• Reduced the amount of rubberwood planks you get from each log <br/>
-• Made rubberwood logs have a chance to not drop when broken <br/>
-• Added a recipe for barrel cacti <br/>
-• Removed cocoa beans and added palm tree seeds to sand sieving loot tables <br/>
+• Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
+• Removed odd Latex Bucket recipe involving supports <br/>
+• Reduced the amount of Rubberwood Planks you get from each log <br/>
+• Made Rubberwood Logs have a chance to not drop when broken <br/>
+• Added a recipe for Barrel Cacti <br/>
+• Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
 • Fixed recipe conflict for Copycat Layers <br/>
-• Fixed the bloom processing sequenced recipe going straight into the iron hoe recipe <br/>
-• Fixed IE crushers having two overlapping recipes for crushing sulfur ore <br/>
-• Fixed TC mattocks not having #tfc:axes tag <br/>
-• Fixed broken message when attempting to knap rotten pumpkins <br/>
-• Fixed anvil move order for wrought iron and cast iron grills <br/>
+• Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
+• Fixed IE Crushers having two overlapping recipes for crushing Sulfur ore <br/>
+• Fixed TC Mattocks not having the #tfc:axes tag <br/>
+• Fixed broken message when attempting to knap rotten Pumpkins <br/>
+• Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>

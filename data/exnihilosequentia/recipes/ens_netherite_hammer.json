@@ -1,1 +1,22 @@
-{"type":"minecraft:crafting_shaped","pattern":["  x"," - ","-  "],"key":{"x":{"item":"tfc:metal/hammer_head/black_steel"},"-":{"item":"minecraft:stick"}},"result":{"item":"exnihilosequentia:netherite_hammer"}}
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WD",
+    " SW",
+    "S  "
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:double_ingots/black_steel"
+    },
+    "S": {
+      "tag": "forge:rods/treated_wood"
+    },
+    "W": {
+      "tag": "forge:wires/compressed_iron"
+    }
+  },
+  "result": {
+    "item": "exnihilosequentia:netherite_hammer"
+  }
+}
