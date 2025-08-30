@@ -613,7 +613,10 @@ onEvent('item.tooltip', tooltip => {
 			}
 		}
 	})
-	tooltip.addAdvanced('kubejs:magnet/hdpe_offline', (item, advanced, text) => {
+	tooltip.addAdvanced([
+		'kubejs:magnet/hdpe_offline',
+		'createsifter:string_mesh'
+	], (item, advanced, text) => {
 		text.add(1, Text.gray('Crafting Material'))
 	})
 	tooltip.addAdvanced('kubejs:magnet/hdpe', (item, advanced, text) => {

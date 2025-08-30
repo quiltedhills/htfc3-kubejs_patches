@@ -42,6 +42,7 @@ Please feel free to reach out to me on discord for any questions!
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
+• Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
 • Fixed recipe conflict for Copycat Layers <br/>
 • Fixed the bloom processing sequenced recipe going straight into the iron hoe recipe <br/>

@@ -33,6 +33,11 @@ onEvent('block.right_click', event => {
 			}
 		}
 	}
+	// Make string meshes for Create Sifters unusable
+	if (event.item.id == 'createsifter:string_mesh' && event.block.id == 'createsifter:sifter') {
+		event.player.server.runCommandSilent(`title ${event.player} actionbar ["This block uses Brass Meshes!"]`)
+		event.cancel()
+	}
 })
 onEvent('player.inventory.opened', event => {
 	// Paraglider statues: Last resort in case the paraglider statue GUI opens up despite failsafes
