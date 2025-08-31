@@ -80,7 +80,7 @@ onEvent('recipes', event => {
 		{id: 'twilightforest:berry_torch'},
 		{id: /^securitycraft:reinforced_.+_stained_glass$/},
 		{id: /^exnihilosequentia:fluid_item\/ens_.+_coral/},
-		//{id: /^exnihilosequentia:sieve\/ens_/}, // Remove all sieving recipes for organization purposes
+		{id: /^exnihilosequentia:sieve\/ens_/}, // Remove all sieving recipes for organization purposes
 
 		{id: 'mekanism:nucleosynthesizing/crossbow'},
 		{id: 'mekanism:nucleosynthesizing/crying_obsidian'},

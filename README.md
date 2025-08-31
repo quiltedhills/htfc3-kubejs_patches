@@ -51,6 +51,7 @@ Please feel free to reach out to me on discord for any questions!
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
+• Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Fixed recipe conflict for Copycat Layers <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed IE Crushers having two overlapping recipes for crushing Sulfur ore <br/>
