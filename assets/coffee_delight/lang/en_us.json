@@ -1,0 +1,30 @@
+{
+  "cofe.putOrEat.message": "Right-Click to consume, Sneak-Right-Click to place",
+
+  "block.coffee_delight.coffee_bush": "Coffee Bush",
+  "block.coffee_delight.coffee_block": "Bag of Coffee Beans",
+  "item.coffee_delight.coffee_beans_cooked": "Dried Coffee Beans",
+  "item.coffee_delight.coffee_flour": "Ground Coffee",
+
+  "block.coffee_delight.coffee_cap": "Coffee Cup",
+  "block.coffee_delight.cap_black_coffee": "Cup of Black Coffee",
+  "block.coffee_delight.cap_double_espresso_coffee": "Cup of Double Espresso",
+  "block.coffee_delight.cap_arabic_coffee": "Cup of Arabic Coffee",
+  "block.coffee_delight.cap_turkey_coffee": "Cup of Turkey Coffee",
+  "block.coffee_delight.cap_latte_coffee": "Cup of Latte",
+  "block.coffee_delight.cap_moka_coffee": "Cup of Mocha",
+  "block.coffee_delight.cap_cappuccino": "Cup of Cappuccino",
+  "block.coffee_delight.cap_usa_coffee": "Cup of Americano",
+  "block.coffee_delight.cap_macchiato": "Cup of Macchiato",
+  "block.coffee_delight.cap_milk_coffee": "Cup of Milk Coffee",
+  "block.coffee_delight.cap_coco": "Cup of Hot Cocoa",
+
+  "block.coffee_delight.cap_iced_lattee_coffee": "Cup of Iced Latte",
+  "block.coffee_delight.cap_iced_moka": "Cup of Iced Mocha",
+  "block.coffee_delight.cap_iced_cappuccino": "Cup of Iced Cappuccino",
+  "block.coffee_delight.cap_iced_usa_coffee": "Cup of Iced Americano",
+  "block.coffee_delight.cap_iced_macchiato": "Cup of Iced Macchiato",
+  "block.coffee_delight.cap_iced_coco": "Cup of Iced Cocoa",
+
+  "block.coffee_delight.cap_fail_coffee": "Cup of Scorched Coffee"
+}

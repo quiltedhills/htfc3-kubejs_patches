@@ -53,9 +53,10 @@ Please feel free to reach out to me on discord for any questions!
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
+• Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
 • Fixed recipe conflict for Copycat Layers, as well as for Copycat Bytes and Slices <br/>
-• Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
+• Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten Pumpkins <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>

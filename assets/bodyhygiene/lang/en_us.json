@@ -1,42 +1,5 @@
 {
-  "itemGroup.bodyhygienetab": "Body Hygiene",
-
-  "block.bodyhygiene.shower": "Shower",
-  "block.bodyhygiene.barrel_bland": "Barrel Bland",
-  "block.bodyhygiene.soap_mold_brick": "Soap Mold Brick",
-
-  "block.bodyhygiene.cornflower_soap": "Cornflower Soap",
-  "block.bodyhygiene.allium_soap": "Allium Soap",
-  "block.bodyhygiene.dandelion_soap": "Dandelion Soap",
-  "block.bodyhygiene.poppy_soap": "Poppy Soap",
-  "block.bodyhygiene.blue_orchid_soap": "Blue Orchid Soap",
-  "block.bodyhygiene.azure_bluet_soap": "Azure Bluet Soap",
-  "block.bodyhygiene.oxeye_daisy_soap": "Oxeye Daisy Soap",
-  "block.bodyhygiene.sunflower_soap": "Sunflower Soap",
-  "block.bodyhygiene.lilac_soap": "Lilac Soap",
-  "block.bodyhygiene.rose_bush_soap": "Rose Bush Soap",
-  "block.bodyhygiene.peony_soap": "Peony Soap",
   "block.bodyhygiene.wither_rose_soap": "Wither Rose Soap",
-  "block.bodyhygiene.spore_blossom_soap": "Spore Blossom Soap",
-  "block.bodyhygiene.lily_of_the_valley_soap": "Lily of the Valley Soap",
-  "block.bodyhygiene.orange_tulip_soap": "Orange Tulip Soap",
-  "block.bodyhygiene.pink_tulip_soap": "Pink Tulip Soap",
-  "block.bodyhygiene.red_tulip_soap": "Red Tulip Soap",
-  "block.bodyhygiene.white_tulip_soap": "White Tulip Soap",
-
-  "item.bodyhygiene.pumpkin_seeds_bucket": "Pumpkin Seeds Bucket",
-  "item.bodyhygiene.oil_bucket": "Oil Bucket",
   "item.bodyhygiene.bottle_oil": "Oil Bottle",
-  "item.bodyhygiene.ash": "Ash",
-  "item.bodyhygiene.ash_bucket": "Ash Bucket",
-  "item.bodyhygiene.caustic_bland_bowl": "Caustic Bland Bowl",
-
-  "sounds.bodyhygiene.waterfalling": "Water Falling",
-
-  "effect.bodyhygiene.soapy": "Soapy",
-  "effect.bodyhygiene.dirty": "Dirty",
-
-  "soap.bodyhygiene.body": "",
-
-  "villager.bodyhygiene.not": "§cUnfortunately, I am unable to trade with you at this time"
+  "soap.bodyhygiene.body": ""
 }

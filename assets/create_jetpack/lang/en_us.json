@@ -1,0 +1,9 @@
+{
+  "block.create_jetpack.jetpack": "Pressurized Jetpack",
+  "block.create_jetpack.netherite_jetpack": "Netherite Pressurized Jetpack",
+
+  "item.create_jetpack.jetpack": "Pressurized Jetpack",
+  "item.create_jetpack.netherite_jetpack": "Netherite Pressurized Jetpack",
+  
+  "item.create_jetpack.jetpack_placeable": "Pressurized Jetpack Placeable"
+}
