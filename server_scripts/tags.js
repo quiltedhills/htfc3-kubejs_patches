@@ -354,6 +354,8 @@ onEvent('tags.items', event => {
 		'farmersdelight:rice_roll_medley_block'
 	])
 	event.add('tfc:foods/usable_in_soup', [
+		'minecraft:baked_potato',
+
 		// grains
 		'#firmalife:foods/flatbreads',
 		'#firmalife:foods/slices',
@@ -370,6 +372,8 @@ onEvent('tags.items', event => {
 		'farmersdelight:dumplings'
 	])
 	event.add('tfc:foods/usable_in_salad', [
+		'minecraft:baked_potato',
+
 		// grains
 		'#firmalife:foods/flatbreads',
 		'#firmalife:foods/slices',
@@ -1320,6 +1324,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw'
 	]),
 	event.add('firmalife:usable_in_stovetop_soup', [
+		'minecraft:baked_potato',
 		'kubejs:shark_meat',
 		//'twilightdelight:raw_insect',
 		//'twilightdelight:raw_venison_rib',
@@ -1333,6 +1338,7 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw'
 	]),
 	event.add('tfc:foods', [
+		'minecraft:baked_potato',
 		'#tfc:wooden_bowl_food',
 		'kubejs:shark_meat',
 		'kubejs:shark_cooked_meat',
