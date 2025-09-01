@@ -3,7 +3,7 @@
   "pools": [
     {
       "name": "loot_pool",
-      "rolls": 24,
+      "rolls": 36,
       "entries": [
         {
           "type": "dynamictrees:seed_item",
