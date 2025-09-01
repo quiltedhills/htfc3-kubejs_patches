@@ -8,6 +8,6 @@
     "tag": "minecraft:leaves"
   },
   "result": {
-    "item": "tfc:wood/sapling/pine"
+    "item": "dttfc:pine_seed"
   }
 }
