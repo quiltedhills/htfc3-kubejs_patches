@@ -1,0 +1,11 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "createdeco:zinc_bars"},
+  "transitionalItem": {"item": "create:zinc_ingot"},
+  "sequence": [
+    {"type": "create:deploying","ingredients": [{"item": "create:zinc_ingot"},{"item": "createdeco:zinc_bars"}],"results": [{"item": "create:zinc_ingot"}]},
+    {"type": "create:pressing","ingredients": [{"item": "create:zinc_ingot"}],"results": [{"item": "create:zinc_ingot"}]}
+    ],
+  "results": [{"item": "create:copycat_panel", "count": 1}],
+  "loops": 1
+}
