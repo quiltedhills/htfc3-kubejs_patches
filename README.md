@@ -59,3 +59,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten Pumpkins <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
+• Fixed vinegar recipe not allowing aged alcohols <br/>
