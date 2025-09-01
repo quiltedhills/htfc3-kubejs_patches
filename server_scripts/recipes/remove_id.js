@@ -1,6 +1,9 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'minecraft:hardrock/cr_milling/sulfur'},
+		{id: 'tfc_ie_addon:crusher/sulfur'},
+
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},
 		{id: 'create:copycat_panel_from_ingots_zinc_stonecutting'},
@@ -470,7 +473,6 @@ onEvent('recipes', event => {
 		{id: 'tfc:leather_knapping/leggings'},
 		{id: 'tfc:leather_knapping/saddle'},
 		{id: 'tfc_ie_addon:crusher/salt'},
-		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'tfc_ie_addon:sawmill/acacia_log'},
 		{id: 'tfc_ie_addon:sawmill/acacia_stripped_log'},
 		{id: 'tfc_ie_addon:sawmill/acacia_wood'},
