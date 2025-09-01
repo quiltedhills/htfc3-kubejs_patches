@@ -8,6 +8,6 @@
     "tag": "minecraft:leaves"
   },
   "result": {
-    "item": "tfc:wood/sapling/sequoia"
+    "item": "dttfc:sequoia_seed"
   }
 }

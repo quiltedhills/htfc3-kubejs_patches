@@ -8,6 +8,6 @@
     "tag": "minecraft:leaves"
   },
   "result": {
-    "item": "tfc:wood/sapling/hickory"
+    "item": "dttfc:hickory_seed"
   }
 }

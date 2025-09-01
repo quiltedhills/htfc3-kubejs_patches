@@ -8,6 +8,6 @@
     "tag": "minecraft:leaves"
   },
   "result": {
-    "item": "tfc:wood/sapling/birch"
+    "item": "dttfc:birch_seed"
   }
 }
