@@ -6,11 +6,10 @@
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_constantan"}],"results": [{"item": "immersiveposts:stick_constantan"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_constantan"}],"results": [{"item": "immersiveposts:stick_constantan"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_constantan"}],"results": [{"item": "immersiveposts:stick_constantan"}]},
-    {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_constantan"}],"results": [{"item": "immersiveposts:stick_constantan"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_constantan"}],"results": [{"item": "immersiveposts:stick_constantan"}]}
   ],
   "results": [
-    {"item": "immersiveengineering:nugget_constantan","count": 5}    
+    {"item": "immersiveengineering:nugget_constantan", "count": 5}
   ],
   "loops": 1
 }

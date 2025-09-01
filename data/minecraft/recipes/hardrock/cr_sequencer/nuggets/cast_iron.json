@@ -6,11 +6,10 @@
     {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]},
     {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]},
     {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]},
-    {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]},
     {"type": "create:cutting","ingredients": [{"item": "tfc:metal/rod/cast_iron"}],"results": [{"item": "tfc:metal/rod/cast_iron"}]}
   ],
   "results": [
-    {"item": "createdeco:cast_iron_nugget","count": 5}
+    {"item": "createdeco:cast_iron_nugget", "count": 5}
   ],
   "loops": 1
 }

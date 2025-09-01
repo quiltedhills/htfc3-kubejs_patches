@@ -6,11 +6,10 @@
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_uranium"}],"results": [{"item": "immersiveposts:stick_uranium"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_uranium"}],"results": [{"item": "immersiveposts:stick_uranium"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_uranium"}],"results": [{"item": "immersiveposts:stick_uranium"}]},
-    {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_uranium"}],"results": [{"item": "immersiveposts:stick_uranium"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveposts:stick_uranium"}],"results": [{"item": "immersiveposts:stick_uranium"}]}
   ],
   "results": [
-    {"item": "immersiveengineering:nugget_uranium","count": 5}    
+    {"item": "immersiveengineering:nugget_uranium", "count": 5}
   ],
   "loops": 1
 }

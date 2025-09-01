@@ -45,6 +45,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made Rubberwood Logs have a chance to not drop when broken <br/>
 • Added a recipe for Barrel Cacti <br/>
 • Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
+• Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
@@ -52,7 +53,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
-• Fixed recipe conflict for Copycat Layers <br/>
+• Fixed recipe conflict for Copycat Layers, as well as for Copycat Bytes and Slices <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed IE Crushers having two overlapping recipes for crushing Sulfur ore <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
