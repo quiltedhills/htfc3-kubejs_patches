@@ -1354,4 +1354,7 @@ function convertNumber(num) {
 	tooltip.addAdvanced('myrtrees:rubberwood_log', (item, advanced, text) => {
 		text.add(1, [Text.gold('Has a chance to not drop when broken')])
 	})
+	tooltip.addAdvanced('firmalife:watering_can', (item, advanced, text) => {
+		text.add(1, [Text.gray('Only usable on Greenhouse planters')])
+	})
 })
