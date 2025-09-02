@@ -46,6 +46,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added a recipe for Barrel Cacti <br/>
 • Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
 • Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
+• Added Create Mixer recipe for dye fluids <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
