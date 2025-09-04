@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  " T",
+  "TS"
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "tfc:thatch"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "firmaciv:thatch_roofing",
+    "count": 2
+  }
+}
