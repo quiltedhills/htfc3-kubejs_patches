@@ -10,6 +10,10 @@
   ],
   "results": [
     {
+      "item": "tfc:ore/pyrite",
+      "chance": 0.01
+    },
+    {
       "item": "tfc:ore/small_limonite",
       "chance": 0.40
     },
@@ -20,10 +24,6 @@
     {
       "item": "minecraft:bone",
       "chance": 0.1
-    },
-    {
-      "item": "tfc:ore/pyrite",
-      "chance": 0.002
     }
   ],
   "processingTime": 500

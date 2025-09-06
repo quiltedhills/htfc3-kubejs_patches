@@ -27,7 +27,7 @@
     },
     {
       "item": "tfc:ore/emerald",
-      "chance": 0.002
+      "chance": 0.005
     }
   ],
   "processingTime": 500

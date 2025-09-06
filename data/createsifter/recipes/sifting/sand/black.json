@@ -31,7 +31,7 @@
     },
     {
       "item": "tfc:ore/sapphire",
-      "chance": 0.002
+      "chance": 0.005
     }
   ],
   "processingTime": 500
