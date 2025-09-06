@@ -15,11 +15,19 @@ onEvent('tags.blocks', event => {
 	event.remove('ftbchunks:interact_whitelist', [
 		'minecraft:crafting_table'
 	])
-
 	event.add('firmalife:oven_blocks', [
 		'firmalife:vat',
 		'firmalife:stovetop_grill',
-		'firmalife:stovetop_pot'
+		'firmalife:stovetop_pot',
+		'farmersdelight:cooking_pot',
+		'farmersrespite:kettle'
+	])
+	event.add('firmalife:oven_insulation', [
+		'firmalife:vat',
+		'firmalife:stovetop_grill',
+		'firmalife:stovetop_pot',
+		'farmersdelight:cooking_pot',
+		'farmersrespite:kettle'
 	])
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
 	event.add('tfc:needs_colored_steel_tool', [
