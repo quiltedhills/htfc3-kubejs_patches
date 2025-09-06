@@ -69,3 +69,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>
+• Fixed Twilight Forest Venison and Meef not being obtainable <br/>
+• Removed some unobtainable meat types from JEI <br/>

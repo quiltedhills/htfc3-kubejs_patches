@@ -31,7 +31,10 @@ onEvent('jei.hide.items', event => {
 
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',
+		'untamedwilds:food_bear_cooked',
 		/^butchersdelightfoods:.+llama/,
+		'untamedwilds:food_turtle_raw',
+		'untamedwilds:food_turtle_cooked',
 
 		'supplementaries:faucet',
 		'firmalife:ice_fishing_station',

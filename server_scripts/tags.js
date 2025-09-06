@@ -2409,6 +2409,10 @@ onEvent('tags.items', event => {
     'htm:cooked_poultry_breast'
   ]) */
 	event.removeAllTagsFrom(
+		'untamedwilds:food_turtle_raw',
+		'untamedwilds:food_turtle_cooked',
+		'untamedwilds:food_bear_raw',
+		'untamedwilds:food_bear_cooked',
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
