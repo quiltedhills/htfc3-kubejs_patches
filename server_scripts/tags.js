@@ -1257,6 +1257,7 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		'#travelersbackpack:custom_travelers_backpack',
 		/^animaltrap:.+_carcass$/,
 		'immersiveengineering:treated_post',
 		'immersiveengineering:alu_post',

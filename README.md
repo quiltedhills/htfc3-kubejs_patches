@@ -36,18 +36,19 @@ Please feel free to reach out to me on discord for any questions!
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; yellow sand has a 1% chance) <br/>
+• Reduced the amount of Rubberwood Planks you get from each log <br/>
+• Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
 • Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
+• Made oven appliances such as cooking pots and kettles count as oven insulation <br/>
 • Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
 • Added a Mekanism recipe for making Andesite Alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
 • Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
-• Reduced the amount of Rubberwood Planks you get from each log <br/>
-• Made Rubberwood Logs have a chance to not drop when broken <br/>
 • Added a recipe for Barrel Cacti <br/>
-• Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
+• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
 • Added Create Mixer recipe for dye fluids <br/>
 • Tweaked coffee-related recipes and item names <br/>
@@ -66,4 +67,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten Pumpkins <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
-• Fixed vinegar recipe not allowing aged alcohols <br/>
+• Fixed Vinegar recipe not accepting aged alcohols <br/>
+• Fixed backpacks being storable in Small Vessels <br/>
