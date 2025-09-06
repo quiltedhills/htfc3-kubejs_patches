@@ -2,7 +2,7 @@
 
 // Sneaky entity removal
 onEvent('entity.spawned', event => {
-	if (event.entity.type == 'minecraft:chicken') {
+	if (event.entity.type == 'minecraft:chicken' || event.entity.type == 'minecraft:zombie_villager') {
 		event.cancel()
 	}
 })

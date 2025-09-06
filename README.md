@@ -35,6 +35,8 @@ Please feel free to reach out to me on discord for any questions!
 • Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
+• Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; yellow sand has a 1% chance) <br/>
+• Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
 • Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
 • Added a Mekanism recipe for making Andesite Alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
@@ -47,6 +49,8 @@ Please feel free to reach out to me on discord for any questions!
 • Removed Cocoa Beans and added Palm Seeds to sand sieving loot tables <br/>
 • Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
 • Added Create Mixer recipe for dye fluids <br/>
+• Tweaked coffee-related recipes and item names <br/>
+• Made it impossible for zombie villagers to spawn <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
