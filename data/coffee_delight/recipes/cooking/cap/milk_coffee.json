@@ -1,7 +1,15 @@
 {
   "type": "farmersrespite:brewing",
   "ingredients": [
-    {"item": "minecraft:milk_bucket"},
+    {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "tfc:milks"
+        },
+        "amount": 100
+      }
+    },
     {"item": "coffee_delight:coffee_flour"}
   ],
   "result": {"item": "coffee_delight:cap_milk_coffee"},

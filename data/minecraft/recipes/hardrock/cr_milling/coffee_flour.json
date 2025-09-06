@@ -7,13 +7,7 @@
   ],
   "results": [
     {
-      "item": "coffee_delight:coffee_flour",
-      "count": 2
-    },
-    {
-      "item": "coffee_delight:coffee_flour",
-      "count": 1,
-      "chance": 0.3
+      "item": "coffee_delight:coffee_flour"
     }
   ],
   "processingTime": 400
