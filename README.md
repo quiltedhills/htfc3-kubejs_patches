@@ -40,6 +40,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
 • Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
+• Micromissiles are now more expensive to craft <br/>
 • Made oven appliances such as cooking pots and kettles count as oven insulation <br/>
 • Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
 • Added a Mekanism recipe for making Andesite Alloy <br/>
