@@ -37,6 +37,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; yellow sand has a 1% chance) <br/>
 • Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
+• Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
 • Added a Mekanism recipe for making Andesite Alloy <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
@@ -59,7 +60,7 @@ Please feel free to reach out to me on discord for any questions!
 
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
-• Fixed recipe conflict for Copycat Layers, as well as for Copycat Bytes and Slices <br/>
+• Fixed recipe conflict for Propellers, as well as Copycat Layers, Bytes and Slices <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
