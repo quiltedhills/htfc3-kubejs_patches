@@ -55,6 +55,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked coffee-related recipes and item names <br/>
 • Made it impossible for zombie villagers to spawn <br/>
 • Made End Portal Frames not drop when broken within the End dimension <br/>
+• Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
