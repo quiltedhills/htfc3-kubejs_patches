@@ -11,7 +11,7 @@
   "results": [
     {
       "item": "tfc:ore/pyrite",
-      "chance": 0.01
+      "chance": 0.011
     },
     {
       "item": "tfc:ore/small_limonite",
