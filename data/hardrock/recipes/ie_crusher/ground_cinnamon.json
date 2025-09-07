@@ -6,7 +6,9 @@
   "result": {
     "base_ingredient": {
       "item": "firmalife:spice/ground_cinnamon"
-    }
+    },
+    "count": 1
   },
-  "energy": 5000
+  "secondaries": [],
+  "energy": 1200
 }
