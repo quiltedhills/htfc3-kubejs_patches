@@ -54,6 +54,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Mixer recipe for dye fluids <br/>
 • Tweaked coffee-related recipes and item names <br/>
 • Made it impossible for zombie villagers to spawn <br/>
+• Made End Portal Frames not drop when broken within the End dimension <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>

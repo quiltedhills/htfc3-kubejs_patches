@@ -144,7 +144,7 @@ onEvent('block.break', event => {
 
 	// Destroy end portal blocks around broken frames
 	if (event.block.id == 'minecraft:end_portal_frame') {
-		if (!event.player.creativeMode) { // Couldn't get a proper loot table to work :p
+		if (!event.player.creativeMode && event.getLevel().getDimension() != 'minecraft:the_end') { // Couldn't get a proper loot table to work :p
 			event.block.popItem('minecraft:end_portal_frame')
 			if (event.block.properties.eye == 'true') event.block.popItem('minecraft:ender_eye')
 		}
