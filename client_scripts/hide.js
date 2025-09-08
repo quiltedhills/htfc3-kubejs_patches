@@ -28,6 +28,7 @@ onEvent('jei.hide.items', event => {
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
 		'pneumaticcraft:seismic_sensor',
+		'kubejs:clean_amethyst_powder',
 
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',

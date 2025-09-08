@@ -1,0 +1,28 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/diamond"
+    }
+  ],
+  "results": [
+    {
+      "item": "createaddition:diamond_grit"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    },
+    {
+      "item": "tfc:powder/graphite",
+      "chance": 0.75
+    },
+    {
+      "item": "refinedstorage:silicon",
+      "chance": 0.50
+    },
+    {
+      "item": "mekanism:dust_coal",
+      "chance": 0.25
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/pyrite"
+  },
+  "loot_table": "tfc:sluicing/gems/pyrite"
+}

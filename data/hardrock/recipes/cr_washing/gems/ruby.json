@@ -1,0 +1,27 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/ruby"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/ruby"
+    },
+    {
+      "item": "mekanism:dust_quartz"
+    },
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "chance": 0.75
+    },
+    {
+      "item": "tfcorewashing:pellet_chromium"
+    },
+    {
+      "item": "tfcorewashing:pellet_chromium",
+      "chance": 0.50
+    }
+  ]
+}

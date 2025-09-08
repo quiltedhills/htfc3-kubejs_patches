@@ -2,7 +2,12 @@
   "type": "pneumaticcraft:pressure_chamber",
   "inputs": [
     {
-      "tag": "tfc:gem_powders"
+      "item": "mekanism:crystal_osmium"
+    },
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "tag": "tfc:gem_dust/minor",
+      "count": 16
     },
     {
       "item": "beyond_earth:raw_ostrum"
@@ -17,7 +22,7 @@
       "item": "beyond_earth:ice_shard"
     }
   ],
-  "pressure": 4.5,
+  "pressure": 5.0,
   "results": [
     {
       "item": "kubejs:magic_crystal"

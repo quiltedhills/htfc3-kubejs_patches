@@ -13,20 +13,8 @@
     ],
     "results": [
       {
-        "item": "tfcorewashing:dirty_pile_sphalerite",
-        "chance": 0.01
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_gold",
-        "chance": 0.01
-      },
-      {
-        "item": "tfcorewashing:dirty_pile_silver",
-        "chance": 0.005
-      },
-      {
         "item": "tfcorewashing:pile_black_sand",
-        "chance": 0.15
+        "chance": 0.10
       },
       {
         "item": "minecraft:flint",
@@ -34,7 +22,19 @@
       },
       {
         "item": "tfcorewashing:dirty_pile_copper",
-        "chance": 0.03
+        "chance": 0.12
+      },
+      {
+        "item": "tfcorewashing:dirty_pile_sphalerite",
+        "chance": 0.04
+      },
+      {
+        "item": "tfcorewashing:dirty_pile_gold",
+        "chance": 0.04
+      },
+      {
+        "item": "tfcorewashing:dirty_pile_silver",
+        "chance": 0.04
       }
     ],
     "processingTime": 400

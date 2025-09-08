@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:clean_gem_dust/diamond"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfc:powder/graphite"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfc:powder/graphite",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "refinedstorage:silicon",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mekanism:dust_coal",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

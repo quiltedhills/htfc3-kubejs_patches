@@ -4,6 +4,13 @@
   "metal.tfc.glass": "Glass",
   "metal.tfc.seared_stone": "Seared Stone",
 
+  "item.kubejs.clean_gem_dust.amethyst": "Amethyst Dust",
+  "item.kubejs.clean_gem_dust.opal": "Opal Dust",
+  "item.kubejs.clean_gem_dust.pyrite": "Pyrite Dust",
+  "item.kubejs.clean_gem_dust.ruby": "Ruby Dust",
+  "item.kubejs.clean_gem_dust.sapphire": "Sapphire Dust",
+  "item.kubejs.clean_gem_dust.topaz": "Topaz Dust",
+
   "item.kubejs.metal.double_sheet.electrum": "Electrum Double Sheet",
   "item.kubejs.metal.double_sheet.constantan": "Constantan Double Sheet",
   "item.kubejs.metal.double_sheet.aluminum": "Aluminum Double Sheet",

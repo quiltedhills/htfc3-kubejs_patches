@@ -3,6 +3,7 @@ onEvent('recipes', event => {
 	event.remove([
 		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
+		{id: 'mekanism:processing/fluorite/from_block'},
 
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},

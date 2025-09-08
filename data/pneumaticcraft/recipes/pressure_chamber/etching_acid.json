@@ -7,7 +7,7 @@
   "inputs": [
     {
       "base_ingredient": {
-        "item": "tfc:powder/pyrite"
+        "tag": "forge:dusts/pyrite"
       },
       "count": 2
     },
@@ -16,7 +16,7 @@
         "item": "tfc:ore/cryolite"
       },
       {
-        "item": "mekanism:fluorite_gem"
+        "item": "mekanism:dust_fluorite"
       }
     ],
     {
@@ -29,7 +29,7 @@
       "base_ingredient": {
         "tag": "forge:ores/clean_dusts/metals/copper"
       },
-      "count": 2
+      "count": 12
     }
   ],
   "result": {

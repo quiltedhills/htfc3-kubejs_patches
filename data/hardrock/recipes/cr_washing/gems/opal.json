@@ -1,0 +1,24 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/opal"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/opal"
+    },
+    {
+      "item": "mekanism:dust_quartz"
+    },
+    {
+      "item": "refinedstorage:silicon",
+      "chance": 0.75
+    },
+    {
+      "item": "mekanism:dust_lithium",
+      "chance": 0.25
+    }
+  ]
+}

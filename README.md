@@ -32,14 +32,16 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-• Replaced loot tables for sifting Gravel in a Create Sifter to match sluices <br/>
-• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
-• Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; yellow sand has a 1% chance) <br/>
-• Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
+• Added gemstone washing! Gems may be worth processing for byproducts in mid- and late-game now. Feedback wanted! <br/>
+• Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
+• Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
+• Added Pyrite to the Rare Gems virtual vein for the Create Drilling Machine <br/>
+• Increased drops from washing Andesite Rock Powder <br/>
+
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the Create Mechanical Press recipes for Rocky Chunks require only one action per ore item instead of four <br/>
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
-
+• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Reduced the amount of Rubberwood Planks you get from each log <br/>
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
@@ -79,3 +81,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed TNT having two identical crafting recipes <br/>
 • Made it impossible for zombie villagers to spawn <br/>
 • Made End Portal Frames not drop when broken within the End dimension <br/>
+• Fixed sugar cubes not having an uncrafting recipe <br/>
+• Fixed fluorite blocks not being craftable <br/>

@@ -2,7 +2,7 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "tfc:powder/sapphire"
+      "tag": "forge:dusts/sapphire"
     },
     {
       "fluid": "minecraft:water",

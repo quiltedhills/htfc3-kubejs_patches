@@ -1,0 +1,28 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/topaz"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/topaz"
+    },
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "chance": 0.50
+    },
+    {
+      "item": "mekanism:dust_lithium",
+      "chance": 0.10
+    },
+    {
+      "item": "mekanism:dust_fluorite"
+    },
+    {
+      "item": "mekanism:dust_fluorite",
+      "chance": 0.50
+    }
+  ]
+}

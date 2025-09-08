@@ -7,5 +7,15 @@
   "tfc.recipe.barrel.tfc.barrel.medium_leather": "Medium Tanned Hide",
   "tfc.recipe.barrel.tfc.barrel.large_leather": "Large Tanned Hide",
 
-  "tfc.advancements.world.full_nutrition.title": "Doctors Hate Them"
+  "tfc.advancements.world.full_nutrition.title": "Doctors Hate Them",
+
+  "item.tfc.powder.amethyst": "Crushed Amethyst",
+  "item.tfc.powder.diamond": "Crushed Diamond",
+  "item.tfc.powder.emerald": "Crushed Emerald",
+  "item.tfc.powder.lapis_lazuli": "Crushed Lapis Lazuli",
+  "item.tfc.powder.opal": "Crushed Opal",
+  "item.tfc.powder.pyrite": "Crushed Pyrite",
+  "item.tfc.powder.ruby": "Crushed Ruby",
+  "item.tfc.powder.sapphire": "Crushed Sapphire",
+  "item.tfc.powder.topaz": "Crushed Topaz"
 }

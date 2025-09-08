@@ -10,6 +10,10 @@
   ],
   "results": [
     {
+      "item": "tfc:ore/topaz",
+      "chance": 0.011
+    },
+    {
       "item": "kubejs:misc_mats/ceramic_shards",
       "chance": 0.35
     },
@@ -24,10 +28,6 @@
     {
       "item": "minecraft:bone",
       "chance": 0.1
-    },
-    {
-      "item": "tfc:ore/topaz",
-      "chance": 0.005
     }
   ],
   "processingTime": 500

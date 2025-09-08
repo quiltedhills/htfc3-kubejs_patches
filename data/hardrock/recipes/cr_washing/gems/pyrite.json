@@ -1,0 +1,24 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/pyrite"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/pyrite"
+    },
+    {
+      "item": "mekanism:dust_iron",
+      "chance": 0.50
+    },
+    {
+      "item": "tfc:powder/sulfur"
+    },
+    {
+      "item": "mekanism:dust_gold",
+      "chance": 0.50
+    }
+  ]
+}

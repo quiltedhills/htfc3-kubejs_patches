@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/emerald"
+  },
+  "loot_table": "tfc:sluicing/gems/emerald"
+}

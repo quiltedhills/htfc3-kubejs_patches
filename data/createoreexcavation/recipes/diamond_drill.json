@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "createoreexcavation:drill"
+  },
+  "second_input": {
+    "tag": "forge:dusts/diamond"
+  },
+  "tier": 3,
+  "result": {
+    "item": "createoreexcavation:diamond_drill"
+  }
+}

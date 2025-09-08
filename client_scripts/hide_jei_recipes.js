@@ -2,6 +2,12 @@ onEvent('jei.remove.recipes', event => {
 	// I saved a recipe type dump to 'hide_jei_recipes_types.txt'.
 	// You can refer to that file to get category names for this script!
 
+	event.remove('minecraft:crafting', [
+		'hardrock:mc_crafting/legacy_amethyst_powder'
+	])
+	event.remove('create:automatic_shaped', [
+		'hardrock:mc_crafting/legacy_amethyst_powder'
+	])
 	event.remove('tfc:sealed_barrel', [
 		'hardrock:tfc_barrel/ice_shavings_with_water',
 		'hardrock:tfc_barrel/snowball_with_water'

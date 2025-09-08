@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:clean_gem_dust/amethyst"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "immersiveengineering:dust_aluminum",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mekanism:dust_lithium",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.10
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mekanism:dust_fluorite"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mekanism:dust_fluorite",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

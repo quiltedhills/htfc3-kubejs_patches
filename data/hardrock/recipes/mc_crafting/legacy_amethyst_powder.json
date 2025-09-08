@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kubejs:clean_amethyst_powder"
+    }
+  ],
+  "result": {
+    "item": "kubejs:clean_gem_dust/amethyst"
+  }
+}
