@@ -48,7 +48,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
 • Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
-• Added a recipe for Barrel Cacti <br/>
+• Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
 • Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
 • Added Create Mixer recipe for dye fluids <br/>
@@ -74,3 +74,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed backpacks being storable in Small Vessels <br/>
 • Fixed Twilight Forest Venison and Meef not being obtainable <br/>
 • Removed some unobtainable meat types from JEI <br/>
+• Fixed TNT having two identical crafting recipes <br/>

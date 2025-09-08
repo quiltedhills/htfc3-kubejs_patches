@@ -52,6 +52,7 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:items/canola_to_dye'},
 		{id: 'untamedwilds:items/water_hyacinth_to_dye'},
 
+		{id: 'tfc:crafting/vanilla/tnt'},
 		{id: 'pneumaticcraft:seismic_sensor'},
 		{id: 'supplementaries:faucet'},
 		{id: 'supplementaries:sconce'},
