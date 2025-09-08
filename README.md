@@ -32,37 +32,39 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-• Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
-• Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
-• Made the Create Mechanical Press rocky chunk recipe require only one action per ore instead of four <br/>
+• Replaced loot tables for sifting Gravel in a Create Sifter to match sluices <br/>
+• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; yellow sand has a 1% chance) <br/>
+• Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
+• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
+• Made the Create Mechanical Press recipes for Rocky Chunks require only one action per ore item instead of four <br/>
+• Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
+
 • Reduced the amount of Rubberwood Planks you get from each log <br/>
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
-• Swapped out Rubies for Pyrite in the Rare Gems virtual vein for the Create Drilling Machine <br/>
-• Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
-• Micromissiles are now more expensive to craft <br/>
+• Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
+• Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
+
+• Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
+• Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
 • Made oven appliances such as cooking pots and kettles count as oven insulation <br/>
 • Added a Mekanism recipe for turning Loose Rocks into bricks <br/>
 • Added a Mekanism recipe for making Andesite Alloy <br/>
-• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
+
+• Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
+• Micromissiles are now more expensive to craft <br/>
 • Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
-• Removed odd Latex Bucket recipe involving supports <br/>
 • Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
-• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
-• Made the Rod into Nugget sequenced recipes only take four actions instead of five <br/>
+• Removed odd Latex Bucket recipe involving supports <br/>
 • Added Create Mixer recipe for dye fluids <br/>
 • Tweaked coffee-related recipes and item names <br/>
-• Made it impossible for zombie villagers to spawn <br/>
-• Made End Portal Frames not drop when broken within the End dimension <br/>
-• Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
-• Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
 • Fixed recipe conflict for Propellers, as well as Copycat Layers, Bytes and Slices <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
@@ -75,3 +77,5 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed Twilight Forest Venison and Meef not being obtainable <br/>
 • Removed some unobtainable meat types from JEI <br/>
 • Fixed TNT having two identical crafting recipes <br/>
+• Made it impossible for zombie villagers to spawn <br/>
+• Made End Portal Frames not drop when broken within the End dimension <br/>

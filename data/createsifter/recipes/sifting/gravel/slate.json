@@ -5,12 +5,12 @@
       "item": "createsifter:brass_mesh"
     },
     {
-      "item": "tfc:rock/gravel/quartzite"
+      "item": "tfc:rock/gravel/slate"
     }
   ],
   "results": [
     {
-      "item": "tfc:rock/loose/quartzite",
+      "item": "tfc:rock/loose/slate",
       "chance": 0.40
     },
     {
@@ -30,7 +30,7 @@
       "chance": 0.05
     },
     {
-      "item": "tfc:ore/emerald",
+      "item": "tfc:ore/opal",
       "chance": 0.001
     }
   ],
