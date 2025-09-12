@@ -61,6 +61,7 @@ Please feel free to reach out to me on discord for any questions!
 • Removed odd Latex Bucket recipe involving supports <br/>
 • Added Create Mixer recipe for dye fluids <br/>
 • Tweaked coffee-related recipes and item names <br/>
+• Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>

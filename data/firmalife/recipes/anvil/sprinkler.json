@@ -1,0 +1,20 @@
+{
+  "type": "tfc:anvil",
+  "input": [
+    {
+      "tag": "forge:sheets/red_steel"
+    },
+    {
+      "tag": "forge:sheets/blue_steel"
+    }
+  ],
+  "result": {
+    "item": "firmalife:sprinkler"
+  },
+  "tier": 6,
+  "rules": [
+    "bend_last",
+    "punch_second_last",
+    "shrink_third_last"
+  ]
+}
