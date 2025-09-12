@@ -6,6 +6,6 @@
     {"type": "create:deploying","ingredients": [{"item": "create:zinc_ingot"},{"item": "createdeco:zinc_bars"}],"results": [{"item": "create:zinc_ingot"}]},
     {"type": "create:pressing","ingredients": [{"item": "create:zinc_ingot"}],"results": [{"item": "create:zinc_ingot"}]}
     ],
-  "results": [{"item": "create:copycat_panel", "count": 1}],
+  "results": [{"item": "create:copycat_panel", "count": 4}],
   "loops": 1
 }

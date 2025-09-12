@@ -68,7 +68,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
-• Fixed recipe conflict for Propellers, as well as Copycat Layers, Bytes and Slices <br/>
+• Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
