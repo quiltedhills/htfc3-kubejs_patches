@@ -2,10 +2,10 @@
   "type": "createoreexcavation:drilling",
   "name": "{\"translate\":\"Osmium vein\"}",
   "drill": {
-    "tag": "createoreexcavation:high_tier_drills"
+    "item": "createoreexcavation:netherite_drill"
   },
-  "amountMax": 8.0,
   "amountMin": 2.0,
+  "amountMax": 8.0,
   "biomeWhitelist": "tfc:is_vein",
   "weight": 2,
   "ticks": 400,

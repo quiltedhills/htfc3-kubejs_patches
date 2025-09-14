@@ -17,9 +17,9 @@
   },
   "output": [
     {"chance": 0.70,"item": "tfc:rock/loose/andesite"},
+    {"chance": 0.25,"item": "mekanism:fluorite_gem"},
     {"chance": 0.05,"item": "tfc:ore/diamond"},
     {"chance": 0.05,"item": "tfc:ore/lapis_lazuli"},
-    {"chance": 0.05,"item": "tfc:ore/ruby"},
     {"chance": 0.05,"item": "tfc:ore/sapphire"},
     {"chance": 0.05,"item": "tfc:ore/pyrite"},
     {"chance": 0.05,"item": "tfc:ore/emerald"}
