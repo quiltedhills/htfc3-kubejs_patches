@@ -2,15 +2,6 @@
   "type": "forge:conditional",
   "recipes": [
     {
-      "conditions": [
-        {
-          "modid": "sewingkit",
-          "type": "forge:mod_loaded"
-        },
-        {
-          "type": "toolbelt:enable_sewing_crafting"
-        }
-      ],
       "recipe": {
         "type": "sewingkit:sewing",
         "materials": [
@@ -28,7 +19,7 @@
           },
           {
             "ingredient": {
-              "tag": "tfc:gem_powders/slot"
+              "tag": "tfc:gem_dust/minor"
             },
             "count": 1
           },

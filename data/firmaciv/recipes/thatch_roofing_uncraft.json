@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firmaciv:thatch_roofing"
+    }
+  ],
+  "result": {
+    "item": "tfc:straw"
+  }
+}

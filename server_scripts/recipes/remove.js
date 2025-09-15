@@ -2,7 +2,7 @@
 
 // Sneaky entity removal
 onEvent('entity.spawned', event => {
-	if (event.entity.type == 'minecraft:chicken') {
+	if (event.entity.type == 'minecraft:chicken' || event.entity.type == 'minecraft:zombie_villager') {
 		event.cancel()
 	}
 })
@@ -341,6 +341,6 @@ onEvent('recipes', event => {
 
 
 	// Go around wildcard removals
-	event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire'])
-	.id('kubejs:electrum_wire_conversion')
+	event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire']).id('kubejs:electrum_wire_conversion')
+	event.shapeless('9x minecraft:sugar', ['supplementaries:sugar_cube']).id('supplementaries:sugar_cube_uncrafting')
 })

@@ -1,0 +1,13 @@
+{
+  "type": "exnihilosequentia:hammer",
+  "input": {
+    "tag": "forge:sand"
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": "exnihilosequentia:dust",
+      "count": 1
+    }
+  ]
+}

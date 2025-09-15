@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/ruby"
+  },
+  "loot_table": "tfc:sluicing/gems/ruby"
+}

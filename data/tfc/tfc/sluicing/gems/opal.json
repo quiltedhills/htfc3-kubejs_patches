@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/opal"
+  },
+  "loot_table": "tfc:sluicing/gems/opal"
+}

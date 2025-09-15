@@ -1,0 +1,24 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/amethyst"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/amethyst"
+    },
+    {
+      "item": "mekanism:dust_quartz"
+    },
+    {
+      "item": "mekanism:dust_iron",
+      "chance": 0.50
+    },
+    {
+      "item": "mekanism:dust_fluorite",
+      "chance": 0.25
+    }
+  ]
+}

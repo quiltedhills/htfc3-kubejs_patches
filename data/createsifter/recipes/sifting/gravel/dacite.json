@@ -1,0 +1,38 @@
+{
+  "type": "createsifter:sifting",
+  "ingredients": [
+    {
+      "item": "createsifter:brass_mesh"
+    },
+    {
+      "item": "tfc:rock/gravel/dacite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/loose/dacite",
+      "chance": 0.40
+    },
+    {
+      "item": "tfc:ore/small_native_copper",
+      "chance": 0.20
+    },
+    {
+      "item": "minecraft:flint",
+      "chance": 0.10
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:bone",
+      "chance": 0.05
+    },
+    {
+      "item": "tfc:ore/diamond",
+      "chance": 0.001
+    }
+  ],
+  "processingTime": 500
+}

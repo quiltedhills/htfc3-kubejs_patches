@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/amethyst"
+  },
+  "loot_table": "tfc:sluicing/gems/amethyst"
+}

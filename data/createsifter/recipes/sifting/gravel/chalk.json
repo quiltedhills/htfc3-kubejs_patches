@@ -10,19 +10,28 @@
   ],
   "results": [
     {
-      "item": "tfc:sand/white"
+      "item": "tfc:rock/loose/chalk",
+      "chance": 0.40
     },
     {
-      "item": "mekanism:nugget_osmium",
-      "chance": 0.12
+      "item": "tfc:ore/small_native_copper",
+      "chance": 0.20
     },
     {
-      "item": "refinedstorage:silicon",
-      "chance": 0.02
+      "item": "minecraft:flint",
+      "chance": 0.10
     },
     {
-      "item": "create:experience_nugget",
-      "chance": 0.15
+      "item": "minecraft:gold_nugget",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:bone",
+      "chance": 0.05
+    },
+    {
+      "item": "tfc:ore/ruby",
+      "chance": 0.001
     }
   ],
   "processingTime": 500

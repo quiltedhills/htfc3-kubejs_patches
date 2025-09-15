@@ -1,0 +1,85 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:storage_blocks/brass"
+  },
+  "transitionalItem": {
+    "item": "create:brass_ingot"
+  },
+  "sequence": [
+    {
+      "type": "createaddition:rolling",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        },
+        {
+          "item": "create:shaft"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "create:peculiar_bell"
+    }
+  ],
+  "loops": 1
+}

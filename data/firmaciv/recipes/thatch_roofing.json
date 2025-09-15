@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  " T",
+  "TS"
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "tfc:thatch"
+    },
+    "S":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "firmaciv:thatch_roofing",
+    "count": 4
+  }
+}

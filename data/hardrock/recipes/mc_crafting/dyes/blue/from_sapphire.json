@@ -1,12 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:filling",
   "ingredients": [
     {
-      "item": "tfc:powder/sapphire"
+      "tag": "forge:dusts/sapphire"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 125
     }
   ],
-  "result": {
-    "item": "minecraft:blue_dye",
-    "count": 2
-  }
+  "results": [
+    {
+      "item": "minecraft:blue_dye",
+      "count": 2
+    }
+  ]
 }

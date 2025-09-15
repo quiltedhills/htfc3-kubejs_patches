@@ -1,8 +1,13 @@
 {
   "type": "tfc:welding",
-  "first_input": {
-    "item": "tfc:metal/unfinished_chestplate/blue_steel"
-  },
+  "first_input": [
+    {
+      "item": "tfc:metal/unfinished_chestplate/blue_steel"
+    },
+    {
+      "item": "tfc:metal/unfinished_chestplate/red_steel"
+    }
+  ],
   "second_input": {
     "item": "tconstruct:cobalt_reinforcement"
   },

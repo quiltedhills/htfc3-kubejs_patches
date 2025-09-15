@@ -1,8 +1,13 @@
 {
   "type": "tfc:welding",
-  "first_input": {
-    "item": "tfc:metal/shield/blue_steel"
-  },
+  "first_input": [
+    {
+      "item": "tfc:metal/shield/blue_steel"
+    },
+    {
+      "item": "tfc:metal/shield/red_steel"
+    }
+  ],
   "second_input": {
     "item": "tconstruct:cobalt_reinforcement"
   },

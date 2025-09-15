@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:fishing",
   "pools": [
     {
@@ -15,7 +14,17 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.15
+                  "chance": 0.10
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
                 }
               ]
             },
@@ -25,7 +34,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.07
+                  "chance": 0.12
                 }
               ]
             },
@@ -35,7 +44,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.02
+                  "chance": 0.04
                 }
               ]
             },
@@ -45,7 +54,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.02
+                  "chance": 0.04
                 }
               ]
             },
@@ -55,27 +64,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.01
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "tfc:powder/amethyst",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.001
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "tfc:powder/opal",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.001
+                  "chance": 0.04
                 }
               ]
             }

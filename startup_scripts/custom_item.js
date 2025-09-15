@@ -3,11 +3,19 @@
 console.info('Registering KJS Items...')
 
 onEvent('item.registry', event => {
-	event.create('metal/double_sheet/electrum')   // display names are in kubejs/assets/kubejs/en_us.json
-	event.create('metal/double_sheet/constantan')
+	event.create('metal/double_sheet/electrum')   // Display names are in kubejs/assets/kubejs/en_us.json
+	event.create('metal/double_sheet/constantan') // because having slashes in registry names breaks .displayName()
 	event.create('metal/double_sheet/aluminum')
 	event.create('metal/double_sheet/lead')
 	event.create('metal/double_sheet/uranium')
+
+	event.create('clean_gem_dust/amethyst')
+	event.create('clean_gem_dust/opal')
+	event.create('clean_gem_dust/pyrite')
+	event.create('clean_gem_dust/ruby')
+	event.create('clean_gem_dust/sapphire')
+	event.create('clean_gem_dust/topaz')
+	event.create('clean_amethyst_powder').texture('kubejs:item/amethyst_old') // Old item version for compatibility
 
 	event.create('misc_mats/andesite_alloy/rod')
 	event.create('misc_mats/andesite_alloy/sheet')
@@ -43,7 +51,6 @@ onEvent('item.registry', event => {
 	event.create('shark_cooked_meat')			.displayName('Cooked Shark Meat')	.food(food => {food.hunger(7).saturation(1.0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Mniaam Cooked Shark!'))})})
 	event.create('crumbled_rock')
 	event.create('andesite_rock_powder')
-	event.create('clean_amethyst_powder')		.displayName('Amethyst Dust')
 	event.create('cut_tea_leaves')
 	event.create('dry_tea_leaves')
 	event.create('cut_cattail')

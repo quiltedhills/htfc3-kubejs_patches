@@ -1,0 +1,32 @@
+{
+  "type": "tfc:advanced_shaped_crafting",
+  "pattern": [
+    " mm",
+    "imm",
+    "si "
+  ],
+  "key": {
+    "m": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "minecraft:melon_slice"
+      }
+    },
+    "i": {
+      "item": "firmalife:ice_shavings"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "input_row": 0,
+  "input_column": 2,
+  "result": {
+    "stack": {
+      "item": "farmersdelight:melon_popsicle"
+    },
+    "modifiers": [
+      "tfc:copy_food"
+    ]
+  }
+}

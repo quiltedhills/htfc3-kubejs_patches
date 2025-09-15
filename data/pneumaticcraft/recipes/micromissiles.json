@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "WPW",
+    "WBW"
+  ],
+  "key": {
+    "W": {
+      "tag": "pneumaticcraft:plastic_sheets"
+    },
+    "P": {
+      "item": "pneumaticcraft:printed_circuit_board"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "B": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "tconstruct:blazing_blood",
+        "amount": 1000
+      }
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:micromissiles",
+    "nbt": "{Damage: 75}"
+  }
+}

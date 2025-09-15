@@ -1,10 +1,4 @@
 {
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "tfc_ie_addon"
-    }
-  ],
   "type": "createoreexcavation:drilling",
   "name": "{\"translate\":\"Uraninite vein\"}",
   "drill": {

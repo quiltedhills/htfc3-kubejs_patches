@@ -10,6 +10,16 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "tfc:ore/pyrite",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.011
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
               "name": "tfc:ore/small_limonite",
               "conditions": [
                 {
@@ -35,16 +45,6 @@
                 {
                   "condition": "minecraft:random_chance",
                   "chance": 0.1
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "tfc:ore/pyrite",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.002
                 }
               ]
             }

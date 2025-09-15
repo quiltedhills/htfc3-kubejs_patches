@@ -1,0 +1,28 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/emerald"
+    }
+  ],
+  "results": [
+    {
+      "item": "mekanism:dust_emerald"
+    },
+    {
+      "item": "mekanism:dust_quartz"
+    },
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "chance": 0.75
+    },
+    {
+      "item": "immersiveengineering:dust_nickel",
+      "chance": 0.50
+    },
+    {
+      "item": "mekanism:dust_lithium",
+      "chance": 0.10
+    }
+  ]
+}

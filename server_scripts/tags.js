@@ -15,11 +15,19 @@ onEvent('tags.blocks', event => {
 	event.remove('ftbchunks:interact_whitelist', [
 		'minecraft:crafting_table'
 	])
-
 	event.add('firmalife:oven_blocks', [
 		'firmalife:vat',
 		'firmalife:stovetop_grill',
-		'firmalife:stovetop_pot'
+		'firmalife:stovetop_pot',
+		'farmersdelight:cooking_pot',
+		'farmersrespite:kettle'
+	])
+	event.add('firmalife:oven_insulation', [
+		'firmalife:vat',
+		'firmalife:stovetop_grill',
+		'firmalife:stovetop_pot',
+		'farmersdelight:cooking_pot',
+		'farmersrespite:kettle'
 	])
 	event.add('firmalife:drops_ice_shavings', 'tfc:ice_pile')
 	event.add('tfc:needs_colored_steel_tool', [
@@ -302,6 +310,13 @@ onEvent('tags.items', event => {
 	event.add('farmersdelight:nourishing', ['#farmersdelight:nourishing/1', '#farmersdelight:nourishing/2', '#farmersdelight:nourishing/3'])
 
 	event.remove('tfc:gem_powders', 'tfc:powder/lapis_lazuli')
+	event.add('forge:dusts/amethyst', ['kubejs:clean_gem_dust/amethyst', 'kubejs:clean_amethyst_powder']) // Includes old amethyst powder for compatibility
+	event.add('forge:dusts/opal', 'kubejs:clean_gem_dust/opal')
+	event.add('forge:dusts/pyrite', 'kubejs:clean_gem_dust/pyrite')
+	event.add('forge:dusts/ruby', 'kubejs:clean_gem_dust/ruby')
+	event.add('forge:dusts/sapphire', 'kubejs:clean_gem_dust/sapphire')
+	event.add('forge:dusts/topaz', 'kubejs:clean_gem_dust/topaz')
+
 	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:can_be_lit_on_torch', 'tfc:dead_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
@@ -1091,7 +1106,6 @@ onEvent('tags.items', event => {
 	event.add('forge:dusts/salt', 'tfc:powder/salt')
 	event.add('forge:dusts/saltpeter', 'tfc:powder/saltpeter')
 	event.add('forge:dusts/graphite', 'tfc:powder/graphite')
-	event.add('forge:dusts/amethyst', 'kubejs:clean_amethyst_powder')
 	event.add('forge:honey_jar', ['firmalife:honey_jar','minecraft:honey_bottle'])
 	event.add('forge:raw_honey', ['firmalife:raw_honey','minecraft:honeycomb'])
 	event.add('forge:thatch', [
@@ -1249,6 +1263,7 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		'#travelersbackpack:custom_travelers_backpack',
 		/^animaltrap:.+_carcass$/,
 		'immersiveengineering:treated_post',
 		'immersiveengineering:alu_post',
@@ -1881,13 +1896,18 @@ onEvent('tags.items', event => {
 		'tfc:plant/hibiscus',
 		'twilightforest:mining_leaves'
 	]),
-	event.add('tfc:gem_powders/slot', [
-		'tfc:powder/amethyst',
-		'tfc:powder/opal',
-		'tfc:powder/ruby',
-		'tfc:powder/sapphire',
-		'tfc:powder/topaz',
-		'tfc:powder/pyrite'
+	event.add('tfc:gem_dust/minor', [
+		'kubejs:clean_gem_dust/amethyst',
+		'kubejs:clean_gem_dust/opal',
+		'kubejs:clean_gem_dust/ruby',
+		'kubejs:clean_gem_dust/sapphire',
+		'kubejs:clean_gem_dust/topaz',
+		'kubejs:clean_gem_dust/pyrite'
+	]),
+	event.add('tfc:gem_dust', [
+		'#tfc:gem_powders/slot',
+		'#forge:dusts/diamond',
+		'#forge:dusts/emerald'
 	]),
 	event.add('forge:sleeping_bags', [
 		'#travelersbackpack:sleeping_bags',
@@ -2400,6 +2420,10 @@ onEvent('tags.items', event => {
     'htm:cooked_poultry_breast'
   ]) */
 	event.removeAllTagsFrom(
+		'untamedwilds:food_turtle_raw',
+		'untamedwilds:food_turtle_cooked',
+		'untamedwilds:food_bear_raw',
+		'untamedwilds:food_bear_cooked',
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',

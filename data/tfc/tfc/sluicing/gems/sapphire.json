@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/sapphire"
+  },
+  "loot_table": "tfc:sluicing/gems/sapphire"
+}

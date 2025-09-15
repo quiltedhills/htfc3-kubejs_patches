@@ -28,10 +28,14 @@ onEvent('jei.hide.items', event => {
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
 		'pneumaticcraft:seismic_sensor',
+		'kubejs:clean_amethyst_powder',
 
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',
+		'untamedwilds:food_bear_cooked',
 		/^butchersdelightfoods:.+llama/,
+		'untamedwilds:food_turtle_raw',
+		'untamedwilds:food_turtle_cooked',
 
 		'supplementaries:faucet',
 		'firmalife:ice_fishing_station',

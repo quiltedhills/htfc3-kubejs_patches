@@ -9,10 +9,6 @@
     {
       "item": "firmalife:spice/ground_cinnamon",
       "count": 1
-    },
-    {
-      "item": "firmalife:spice/ground_cinnamon",
-      "chance": 0.5
     }
   ],
   "processingTime": 100

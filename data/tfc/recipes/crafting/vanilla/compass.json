@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G",
+    "M",
+    "B"
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:2panes"
+    },
+    "M": {
+      "tag": "tfc:magnetic_rocks"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "minecraft:compass"
+  }
+}

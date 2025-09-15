@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "I",
+    "B",
     "D"
   ],
   "key": {
     "D": [
       {
-        "tag": "tfc:gem_powders"
+        "tag": "tfc:gem_dust"
       },
       {
         "tag": "forge:dusts/redstone"
       }
     ],
-    "I": {
+    "B": {
       "item": "tfc:brass_mechanisms"
     }
   },

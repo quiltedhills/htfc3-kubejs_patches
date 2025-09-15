@@ -1,0 +1,34 @@
+{
+  "block.immersiveengineering.alu_post": "Aluminium Post (Aluminum Support)",
+
+  "material.treatedwood.name": "Creosote-Treated Wood",
+  "item.immersiveengineering.stick_treated": "Creosote-Treated Stick",
+  "advancement.immersiveengineering.craft_treatedwood.desc": "Craft some Creosote-Treated Wood",
+
+  "block.immersiveengineering.treated_wood_horizontal": "Creosote-Treated Wood Planks",
+  "block.immersiveengineering.treated_wood_vertical": "Creosote-Treated Wood Planks",
+  "block.immersiveengineering.treated_wood_packaged": "Creosote-Treated Wood Planks",
+  "block.immersiveengineering.slab_treated_wood_horizontal": "Creosote-Treated Wood Slab",
+  "block.immersiveengineering.slab_treated_wood_vertical": "Creosote-Treated Wood Slab",
+  "block.immersiveengineering.slab_treated_wood_packaged": "Creosote-Treated Wood Slab",
+  "block.immersiveengineering.stairs_treated_wood_horizontal": "Creosote-Treated Wood Stairs",
+  "block.immersiveengineering.stairs_treated_wood_vertical": "Creosote-Treated Wood Stairs",
+  "block.immersiveengineering.stairs_treated_wood_packaged": "Creosote-Treated Wood Stairs",
+  "block.immersiveengineering.treated_fence": "Creosote-Treated Wood Fence",
+  "block.immersiveengineering.treated_scaffold": "Creosote-Treated Wood Scaffolding",
+  
+  
+  "block.immersiveengineering.steel_scaffolding_grate_top": "Steel Scaffolding (Grate Top)",
+  "block.immersiveengineering.slab_steel_scaffolding_grate_top": "Steel Scaffolding Slab (Grate Top)",
+  "block.immersiveengineering.stairs_steel_scaffolding_grate_top": "Steel Scaffolding Stairs (Grate Top)",
+  "block.immersiveengineering.steel_scaffolding_wooden_top": "Steel Scaffolding (Wooden Top)",
+  "block.immersiveengineering.slab_steel_scaffolding_wooden_top": "Steel Scaffolding Slab (Wooden Top)",
+  "block.immersiveengineering.stairs_steel_scaffolding_wooden_top": "Steel Scaffolding Stairs (Wooden Top)",
+
+  "block.immersiveengineering.alu_scaffolding_grate_top": "Aluminium Scaffolding (Grate Top)",
+  "block.immersiveengineering.slab_alu_scaffolding_grate_top": "Aluminium Scaffolding Slab (Grate Top)",
+  "block.immersiveengineering.stairs_alu_scaffolding_grate_top": "Aluminium Scaffolding Stairs (Grate Top)",
+  "block.immersiveengineering.alu_scaffolding_wooden_top": "Aluminium Scaffolding (Wooden Top)",
+  "block.immersiveengineering.slab_alu_scaffolding_wooden_top": "Aluminium Scaffolding Slab (Wooden Top)",
+  "block.immersiveengineering.stairs_alu_scaffolding_wooden_top": "Aluminium Scaffolding Stair (Wooden Top)s"
+}

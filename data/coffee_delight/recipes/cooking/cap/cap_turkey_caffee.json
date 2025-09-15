@@ -1,7 +1,7 @@
 {
   "type": "farmersrespite:brewing",
   "ingredients": [
-    {"item": "firmalife:spice/cinnamon"},
+    {"item": "firmalife:spice/ground_cinnamon"},
     {"item": "coffee_delight:coffee_flour"}
   ],
   "result": {"item": "coffee_delight:cap_turkey_coffee"},

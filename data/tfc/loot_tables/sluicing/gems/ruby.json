@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:clean_gem_dust/ruby"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mekanism:dust_quartz"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "immersiveengineering:dust_aluminum",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:pellet_chromium"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:pellet_chromium",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

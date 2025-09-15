@@ -3,6 +3,7 @@ onEvent('recipes', event => {
 	event.remove([
 		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
+		{id: 'mekanism:processing/fluorite/from_block'},
 
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},
@@ -52,6 +53,7 @@ onEvent('recipes', event => {
 		{id: 'untamedwilds:items/canola_to_dye'},
 		{id: 'untamedwilds:items/water_hyacinth_to_dye'},
 
+		{id: 'tfc:crafting/vanilla/tnt'},
 		{id: 'pneumaticcraft:seismic_sensor'},
 		{id: 'supplementaries:faucet'},
 		{id: 'supplementaries:sconce'},

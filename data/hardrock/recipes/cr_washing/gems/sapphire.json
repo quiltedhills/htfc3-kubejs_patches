@@ -1,0 +1,24 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/sapphire"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:clean_gem_dust/sapphire"
+    },
+    {
+      "item": "mekanism:dust_quartz"
+    },
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "chance": 0.75
+    },
+    {
+      "item": "mekanism:dust_iron",
+      "chance": 0.50
+    }
+  ]
+}
