@@ -58,6 +58,7 @@ Please feel free to reach out to me on discord for any questions!
 • Micromissiles are now more expensive to craft <br/>
 • Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
 • Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
+• Made the compass recipe accept primitive glass panes <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
 • Added Create Mixer recipe for dye fluids <br/>
 • Tweaked coffee-related recipes and item names <br/>
