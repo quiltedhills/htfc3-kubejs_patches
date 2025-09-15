@@ -5,7 +5,7 @@
     "firmalife:goat_milk",
     "kubejs:oat_milk"
   ],
-  "thirst": 10,
+  "thirst": 20,
   "effects": [
     {
       "type": "minecraft:regeneration",
