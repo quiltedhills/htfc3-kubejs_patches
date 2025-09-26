@@ -75,6 +75,7 @@ Please feel free to reach out to me on discord for any questions!
 
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
+• Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
@@ -89,5 +90,5 @@ Please feel free to reach out to me on discord for any questions!
 • Made End Portal Frames not drop when broken within the End dimension <br/>
 • Fixed sugar cubes not having an uncrafting recipe <br/>
 • Fixed fluorite blocks not being craftable <br/>
-• Fixed reinforced stone being a valid stone type for making itself <br/>
+• Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
 • Removed a weird mutton cutting recipe <br/>
