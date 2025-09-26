@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:crusher",
+  "input": {
+    "item": "minecraft:ice"
+  },
+  "result": {
+    "base_ingredient": {
+      "item": "firmalife:ice_shavings"
+    },
+    "count": 3
+  },
+  "secondaries": [
+    {
+      "chance": 0.5,
+      "output": {
+        "base_ingredient": {
+          "item": "firmalife:ice_shavings"
+        },
+        "count": 1
+      }
+    }
+  ],
+  "energy": 400
+}
