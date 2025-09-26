@@ -58,7 +58,7 @@ Please feel free to reach out to me on discord for any questions!
 
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles are now more expensive to craft <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets and Andesite Exoskeletons <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons and Garlic Bread <br/>
 • Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
 • Made the compass recipe accept primitive glass panes <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
@@ -89,4 +89,5 @@ Please feel free to reach out to me on discord for any questions!
 • Made End Portal Frames not drop when broken within the End dimension <br/>
 • Fixed sugar cubes not having an uncrafting recipe <br/>
 • Fixed fluorite blocks not being craftable <br/>
+• Fixed reinforced stone being a valid stone type for making itself <br/>
 • Removed a weird mutton cutting recipe <br/>
