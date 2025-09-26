@@ -66,6 +66,7 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked coffee-related recipes and item names <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
 • Made Osmium virtual veins for the Create Drilling Machine require a netherite drill <br/>
+• Changed map color of Terror Birds to orange (from white) <br/>
 
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
