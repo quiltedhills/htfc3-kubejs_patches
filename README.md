@@ -48,6 +48,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
+• Toolboxes from Create are no longer craftable <br/>
 
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
 • Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
@@ -87,3 +88,4 @@ Please feel free to reach out to me on discord for any questions!
 • Made End Portal Frames not drop when broken within the End dimension <br/>
 • Fixed sugar cubes not having an uncrafting recipe <br/>
 • Fixed fluorite blocks not being craftable <br/>
+• Removed a weird mutton cutting recipe <br/>
