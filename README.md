@@ -38,6 +38,7 @@ Please feel free to reach out to me on discord for any questions!
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
 • Added Pyrite and Fluorite to the Rare Gems virtual vein for the Create Drilling Machine, removed Ruby due to being less useful <br/>
 • Increased drops from washing Andesite Rock Powder <br/>
+• Added recipes for TF cloud blocks <br/>
 
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Made the Create Mechanical Press recipes for Rocky Chunks require only one action per ore item instead of four <br/>
