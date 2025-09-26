@@ -73,7 +73,9 @@ Please feel free to reach out to me on discord for any questions!
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
+• Fixed the crafting table filter application recipes crashing the game <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
+• Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
 • Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
