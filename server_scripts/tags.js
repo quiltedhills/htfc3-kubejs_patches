@@ -15,6 +15,9 @@ onEvent('tags.blocks', event => {
 	event.remove('ftbchunks:interact_whitelist', [
 		'minecraft:crafting_table'
 	])
+	event.add('create:non_movable', [
+		'#create:toolboxes'
+	])
 	event.add('firmalife:oven_blocks', [
 		'firmalife:vat',
 		'firmalife:stovetop_grill',
@@ -77,6 +80,13 @@ onEvent('tags.blocks', event => {
 	])
 	event.add('tfc:can_landslide', [
 		'exnihilosequentia:infested_leaves'
+	])
+	event.add('tfc:toughness_3', [
+		'mekanism:digital_miner',
+		'mekanism:bounding_block'
+	])
+	event.add('tfc:can_be_snow_piled', [
+		'tfc:placed_item'
 	])
 	event.add('tfc:can_trigger_collapse', [
 		/^tfc:raw_sandstone\/.+/,
@@ -1241,8 +1251,6 @@ onEvent('tags.items', event => {
 		'kubejs:stack_treated_wood',
 		'kubejs:big_stack_treated_wood',
 		'kubejs:canoe',
-		'kubejs:press_head',
-		'kubejs:hardened_press_head',
 		'#functionalstorage:drawer',
 		'#tfc:barrels',
 		'exnihilosequentia:stone_barrel',
@@ -1263,6 +1271,9 @@ onEvent('tags.items', event => {
 		'smallships:cannon_ball'
 	]),
 	event.add('tfc:very_large_heavy', [
+		'kubejs:press_head',
+		'kubejs:hardened_press_head',
+		'create:steam_engine',
 		'#travelersbackpack:custom_travelers_backpack',
 		/^animaltrap:.+_carcass$/,
 		'immersiveengineering:treated_post',

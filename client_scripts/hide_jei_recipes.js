@@ -3,23 +3,7 @@ onEvent('jei.remove.recipes', event => {
 	// You can refer to that file to get category names for this script!
 
 	event.remove('minecraft:crafting', [
-		'hardrock:mc_crafting/legacy_amethyst_powder',
-		'create:create.toolbox.color.block.create.white_toolbox',
-		'create:create.toolbox.color.block.create.orange_toolbox',
-		'create:create.toolbox.color.block.create.magenta_toolbox',
-		'create:create.toolbox.color.block.create.light_blue_toolbox',
-		'create:create.toolbox.color.block.create.yellow_toolbox',
-		'create:create.toolbox.color.block.create.lime_toolbox',
-		'create:create.toolbox.color.block.create.pink_toolbox',
-		'create:create.toolbox.color.block.create.gray_toolbox',
-		'create:create.toolbox.color.block.create.light_gray_toolbox',
-		'create:create.toolbox.color.block.create.cyan_toolbox',
-		'create:create.toolbox.color.block.create.purple_toolbox',
-		'create:create.toolbox.color.block.create.blue_toolbox',
-		'create:create.toolbox.color.block.create.brown_toolbox',
-		'create:create.toolbox.color.block.create.green_toolbox',
-		'create:create.toolbox.color.block.create.red_toolbox',
-		'create:create.toolbox.color.block.create.black_toolbox'
+		'hardrock:mc_crafting/legacy_amethyst_powder'
 	])
 	event.remove('create:automatic_shaped', [
 		'hardrock:mc_crafting/legacy_amethyst_powder'

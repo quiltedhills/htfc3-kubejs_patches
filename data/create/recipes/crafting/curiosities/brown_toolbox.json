@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "SWS",
+    " L "
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:sheets/gold"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "W": {
+      "item": "pneumaticcraft:reinforced_chest"
+    },
+    "L": {
+      "tag": "forge:leather"
+    }
+  },
+  "result": {
+    "item": "create:brown_toolbox"
+  }
+}
