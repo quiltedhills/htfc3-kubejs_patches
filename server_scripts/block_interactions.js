@@ -7,7 +7,7 @@ onEvent('block.right_click', event => {
 	if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
 	// Heat frame + Depot QOL
 	if (event.item.id == 'pneumaticcraft:heat_frame' && event.block.id == 'create:depot' && !event.player.crouching) {
-		event.player.server.runCommandSilent(`title ${event.player} actionbar ["Drop the heat frame onto the depot for use in recipes"]`)
+		event.player.setStatusMessage('Drop the heat frame onto the depot for use in recipes')
 		event.cancel()
 	}
 	// Remove functionality from paraglider statues
@@ -35,15 +35,17 @@ onEvent('block.right_click', event => {
 	}
 	// Make string meshes for Create Sifters unusable
 	if (event.item.id == 'createsifter:string_mesh' && event.block.id == 'createsifter:sifter') {
-		event.player.server.runCommandSilent(`title ${event.player} actionbar ["This block uses Brass Meshes!"]`)
+		event.player.setStatusMessage('This block only accepts Brass Meshes!')
 		event.cancel()
 	}
 })
 onEvent('player.inventory.opened', event => {
-	// Paraglider statues: Last resort in case the paraglider statue GUI opens up despite failsafes
-	if (/StatueBargainContainer/.test(event.inventoryContainer.toString())) {
-		event.player.closeInventory()
-	}
+	//console.log(event.inventoryContainer)
+
+	// Last resort cases if blacklisted things still open a GUI despite failsafes
+	if (
+		/StatueBargainContainer/.test(event.inventoryContainer.toString())
+	) { event.player.closeInventory() }
 })
 
 onEvent('item.right_click', event => {
@@ -78,7 +80,7 @@ onEvent('block.place', event => {
 			// If both hands could be valid, we can't know for sure if the item being placed has sequence data,
 			// so we send feedback to the player in case they are confused why they can't place a block they expect to.
 			event.entity.server.runCommandSilent(`execute as ${event.entity} at @s run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 0`)
-			event.entity.server.runCommandSilent(`title ${event.entity} actionbar ["An item in one of your hands contains Sequenced Recipe data"]`)
+			event.entity.setStatusMessage('An item in one of your hands contains Sequenced Recipe data')
 			event.cancel()
 		} else if (
 			// Normal behavior is silent
@@ -96,7 +98,8 @@ onEvent('block.place', event => {
 // This is obviously not supposed to happen :p
 const dropInventoryWhenBroken = [
 	'sewingkit:storing_sewing_station',
-	'tfcchannelcasting:mold_table'
+	'tfcchannelcasting:mold_table',
+
 ]
 
 onEvent('block.break', event => {

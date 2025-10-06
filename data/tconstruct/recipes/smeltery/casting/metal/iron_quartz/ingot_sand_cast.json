@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "fluid": {
     "tag": "forge:molten_iron_quartz",
-    "amount": 90
+    "amount": 100
   },
   "result": "refinedstorage:quartz_enriched_iron",
   "cooling_time": 50

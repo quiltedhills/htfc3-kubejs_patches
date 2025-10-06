@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
+		{id: 'create:crafting/curiosities/brown_toolbox'},
+
 		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'mekanism:processing/fluorite/from_block'},
@@ -27,6 +29,7 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_chicken_from_smoking'},
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
+		{id: 'butchersdelight:cutting/mutton'},
 
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},

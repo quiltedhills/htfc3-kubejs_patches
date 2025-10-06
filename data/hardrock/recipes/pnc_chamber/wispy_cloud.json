@@ -1,0 +1,19 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "item": "firmalife:ice_shavings",
+      "count": 4
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    }
+  ],
+  "pressure": -0.75,
+  "results": [
+    {
+      "item": "twilightforest:wispy_cloud"
+    }
+  ]
+}

@@ -81,7 +81,7 @@ onEvent('recipes', event => {
             ).id(`kubejs:add_filter/${respirator.replace(':', '/')}/${pollutant}`)
                 .modifyResult((grid, result) => {
                     let item = grid.find(Item.of(respirator).ignoreNBT())
-                    if (item?.nbt?.Fullness[pollutant] == 0) return
+                    if (item.nbt && item.nbt.Fullness && item.nbt.Fullness[pollutant] == 0) return
                     item.nbt.merge(`{Fullness: {${pollutant}: 0}}`)
                     return item
                 })
