@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "item": "minecraft:ice"
+    }
+  },
+  "output": {
+    "item": "firmalife:ice_shavings",
+    "count": 4
+  }
+}

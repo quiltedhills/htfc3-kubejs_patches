@@ -1,5 +1,5 @@
-// The main file for this is in 'kubejs/server_scripts/'!
-// *Most* of this client file is not necessary but helps make things a little nicer.
+// Joint client script supporting 'kubejs/server_scripts/block_interactions.js'.
+// *Most* of this is not necessary but helps prevent desync and make things a little nicer!
 
 const carcassesToNotPlace = [
 	'animaltrap:chicken_carcass',
@@ -36,4 +36,8 @@ onEvent('item.right_click', event => {
 		'waterflasks:leather_flask',
 		'waterflasks:iron_flask'
 	].includes(event.item.id) && event.player.crouching) event.cancel()
+	// Sync wooden bucket cancellation
+	if (event.item.id == 'tfc:wooden_bucket' && event.player.crouching
+		&& event.player.rayTrace().block.id == 'tfc:pot'
+	) event.cancel()
 })

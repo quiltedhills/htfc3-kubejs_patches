@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:ice_shavings",
+      "count": 2
+    },
+    {
+      "item": "firmalife:ice_shavings",
+      "count": 1,
+      "chance": 0.5
+    }
+  ]
+}

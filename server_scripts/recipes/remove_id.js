@@ -1,8 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
-		{id: 'create:crafting/curiosities/brown_toolbox'},
-
 		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'mekanism:processing/fluorite/from_block'},

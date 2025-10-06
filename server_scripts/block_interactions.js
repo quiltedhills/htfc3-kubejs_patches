@@ -1,15 +1,22 @@
 onEvent('block.right_click', event => {
+	// Fix bug/exploit interaction with Fluid Drawers and fluid containers
+	if (/^functionalstorage:fluid_/.test(event.block.id) && event.item.id != 'minecraft:air') event.cancel()
+
 	// Disable uncrafting tables completely
 	if (event.block.id == 'twilightforest:uncrafting_table') event.cancel()
+
 	// Prevent mechanical belt dupe involving this specific wrench
 	if (event.item.id == 'refinedstorage:wrench' && event.block.id == 'create:belt') event.cancel()
+
 	// Prevent tanner exploit that lets you turn raw hide directly into leather
 	if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
+
 	// Heat frame + Depot QOL
 	if (event.item.id == 'pneumaticcraft:heat_frame' && event.block.id == 'create:depot' && !event.player.crouching) {
 		event.player.setStatusMessage('Drop the heat frame onto the depot for use in recipes')
 		event.cancel()
 	}
+
 	// Remove functionality from paraglider statues
 	if (event.block.hasTag('paraglider:statues')) {
 		if (event.item.id == 'minecraft:air' || event.block.id == 'paraglider:cursed_statue') event.cancel()
@@ -22,6 +29,7 @@ onEvent('block.right_click', event => {
 			|| (event.player.mainHandItem.hasTag('tfc:chisels') && event.player.offHandItem.hasTag('tfc:hammers') && event.player.crouching)
 		)) event.cancel()
 	}
+
 	// Fix straw interaction with blaze burners
 	if (event.item.id == 'createaddition:straw' && event.block.id == 'create:blaze_burner') {
 		if (event.player.creativeMode) {
@@ -33,11 +41,13 @@ onEvent('block.right_click', event => {
 			}
 		}
 	}
+
 	// Make string meshes for Create Sifters unusable
 	if (event.item.id == 'createsifter:string_mesh' && event.block.id == 'createsifter:sifter') {
 		event.player.setStatusMessage('This block only accepts Brass Meshes!')
 		event.cancel()
 	}
+	event.player.rayTrace().block
 })
 onEvent('player.inventory.opened', event => {
 	//console.log(event.inventoryContainer)
@@ -55,6 +65,11 @@ onEvent('item.right_click', event => {
 		'waterflasks:leather_flask',
 		'waterflasks:iron_flask'
 	].includes(event.item.id) && event.player.crouching) event.cancel()
+
+	// Fix Wooden Buckets being able to drain from active Pots without stopping the recipe
+	if (event.item.id == 'tfc:wooden_bucket' && event.player.crouching
+		&& event.player.rayTrace().block.id == 'tfc:pot'
+	) event.cancel()
 })
 
 const carcassesToNotPlace = [

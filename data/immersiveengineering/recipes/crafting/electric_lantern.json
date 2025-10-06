@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "GLG",
+    " R "
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "L": {
+      "item": "immersiveengineering:light_bulb"
+    },
+    "G": {
+      "tag": "forge:glass_panes"
+    },
+    "R": {
+      "item": "immersiveengineering:connector_lv_relay"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:electric_lantern"
+  }
+}

@@ -38,17 +38,17 @@ Please feel free to reach out to me on discord for any questions!
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
 • Added Pyrite and Fluorite to the Rare Gems virtual vein for the Create Drilling Machine, removed Ruby due to being less useful <br/>
 • Increased drops from washing Andesite Rock Powder <br/>
-• Added recipes for TF cloud blocks <br/>
-
-• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
+• Digital Miners can now survive blocks falling on top of it <br/>
 • Made the Create Mechanical Press recipes for Rocky Chunks require only one action per ore item instead of four <br/>
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
-• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Reduced the amount of Rubberwood Planks you get from each log <br/>
-• Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
-• Increased processing speed of IE Crushers by four times (dropping items in without a chute may not be fast enough for input now!) <br/>
-• Toolboxes from Create are no longer craftable <br/>
+• Increased processing speed of IE Crushers (dropping items in without a chute may not be fast enough for input now!) <br/>
+
+• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
+• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
+• Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
+• Added recipes for TF cloud blocks <br/>
 
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
 • Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
@@ -57,8 +57,8 @@ Please feel free to reach out to me on discord for any questions!
 • Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
 
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
-• Micromissiles are now more expensive to craft <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons and Garlic Bread <br/>
+• Micromissiles and Tool Boxes are now more expensive to make <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
 • Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
 • Made the compass recipe accept primitive glass panes <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
@@ -73,24 +73,26 @@ Please feel free to reach out to me on discord for any questions!
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 
-• Fixed the crafting table filter application recipes crashing the game <br/>
-• Fixed "Cup of Iced Tea" showing up instead of "Air" in some item/fluid names <br/>
+• Fixed the crafting grid AdPother filter application recipes crashing the game <br/>
 • Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
+• Fixed "Cup of Iced Tea" showing up instead of "Air" in empty tanks <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
+• Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
-• Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
+• Removed some unobtainable meat types from JEI <br/>
+• Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken message when attempting to knap rotten Pumpkins <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>
-• Fixed Twilight Forest Venison and Meef not being obtainable <br/>
-• Removed some unobtainable meat types from JEI <br/>
-• Fixed TNT having two identical crafting recipes <br/>
+• Fixed TF Venison and Meef not being obtainable <br/>
 • Made it impossible for zombie villagers to spawn <br/>
 • Made End Portal Frames not drop when broken within the End dimension <br/>
-• Fixed sugar cubes not having an uncrafting recipe <br/>
-• Fixed fluorite blocks not being craftable <br/>
-• Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
+• Fixed Sugar Cubes not having an uncrafting recipe <br/>
+• Fixed Fluorite Blocks not being craftable <br/>
+• Fixed TNT having two identical crafting recipes <br/>
+• Fixed a Fluid Drawer exploit <br/>
+• Fixed an exploit with Toolboxes <br/>
 • Removed a weird mutton cutting recipe <br/>
