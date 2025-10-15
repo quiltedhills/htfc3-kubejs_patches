@@ -32,51 +32,71 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
+### Important changes
 • Added gemstone washing! Gems may be worth processing for byproducts in mid- and late-game now. Feedback wanted! <br/>
 • Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
 • ^ Fluorite is no longer farmable with Quartzite Gravel. Please let us know if this wrecks late-game balancing too much! <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
 • Added Pyrite and Fluorite to the Rare Gems virtual vein for the Create Drilling Machine, removed Ruby due to being less useful <br/>
-• Increased drops from washing Andesite Rock Powder <br/>
-• Digital Miners can now survive blocks falling on top of it <br/>
-• Made the Create Mechanical Press recipes for Rocky Chunks require only one action per ore item instead of four <br/>
-• Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
-• Reduced the amount of Rubberwood Planks you get from each log <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Increased processing speed of IE Crushers (dropping items in without a chute may not be fast enough for input now!) <br/>
-
-• Added a Dust Mop item, which works similarly to a Vacuum Tube but is much weaker (and is much cheaper to make) <br/>
-• Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
-• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
+• Digital Miners can now survive blocks falling on top of it <br/>
+• Changed the Rock Chunks recipes that use the Create Mechanical Press to only require one action instead of four <br/>
+• Increased outputs from washing Andesite Rock Powder <br/>
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>
+• Reduced the amount of Rubberwood Planks you get from each log <br/>
+• Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
+
+
+
+### New things
+• Added the Dust Mop <br/>
 • Added recipes for TF cloud blocks <br/>
-
-• Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70%, added IE metal press (and Mekanism) recipes with 100% output rate to take their place. For comparison, knapping by hand has a 5:3 output ratio, which translates to a 60% rate <br/>
-• Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
-• Made oven appliances such as cooking pots and kettles count as oven insulation <br/>
-• Added Mekanism recipes for making Andesite Alloy and for turning Loose Rocks into bricks <br/>
-• Made the more advanced Stone Brick recipes also include Gypsum/Alabaster <br/>
-
-• Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
-• Micromissiles and Tool Boxes are now more expensive to make <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
 • Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
-• Made the compass recipe accept primitive glass panes <br/>
-• Removed odd Latex Bucket recipe involving supports <br/>
-• Added Create Mixer recipe for dye fluids <br/>
-• Tweaked coffee-related recipes and item names <br/>
-• Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
-• Made Osmium virtual veins for the Create Drilling Machine require a netherite drill <br/>
-• Changed map color of Terror Birds to orange (from white) <br/>
+• Added gemstone washing recipes <br/>
+• Added crushing recipes TFC ore blocks <br/>
+• Added Create Mixer recipes for dye fluids <br/>
 
+### Documentation / Meta
+• Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtyness meter with precise numeric values <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
+• Changed map color of Terror Birds to orange (from white) <br/>
 
+### Quality of Life
+• Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
+• Made oven appliances such as cooking pots and kettles count as oven insulation <br/>
+• Added Mekanism recipes for making Andesite Alloy and for turning Loose Rocks into bricks <br/>
+• Added more advanced recipes for making Gypsum/Alabaster <br/>
+• Made smashing ores into Rocky Chunks with a Mechanical Press require only one action, down from four <br/>
+• Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
+
+### Balancing
+• Made the Create Sifter gravel loot tables match the sluicing ones, essentially nerfing them really hard <br/>
+• Sifting/sluicing colored sand is now much more likely to give gems <br/>
+• Overhauled the sand sifting loot tables <br/>
+• Made Osmium virtual veins for the Create Drilling Machine require a netherite drill <br/>
+• Increased processing speed of IE Crushers <br/>
+• Increased outputs from washing Andesite Rock Powder <br/>
+• Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70% (still more efficient than knapping by hand), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
+• Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
+• Decreased output of all Rubberwood Planks recipes <br/>
+• Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
+• Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
+• Micromissiles and Tool Boxes are now more expensive to make <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
+• Made the compass recipe accept primitive glass panes <br/>
+• Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
+
+### Fixes
+• Fixed block hardness for IE and Firmalife TFC ores <br/>
+• Digital Miners can no longer be destroyed by falling blocks <br/>
 • Fixed the crafting grid AdPother filter application recipes crashing the game <br/>
 • Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in empty tanks <br/>
+• Tweaked coffee-related recipes and item names <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
 • Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
@@ -97,3 +117,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed a Fluid Drawer exploit <br/>
 • Fixed an exploit with Toolboxes <br/>
 • Removed a weird mutton cutting recipe <br/>
+• Removed odd Latex Bucket recipe involving supports <br/>
