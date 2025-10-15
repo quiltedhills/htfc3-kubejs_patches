@@ -32,39 +32,39 @@ const rayTraceNonSolid = (player, level) => {
 	}
 }
 
-global.broomUse = (level, player, hand) => {
+global.mopUse = (level, player, hand) => {
 	if (level.minecraftLevel.isClientSide()) return false
 
-	let broom = player.minecraftPlayer.getItemInHand(hand)
+	let mop = player.minecraftPlayer.getItemInHand(hand)
 
 	// Get the targeted block
 	const { block } = rayTraceNonSolid(player, level)
 	if (['minecraft:water', 'tfc:fluid/river_water'].includes(block.id)) {
 		
-		if ((broom?.tag?.CustomModelData || 0) < 1000) {
-			broom.getOrCreateTag().putInt('CustomModelData', 1000)
+		if ((mop?.tag?.CustomModelData || 0) < 1000) {
+			mop.getOrCreateTag().putInt('CustomModelData', 1000)
 			player.playSound('minecraft:item.bottle.fill', 1, 1)
-			player.setStatusMessage(`${broom.tag.CustomModelData}mb of water remaining`)
+			player.setStatusMessage(`${mop.tag.CustomModelData}mb of water remaining`)
 			return false // Don't do the draw animation
 		}
 	}
 
 
 	// Print some helpers for newer players, not sure if those will be very useful
-	if (block.id == 'adpother:carbon') player.setStatusMessage('This is Carbon! Brooms only work on dust.')
-	if (block.id == 'adpother:sulfur') player.setStatusMessage('This is Sulfur! Brooms only work on dust.')
+	if (block.id == 'adpother:carbon') player.setStatusMessage('This is Carbon! mops only work on dust.')
+	if (block.id == 'adpother:sulfur') player.setStatusMessage('This is Sulfur! mops only work on dust.')
 	
 	if (block.id != 'adpother:dust') return false
 
-	// Check that the broom has enough water
-	if ((broom?.tag?.CustomModelData || 0) < 100) {
+	// Check that the mop has enough water
+	if ((mop?.tag?.CustomModelData || 0) < 100) {
 		player.setStatusMessage('Not enough water!')
 		return false
 	}
 	return true
 }
 
-global.broomFinishUsing = (itemstack, level, player) => {
+global.mopFinishUsing = (itemstack, level, player) => {
 	if (level.minecraftLevel.isClientSide()) return itemstack
 
 	// Confirm that we are discharging at a dust block

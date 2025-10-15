@@ -45,7 +45,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
 • Increased processing speed of IE Crushers (dropping items in without a chute may not be fast enough for input now!) <br/>
 
-• Added a Dust Broom item, which works similarly to a Vacuum Tube but is much weaker (and is much cheaper to make) <br/>
+• Added a Dust Mop item, which works similarly to a Vacuum Tube but is much weaker (and is much cheaper to make) <br/>
 • Added crushing recipes for turning TFC ore blocks into ore pieces (those are normally not naturally obtainable aside from a specific IE excavator vein) <br/>
 • Removed Cocoa Beans from the sand sieving loot tables, added some other things to take their place <br/>
 • Made Rubberwood Logs have a chance to not drop when broken (feedback wanted!) <br/>

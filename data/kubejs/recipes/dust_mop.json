@@ -13,7 +13,7 @@
     }
   },
   "result": {
-    "item": "kubejs:dust_broom",
+    "item": "kubejs:dust_mop",
     "count": 1,
     "nbt": "{CustomModelData:0}"
   }

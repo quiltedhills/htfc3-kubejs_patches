@@ -41,12 +41,12 @@ onEvent('item.registry', event => {
 		.barColor(itemstack => Color.AQUA)
 		.use((level, player, hand) => true)
 
-	event.create('dust_broom').unstackable().displayName('Dust Broom')
+	event.create('dust_mop').unstackable().displayName('Dust Mop')
 		.useAnimation('bow').useDuration(itemstack => 40)
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13)))
 		.barColor(itemstack => Color.BLUE)
-		.use((level, player, hand) => global.broomUse(level, player, hand))
-		.finishUsing((itemstack, level, player) => global.broomFinishUsing(itemstack, level, player))
+		.use((level, player, hand) => global.mopUse(level, player, hand))
+		.finishUsing((itemstack, level, player) => global.mopFinishUsing(itemstack, level, player))
 
 	event.create('raw_cookie').food(food => { food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot').food(food => { food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})

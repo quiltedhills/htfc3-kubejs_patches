@@ -439,7 +439,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, Text.gold('it will simply move the pollution to your feet.'))
 		}
 	})
-	tooltip.addAdvanced('kubejs:dust_broom', (item, advanced, text) => {
+	tooltip.addAdvanced('kubejs:dust_mop', (item, advanced, text) => {
 		text.add(1, `${item?.nbt?.CustomModelData || 0}mb / 1000mb Water`)
 		if (!tooltip.shift) {
 			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
