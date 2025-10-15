@@ -54,7 +54,7 @@ global.mopUse = (level, player, hand) => {
 	if (block.id == 'adpother:carbon') player.setStatusMessage('This is Carbon! mops only work on dust.')
 	if (block.id == 'adpother:sulfur') player.setStatusMessage('This is Sulfur! mops only work on dust.')
 	
-	if (block.id != 'adpother:dust') return false
+	if (block.id != 'adpother:dust') return true
 
 	// Check that the mop has enough water
 	if ((mop?.tag?.CustomModelData || 0) < 100) {

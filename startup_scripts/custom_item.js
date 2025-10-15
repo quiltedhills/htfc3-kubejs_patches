@@ -36,12 +36,13 @@ onEvent('item.registry', event => {
 
 	event.create('gravedigger', 'shovel').displayName('Gravedigger Shovel').rarity('uncommon')
 		.tier('castIron').attackDamageBaseline(0.5 - 1).speedBaseline(0.9 - 4)
+
 	event.create('sanitizer_bottle').unstackable().rarity('uncommon')
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13))) // Full bar is 13
 		.barColor(itemstack => Color.AQUA)
 		.use((level, player, hand) => true)
 
-	event.create('dust_mop').unstackable().displayName('Dust Mop')
+	event.create('dust_mop').unstackable()
 		.useAnimation('bow').useDuration(itemstack => 40)
 		.barWidth(itemstack => Math.floor((itemstack?.nbt?.CustomModelData || 0) / (1000 / 13)))
 		.barColor(itemstack => Color.BLUE)
