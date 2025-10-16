@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:storage_blocks/petcoke"},
+  "transitionalItem": {"item": "weathertfc:sand/sand_layer/black"},
+  "sequence": [
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/black"}],"results": [{"item": "weathertfc:sand/sand_layer/black"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/black"}],"results": [{"item": "weathertfc:sand/sand_layer/black"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/black"}],"results": [{"item": "weathertfc:sand/sand_layer/black"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/black"}],"results": [{"item": "weathertfc:sand/sand_layer/black"}]}
+    ],
+  "results": [{"item": "immersivepetroleum:petcoke", "count": 9}],
+  "loops": 1
+}

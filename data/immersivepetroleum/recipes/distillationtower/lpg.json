@@ -3,7 +3,7 @@
   "byproducts": [
     {
       "item": "immersivepetroleum:petcoke_dust",
-      "chance": "0.5"
+      "chance": "0.025"
     }
   ],
   "results": [

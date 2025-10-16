@@ -1,0 +1,19 @@
+{
+  "type": "pneumaticcraft:thermo_plant",
+  "item_input": {
+    "tag": "forge:dusts/graphite"
+  },
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "tag": "forge:lpg",
+    "amount": 100
+  },
+  "fluid_output": {
+    "fluid": "pneumaticcraft:plastic",
+    "amount": 1000
+  },
+  "temperature": {
+    "min_temp": 373
+  },
+  "exothermic": false
+}

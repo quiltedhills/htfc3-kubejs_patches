@@ -1302,6 +1302,9 @@ function convertNumber(num) {
 		text.add(1, Text.gold('Warning: Viewing survey results'))
 		text.add(2, Text.gold('sometimes causes the game to crash.'))
 	})
+	tooltip.addAdvanced(['immersivepetroleum:projector', 'immersiveengineering:windmill', 'immersiveengineering:watermill'], (item, advanced, text) => {
+		text.add(1, Text.gold('Known to have shader compatibility issues'))
+	})
 	tooltip.addAdvanced('immersiveengineering:survey_tools', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])

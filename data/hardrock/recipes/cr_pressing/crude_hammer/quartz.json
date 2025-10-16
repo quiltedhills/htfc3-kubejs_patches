@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "tfc_ie_addon:mineral/quartz_block"},
+  "transitionalItem": {"item": "weathertfc:sand/sand_layer/white"},
+  "sequence": [
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]}
+    ],
+  "results": [{"item": "tfc_ie_addon:mineral/quartz_shard", "count": 2}],
+  "loops": 1
+}

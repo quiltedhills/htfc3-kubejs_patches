@@ -1,0 +1,13 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:storage_blocks/charcoal"},
+  "transitionalItem": {"item": "weathertfc:sand/sand_layer/brown"},
+  "sequence": [
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/brown"}],"results": [{"item": "weathertfc:sand/sand_layer/brown"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/brown"}],"results": [{"item": "weathertfc:sand/sand_layer/brown"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/brown"}],"results": [{"item": "weathertfc:sand/sand_layer/brown"}]},
+    {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/brown"}],"results": [{"item": "weathertfc:sand/sand_layer/brown"}]}
+    ],
+  "results": [{"item": "minecraft:charcoal", "count": 9}],
+  "loops": 1
+}
