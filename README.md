@@ -36,6 +36,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added gemstone washing! Gems may be worth processing for byproducts in mid- and late-game now. Feedback wanted! <br/>
 • Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
 • ^ Fluorite is no longer farmable with Quartzite Gravel. Please let us know if this wrecks late-game balancing too much! <br/>
+• LPG was bugged to produce colossal amounts of petcoke which is now fixed (Cokers, in turn, received a massive buff) <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
 • Added Pyrite and Fluorite to the Rare Gems virtual vein for the Create Drilling Machine, removed Ruby due to being less useful <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
@@ -58,12 +59,14 @@ Please feel free to reach out to me on discord for any questions!
 • Added Create Mixer recipes for dye fluids <br/>
 
 ### Documentation / Meta
-• Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtyness meter with precise numeric values <br/>
+• Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtiness meter with precise numeric values <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
+• Hidden a bunch of unobtainable fluids <br/>
 • Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 • Changed map color of Terror Birds to orange (from white) <br/>
+• Added JEI info for the Coker structure explaining how to collect its outputs <br/>
 
 ### Quality of Life
 • Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
@@ -72,8 +75,11 @@ Please feel free to reach out to me on discord for any questions!
 • Added more advanced recipes for making Gypsum/Alabaster <br/>
 • Made smashing ores into Rocky Chunks with a Mechanical Press require only one action, down from four <br/>
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
+• Added Crude Hammer recipes for breaking down coal blocks <br/>
+• Added Mechanical Press recipes for some Crude Hammer recipes (like breaking down overworld Quartz crystal blocks!) <br/>
 
 ### Balancing
+• Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
 • Made the Create Sifter gravel loot tables match the sluicing ones, essentially nerfing them really hard <br/>
 • Sifting/sluicing colored sand is now much more likely to give gems <br/>
 • Overhauled the sand sifting loot tables <br/>
@@ -87,6 +93,8 @@ Please feel free to reach out to me on discord for any questions!
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles and Tool Boxes are now more expensive to make <br/>
 • Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
+• LPG can now be used as Blaze Burner fuel <br/>
+• Making plastic from Ethylene and Propylene now gives slightly more bitumen <br/>
 • Made the compass recipe accept primitive glass panes <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
 
