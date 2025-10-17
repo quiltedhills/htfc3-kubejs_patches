@@ -1,0 +1,19 @@
+{
+  "type": "immersivepetroleum:coker",
+  "input": {
+    "tag": "forge:bitumen"
+  },
+  "inputfluid": {
+    "tag": "minecraft:water",
+    "amount": 125
+  },
+  "result": {
+    "item": "immersivepetroleum:petcoke_block"
+  },
+  "resultfluid": {
+    "fluid": "immersivepetroleum:diesel_sulfur",
+    "amount": 27
+  },
+  "time": 30,
+  "energy": 15360
+}

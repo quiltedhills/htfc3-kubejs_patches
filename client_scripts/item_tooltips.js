@@ -439,6 +439,16 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, Text.gold('it will simply move the pollution to your feet.'))
 		}
 	})
+	tooltip.addAdvanced('kubejs:dust_mop', (item, advanced, text) => {
+		text.add(1, `${item?.nbt?.CustomModelData || 0}mb / 1000mb Water`)
+		if (!tooltip.shift) {
+			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(2, [Text.of('Allows cleaning up light-gray ').gold(), Text.of('dust pollution').yellow(), Text.of(' blocks!').gold()])
+			text.add(3, Text.gold('Does not work for other types of pollution.'))
+			text.add(4, Text.gold('Is effectively a very primitive Vacuum Tube.'))
+		}
+	})
 	tooltip.addAdvanced([
 		/^adpother:.+_filter_frame$/
 	], (item, advanced, text) => {
@@ -1242,7 +1252,7 @@ function convertNumber(num) {
 			text.add(2, [Text.yellow('1.25%'), Text.gold(' of power is lost for every '), Text.yellow('16 blocks'), Text.gold(' of distance.')])
 			text.add(3, Text.gold(''))
 			text.add(4, [Text.gold('Uses '), Text.yellow('HV Wire Coils'), Text.gold(' made from steel and aluminum.')])
-			text.add(5, [Text.gold('Wires do '), Text.yellow('not').underlined(), Text.gold(' have an insulated variant. Careful!')])
+			text.add(5, [Text.gold('Wires do '), Text.yellow('not').underlined(), Text.gold(' have an insulated variant. Be careful!')])
 			text.add(6, [Text.gold('Wires can be up to '), Text.yellow('32 blocks'), Text.gold(' long.')])
 		}
 	})
@@ -1292,6 +1302,9 @@ function convertNumber(num) {
 		text.add(1, Text.gold('Warning: Viewing survey results'))
 		text.add(2, Text.gold('sometimes causes the game to crash.'))
 	})
+	tooltip.addAdvanced(['immersivepetroleum:projector', 'immersiveengineering:windmill', 'immersiveengineering:watermill'], (item, advanced, text) => {
+		text.add(1, Text.gold('Known to have shader compatibility issues'))
+	})
 	tooltip.addAdvanced('immersiveengineering:survey_tools', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
@@ -1334,9 +1347,8 @@ function convertNumber(num) {
 				text.add(6, [Text.gold('- '), Text.yellow('Magnetite'), Text.gold(' vein')])
 				text.add(7, [Text.gold('- '), Text.yellow('Rare Gems'), Text.gold(' vein')])
 				text.add(8, [Text.gold('- '), Text.yellow('Uraninite'), Text.gold(' vein')])
-				text.add(9, [Text.gold('- '), Text.yellow('Osmium'), Text.gold(' vein')])
-				text.add(10, [Text.darkGray('['), Text.white('Fluid Well Extractor'), Text.gray(']')])
-				text.add(11, [Text.gold('- '), Text.yellow('Lava'), Text.gold(' vein')])
+				text.add(9, [Text.darkGray('['), Text.white('Fluid Well Extractor'), Text.gray(']')])
+				text.add(10, [Text.gold('- '), Text.yellow('Lava'), Text.gold(' vein')])
 			}
 		}
 	})
@@ -1344,7 +1356,7 @@ function convertNumber(num) {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
 		} else {
-			text.add(1, [Text.gold('Required to extract '), Text.yellow('Crude Oil'), Text.gold(' veins!')])
+			text.add(1, [Text.gold('Required to extract '), Text.yellow('Crude Oil'), Text.gold(' and '), Text.yellow('Osmium'), Text.gold(' veins!')])
 			text.add(2, Text.gold('No bonus in speed or efficiency, just unlocks more stuff.'))
 		}
 	})

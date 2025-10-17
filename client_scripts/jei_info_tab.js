@@ -85,4 +85,9 @@ onEvent('jei.information', event => {
 		' ',
 		'Still, if you would prefer that over the manual approach, you can set up wooden or metal supports to prevent the leaves from falling down to the ground. This will help keep everything going!'
 	])
+	event.add('immersivepetroleum:coker_unit', [
+		['To collect item outputs, you can place ', Text.of('vanilla').underlined(), ' hoppers below the coal chutes underneath the machine. There are orange markings where you have to place them!'],
+		' ',
+		'Alternatively, you can use a Smart Chest with Magnet Upgrades placed outside of the structure to collect the dropped petcoke from a distance.'
+	])
 })

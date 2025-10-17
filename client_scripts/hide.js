@@ -4,7 +4,8 @@ onEvent('jei.remove.categories', event => {
     event.remove('minecraft:smoking')
 })
 onEvent('jei.hide.fluids', event => {
-	event.hide([
+	// Hiding fluids does not seem to work very well with an array, for some reason
+	const fluidsToHide = [
 		'tconstruct:beetroot_soup',
 		'immersiveengineering:potion',
 		'tconstruct:potion',
@@ -20,7 +21,10 @@ onEvent('jei.hide.fluids', event => {
 		'pneumaticcraft:lubricant',
 		'pneumaticcraft:ethanol',
 		'immersiveengineering:plantoil'
-	])
+	]
+	fluidsToHide.forEach(fluid => {
+		event.hide(fluid)
+	})
 })
 onEvent('jei.hide.items', event => {
 	event.hide([

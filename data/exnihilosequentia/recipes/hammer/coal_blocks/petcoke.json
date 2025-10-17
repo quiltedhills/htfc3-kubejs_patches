@@ -1,0 +1,12 @@
+{
+  "type": "exnihilosequentia:hammer",
+  "input": {
+    "tag": "forge:storage_blocks/petcoke"
+  },
+  "results": [
+    {
+      "item": "immersivepetroleum:petcoke",
+      "count": 9
+    }
+  ]
+}

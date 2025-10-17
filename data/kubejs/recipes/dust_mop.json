@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " s",
+    "c "
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:rods/wooden"
+    },
+    "c": {
+      "tag": "tfc:high_quality_cloth"
+    }
+  },
+  "result": {
+    "item": "kubejs:dust_mop",
+    "count": 1,
+    "nbt": "{CustomModelData:0}"
+  }
+}

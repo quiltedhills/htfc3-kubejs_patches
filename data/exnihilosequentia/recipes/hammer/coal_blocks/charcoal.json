@@ -1,0 +1,12 @@
+{
+  "type": "exnihilosequentia:hammer",
+  "input": {
+    "tag": "forge:storage_blocks/charcoal"
+  },
+  "results": [
+    {
+      "item": "minecraft:charcoal",
+      "count": 9
+    }
+  ]
+}
