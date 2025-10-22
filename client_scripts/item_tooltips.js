@@ -849,10 +849,24 @@ onEvent('item.tooltip', tooltip => {
 	], (item, advanced, text) => {
 		text.add(1, Text.gold('Decorative use only'))
 	})
-	tooltip.addAdvanced([
-		'minecraft:end_portal_frame'
-	], (item, advanced, text) => {
-		text.add(1, Text.gray('Breakable'))
+	tooltip.addAdvanced('minecraft:end_portal_frame', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(1, [Text.gold('Making twelve of these lets you build your own end portal!')])
+			text.add(2, [Text.gold('Acts as a more permanent alternative to '), Text.yellow('End Cakes'), Text.gold('.')])
+			text.add(3, [Text.gold('')])
+			text.add(4, [Text.gold('Unlike in vanilla, these are destructible.')])
+		}
+	})
+	tooltip.addAdvanced('exnihilosequentia:end_cake', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(1, [Text.gold('A cheap alternative to making '), Text.yellow('End Portal Frames'), Text.gold('.')])
+			text.add(2, [Text.gold('Is intended to be the first way of getting to the End.')])
+			text.add(3, [Text.gold('Can be used seven times before it gets fully consumed.')])
+		}
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -926,7 +940,7 @@ function convertNumber(num) {
 	]
 	agedAlcoholEffects.forEach(([drinkName, effectName, effectDuration]) => {
 		tooltip.addAdvanced(`tfc:bucket/${drinkName.replace(/ /g, '_').toLowerCase()}`, (item, advanced, text) => {
-			text.add(1, [Text.gold(`Aged ${drinkName} gives `), Text.yellow(effectName), Text.gold(' for '), Text.yellow(effectDuration)])
+			text.add(1, [Text.gold('When '), Text.yellow('aged'), Text.gold(`, ${drinkName} gives `), Text.yellow(effectName), Text.gold(' for '), Text.yellow(effectDuration)])
 		})
 	})
 
