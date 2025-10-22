@@ -1,7 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
-		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'mekanism:processing/fluorite/from_block'},
 
@@ -34,6 +33,10 @@ onEvent('recipes', event => {
 		{id: 'minecraft:end_crystal'},
 		{id: 'minecraft:repeater'},
 		{id: 'minecraft:comparator'},
+		{id: 'farmersdelight:painting_from_canvas'},
+		{id: 'farmersdelight:book_from_canvas'},
+		{id: 'create_sa:incomplete_book_recipe'},
+
 
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},
@@ -219,7 +222,6 @@ onEvent('recipes', event => {
 		{id: 'immersivepetroleum:squeezer/graphite_dust'},
 		{id: /^mekanism:pigment_extracting\/stained_glass/},
 		{id: 'mekanism:upgrade/anchor'},
-		{id: 'minecraft:hardrock/tfc_heating/netherite_nugget'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'tfc:heating/metal/netherite_ingot'},

@@ -86,7 +86,7 @@ onEvent('item.tooltip', tooltip => {
 		'compressedcreativity:mesh_dense',
 		'compressedcreativity:mesh_haunted'
 	], (item, advanced, text) => {
-		text.add(1, [Text.gray('Placed onto '), Text.white('Industrial Air Blowers')])
+		text.add(1, [Text.gray('Used with '), Text.white('Industrial Air Blowers')])
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -621,10 +621,10 @@ onEvent('item.tooltip', tooltip => {
 		text.add(1, Text.gray('Crafting Material'))
 	})
 	tooltip.addAdvanced('createsifter:brass_mesh', (item, advanced, text) => {
-		text.add(1, [Text.gray('Placed onto '), Text.white('Mechanical Sifters')])
+		text.add(1, [Text.gray('Used with '), Text.white('Mechanical Sifters')])
 	})
 	tooltip.addAdvanced('createsifter:sifter', (item, advanced, text) => {
-		text.add(1, [Text.gray('Requires a '), Text.white('Brass Mesh'), Text.gray(' to work')])
+		text.add(1, [Text.gray('Requires a '), Text.white('Hard Brass Mesh'), Text.gray(' to work')])
 	})
 	tooltip.addAdvanced([
 		'exnihilosequentia:string_mesh',
@@ -633,7 +633,7 @@ onEvent('item.tooltip', tooltip => {
 		'exnihilosequentia:emerald_mesh',
 		'exnihilosequentia:netherite_mesh'
 	], (item, advanced, text) => {
-		text.add(1, [Text.gray('Placed onto '), Text.white('Light Sieves')])
+		text.add(1, [Text.gray('Used with '), Text.white('Light Sieves')])
 	})
 	tooltip.addAdvanced([
 		'exnihilosequentia:iron_mesh',

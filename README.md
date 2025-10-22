@@ -100,6 +100,8 @@ Please feel free to reach out to me on discord for any questions!
 • Making plastic from Ethylene and Propylene now gives slightly more bitumen <br/>
 • Made the compass recipe accept primitive glass panes <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
+• Canvas is now crafted from Jute Fibers instead of Straw <br/>
+• Changed recipes for Books <br/>
 
 ### Fixes
 • Fixed block hardness for IE and Firmalife TFC ores <br/>
