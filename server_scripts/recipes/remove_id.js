@@ -37,7 +37,7 @@ onEvent('recipes', event => {
 		{id: 'farmersdelight:book_from_canvas'},
 		{id: 'create_sa:incomplete_book_recipe'},
 
-
+		{id: /^functionalstorage:fluid_.+/},
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},
 		{id: /^tconstruct:common\/glass\/.+_clear_stained_glass_pane/},

@@ -601,10 +601,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(6, '')
 			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
 			else {
-				text.add(7, [Text.gold('A '), Text.yellow('Smart Chest'), Text.gold(' with '), Text.of('magnet and range upgrades').yellow(), Text.gold(' can suck up')])
+				text.add(7, [Text.gold('* A '), Text.yellow('Smart Chest'), Text.gold(' with '), Text.of('magnet and range upgrades').yellow(), Text.gold(' can suck up')])
 				text.add(8, Text.gold('items in a huge area, and has incredible storage.'))
-				text.add(9, [Text.gold('A '), Text.yellow('Vacuum Hopper'), Text.gold(' is similar, but is simpler and cheaper!')])
-				text.add(10, [Text.gold('An '), Text.yellow('Encased Fan'), Text.gold(' with a '), Text.yellow('Nozzle'), Text.gold(' can pull or push items')])
+				text.add(9, [Text.gold('* A '), Text.yellow('Vacuum Hopper'), Text.gold(' is similar, but is simpler and cheaper!')])
+				text.add(10, [Text.gold('* An '), Text.yellow('Encased Fan'), Text.gold(' with a '), Text.yellow('Nozzle'), Text.gold(' can pull or push items')])
 				text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
 			}
 		}
@@ -659,10 +659,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(7, '')
 			if (!tooltip.ctrl) text.add(8, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(8, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
+				text.add(8, [Text.gold('* PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
 				text.add(9, Text.gold('teleport items from up to 20-ish blocks.'))
 				text.add(10, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(11, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
+				text.add(11, [Text.gold('* Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
 				text.add(12, Text.gold('attract nearby items via teleporting.'))
 				text.add(13, Text.gold('Does not have a large range, but is passive.'))
 			}
@@ -679,10 +679,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, '')
 			if (!tooltip.ctrl) text.add(6, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(6, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
+				text.add(6, [Text.gold('* PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
 				text.add(7, Text.gold('teleport items from up to 20-ish blocks.'))
 				text.add(8, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(9, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
+				text.add(9, [Text.gold('* Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
 				text.add(10, Text.gold('attract nearby items via teleporting.'))
 				text.add(11, Text.gold('Does not have a large range, but is passive.'))
 			}
@@ -1404,10 +1404,15 @@ function convertNumber(num) {
 		text.add(1, [Text.red('Removed due to upgrades making them too strong.')])
 		text.add(2, [Text.gold('Sorry ;-;')])
 		text.add(3, [Text.gold('')])
-		if (!tooltip.shift) {
-			text.add(4, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' for a list of alternatives')])
+		if (!tooltip.ctrl) {
+			text.add(4, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for a list of alternatives')])
 		} else {
-			text.add(4, [Text.gold('Is intended to be the first way of getting to the End.')])
+			text.add(4, [Text.gold('* '), Text.yellow('PNC Fluid Tanks'), Text.gold(' are rather cheap to make')])
+			text.add(5, [Text.gold('and can hold up to '), Text.yellow('32b of fluid'), Text.gold('.')])
+			text.add(6, [Text.gold('* '), Text.yellow('Jumbo Tanks'), Text.gold(' have almost no special features,')])
+			text.add(7, [Text.gold('but can store an absurd '), Text.yellow('1024b of fluid'), Text.gold('.')])
+			text.add(8, [Text.gold('* High-level '), Text.yellow('Mekanism Fluid Tanks'), Text.gold(' are quite convenient,')])
+			text.add(9, Text.gold('but are not available until lategame.'))
 		}
 	})
 })
