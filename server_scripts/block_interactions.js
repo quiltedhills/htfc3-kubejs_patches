@@ -1,5 +1,5 @@
 onEvent('block.right_click', event => {
-	// Fix bug/exploit interaction with Fluid Drawers and fluid containers
+	// Fix bug/exploit interaction with Fluid Drawers and fluid containers and make it impossible to upgrade them
 	if (/^functionalstorage:fluid_/.test(event.block.id) && event.item.id != 'minecraft:air') event.cancel()
 
 	// Disable uncrafting tables completely

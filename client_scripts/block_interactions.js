@@ -12,6 +12,9 @@ const carcassesToNotPlace = [
 	'animaltrap:turtle_carcass'
 ]
 onEvent('block.right_click', event => {
+	// Sync upgrades getting consumed on client
+	if (/^functionalstorage:fluid_/.test(event.block.id) && event.item.id != 'minecraft:air') event.cancel()
+
 	// Disable sound when right clicking tanner with shears
 	if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
 

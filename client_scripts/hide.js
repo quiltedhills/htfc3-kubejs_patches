@@ -33,6 +33,7 @@ onEvent('jei.hide.items', event => {
 		'createoreexcavation:raw_redstone',
 		'pneumaticcraft:seismic_sensor',
 		'kubejs:clean_amethyst_powder',
+		'minecraft:sweet_berries',
 
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',

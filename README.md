@@ -61,11 +61,13 @@ Please feel free to reach out to me on discord for any questions!
 ### Documentation / Meta
 • Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtiness meter with precise numeric values <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
-• Added informational tooltips for End Portal Frames and End Cakes <br/>
+• Added informational tooltips for End Portal Frames and End Cakes, as well as some other items <br/>
+• Introduces unique names to different mesh kinds to make it easier to tell which is which <br/>
+• Made it impossible to place a String Mesh onto Create Sifters to help lower confusion <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
+• Tweaked a bunch of various tooltips <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Hidden a bunch of unobtainable fluids <br/>
-• Made it impossible to place a String Mesh onto Create Sifters to help lower confusion <br/>
 • Changed map color of Terror Birds to orange (from white) <br/>
 • Added JEI info for the Coker structure explaining how to collect its outputs <br/>
 
