@@ -127,3 +127,4 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed an exploit with Toolboxes <br/>
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
+• Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>

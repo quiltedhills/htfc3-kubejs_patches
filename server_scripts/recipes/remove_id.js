@@ -27,9 +27,13 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_chicken_from_smoking'},
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
+
 		{id: 'butchersdelight:cutting/mutton'},
 		{id: 'create:mixing/chocolate_melting'},
 		{id: 'immersivepetroleum:petcoke_block_to_items'},
+		{id: 'minecraft:end_crystal'},
+		{id: 'minecraft:repeater'},
+		{id: 'minecraft:comparator'},
 
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},
