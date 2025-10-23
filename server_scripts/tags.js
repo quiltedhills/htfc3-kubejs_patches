@@ -270,6 +270,14 @@ onEvent('tags.items', event => {
 	event.add('immersiveengineering:forbidden_in_crates', [
 		'#functionalstorage:drawer'
 	])
+	event.add('forge:rods/metal', [
+		/^tfc:metal\/rod\//,
+		/^firmalife:metal\/rod\//,
+		'immersiveengineering:stick_aluminum',
+		/^immersiveposts:stick_/,
+		'kubejs:compressed_rod',
+		'kubejs:misc_mats/netherite/rod'
+	])
 	event.add('forge:rubber', 'kubejs:vulcanized_rubber')
 	event.add('forge:workbenches', '#tfc:workbenches')
 	event.add('tfc:rock/button', /^tfc:rock\/button\//)

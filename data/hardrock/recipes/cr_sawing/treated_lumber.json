@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:treated_wood_horizontal"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc_ie_addon:treated_wood_lumber",
+      "count": 4
+    }
+  ],
+  "processingTime": 100
+}

@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "input": {
+    "item": "tfc_ie_addon:treated_wood_lumber"
+  },
+  "result": {
+    "item": "immersiveengineering:stick_treated",
+    "count": 4
+  },
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "energy": 100
+}

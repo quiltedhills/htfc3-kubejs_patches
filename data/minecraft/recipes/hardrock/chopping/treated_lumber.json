@@ -4,7 +4,7 @@
     "item": "immersiveengineering:treated_wood_horizontal"
   },
   "result": {
-    "item": "immersiveengineering:stick_treated",
-    "count": 16
+    "item": "tfc_ie_addon:treated_wood_lumber",
+    "count": 4
   }
 }

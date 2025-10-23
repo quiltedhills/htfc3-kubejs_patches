@@ -1,0 +1,22 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "input": {
+    "base_ingredient": {
+      "tag": "forge:rods/wooden"
+    },
+    "count": 18
+  },
+  "additives": [
+    {
+      "tag": "forge:bitumen"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:dead_torch",
+      "count": 18
+    }
+  ],
+  "time": 100,
+  "energy": 51200
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:rods/treated_wood"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:dead_torch"
+    }
+  ]
+}

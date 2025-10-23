@@ -52,9 +52,9 @@ Please feel free to reach out to me on discord for any questions!
 
 ### New things
 • Added the Dust Mop <br/>
-• Added recipes for TF cloud blocks <br/>
-• Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
-• Added gemstone washing recipes <br/>
+• Added clean Gemstone Dust, along with their washing recipes <br/>
+• Added lots of extra Torch and Redstone Torch recipes <br/>
+• Added recipes for Barrel Cacti, Firmaciv Thatch Roofing and Cloud Blocks <br/>
 • Added crushing recipes TFC ore blocks <br/>
 • Added Create Mixer recipes for dye fluids <br/>
 

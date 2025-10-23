@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:dead_torch"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:torch"
+    }
+  ],
+  "heatRequirement": "heated"
+}

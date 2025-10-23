@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r",
+    "s",
+    "m"
+  ],
+  "key": {
+    "r": {
+      "tag": "forge:dusts/redstone"
+    },
+    "s": {
+      "tag": "forge:dusts/sulfur"
+    },
+    "m": {
+      "tag": "forge:rods/metal"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone_torch"
+  }
+}
