@@ -80,6 +80,7 @@ Please feel free to reach out to me on discord for any questions!
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
 • Added Crude Hammer recipes for breaking down coal blocks <br/>
 • Added Mechanical Press recipes for some Crude Hammer recipes (like breaking down overworld Quartz crystal blocks!) <br/>
+• Added an IE Sawmill recipe for Empty Spools <br/>
 
 ### Balancing
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
@@ -132,3 +133,4 @@ Please feel free to reach out to me on discord for any questions!
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
 • Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>
+• Not a fix but removed recipes for Homestead Jars due to the rendering issues they cause <br/>

@@ -37,6 +37,8 @@ onEvent('recipes', event => {
 		{id: 'farmersdelight:book_from_canvas'},
 		{id: 'create_sa:incomplete_book_recipe'},
 
+		{id: 'tfchomestead:crafting/jar'},
+		{id: 'tfchomestead:crafting/jar_zinc'},
 		{id: /^functionalstorage:fluid_.+/},
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},
