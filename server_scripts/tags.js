@@ -1281,6 +1281,7 @@ onEvent('tags.items', event => {
 	event.add('tfc:very_large_heavy', [
 		'kubejs:press_head',
 		'kubejs:hardened_press_head',
+		'kubejs:hardened_press_head_red',
 		'create:steam_engine',
 		'#travelersbackpack:custom_travelers_backpack',
 		/^animaltrap:.+_carcass$/,

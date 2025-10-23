@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_wire",
+  "input": {
+    "tag": "forge:ingots/aluminum"
+  },
+  "result": {
+    "item": "immersiveengineering:wire_aluminum",
+    "count": 4
+  },
+  "energy": 1200
+}

@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head_red",
+  "input": {
+    "tag": "forge:ingots/pig_iron"
+  },
+  "result": {
+    "tag": "forge:ingots/high_carbon_steel"
+  },
+  "energy": 2400
+}

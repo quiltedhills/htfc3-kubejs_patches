@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": [
+    {
+      "tag": "forge:double_ingots/copper"
+    },
+    {
+      "tag": "forge:sheets/copper"
+    }
+  ],
+  "result": {
+    "item": "tfc:metal/rod/copper",
+    "count": 4
+  },
+  "energy": 2400
+}

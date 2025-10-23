@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:ingots/wrought_iron"
+  },
+  "result": {
+    "item": "tfc:metal/rod/wrought_iron",
+    "count": 2
+  },
+  "energy": 1200
+}

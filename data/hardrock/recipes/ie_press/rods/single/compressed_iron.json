@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:ingots/compressed_iron"
+  },
+  "result": {
+    "item": "kubejs:compressed_rod",
+    "count": 2
+  },
+  "energy": 1200
+}

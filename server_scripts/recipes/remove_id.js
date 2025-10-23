@@ -26,6 +26,8 @@ onEvent('recipes', event => {
 		{id: 'minecraft:cooked_chicken_from_smoking'},
 		{id: 'minecraft:cooked_mutton_from_smoking'},
 		{id: /^firmalife:crafting\/masa/},
+		{id: /^immersiveengineering:metalpress\/plate_/},
+		{id: /^immersiveengineering:metalpress\/wire_/},
 
 		{id: 'butchersdelight:cutting/mutton'},
 		{id: 'create:mixing/chocolate_melting'},
@@ -182,7 +184,6 @@ onEvent('recipes', event => {
 		{id: 'mekanism:factory/advanced/sawing'},
 		{id: 'mekanism:factory/elite/sawing'},
 		{id: 'mekanism:factory/ultimate/sawing'},
-		{id: 'immersiveengineering:blueprint/mold_wire'},
 		{id: 'immersiveengineering:blueprint/mold_packing_9'},
 		{id: 'tfc_ie_addon:blueprint/mold_sheet'},
 		{id: 'tfc_ie_addon:blueprint/mold_block'},

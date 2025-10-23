@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": [
+    {
+      "tag": "forge:double_ingots/aluminum"
+    },
+    {
+      "tag": "forge:sheets/aluminum"
+    }
+  ],
+  "result": {
+    "item": "immersiveengineering:stick_aluminum",
+    "count": 4
+  },
+  "energy": 2400
+}

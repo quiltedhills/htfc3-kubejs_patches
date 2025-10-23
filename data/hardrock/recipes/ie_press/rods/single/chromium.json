@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:ingots/chromium"
+  },
+  "result": {
+    "item": "firmalife:metal/rod/chromium",
+    "count": 2
+  },
+  "energy": 1200
+}

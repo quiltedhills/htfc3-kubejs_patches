@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head_red",
+  "input": {
+    "tag": "forge:double_ingots/aluminum"
+  },
+  "result": {
+    "tag": "forge:sheets/aluminum"
+  },
+  "energy": 2400
+}

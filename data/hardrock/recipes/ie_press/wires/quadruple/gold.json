@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_wire",
+  "input": {
+    "tag": "forge:double_sheets/gold"
+  },
+  "result": {
+    "item": "createaddition:gold_wire",
+    "count": 16
+  },
+  "energy": 4800
+}

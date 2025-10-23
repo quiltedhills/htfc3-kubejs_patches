@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": [
+    {
+      "tag": "forge:double_ingots/bronze"
+    },
+    {
+      "tag": "forge:sheets/bronze"
+    }
+  ],
+  "result": {
+    "item": "tfc:metal/rod/bronze",
+    "count": 4
+  },
+  "energy": 2400
+}

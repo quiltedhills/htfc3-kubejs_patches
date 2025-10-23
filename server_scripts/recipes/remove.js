@@ -42,7 +42,6 @@ onEvent('recipes', event => {
 	event.remove({output: ['#tfc:foods/flour'], type: 'immersiveengineering:crusher'})
 	event.remove({output: ['#forge:dusts'], type: 'immersiveengineering:hammer_crushing'})
 	event.remove({output: ['#forge:storage_blocks'], type: 'immersiveengineering:metal_press'})
-	event.remove({output: ['#forge:wires'], type: 'immersiveengineering:metal_press'})
 	event.remove({output: ['#forge:plates'], type: 'tconstruct:casting_table'})
 	event.remove({output: ['#forge:ingots', '#forge:nuggets', '#minecraft:coals', '#forge:gems'], type: 'minecraft:blasting'})
 	//

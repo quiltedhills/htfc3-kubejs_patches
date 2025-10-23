@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head",
+  "input": {
+    "tag": "forge:double_ingots/constantan"
+  },
+  "result": {
+    "tag": "forge:sheets/constantan"
+  },
+  "energy": 2400
+}

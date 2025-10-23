@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head",
+  "input": {
+    "item": "tfc:refined_iron_bloom"
+  },
+  "result": {
+    "tag": "forge:ingots/wrought_iron"
+  },
+  "energy": 2400
+}

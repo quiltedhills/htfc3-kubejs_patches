@@ -57,6 +57,8 @@ Please feel free to reach out to me on discord for any questions!
 • Added recipes for Barrel Cacti, Firmaciv Thatch Roofing and Cloud Blocks <br/>
 • Added crushing recipes TFC ore blocks <br/>
 • Added Create Mixer recipes for dye fluids <br/>
+• Added bulk recipes for Rods and Wires for the IE Metal Press <br/>
+• Added red steel heads for the IE press :p <br/>
 
 ### Documentation / Meta
 • Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtiness meter with precise numeric values <br/>

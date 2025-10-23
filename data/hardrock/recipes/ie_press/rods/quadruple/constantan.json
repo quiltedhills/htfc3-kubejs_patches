@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:double_sheets/constantan"
+  },
+  "result": {
+    "item": "immersiveposts:stick_constantan",
+    "count": 8
+  },
+  "energy": 4800
+}
