@@ -272,6 +272,16 @@ onEvent('tags.items', event => {
 	event.add('immersiveengineering:forbidden_in_crates', [
 		'#functionalstorage:drawer'
 	])
+	
+	event.add('hardrock:permanent_lanterns', [
+		'minecraft:lantern',
+		'minecraft:soul_lantern',
+		'supplementaries:copper_lantern',
+		'supplementaries:brass_lantern',
+		'supplementaries:crimson_lantern',
+		'supplementaries:silver_lantern',
+		'supplementaries:lead_lantern',
+	])
 	event.add('forge:rods/metal', [
 		/^tfc:metal\/rod\//,
 		/^firmalife:metal\/rod\//,

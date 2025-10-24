@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone"
+    },
+    {
+      "item": "minecraft:blackstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "supplementaries:blackstone_lamp"
+    }
+  ]
+}

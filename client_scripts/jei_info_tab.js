@@ -96,4 +96,7 @@ onEvent('jei.information', event => {
 		'Please see the TFC guidebook entry for more info!',
 		'You can hover over the charcoal item and hold Ctrl for a few seconds to open the TFC guidebook page that is tied to it.'
 	])
+	event.add('minecraft:glowstone', [
+		'Sometimes found for sale on Amadron!'
+	])
 })

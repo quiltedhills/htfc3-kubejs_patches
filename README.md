@@ -32,7 +32,7 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-### Important changes
+### Important changes ("TL;DR")
 • Added gemstone washing! Gems may be worth processing for byproducts in mid- and late-game now. Feedback wanted! <br/>
 • Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
 • ^ Fluorite is no longer farmable with Quartzite Gravel. Please let us know if this wrecks late-game balancing too much! <br/>
@@ -85,6 +85,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added an IE Sawmill recipe for Empty Spools <br/>
 • Made the Cut Cattail recipe accept Taro Roots <br/>
 • Made Press Heads not as heavy <br/>
+• Added Mechanical Press recipe for making pumpkin chunks <br/>
 
 ### Balancing
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
@@ -97,17 +98,19 @@ Please feel free to reach out to me on discord for any questions!
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70% (still more efficient than knapping by hand), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
 • Primitive Glass can no longer be dyed into placeable glass panes <br/>
 • Made the Compass and Climate Station recipes accept Primitive Glass <br/>
+• Redstone Lamps and some related items are now much cheaper to make <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread and Clipboards <br/>
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles and Tool Boxes are now more expensive to make <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
 • LPG can now be used as Blaze Burner fuel <br/>
 • Making plastic from Ethylene and Propylene now gives slightly more bitumen <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
 • Canvas is now crafted from Jute Fibers instead of Straw <br/>
 • Changed recipes for Books <br/>
+• Backpacks are now considered very heavy items <br/>
 
 ### Fixes
 • Fixed block hardness for IE and Firmalife TFC ores <br/>
