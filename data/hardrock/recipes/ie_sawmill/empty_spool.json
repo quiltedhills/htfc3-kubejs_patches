@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "input": {
+    "tag": "forge:treated_wood_slab"
+  },
+  "result": {
+    "item": "createaddition:spool",
+    "count": 1
+  },
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "energy": 200
+}

@@ -1,27 +1,28 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BCB",
-    "YOY",
-    "BMB"
+    "LFL",
+    "GPG",
+    "LBL"
   ],
   "key": {
-    "Y": {
-      "item": "minecraft:blue_stained_glass_pane"
+    "G": {
+      "tag": "forge:2panes"
     },
-    "C": {
-      "tag": "tfc:workbenches"
-    },
-    "O": [
-      {
-        "item": "adchimneys:stone_pump"
+    "F": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "tfc:blue_dye",
+        "amount": 1000
       }
-    ],
-    "B": {
+    },
+    "P": {
+      "item": "adchimneys:stone_pump"
+    },
+    "L": {
       "tag": "tfc:lumber"
     },
-    "M": {
+    "B": {
       "item": "tfc:brass_mechanisms"
     }
   },

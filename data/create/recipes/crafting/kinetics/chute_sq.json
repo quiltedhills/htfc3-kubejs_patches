@@ -9,6 +9,6 @@
     {"type": "create:pressing","ingredients": [{"item": "immersiveengineering:chute_copper"}],"results": [{"item": "immersiveengineering:chute_copper"}]},
     {"type": "create:cutting","ingredients": [{"item": "immersiveengineering:chute_copper"}],"results": [{"item": "immersiveengineering:chute_copper"}]}
     ],
-  "results": [{"item": "create:chute","count":2}],
+  "results": [{"item": "create:chute","count": 1}],
   "loops": 1
 }

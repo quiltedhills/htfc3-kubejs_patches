@@ -83,6 +83,8 @@ Please feel free to reach out to me on discord for any questions!
 • Added Crude Hammer recipes for breaking down coal blocks <br/>
 • Added Mechanical Press recipes for some Crude Hammer recipes (like breaking down overworld Quartz crystal blocks!) <br/>
 • Added an IE Sawmill recipe for Empty Spools <br/>
+• Made the Cut Cattail recipe accept Taro Roots <br/>
+• Made Press Heads not as heavy <br/>
 
 ### Balancing
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
@@ -93,6 +95,8 @@ Please feel free to reach out to me on discord for any questions!
 • Increased processing speed of IE Crushers <br/>
 • Increased outputs from washing Andesite Rock Powder <br/>
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70% (still more efficient than knapping by hand), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
+• Primitive Glass can no longer be dyed into placeable glass panes <br/>
+• Made the Compass and Climate Station recipes accept Primitive Glass <br/>
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
@@ -101,14 +105,13 @@ Please feel free to reach out to me on discord for any questions!
 • Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
 • LPG can now be used as Blaze Burner fuel <br/>
 • Making plastic from Ethylene and Propylene now gives slightly more bitumen <br/>
-• Made the compass recipe accept primitive glass panes <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
 • Canvas is now crafted from Jute Fibers instead of Straw <br/>
 • Changed recipes for Books <br/>
 
 ### Fixes
 • Fixed block hardness for IE and Firmalife TFC ores <br/>
-• Digital Miners can no longer be destroyed by falling blocks <br/>
+• Digital Miners and Waystones can no longer be destroyed by falling blocks (just discovered that this is something we can control, please suggest any other blocks that you think should get collapse protection) <br/>
 • Fixed the crafting grid AdPother filter application recipes crashing the game <br/>
 • Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in empty tanks <br/>

@@ -83,7 +83,9 @@ onEvent('tags.blocks', event => {
 	])
 	event.add('tfc:toughness_3', [
 		'mekanism:digital_miner',
-		'mekanism:bounding_block'
+		'mekanism:bounding_block',
+		'#waystones:waystones',
+		'#waystones:sharestones'
 	])
 	event.add('tfc:can_be_snow_piled', [
 		'tfc:placed_item'
@@ -1145,6 +1147,7 @@ onEvent('tags.items', event => {
 	])
 	//----------------
 	event.add('tfc:huge_very_heavy', [
+		'#travelersbackpack:custom_travelers_backpack',
 		'createoreexcavation:drilling_machine',
 		'#astikorcarts:animal_cart',
 		'#astikorcarts:supply_cart',
@@ -1283,7 +1286,6 @@ onEvent('tags.items', event => {
 		'kubejs:hardened_press_head',
 		'kubejs:hardened_press_head_red',
 		'create:steam_engine',
-		'#travelersbackpack:custom_travelers_backpack',
 		/^animaltrap:.+_carcass$/,
 		'immersiveengineering:treated_post',
 		'immersiveengineering:alu_post',
