@@ -142,4 +142,5 @@ Please feel free to reach out to me on discord for any questions!
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
 • Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>
-• Not a fix but removed recipes for Homestead Jars due to the rendering issues they cause <br/>
+• Removed recipes for Homestead Jars due to the rendering issues they cause <br/>
+• Disabled the recipe for Vanilla Cat spawn eggs, they will be re-introduced in a later update <br/>

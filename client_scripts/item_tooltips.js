@@ -902,9 +902,10 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, [Text.gold('Pushes entities around when given a redstone signal.')])
-			text.add(2, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
-			text.add(3, [Text.gold('essentially is just a little toy.')])
+			text.add(1, Text.gold('Pushes entities around when given a redstone signal.'))
+			text.add(2, Text.gold(''))
+			text.add(3, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
+			text.add(4, [Text.gold('is essentially just a little toy.')])
 		}
 	})
 	tooltip.addAdvanced(['create:belt_connector'], (item, advanced, text) => {
@@ -1415,4 +1416,31 @@ function convertNumber(num) {
 			text.add(9, Text.gold('but are not available until lategame.'))
 		}
 	})
+	tooltip.addAdvanced([
+		'tfc:gem/opal',
+		'tfc:gem/pyrite',
+		'tfc:gem/ruby',
+		'tfc:gem/sapphire',
+		'tfc:gem/topaz',
+	], (item, advanced, text) => {
+		text.add(1, [Text.red('Not usable outside of Villager trading')])
+	})
+	tooltip.addAdvanced('minecraft:wolf_spawn_egg', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Summons a '), Text.yellow('vanilla Wolf'), Text.gold('.')])
+			text.add(2, [Text.gold('Vanilla wolves can be tamed with '), Text.yellow('Bones'), Text.gold(' using vanilla taming mechanics.')])
+			text.add(3, [Text.gold('They are capable of getting powerful perks from '), Text.yellow('Doggy Talents'), Text.gold('.')])
+		}
+	})
+	// TODO: add cat food as a dedicated taming item
+	//tooltip.addAdvanced('minecraft:cat_spawn_egg', (item, advanced, text) => {
+	//	if (!tooltip.shift) {
+	//		text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+	//	} else {
+	//		text.add(1, [Text.gold('Summons a '), Text.yellow('vanilla Cat'), Text.gold('.')])
+	//		text.add(2, [Text.gold('Vanilla cats can be tamed with '), Text.yellow('Cat Food'), Text.gold(' using vanilla taming mechanics.')])
+	//	}
+	//})
 })
