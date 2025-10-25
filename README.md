@@ -128,6 +128,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken text when attempting to knap rotten Pumpkins <br/>
+• Fixed Cheese Wheel recipes accepting rotten curds <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>
