@@ -115,18 +115,19 @@ Please feel free to reach out to me on discord for any questions!
 ### Fixes
 • Fixed block hardness for IE and Firmalife TFC ores <br/>
 • Digital Miners and Waystones can no longer be destroyed by falling blocks (just discovered that this is something we can control, please suggest any other blocks that you think should get collapse protection) <br/>
-• Fixed the crafting grid AdPother filter application recipes crashing the game <br/>
-• Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
+• Fixed the respirator and vacuum bag filter application recipes crashing the game <br/>
+• Fixed KubeJS items sometimes having broken black-and-purple sprites or models <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in empty tanks <br/>
-• Tweaked coffee-related recipes and item names <br/>
+• Fixed bowled and bottled Farmer's Delight food items creating duplicate bowl/bottle items when put into the crafting grid <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
+• Tweaked coffee-related recipes and item names <br/>
 • Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
 • Removed some unobtainable meat types from JEI <br/>
 • Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
-• Fixed broken message when attempting to knap rotten Pumpkins <br/>
+• Fixed broken text when attempting to knap rotten Pumpkins <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>

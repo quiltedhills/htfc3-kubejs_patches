@@ -314,12 +314,16 @@ onEvent('tags.items', event => {
 		'#tfc:buckets/metal/colored_steel',
 		'minecraft:bucket'
 	])
-	event.add('farmersdelight:nourishing/1', [
+	event.add('farmersdelight:nourishing/1x', [
+		'pneumaticcraft:cod_n_chips',
+		'pneumaticcraft:salmon_tempura',
+		'firmalife:food/banana_split',
+
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
 		'farmersrespite:blazing_chili'
 	])
-	event.add('farmersdelight:nourishing/2', [
+	event.add('farmersdelight:nourishing/2x', [
 		'farmersdelight:pasta_with_meatballs',
 		'farmersdelight:pasta_with_mutton_chop',
 		'farmersdelight:mushroom_rice',
@@ -328,7 +332,7 @@ onEvent('tags.items', event => {
 		'farmersrespite:black_cod',
 		'farmersrespite:tea_curry'
 	])
-	event.add('farmersdelight:nourishing/3', [
+	event.add('farmersdelight:nourishing/3x', [
 		'farmersdelight:roasted_mutton_chops',
 		'farmersdelight:vegetable_noodles',
 		'farmersdelight:squid_ink_pasta',
@@ -362,16 +366,18 @@ onEvent('tags.items', event => {
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
 	event.add('tfc:wooden_bowl_food', [
-		'untamedwilds:food_turtle_soup',
-		'farmersdelight:baked_cod_stew',
-		'farmersdelight:squid_ink_pasta',
 		'minecraft:rabbit_stew',
-		'farmersdelight:chicken_soup',
-		'farmersdelight:dog_food',
 		'minecraft:beetroot_soup',
-		'farmersdelight:fish_stew',
+		'untamedwilds:food_turtle_soup',
+		'untamedwilds:food_hemlock_stew',
 		'farmersrespite:blazing_chili',
 		'farmersrespite:tea_curry',
+		'farmersrespite:black_cod',
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:squid_ink_pasta',
+		'farmersdelight:chicken_soup',
+		'farmersdelight:dog_food',
+		'farmersdelight:fish_stew',
 		'farmersdelight:fried_rice',
 		'farmersdelight:pumpkin_soup',
 		'farmersdelight:bone_broth',
@@ -385,18 +391,20 @@ onEvent('tags.items', event => {
 		'farmersdelight:beef_stew',
 		'farmersdelight:vegetable_noodles',
 		'farmersdelight:fruit_salad',
-		'farmersdelight:honey_glazed_ham_block',
 		'farmersdelight:grilled_salmon',
 		'farmersdelight:mixed_salad',
 		'farmersdelight:steak_and_potatoes',
-		'farmersdelight:roast_chicken_block',
-		'farmersdelight:shepherds_pie_block',
-		'farmersrespite:black_cod',
-		'untamedwilds:food_hemlock_stew',
 		'farmersdelight:roasted_mutton_chops',
 		'farmersdelight:nether_salad',
 		'farmersdelight:bacon_and_eggs',
-		'farmersdelight:rice_roll_medley_block'
+		'farmersdelight:shepherds_pie_block',
+		'farmersdelight:shepherds_pie',
+		'farmersdelight:honey_glazed_ham_block',
+		'farmersdelight:honey_glazed_ham',
+		'farmersdelight:roast_chicken_block',
+		'farmersdelight:roast_chicken',
+		'farmersdelight:rice_roll_medley_block',
+		'farmersdelight:stuffed_pumpkin'
 	])
 	event.add('tfc:foods/usable_in_soup', [
 		'minecraft:baked_potato',

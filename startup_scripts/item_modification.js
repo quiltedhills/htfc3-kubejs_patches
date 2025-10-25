@@ -17,14 +17,51 @@ onEvent('item.modification', event => {
 	event.modify('minecraft:golden_carrot', item => { item.foodProperties = food => { food.alwaysEdible() } })
 	event.modify('untamedwilds:food_turtle_soup', item => { item.maxStackSize = 32 })
 
-
-
-	// Nourishment fix (to be reworked from the ground up)
+	// Fix glass bottle / wooden bowl dupe
 	event.modify([
-		// Non-FD things don't seem to work ;-;
-		//'pneumaticcraft:cod_n_chips',
-		//'pneumaticcraft:salmon_tempura',
-		//'firmalife:food/banana_split',
+		'farmersdelight:apple_cider',
+		'farmersdelight:melon_juice',
+		'farmersdelight:hot_cocoa',
+		'farmersrespite:blazing_chili',
+		'farmersrespite:tea_curry',
+		'farmersrespite:black_cod',
+		'farmersdelight:baked_cod_stew',
+		'farmersdelight:squid_ink_pasta',
+		'farmersdelight:chicken_soup',
+		'farmersdelight:dog_food',
+		'farmersdelight:fish_stew',
+		'farmersdelight:fried_rice',
+		'farmersdelight:pumpkin_soup',
+		'farmersdelight:bone_broth',
+		'farmersdelight:mushroom_rice',
+		'farmersdelight:ratatouille',
+		'farmersdelight:cooked_rice',
+		'farmersdelight:noodle_soup',
+		'farmersdelight:vegetable_soup',
+		'farmersdelight:pasta_with_meatballs',
+		'farmersdelight:pasta_with_mutton_chop',
+		'farmersdelight:beef_stew',
+		'farmersdelight:vegetable_noodles',
+		'farmersdelight:fruit_salad',
+		'farmersdelight:grilled_salmon',
+		'farmersdelight:mixed_salad',
+		'farmersdelight:steak_and_potatoes',
+		'farmersdelight:roasted_mutton_chops',
+		'farmersdelight:nether_salad',
+		'farmersdelight:bacon_and_eggs',
+		'farmersdelight:roast_chicken',
+		'farmersdelight:shepherds_pie',
+		'farmersdelight:honey_glazed_ham',
+		'farmersdelight:stuffed_pumpkin'
+	], item => { item.craftingRemainder = null })
+
+
+
+	// Nourishment fix (TODO: rework from the ground up)
+	event.modify([
+		'pneumaticcraft:cod_n_chips',
+		'pneumaticcraft:salmon_tempura',
+		'firmalife:food/banana_split',
 
 		'farmersdelight:bacon_and_eggs',
 		'farmersdelight:ratatouille',
@@ -35,6 +72,7 @@ onEvent('item.modification', event => {
 			food.effect('farmersdelight:nourishment', 150, 0, 1)
 		}
 	})
+
 	event.modify([
 		'farmersdelight:pasta_with_meatballs',
 		'farmersdelight:pasta_with_mutton_chop',

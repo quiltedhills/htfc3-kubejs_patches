@@ -25,6 +25,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/soup/beetroot'},
 		{id: 'minecraft:cooked_chicken_from_smoking'},
 		{id: 'minecraft:cooked_mutton_from_smoking'},
+		{id: 'htm:food/cooked_chicken'},
 		{id: /^firmalife:crafting\/masa/},
 		{id: /^immersiveengineering:metalpress\/plate_/},
 		{id: /^immersiveengineering:metalpress\/wire_/},
@@ -215,6 +216,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
 		{id: 'createdeco:polished_iron_bars_from_iron_ingot_stonecutting'},
 		{id: 'minecraft:sandpaper_polishing/iron_bars_from_polishing'},
+		{id: 'tfc_ie_addon:crusher/ingot_iron'},
+		{id: 'createdeco:netherite_nugget_from_netherite_ingot'},
 		
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
