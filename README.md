@@ -90,6 +90,7 @@ Please feel free to reach out to me on discord for any questions!
 ### Balancing
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
 • Made the Create Sifter gravel loot tables match the sluicing ones, essentially nerfing them really hard <br/>
+• Removed Tiny Coal from gravel sieving loot tables <br/>
 • Sifting/sluicing colored sand is now much more likely to give gems <br/>
 • Overhauled the sand sifting loot tables <br/>
 • Made Osmium virtual veins for the Create Drilling Machine require a netherite drill <br/>
@@ -103,6 +104,7 @@ Please feel free to reach out to me on discord for any questions!
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
+• Bladders are no longer a guaranteed drop from lots of animals, and instead follow the drop chances written in the TFC guidebook. The exceptions are Hippos and Bisons, which retained a 100% drop chance. <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles and Tool Boxes are now more expensive to make <br/>
 • LPG can now be used as Blaze Burner fuel <br/>
@@ -140,6 +142,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed TNT having two identical crafting recipes <br/>
 • Fixed a Fluid Drawer exploit <br/>
 • Fixed an exploit with Toolboxes <br/>
+• Fixed Pumpkin Pies and Cooked Pies not returning a Pie Pan when eaten <br/>
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
 • Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>
