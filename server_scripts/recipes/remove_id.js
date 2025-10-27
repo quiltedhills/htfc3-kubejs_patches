@@ -1,7 +1,6 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.remove([
-		{id: 'minecraft:hardrock/cr_milling/sulfur'},
 		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'mekanism:processing/fluorite/from_block'},
 
@@ -26,11 +25,24 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casting/soup/beetroot'},
 		{id: 'minecraft:cooked_chicken_from_smoking'},
 		{id: 'minecraft:cooked_mutton_from_smoking'},
+		{id: 'htm:food/cooked_chicken'},
 		{id: /^firmalife:crafting\/masa/},
+		{id: /^immersiveengineering:metalpress\/plate_/},
+		{id: /^immersiveengineering:metalpress\/wire_/},
+
 		{id: 'butchersdelight:cutting/mutton'},
 		{id: 'create:mixing/chocolate_melting'},
 		{id: 'immersivepetroleum:petcoke_block_to_items'},
+		{id: 'minecraft:end_crystal'},
+		{id: 'minecraft:repeater'},
+		{id: 'minecraft:comparator'},
+		{id: 'farmersdelight:painting_from_canvas'},
+		{id: 'farmersdelight:book_from_canvas'},
+		{id: 'create_sa:incomplete_book_recipe'},
 
+		{id: 'tfchomestead:crafting/jar'},
+		{id: 'tfchomestead:crafting/jar_zinc'},
+		{id: /^functionalstorage:fluid_.+/},
 		{id: 'create:splashing/stained_glass'},
 		{id: 'create:splashing/stained_glass_pane'},
 		{id: /^tconstruct:common\/glass\/.+_clear_stained_glass_pane/},
@@ -173,7 +185,6 @@ onEvent('recipes', event => {
 		{id: 'mekanism:factory/advanced/sawing'},
 		{id: 'mekanism:factory/elite/sawing'},
 		{id: 'mekanism:factory/ultimate/sawing'},
-		{id: 'immersiveengineering:blueprint/mold_wire'},
 		{id: 'immersiveengineering:blueprint/mold_packing_9'},
 		{id: 'tfc_ie_addon:blueprint/mold_sheet'},
 		{id: 'tfc_ie_addon:blueprint/mold_block'},
@@ -205,6 +216,8 @@ onEvent('recipes', event => {
 		{id: 'createdeco:cast_iron_ingot_from_cast_iron_block'},
 		{id: 'createdeco:polished_iron_bars_from_iron_ingot_stonecutting'},
 		{id: 'minecraft:sandpaper_polishing/iron_bars_from_polishing'},
+		{id: 'tfc_ie_addon:crusher/ingot_iron'},
+		{id: 'createdeco:netherite_nugget_from_netherite_ingot'},
 		
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
@@ -215,7 +228,6 @@ onEvent('recipes', event => {
 		{id: 'immersivepetroleum:squeezer/graphite_dust'},
 		{id: /^mekanism:pigment_extracting\/stained_glass/},
 		{id: 'mekanism:upgrade/anchor'},
-		{id: 'minecraft:hardrock/tfc_heating/netherite_nugget'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_gold_cast'},
 		{id: 'tconstruct:smeltery/casting/metal/iron/wire_sand_cast'},
 		{id: 'tfc:heating/metal/netherite_ingot'},

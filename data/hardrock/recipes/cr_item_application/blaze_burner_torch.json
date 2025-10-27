@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:blaze_burner"
+    },
+    {
+      "item": "tfc:dead_torch"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:torch",
+      "nbt": "{display: {Lore: ['{\"text\":\"Lights up torches in bulk\", \"italic\": false, \"color\": \"white\"}']}}"
+    }
+  ]
+}

@@ -8,6 +8,16 @@
     {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]},
     {"type": "create:pressing","ingredients": [{"item": "weathertfc:sand/sand_layer/white"}],"results": [{"item": "weathertfc:sand/sand_layer/white"}]}
     ],
-  "results": [{"item": "tfc_ie_addon:mineral/quartz_shard", "count": 2}],
+  "results": [
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "count": 2,
+      "chance": 0.75
+    },
+    {
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "chance": 0.25
+    }
+  ],
   "loops": 1
 }

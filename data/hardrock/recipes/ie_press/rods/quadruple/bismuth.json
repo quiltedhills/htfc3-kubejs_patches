@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:double_sheets/bismuth"
+  },
+  "result": {
+    "item": "tfc:metal/rod/bismuth",
+    "count": 8
+  },
+  "energy": 4800
+}

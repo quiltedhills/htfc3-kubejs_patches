@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_wire",
+  "input": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "createaddition:gold_wire",
+    "count": 4
+  },
+  "energy": 1200
+}

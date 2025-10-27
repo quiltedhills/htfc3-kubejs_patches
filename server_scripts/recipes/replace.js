@@ -11,7 +11,6 @@ onEvent('recipes', event => {
 	event.replaceInput({mod: 'immersiveposts'}, 'minecraft:stone_bricks', '#tfc:rock/bricks')
 	event.replaceInput({mod: 'firmalife'}, 'minecraft:glass', '#forge:2panes')
 	event.replaceInput({mod: 'glassential'}, 'minecraft:glass', '#forge:glass')
-	event.replaceInput({mod: 'pneumaticcraft'}, 'minecraft:glowstone', 'mekanismgenerators:solar_generator')
 	event.replaceInput({mod: 'farmersdelight'}, 'minecraft:beetroot', 'tfc:food/beet')
 	//general shaped
     event.replaceInput({type: 'minecraft:crafting_shaped'}, 'immersiveengineering:lantern', 'tfc:metal/lamp/copper')

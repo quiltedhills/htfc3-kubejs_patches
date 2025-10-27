@@ -90,4 +90,13 @@ onEvent('jei.information', event => {
 		' ',
 		'Alternatively, you can use a Smart Chest with Magnet Upgrades placed outside of the structure to collect the dropped petcoke from a distance.'
 	])
+	event.add('minecraft:charcoal', [
+		['Charcoal is obtained through making ', Text.of('Charcoal Pits').underlined(), '. This involves placing lots of logs down, completely covering them from air, and lighting them on fire.'],
+		' ',
+		'Please see the TFC guidebook entry for more info!',
+		'You can hover over the charcoal item and hold Ctrl for a few seconds to open the TFC guidebook page that is tied to it.'
+	])
+	event.add('minecraft:glowstone', [
+		'Sometimes found for sale on Amadron!'
+	])
 })

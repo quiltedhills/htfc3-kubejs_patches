@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by tfch",
   "type": "tfc:extra_products_shapeless_crafting",
   "extra_products": [
     {
@@ -12,16 +11,21 @@
     "recipe": {
       "type": "minecraft:crafting_shapeless",
       "ingredients": [
-        {
-          "item": "tfc:food/cattail_root"
-        },
+        [
+          {
+            "item": "tfc:food/cattail_root"
+          },
+          {
+            "item": "tfc:food/taro_root"
+          }
+        ],
         {
           "tag": "forge:tools/knives"
         }
       ],
       "result": {
         "item": "kubejs:cut_cattail",
-      "count": 3
+        "count": 3
       }
     }
   }

@@ -1,5 +1,19 @@
 onEvent('block.right_click', event => {
-	// Fix bug/exploit interaction with Fluid Drawers and fluid containers
+	// Allow lighting torches from blaze burners
+	if ((event.block.id == 'create:blaze_burner' || event.block.id == 'createaddition:liquid_blaze_burner')
+		&& event.item.id == 'tfc:dead_torch') {
+			event.cancel() // Cancel usual interactions, mainly placing the torch
+			if (event.block.properties.blaze == 'smouldering') {
+				event.player.setStatusMessage('This Blaze Burner is not fueled!')
+				return
+			}
+			let torchCount = event.item.count
+			event.item.count = 0
+			event.player.giveInHand(`${torchCount}x tfc:torch`)
+			event.player.server.runCommandSilent(`execute as ${event.player} at @s run playsound minecraft:entity.blaze.shoot block @a ~ ~ ~ ${0.25 + torchCount/48} ${1.5 + Math.random()/2}`)
+	}
+
+	// Fix bug/exploit interaction with Fluid Drawers and fluid containers and make it impossible to upgrade them
 	if (/^functionalstorage:fluid_/.test(event.block.id) && event.item.id != 'minecraft:air') event.cancel()
 
 	// Disable uncrafting tables completely

@@ -8,6 +8,9 @@ onEvent('jei.remove.recipes', event => {
 	event.remove('create:automatic_shaped', [
 		'hardrock:mc_crafting/legacy_amethyst_powder'
 	])
+	event.remove('create:deploying', [
+		'hardrock:cr_item_application/blaze_burner_torch_using_deployer'
+	])
 	event.remove('tfc:sealed_barrel', [
 		'hardrock:tfc_barrel/ice_shavings_with_water',
 		'hardrock:tfc_barrel/snowball_with_water'

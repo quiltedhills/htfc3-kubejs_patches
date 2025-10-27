@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "CCC",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "tfc:powder/salt"
+    },
+    "C": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/milk_curd"
+      }
+    }
+  },
+  "result": {
+    "item": "firmalife:cheddar_wheel"
+  }
+}

@@ -1,5 +1,11 @@
 {
   "item.exnihilosequentia.stone_hammer": "Stone Crude Hammer",
   "item.exnihilosequentia.iron_hammer": "Wrought Iron Crude Hammer",
-  "item.exnihilosequentia.netherite_hammer": "Black Steel Crude Hammer"
+  "item.exnihilosequentia.netherite_hammer": "Black Steel Crude Hammer",
+  "block.exnihilosequentia.birch_sieve":"Light Sieve",
+  "item.exnihilosequentia.string_mesh":"Large String Mesh",
+  "item.exnihilosequentia.iron_mesh":"Large Iron Mesh",
+  "item.exnihilosequentia.diamond_mesh":"Large Diamond Mesh",
+  "item.exnihilosequentia.emerald_mesh":"Large Emerald Mesh",
+  "item.exnihilosequentia.netherite_mesh":"Large Netherite Mesh"
 }

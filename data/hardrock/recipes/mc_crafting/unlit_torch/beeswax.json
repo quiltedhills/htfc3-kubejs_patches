@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:rods/wooden"
+    },
+    {
+      "tag": "forge:wax/beeswax"
+    }
+  ],
+  "result": {
+    "item": "tfc:dead_torch",
+    "count": 2
+  }
+}

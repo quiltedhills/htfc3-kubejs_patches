@@ -1,20 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " r ",
-    "rlr",
-    " r "
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "hardrock:permanent_lanterns"},
+  "transitionalItem": {"item": "tconstruct:scorched_lantern"},
+  "sequence": [
+    {"type": "create:deploying", "ingredients": [{"item": "tconstruct:scorched_lantern"}, {"item": "mcwwindows:brown_mosaic_glass"}], "results": [{"item": "tconstruct:scorched_lantern"}]},
+    {"type": "create:deploying", "ingredients": [{"item": "tconstruct:scorched_lantern"}, {"item": "tinygates:not_gate_item"}], "results": [{"item": "tconstruct:scorched_lantern"}]},
+    {"type": "create:deploying", "ingredients": [{"item": "tconstruct:scorched_lantern"}, {"tag": "forge:dusts/redstone"}], "results": [{"item": "tconstruct:scorched_lantern"}]},
+    {"type": "create:deploying", "ingredients": [{"item": "tconstruct:scorched_lantern"}, {"tag": "forge:dusts/redstone"}], "results": [{"item": "tconstruct:scorched_lantern"}]},
+    {"type": "create:pressing", "ingredients": [{"item": "tconstruct:scorched_lantern"}], "results": [{"item": "tconstruct:scorched_lantern"}]}
   ],
-  "key": {
-    "r": {
-      "tag": "forge:dusts/redstone"
-    },
-    "l": {
-      "item": "supplementaries:blackstone_lamp"
-    }
-  },
-  "result": {
-    "item": "minecraft:redstone_lamp",
-    "count": 4
-  }
+  "results": [{"item": "minecraft:redstone_lamp", "count": 1}],
+  "loops": 1
 }

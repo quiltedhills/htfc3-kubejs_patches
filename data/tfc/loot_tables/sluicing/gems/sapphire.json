@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "kubejs:clean_gem_dust/amethyst"
+              "name": "kubejs:clean_gem_dust/sapphire"
             },
             {
               "type": "minecraft:item",

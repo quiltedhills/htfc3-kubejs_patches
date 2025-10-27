@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CGC",
+    "GRG",
+    "CGC"
+  ],
+  "key": {
+    "C": {
+      "tag": "tfc:rock/chiseled_bricks"
+    },
+    "R": {
+      "item": "tfc:ore/ruby"
+    },
+    "G": {
+      "item": "glassential:glass_redstone"
+    }
+  },
+  "result": {
+    "item": "securitycraft:laser_block"
+  }
+}

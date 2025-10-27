@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head_red",
+  "input": {
+    "tag": "forge:double_ingots/stainless_steel"
+  },
+  "result": {
+    "tag": "forge:sheets/stainless_steel"
+  },
+  "energy": 2400
+}

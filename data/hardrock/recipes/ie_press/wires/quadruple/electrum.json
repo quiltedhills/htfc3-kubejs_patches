@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_wire",
+  "input": {
+    "tag": "forge:double_sheets/electrum"
+  },
+  "result": {
+    "item": "immersiveengineering:wire_electrum",
+    "count": 16
+  },
+  "energy": 4800
+}

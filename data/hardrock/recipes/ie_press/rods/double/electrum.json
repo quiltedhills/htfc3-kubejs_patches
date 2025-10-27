@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": [
+    {
+      "tag": "forge:double_ingots/electrum"
+    },
+    {
+      "tag": "forge:sheets/electrum"
+    }
+  ],
+  "result": {
+    "item": "immersiveposts:stick_electrum",
+    "count": 4
+  },
+  "energy": 2400
+}

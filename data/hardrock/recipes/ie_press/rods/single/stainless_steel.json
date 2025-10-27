@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:ingots/stainless_steel"
+  },
+  "result": {
+    "item": "firmalife:metal/rod/stainless_steel",
+    "count": 2
+  },
+  "energy": 1200
+}

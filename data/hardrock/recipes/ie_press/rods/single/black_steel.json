@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:ingots/black_steel"
+  },
+  "result": {
+    "item": "tfc:metal/rod/black_steel",
+    "count": 2
+  },
+  "energy": 1200
+}

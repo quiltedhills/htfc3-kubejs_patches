@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": [
+    {
+      "tag": "forge:double_ingots/rose_gold"
+    },
+    {
+      "tag": "forge:sheets/rose_gold"
+    }
+  ],
+  "result": {
+    "item": "tfc:metal/rod/rose_gold",
+    "count": 4
+  },
+  "energy": 2400
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ff"
+  ],
+  "key": {
+    "f": {
+      "item": "tfc:jute_fiber"
+    }
+  },
+  "result": {
+    "item": "farmersdelight:canvas",
+    "count": 4
+  }
+}

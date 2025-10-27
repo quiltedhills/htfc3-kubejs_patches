@@ -32,7 +32,7 @@ Please feel free to reach out to me on discord for any questions!
 
 
 # Changelogs / differences from 1.6.2
-### Important changes
+### Important changes ("TL;DR")
 • Added gemstone washing! Gems may be worth processing for byproducts in mid- and late-game now. Feedback wanted! <br/>
 • Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
 • ^ Fluorite is no longer farmable with Quartzite Gravel. Please let us know if this wrecks late-game balancing too much! <br/>
@@ -52,19 +52,24 @@ Please feel free to reach out to me on discord for any questions!
 
 ### New things
 • Added the Dust Mop <br/>
-• Added recipes for TF cloud blocks <br/>
-• Added a recipe for Barrel Cacti and Firmaciv Thatch Roofing <br/>
-• Added gemstone washing recipes <br/>
+• Added clean Gemstone Dust, along with their washing recipes <br/>
+• Added lots of extra Torch and Redstone Torch recipes <br/>
+• Added recipes for Barrel Cacti, Firmaciv Thatch Roofing and Cloud Blocks <br/>
 • Added crushing recipes TFC ore blocks <br/>
 • Added Create Mixer recipes for dye fluids <br/>
+• Added bulk recipes for Rods and Wires for the IE Metal Press <br/>
+• Added red steel heads for the IE press :p <br/>
 
 ### Documentation / Meta
 • Added an optional disabled-by-default resource pack that replaces the Body Hygiene dirtiness meter with precise numeric values <br/>
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
+• Added informational tooltips for End Portal Frames and End Cakes, as well as some other items <br/>
+• Introduces unique names to different mesh kinds to make it easier to tell which is which <br/>
+• Made it impossible to place a String Mesh onto Create Sifters to help lower confusion <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
+• Tweaked a bunch of various tooltips <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Hidden a bunch of unobtainable fluids <br/>
-• Made it impossible to place a String Mesh onto a Create Sifter to help lower confusion <br/>
 • Changed map color of Terror Birds to orange (from white) <br/>
 • Added JEI info for the Coker structure explaining how to collect its outputs <br/>
 
@@ -77,6 +82,10 @@ Please feel free to reach out to me on discord for any questions!
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
 • Added Crude Hammer recipes for breaking down coal blocks <br/>
 • Added Mechanical Press recipes for some Crude Hammer recipes (like breaking down overworld Quartz crystal blocks!) <br/>
+• Added an IE Sawmill recipe for Empty Spools <br/>
+• Made the Cut Cattail recipe accept Taro Roots <br/>
+• Made Press Heads not as heavy <br/>
+• Added Mechanical Press recipe for making pumpkin chunks <br/>
 
 ### Balancing
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
@@ -87,32 +96,39 @@ Please feel free to reach out to me on discord for any questions!
 • Increased processing speed of IE Crushers <br/>
 • Increased outputs from washing Andesite Rock Powder <br/>
 • Dropped the output rate for the Unfired Brick deployer recipes from 100% to 70% (still more efficient than knapping by hand), added IE metal press (and Mekanism) recipes with 100% output rate to take their place <br/>
+• Primitive Glass can no longer be dyed into placeable glass panes <br/>
+• Made the Compass and Climate Station recipes accept Primitive Glass <br/>
+• Redstone Lamps and some related items are now much cheaper to make <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread and Clipboards <br/>
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles and Tool Boxes are now more expensive to make <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns and Garlic Bread <br/>
 • LPG can now be used as Blaze Burner fuel <br/>
 • Making plastic from Ethylene and Propylene now gives slightly more bitumen <br/>
-• Made the compass recipe accept primitive glass panes <br/>
 • Sprinklers and TC Plate Armor can now be made from any colored steel, instead of specifically requiring red or blue <br/>
+• Canvas is now crafted from Jute Fibers instead of Straw <br/>
+• Changed recipes for Books <br/>
+• Backpacks are now considered very heavy items <br/>
 
 ### Fixes
 • Fixed block hardness for IE and Firmalife TFC ores <br/>
-• Digital Miners can no longer be destroyed by falling blocks <br/>
-• Fixed the crafting grid AdPother filter application recipes crashing the game <br/>
-• Hopefully fixed KubeJS items sometimes having broken black-and-purple item models <br/>
+• Digital Miners and Waystones can no longer be destroyed by falling blocks (just discovered that this is something we can control, please suggest any other blocks that you think should get collapse protection) <br/>
+• Fixed the respirator and vacuum bag filter application recipes crashing the game <br/>
+• Fixed KubeJS items sometimes having broken black-and-purple sprites or models <br/>
 • Fixed "Cup of Iced Tea" showing up instead of "Air" in empty tanks <br/>
-• Tweaked coffee-related recipes and item names <br/>
+• Fixed bowled and bottled Farmer's Delight food items creating duplicate bowl/bottle items when put into the crafting grid <br/>
 • Fixed recipe conflicts for Propellers and Iron Sheets, Peculiar Bells and Brass Sheetmetal, as well as for Copycat Layers, Bytes and Slices <br/>
 • Fixed the Iron Bloom sequenced recipe going straight into the Iron Hoe recipe <br/>
+• Tweaked coffee-related recipes and item names <br/>
 • Corrected weird TC smelting values for Quartz-Enriched Iron <br/>
 • Removed overlapping recipes for Sulfur (for some reason you were able to get powder directly from ore with some machines) <br/>
 • Removed some unobtainable meat types from JEI <br/>
 • Fixed Reinforced Stone being a valid crafting ingredient for making itself, resulting in wasting meshes <br/>
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
-• Fixed broken message when attempting to knap rotten Pumpkins <br/>
+• Fixed broken text when attempting to knap rotten Pumpkins <br/>
+• Fixed Cheese Wheel recipes accepting rotten curds <br/>
 • Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>
@@ -126,3 +142,6 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed an exploit with Toolboxes <br/>
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
+• Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>
+• Removed recipes for Homestead Jars due to the rendering issues they cause <br/>
+• Disabled the recipe for Vanilla Cat spawn eggs, they will be re-introduced in a later update <br/>

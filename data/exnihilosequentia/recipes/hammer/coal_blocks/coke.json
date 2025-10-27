@@ -1,7 +1,7 @@
 {
   "type": "exnihilosequentia:hammer",
   "input": {
-    "tag": "forge:storage_blocks/coke"
+    "tag": "forge:storage_blocks/coal_coke"
   },
   "results": [
     {

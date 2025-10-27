@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SLL",
+    "IBT",
+    "III"
+  ],
+  "key": {
+    "S": {
+      "item": "mekanismgenerators:solar_generator"
+    },
+    "L": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "I": {
+      "tag": "forge:ingots/compressed_iron"
+    },
+    "B": {
+      "item": "pneumaticcraft:pcb_blueprint"
+    },
+    "T": {
+      "item": "pneumaticcraft:pressure_tube"
+    }
+  },
+  "result": {
+    "item": "pneumaticcraft:uv_light_box"
+  }
+}

@@ -48,20 +48,6 @@ onEvent('item.tooltip', tooltip => {
 			})
 		})
 	})
-	tooltip.addAdvanced('minecraft:charcoal', (item, advanced, text) => {
-		// the "hold shift" tooltip here is commented out as it's added by pollution filter descriptions
-		//if (!tooltip.shift) {
-		//	text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
-		//} else {
-		if (tooltip.shift) {
-			text.add(Text.of(''))
-			text.add(Text.of('Need charcoal?'))
-			text.add([Text.of('Place logs into a hole in a stack with ').gold(), Text.of('Shift + Right Click').yellow()])
-			text.add(Text.gold('Use a Fire Starter to burn it and quickly cover with a solid block'))
-			text.add(Text.gold('Wait patiently - until there is NO smoke'))
-			text.add(Text.gold('Mine with a shovel'))
-		}
-	})
 	tooltip.addAdvanced('firmalife:drying_mat', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
@@ -95,38 +81,49 @@ onEvent('item.tooltip', tooltip => {
 			text.add(3, [Text.gold('Costs '), Text.yellow('10mb per point'), Text.gold(', up to 100mb per full meter.')])
 		}
 	})
+	tooltip.addAdvanced([
+		'compressedcreativity:mesh_splashing',
+		'compressedcreativity:mesh_dense',
+		'compressedcreativity:mesh_haunted'
+	], (item, advanced, text) => {
+		text.add(1, [Text.gray('Used with '), Text.white('Industrial Air Blowers')])
+	})
 	tooltip.addAdvanced('compressedcreativity:mesh_splashing', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Makes the air blower shoot water particles'))
-			text.add(2, Text.gold('as if there is a block of water in front of it.'))
-			text.add(3, '')
-			text.add(4, Text.red('Only usable on Industrial Air Blowers.'))
+			text.add(2, Text.gold('Makes the air blower shoot water particles'))
+			text.add(3, Text.gold('as if there is a block of water in front of it.'))
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_dense', (item, advanced, text) => {
 		if (!tooltip.shift) {
-			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Drastically lowers the minimal temperature for'))
-			text.add(2, Text.gold('smoking and blasting, but makes heat drain faster.'))
-			text.add(3, [Text.gold('The exact values are '), Text.yellow('55°C+ for smoking ')])
-			text.add(4, [Text.gold('and '), Text.yellow('110°C+ for blasting'), Text.gold('.')])
-			text.add(5, '')
-			text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
+			text.add(2, Text.gold('Drastically lowers the minimal temperature for'))
+			text.add(3, Text.gold('smoking and blasting, but makes heat drain faster.'))
+			text.add(4, [Text.gold('The exact values are '), Text.yellow('55°C+ for smoking ')])
+			text.add(5, [Text.gold('and '), Text.yellow('110°C+ for blasting'), Text.gold('.')])
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:mesh_haunted', (item, advanced, text) => {
 		if (!tooltip.shift) {
+			text.add(2, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(2, Text.gold('Turns passing hot air into soul flame,'))
+			text.add(3, Text.gold('which allows for haunting recipes.'))
+			text.add(4, Text.yellow('Keep in mind that the fan still has to be hot!'))
+			text.add(5, [Text.gold('The exact minimal temperature is '), Text.yellow('110°C'), Text.gold('.')])
+		}
+	})
+	tooltip.addAdvanced('compressedcreativity:mesh_splashing_frozen', (item, advanced, text) => {
+		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Turns passing hot air into soul flame,'))
-			text.add(2, Text.gold('which allows for haunting recipes.'))
-			text.add(3, Text.yellow('Keep in mind that the fan still has to be hot!'))
-			text.add(4, [Text.gold('The exact minimal temperature is '), Text.yellow('110°C'), Text.gold('.')])
-			text.add(5, '')
-			text.add(6, Text.red('Only usable on Industrial Air Blowers.'))
+			text.add(1, Text.gold('A result of a fan with a Water Soaked Mesh'))
+			text.add(2, Text.gold('working outside of the valid temperature range.'))
+			text.add(3, Text.gold(''))
+			text.add(4, Text.gold('Can be re-heated back into a Soaked Mesh.'))
 		}
 	})
 	tooltip.addAdvanced('compressedcreativity:air_blower', (item, advanced, text) => {
@@ -282,30 +279,24 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Extraterrestrial mineral'))
-			text.add(2, [Text.gold('Can be found exploring the '), Text.red('Solar System')])
+			text.add(1, Text.gold('Extraterrestrial mineral.'))
+			text.add(2, [Text.gold('Can be found exploring the '), Text.red('Solar System'), Text.gold('.')])
 		}
 	})
-	tooltip.addAdvanced([//#forge:dead_animal
+	tooltip.addAdvanced([
 		'butchersdelight:dead_cow',
 		'butchersdelight:deadsheep',
 		'butchersdelight:deadpig',
 		'butchersdelight:deadgoat',
 		'butchersdelight:deadhoglin',
-		'butchersdelight:deadchiken',
-		'butchersdelight:deadrabbitbrown',
 		'butchersdelight:deadllama',
 		'butchersdelight:deadstrider'
 	], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, [Text.gold('Hang a dead animal on a hook from '), Text.red('ButchersDelight')])
-			text.add(2, Text.gold('Small animals (chicken, rabbit) place on ground'))
-			text.add(3, Text.gold('Use any knife and dissect the meat'))
-			//text.add(3, Text.gold('Optionally you can roast them over a campfire but you get less meat ' ))
-			//this cannot be done since the vanilla campfire is removed
-			//TODO: update if there is another way to bake the whole animal
+			text.add(1, [Text.gold('Can be hung on a '), Text.yellow('Hook'), Text.gold(' for extra outputs,')])
+			text.add(2, Text.gold('or cut up with a knife in the crafting grid.'))
 		}
 	})
 	tooltip.addAdvanced([//#tfc:drink_items
@@ -317,7 +308,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, Text.gold('Use this item to store drinking water'))
-			text.add(2, Text.gold('But be careful, fresh water can sometimes give you poisoning'))
+			text.add(2, Text.gold('But be careful, fresh water can give you infection'))
 			text.add(3, Text.gold('Drink only boiled, purified or mineral water'))
 		}
 	})
@@ -329,26 +320,33 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('You can use as fuel in a lamp'))
-			text.add(2, Text.gold('It is enough for a long burn time'))
+			text.add(1, Text.gold('Can be used as fuel in TFC lamps'))
 		}
 	})
 	tooltip.addAdvanced('farmersrespite:coffee_berries', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Coffee fruits can be found exclusively on coffee bushes'))
-			text.add(2, Text.gold('They grow in the Nether in basalt biomes'))
-			text.add(3, Text.gold('The journey can be difficult but rewarding'))
+			text.add(1, [Text.gold('Coffee berries can be found on dark-red '), Text.yellow('Coffee Bushes'), Text.gold('.')])
+			text.add(2, [Text.gold('They grow in '), Text.yellow('the Nether'), Text.gold(', exclusively in basalt biomes.')])
+			text.add(3, Text.gold('The journey can be difficult, but rewarding.'))
 		}
 	})
 	tooltip.addAdvanced('tfc:food/cattail_root', (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, Text.gold('Cattails you can find near water'))
-			text.add(2, Text.gold('Look for lakes and reservoirs of water'))
-			text.add(3, Text.gold('Use a knife - Does not always drop'))
+			text.add(1, Text.gold('Cattail plants are plentiful in lakes and puddles!'))
+			text.add(2, Text.gold('Break them with a knife for a chance to get a root.'))
+		}
+	})
+	tooltip.addAdvanced('tfc:food/taro_root', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(1, Text.gold('Water Taros are a tropical variant of Cattails.'))
+			text.add(2, [Text.gold('They can be found in areas with a temperature of '), Text.yellow('12C+')])
+			text.add(3, [Text.gold('and an annual rainfall of '), Text.yellow('250mm+'), Text.gold('.')])
 		}
 	})
 	tooltip.addAdvanced('adpother:dust', (item, advanced, text) => {
@@ -414,9 +412,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, [Text.of('this one ').gold(), Text.of('does not').yellow(), Text.of(' prevent eating or limit interactions!').gold()])
 		}
 	})
-	tooltip.addAdvanced([
-		/^adpother:.+_vacuum_bag$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adpother:.+_vacuum_bag$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -426,9 +422,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Multiple different filters can be active at once.'))
 		}
 	})
-	tooltip.addAdvanced([
-		/^adpother:.+_vacuum_tube$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adpother:.+_vacuum_tube$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -449,9 +443,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Is effectively a very primitive Vacuum Tube.'))
 		}
 	})
-	tooltip.addAdvanced([
-		/^adpother:.+_filter_frame$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adpother:.+_filter_frame$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -462,9 +454,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, '')
 		}
 	})
-	tooltip.addAdvanced([
-		/^adchimneys:.+_chimney$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adchimneys:.+_chimney$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -474,9 +464,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(4, Text.gold('Has no range limit, since it lets gravity do the work.'))
 		}
 	})
-	tooltip.addAdvanced([
-		/^adchimneys:.+_vent$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adchimneys:.+_vent$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -487,9 +475,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, [Text.of('Loses pump power when over ').gold(), Text.of('30 blocks').yellow(), Text.of(' away from a pump.').gold()])
 		}
 	})
-	tooltip.addAdvanced([
-		/^adchimneys:.+_pump$/
-	], (item, advanced, text) => {
+	tooltip.addAdvanced([/^adchimneys:.+_pump$/], (item, advanced, text) => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
@@ -615,19 +601,50 @@ onEvent('item.tooltip', tooltip => {
 			text.add(6, '')
 			if (!tooltip.ctrl) text.add(7, [Text.of('Hold ').gold(), Text.of('Ctrl').yellow(), Text.of(' for stationary alternatives!').gold()])
 			else {
-				text.add(7, [Text.gold('A '), Text.yellow('Smart Chest'), Text.gold(' with '), Text.of('magnet and range upgrades').yellow(), Text.gold(' can suck up')])
+				text.add(7, [Text.gold('* A '), Text.yellow('Smart Chest'), Text.gold(' with '), Text.of('magnet and range upgrades').yellow(), Text.gold(' can suck up')])
 				text.add(8, Text.gold('items in a huge area, and has incredible storage.'))
-				text.add(9, [Text.gold('A '), Text.yellow('Vacuum Hopper'), Text.gold(' is similar, but is simpler and cheaper!')])
-				text.add(10, [Text.gold('An '), Text.yellow('Encased Fan'), Text.gold(' with a '), Text.yellow('Nozzle'), Text.gold(' can pull or push items')])
+				text.add(9, [Text.gold('* A '), Text.yellow('Vacuum Hopper'), Text.gold(' is similar, but is simpler and cheaper!')])
+				text.add(10, [Text.gold('* An '), Text.yellow('Encased Fan'), Text.gold(' with a '), Text.yellow('Nozzle'), Text.gold(' can pull or push items')])
 				text.add(11, Text.gold('in all directions. Higher rotation speed means higher range!'))
 			}
 		}
 	})
 	tooltip.addAdvanced([
 		'kubejs:magnet/hdpe_offline',
-		'createsifter:string_mesh'
+		'createsifter:string_mesh',
+		/^waterstrainer:.+_mesh/,
+		'htm:plant_mesh',
+		'kubejs:compressed_mesh',
+		'compressedcreativity:mesh_empty',
+		'compressedcreativity:mesh_woven'
 	], (item, advanced, text) => {
 		text.add(1, Text.gray('Crafting Material'))
+	})
+	tooltip.addAdvanced('createsifter:brass_mesh', (item, advanced, text) => {
+		text.add(1, [Text.gray('Used with '), Text.white('Mechanical Sifters')])
+	})
+	tooltip.addAdvanced('createsifter:sifter', (item, advanced, text) => {
+		text.add(1, [Text.gray('Requires a '), Text.white('Hard Brass Mesh'), Text.gray(' to work')])
+	})
+	tooltip.addAdvanced([
+		'exnihilosequentia:string_mesh',
+		'exnihilosequentia:iron_mesh',
+		'exnihilosequentia:diamond_mesh',
+		'exnihilosequentia:emerald_mesh',
+		'exnihilosequentia:netherite_mesh'
+	], (item, advanced, text) => {
+		text.add(1, [Text.gray('Used with '), Text.white('Light Sieves')])
+	})
+	tooltip.addAdvanced([
+		'exnihilosequentia:iron_mesh',
+		'exnihilosequentia:diamond_mesh',
+		'exnihilosequentia:emerald_mesh',
+		'exnihilosequentia:netherite_mesh'
+	], (item, advanced, text) => {
+		text.add(2, Text.gray('Increased outputs for some recipes. Check with JEI!'))
+	})
+	tooltip.addAdvanced('exnihilosequentia:birch_sieve', (item, advanced, text) => {
+		text.add(1, [Text.gray('Requires any '), Text.white('Large Mesh'), Text.gray(' to work')])
 	})
 	tooltip.addAdvanced('kubejs:magnet/hdpe', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -642,10 +659,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(7, '')
 			if (!tooltip.ctrl) text.add(8, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(8, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
+				text.add(8, [Text.gold('* PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
 				text.add(9, Text.gold('teleport items from up to 20-ish blocks.'))
 				text.add(10, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(11, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
+				text.add(11, [Text.gold('* Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
 				text.add(12, Text.gold('attract nearby items via teleporting.'))
 				text.add(13, Text.gold('Does not have a large range, but is passive.'))
 			}
@@ -662,10 +679,10 @@ onEvent('item.tooltip', tooltip => {
 			text.add(5, '')
 			if (!tooltip.ctrl) text.add(6, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for better alternatives than this magnet!')])
 			else {
-				text.add(6, [Text.gold('PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
+				text.add(6, [Text.gold('* PNC\'s '), Text.yellow('Magnet Upgrades'), Text.gold(' let a pneumatic chestplate')])
 				text.add(7, Text.gold('teleport items from up to 20-ish blocks.'))
 				text.add(8, Text.gold('This costs air pressure, but is super powerful!'))
-				text.add(9, [Text.gold('Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
+				text.add(9, [Text.gold('* Mekanism\'s '), Text.yellow('Magnetic Attraction Unit'), Text.gold(' lets mekasuit boots')])
 				text.add(10, Text.gold('attract nearby items via teleporting.'))
 				text.add(11, Text.gold('Does not have a large range, but is passive.'))
 			}
@@ -849,10 +866,24 @@ onEvent('item.tooltip', tooltip => {
 	], (item, advanced, text) => {
 		text.add(1, Text.gold('Decorative use only'))
 	})
-	tooltip.addAdvanced([
-		'minecraft:end_portal_frame'
-	], (item, advanced, text) => {
-		text.add(1, Text.gray('Breakable'))
+	tooltip.addAdvanced('minecraft:end_portal_frame', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(1, [Text.gold('Making twelve of these lets you build your own end portal!')])
+			text.add(2, [Text.gold('Acts as a more permanent alternative to '), Text.yellow('End Cakes'), Text.gold('.')])
+			text.add(3, [Text.gold('')])
+			text.add(4, [Text.gold('Unlike in vanilla, these are destructible.')])
+		}
+	})
+	tooltip.addAdvanced('exnihilosequentia:end_cake', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
+		} else {
+			text.add(1, [Text.gold('A cheap alternative to making '), Text.yellow('End Portal Frames'), Text.gold('.')])
+			text.add(2, [Text.gold('Is intended to be the first way of getting to the End.')])
+			text.add(3, [Text.gold('Can be used seven times before it gets fully consumed.')])
+		}
 	})
 	tooltip.addAdvanced('weather2:weather_deflector', (item, advanced, text) => {
 		if (!tooltip.shift) {
@@ -871,9 +902,10 @@ onEvent('item.tooltip', tooltip => {
 		if (!tooltip.shift) {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
-			text.add(1, [Text.gold('Pushes entities around when given a redstone signal.')])
-			text.add(2, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
-			text.add(3, [Text.gold('essentially is just a little toy.')])
+			text.add(1, Text.gold('Pushes entities around when given a redstone signal.'))
+			text.add(2, Text.gold(''))
+			text.add(3, [Text.yellow('Not compatible with TFC charcoal forges'), Text.gold(';')])
+			text.add(4, [Text.gold('is essentially just a little toy.')])
 		}
 	})
 	tooltip.addAdvanced(['create:belt_connector'], (item, advanced, text) => {
@@ -926,7 +958,7 @@ function convertNumber(num) {
 	]
 	agedAlcoholEffects.forEach(([drinkName, effectName, effectDuration]) => {
 		tooltip.addAdvanced(`tfc:bucket/${drinkName.replace(/ /g, '_').toLowerCase()}`, (item, advanced, text) => {
-			text.add(1, [Text.gold(`Aged ${drinkName} gives `), Text.yellow(effectName), Text.gold(' for '), Text.yellow(effectDuration)])
+			text.add(1, [Text.gold('When '), Text.yellow('aged'), Text.gold(`, ${drinkName} gives `), Text.yellow(effectName), Text.gold(' for '), Text.yellow(effectDuration)])
 		})
 	})
 
@@ -1369,4 +1401,46 @@ function convertNumber(num) {
 	tooltip.addAdvanced('firmalife:watering_can', (item, advanced, text) => {
 		text.add(1, [Text.gray('Only usable on Greenhouse planters')])
 	})
+	tooltip.addAdvanced(/^functionalstorage:fluid_/, (item, advanced, text) => {
+		text.add(1, [Text.red('Removed due to upgrades making them too strong.')])
+		text.add(2, [Text.gold('Sorry ;-;')])
+		text.add(3, [Text.gold('')])
+		if (!tooltip.ctrl) {
+			text.add(4, [Text.gold('Hold '), Text.yellow('Ctrl'), Text.gold(' for a list of alternatives')])
+		} else {
+			text.add(4, [Text.gold('* '), Text.yellow('PNC Fluid Tanks'), Text.gold(' are rather cheap to make')])
+			text.add(5, [Text.gold('and can hold up to '), Text.yellow('32b of fluid'), Text.gold('.')])
+			text.add(6, [Text.gold('* '), Text.yellow('Jumbo Tanks'), Text.gold(' have almost no special features,')])
+			text.add(7, [Text.gold('but can store an absurd '), Text.yellow('1024b of fluid'), Text.gold('.')])
+			text.add(8, [Text.gold('* High-level '), Text.yellow('Mekanism Fluid Tanks'), Text.gold(' are quite convenient,')])
+			text.add(9, Text.gold('but are not available until lategame.'))
+		}
+	})
+	tooltip.addAdvanced([
+		'tfc:gem/opal',
+		'tfc:gem/pyrite',
+		'tfc:gem/ruby',
+		'tfc:gem/sapphire',
+		'tfc:gem/topaz',
+	], (item, advanced, text) => {
+		text.add(1, [Text.red('Not usable outside of Villager trading')])
+	})
+	tooltip.addAdvanced('minecraft:wolf_spawn_egg', (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('Summons a '), Text.yellow('vanilla Wolf'), Text.gold('.')])
+			text.add(2, [Text.gold('Vanilla wolves can be tamed with '), Text.yellow('Bones'), Text.gold(' using vanilla taming mechanics.')])
+			text.add(3, [Text.gold('They are capable of getting powerful perks from '), Text.yellow('Doggy Talents'), Text.gold('.')])
+		}
+	})
+	// TODO: add cat food as a dedicated taming item
+	//tooltip.addAdvanced('minecraft:cat_spawn_egg', (item, advanced, text) => {
+	//	if (!tooltip.shift) {
+	//		text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+	//	} else {
+	//		text.add(1, [Text.gold('Summons a '), Text.yellow('vanilla Cat'), Text.gold('.')])
+	//		text.add(2, [Text.gold('Vanilla cats can be tamed with '), Text.yellow('Cat Food'), Text.gold(' using vanilla taming mechanics.')])
+	//	}
+	//})
 })

@@ -12,6 +12,13 @@ const carcassesToNotPlace = [
 	'animaltrap:turtle_carcass'
 ]
 onEvent('block.right_click', event => {
+	// Silence the torch placing sound
+	if ((event.block.id == 'create:blaze_burner' || event.block.id == 'createaddition:liquid_blaze_burner')
+		&& event.item.id == 'tfc:dead_torch') event.cancel()
+
+	// Sync upgrades getting consumed on client
+	if (/^functionalstorage:fluid_/.test(event.block.id) && event.item.id != 'minecraft:air') event.cancel()
+
 	// Disable sound when right clicking tanner with shears
 	if (event.item.id == 'minecraft:shears' && /^butchersdelight:rack/.test(event.block.id)) event.cancel()
 

@@ -1,0 +1,10 @@
+{
+  "type": "choppingblock:chopping",
+  "ingredient": {
+    "item": "immersiveengineering:treated_wood_horizontal"
+  },
+  "result": {
+    "item": "tfc_ie_addon:treated_wood_lumber",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_rod",
+  "input": {
+    "tag": "forge:double_sheets/black_steel"
+  },
+  "result": {
+    "item": "tfc:metal/rod/black_steel",
+    "count": 8
+  },
+  "energy": 4800
+}

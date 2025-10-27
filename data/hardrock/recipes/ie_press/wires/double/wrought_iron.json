@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_wire",
+  "input": [
+    {
+      "tag": "forge:double_ingots/wrought_iron"
+    },
+    {
+      "tag": "forge:sheets/wrought_iron"
+    }
+  ],
+  "result": {
+    "item": "createaddition:iron_wire",
+    "count": 8
+  },
+  "energy": 2400
+}

@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "kubejs:hardened_press_head",
+  "input": {
+    "tag": "forge:double_ingots/bismuth_bronze"
+  },
+  "result": {
+    "tag": "forge:sheets/bismuth_bronze"
+  },
+  "energy": 2400
+}
