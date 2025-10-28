@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "P",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "B": {
+      "item": "farmersdelight:cutting_board"
+    }
+  },
+  "result": {
+    "item": "create:clipboard"
+  }
+}

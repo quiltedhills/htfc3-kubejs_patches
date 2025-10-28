@@ -1,0 +1,19 @@
+{
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "tfc:aggregate"
+    },
+    "amount": 3
+  },
+  "extraInput": {
+    "ingredient": {
+      "tag": "forge:clay"
+    },
+    "amount": 2
+  },
+  "output": {
+    "item": "immersiveengineering:concrete",
+    "count": 4
+  }
+}

@@ -284,8 +284,7 @@ onEvent('tags.items', event => {
 		'supplementaries:lead_lantern',
 	])
 	event.add('tfc:wooden_trapdoors', /^tfc:wood\/planks\/.+_trapdoor$/)
-	event.add('mcw_tfc_aio:bridge/supports/wooden', /^mcw_tfc_aio:bridges\/.+_bridges\/.+_bridge_pier$/)
-	event.remove('mcw_tfc_aio:bridge/supports/wooden', /(brick|bamboo|iron)/)
+	event.add('mcw_tfc_aio:bridge/supports/wooden', /^mcw_tfc_aio:bridges\/(?!.*(brick|bamboo|iron)).+_bridges\/.+_bridge_pier$/)
 	event.add('forge:rods/metal', [
 		/^tfc:metal\/rod\//,
 		/^firmalife:metal\/rod\//,

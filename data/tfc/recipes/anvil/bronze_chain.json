@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/bronze"
+  },
+  "result": {
+    "item": "tfc:metal/chain/bronze",
+    "count": 16
+  },
+  "tier": 2,
+  "rules": [
+    "draw_last",
+    "hit_any",
+    "hit_any"
+  ]
+}

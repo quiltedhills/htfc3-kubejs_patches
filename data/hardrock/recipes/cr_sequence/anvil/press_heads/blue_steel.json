@@ -1,0 +1,15 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"tag": "forge:double_ingots/blue_steel"},
+  "transitionalItem": {"item": "immersiveengineering:slab_sheetmetal_colored_blue"},
+  "sequence": [
+    {"type": "createaddition:rolling", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]},
+    {"type": "create:deploying", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}, {"tag": "tfc:flux"}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]},
+    {"type": "create:filling", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}, {"fluid": "minecraft:lava", "nbt": {}, "amount": 125}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]},
+    {"type": "createaddition:rolling", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]},
+    {"type": "create:pressing", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]},
+    {"type": "create:pressing", "ingredients": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}], "results": [{"item": "immersiveengineering:slab_sheetmetal_colored_blue"}]}
+  ],
+  "results": [{"item": "kubejs:hardened_press_head", "count":1}],
+  "loops": 4
+}

@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/bismuth_bronze"
+  },
+  "result": {
+    "item": "tfc:metal/chain/bismuth_bronze",
+    "count": 16
+  },
+  "tier": 2,
+  "rules": [
+    "draw_last",
+    "hit_any",
+    "hit_any"
+  ]
+}

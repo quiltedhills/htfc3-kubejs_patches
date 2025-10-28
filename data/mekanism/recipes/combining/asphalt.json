@@ -1,0 +1,18 @@
+{
+  "type": "mekanism:combining",
+  "mainInput": {
+    "ingredient": {
+      "item": "tfc:aggregate"
+    },
+    "amount": 6
+  },
+  "extraInput": {
+    "ingredient": {
+      "tag": "forge:dusts/coal_petcoke"
+    }
+  },
+  "output": {
+    "item": "immersivepetroleum:asphalt",
+    "count": 8
+  }
+}

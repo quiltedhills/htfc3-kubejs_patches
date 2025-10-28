@@ -1,4 +1,4 @@
-// Joint client script supporting 'kubejs/server_scripts/block_interactions.js'.
+// Joint client script supporting 'kubejs/server_scripts/misc_interactions.js'.
 // *Most* of this is not necessary but helps prevent desync and make things a little nicer!
 
 const carcassesToNotPlace = [
