@@ -37,6 +37,7 @@ Please feel free to reach out to me on discord for any questions!
 • Removed old Create Sifter loot tables for Gravel (those were very strong), replaced them with the sluicing loot tables <br/>
 • ^ Fluorite is no longer farmable with Quartzite Gravel. Please let us know if this wrecks late-game balancing too much! <br/>
 • LPG was bugged to produce colossal amounts of petcoke which is now fixed (Cokers, in turn, received a massive buff) <br/>
+• Made TFC Nutrition less extreme at very low and very high values (feedback wanted!) <br/>
 • Significantly increased gem drop rate for sluicing or sifting colored sand (0.1% -> 0.5%; 1% for yellow and brown sand) <br/>
 • Added Pyrite and Fluorite to the Rare Gems virtual vein for the Create Drilling Machine, removed Ruby due to being less useful <br/>
 • Fixed IE and Firmalife ores being unusually soft (they now take the same time to break as raw stone, same as all TFC ores) <br/>
@@ -65,13 +66,15 @@ Please feel free to reach out to me on discord for any questions!
 • Added tooltips to Nightshade and Stinky Soup mentioning their toxicity <br/>
 • Added informational tooltips for End Portal Frames and End Cakes, as well as some other items <br/>
 • Introduces unique names to different mesh kinds to make it easier to tell which is which <br/>
-• Made it impossible to place a String Mesh onto Create Sifters to help lower confusion <br/>
+• Made it impossible to place a String Mesh onto Create Sifters to help prevent confusion <br/>
 • Added a bit of information regarding silkworm spread to Silkworm-related items and blocks <br/>
+• Added JEI info for the Coker structure explaining how to collect its outputs <br/>
+• Added JEI info for Coral Blocks explaining exact spawning requirements <br/>
+• Disabled all recipes related to Nutritional Paste and added information explaining that it's broken <br/>
 • Tweaked a bunch of various tooltips <br/>
 • Hidden the instant barrel cooling recipes to reduce clutter <br/>
 • Hidden a bunch of unobtainable fluids <br/>
 • Changed map color of Terror Birds to orange (from white) <br/>
-• Added JEI info for the Coker structure explaining how to collect its outputs <br/>
 
 ### Quality of Life
 • Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>
@@ -80,6 +83,7 @@ Please feel free to reach out to me on discord for any questions!
 • Added more advanced recipes for making Gypsum/Alabaster <br/>
 • Made smashing ores into Rocky Chunks with a Mechanical Press require only one action, down from four <br/>
 • Made the Rod into Nugget sequenced recipes take four actions instead of five <br/>
+• Added automation recipes for Whisks and Mechanical Press Heads <br/>
 • Added Crude Hammer recipes for breaking down coal blocks <br/>
 • Added Mechanical Press recipes for some Crude Hammer recipes (like breaking down overworld Quartz crystal blocks!) <br/>
 • Added an IE Sawmill recipe for Empty Spools <br/>
@@ -88,8 +92,10 @@ Please feel free to reach out to me on discord for any questions!
 • Added Mechanical Press recipe for making pumpkin chunks <br/>
 
 ### Balancing
+• Changed nutrition health multipliers from [0.2; 3.0] to [0.3; 2.0] <br/>
 • Swapped petcoke output rates for LPG processing and Bitumen processing <br/>
 • Made the Create Sifter gravel loot tables match the sluicing ones, essentially nerfing them really hard <br/>
+• Removed Tiny Coal from gravel sieving loot tables <br/>
 • Sifting/sluicing colored sand is now much more likely to give gems <br/>
 • Overhauled the sand sifting loot tables <br/>
 • Made Osmium virtual veins for the Create Drilling Machine require a netherite drill <br/>
@@ -99,10 +105,11 @@ Please feel free to reach out to me on discord for any questions!
 • Primitive Glass can no longer be dyed into placeable glass panes <br/>
 • Made the Compass and Climate Station recipes accept Primitive Glass <br/>
 • Redstone Lamps and some related items are now much cheaper to make <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread and Clipboards <br/>
+• Tweaked recipes for Beehives, Clipboards, Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread, Asphalt and IE Concrete <br/>
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>
+• Bladders are no longer a guaranteed drop from lots of animals, and instead follow the drop chances written in the TFC guidebook. The exceptions are Hippos and Bisons, which retained a 100% drop chance. <br/>
 • Micromissiles found in loot chests now only have 5 shots instead of 100 <br/>
 • Micromissiles and Tool Boxes are now more expensive to make <br/>
 • LPG can now be used as Blaze Burner fuel <br/>
@@ -129,7 +136,7 @@ Please feel free to reach out to me on discord for any questions!
 • Fixed TC Mattocks not having the #tfc:axes tag <br/>
 • Fixed broken text when attempting to knap rotten Pumpkins <br/>
 • Fixed Cheese Wheel recipes accepting rotten curds <br/>
-• Fixed anvil move order for Wrought Iron and Cast Iron Grills <br/>
+• Fixed anvil move order for Wrought Iron and Cast Iron Grills, as well as Chains <br/>
 • Fixed Vinegar recipe not accepting aged alcohols <br/>
 • Fixed backpacks being storable in Small Vessels <br/>
 • Fixed TF Venison and Meef not being obtainable <br/>
@@ -137,11 +144,11 @@ Please feel free to reach out to me on discord for any questions!
 • Made End Portal Frames not drop when broken within the End dimension <br/>
 • Fixed Sugar Cubes not having an uncrafting recipe <br/>
 • Fixed Fluorite Blocks not being craftable <br/>
-• Fixed TNT having two identical crafting recipes <br/>
 • Fixed a Fluid Drawer exploit <br/>
 • Fixed an exploit with Toolboxes <br/>
+• Fixed Pumpkin Pies and Cooked Pies not returning a Pie Pan when eaten <br/>
 • Removed a weird mutton cutting recipe <br/>
 • Removed odd Latex Bucket recipe involving supports <br/>
-• Removed duplicate (or very similar) recipes for End Crystals, Redstone Repeaters and Redstone Comparators <br/>
+• Removed duplicate (or very similar) recipes for TNT, End Crystals, Redstone Repeaters and Redstone Comparators <br/>
 • Removed recipes for Homestead Jars due to the rendering issues they cause <br/>
 • Disabled the recipe for Vanilla Cat spawn eggs, they will be re-introduced in a later update <br/>

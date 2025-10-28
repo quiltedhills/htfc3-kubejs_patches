@@ -741,6 +741,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.gold('Turns into a '), Text.yellow('permanent lantern'), Text.gold(' when lit!')])
+			text.add(2, Text.gold('Can only be lit when placed directly on the ground.'))
 		}
 	})
 	tooltip.addAdvanced(['untamedwilds:material_pearl','untamedwilds:material_giant_pearl'], (item, advanced, text) => {
@@ -1397,6 +1398,9 @@ function convertNumber(num) {
 	})
 	tooltip.addAdvanced('myrtrees:rubberwood_log', (item, advanced, text) => {
 		text.add(1, [Text.gold('Has a chance to not drop when broken')])
+	})
+	tooltip.addAdvanced('firmalife:beehive', (item, advanced, text) => {
+		text.add(1, [Text.gold('Requires Beehive Frames to work')])
 	})
 	tooltip.addAdvanced('firmalife:watering_can', (item, advanced, text) => {
 		text.add(1, [Text.gray('Only usable on Greenhouse planters')])

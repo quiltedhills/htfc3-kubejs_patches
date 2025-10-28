@@ -4,7 +4,7 @@
     "base_ingredient": {
       "item": "tfc:stick_bunch"
     },
-    "count": 2
+    "count": 4
   },
   "additives": [
     {
@@ -14,7 +14,7 @@
   "results": [
     {
       "item": "tfc:dead_torch",
-      "count": 18
+      "count": 32
     }
   ],
   "time": 100,

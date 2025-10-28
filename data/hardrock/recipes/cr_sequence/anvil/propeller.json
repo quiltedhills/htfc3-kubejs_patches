@@ -3,12 +3,12 @@
   "ingredient": {"tag": "forge:double_ingots/wrought_iron"},
   "transitionalItem": {"item": "create:iron_sheet"},
   "sequence": [
-    {"type": "create:deploying","ingredients": [{"item": "create:iron_sheet"},{"tag": "tfc:flux"}],"results": [{"item": "create:iron_sheet"}]},
-    {"type": "create:filling","ingredients": [{"item": "create:iron_sheet"},{"fluid": "minecraft:lava","nbt": {},"amount": 125}],"results": [{"item": "create:iron_sheet"}]},
-    {"type": "create:pressing","ingredients": [{"item": "create:iron_sheet"}],"results": [{"item": "create:iron_sheet"}]},
-    {"type": "create:pressing","ingredients": [{"item": "create:iron_sheet"}],"results": [{"item": "create:iron_sheet"}]},
-    {"type": "create:deploying","ingredients": [{"item": "create:iron_sheet"},{"tag": "bookshelf:shears"}],"results": [{"item": "create:iron_sheet"}],"keepHeldItem": true}
+    {"type": "create:deploying", "ingredients": [{"item": "create:iron_sheet"}, {"tag": "tfc:flux"}], "results": [{"item": "create:iron_sheet"}]},
+    {"type": "create:filling", "ingredients": [{"item": "create:iron_sheet"}, {"fluid": "minecraft:lava", "nbt": {}, "amount": 125}], "results": [{"item": "create:iron_sheet"}]},
+    {"type": "create:pressing", "ingredients": [{"item": "create:iron_sheet"}], "results": [{"item": "create:iron_sheet"}]},
+    {"type": "create:pressing", "ingredients": [{"item": "create:iron_sheet"}], "results": [{"item": "create:iron_sheet"}]},
+    {"type": "create:deploying", "ingredients": [{"item": "create:iron_sheet"} ,{"tag": "bookshelf:shears"}], "results": [{"item": "create:iron_sheet"}], "keepHeldItem": true}
   ],
-  "results": [{"item": "create:propeller","count":1}],
+  "results": [{"item": "create:propeller", "count":1}],
   "loops": 1
 }

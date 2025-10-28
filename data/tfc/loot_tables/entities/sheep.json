@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "type": "minecraft:entity",
   "pools": [
     {
@@ -9,16 +8,6 @@
         {
           "type": "minecraft:item",
           "name": "butchersdelight:deadsheep"
-        }
-      ]
-    },
-    {
-      "name": "loot_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "waterflasks:bladder"
         }
       ]
     },

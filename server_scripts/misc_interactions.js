@@ -86,6 +86,12 @@ onEvent('item.right_click', event => {
 	) event.cancel()
 })
 
+onEvent('item.food_eaten', event => {
+	if (['minecraft:pumpkin_pie', 'firmalife:food/cooked_pie'].includes(event.item.id)) {
+		event.player.giveInHand('firmalife:pie_pan')
+	}
+})
+
 const carcassesToNotPlace = [
 	'animaltrap:chicken_carcass',
 	'animaltrap:rabbit_carcass',

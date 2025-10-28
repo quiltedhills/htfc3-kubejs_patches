@@ -4,7 +4,7 @@
     "base_ingredient": {
       "tag": "forge:rods/wooden"
     },
-    "count": 18
+    "count": 32
   },
   "additives": [
     {
@@ -14,7 +14,7 @@
   "results": [
     {
       "item": "tfc:dead_torch",
-      "count": 18
+      "count": 32
     }
   ],
   "time": 100,

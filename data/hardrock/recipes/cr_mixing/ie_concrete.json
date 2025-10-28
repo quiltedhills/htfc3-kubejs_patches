@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:clay"
+    },
+    {
+      "tag": "forge:clay"
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:concrete",
+      "count": 4
+    }
+  ]
+}
