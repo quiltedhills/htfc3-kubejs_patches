@@ -72,6 +72,7 @@ Please feel free to reach out to me on discord for any questions!
 • Hidden a bunch of unobtainable fluids <br/>
 • Changed map color of Terror Birds to orange (from white) <br/>
 • Added JEI info for the Coker structure explaining how to collect its outputs <br/>
+• Disabled all recipes related to Nutritional Paste and added information explaining that it's broken <br/>
 
 ### Quality of Life
 • Made some Clay recipes accept colored TFC sands, as opposed to being limited to vanilla sand <br/>

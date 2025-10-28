@@ -18,6 +18,8 @@ onEvent('recipes', event => {
 		{id: 'farmersdelight:mixed_salad'},
 		{id: 'farmersdelight:cooking/cooked_rice'},
 
+		{id: 'mekanism:module_nutritional_injection_unit'},
+		{id: 'mekanism:canteen'},
 		{id: /^coffee_delight:cooking\/mag\//},
 		{id: /^farmersrespite:brewing\/(strong|long)/},
 		{id: 'coffee_delight:cutting/coffee_beans'},
@@ -39,6 +41,8 @@ onEvent('recipes', event => {
 		{id: 'farmersdelight:painting_from_canvas'},
 		{id: 'farmersdelight:book_from_canvas'},
 		{id: 'create_sa:incomplete_book_recipe'},
+		{id: 'immersivepetroleum:asphalt'},
+		{id: 'immersiveengineering:crafting/concrete'},
 
 		{id: 'tfchomestead:crafting/jar'},
 		{id: 'tfchomestead:crafting/jar_zinc'},
