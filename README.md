@@ -101,7 +101,7 @@ Please feel free to reach out to me on discord for any questions!
 • Primitive Glass can no longer be dyed into placeable glass panes <br/>
 • Made the Compass and Climate Station recipes accept Primitive Glass <br/>
 • Redstone Lamps and some related items are now much cheaper to make <br/>
-• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread and Clipboards <br/>
+• Tweaked recipes for Crude Hammers, Sentry Turrets, Andesite Exoskeletons, Powered Lanterns, Garlic Bread, Clipboards and Beehives <br/>
 • Rubberwood Logs now have a 50% chance to not drop as an item when broken <br/>
 • Decreased output of all Rubberwood Planks recipes <br/>
 • Swapped out some of the gems that the Rare Gems ore vein has to more useful ones <br/>

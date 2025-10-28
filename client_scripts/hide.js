@@ -34,6 +34,7 @@ onEvent('jei.hide.items', event => {
 		'pneumaticcraft:seismic_sensor',
 		'kubejs:clean_amethyst_powder',
 		'minecraft:sweet_berries',
+		'minecraft:beehive',
 
 		/^coffee_delight:.+iced/,
 		'untamedwilds:food_bear_raw',

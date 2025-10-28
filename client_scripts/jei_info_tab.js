@@ -107,6 +107,7 @@ onEvent('jei.information', event => {
 		'mekanism:module_nutritional_injection_unit'
 	], [
 		'Nutritional Paste is currently bugged and does not restore any saturation with TFC enabled.',
-		'For now, all recipes related to it are disabled until a compatibility mod is made.'
+		' ',
+		'For now, all recipes related to it are disabled until a compatibility mod becomes available.'
 	])
 })

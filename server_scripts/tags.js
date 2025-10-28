@@ -273,6 +273,7 @@ onEvent('tags.items', event => {
 		'#functionalstorage:drawer'
 	])
 	
+	event.remove('forge:gravel', /^tfc:deposit/)
 	event.add('hardrock:permanent_lanterns', [
 		'minecraft:lantern',
 		'minecraft:soul_lantern',
@@ -282,6 +283,9 @@ onEvent('tags.items', event => {
 		'supplementaries:silver_lantern',
 		'supplementaries:lead_lantern',
 	])
+	event.add('tfc:wooden_trapdoors', /^tfc:wood\/planks\/.+_trapdoor$/)
+	event.add('mcw_tfc_aio:bridge/supports/wooden', /^mcw_tfc_aio:bridges\/.+_bridges\/.+_bridge_pier$/)
+	event.remove('mcw_tfc_aio:bridge/supports/wooden', /(brick|bamboo|iron)/)
 	event.add('forge:rods/metal', [
 		/^tfc:metal\/rod\//,
 		/^firmalife:metal\/rod\//,
@@ -2460,6 +2464,7 @@ onEvent('tags.items', event => {
     'htm:cooked_poultry_breast'
   ]) */
 	event.removeAllTagsFrom(
+		'minecraft:turtle_egg',
 		'untamedwilds:food_turtle_raw',
 		'untamedwilds:food_turtle_cooked',
 		'untamedwilds:food_bear_raw',

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LRL",
+    "THT",
+    "LSL"
+  ],
+  "key": {
+    "L": {
+      "tag": "tfc:lumber"
+    },
+    "R": {
+      "tag": "forge:rope"
+    },
+    "T": {
+      "tag": "tfc:tool_racks"
+    },
+    "S": {
+      "tag": "mcw_tfc_aio:bridge/supports/wooden"
+    },
+    "H": {
+      "item": "tfc:thatch"
+    }
+  },
+  "result": {
+    "item": "firmalife:beehive"
+  }
+}
