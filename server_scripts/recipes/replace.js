@@ -44,7 +44,12 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:fishing_rod', '#forge:fishing_rods')
 	// tfc shapeless
 	event.replaceInput({type: 'tfc:advanced_shapeless_crafting'}, 'tfc:spindle', '#forge:spindles')
-	
+	// replacing inputs that use specific glue types to use forge:glue tag
+	const glueLike = ['#forge:slimeballs', '#bookshelf:slime_balls']
+	glueLike.forEach((tag) => event.replaceInput({ not: { id: /^tconstruct/ } }, tag, '#forge:glue'))
+	event.replaceInput({id: 'minecraft:hardrock/cr_mixing/ichor_dirt'}, '#forge:glue', 'tconstruct:ichor_slime_ball') // fixing ichor dirt mixing because it's not included in tconstruct recipe id
+
+
 	//replace output
 	event.replaceOutput({}, 'minecraft:gold_ingot', 'tfc:metal/ingot/gold')
 	event.replaceOutput({}, 'minecraft:copper_ingot', 'tfc:metal/ingot/copper')
