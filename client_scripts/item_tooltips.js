@@ -1447,4 +1447,29 @@ function convertNumber(num) {
 	//		text.add(2, [Text.gold('Vanilla cats can be tamed with '), Text.yellow('Cat Food'), Text.gold(' using vanilla taming mechanics.')])
 	//	}
 	//})
+
+	const enchantWarning = 'Silk Touch-like and Fortune-like does not function towards TFC ores!'
+
+	tooltip.addAdvanced([
+	    'minecraft:enchanted_book',
+	], (item, advanced, text) => {
+	        if (item === Item.of('minecraft:enchanted_book').enchant('minecraft:silk_touch', 1))
+	        text.add(1, [Text.gold(enchantWarning)])
+
+	        for (let i = 1; i <= 3; i++) {
+	            if (item === Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', i))
+	            text.add(1, [Text.gold(enchantWarning)])
+	        }
+	    }
+	)
+	tooltip.addAdvanced([
+        'mekanism:module_silk_touch_unit',
+        'refinedstorage:silk_touch_upgrade',
+   	    'mekanism:module_fortune_unit',
+	    /refinedstorage:fortune_([1-3])_upgrade/,
+	    'immersiveengineering:toolupgrade_drill_fortune'
+	], (item, advanced, text) => {
+    	    text.add(1, [Text.gold(enchantWarning)])
+        }
+    )
 })
