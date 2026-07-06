@@ -48,6 +48,7 @@ onEvent('recipes', event => {
 	const glueLike = ['#forge:slimeballs', '#bookshelf:slime_balls']
 	glueLike.forEach((tag) => event.replaceInput({ not: { id: /^tconstruct/ } }, tag, '#forge:glue'))
 	event.replaceInput({id: 'minecraft:hardrock/cr_mixing/ichor_dirt'}, '#forge:glue', 'tconstruct:ichor_slime_ball') // fixing ichor dirt mixing because it's not included in tconstruct recipe id
+	event.replaceInput({id: 'tconstruct:common/slime/lead'}, '#bookshelf:slime_balls', '#forge:glue') // meanwhile tinkers had their own lead crafting recipe that only takes bookshelf:slime_balls
 
 
 	//replace output
