@@ -636,6 +636,7 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'},
 		{id: 'twilightforest:smeltery/melting/metal/fiery/nugget'},
 		{id: 'minecraft:slime_block'},
-		{id: 'tconstruct:common/slime/sticky_piston'}
+		{id: 'tconstruct:common/slime/sticky_piston'},
+		{id: 'htm:compat/tfc/crafting/poultry_raw'}
 	])
 })
