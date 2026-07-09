@@ -1483,7 +1483,12 @@ onEvent('tags.items', event => {
 		'kubejs:earth_cake_slice',
 		'kubejs:magma_cake_slice',
 		'kubejs:blood_cake_slice',
-		'kubejs:ender_cake_slice'
+		'kubejs:ender_cake_slice',
+		'tconstruct:earth_cake',
+		'tconstruct:sky_cake',
+		'tconstruct:magma_cake',
+		'tconstruct:blood_cake',
+		'tconstruct:ender_cake'
 	]),
 	event.add('tfc:foods/meats', [
 		'kubejs:shark_meat',
