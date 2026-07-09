@@ -1,6 +1,15 @@
 // priority: 0
 
 console.info('Registering KJS Items...')
+const cakes = [
+    'chocolate',
+    'honey',
+    'ender',
+    'magma',
+    'earth',
+    'sky',
+    'blood'
+]
 
 onEvent('item.registry', event => {
 	event.create('metal/double_sheet/electrum')   // Display names are in kubejs/assets/kubejs/en_us.json
@@ -149,6 +158,7 @@ onEvent('item.registry', event => {
 	event.create('img_ores').displayName('img_ores')
 	event.create('img_wiki').displayName('img_wiki')
 	event.create('img_book').displayName('img_book')
+	cakes.forEach((cake) => event.create(cake + '_cake_slice').displayName(cake.slice(0, 1).toUpperCase() + cake.slice(1) + ' Cake Slice')) // heh, cake.slice
 })
 
 onEvent('item.registry.tool_tiers', event => {
