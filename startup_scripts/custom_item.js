@@ -158,7 +158,7 @@ onEvent('item.registry', event => {
 	event.create('img_ores').displayName('img_ores')
 	event.create('img_wiki').displayName('img_wiki')
 	event.create('img_book').displayName('img_book')
-	cakes.forEach((cake) => event.create(cake + '_cake_slice').displayName(cake.slice(0, 1).toUpperCase() + cake.slice(1) + ' Cake Slice')) // heh, cake.slice
+	cakes.forEach((cake) => event.create(cake + '_cake_slice').displayName(cake.slice(0, 1).toUpperCase() + cake.slice(1) + ' Cake Slice').food(food => { food.hunger(2).saturation(2) })) // heh, cake.slice
 })
 
 onEvent('item.registry.tool_tiers', event => {
