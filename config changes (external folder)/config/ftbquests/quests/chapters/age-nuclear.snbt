@@ -214,6 +214,7 @@
 			icon: "mekanism:thermal_evaporation_controller"
 			x: 1.0d
 			y: 2.0d
+			subtitle: "Salty and energizing!"
 			description: [
 				"The Thermal Evaporation Plant is a multiblock structure with the purpose of converting Water to Brine, which can be further converted to Lithium by the use of a second Thermal Evaporation Plant."
 				""
@@ -227,7 +228,7 @@
 					id: "0000000000000935"
 					type: "item"
 					item: "mekanism:thermal_evaporation_block"
-					count: 217L
+					count: 32L
 				}
 				{
 					id: "0000000000000936"
@@ -238,13 +239,7 @@
 					id: "0000000000000937"
 					type: "item"
 					item: "mekanism:thermal_evaporation_valve"
-					count: 2L
-				}
-				{
-					id: "7697F26F778AEFE7"
-					type: "item"
-					item: "mekanism:dust_lithium"
-					count: 16L
+					count: 3L
 				}
 			]
 		}
@@ -437,6 +432,7 @@
 							}
 						}
 					}
+					match_nbt: true
 				}
 			]
 		}
@@ -594,11 +590,18 @@
 			dependencies: ["0000000000000933"]
 			hide: true
 			id: "0000000000000906"
-			tasks: [{
-				id: "0000000000000907"
-				type: "item"
-				item: "mekanism:chemical_crystallizer"
-			}]
+			tasks: [
+				{
+					id: "0000000000000907"
+					type: "item"
+					item: "mekanism:chemical_crystallizer"
+				}
+				{
+					id: "2BF9A54F02E190EA"
+					type: "item"
+					item: "mekanism:dust_lithium"
+				}
+			]
 		}
 		{
 			x: -1.5d

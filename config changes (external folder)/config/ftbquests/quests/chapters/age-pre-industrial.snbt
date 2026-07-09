@@ -833,6 +833,20 @@
 						}
 					}
 				}
+				{
+					id: "3F236FFAC84F80D1"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/unfired_pot"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
 			]
 		}
 		{

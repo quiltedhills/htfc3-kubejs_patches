@@ -560,9 +560,11 @@
 			}
 			x: -1.0d
 			y: -11.0d
+			subtitle: "A power generator that certainly won't pollute the air!"
 			description: [
-				"Build a big Refinery for crude oil processing"
+				"Diesel Generators are a nice way to generate power with diesel products, biodiesel and otherwise."
 				""
+				"Though, pay attention to the pollution it makes!"
 			]
 			dependencies: ["276A0C4688CE6EDA"]
 			hide: true
@@ -572,19 +574,13 @@
 					id: "385DDE65DAFFD14C"
 					type: "item"
 					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 8L
+					count: 6L
 				}
 				{
 					id: "343B4EE2C4E79012"
 					type: "item"
 					item: "immersiveengineering:fluid_pipe"
 					count: 5L
-				}
-				{
-					id: "388A76CA27C78A14"
-					type: "item"
-					item: "immersiveengineering:light_engineering"
-					count: 2L
 				}
 				{
 					id: "7D4A62A487919EB8"
@@ -595,13 +591,19 @@
 					id: "7575FB843AAAF78A"
 					type: "item"
 					item: "immersiveengineering:heavy_engineering"
-					count: 2L
+					count: 13L
 				}
 				{
-					id: "7FE9E97EECE1B56B"
+					id: "7F85690C98D0D834"
 					type: "item"
-					item: "immersiveengineering:sheetmetal_iron"
-					count: 16L
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "5E3C1BD37CE203AA"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
 				}
 			]
 		}
@@ -672,7 +674,7 @@
 			]
 		}
 		{
-			title: "Cooker"
+			title: "Coker"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -682,8 +684,9 @@
 			}
 			x: 1.5d
 			y: -6.0d
+			subtitle: "Not the beverage kind of \"Coke\" :P"
 			description: [
-				"Build big Arc Furnace"
+				"This giant structure is an easy way to make petcoke blocks, which when crushed into dusts, enables you to make steel in the Arc Furnace easier!"
 				"Use projector from engineering"
 				"Read the Engineering manual"
 				"A large structure needs a lot of electricity, keep this in mind"
