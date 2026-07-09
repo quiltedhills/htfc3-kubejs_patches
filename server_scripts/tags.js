@@ -1476,7 +1476,14 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
-		'untamedwilds:food_pachyderm_cooked'
+		'untamedwilds:food_pachyderm_cooked',
+		'kubejs:chocolate_cake_slice',
+		'kubejs:honey_cake_slice',
+		'kubejs:sky_cake_slice',
+		'kubejs:earth_cake_slice',
+		'kubejs:magma_cake_slice',
+		'kubejs:blood_cake_slice',
+		'kubejs:ender_cake_slice'
 	]),
 	event.add('tfc:foods/meats', [
 		'kubejs:shark_meat',
