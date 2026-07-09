@@ -1,7 +1,7 @@
 // Joint client script supporting 'kubejs/server_scripts/misc_interactions.js'.
 // *Most* of this is not necessary but helps prevent desync and make things a little nicer!
 
-const carcassesToNotPlace = [
+const blocksToNotPlace = [
 	'animaltrap:chicken_carcass',
 	'animaltrap:rabbit_carcass',
 	'animaltrap:duck_carcass',
@@ -9,7 +9,14 @@ const carcassesToNotPlace = [
 	'animaltrap:pheasant_carcass',
 	'animaltrap:quail_carcass',
 	'animaltrap:turkey_carcass',
-	'animaltrap:turtle_carcass'
+	'animaltrap:turtle_carcass',
+    'createaddition:chocolate_cake',
+    'createaddition:honey_cake',
+    'tconstruct:ender_cake',
+    'tconstruct:magma_cake',
+    'tconstruct:earth_cake',
+    'tconstruct:sky_cake',
+    'tconstruct:blood_cake'
 ]
 onEvent('block.right_click', event => {
 	// Silence the torch placing sound
@@ -33,7 +40,7 @@ onEvent('block.right_click', event => {
 			&& ((isPlaceableSequenceItem(mainHand)) || isPlaceableSequenceItem(offHand))
 		)
 	) event.cancel()
-	if (carcassesToNotPlace.includes(event.item.id)) event.cancel()
+	if (blocksToNotPlace.includes(event.item.id)) event.cancel()
 })
 
 onEvent('item.right_click', event => {

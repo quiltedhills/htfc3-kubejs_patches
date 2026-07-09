@@ -92,7 +92,7 @@ onEvent('item.food_eaten', event => {
 	}
 })
 
-const carcassesToNotPlace = [
+const blocksToNotPlace = [
 	'animaltrap:chicken_carcass',
 	'animaltrap:rabbit_carcass',
 	'animaltrap:duck_carcass',
@@ -100,7 +100,14 @@ const carcassesToNotPlace = [
 	'animaltrap:pheasant_carcass',
 	'animaltrap:quail_carcass',
 	'animaltrap:turkey_carcass',
-	'animaltrap:turtle_carcass'
+	'animaltrap:turtle_carcass',
+    'createaddition:chocolate_cake',
+    'createaddition:honey_cake',
+    'tconstruct:ender_cake',
+    'tconstruct:magma_cake',
+    'tconstruct:earth_cake',
+    'tconstruct:sky_cake',
+    'tconstruct:blood_cake'
 ]
 onEvent('block.place', event => {
 	// Prevent items with sequenced recipe data from being placeable
@@ -125,7 +132,7 @@ onEvent('block.place', event => {
 	}
 	
 	// Make it impossible to place small carcasses
-	if (carcassesToNotPlace.includes(event.block.id)) event.cancel()
+	if (blocksToNotPlace.includes(event.block.id)) event.cancel()
 })
 
 
