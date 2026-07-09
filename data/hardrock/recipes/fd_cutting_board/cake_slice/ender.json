@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": [
+        {
+          "item": "tconstruct:ender_cake"
+        }
+      ]
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "kubejs:ender_cake_slice",
+      "count": 7
+    }
+  ]
+}
