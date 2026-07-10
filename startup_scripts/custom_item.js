@@ -2,13 +2,56 @@
 
 console.info('Registering KJS Items...')
 const cakes = [
-    'chocolate',
-    'honey',
-    'ender',
-    'magma',
-    'earth',
-    'sky',
-    'blood'
+    {
+        name: 'chocolate',
+        effects: []
+    },
+    {
+        name: 'honey',
+        effects: []
+    },
+    {
+        name: 'ender',
+        effects: []
+    },
+    {
+        name: 'magma',
+        effects: [
+            {
+                name: 'fire_resistance',
+                duration: 500
+            }
+        ]
+    },
+    {
+        name: 'earth',
+        effects: [
+            {
+                name: 'luck',
+                duration: 200
+            },
+            {
+                name: 'slowness',
+                duration: 120
+            }
+            ]
+    },
+    {
+        name: 'sky',
+        effects: [
+            {
+                name: 'jump_boost',
+                duration: 240
+            },
+            {
+                name:'slowness',
+                duration: 120
+            }]
+    },
+    {
+        name: 'blood',
+        effects: [{ name: 'mining_fatigue', duration: 80 }]
+    },
 ]
 
 onEvent('item.registry', event => {
@@ -158,7 +201,18 @@ onEvent('item.registry', event => {
 	event.create('img_ores').displayName('img_ores')
 	event.create('img_wiki').displayName('img_wiki')
 	event.create('img_book').displayName('img_book')
-	cakes.forEach((cake) => event.create(cake + '_cake_slice').displayName(cake.slice(0, 1).toUpperCase() + cake.slice(1) + ' Cake Slice').food(food => { food.hunger(2).saturation(2) })) // heh, cake.slice
+	cakes.forEach((cake) =>
+	event.create(cake.name + '_cake_slice')
+	    .displayName(cake.name.slice(0, 1).toUpperCase() + cake.name.slice(1) + ' Cake Slice') // heh, cake.slice
+	    .food(food => {
+	        food.hunger(2).saturation(2)
+	        if (cake.effects) {
+	            cake.effects.forEach((potionEffect) => {
+	                food.effect(potionEffect.name, potionEffect.duration, 0, 1)
+	            })
+	        }
+	    })
+	)
 })
 
 onEvent('item.registry.tool_tiers', event => {
