@@ -1472,4 +1472,14 @@ function convertNumber(num) {
     	    text.add(1, [Text.gold(enchantWarning)])
         }
     )
+    tooltip.addAdvanced([
+        /^tfcambiental/
+    ], (item, advanced, text) => {
+        if (!tooltip.shift) {
+        	text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+        } else {
+        	text.add(1, [Text.gold('TFC Ambiental clothing goes into the Curio slots, not into the armor slots!')])
+        	text.add(2, [Text.gold('Press the keybind '), getKeybind('key.curios.open.desc'), Text.gold(' to open the Curios menu!')])
+        }
+    })
 })
