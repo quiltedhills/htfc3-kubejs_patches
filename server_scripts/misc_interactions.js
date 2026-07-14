@@ -1,4 +1,32 @@
 onEvent('block.right_click', event => {
+    const cakes = [
+        'createaddition:chocolate_cake',
+        'createaddition:honey_cake',
+        'tconstruct:ender_cake',
+        'tconstruct:magma_cake',
+        'tconstruct:earth_cake',
+        'tconstruct:sky_cake',
+        'tconstruct:blood_cake'
+    ]
+	// Enables cutting these cakes above when they're placed in the world with a knife, the same way as the coffee cake
+    cakes.forEach((cake) => {
+        if (event.block.id == cake) {
+			event.cancel()
+            if (event.item.hasTag('forge:tools/knives')) {
+                let cuts = Number(event.block.properties.bites)
+				cuts++
+                event.player.give('kubejs' + cake.slice(cake.search(':')) + '_slice')
+				if (cuts >= 7) {
+					event.block.set('air')
+				} else {
+					event.block.set(cake, {
+						'bites': `${cuts}`
+					})
+				}
+            }
+        }
+    })
+
 	// Allow lighting torches from blaze burners
 	if ((event.block.id == 'create:blaze_burner' || event.block.id == 'createaddition:liquid_blaze_burner')
 		&& event.item.id == 'tfc:dead_torch') {
@@ -100,14 +128,7 @@ const blocksToNotPlace = [
 	'animaltrap:pheasant_carcass',
 	'animaltrap:quail_carcass',
 	'animaltrap:turkey_carcass',
-	'animaltrap:turtle_carcass',
-    'createaddition:chocolate_cake',
-    'createaddition:honey_cake',
-    'tconstruct:ender_cake',
-    'tconstruct:magma_cake',
-    'tconstruct:earth_cake',
-    'tconstruct:sky_cake',
-    'tconstruct:blood_cake'
+	'animaltrap:turtle_carcass'
 ]
 onEvent('block.place', event => {
 	// Prevent items with sequenced recipe data from being placeable

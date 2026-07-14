@@ -9,7 +9,10 @@ const blocksToNotPlace = [
 	'animaltrap:pheasant_carcass',
 	'animaltrap:quail_carcass',
 	'animaltrap:turkey_carcass',
-	'animaltrap:turtle_carcass',
+	'animaltrap:turtle_carcass'
+]
+
+const cakes = [
     'createaddition:chocolate_cake',
     'createaddition:honey_cake',
     'tconstruct:ender_cake',
@@ -18,6 +21,7 @@ const blocksToNotPlace = [
     'tconstruct:sky_cake',
     'tconstruct:blood_cake'
 ]
+
 onEvent('block.right_click', event => {
 	// Silence the torch placing sound
 	if ((event.block.id == 'create:blaze_burner' || event.block.id == 'createaddition:liquid_blaze_burner')
@@ -40,7 +44,14 @@ onEvent('block.right_click', event => {
 			&& ((isPlaceableSequenceItem(mainHand)) || isPlaceableSequenceItem(offHand))
 		)
 	) event.cancel()
-	if (blocksToNotPlace.includes(event.item.id)) event.cancel()
+	if (blocksToNotPlace.includes(event.item.id)) event.cancel();
+
+	// Sync cake cutting
+    cakes.forEach((cake) => {
+        if (event.block.id == cake) {
+			event.cancel()
+        }
+    })
 })
 
 onEvent('item.right_click', event => {
