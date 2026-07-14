@@ -26,5 +26,6 @@
   "block.minecraft.brown_candle": "Permanent Brown Candle",
   "block.minecraft.green_candle": "Permanent Green Candle",
   "block.minecraft.red_candle": "Permanent Red Candle",
-  "block.minecraft.black_candle": "Permanent Black Candle"
+  "block.minecraft.black_candle": "Permanent Black Candle",
+  "block.minecraft.loom": "Banner Loom"
 }
