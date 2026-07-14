@@ -1,6 +1,7 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.replaceInput('minecraft:crafting_table', '#forge:workbenches')
+	event.replaceInput('tfc:powder/wood_ash', '#forge:dusts/ash')
 	// mods
 	event.replaceInput({mod: 'createdeco'}, '#forge:plates/netherite', '#forge:sheets/netherite')
 	event.replaceInput({mod: 'securitycraft'}, 'minecraft:iron_ingot', '#forge:plates/iron')
