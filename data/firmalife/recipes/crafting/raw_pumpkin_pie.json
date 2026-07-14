@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/pumpkin_pie_dough"
+      }
+    },
+    {
+      "item": "firmalife:pie_pan"
+    }
+  ],
+  "result": {
+    "item": "firmalife:food/raw_pumpkin_pie",
+    "count": 1
+  }
+}

@@ -1,17 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "C",
-    "S",
-    "D"
+    "SMS",
+    " D "
   ],
   "key": {
-    "C": {
-      "type": "tfc:not_rotten",
-      "ingredient" : {
-        "item": "firmalife:food/cocoa_powder"
-      }
-    },
     "D": {
       "type": "tfc:not_rotten",
       "ingredient": {
@@ -20,10 +13,19 @@
     },
     "S": {
       "tag": "forge:sugar"
+    },
+    "M": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "tfc:milks"
+        },
+        "amount": 1000
+      }
     }
   },
   "result": {
-    "item": "kubejs:raw_cookie",
-    "count": 16
+    "item": "farmersdelight:pie_crust",
+    "count": 1
   }
 }
