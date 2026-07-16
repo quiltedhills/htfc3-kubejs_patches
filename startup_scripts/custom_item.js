@@ -202,7 +202,7 @@ onEvent('item.registry', event => {
 	event.create('img_wiki').displayName('img_wiki')
 	event.create('img_book').displayName('img_book')
 	cakes.forEach((cake) =>
-	event.create(cake.name + '_cake_slice')
+	event.create('cake_slices/' + cake.name)
 	    .displayName(cake.name.slice(0, 1).toUpperCase() + cake.name.slice(1) + ' Cake Slice') // heh, cake.slice
 	    .food(food => {
 	        food.hunger(2).saturation(2)
