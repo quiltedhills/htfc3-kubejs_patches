@@ -360,6 +360,9 @@ onEvent('tags.items', event => {
 	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:can_be_lit_on_torch', 'tfc:dead_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
+	event.add('tfc:starts_fires_with_durability', [
+		'minecraft:torch'
+	])
 
 	//event.remove('curios:belt', 'toolbelt:belt')
 	event.add('tfc:axes', ['tconstruct:hand_axe', 'tconstruct:broad_axe', 'tconstruct:mattock'])
