@@ -327,7 +327,8 @@ onEvent('recipes', event => {
 		'railways:track_twilightforest_sortingwood',
 		'railways:track_twilightforest_timewood',
 		'railways:track_twilightforest_transwood',
-		'railways:track_twilightforest_twilight_oak'
+		'railways:track_twilightforest_twilight_oak',
+		'farmersdelight:pumpkin_slice'
 	]})
 	//
 	// ========================================= remove input =============================================================

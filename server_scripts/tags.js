@@ -2611,6 +2611,7 @@ onEvent('tags.items', event => {
 		'pneumaticcraft:wheat_flour',
 		'tconstruct:pig_iron_ingot',
 		'tconstruct:rose_gold_ingot',
-		'tconstruct:copper_nugget'
+		'tconstruct:copper_nugget',
+		'farmersdelight:pumpkin_slice'
 	)
 })

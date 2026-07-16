@@ -2,6 +2,7 @@
 onEvent('recipes', event => {
 	event.replaceInput('minecraft:crafting_table', '#forge:workbenches')
 	event.replaceInput('tfc:powder/wood_ash', '#forge:dusts/ash')
+	event.replaceInput('farmersdelight:pumpkin_slice', 'firmalife:food/pumpkin_chunks')
 	// mods
 	event.replaceInput({mod: 'createdeco'}, '#forge:plates/netherite', '#forge:sheets/netherite')
 	event.replaceInput({mod: 'securitycraft'}, 'minecraft:iron_ingot', '#forge:plates/iron')

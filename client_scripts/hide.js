@@ -646,6 +646,7 @@ onEvent('jei.hide.items', event => {
 		'farmersdelight:golden_knife',
 		'farmersdelight:iron_knife',
 		'farmersdelight:flint_knife',
-		'farmersdelight:netherite_knife'
+		'farmersdelight:netherite_knife',
+		'farmersdelight:pumpkin_slice'
 	])
 })
