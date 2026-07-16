@@ -82,10 +82,10 @@ onEvent('tags.blocks', event => {
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:toughness_3', [
-		'mekanism:digital_miner',
-		'mekanism:bounding_block',
 		'#waystones:waystones',
-		'#waystones:sharestones'
+		'#waystones:sharestones',
+		/^mekanism/,
+		/^pneumaticcraft/
 	])
 	event.add('tfc:can_be_snow_piled', [
 		'tfc:placed_item'
