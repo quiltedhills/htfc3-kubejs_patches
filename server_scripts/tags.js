@@ -988,6 +988,11 @@ onEvent('tags.items', event => {
 		'tfc:ore/borax',
 		'tfc:ore/halite'
 	])
+	event.add('tfc:fluxstone/cobble', [
+		'tfc:rock/cobble/dolomite',
+		'tfc:rock/cobble/marble',
+		'tfc:rock/cobble/chalk'
+	])
 
 	// special materials, do not add to 'forge:rods' and 'forge:sheets'
 	event.add('forge:rods/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/rod')
