@@ -191,5 +191,9 @@
   "tfc.recipe.barrel.tfc.barrel.oat_milk.unsweetened": "Unsweetened Oat Milk",
   "tfc.recipe.barrel.tfc.barrel.vinegar_milk_curdling.cow_curdled": "Curdling Milk",
   "tfc.recipe.barrel.tfc.barrel.vinegar_milk_curdling.goat_curdled": "Curdling Milk",
-  "tfc.recipe.barrel.tfc.barrel.vinegar_milk_curdling.yak_curdled": "Curdling Milk"
+  "tfc.recipe.barrel.tfc.barrel.vinegar_milk_curdling.yak_curdled": "Curdling Milk",
+  "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "Liquid: Superheated",
+  "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.kindled": "Liquid: Heated",
+  "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.fading": "Liquid: Drying Up",
+  "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.smouldering": "Liquid: Unfueled"
 }
