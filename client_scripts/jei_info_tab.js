@@ -105,4 +105,9 @@ onEvent('jei.information', event => {
 		"The biomes can be found rather easily with a Nature's Compass.",
 		"If you're not in a warm enough climate, be sure to travel further down South!"
 	])
+	event.add(['tfc:bloomery', 'tfc:blast_furnace'], [
+		"Making Wrought Iron/Steel is best done with whole Cast Iron ingots for efficiency!",
+		' ',
+		"Though, if you can, try putting in double ingots, or even better, double sheets! You can fit more Cast Iron items that way, and therefore make more Wrought Iron/Steel in one go!"
+	])
 })

@@ -1482,4 +1482,16 @@ function convertNumber(num) {
         	text.add(2, [Text.gold('Press the keybind '), getKeybind('key.curios.open.desc'), Text.gold(' to open the Curios menu!')])
         }
     })
+	tooltip.addAdvanced([
+		'tfc:bloomery',
+		'tfc:blast_furnace'
+	], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('The Bloomery and the Blast Furnace '), Text.yellow('does not accept raw ores'), Text.gold(',')])
+			text.add(2, [Text.gold('And solely using '), Text.yellow('powders is not recommended!')])
+			text.add(3, [Text.yellow('Check the JEI Info Tab for tips!')])
+		}
+	})
 })
