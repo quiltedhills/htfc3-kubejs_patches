@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:sky_cake_slice"
+    "item": "kubejs:cake_slices/sky"
   },
   "hunger": 2,
   "saturation": 2,

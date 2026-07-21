@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:honey_cake_slice"
+    "item": "kubejs:cake_slices/honey"
   },
   "hunger": 2,
   "saturation": 2,

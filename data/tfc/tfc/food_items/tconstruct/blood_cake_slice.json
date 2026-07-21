@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:blood_cake_slice"
+    "item": "kubejs:cake_slices/blood"
   },
   "hunger": 2,
   "saturation": 2,

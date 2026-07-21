@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:ender_cake_slice"
+    "item": "kubejs:cake_slices/ender"
   },
   "hunger": 2,
   "saturation": 2,

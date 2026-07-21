@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:magma_cake_slice"
+    "item": "kubejs:cake_slices/magma"
   },
   "hunger": 2,
   "saturation": 2,

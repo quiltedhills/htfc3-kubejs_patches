@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:earth_cake_slice"
+    "item": "kubejs:cake_slices/earth"
   },
   "hunger": 2,
   "saturation": 2,

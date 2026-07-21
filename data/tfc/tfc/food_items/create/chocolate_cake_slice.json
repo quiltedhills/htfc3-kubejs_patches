@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:chocolate_cake_slice"
+    "item": "kubejs:cake_slices/chocolate"
   },
   "hunger": 2,
   "saturation": 2,
