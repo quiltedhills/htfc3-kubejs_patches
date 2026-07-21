@@ -1,11 +1,11 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {"item": "immersiveengineering:fluid_pipe"},
-  "transitionalItem": {"item": "tfc:metal/double_sheet/wrought_iron"},
+  "transitionalItem": {"item": "kubejs:sq_fluidpipeie"},
   "sequence": [
-    {"type": "createaddition:rolling","ingredients": [{"tag": "tfc:metal/double_sheet/wrought_iron"}],"results": [{"item": "tfc:metal/double_sheet/wrought_iron"}]},
-    {"type": "createaddition:rolling","ingredients": [{"tag": "tfc:metal/double_sheet/wrought_iron"}],"results": [{"item": "tfc:metal/double_sheet/wrought_iron"}]},
-    {"type": "create:pressing","ingredients": [{"item": "tfc:metal/double_sheet/wrought_iron"}],"results": [{"item": "tfc:metal/double_sheet/wrought_iron"}]}
+    {"type": "createaddition:rolling","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "createaddition:rolling","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]},
+    {"type": "create:pressing","ingredients": [{"item": "kubejs:sq_fluidpipeie"}],"results": [{"item": "kubejs:sq_fluidpipeie"}]}
   ],
   "results": [{"item": "adchimneys:pipe","count":2}],
   "loops": 1
