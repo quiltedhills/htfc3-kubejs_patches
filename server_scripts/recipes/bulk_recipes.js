@@ -25,6 +25,7 @@ const non_tfc_metals = [
 ]
 const ore_grades = ['poor', 'normal', 'rich']
 const gravel_ores = ['native_copper', 'native_gold', 'native_silver', 'cassiterite']
+const lumber_types = ['hickory', 'birch', 'kapok', 'acacia', 'ash', 'aspen', 'blackwood', 'chestnut', 'douglas_fir', 'maple', 'oak', 'palm', 'pine', 'rosewood', 'sequoia', 'spruce', 'sycamore', 'white_cedar', 'willow']
 
 let artificial_ore = (event, rock_type, ore_item, output, recipe_id) => {
 	event.recipes.create.compacting(output,
@@ -92,5 +93,11 @@ onEvent('recipes', event => {
 				)
 			})
 		})
+	})
+
+	lumber_types.forEach(lumber => {
+		event.remove({id: `tfc_ie_addon:sawmill/${lumber}/trapdoor`})
+		event.recipes.immersiveengineeringSawmill(`2x tfc:wood/lumber/${lumber}`, `tfc:wood/planks/${lumber}_trapdoor`, 'immersiveengineering:dust_wood')
+		.id(`tfc_ie_addon:sawmill/${lumber}/trapdoor`)
 	})
 })
