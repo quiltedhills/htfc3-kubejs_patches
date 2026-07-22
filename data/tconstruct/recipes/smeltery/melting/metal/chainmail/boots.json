@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:chainmail_boots"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 120
+  },
+  "temperature": 900,
+  "time": 30
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "pneumaticcraft:compressed_iron_boots"
+  },
+  "result": {
+    "fluid": "tfc:metal/wrought_iron",
+    "amount": 200
+  },
+  "temperature": 900,
+  "time": 90
+}
