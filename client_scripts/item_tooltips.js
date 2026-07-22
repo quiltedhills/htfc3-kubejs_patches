@@ -420,6 +420,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
 			text.add(3, [Text.of('Applying a filter to a bag requires ').gold(), Text.of('two filter items').yellow(), Text.of(' per use.').gold()])
 			text.add(4, Text.gold('Multiple different filters can be active at once.'))
+			text.add(5, [Text.gold('This can also be equipped in the '), Text.yellow('Curio Back slot!')])
 		}
 	})
 	tooltip.addAdvanced([/^adpother:.+_vacuum_tube$/], (item, advanced, text) => {
@@ -1493,5 +1494,12 @@ function convertNumber(num) {
 			text.add(2, [Text.gold('And solely using '), Text.yellow('powders is not recommended!')])
 			text.add(3, [Text.yellow('Check the JEI Info Tab for tips!')])
 		}
+	})
+	tooltip.addAdvanced([
+		'adpother:diamond_vacuum_bag',
+		'adpother:iron_vacuum_bag',
+		'adpother:gold_vacuum_bag'
+	], (item, advanced, text) => {
+
 	})
 })
