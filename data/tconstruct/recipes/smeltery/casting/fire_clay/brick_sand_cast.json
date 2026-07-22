@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/ingot"
+  },
+  "fluid": {
+    "tag": "forge:molten_fire_clay",
+    "amount": 250
+  },
+  "result": "tfc:ceramic/fire_brick",
+  "cooling_time": 80
+}

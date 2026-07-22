@@ -216,6 +216,7 @@ onEvent('tags.fluids', event => {
 	event.add('forge:molten_electrum', ['tfc_ie_addon:metal/electrum'])
 	event.add('forge:molten_aluminum', ['tfc_ie_addon:metal/aluminum'])
 	event.add('forge:active_redstone', ['kubejs:active_redstone'])
+	event.add('forge:molten_fire_clay', ['kubejs:molten_fire_clay'])
 	event.add('tfc:andesite_alloy', ['kubejs:andesite_alloy'])
 	event.add('tfc:andesite_stone', ['kubejs:andesite_stone'])
 	event.add('tfc:mixable', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water','immersiveengineering:creosote'])

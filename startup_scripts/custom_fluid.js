@@ -19,4 +19,5 @@ onEvent('fluid.registry', event => {
 	event.create("unsweetened_oat_milk").thinTexture(0xebe2c7)	.bucketColor(0xebe2c7)	.displayName("Unsweetened Oat Milk")			.noBlock()
 	event.create("oat_milk")			.thinTexture(0xebe2ca)	.bucketColor(0xebe2ca)	.displayName("Oat Milk")						.noBlock()
 	event.create("liquid_smoke")		.thinTexture(0x734f1d)	.bucketColor(0x734f1d)	.displayName("Liquid Smoke")					.noBlock()
+	event.create("molten_fire_clay")	.thickTexture(0x7c6e7a) .bucketColor(0x7c6e7a)  .displayName("Molten Fire Clay")				.noBlock()
 })
