@@ -449,7 +449,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Absorbs pollution routed into it from below').gold()])
-			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('Pump').yellow(), Text.of(' directly.').gold()])
+			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('pump-powered vent').yellow(), Text.of(' directly.').gold()])
 			text.add(3, Text.gold('Has a storage for filter items. Can only use one type at once.'))
 			text.add(4, Text.gold('Filters degrade much faster than in respirators or vacuum bags.'))
 			text.add(5, '')
@@ -460,7 +460,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('vertically').yellow(), Text.of('! Up, to be more specific.').gold()])
-			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('pump').yellow(), Text.of(' or ').gold(), Text.of('vent').yellow(), Text.of('.').gold()])
+			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('vent').yellow(), Text.of(' that is powered by a ').gold(), Text.of('pump').yellow(), Text.of('.').gold()])
 			text.add(3, Text.gold('A vent can transfer pollution into a chimney from its side or bottom.'))
 			text.add(4, Text.gold('Has no range limit, since it lets gravity do the work.'))
 		}
@@ -470,7 +470,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('horizontally').yellow(), Text.of('!').gold()])
-			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('chimney').yellow(), Text.of('.').gold()])
+			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('vent').yellow(), Text.of(' that is powered by a ').gold(), Text.of('pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('chimney').yellow(), Text.of('.').gold()])
 			text.add(3, [Text.of('Captures nearby pollution when powered by a ').gold(), Text.of('Pump').yellow(), Text.of('.').gold()])
 			text.add(4, Text.gold('Can pull pollution from up to three blocks away, and only in a straight line. No diagonals.'))
 			text.add(5, [Text.of('Loses pump power when over ').gold(), Text.of('30 blocks').yellow(), Text.of(' away from a pump.').gold()])
@@ -481,7 +481,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Powers ').gold(), Text.of('vents').yellow(), Text.of(' to let them capture and move pollution!').gold()])
-			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
+			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of('to operate. A lever is a good option!').gold()])
 			text.add(3, Text.gold('Works by pulling pollution from horizontally adjacent vents.'))
 			text.add(4, [Text.of('Will "power" (pull from) a chain of up to ').gold(), Text.of('30 vents').yellow(), Text.of('.').gold()])
 			text.add(5, '')
