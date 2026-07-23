@@ -1,3 +1,5 @@
+const $ForgeSpawnEggItem = java('net.minecraftforge.common.ForgeSpawnEggItem')
+
 onEvent('block.right_click', event => {
     const cakes = [
         'createaddition:chocolate_cake',
@@ -112,6 +114,42 @@ onEvent('item.right_click', event => {
 	if (event.item.id == 'tfc:wooden_bucket' && event.player.crouching
 		&& event.player.rayTrace().block.id == 'tfc:pot'
 	) event.cancel()
+})
+
+onEvent('item.entity_interact', event => {
+	let egg = event.level.createEntity('item')
+			egg.x = event.target.x
+			egg.y = event.target.y
+			egg.z = event.target.z
+			egg.motionX = (Math.random() * 0.1) - 0.05
+			egg.motionY = 0.2
+			egg.motionZ = (Math.random() * 0.1) - 0.05
+
+	let feather = event.level.createEntity('item')
+			feather.setItem(Item.of('minecraft:feather', 4))
+			feather.x = event.target.x
+			feather.y = event.target.y
+			feather.z = event.target.z
+			feather.motionX = (Math.random() * 0.1) - 0.05
+			feather.motionY = 0.2
+			feather.motionZ = (Math.random() * 0.1) - 0.05
+
+	if (event.target.type == 'tfc:chicken' && (event.item.id == 'mob_grinding_utils:gm_chicken_feed_cursed' || event.item.id == 'mob_grinding_utils:nutritious_chicken_feed' || event.item.id == 'mob_grinding_utils:gm_chicken_feed')) {
+		if (event.target.fullNBT.gender != 0 || event.target.fullNBT.Age < 0 || event.target.fullNBT.oldDay > -1) return
+		if (event.item.id == 'mob_grinding_utils:gm_chicken_feed_cursed') {
+			egg.setItem(Item.of('mob_grinding_utils:rotten_egg'))
+		} else if (event.item.id == 'mob_grinding_utils:nutritious_chicken_feed') {
+			egg.setItem(Item.of('mob_grinding_utils:golden_egg'))
+		} else if (event.item.id == 'mob_grinding_utils:gm_chicken_feed') {
+			egg.setItem(Item.of($ForgeSpawnEggItem.fromEntityType(event.item.nbt.mguMobName)))
+		}
+		if (!event.player.isCreativeMode) event.item.count--
+		event.player.server.runCommandSilent(`execute as ${event.player} at ${event.target.id} run particle minecraft:explosion ~ ~ ~`)
+		event.player.server.runCommandSilent(`execute as ${event.player} at @s run playsound minecraft:entity.item.pickup block @a ~ ~ ~ 100 ${1.5 + Math.random()/2}`)
+		egg.spawn()
+		feather.spawn()
+		event.target.remove()
+	}
 })
 
 onEvent('item.food_eaten', event => {
