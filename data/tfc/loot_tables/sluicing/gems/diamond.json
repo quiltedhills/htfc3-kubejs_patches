@@ -6,45 +6,64 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "createaddition:diamond_grit"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:powder/graphite"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:powder/graphite",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "createaddition:diamond_grit"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:silicon",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "tfc:powder/graphite"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_coal",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "tfc:powder/graphite",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.75
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "refinedstorage:silicon",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.50
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_coal",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.25
-                }
-              ]
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
             }
           ]
         }

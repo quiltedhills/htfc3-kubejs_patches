@@ -6,35 +6,48 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "kubejs:clean_gem_dust/pyrite"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_iron",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "kubejs:clean_gem_dust/pyrite"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:powder/sulfur"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_gold",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_iron",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.50
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "tfc:powder/sulfur"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_gold",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.50
-                }
-              ]
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
             }
           ]
         }

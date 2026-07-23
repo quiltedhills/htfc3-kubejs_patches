@@ -6,45 +6,64 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "mekanism:dust_emerald"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_quartz"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "immersiveengineering:dust_aluminum",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_emerald"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "immersiveengineering:dust_nickel",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_quartz"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_lithium",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "immersiveengineering:dust_aluminum",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.75
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "immersiveengineering:dust_nickel",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.50
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_lithium",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.10
-                }
-              ]
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
             }
           ]
         }
