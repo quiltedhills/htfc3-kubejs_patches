@@ -15,8 +15,8 @@
 			height: 0.5d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide"
+			hover: ["Hardrock TFC's Wiki"]
+			click: "https://hardrock.ovh/wiki"
 			dev: false
 			corner: false
 		}
@@ -27,7 +27,7 @@
 			height: 0.5d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
+			hover: ["TFC's Wiki on Food Decay"]
 			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/decay.html"
 			dev: false
 			corner: false

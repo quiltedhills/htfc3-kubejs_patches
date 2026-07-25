@@ -15,7 +15,7 @@
 			height: 0.5d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
+			hover: ["TFC's Wiki on Climate"]
 			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/the_world/climate.html"
 			dev: false
 			corner: false

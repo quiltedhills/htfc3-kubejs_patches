@@ -580,6 +580,7 @@
 			}]
 		}
 		{
+			icon: "mekanism:chemical_crystallizer"
 			x: 2.5d
 			y: 2.0d
 			description: [

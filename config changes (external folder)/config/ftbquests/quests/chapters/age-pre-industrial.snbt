@@ -21,7 +21,7 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
+			hover: ["TFC's Wiki on Composters"]
 			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/composter"
 			dev: false
 			corner: false
@@ -47,8 +47,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide"
+			hover: ["Hardrock TFC's Wiki"]
+			click: "https://hardrock.ovh/wiki"
 			dev: false
 			corner: false
 			dependency: "43A3F6984C4136E3"
@@ -60,7 +60,7 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki FirmaLife"]
+			hover: ["Firmalife's Wiki on Ovens"]
 			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/firmalife/ovens.html"
 			dev: false
 			corner: false
@@ -73,8 +73,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki FirmaLife"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/firmalife/beekeeping.html"
+			hover: ["Hardrock TFC's Wiki on Beekeeping"]
+			click: "https://hardrock.ovh/wiki/beekeeping"
 			dev: false
 			corner: false
 			dependency: "1124CE75F3E2D185"
@@ -86,8 +86,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/getting_started/pit_kiln.html"
+			hover: ["Hardrock TFC's Wiki on Pit Kilns"]
+			click: "https://hardrock.ovh/wiki/pit-kiln"
 			dev: false
 			corner: false
 			dependency: "2DB43046BD0FCBD6"
@@ -138,8 +138,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/animal_husbandry.html"
+			hover: ["Hardrock TFC's Wiki on Animal Husbandry"]
+			click: "https://hardrock.ovh/wiki/animal-husbandry"
 			dev: false
 			corner: false
 			dependency: "6E4AFEEE95DF99A8"
@@ -158,8 +158,8 @@
 			dependency: "4B6471BDD35D04F0"
 		}
 		{
-			x: 22.5d
-			y: 3.0d
+			x: 23.0d
+			y: 4.0d
 			width: 0.35d
 			height: 0.35d
 			rotation: 0.0d
@@ -177,8 +177,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/charcoal_pit.html"
+			hover: ["Hardrock TFC's Wiki on Charcoal Production"]
+			click: "https://hardrock.ovh/wiki/charcoal"
 			dev: false
 			corner: false
 			dependency: "52D289D761CD3327"
@@ -203,8 +203,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/crops.html"
+			hover: ["Hardrock TFC's Wiki on Farming"]
+			click: "https://hardrock.ovh/wiki/farming"
 			dev: false
 			corner: false
 			dependency: "1B85F7093AC663D7"
@@ -275,7 +275,7 @@
 			dependency: "5A5F98C8DED74A94"
 		}
 		{
-			x: 21.5d
+			x: 20.5d
 			y: 3.0d
 			width: 0.35d
 			height: 0.35d
@@ -294,8 +294,8 @@
 			height: 0.35d
 			rotation: 0.0d
 			image: "kubejs:textures/item/img_wiki.png"
-			hover: ["wiki TFC"]
-			click: "https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/sluices.html"
+			hover: ["Hardrock TFC's Wiki on Sluices"]
+			click: "https://hardrock.ovh/wiki/sluice"
 			dev: false
 			corner: false
 			dependency: "1124CE75F3E2D185"

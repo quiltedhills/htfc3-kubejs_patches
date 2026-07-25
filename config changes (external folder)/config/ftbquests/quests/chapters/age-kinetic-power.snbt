@@ -7,6 +7,19 @@
 	icon: "create:cogwheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 12.5d
+		y: -1.0d
+		width: 0.35d
+		height: 0.35d
+		rotation: 0.0d
+		image: "kubejs:textures/item/img_wiki.png"
+		hover: ["Hardrock TFC's Wiki on Create Early SU Sources"]
+		click: "https://hardrock.ovh/wiki/early-create-su-sources"
+		dev: false
+		corner: false
+		dependency: "4285296DE20480FA"
+	}]
 	quests: [
 		{
 			title: "Kinetic Power"
