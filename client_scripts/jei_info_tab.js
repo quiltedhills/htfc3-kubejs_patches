@@ -110,4 +110,9 @@ onEvent('jei.information', event => {
 		' ',
 		"Though, if you can, try putting in double ingots, or even better, double sheets! You can fit more Cast Iron items that way, and therefore make more Wrought Iron/Steel in one go!"
 	])
+	event.add('supplementaries:flax_seeds', [
+		"Flax Seeds are an uncommon drop from naturally-spawning urns found in caves! Such urns may drop a number of different items, or sometimes none at all.",
+		' ',
+		"Flax is a very potent source of string, although silkworm farming is still plenty for most purposes."
+	])
 })
