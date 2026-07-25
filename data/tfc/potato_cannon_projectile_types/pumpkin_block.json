@@ -1,0 +1,11 @@
+{
+  "items": [
+    "tfc:pumpkin",
+    "tfc:rotten_pumpkin"
+  ],
+  "damage": 6,
+  "reload_ticks": 15,
+  "knockback": 2.0,
+  "sound_pitch": 0.8,
+  "velocity_multiplier": 0.95
+}
