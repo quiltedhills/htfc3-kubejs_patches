@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:silver_powder"
+    }
+  ],
+  "heat_capacity": 0.2,
+  "forging_temperature": 577,
+  "welding_temperature": 769 
+}

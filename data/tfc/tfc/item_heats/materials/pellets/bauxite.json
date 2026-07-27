@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_bauxite"
+    }
+  ],
+  "heat_capacity": 1.4,
+  "forging_temperature": 162,
+  "welding_temperature": 216 
+}
