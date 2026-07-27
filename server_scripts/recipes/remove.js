@@ -36,6 +36,7 @@ onEvent('recipes', event => {
 	event.remove({output: ['#forge:leather'], mod: 'farmersdelight'})
 	event.remove({output: ['#forge:rods'], mod: 'immersiveengineering'})
 	event.remove({output: [Item.of('minecraft:potion').ignoreNBT(), Item.of('minecraft:splash_potion').ignoreNBT(), Item.of('minecraft:lingering_potion').ignoreNBT(), Item.of('minecraft:tipped_arrow').ignoreNBT()], mod: 'tconstruct'})
+	event.remove({input: ['minecraft:bamboo'], mod: 'mcw_tfc_aio'})
 	//
 	// ====================================== other mods recipe type ============================================================
 	//

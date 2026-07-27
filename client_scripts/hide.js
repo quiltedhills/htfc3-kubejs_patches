@@ -30,6 +30,8 @@ onEvent('jei.hide.items', event => {
 	event.hide([
 	    Item.of('tconstruct:potion_bucket').ignoreNBT(),
 	    Item.of('immersiveengineering:potion_bucket').ignoreNBT(),
+		/^mcw_tfc_aio:bridges\/bamboo_bridges/,
+		'mcw_tfc_aio:fences/other_fences/bamboo_fence',
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
