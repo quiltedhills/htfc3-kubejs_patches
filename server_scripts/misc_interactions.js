@@ -275,6 +275,14 @@ onEvent('block.break', event => {
 			}
 		}
 	}
+
+	if (/^tfc:rock\/raw/.test(event.block.id)) {
+		if (event.player.mainHandItem.id == 'immersiveengineering:buzzsaw' && event.player.mainHandItem.hasEnchantment('minecraft:silk_touch', 1)) {
+			event.block.set('minecraft:air')
+			event.block.popItem(event.block.id)
+		}
+	}
+
 })
 const portalOffsets = {
 	east: { check: [1, 0], bounds: [[1, -2], [3, 2]] },
