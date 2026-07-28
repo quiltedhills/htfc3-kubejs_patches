@@ -1495,11 +1495,9 @@ function convertNumber(num) {
 			text.add(3, [Text.yellow('Check the JEI Info Tab for tips!')])
 		}
 	})
-	tooltip.addAdvanced([
-		'adpother:diamond_vacuum_bag',
-		'adpother:iron_vacuum_bag',
-		'adpother:gold_vacuum_bag'
-	], (item, advanced, text) => {
-
-	})
+	tooltip.addAdvanced('immersiveengineering:rockcutter',
+		(item, advanced, text) => {
+			text.add(1, [Text.gold('When equipped to a buzzsaw, you can '), Text.yellow('directly extract TFC raw rocks '), Text.gold('with the buzzsaw!')])
+		}
+	)
 })
