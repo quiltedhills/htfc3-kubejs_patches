@@ -219,7 +219,9 @@ onEvent('tags.blocks', event => {
     	'createdeco:brass_catwalk',
     	'createdeco:andesite_catwalk',
     	'createdeco:netherite_catwalk',
-    	'createdeco:gold_catwalk'
+    	'createdeco:gold_catwalk',
+		/^mcwbridges/,
+		/^mcw_tfc_aio:bridges/
 	])
 })
 // ===== FLUIDS
@@ -330,7 +332,9 @@ onEvent('tags.items', event => {
         'createdeco:brass_catwalk',
         'createdeco:andesite_catwalk',
         'createdeco:netherite_catwalk',
-        'createdeco:gold_catwalk'
+        'createdeco:gold_catwalk',
+		/^mcwbridges/,
+		/^mcw_tfc_aio:bridges/
 	])
 
 	event.add('tfc:tornado_grab', [
