@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:briquet_garnierite"
+    }
+  ],
+  "heat_capacity": 0.833,
+  "forging_temperature": 872,
+  "welding_temperature": 1162 
+}

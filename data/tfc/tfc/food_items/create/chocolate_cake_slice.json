@@ -1,0 +1,10 @@
+{
+  "ingredient": {
+    "item": "kubejs:cake_slices/chocolate"
+  },
+  "hunger": 2,
+  "saturation": 2,
+  "decay_modifier": 1.5,
+  "grain": 0.8,
+  "dairy": 0.5
+}

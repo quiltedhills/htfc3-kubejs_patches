@@ -321,6 +321,7 @@ onEvent('jei.remove.recipes', event => {
 		'minecraft:long_regeneration_0',
 		'minecraft:strong_regeneration_0',
 		'minecraft:slow_falling_0',
+		'minecraft:long_slow_falling_0',
 		'minecraft:long_regeneration_0',
 		'minecraft:slowness_0',
 		'minecraft:long_slowness_0',

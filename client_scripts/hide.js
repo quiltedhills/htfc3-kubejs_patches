@@ -28,6 +28,10 @@ onEvent('jei.hide.fluids', event => {
 })
 onEvent('jei.hide.items', event => {
 	event.hide([
+	    Item.of('tconstruct:potion_bucket').ignoreNBT(),
+	    Item.of('immersiveengineering:potion_bucket').ignoreNBT(),
+		/^mcw_tfc_aio:bridges\/bamboo_bridges/,
+		'mcw_tfc_aio:fences/other_fences/bamboo_fence',
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
@@ -47,7 +51,6 @@ onEvent('jei.hide.items', event => {
 		'firmalife:ice_fishing_station',
 		'kubejs:raw_platinum',
 		'ftbdripper:water_bowl',
-		'tconstruct:potion_bucket',
 		'supplementaries:ash',
 		'ag_day_counter:calendar_item',
 		/^minecraft:infested_/,
@@ -645,6 +648,7 @@ onEvent('jei.hide.items', event => {
 		'farmersdelight:golden_knife',
 		'farmersdelight:iron_knife',
 		'farmersdelight:flint_knife',
-		'farmersdelight:netherite_knife'
+		'farmersdelight:netherite_knife',
+		'farmersdelight:pumpkin_slice'
 	])
 })

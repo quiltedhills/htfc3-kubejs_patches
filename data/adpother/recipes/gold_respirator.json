@@ -6,9 +6,17 @@
 		"WVW"
 	],
 	"key": {
-		"G": {
-			"item": "tfc:metal/tuyere/bronze"
-		},
+		"G": [
+			{
+				"item": "tfc:metal/tuyere/bronze"
+			},
+			{
+				"item": "tfc:metal/tuyere/black_bronze"
+			},
+			{
+				"item": "tfc:metal/tuyere/bismuth_bronze"
+			}
+		],
 		"L": {
 			"tag": "forge:leather"
 		},

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "pneumaticcraft:compressed_iron_leggings"
+  },
+  "result": {
+    "fluid": "tfc:metal/wrought_iron",
+    "amount": 400
+  },
+  "temperature": 900,
+  "time": 90
+}

@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:briquet_chromium"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 750,
+  "welding_temperature": 1000
+}

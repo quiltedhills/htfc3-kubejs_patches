@@ -4,7 +4,7 @@
     "tag": "forge:double_sheets/wrought_iron"
   },
   "transitionalItem": {
-    "item": "tfc:metal/double_sheet/wrought_iron"
+    "item": "create:iron_sheet"
   },
   "sequence": [
     {

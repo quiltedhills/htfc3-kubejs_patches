@@ -1,0 +1,14 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "results": [
+    {
+      "tag": "forge:ingots/chromium"
+    }
+  ],
+  "additives": [],
+  "input": {
+    "item": "hardrock_mek_compat:dust_chromium"
+  },
+  "time": 100,
+  "energy": 51200
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    "tfc:food/banana"
+  ],
+  "damage": 7,
+  "reload_ticks": 15,
+  "knockback": 0.5,
+  "sound_pitch": 0.8,
+  "velocity_multiplier": 1.5
+}

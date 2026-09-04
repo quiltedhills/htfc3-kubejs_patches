@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:powder/lapis_lazuli"
+  },
+  "loot_table": "tfc:sluicing/gems/lapis_lazuli"
+}

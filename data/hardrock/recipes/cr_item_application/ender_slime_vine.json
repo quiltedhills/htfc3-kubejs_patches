@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "tfc:plant/jungle_vines"
+    },
+    {
+      "item": "tconstruct:ender_slime_grass_seeds"
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:ender_slime_vine"
+    }
+  ]
+}

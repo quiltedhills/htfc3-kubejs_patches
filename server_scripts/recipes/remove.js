@@ -35,6 +35,8 @@ onEvent('recipes', event => {
 	event.remove({output: ['#forge:dyes'], mod: 'farmersdelight'})
 	event.remove({output: ['#forge:leather'], mod: 'farmersdelight'})
 	event.remove({output: ['#forge:rods'], mod: 'immersiveengineering'})
+	event.remove({output: [Item.of('minecraft:potion').ignoreNBT(), Item.of('minecraft:splash_potion').ignoreNBT(), Item.of('minecraft:lingering_potion').ignoreNBT(), Item.of('minecraft:tipped_arrow').ignoreNBT()], mod: 'tconstruct'})
+	event.remove({input: ['minecraft:bamboo'], mod: 'mcw_tfc_aio'})
 	//
 	// ====================================== other mods recipe type ============================================================
 	//
@@ -279,7 +281,7 @@ onEvent('recipes', event => {
 		'mekanism:precision_sawmill',
 		'mekanism:cardboard_box',
 		'mekanism:nutritional_liquifier',
-		//'mekanism:module_nutritional_injection_unit',
+		'mekanism:module_nutritional_injection_unit',
 		'sewingkit:wood_sewing_needle',
 		'sewingkit:stone_sewing_needle',
 		'sewingkit:gold_sewing_needle',
@@ -326,7 +328,8 @@ onEvent('recipes', event => {
 		'railways:track_twilightforest_sortingwood',
 		'railways:track_twilightforest_timewood',
 		'railways:track_twilightforest_transwood',
-		'railways:track_twilightforest_twilight_oak'
+		'railways:track_twilightforest_twilight_oak',
+		'farmersdelight:pumpkin_slice'
 	]})
 	//
 	// ========================================= remove input =============================================================
@@ -342,4 +345,5 @@ onEvent('recipes', event => {
 	// Go around wildcard removals
 	event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire']).id('kubejs:electrum_wire_conversion')
 	event.shapeless('9x minecraft:sugar', ['supplementaries:sugar_cube']).id('supplementaries:sugar_cube_uncrafting')
+	event.shapeless('minecraft:sugar', ['kubejs:sugar_mass']).id('kubejs:sugar')
 })

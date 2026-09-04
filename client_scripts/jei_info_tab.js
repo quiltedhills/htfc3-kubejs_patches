@@ -99,20 +99,20 @@ onEvent('jei.information', event => {
 	event.add('minecraft:glowstone', [
 		"Sometimes found for sale on Amadron!"
 	])
-	event.add([
-		'kubejs:nutrimix',
-		'mekanism:nutritional_paste_bucket',
-		'mekanism:canteen',
-		'mekanism:module_nutritional_injection_unit'
-	], [
-		"Nutritional Paste is currently bugged and does not restore any saturation with TFC enabled.",
-		' ',
-		"For now, all recipes related to it are disabled until a compatibility mod becomes available."
-	])
 	event.add(/^minecraft:(?!.*dead).+_coral/, [
 		["Corals have two spawning requirements: being in a ", Text.of('Coral Reef biome').underlined(), ", and the average temperature being above ", Text.of('+10C').underlined(), '.'],
 		' ',
 		"The biomes can be found rather easily with a Nature's Compass.",
 		"If you're not in a warm enough climate, be sure to travel further down South!"
+	])
+	event.add(['tfc:bloomery', 'tfc:blast_furnace'], [
+		"Making Wrought Iron/Steel is best done with whole Cast Iron ingots for efficiency!",
+		' ',
+		"Though, if you can, try putting in double ingots, or even better, double sheets! You can fit more Cast Iron items that way, and therefore make more Wrought Iron/Steel in one go!"
+	])
+	event.add('supplementaries:flax_seeds', [
+		"Flax Seeds are an uncommon drop from naturally-spawning urns found in caves! Such urns may drop a number of different items, or sometimes none at all.",
+		' ',
+		"Flax is a very potent source of string, although silkworm farming is still plenty for most purposes."
 	])
 })

@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": [
+        {
+          "item": "createaddition:honey_cake"
+        }
+      ]
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "kubejs:cake_slices/honey",
+      "count": 7
+    }
+  ]
+}

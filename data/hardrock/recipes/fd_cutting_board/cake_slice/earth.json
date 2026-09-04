@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": [
+        {
+          "item": "tconstruct:earth_cake"
+        }
+      ]
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "kubejs:cake_slices/earth",
+      "count": 7
+    }
+  ]
+}

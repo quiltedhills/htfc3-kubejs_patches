@@ -6,35 +6,48 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "kubejs:clean_gem_dust/opal"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_quartz"
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:silicon",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "kubejs:clean_gem_dust/opal"
-            },
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loot_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:dust_lithium",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_quartz"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "refinedstorage:silicon",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.75
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mekanism:dust_lithium",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.25
-                }
-              ]
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
             }
           ]
         }

@@ -82,10 +82,10 @@ onEvent('tags.blocks', event => {
 		'exnihilosequentia:infested_leaves'
 	])
 	event.add('tfc:toughness_3', [
-		'mekanism:digital_miner',
-		'mekanism:bounding_block',
 		'#waystones:waystones',
-		'#waystones:sharestones'
+		'#waystones:sharestones',
+		/^mekanism/,
+		/^pneumaticcraft/
 	])
 	event.add('tfc:can_be_snow_piled', [
 		'tfc:placed_item'
@@ -174,7 +174,54 @@ onEvent('tags.blocks', event => {
 		'firmalife:treated_wood_greenhouse_roof',
 		'firmalife:weathered_treated_wood_greenhouse_door',
 		'firmalife:weathered_treated_wood_greenhouse_roof_top',
-		'firmalife:weathered_treated_wood_greenhouse_roof'
+		'firmalife:weathered_treated_wood_greenhouse_roof',
+		'#minecraft:fences', 
+		'#minecraft:fence_gates', 
+		'#minecraft:wooden_doors', 
+		'#minecraft:wooden_stairs', 
+		'#minecraft:wooden_slabs', 
+		'#minecraft:flowers', 
+		'#minecraft:planks', 
+		'#minecraft:wool', 
+		'#minecraft:wooden_trapdoors', 
+		'#minecraft:wooden_pressure_plates', 
+		'#minecraft:cave_vines', 
+		'#minecraft:saplings', 
+		'#minecraft:banners', 
+		'#minecraft:small_flowers', 
+		'#minecraft:beds', 
+		'#minecraft:tall_flowers', 
+		'#minecraft:flowers', 
+		'#minecraft:candles', 
+		'#minecraft:wall_signs', 
+		'#minecraft:signs', 
+		'#minecraft:fire', 
+		'#minecraft:campfires', 
+		'#minecraft:replaceable_plants', 
+		'#minecraft:wall_post_override'
+	])
+
+	event.add('adpother:pollution_passthrough', [
+		'#minecraft:carpets',
+    	'#minecraft:trapdoors',
+    	'#forge:thatch',
+    	'#minecraft:signs',
+    	'#immersiveengineering:scaffoldings/aluminum',
+    	'#immersiveengineering:scaffoldings/steel',
+    	'#immersiveengineering:scaffolding_slabs/aluminum',
+    	'#immersiveengineering:scaffolding_stairs/aluminum',
+    	'#immersiveengineering:scaffolding_slabs/steel',
+    	'#immersiveengineering:scaffolding_stairs/steel',
+    	'createdeco:zinc_catwalk',
+    	'createdeco:copper_catwalk',
+    	'createdeco:iron_catwalk',
+    	'createdeco:cast_iron_catwalk',
+    	'createdeco:brass_catwalk',
+    	'createdeco:andesite_catwalk',
+    	'createdeco:netherite_catwalk',
+    	'createdeco:gold_catwalk',
+		/^mcwbridges/,
+		/^mcw_tfc_aio:bridges/
 	])
 })
 // ===== FLUIDS
@@ -216,6 +263,7 @@ onEvent('tags.fluids', event => {
 	event.add('forge:molten_electrum', ['tfc_ie_addon:metal/electrum'])
 	event.add('forge:molten_aluminum', ['tfc_ie_addon:metal/aluminum'])
 	event.add('forge:active_redstone', ['kubejs:active_redstone'])
+	event.add('forge:molten_fire_clay', ['kubejs:molten_fire_clay'])
 	event.add('tfc:andesite_alloy', ['kubejs:andesite_alloy'])
 	event.add('tfc:andesite_stone', ['kubejs:andesite_stone'])
 	event.add('tfc:mixable', ['kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water','immersiveengineering:creosote'])
@@ -240,16 +288,18 @@ onEvent('tags.fluids', event => {
 		"kubejs:oat_slurry",
 		"kubejs:lumpy_oat_milk",
 		"kubejs:unsweetened_oat_milk",
+		"kubejs:liquid_smoke",
 	])
-	event.add('tfc:usable_in_blue_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
-	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil'])
-	event.add('tfc:usable_in_wooden_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil'])
+	event.add('tfc:usable_in_blue_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil', 'kubejs:liquid_smoke'])
+	event.add('tfc:usable_in_red_steel_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'kubejs:active_redstone', 'kubejs:andesite_stone', 'kubejs:andesite_alloy', 'kubejs:molten_iron_quartz', 'createaddition:seed_oil', 'kubejs:liquid_smoke'])
+	event.add('tfc:usable_in_wooden_bucket', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'tfc:spring_water', 'createaddition:seed_oil', 'kubejs:liquid_smoke'])
 	event.add('tfc:usable_in_pot', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea'])
 	event.add('tfc:usable_in_jug', ['firmalife:sugar_water', 'tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'tfc:tallow', 'create:tea'])
 	event.add('firmalife:usable_in_mixing_bowl', ['tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water', 'create:tea', 'createaddition:seed_oil'])
 	event.add('firmalife:usable_in_vat', ['tconstruct:honey', 'immersiveengineering:creosote', 'kubejs:herbal_water', 'kubejs:purified_water', 'kubejs:boiled_water', 'kubejs:mineral_water', 'kubejs:seed_oil_water'])
 	event.add('tfc:brine', ['mekanism:brine'])
 	event.add('forge:brine', ['tfc:brine'])
+	event.add('forge:liquid_smoke', 'kubejs:liquid_smoke')
 	event.remove('forge:diesel', ['pneumaticcraft:diesel'])
 	event.remove('forge:biodiesel', ['pneumaticcraft:biodiesel'])
 	event.remove('forge:kerosene', ['pneumaticcraft:kerosene'])
@@ -264,13 +314,88 @@ onEvent('tags.items', event => {
 	//event.add('ftbchunks:right_click_blacklist', [
 	//	'pneumaticcraft:micromissiles'
 	//])
+	event.add('adpother:pollution_passthrough', [
+		'#minecraft:carpets',
+        '#minecraft:trapdoors',
+        '#forge:thatch',
+        '#minecraft:signs',
+        '#immersiveengineering:scaffoldings/aluminum',
+        '#immersiveengineering:scaffoldings/steel',
+        '#immersiveengineering:scaffolding_slabs/aluminum',
+        '#immersiveengineering:scaffolding_stairs/aluminum',
+        '#immersiveengineering:scaffolding_slabs/steel',
+        '#immersiveengineering:scaffolding_stairs/steel',
+        'createdeco:zinc_catwalk',
+        'createdeco:copper_catwalk',
+        'createdeco:iron_catwalk',
+        'createdeco:cast_iron_catwalk',
+        'createdeco:brass_catwalk',
+        'createdeco:andesite_catwalk',
+        'createdeco:netherite_catwalk',
+        'createdeco:gold_catwalk',
+		/^mcwbridges/,
+		/^mcw_tfc_aio:bridges/
+	])
+
+	event.add('tfc:tornado_grab', [
+		'#tfc:plants',
+		'tfc:nest_box',
+		'create:shaft',
+		'create:cogwheel',
+		'create:large_cogwheel',
+		'create:depot',
+		'create:fluid_pipe',
+		'create:chute',
+		'create:sail_frame',
+		'create:white_sail',
+		'exnihilosequentia:infesting_leaves',
+		'exnihilosequentia:infested_leaves',
+		'firmaciv:thatch_roofing',
+		'firmalife:large_planter',
+		'firmalife:quad_planter',
+		'firmalife:bonsai_planter',
+		'firmalife:hanging_planter',
+		'firmalife:trellis_planter',
+		'firmalife:beehive',
+		'firmalife:treated_wood_greenhouse_door',
+		'firmalife:treated_wood_greenhouse_roof_top',
+		'firmalife:treated_wood_greenhouse_roof',
+		'firmalife:weathered_treated_wood_greenhouse_door',
+		'firmalife:weathered_treated_wood_greenhouse_roof_top',
+		'firmalife:weathered_treated_wood_greenhouse_roof',
+		'#minecraft:fences', 
+		'#minecraft:fence_gates', 
+		'#minecraft:wooden_doors', 
+		'#minecraft:wooden_stairs', 
+		'#minecraft:wooden_slabs', 
+		'#minecraft:flowers', 
+		'#minecraft:planks', 
+		'#minecraft:wool', 
+		'#minecraft:wooden_trapdoors', 
+		'#minecraft:wooden_pressure_plates', 
+		'#minecraft:cave_vines', 
+		'#minecraft:saplings', 
+		'#minecraft:banners', 
+		'#minecraft:small_flowers', 
+		'#minecraft:beds', 
+		'#minecraft:tall_flowers', 
+		'#minecraft:flowers', 
+		'#minecraft:candles', 
+		'#minecraft:wall_signs', 
+		'#minecraft:signs', 
+		'#minecraft:fire', 
+		'#minecraft:campfires', 
+		'#minecraft:replaceable_plants', 
+		'#minecraft:wall_post_override'
+	])
 
 	event.add('hardrock:explosion_immune', [
 		'#forge:ingots/compressed_iron'
 	])
 	
 	event.add('immersiveengineering:forbidden_in_crates', [
-		'#functionalstorage:drawer'
+		'#functionalstorage:drawer',
+		'toolbelt:belt'
 	])
 	
 	event.remove('forge:gravel', /^tfc:deposit/)
@@ -357,6 +482,9 @@ onEvent('tags.items', event => {
 	event.removeAll('tfc:can_be_lit_on_torch')
 	event.add('tfc:can_be_lit_on_torch', 'tfc:dead_torch')
 	event.add('tfc:rock/bricks/slabs', /^tfc:rock\/bricks\/.+_slab$/)
+	event.add('tfc:starts_fires_with_durability', [
+		'minecraft:torch'
+	])
 
 	//event.remove('curios:belt', 'toolbelt:belt')
 	event.add('tfc:axes', ['tconstruct:hand_axe', 'tconstruct:broad_axe', 'tconstruct:mattock'])
@@ -364,7 +492,7 @@ onEvent('tags.items', event => {
 		'supplementaries:pancake',
 		/^kubejs:prop_foods\//
 	])
-	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards'])
+	event.add('tfc:compost_browns_low',['kubejs:misc_mats/ceramic_shards', 'tfc:straw'])
 	event.add('supplementaries:cookies', ['kubejs:prop_foods/cookie'])
 	event.remove('firmalife:foods/washable', 'firmalife:food/stinky_soup')
 	event.add('tfc:dynamic_bowl_items', 'firmalife:food/stinky_soup')
@@ -982,6 +1110,11 @@ onEvent('tags.items', event => {
 		'tfc:ore/borax',
 		'tfc:ore/halite'
 	])
+	event.add('tfc:fluxstone/cobble', [
+		'tfc:rock/cobble/dolomite',
+		'tfc:rock/cobble/marble',
+		'tfc:rock/cobble/chalk'
+	])
 
 	// special materials, do not add to 'forge:rods' and 'forge:sheets'
 	event.add('forge:rods/andesite_alloy', 'kubejs:misc_mats/andesite_alloy/rod')
@@ -1016,6 +1149,8 @@ onEvent('tags.items', event => {
 	event.add('forge:double_sheets/lead', ['kubejs:metal/double_sheet/lead'])
 	event.add('tfc:metal_item/uranium', ['kubejs:metal/double_sheet/uranium'])
 	event.add('forge:double_sheets/uranium', ['kubejs:metal/double_sheet/uranium'])
+	event.add('tfc:metal_item/wrought_iron', ['kubejs:wrought_iron_spindle', 'kubejs:wrought_iron_spindle_head'])
+	event.add('tfc:metal_item/wrought_iron_tools', ['kubejs:wrought_iron_spindle'])
 	
 	event.add('tfc:firepit_fuel', [
 		'tfc:stick_bunch',
@@ -1471,7 +1606,19 @@ onEvent('tags.items', event => {
 		'untamedwilds:food_pachyderm_raw',
 		'untamedwilds:food_bear_cooked',
 		'untamedwilds:food_turtle_cooked',
-		'untamedwilds:food_pachyderm_cooked'
+		'untamedwilds:food_pachyderm_cooked',
+		'kubejs:cake_slices/chocolate',
+		'kubejs:cake_slices/honey',
+		'kubejs:cake_slices/sky',
+		'kubejs:cake_slices/earth',
+		'kubejs:cake_slices/magma',
+		'kubejs:cake_slices/blood',
+		'kubejs:cake_slices/ender',
+		'tconstruct:earth_cake',
+		'tconstruct:sky_cake',
+		'tconstruct:magma_cake',
+		'tconstruct:blood_cake',
+		'tconstruct:ender_cake'
 	]),
 	event.add('tfc:foods/meats', [
 		'kubejs:shark_meat',
@@ -1822,6 +1969,7 @@ onEvent('tags.items', event => {
 		'dttfc:willow_seed'
 	]),
 	event.add('tfc:usable_on_tool_rack', [
+	    'kubejs:wrought_iron_spindle',
 		'kubejs:gravedigger',
 		'sewingkit:bone_sewing_needle',
 		'sewingkit:iron_sewing_needle',
@@ -2022,7 +2170,8 @@ onEvent('tags.items', event => {
 		'tfc:stone/shovel/sedimentary'
 	]),
 	event.add('forge:spindles', [
-		'tfc:spindle'
+		'tfc:spindle',
+		'kubejs:wrought_iron_spindle'
 	]),
 	event.add('tfc:tanned_hides', [
 		'kubejs:hide_tanned_s',
@@ -2387,6 +2536,20 @@ onEvent('tags.items', event => {
 	event.removeAll('tfc:cat_food')
 	event.add('tfc:cat_food', '#minecraft:fishes')
 	// ==========  REMOVE
+
+    event.remove('tfc:compost_greens_low', [
+        'tfc:plant/hanging_vines',
+        'tfc:plant/spanish_moss',
+        'tfc:plant/liana',
+        'tfc:plant/tree_fern',
+        'tfc:plant/arundo',
+        'tfc:plant/dry_phragmite',
+        'tfc:plant/ivy',
+        'tfc:plant/jungle_vines'
+    ])
+    event.remove('firmalife:oven_fuel', [
+        'myrtrees:rubberwood_log'
+    ])
 	event.remove('forge:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('balm:nuggets', ['tinycoal:tinycoal','tinycoal:tinycharcoal'])
 	event.remove('forge:storage_blocks/copper', ['minecraft:cut_copper'])
@@ -2578,6 +2741,7 @@ onEvent('tags.items', event => {
 		'pneumaticcraft:wheat_flour',
 		'tconstruct:pig_iron_ingot',
 		'tconstruct:rose_gold_ingot',
-		'tconstruct:copper_nugget'
+		'tconstruct:copper_nugget',
+		'farmersdelight:pumpkin_slice'
 	)
 })

@@ -5,7 +5,7 @@
       "item": "beyond_earth:compressed_desh"
     },
     {
-      "item": "tfc:glue"
+      "tag": "forge:glue"
     },
     {
       "tag": "forge:ingots/ostrum"

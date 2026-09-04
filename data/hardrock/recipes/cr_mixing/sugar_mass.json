@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:food/sugarcane"
+    },
+    {
+      "fluid": "tfc:salt_water",
+      "nbt": {},
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:sugar_mass"
+    }
+  ],
+  "heatRequirement": "heated"
+}

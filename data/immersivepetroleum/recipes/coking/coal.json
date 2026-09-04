@@ -1,0 +1,19 @@
+{
+  "type": "immersivepetroleum:coker",
+  "input": {
+    "item": "minecraft:coal"
+  },
+  "inputfluid": {
+    "tag": "minecraft:water",
+    "amount": 125
+  },
+  "result": {
+    "item": "immersiveengineering:coal_coke"
+  },
+  "resultfluid": {
+    "fluid": "immersivepetroleum:diesel_sulfur",
+    "amount": 3
+  },
+  "time": 15,
+  "energy": 15360
+}

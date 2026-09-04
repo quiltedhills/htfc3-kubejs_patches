@@ -10,9 +10,71 @@
     {
       "item": "tfc:powder/graphite"
     },
-    {
-      "tag": "forge:gravel"
-    },
+    [
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "immersiveengineering:slag_gravel"
+      },
+      {
+        "item": "tfc:rock/gravel/granite"
+      },
+      {
+        "item": "tfc:rock/gravel/diorite"
+      },
+      {
+        "item": "tfc:rock/gravel/andesite"
+      },
+      {
+        "item": "tfc:rock/gravel/conglomerate"
+      },
+      {
+        "item": "tfc:rock/gravel/slate"
+      },
+      {
+        "item": "tfc:rock/gravel/claystone"
+      },
+      {
+        "item": "tfc:rock/gravel/gabbro"
+      },
+      {
+        "item": "tfc:rock/gravel/shale"
+      },
+      {
+        "item": "tfc:rock/gravel/limestone"
+      },
+      {
+        "item": "tfc:rock/gravel/dolomite"
+      },
+      {
+        "item": "tfc:rock/gravel/chert"
+      },
+      {
+        "item": "tfc:rock/gravel/chalk"
+      },
+      {
+        "item": "tfc:rock/gravel/rhyolite"
+      },
+      {
+        "item": "tfc:rock/gravel/dacite"
+      },
+      {
+        "item": "tfc:rock/gravel/quartzite"
+      },
+      {
+        "item": "tfc:rock/gravel/phyllite"
+      },
+      {
+        "item": "tfc:rock/gravel/schist"
+      },
+      {
+        "item": "tfc:rock/gravel/gneiss"
+      },
+      {
+        "item": "tfc:rock/gravel/marble"
+      }
+    ],
     {
       "item": "tfc:rock/gravel/basalt"
     },

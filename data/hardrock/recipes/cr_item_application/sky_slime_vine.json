@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "tfc:plant/jungle_vines"
+    },
+    {
+      "item": "tconstruct:sky_slime_grass_seeds"
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:sky_slime_vine"
+    }
+  ]
+}

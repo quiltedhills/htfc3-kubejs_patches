@@ -1,4 +1,34 @@
+const $ForgeSpawnEggItem = java('net.minecraftforge.common.ForgeSpawnEggItem')
+
 onEvent('block.right_click', event => {
+    const cakes = [
+        'createaddition:chocolate_cake',
+        'createaddition:honey_cake',
+        'tconstruct:ender_cake',
+        'tconstruct:magma_cake',
+        'tconstruct:earth_cake',
+        'tconstruct:sky_cake',
+        'tconstruct:blood_cake'
+    ]
+	// Enables cutting these cakes above when they're placed in the world with a knife, the same way as the coffee cake
+    cakes.forEach((cake) => {
+        if (event.block.id == cake) {
+			event.cancel()
+            if (event.item.hasTag('forge:tools/knives')) {
+                let cuts = Number(event.block.properties.bites)
+				cuts++
+                event.player.give('kubejs' + cake.slice(cake.search(':')) + '_slice')
+				if (cuts >= 7) {
+					event.block.set('air')
+				} else {
+					event.block.set(cake, {
+						'bites': `${cuts}`
+					})
+				}
+            }
+        }
+    })
+
 	// Allow lighting torches from blaze burners
 	if ((event.block.id == 'create:blaze_burner' || event.block.id == 'createaddition:liquid_blaze_burner')
 		&& event.item.id == 'tfc:dead_torch') {
@@ -86,13 +116,49 @@ onEvent('item.right_click', event => {
 	) event.cancel()
 })
 
+onEvent('item.entity_interact', event => {
+	let egg = event.level.createEntity('item')
+			egg.x = event.target.x
+			egg.y = event.target.y
+			egg.z = event.target.z
+			egg.motionX = (Math.random() * 0.1) - 0.05
+			egg.motionY = 0.2
+			egg.motionZ = (Math.random() * 0.1) - 0.05
+
+	let feather = event.level.createEntity('item')
+			feather.setItem(Item.of('minecraft:feather', 4))
+			feather.x = event.target.x
+			feather.y = event.target.y
+			feather.z = event.target.z
+			feather.motionX = (Math.random() * 0.1) - 0.05
+			feather.motionY = 0.2
+			feather.motionZ = (Math.random() * 0.1) - 0.05
+
+	if (event.target.type == 'tfc:chicken' && (event.item.id == 'mob_grinding_utils:gm_chicken_feed_cursed' || event.item.id == 'mob_grinding_utils:nutritious_chicken_feed' || event.item.id == 'mob_grinding_utils:gm_chicken_feed')) {
+		if (event.target.fullNBT.gender != 0 || event.target.fullNBT.Age < 0 || event.target.fullNBT.oldDay > -1) return
+		if (event.item.id == 'mob_grinding_utils:gm_chicken_feed_cursed') {
+			egg.setItem(Item.of('mob_grinding_utils:rotten_egg'))
+		} else if (event.item.id == 'mob_grinding_utils:nutritious_chicken_feed') {
+			egg.setItem(Item.of('mob_grinding_utils:golden_egg'))
+		} else if (event.item.id == 'mob_grinding_utils:gm_chicken_feed') {
+			egg.setItem(Item.of($ForgeSpawnEggItem.fromEntityType(event.item.nbt.mguMobName)))
+		}
+		if (!event.player.isCreativeMode) event.item.count--
+		event.player.server.runCommandSilent(`execute as ${event.player} at ${event.target.id} run particle minecraft:explosion ~ ~ ~`)
+		event.player.server.runCommandSilent(`execute as ${event.player} at @s run playsound minecraft:entity.item.pickup block @a ~ ~ ~ 100 ${1.5 + Math.random()/2}`)
+		egg.spawn()
+		feather.spawn()
+		event.target.remove()
+	}
+})
+
 onEvent('item.food_eaten', event => {
 	if (['minecraft:pumpkin_pie', 'firmalife:food/cooked_pie'].includes(event.item.id)) {
 		event.player.giveInHand('firmalife:pie_pan')
 	}
 })
 
-const carcassesToNotPlace = [
+const blocksToNotPlace = [
 	'animaltrap:chicken_carcass',
 	'animaltrap:rabbit_carcass',
 	'animaltrap:duck_carcass',
@@ -125,7 +191,7 @@ onEvent('block.place', event => {
 	}
 	
 	// Make it impossible to place small carcasses
-	if (carcassesToNotPlace.includes(event.block.id)) event.cancel()
+	if (blocksToNotPlace.includes(event.block.id)) event.cancel()
 })
 
 
@@ -143,7 +209,7 @@ onEvent('block.break', event => {
 			|| event.block.entityData?.inventory?.Items
 
 		storage.forEach(stack => {
-			if (!stack.ForgeCaps) event.block.popItem(Item.of(stack.id, stack.Count, stack.Tag))
+			if (!stack.ForgeCaps) event.block.popItem(Item.of(stack.id, stack.Count, stack.tag))
 			else {   // Manual pop that lets us assign ForgeCaps data
 				let itemEntity = event.level.createEntity('item')
 				itemEntity.fullNBT = `{Item:${stack}}`
@@ -209,6 +275,14 @@ onEvent('block.break', event => {
 			}
 		}
 	}
+
+	if (/^tfc:rock\/raw/.test(event.block.id)) {
+		if (event.player.mainHandItem.id == 'immersiveengineering:buzzsaw' && event.player.mainHandItem.hasEnchantment('minecraft:silk_touch', 1)) {
+			event.block.set('minecraft:air')
+			event.block.popItem(event.block.id)
+		}
+	}
+
 })
 const portalOffsets = {
 	east: { check: [1, 0], bounds: [[1, -2], [3, 2]] },

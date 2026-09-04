@@ -1,6 +1,58 @@
 // priority: 0
 
 console.info('Registering KJS Items...')
+const cakes = [
+    {
+        name: 'chocolate',
+        effects: []
+    },
+    {
+        name: 'honey',
+        effects: []
+    },
+    {
+        name: 'ender',
+        effects: []
+    },
+    {
+        name: 'magma',
+        effects: [
+            {
+                name: 'fire_resistance',
+                duration: 500
+            }
+        ]
+    },
+    {
+        name: 'earth',
+        effects: [
+            {
+                name: 'luck',
+                duration: 200
+            },
+            {
+                name: 'slowness',
+                duration: 120
+            }
+            ]
+    },
+    {
+        name: 'sky',
+        effects: [
+            {
+                name: 'jump_boost',
+                duration: 240
+            },
+            {
+                name:'slowness',
+                duration: 120
+            }]
+    },
+    {
+        name: 'blood',
+        effects: [{ name: 'mining_fatigue', duration: 80 }]
+    },
+]
 
 onEvent('item.registry', event => {
 	event.create('metal/double_sheet/electrum')   // Display names are in kubejs/assets/kubejs/en_us.json
@@ -49,6 +101,12 @@ onEvent('item.registry', event => {
 		.use((level, player, hand) => global.mopUse(level, player, hand))
 		.finishUsing((itemstack, level, player) => global.mopFinishUsing(itemstack, level, player))
 
+    event.create('wrought_iron_spindle').unstackable()
+        .displayName('Wrought Iron Spindle').maxDamage(2200)
+
+    event.create('wrought_iron_spindle_head').unstackable()
+        .displayName('Wrought Iron Spindle Head')
+
 	event.create('raw_cookie').food(food => { food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot').food(food => { food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('silver_apple').food(food => { food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
@@ -71,7 +129,6 @@ onEvent('item.registry', event => {
 	event.create('pile_carbon_waste').displayName('Pile of Carbon Waste')
 	event.create('pile_sulfur_waste').displayName('Pile of Sulfur Waste')
 	event.create('sulfur_waste').displayName('Dirty Sulfur Waste Dust')
-	event.create('nutrimix').displayName('Nutritional Mix')
 	event.create('feed_hay').displayName('Hay Feed')
 	event.create('feed_meat').displayName('Meat Feed')
 	event.create('feed_seed').displayName('Seed Feed')
@@ -144,6 +201,18 @@ onEvent('item.registry', event => {
 	event.create('img_ores').displayName('img_ores')
 	event.create('img_wiki').displayName('img_wiki')
 	event.create('img_book').displayName('img_book')
+	cakes.forEach((cake) =>
+	event.create('cake_slices/' + cake.name)
+	    .displayName(cake.name.slice(0, 1).toUpperCase() + cake.name.slice(1) + ' Cake Slice') // heh, cake.slice
+	    .food(food => {
+	        food.hunger(2).saturation(2)
+	        if (cake.effects) {
+	            cake.effects.forEach((potionEffect) => {
+	                food.effect(potionEffect.name, potionEffect.duration, 0, 1)
+	            })
+	        }
+	    })
+	)
 })
 
 onEvent('item.registry.tool_tiers', event => {

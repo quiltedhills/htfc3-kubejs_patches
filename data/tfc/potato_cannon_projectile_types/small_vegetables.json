@@ -1,0 +1,15 @@
+{
+  "items": [
+    "tfc:food/green_breans",
+    "tfc:food/soy_beans",
+    "tfc:food/dried_kelp",
+    "tfc:food/dried_seaweed",
+    "tfc:food/cattail_root",
+    "tfc:food/taro_root"
+  ],
+  "damage": 3,
+  "reload_ticks": 10,
+  "knockback": 0.5,
+  "sound_pitch": 0.8,
+  "velocity_multiplier": 1.45
+}

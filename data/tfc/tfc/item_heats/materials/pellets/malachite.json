@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_malachite"
+    }
+  ],
+  "heat_capacity": 0.550,
+  "forging_temperature": 648,
+  "welding_temperature": 864 
+}
