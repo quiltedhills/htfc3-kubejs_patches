@@ -1,0 +1,14 @@
+{
+  "type": "immersiveengineering:crusher",
+  "input": {
+    "tag": "tfc:fluxstone/cobble"
+  },
+  "result": {
+    "base_ingredient": {
+      "item": "tfc:powder/flux"
+    },
+    "count": 16
+  },
+  "secondaries": [],
+  "energy": 6400
+}

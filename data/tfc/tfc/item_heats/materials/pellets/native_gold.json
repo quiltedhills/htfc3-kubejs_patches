@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_gold"
+    }
+  ],
+  "heat_capacity": 0.3,
+  "forging_temperature": 636,
+  "welding_temperature": 848 
+}

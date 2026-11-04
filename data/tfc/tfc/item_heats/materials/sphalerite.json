@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:briquet_sphalerite"
+    }
+  ],
+  "heat_capacity": 1.905,
+  "forging_temperature": 252,
+  "welding_temperature": 336 
+}

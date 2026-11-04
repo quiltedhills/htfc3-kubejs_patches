@@ -1,10 +1,19 @@
 // priority: 0
 
 console.info('Registering KJS Items...')
+const cakes = [ // Effect durations are in seconds
+    { name: 'chocolate', effects: [] },
+    { name: 'honey',     effects: [] },
+    { name: 'ender',     effects: [] },
+    { name: 'magma',     effects: [{ name: 'fire_resistance', duration: 25 }] },
+    { name: 'earth',     effects: [{ name: 'luck',            duration: 10 }, { name: 'slowness', duration: 6 }] },
+    { name: 'sky',       effects: [{ name: 'jump_boost',      duration: 12 }, { name: 'slowness', duration: 6 }] },
+    { name: 'blood',     effects: [{ name: 'mining_fatigue',  duration: 4  }] }
+]
 
 onEvent('item.registry', event => {
-	event.create('metal/double_sheet/electrum')   // Display names are in kubejs/assets/kubejs/en_us.json
-	event.create('metal/double_sheet/constantan') // because having slashes in registry names breaks .displayName()
+	event.create('metal/double_sheet/electrum')   // Display names are in `kubejs/assets/kubejs/en_us.json`
+	event.create('metal/double_sheet/constantan') // because having slashes in registry names seems to break `.displayName()`
 	event.create('metal/double_sheet/aluminum')
 	event.create('metal/double_sheet/lead')
 	event.create('metal/double_sheet/uranium')
@@ -49,6 +58,22 @@ onEvent('item.registry', event => {
 		.use((level, player, hand) => global.mopUse(level, player, hand))
 		.finishUsing((itemstack, level, player) => global.mopFinishUsing(itemstack, level, player))
 
+	event.create('wrought_iron_spindle').unstackable().maxDamage(2200)
+	event.create('wrought_iron_spindle_head').unstackable()
+
+	cakes.forEach((cake) =>
+		event.create('cake_slices/' + cake.name)
+			.displayName(cake.name.slice(0, 1).toUpperCase() + cake.name.slice(1) + ' Cake Slice') // heh, cake.slice
+			.food(food => {
+				food.hunger(2).saturation(2)
+				if (cake.effects) {
+					cake.effects.forEach((potionEffect) => {
+						food.effect(potionEffect.name, potionEffect.duration * 20, 0, 1)
+					})
+				}
+			})
+	)
+
 	event.create('raw_cookie').food(food => { food.hunger(1).saturation(0) })//.eaten(ctx => {ctx.player.tell(Text.gold('Yummy Yummy!'))})})
 	event.create('silver_carrot').food(food => { food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
 	event.create('silver_apple').food(food => { food.hunger(1).saturation(0).alwaysEdible() })//.eaten(ctx => {ctx.player.tell(Text.gold('Silver works - Zombie - not today!'))})})
@@ -71,7 +96,6 @@ onEvent('item.registry', event => {
 	event.create('pile_carbon_waste').displayName('Pile of Carbon Waste')
 	event.create('pile_sulfur_waste').displayName('Pile of Sulfur Waste')
 	event.create('sulfur_waste').displayName('Dirty Sulfur Waste Dust')
-	event.create('nutrimix').displayName('Nutritional Mix')
 	event.create('feed_hay').displayName('Hay Feed')
 	event.create('feed_meat').displayName('Meat Feed')
 	event.create('feed_seed').displayName('Seed Feed')
@@ -81,7 +105,7 @@ onEvent('item.registry', event => {
 	event.create('medical_white_powder').displayName('Medicinal White Powder')
 	event.create('medical_red_powder').displayName('Medicinal Red Powder')
 	event.create('medical_green_powder').displayName('Medicinal Green Powder')
-	//event.create('chisel_stone_head')			.displayName('Stone Bit Chisel Head')
+	//event.create('chisel_stone_head').displayName('Stone Bit Chisel Head')
 	event.create('chisel_iron_head').displayName('Wrought Iron Bit Chisel Head')
 	event.create('chisel_rose_gold_head').displayName('Rose Gold Bit Chisel Head')
 	event.create('chisel_blue_steel_head').displayName('Blue Steel Bit Chisel Head')

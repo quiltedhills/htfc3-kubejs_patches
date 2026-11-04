@@ -10,7 +10,7 @@
       "item": "pneumaticcraft:printed_circuit_board"
     },
     {
-      "item": "tfc:glue"
+      "tag": "forge:glue"
     }
   ],
   "pressure": 1.0,

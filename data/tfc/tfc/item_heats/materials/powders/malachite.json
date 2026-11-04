@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:malachite_powder"
+    }
+  ],
+  "heat_capacity": 0.275,
+  "forging_temperature": 648,
+  "welding_temperature": 864 
+}

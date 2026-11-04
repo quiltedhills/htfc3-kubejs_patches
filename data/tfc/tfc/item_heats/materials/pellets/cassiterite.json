@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_cassiterite"
+    }
+  ],
+  "heat_capacity": 1.4,
+  "forging_temperature": 138,
+  "welding_temperature": 184 
+}

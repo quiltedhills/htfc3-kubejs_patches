@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_garnierite"
+    }
+  ],
+  "heat_capacity": 0.4,
+  "forging_temperature": 872,
+  "welding_temperature": 1162 
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "minecraft:leather_helmet"},
+  "transitionalItem": {"item": "minecraft:leather"},
+  "sequence": [
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:leather"}, {"item": "minecraft:chain"}],"results": [{"item": "minecraft:leather"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:leather"}, {"item": "minecraft:chain"}],"results": [{"item": "minecraft:leather"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:leather"}, {"item": "minecraft:chain"}],"results": [{"item": "minecraft:leather"}]},
+    {"type": "create:deploying","ingredients": [{"item": "minecraft:leather"}, {"item": "minecraft:chain"}],"results": [{"item": "minecraft:leather"}]},
+    {"type": "create:pressing","ingredients": [{"item": "minecraft:leather"}],"results": [{"item": "minecraft:leather"}]}
+  ],
+  "results": [{"item": "minecraft:chainmail_helmet","count":1}],
+  "loops": 4
+}

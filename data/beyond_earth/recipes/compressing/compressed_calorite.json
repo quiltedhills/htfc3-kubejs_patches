@@ -5,7 +5,7 @@
       "item": "beyond_earth:compressed_ostrum"
     },
     {
-      "item": "tfc:glue"
+      "tag": "forge:glue"
     },
     {
       "tag": "forge:ingots/calorite"

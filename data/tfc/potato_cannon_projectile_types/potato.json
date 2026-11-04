@@ -1,0 +1,14 @@
+{
+  "items": [
+    "tfc:food/potato",
+    "tfc:food/orange",
+    "tfc:food/peach",
+    "tfc:food/lemon",
+    "tfc:food/plum"
+  ],
+  "damage": 5,
+  "reload_ticks": 15,
+  "knockback": 1.5,
+  "sound_pitch": 0.8,
+  "velocity_multiplier": 1.25
+}

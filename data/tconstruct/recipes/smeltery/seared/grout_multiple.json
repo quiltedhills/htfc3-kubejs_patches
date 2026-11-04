@@ -11,7 +11,13 @@
       "item": "tfc:powder/graphite"
     },
     {
-      "tag": "forge:gravel"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:gravel"
+      },
+      "subtracted": {
+        "item": "tfc:rock/gravel/basalt"
+      }
     },
     {
       "item": "tfc:rock/gravel/basalt"

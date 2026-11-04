@@ -3,6 +3,8 @@ onEvent('recipes', event => {
 	event.remove([
 		{id: 'tfc_ie_addon:crusher/sulfur'},
 		{id: 'mekanism:processing/fluorite/from_block'},
+		// remove original water flask repair recipes (see `server_scripts/recipes/item_repairing.js`)
+		{id: /^waterflasks:.+repair/},
 
 		// remove all copycat recipes to replace with our own
 		{id: /^copycats:crafting\/copycat_/},
@@ -631,6 +633,9 @@ onEvent('recipes', event => {
 		{id: 'tconstruct:smeltery/casts/gold_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/sand_casts/gears'},
 		{id: 'tconstruct:smeltery/casts/red_sand_casts/gears'},
-		{id: 'twilightforest:smeltery/melting/metal/fiery/nugget'}
+		{id: 'twilightforest:smeltery/melting/metal/fiery/nugget'},
+		{id: 'minecraft:slime_block'},
+		{id: 'tconstruct:common/slime/sticky_piston'},
+		{id: 'htm:compat/tfc/crafting/poultry_raw'}
 	])
 })

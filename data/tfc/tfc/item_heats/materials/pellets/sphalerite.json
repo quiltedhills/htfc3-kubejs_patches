@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:pellet_sphalerite"
+    }
+  ],
+  "heat_capacity": 0.950,
+  "forging_temperature": 252,
+  "welding_temperature": 336 
+}

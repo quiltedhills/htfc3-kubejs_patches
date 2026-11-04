@@ -420,6 +420,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(2, [Text.of('A filter item can be applied in a ').gold(), Text.of('vanilla anvil').yellow(), Text.of('.').gold()])
 			text.add(3, [Text.of('Applying a filter to a bag requires ').gold(), Text.of('two filter items').yellow(), Text.of(' per use.').gold()])
 			text.add(4, Text.gold('Multiple different filters can be active at once.'))
+			text.add(5, [Text.gold('This can also be equipped in the '), Text.yellow('Curio Back slot'), Text.gold('!')])
 		}
 	})
 	tooltip.addAdvanced([/^adpother:.+_vacuum_tube$/], (item, advanced, text) => {
@@ -448,7 +449,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Absorbs pollution routed into it from below').gold()])
-			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('Pump').yellow(), Text.of(' directly.').gold()])
+			text.add(2, [Text.of('with a ').gold(), Text.of('Chimney').yellow(), Text.of(' or with a ').gold(), Text.of('pump-powered Vent').yellow(), Text.of(' directly.').gold()])
 			text.add(3, Text.gold('Has a storage for filter items. Can only use one type at once.'))
 			text.add(4, Text.gold('Filters degrade much faster than in respirators or vacuum bags.'))
 			text.add(5, '')
@@ -459,7 +460,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('vertically').yellow(), Text.of('! Up, to be more specific.').gold()])
-			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('pump').yellow(), Text.of(' or ').gold(), Text.of('vent').yellow(), Text.of('.').gold()])
+			text.add(2, [Text.of('Pollution has to first be captured via a ').gold(), Text.of('Vent').yellow(), Text.of(' that is powered by a ').gold(), Text.of('Pump').yellow(), Text.of('.').gold()])
 			text.add(3, Text.gold('A vent can transfer pollution into a chimney from its side or bottom.'))
 			text.add(4, Text.gold('Has no range limit, since it lets gravity do the work.'))
 		}
@@ -469,7 +470,7 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Moves pollution ').gold(), Text.of('horizontally').yellow(), Text.of('!').gold()])
-			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('chimney').yellow(), Text.of('.').gold()])
+			text.add(2, [Text.of('Pollution has to be first captured via a ').gold(), Text.of('Vent').yellow(), Text.of(' that is powered by a ').gold(), Text.of('Pump').yellow(), Text.of(', or transferred from a ').gold(), Text.of('Chimney').yellow(), Text.of('.').gold()])
 			text.add(3, [Text.of('Captures nearby pollution when powered by a ').gold(), Text.of('Pump').yellow(), Text.of('.').gold()])
 			text.add(4, Text.gold('Can pull pollution from up to three blocks away, and only in a straight line. No diagonals.'))
 			text.add(5, [Text.of('Loses pump power when over ').gold(), Text.of('30 blocks').yellow(), Text.of(' away from a pump.').gold()])
@@ -480,13 +481,13 @@ onEvent('item.tooltip', tooltip => {
 			text.add(1, [Text.gold('Hold '), Text.yellow('Shift'), Text.gold(' to see more info')])
 		} else {
 			text.add(1, [Text.of('Powers ').gold(), Text.of('vents').yellow(), Text.of(' to let them capture and move pollution!').gold()])
-			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal ').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
-			text.add(3, Text.gold('Works by pulling pollution from horizontally adjacent vents.'))
-			text.add(4, [Text.of('Will "power" (pull from) a chain of up to ').gold(), Text.of('30 vents').yellow(), Text.of('.').gold()])
+			text.add(2, [Text.of('Needs ').gold(), Text.of('redstone signal').yellow(), Text.of(' to operate. A lever is a good option!').gold()])
+			text.add(3, Text.gold('Works by pulling pollution from horizontally adjacent Vents.'))
+			text.add(4, [Text.of('Will "power" (pull from) a chain of up to ').gold(), Text.of('30 Vent blocks').yellow(), Text.of('.').gold()])
 			text.add(5, '')
-			text.add(6, Text.gold('A simple pollution control setup is a line of vents on the ceiling,'))
-			text.add(7, Text.gold('a pump somewhere in the middle, and a column of chimneys above it,'))
-			text.add(8, Text.gold('capped with a few filter frames.'))
+			text.add(6, Text.gold('A simple pollution control setup is a line of Vents on the ceiling,'))
+			text.add(7, Text.gold('a Pump somewhere in the middle, and a column of Chimneys above it,'))
+			text.add(8, Text.gold('capped with one Filter Frame per pollution type.'))
 			text.add(9, Text.gold('The vents will pick up pollution, lead it to the pump,'))
 			text.add(10, Text.gold('and the pump will release it directly upwards into the chimneys.'))
 			text.add(11, Text.gold('The pollution will then be absorbed by the filter frames.'))
@@ -698,7 +699,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced('kubejs:magic_crystal', (item, advanced, text) => {
 		text.add(1, Text.gold('Used to create a portal to the Twilight Forest'))
 	})
-	tooltip.addAdvanced('kubejs:nutrimix', (item, advanced, text) => {
+	tooltip.addAdvanced('hardrock_mek_compat:nutrimix', (item, advanced, text) => {
 		text.add(1, Text.of('Not edible directly').gold())
 	})
 	tooltip.addAdvanced(['supplementaries:planter','supplementaries:planter_rich'], (item, advanced, text) => {
@@ -1447,4 +1448,58 @@ function convertNumber(num) {
 	//		text.add(2, [Text.gold('Vanilla cats can be tamed with '), Text.yellow('Cat Food'), Text.gold(' using vanilla taming mechanics.')])
 	//	}
 	//})
+
+
+
+	const enchantWarning = Text.red('TFC blocks are not affected by Silk Touch or Fortune!')
+
+	tooltip.addAdvanced([
+		'minecraft:enchanted_book',
+	], (item, advanced, text) => {
+		if (item === Item.of('minecraft:enchanted_book').enchant('minecraft:silk_touch', 1))
+			text.add(1, [enchantWarning])
+
+		for (let i = 1; i <= 3; i++) {
+			if (item === Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', i))
+				text.add(1, [enchantWarning])
+		}
+	})
+	tooltip.addAdvanced([
+		'mekanism:module_silk_touch_unit',
+		'refinedstorage:silk_touch_upgrade',
+		'mekanism:module_fortune_unit',
+		/refinedstorage:fortune_([1-3])_upgrade/,
+		'immersiveengineering:toolupgrade_drill_fortune'
+	], (item, advanced, text) => {
+		text.add(1, [enchantWarning])
+	})
+
+
+
+	tooltip.addAdvanced([/^tfcambiental/], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('TFC Ambiental clothing goes into the Curio slots, not in the armor slots!')])
+			text.add(2, [Text.gold('Press '), getKeybind('key.curios.open.desc'), Text.gold(' to open the Curios menu,')])
+			text.add(3, [Text.gold('or find the little circle icon near your character model in your inventory.')])
+		}
+	})
+	tooltip.addAdvanced(['tfc:bloomery', 'tfc:blast_furnace'], (item, advanced, text) => {
+		if (!tooltip.shift) {
+			text.add(1, [Text.gold('Hold '), Text.yellow('Shift '), Text.gold('for more info')])
+		} else {
+			text.add(1, [Text.gold('The Bloomery and the Blast Furnace '), Text.red('do not accept unprocessed ores'), Text.gold('!')])
+			text.add(2, [Text.gold('They take any item that has "'), Text.gray('Melts into'), Text.white('..mb of Cast Iron'), Text.gold('" in its tooltips.')])
+			text.add(3, '')
+			text.add(4, [Text.gold('Powders technically work, but they are very low density.')])
+			text.add(5, [Text.gold('Crafting them into briquettes first is a good idea!')])
+			text.add(6, '')
+			text.add(7, [Text.yellow('Check the JEI Info Tab for more tips!')])
+		}
+	})
+	tooltip.addAdvanced('immersiveengineering:rockcutter', (item, advanced, text) => {
+			text.add(1, [Text.gold('When equipped on a buzzsaw, allows '), Text.yellow('directly extracting TFC raw stone '), Text.gold('!')])
+		}
+	)
 })

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tfc:fire_bricks"
+  },
+  "result": {
+    "fluid": "kubejs:molten_fire_clay",
+    "amount": 625
+  },
+  "temperature": 1500,
+  "time": 24
+}

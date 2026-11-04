@@ -99,20 +99,32 @@ onEvent('jei.information', event => {
 	event.add('minecraft:glowstone', [
 		"Sometimes found for sale on Amadron!"
 	])
-	event.add([
-		'kubejs:nutrimix',
-		'mekanism:nutritional_paste_bucket',
-		'mekanism:canteen',
-		'mekanism:module_nutritional_injection_unit'
-	], [
-		"Nutritional Paste is currently bugged and does not restore any saturation with TFC enabled.",
-		' ',
-		"For now, all recipes related to it are disabled until a compatibility mod becomes available."
-	])
 	event.add(/^minecraft:(?!.*dead).+_coral/, [
 		["Corals have two spawning requirements: being in a ", Text.of('Coral Reef biome').underlined(), ", and the average temperature being above ", Text.of('+10C').underlined(), '.'],
 		' ',
 		"The biomes can be found rather easily with a Nature's Compass.",
 		"If you're not in a warm enough climate, be sure to travel further down South!"
+	])
+	event.add('tfc:bloomery', [
+		"The simplest input item for bloomeries is briquettes made from powder of an iron ore.",
+		"These are each worth 80mb of fluid, meaning if you fill the bloomery with all 24, you will get 24x80=1920mb, or 19 blooms!",
+		' ',
+		"You can melt the briquettes in a crucible or in a charcoal forge using a Bellows or a strong fuel like Coke Coal.",
+		"This lets you make brown-colored cast iron ingots, which are a nice, even 100mb of metal each! Those will convert into blooms 1:1, instead of 5:4 like with briquettes.",
+		' ',
+		"If you want to push your bloomeries further, try making double sheets of cast iron! They are 400mb each, and if you fill a bloomery with all 24, you will get a whopping 96 blooms in one go!"
+	])
+	event.add(['tfc:blast_furnace'], [
+		"Unlike bloomeries, which use a flat 15-minute timer, blast furnaces do actual heating logic, similar to a charcoal forge but with the details hidden!",
+		"This means that the denser an item is, the longer it will take to heat up and melt.",
+		"Because of this, denser items (like double sheets vs ingots) are not strictly better, because they will take longer to reach melting temperature!",
+		' ',
+		"A very good way to improve the performance of a blast furnace is pre-heating your inputs in a separate crucible first.",
+		"Blast furnaces are slow and burn through a lot of fuel, so lighting up a crucible with charcoal to get your cast iron close to melting temperature before transferring it to a blast furnace will help out with both speed and saving fuel!"
+	])
+	event.add('supplementaries:flax_seeds', [
+		"Flax Seeds are an uncommon drop from naturally-spawning urns found in caves! Such urns may drop a number of different items, or sometimes none at all.",
+		' ',
+		"Flax is a very potent source of string, although silkworm farming is still plenty for most purposes."
 	])
 })

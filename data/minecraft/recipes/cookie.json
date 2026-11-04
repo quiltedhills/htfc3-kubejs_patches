@@ -7,10 +7,16 @@
   ],
   "key": {
     "C": {
-      "item": "firmalife:food/cocoa_powder"
+      "type": "tfc:not_rotten",
+      "ingredient" : {
+        "item": "firmalife:food/cocoa_powder"
+      }
     },
     "D": {
-      "item": "firmalife:food/pie_dough"
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/pie_dough"
+      }
     },
     "S": {
       "tag": "forge:sugar"

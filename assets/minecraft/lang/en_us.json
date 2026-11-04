@@ -3,7 +3,7 @@
 
   "item.minecraft.diamond": "Rare Diamond",
   "item.minecraft.emerald": "Rare Emerald",
-  "advancements.story.mine_diamond.title": "Yeeaaaa Diamonds!",
+  "advancements.story.mine_diamond.title": "Diamonds!!!!",
 
   "item.minecraft.bowl": "Wooden Bowl",
   "block.minecraft.chain": "Cast Iron Chain",
@@ -26,5 +26,7 @@
   "block.minecraft.brown_candle": "Permanent Brown Candle",
   "block.minecraft.green_candle": "Permanent Green Candle",
   "block.minecraft.red_candle": "Permanent Red Candle",
-  "block.minecraft.black_candle": "Permanent Black Candle"
+  "block.minecraft.black_candle": "Permanent Black Candle",
+
+  "block.minecraft.loom": "Banner Loom"
 }

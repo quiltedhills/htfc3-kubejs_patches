@@ -1,6 +1,8 @@
 // priority: 10
 onEvent('recipes', event => {
 	event.replaceInput('minecraft:crafting_table', '#forge:workbenches')
+	event.replaceInput('tfc:powder/wood_ash', '#forge:dusts/ash')
+	event.replaceInput('farmersdelight:pumpkin_slice', 'firmalife:food/pumpkin_chunks')
 	// mods
 	event.replaceInput({mod: 'createdeco'}, '#forge:plates/netherite', '#forge:sheets/netherite')
 	event.replaceInput({mod: 'securitycraft'}, 'minecraft:iron_ingot', '#forge:plates/iron')
@@ -37,12 +39,20 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:composter', 'tfc:composter')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'mekanism:dust_charcoal', 'tfc:powder/charcoal')
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'create:zinc_ingot', '#forge:ingots/zinc')
-	// general shapelles
+	// general shapeless
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:glass_pane', 'tconstruct:clear_glass_pane')
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:stone', '#tfc:rock/raw')
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:sand', '#forge:sand')
 	event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:fishing_rod', '#forge:fishing_rods')
-	
+	// tfc shapeless
+	event.replaceInput({type: 'tfc:advanced_shapeless_crafting'}, 'tfc:spindle', '#forge:spindles')
+	// replacing inputs that use specific glue types to use forge:glue tag
+	const glueLike = ['#forge:slimeballs', '#bookshelf:slime_balls']
+	glueLike.forEach((tag) => event.replaceInput({ not: { id: /^tconstruct/ } }, tag, '#forge:glue'))
+	event.replaceInput({id: 'minecraft:hardrock/cr_mixing/ichor_dirt'}, '#forge:glue', 'tconstruct:ichor_slime_ball') // fixing ichor dirt mixing because it's not included in tconstruct recipe id
+	event.replaceInput({id: 'tconstruct:common/slime/lead'}, '#bookshelf:slime_balls', '#forge:glue') // meanwhile tinkers had their own lead crafting recipe that only takes bookshelf:slime_balls
+
+
 	//replace output
 	event.replaceOutput({}, 'minecraft:gold_ingot', 'tfc:metal/ingot/gold')
 	event.replaceOutput({}, 'minecraft:copper_ingot', 'tfc:metal/ingot/copper')

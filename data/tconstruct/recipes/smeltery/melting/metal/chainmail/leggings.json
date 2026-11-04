@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:chainmail_leggings"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 100
+  },
+  "temperature": 900,
+  "time": 39
+}

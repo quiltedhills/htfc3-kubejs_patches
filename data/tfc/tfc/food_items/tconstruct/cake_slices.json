@@ -1,0 +1,12 @@
+{
+  "ingredient": [
+    {
+      "tag": "tconstruct:cake_slices"
+    }
+  ],
+  "hunger": 3,
+  "saturation": 2,
+  "decay_modifier": 1.5,
+  "grain": 0.5,
+  "dairy": 0.2
+}

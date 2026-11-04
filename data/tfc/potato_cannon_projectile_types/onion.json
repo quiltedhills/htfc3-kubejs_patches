@@ -1,0 +1,10 @@
+{
+  "items": [
+    "tfc:food/onion",
+    "tfc:food/garlic",
+    "tfc:food/squash"
+  ],
+  "damage": 5,
+  "reload_ticks": 15,
+  "velocity_multiplier": 1.2
+}

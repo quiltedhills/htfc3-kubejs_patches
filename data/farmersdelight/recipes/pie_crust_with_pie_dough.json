@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SMS",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/pie_dough"
+      }
+    },
+    "S": {
+      "tag": "forge:sugar"
+    },
+    "M": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "tfc:milks"
+        },
+        "amount": 1000
+      }
+    }
+  },
+  "result": {
+    "item": "farmersdelight:pie_crust",
+    "count": 1
+  }
+}

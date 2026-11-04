@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:briquet_galena"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 300,
+  "welding_temperature": 400
+}

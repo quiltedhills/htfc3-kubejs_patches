@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:cassiterite_powder"
+    }
+  ],
+  "heat_capacity": 0.7,
+  "forging_temperature": 138,
+  "welding_temperature": 184 
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "tfc:plant/jungle_vines"
+    },
+    {
+      "fluid": "tconstruct:sky_slime",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:sky_slime_vine"
+    }
+  ]
+}

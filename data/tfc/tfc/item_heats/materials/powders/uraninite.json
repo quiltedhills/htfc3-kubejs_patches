@@ -1,0 +1,10 @@
+{
+  "ingredient": [
+    {
+      "item": "tfcorewashing:uraninite_powder"
+    }
+  ],
+  "heat_capacity": 0.275,
+  "forging_temperature": 750,
+  "welding_temperature": 1000
+}
